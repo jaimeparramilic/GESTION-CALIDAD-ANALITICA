@@ -1,0 +1,168 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+Flujogramas
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="png_1.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript">
+	if( (parent.isSVG) || 
+		(parent.isVML && parent.vmlSupported) || 
+		(parent.isXAML && parent.isUpLevel)) 
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 31;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 0.871730;
+	viewMgr.visBBoxRight = 33.032253;
+	viewMgr.visBBoxBottom = 21.908316;
+	viewMgr.visBBoxTop = 34.451999;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Shows the location of the selected shape" src="arrow.png"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+<script type="text/javascript" language="javascript">
+// Displays the banner prompt to install Silverlight
+if (parent.slSupported && !parent.slInstalled)
+{
+	var slBanner = document.createElement("div");
+	slBanner.className = "banner";
+	slBanner.innerHTML = 'To enable full functionality such as Pan and Zoom, <a href="https://www.microsoft.com/silverlight/resources/install.aspx" target="parent">click here</a> to install the Silverlight plug-in.';
+
+	document.body.appendChild(slBanner);
+	document.body.style.paddingTop = "2.5em";
+}
+</script>
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="png_14.png" ALT="Corregir información" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Base de datos corregida" origTitle="SALIDAS 1. Base de datos corregida" TITLE="SALIDAS 1. Base de datos corregida" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/REALIZAR%2520PROYECCIONES/PROYECCIONES%2520ABR-19%2520v7.xlsm" target="_top" COORDS="1019,320,1019,322,1023,318,713,318,717,322,717,320,709,320,709,322,713,326,1023,326,1024,322,1024,320,1019,320" onmouseover="UpdateTooltip(this,31,51,event)" onfocus="UpdateTooltip(this,31,51,event)" onclick="return OnShapeClick(31,51,event);" onkeyup="OnShapeKey(31,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Base de datos corregida" origTitle="SALIDAS 1. Base de datos corregida" TITLE="SALIDAS 1. Base de datos corregida" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/REALIZAR%2520PROYECCIONES/PROYECCIONES%2520ABR-19%2520v7.xlsm" target="_top" COORDS="756,326,868,326,868,318,756,318,756,326" onmouseover="UpdateTooltip(this,31,51,event)" onfocus="UpdateTooltip(this,31,51,event)" onclick="return OnShapeClick(31,51,event);" onkeyup="OnShapeKey(31,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Base de datos corregida" origTitle="SALIDAS 1. Base de datos corregida" TITLE="SALIDAS 1. Base de datos corregida" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/REALIZAR%2520PROYECCIONES/PROYECCIONES%2520ABR-19%2520v7.xlsm" target="_top" COORDS="804,150,804,118,715,118,715,150,715,154,715,186,735,186,735,154,753,154,753,186,1011,186,1011,150,804,150" onmouseover="UpdateTooltip(this,31,51,event)" onfocus="UpdateTooltip(this,31,51,event)" onclick="return OnShapeClick(31,51,event);" onkeyup="OnShapeKey(31,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Acta de reunión con ajustes necesarios (sin..." origTitle="ENTRADAS 1. Acta de reunión con ajustes necesarios (sin..." TITLE="ENTRADAS 1. Acta de reunión con ajustes necesarios (sin..." HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/REALIZAR%2520PROYECCIONES/PROYECCIONES%2520ABR-19%2520v7.xlsm" target="_top" COORDS="353,320,353,322,357,318,14,318,18,322,18,320,10,320,10,322,14,326,357,326,361,322,361,320,353,320" onmouseover="UpdateTooltip(this,31,49,event)" onfocus="UpdateTooltip(this,31,49,event)" onclick="return OnShapeClick(31,49,event);" onkeyup="OnShapeKey(31,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Acta de reunión con ajustes necesarios (sin..." origTitle="ENTRADAS 1. Acta de reunión con ajustes necesarios (sin..." TITLE="ENTRADAS 1. Acta de reunión con ajustes necesarios (sin..." HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/REALIZAR%2520PROYECCIONES/PROYECCIONES%2520ABR-19%2520v7.xlsm" target="_top" COORDS="0,323,13,325,14,318,1,315,0,323" onmouseover="UpdateTooltip(this,31,49,event)" onfocus="UpdateTooltip(this,31,49,event)" onclick="return OnShapeClick(31,49,event);" onkeyup="OnShapeKey(31,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Acta de reunión con ajustes necesarios (sin..." origTitle="ENTRADAS 1. Acta de reunión con ajustes necesarios (sin..." TITLE="ENTRADAS 1. Acta de reunión con ajustes necesarios (sin..." HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/REALIZAR%2520PROYECCIONES/PROYECCIONES%2520ABR-19%2520v7.xlsm" target="_top" COORDS="36,89,36,61,54,61,54,89,36,89" onmouseover="UpdateTooltip(this,31,49,event)" onfocus="UpdateTooltip(this,31,49,event)" onclick="return OnShapeClick(31,49,event);" onkeyup="OnShapeKey(31,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Acta de reunión con ajustes necesarios (sin..." origTitle="ENTRADAS 1. Acta de reunión con ajustes necesarios (sin..." TITLE="ENTRADAS 1. Acta de reunión con ajustes necesarios (sin..." HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/REALIZAR%2520PROYECCIONES/PROYECCIONES%2520ABR-19%2520v7.xlsm" target="_top" COORDS="304,156,360,156,360,120,277,120,277,93,360,93,360,57,133,57,133,25,16,25,16,57,16,61,16,89,16,93,16,120,16,124,16,152,16,156,16,188,304,188,304,156" onmouseover="UpdateTooltip(this,31,49,event)" onfocus="UpdateTooltip(this,31,49,event)" onclick="return OnShapeClick(31,49,event);" onkeyup="OnShapeKey(31,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Acta de reunión con ajustes necesarios (sin..." origTitle="ENTRADAS 1. Acta de reunión con ajustes necesarios (sin..." TITLE="ENTRADAS 1. Acta de reunión con ajustes necesarios (sin..." HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/REALIZAR%2520PROYECCIONES/PROYECCIONES%2520ABR-19%2520v7.xlsm" target="_top" COORDS="36,152,36,124,54,124,54,152,36,152" onmouseover="UpdateTooltip(this,31,49,event)" onfocus="UpdateTooltip(this,31,49,event)" onclick="return OnShapeClick(31,49,event);" onkeyup="OnShapeKey(31,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Corregir información" origTitle="Corregir información" TITLE="Corregir información" HREF="png_14.htm" target="frmDrawing" COORDS="364,322,702,322,703,321,704,321,705,320,705,319,705,3,705,2,704,1,703,0,702,0,364,0,363,0,362,1,362,2,362,3,362,319,362,320,362,321,363,321,364,322" onmouseover="UpdateTooltip(this,31,26,event)" onfocus="UpdateTooltip(this,31,26,event)" onclick="return OnShapeClick(31,26,event);" onkeyup="OnShapeKey(31,26,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>

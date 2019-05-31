@@ -1,0 +1,168 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+Flujogramas
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="png_1.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript">
+	if( (parent.isSVG) || 
+		(parent.isVML && parent.vmlSupported) || 
+		(parent.isXAML && parent.isUpLevel)) 
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 19;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 0.871730;
+	viewMgr.visBBoxRight = 33.514839;
+	viewMgr.visBBoxBottom = 19.908320;
+	viewMgr.visBBoxTop = 34.451999;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Shows the location of the selected shape" src="arrow.png"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+<script type="text/javascript" language="javascript">
+// Displays the banner prompt to install Silverlight
+if (parent.slSupported && !parent.slInstalled)
+{
+	var slBanner = document.createElement("div");
+	slBanner.className = "banner";
+	slBanner.innerHTML = 'To enable full functionality such as Pan and Zoom, <a href="https://www.microsoft.com/silverlight/resources/install.aspx" target="parent">click here</a> to install the Silverlight plug-in.';
+
+	document.body.appendChild(slBanner);
+	document.body.style.paddingTop = "2.5em";
+}
+</script>
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="png_25.png" ALT="Actualizar base de datos" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Instrumento recolección estado FFIE V3.xlsx ajustado" origTitle="SALIDAS 1. Instrumento recolección estado FFIE V3.xlsx ajustado" TITLE="SALIDAS 1. Instrumento recolección estado FFIE V3.xlsx ajustado"  target="_top" COORDS="1004,315,1004,317,1008,313,702,313,706,317,706,315,698,315,698,317,702,321,1008,321,1012,317,1012,315,1004,315" onmouseover="UpdateTooltip(this,19,51,event)" onfocus="UpdateTooltip(this,19,51,event)" onclick="return OnShapeClick(19,51,event);" onkeyup="OnShapeKey(19,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Instrumento recolección estado FFIE V3.xlsx ajustado" origTitle="SALIDAS 1. Instrumento recolección estado FFIE V3.xlsx ajustado" TITLE="SALIDAS 1. Instrumento recolección estado FFIE V3.xlsx ajustado"  target="_top" COORDS="691,321,855,321,855,313,691,313,691,321" onmouseover="UpdateTooltip(this,19,51,event)" onfocus="UpdateTooltip(this,19,51,event)" onclick="return OnShapeClick(19,51,event);" onkeyup="OnShapeKey(19,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Instrumento recolección estado FFIE V3.xlsx ajustado" origTitle="SALIDAS 1. Instrumento recolección estado FFIE V3.xlsx ajustado" TITLE="SALIDAS 1. Instrumento recolección estado FFIE V3.xlsx ajustado"  target="_top" COORDS="1003,132,1011,132,1011,96,793,96,793,65,705,65,705,96,705,100,705,128,705,132,705,163,1003,163,1003,132" onmouseover="UpdateTooltip(this,19,51,event)" onfocus="UpdateTooltip(this,19,51,event)" onclick="return OnShapeClick(19,51,event);" onkeyup="OnShapeKey(19,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Instrumento recolección estado FFIE V3.xlsx ajustado" origTitle="SALIDAS 1. Instrumento recolección estado FFIE V3.xlsx ajustado" TITLE="SALIDAS 1. Instrumento recolección estado FFIE V3.xlsx ajustado"  target="_top" COORDS="724,128,724,100,742,100,742,128,724,128" onmouseover="UpdateTooltip(this,19,51,event)" onfocus="UpdateTooltip(this,19,51,event)" onclick="return OnShapeClick(19,51,event);" onkeyup="OnShapeKey(19,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Instrumento recolección estado FFIE V3.xlsx..." origTitle="ENTRADAS 1. Instrumento recolección estado FFIE V3.xlsx..." TITLE="ENTRADAS 1. Instrumento recolección estado FFIE V3.xlsx..."  target="_top" COORDS="348,315,348,317,352,313,13,313,17,317,17,315,9,315,9,317,13,321,352,321,356,317,356,315,348,315" onmouseover="UpdateTooltip(this,19,49,event)" onfocus="UpdateTooltip(this,19,49,event)" onclick="return OnShapeClick(19,49,event);" onkeyup="OnShapeKey(19,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Instrumento recolección estado FFIE V3.xlsx..." origTitle="ENTRADAS 1. Instrumento recolección estado FFIE V3.xlsx..." TITLE="ENTRADAS 1. Instrumento recolección estado FFIE V3.xlsx..."  target="_top" COORDS="0,318,13,321,14,313,1,310,0,318" onmouseover="UpdateTooltip(this,19,49,event)" onfocus="UpdateTooltip(this,19,49,event)" onclick="return OnShapeClick(19,49,event);" onkeyup="OnShapeKey(19,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Instrumento recolección estado FFIE V3.xlsx..." origTitle="ENTRADAS 1. Instrumento recolección estado FFIE V3.xlsx..." TITLE="ENTRADAS 1. Instrumento recolección estado FFIE V3.xlsx..."  target="_top" COORDS="36,87,36,60,53,60,53,87,36,87" onmouseover="UpdateTooltip(this,19,49,event)" onfocus="UpdateTooltip(this,19,49,event)" onclick="return OnShapeClick(19,49,event);" onkeyup="OnShapeKey(19,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Instrumento recolección estado FFIE V3.xlsx..." origTitle="ENTRADAS 1. Instrumento recolección estado FFIE V3.xlsx..." TITLE="ENTRADAS 1. Instrumento recolección estado FFIE V3.xlsx..."  target="_top" COORDS="144,123,355,123,355,91,355,87,355,56,131,56,131,25,16,25,16,56,16,60,16,87,16,91,16,119,16,123,16,154,144,154,144,123" onmouseover="UpdateTooltip(this,19,49,event)" onfocus="UpdateTooltip(this,19,49,event)" onclick="return OnShapeClick(19,49,event);" onkeyup="OnShapeKey(19,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Actualizar base de datos" origTitle="Actualizar base de datos" TITLE="Actualizar base de datos" HREF="png_15.htm" target="frmDrawing" COORDS="359,317,692,317,693,317,694,316,694,315,694,314,694,3,694,2,694,1,693,0,692,0,359,0,358,0,357,1,356,2,356,3,356,314,356,315,357,316,358,317,359,317" onmouseover="UpdateTooltip(this,19,26,event)" onfocus="UpdateTooltip(this,19,26,event)" onclick="return OnShapeClick(19,26,event);" onkeyup="OnShapeKey(19,26,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>

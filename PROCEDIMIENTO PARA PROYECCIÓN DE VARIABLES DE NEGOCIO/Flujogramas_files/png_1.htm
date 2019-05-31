@@ -1,0 +1,172 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+Flujogramas
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="png_1.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript">
+	if( (parent.isSVG) || 
+		(parent.isVML && parent.vmlSupported) || 
+		(parent.isXAML && parent.isUpLevel)) 
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 4;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 2.157122;
+	viewMgr.visBBoxRight = 34.411113;
+	viewMgr.visBBoxBottom = 2.775163;
+	viewMgr.visBBoxTop = 9.816627;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Shows the location of the selected shape" src="arrow.png"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+<script type="text/javascript" language="javascript">
+// Displays the banner prompt to install Silverlight
+if (parent.slSupported && !parent.slInstalled)
+{
+	var slBanner = document.createElement("div");
+	slBanner.className = "banner";
+	slBanner.innerHTML = 'To enable full functionality such as Pan and Zoom, <a href="https://www.microsoft.com/silverlight/resources/install.aspx" target="parent">click here</a> to install the Silverlight plug-in.';
+
+	document.body.appendChild(slBanner);
+	document.body.style.paddingTop = "2.5em";
+}
+</script>
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="png_1.png" ALT="DIGRAMA DE ALTO NIVEL" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="976,62,903,62,903,70,976,70,976,62" onmouseover="UpdateTooltip(this,4,99,event)" onfocus="UpdateTooltip(this,4,99,event)" onclick="return OnShapeClick(4,99,event);" onkeyup="OnShapeKey(4,99,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="975,65,975,68,978,66,975,65" onmouseover="UpdateTooltip(this,4,99,event)" onfocus="UpdateTooltip(this,4,99,event)" onclick="return OnShapeClick(4,99,event);" onkeyup="OnShapeKey(4,99,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="1024,66,1024,63,1023,59,1021,55,1019,52,1016,49,1013,47,1010,45,1006,44,1003,43,999,43,995,44,991,45,988,47,985,49,983,52,980,55,979,59,978,63,978,66,978,70,979,74,980,77,983,81,985,83,988,86,991,88,995,89,999,89,1003,89,1006,89,1010,88,1013,86,1016,83,1019,81,1021,77,1023,74,1024,70,1024,66" onmouseover="UpdateTooltip(this,4,86,event)" onfocus="UpdateTooltip(this,4,86,event)" onclick="return OnShapeClick(4,86,event);" onkeyup="OnShapeKey(4,86,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="PRESENTAR RESULTADOS" origTitle="PRESENTAR RESULTADOS" TITLE="PRESENTAR RESULTADOS" HREF="png_4.htm" target="frmDrawing" COORDS="710,133,901,133,901,133,902,132,903,131,903,130,903,3,903,2,902,1,901,0,901,0,710,0,709,0,708,1,708,2,708,3,708,130,708,131,708,132,709,133,710,133" onmouseover="UpdateTooltip(this,4,63,event)" onfocus="UpdateTooltip(this,4,63,event)" onclick="return OnShapeClick(4,63,event);" onkeyup="OnShapeKey(4,63,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="706,62,610,62,610,70,706,70,706,62" onmouseover="UpdateTooltip(this,4,62,event)" onfocus="UpdateTooltip(this,4,62,event)" onclick="return OnShapeClick(4,62,event);" onkeyup="OnShapeKey(4,62,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="705,65,705,68,708,66,705,65" onmouseover="UpdateTooltip(this,4,62,event)" onfocus="UpdateTooltip(this,4,62,event)" onclick="return OnShapeClick(4,62,event);" onkeyup="OnShapeKey(4,62,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="REALIZAR PROYECCIONES" origTitle="REALIZAR PROYECCIONES" TITLE="REALIZAR PROYECCIONES" HREF="png_3.htm" target="frmDrawing" COORDS="417,133,607,133,608,133,609,132,610,131,610,130,610,3,610,2,609,1,608,0,607,0,417,0,416,0,415,1,414,2,414,3,414,130,414,131,415,132,416,133,417,133" onmouseover="UpdateTooltip(this,4,39,event)" onfocus="UpdateTooltip(this,4,39,event)" onclick="return OnShapeClick(4,39,event);" onkeyup="OnShapeKey(4,39,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="412,62,316,62,316,70,412,70,412,62" onmouseover="UpdateTooltip(this,4,38,event)" onfocus="UpdateTooltip(this,4,38,event)" onclick="return OnShapeClick(4,38,event);" onkeyup="OnShapeKey(4,38,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="412,65,412,68,414,66,412,65" onmouseover="UpdateTooltip(this,4,38,event)" onfocus="UpdateTooltip(this,4,38,event)" onclick="return OnShapeClick(4,38,event);" onkeyup="OnShapeKey(4,38,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="119,62,46,62,46,70,119,70,119,62" onmouseover="UpdateTooltip(this,4,37,event)" onfocus="UpdateTooltip(this,4,37,event)" onclick="return OnShapeClick(4,37,event);" onkeyup="OnShapeKey(4,37,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="119,65,119,68,121,66,119,65" onmouseover="UpdateTooltip(this,4,37,event)" onfocus="UpdateTooltip(this,4,37,event)" onclick="return OnShapeClick(4,37,event);" onkeyup="OnShapeKey(4,37,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="46,66,46,63,45,59,44,55,41,52,39,49,36,47,33,45,29,44,25,43,21,43,18,44,14,45,11,47,8,49,5,52,3,55,1,59,0,63,0,66,0,70,1,74,3,77,5,81,8,83,11,86,14,88,18,89,21,89,25,89,29,89,33,88,36,86,39,83,41,81,44,77,45,74,46,70,46,66" onmouseover="UpdateTooltip(this,4,24,event)" onfocus="UpdateTooltip(this,4,24,event)" onclick="return OnShapeClick(4,24,event);" onkeyup="OnShapeKey(4,24,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="RECOLECTAR INFORMACIÓN" origTitle="RECOLECTAR INFORMACIÓN" TITLE="RECOLECTAR INFORMACIÓN" HREF="png_2.htm" target="frmDrawing" COORDS="123,133,314,133,315,133,316,132,316,131,316,130,316,3,316,2,316,1,315,0,314,0,123,0,123,0,122,1,121,2,121,3,121,130,121,131,122,132,123,133,123,133" onmouseover="UpdateTooltip(this,4,1,event)" onfocus="UpdateTooltip(this,4,1,event)" onclick="return OnShapeClick(4,1,event);" onkeyup="OnShapeKey(4,1,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>

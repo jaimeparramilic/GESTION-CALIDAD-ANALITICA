@@ -1,0 +1,169 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+Flujogramas
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="png_1.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript">
+	if( (parent.isSVG) || 
+		(parent.isVML && parent.vmlSupported) || 
+		(parent.isXAML && parent.isUpLevel)) 
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 16;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 0.871730;
+	viewMgr.visBBoxRight = 33.514839;
+	viewMgr.visBBoxBottom = 20.908316;
+	viewMgr.visBBoxTop = 35.011621;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Shows the location of the selected shape" src="arrow.png"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+<script type="text/javascript" language="javascript">
+// Displays the banner prompt to install Silverlight
+if (parent.slSupported && !parent.slInstalled)
+{
+	var slBanner = document.createElement("div");
+	slBanner.className = "banner";
+	slBanner.innerHTML = 'To enable full functionality such as Pan and Zoom, <a href="https://www.microsoft.com/silverlight/resources/install.aspx" target="parent">click here</a> to install the Silverlight plug-in.';
+
+	document.body.appendChild(slBanner);
+	document.body.style.paddingTop = "2.5em";
+}
+</script>
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="png_22.png" ALT="Validar con financiera los valores del multiplicador de los proyectos activos" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Correo electrónico solicitando la revisión por parte..." origTitle="SALIDAS 1. Correo electrónico solicitando la revisión por parte..." TITLE="SALIDAS 1. Correo electrónico solicitando la revisión por parte..."  target="_top" COORDS="1004,332,1004,334,1008,330,702,330,706,334,706,332,698,332,698,334,702,338,1008,338,1012,334,1012,332,1004,332" onmouseover="UpdateTooltip(this,16,51,event)" onfocus="UpdateTooltip(this,16,51,event)" onclick="return OnShapeClick(16,51,event);" onkeyup="OnShapeKey(16,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Correo electrónico solicitando la revisión por parte..." origTitle="SALIDAS 1. Correo electrónico solicitando la revisión por parte..." TITLE="SALIDAS 1. Correo electrónico solicitando la revisión por parte..."  target="_top" COORDS="691,338,855,338,855,330,691,330,691,338" onmouseover="UpdateTooltip(this,16,51,event)" onfocus="UpdateTooltip(this,16,51,event)" onclick="return OnShapeClick(16,51,event);" onkeyup="OnShapeKey(16,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Correo electrónico solicitando la revisión por parte..." origTitle="SALIDAS 1. Correo electrónico solicitando la revisión por parte..." TITLE="SALIDAS 1. Correo electrónico solicitando la revisión por parte..."  target="_top" COORDS="724,67,724,39,742,39,742,67,724,67" onmouseover="UpdateTooltip(this,16,51,event)" onfocus="UpdateTooltip(this,16,51,event)" onclick="return OnShapeClick(16,51,event);" onkeyup="OnShapeKey(16,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Correo electrónico solicitando la revisión por parte..." origTitle="SALIDAS 1. Correo electrónico solicitando la revisión por parte..." TITLE="SALIDAS 1. Correo electrónico solicitando la revisión por parte..."  target="_top" COORDS="724,192,724,165,742,165,742,192,724,192" onmouseover="UpdateTooltip(this,16,51,event)" onfocus="UpdateTooltip(this,16,51,event)" onclick="return OnShapeClick(16,51,event);" onkeyup="OnShapeKey(16,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Correo electrónico solicitando la revisión por parte..." origTitle="SALIDAS 1. Correo electrónico solicitando la revisión por parte..." TITLE="SALIDAS 1. Correo electrónico solicitando la revisión por parte..."  target="_top" COORDS="938,227,1011,227,1011,196,1011,192,1011,161,905,161,905,133,1011,133,1011,102,1011,98,1011,71,1011,67,1011,35,793,35,793,4,705,4,705,35,705,39,705,67,705,71,705,98,705,102,705,129,705,133,705,161,705,165,705,192,705,196,705,224,705,227,705,259,938,259,938,227" onmouseover="UpdateTooltip(this,16,51,event)" onfocus="UpdateTooltip(this,16,51,event)" onclick="return OnShapeClick(16,51,event);" onkeyup="OnShapeKey(16,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. REPORTE INDICADORES DE GESTIÓN v1.1.pbix" origTitle="ENTRADAS 1. REPORTE INDICADORES DE GESTIÓN v1.1.pbix" TITLE="ENTRADAS 1. REPORTE INDICADORES DE GESTIÓN v1.1.pbix"  target="_top" COORDS="348,332,348,334,352,330,13,330,17,334,17,332,9,332,9,334,13,338,352,338,356,334,356,332,348,332" onmouseover="UpdateTooltip(this,16,49,event)" onfocus="UpdateTooltip(this,16,49,event)" onclick="return OnShapeClick(16,49,event);" onkeyup="OnShapeKey(16,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. REPORTE INDICADORES DE GESTIÓN v1.1.pbix" origTitle="ENTRADAS 1. REPORTE INDICADORES DE GESTIÓN v1.1.pbix" TITLE="ENTRADAS 1. REPORTE INDICADORES DE GESTIÓN v1.1.pbix"  target="_top" COORDS="0,336,13,338,14,330,1,328,0,336" onmouseover="UpdateTooltip(this,16,49,event)" onfocus="UpdateTooltip(this,16,49,event)" onclick="return OnShapeClick(16,49,event);" onkeyup="OnShapeKey(16,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. REPORTE INDICADORES DE GESTIÓN v1.1.pbix" origTitle="ENTRADAS 1. REPORTE INDICADORES DE GESTIÓN v1.1.pbix" TITLE="ENTRADAS 1. REPORTE INDICADORES DE GESTIÓN v1.1.pbix"  target="_top" COORDS="213,124,355,124,355,89,131,89,131,58,16,58,16,89,16,93,16,121,16,124,16,156,213,156,213,124" onmouseover="UpdateTooltip(this,16,49,event)" onfocus="UpdateTooltip(this,16,49,event)" onclick="return OnShapeClick(16,49,event);" onkeyup="OnShapeKey(16,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. REPORTE INDICADORES DE GESTIÓN v1.1.pbix" origTitle="ENTRADAS 1. REPORTE INDICADORES DE GESTIÓN v1.1.pbix" TITLE="ENTRADAS 1. REPORTE INDICADORES DE GESTIÓN v1.1.pbix"  target="_top" COORDS="36,121,36,93,53,93,53,121,36,121" onmouseover="UpdateTooltip(this,16,49,event)" onfocus="UpdateTooltip(this,16,49,event)" onclick="return OnShapeClick(16,49,event);" onkeyup="OnShapeKey(16,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Validar con financiera los valores del multiplicador de los..." origTitle="Validar con financiera los valores del multiplicador de los..." TITLE="Validar con financiera los valores del multiplicador de los..." HREF="png_15.htm" target="frmDrawing" COORDS="694,156,694,20,694,19,694,18,693,18,692,18,359,18,358,18,357,18,356,19,356,20,356,332,356,333,357,334,358,334,359,334,692,334,693,334,694,334,694,333,694,332,694,192,697,192,697,156,694,156" onmouseover="UpdateTooltip(this,16,26,event)" onfocus="UpdateTooltip(this,16,26,event)" onclick="return OnShapeClick(16,26,event);" onkeyup="OnShapeKey(16,26,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>
