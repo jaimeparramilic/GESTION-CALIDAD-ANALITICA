@@ -1,0 +1,167 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+Flujogramas
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="png_1.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript">
+	if( (parent.isSVG) || 
+		(parent.isVML && parent.vmlSupported) || 
+		(parent.isXAML && parent.isUpLevel)) 
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 15;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 0.866572;
+	viewMgr.visBBoxRight = 33.514839;
+	viewMgr.visBBoxBottom = 20.908316;
+	viewMgr.visBBoxTop = 34.451999;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Shows the location of the selected shape" src="arrow.png"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+<script type="text/javascript" language="javascript">
+// Displays the banner prompt to install Silverlight
+if (parent.slSupported && !parent.slInstalled)
+{
+	var slBanner = document.createElement("div");
+	slBanner.className = "banner";
+	slBanner.innerHTML = 'To enable full functionality such as Pan and Zoom, <a href="https://www.microsoft.com/silverlight/resources/install.aspx" target="parent">click here</a> to install the Silverlight plug-in.';
+
+	document.body.appendChild(slBanner);
+	document.body.style.paddingTop = "2.5em";
+}
+</script>
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="png_21.png" ALT="Recolectar del área técnica y comercial para que incluya sus percepciones" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="2. Instrumento recolección percepciones V2.xlsx" origTitle="2. Instrumento recolección percepciones V2.xlsx" TITLE="2. Instrumento recolección percepciones V2.xlsx" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/RECOLECTAR_INFORMACI%25C3%2593N/PERCEPCION_OTROSIES/Instrumento_recoleccion_percepciones_V2.xlsx" target="_top" COORDS="442,478,663,478,663,412,27,412,27,471,27,478,27,537,442,537,442,478" onmouseover="UpdateTooltip(this,15,59,event)" onfocus="UpdateTooltip(this,15,59,event)" onclick="return OnShapeClick(15,59,event);" onkeyup="OnShapeKey(15,59,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Instrumento recolección percepciones V2.xlsx..." origTitle="SALIDAS 1. Instrumento recolección percepciones V2.xlsx..." TITLE="SALIDAS 1. Instrumento recolección percepciones V2.xlsx..." HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/RECOLECTAR_INFORMACI%25C3%2593N/PERCEPCION_OTROSIES/Instrumento_recoleccion_percepciones_V2.xlsx" target="_top" COORDS="1885,590,1885,594,1889,590,1316,590,1320,594,1320,590,1312,590,1312,594,1316,598,1889,598,1893,594,1893,590,1885,590" onmouseover="UpdateTooltip(this,15,51,event)" onfocus="UpdateTooltip(this,15,51,event)" onclick="return OnShapeClick(15,51,event);" onkeyup="OnShapeKey(15,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Instrumento recolección percepciones V2.xlsx..." origTitle="SALIDAS 1. Instrumento recolección percepciones V2.xlsx..." TITLE="SALIDAS 1. Instrumento recolección percepciones V2.xlsx..." HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/RECOLECTAR_INFORMACI%25C3%2593N/PERCEPCION_OTROSIES/Instrumento_recoleccion_percepciones_V2.xlsx" target="_top" COORDS="1295,598,1603,598,1603,590,1295,590,1295,598" onmouseover="UpdateTooltip(this,15,51,event)" onfocus="UpdateTooltip(this,15,51,event)" onclick="return OnShapeClick(15,51,event);" onkeyup="OnShapeKey(15,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Instrumento recolección percepciones V2.xlsx..." origTitle="SALIDAS 1. Instrumento recolección percepciones V2.xlsx..." TITLE="SALIDAS 1. Instrumento recolección percepciones V2.xlsx..." HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/RECOLECTAR_INFORMACI%25C3%2593N/PERCEPCION_OTROSIES/Instrumento_recoleccion_percepciones_V2.xlsx" target="_top" COORDS="1560,276,1895,276,1895,217,1895,210,1895,151,1486,151,1486,92,1321,92,1321,151,1321,158,1321,210,1321,217,1321,269,1321,276,1321,335,1560,335,1560,276" onmouseover="UpdateTooltip(this,15,51,event)" onfocus="UpdateTooltip(this,15,51,event)" onclick="return OnShapeClick(15,51,event);" onkeyup="OnShapeKey(15,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS"  target="_top" COORDS="655,590,655,594,659,590,25,590,29,594,29,590,21,590,21,594,25,598,659,598,663,594,663,590,655,590" onmouseover="UpdateTooltip(this,15,49,event)" onfocus="UpdateTooltip(this,15,49,event)" onclick="return OnShapeClick(15,49,event);" onkeyup="OnShapeKey(15,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS"  target="_top" COORDS="0,593,25,598,26,590,1,585,0,593" onmouseover="UpdateTooltip(this,15,49,event)" onfocus="UpdateTooltip(this,15,49,event)" onclick="return OnShapeClick(15,49,event);" onkeyup="OnShapeKey(15,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS"  target="_top" COORDS="30,76,30,142,246,142,246,76,30,76" onmouseover="UpdateTooltip(this,15,49,event)" onfocus="UpdateTooltip(this,15,49,event)" onclick="return OnShapeClick(15,49,event);" onkeyup="OnShapeKey(15,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Recolectar del área técnica y comercial para que incluya sus..." origTitle="Recolectar del área técnica y comercial para que incluya sus..." TITLE="Recolectar del área técnica y comercial para que incluya sus..." HREF="png_15.htm" target="frmDrawing" COORDS="673,594,1297,594,1299,593,1301,592,1302,591,1302,589,1302,5,1302,3,1301,1,1299,0,1297,0,673,0,671,0,669,1,668,3,668,5,668,589,668,591,669,592,671,593,673,594" onmouseover="UpdateTooltip(this,15,26,event)" onfocus="UpdateTooltip(this,15,26,event)" onclick="return OnShapeClick(15,26,event);" onkeyup="OnShapeKey(15,26,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>

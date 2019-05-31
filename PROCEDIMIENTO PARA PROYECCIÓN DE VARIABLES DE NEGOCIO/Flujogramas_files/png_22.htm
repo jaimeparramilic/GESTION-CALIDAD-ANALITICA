@@ -1,0 +1,167 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+Flujogramas
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="png_1.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript">
+	if( (parent.isSVG) || 
+		(parent.isVML && parent.vmlSupported) || 
+		(parent.isXAML && parent.isUpLevel)) 
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 16;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 0.871730;
+	viewMgr.visBBoxRight = 33.514839;
+	viewMgr.visBBoxBottom = 20.908316;
+	viewMgr.visBBoxTop = 36.011619;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Shows the location of the selected shape" src="arrow.png"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+<script type="text/javascript" language="javascript">
+// Displays the banner prompt to install Silverlight
+if (parent.slSupported && !parent.slInstalled)
+{
+	var slBanner = document.createElement("div");
+	slBanner.className = "banner";
+	slBanner.innerHTML = 'To enable full functionality such as Pan and Zoom, <a href="https://www.microsoft.com/silverlight/resources/install.aspx" target="parent">click here</a> to install the Silverlight plug-in.';
+
+	document.body.appendChild(slBanner);
+	document.body.style.paddingTop = "2.5em";
+}
+</script>
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="png_22.png" ALT="Validar con financiera los valores del multiplicador de los proyectos activos" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="1885,682,1885,686,1889,682,1316,682,1320,686,1320,682,1312,682,1312,686,1316,690,1889,690,1893,686,1893,682,1885,682" onmouseover="UpdateTooltip(this,16,51,event)" onfocus="UpdateTooltip(this,16,51,event)" onclick="return OnShapeClick(16,51,event);" onkeyup="OnShapeKey(16,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="1295,690,1603,690,1603,682,1295,682,1295,690" onmouseover="UpdateTooltip(this,16,51,event)" onfocus="UpdateTooltip(this,16,51,event)" onclick="return OnShapeClick(16,51,event);" onkeyup="OnShapeKey(16,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="1321,7,1321,74,1486,74,1486,7,1321,7" onmouseover="UpdateTooltip(this,16,51,event)" onfocus="UpdateTooltip(this,16,51,event)" onclick="return OnShapeClick(16,51,event);" onkeyup="OnShapeKey(16,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. REPORTE INDICADORES DE GESTIÓN v1.1.pbix" origTitle="ENTRADAS 1. REPORTE INDICADORES DE GESTIÓN v1.1.pbix" TITLE="ENTRADAS 1. REPORTE INDICADORES DE GESTIÓN v1.1.pbix" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/RECOLECTAR_INFORMACI%25C3%2593N/INDICADORES_FINANCIEROS/REPORTE_INDICADORES_DE_GESTI%25C3%2593N_v1.1.pbix" target="_top" COORDS="655,682,655,686,659,682,25,682,29,686,29,682,21,682,21,686,25,690,659,690,663,686,663,682,655,682" onmouseover="UpdateTooltip(this,16,49,event)" onfocus="UpdateTooltip(this,16,49,event)" onclick="return OnShapeClick(16,49,event);" onkeyup="OnShapeKey(16,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. REPORTE INDICADORES DE GESTIÓN v1.1.pbix" origTitle="ENTRADAS 1. REPORTE INDICADORES DE GESTIÓN v1.1.pbix" TITLE="ENTRADAS 1. REPORTE INDICADORES DE GESTIÓN v1.1.pbix" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/RECOLECTAR_INFORMACI%25C3%2593N/INDICADORES_FINANCIEROS/REPORTE_INDICADORES_DE_GESTI%25C3%2593N_v1.1.pbix" target="_top" COORDS="0,685,24,690,26,682,1,677,0,685" onmouseover="UpdateTooltip(this,16,49,event)" onfocus="UpdateTooltip(this,16,49,event)" onclick="return OnShapeClick(16,49,event);" onkeyup="OnShapeKey(16,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. REPORTE INDICADORES DE GESTIÓN v1.1.pbix" origTitle="ENTRADAS 1. REPORTE INDICADORES DE GESTIÓN v1.1.pbix" TITLE="ENTRADAS 1. REPORTE INDICADORES DE GESTIÓN v1.1.pbix" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/RECOLECTAR_INFORMACI%25C3%2593N/INDICADORES_FINANCIEROS/REPORTE_INDICADORES_DE_GESTI%25C3%2593N_v1.1.pbix" target="_top" COORDS="399,292,665,292,665,226,245,226,245,167,30,167,30,226,30,233,30,285,30,292,30,351,399,351,399,292" onmouseover="UpdateTooltip(this,16,49,event)" onfocus="UpdateTooltip(this,16,49,event)" onclick="return OnShapeClick(16,49,event);" onkeyup="OnShapeKey(16,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. REPORTE INDICADORES DE GESTIÓN v1.1.pbix" origTitle="ENTRADAS 1. REPORTE INDICADORES DE GESTIÓN v1.1.pbix" TITLE="ENTRADAS 1. REPORTE INDICADORES DE GESTIÓN v1.1.pbix" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/RECOLECTAR_INFORMACI%25C3%2593N/INDICADORES_FINANCIEROS/REPORTE_INDICADORES_DE_GESTI%25C3%2593N_v1.1.pbix" target="_top" COORDS="67,285,67,233,99,233,99,285,67,285" onmouseover="UpdateTooltip(this,16,49,event)" onfocus="UpdateTooltip(this,16,49,event)" onclick="return OnShapeClick(16,49,event);" onkeyup="OnShapeKey(16,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Validar con financiera los valores del multiplicador de los..." origTitle="Validar con financiera los valores del multiplicador de los..." TITLE="Validar con financiera los valores del multiplicador de los..." HREF="png_15.htm" target="frmDrawing" COORDS="1302,352,1302,96,1301,95,1300,93,1299,92,1297,92,672,92,671,92,669,93,668,95,668,96,668,681,668,683,669,684,671,685,672,686,1297,686,1299,685,1300,684,1301,683,1302,681,1302,418,1306,418,1306,352,1302,352" onmouseover="UpdateTooltip(this,16,26,event)" onfocus="UpdateTooltip(this,16,26,event)" onclick="return OnShapeClick(16,26,event);" onkeyup="OnShapeKey(16,26,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>
