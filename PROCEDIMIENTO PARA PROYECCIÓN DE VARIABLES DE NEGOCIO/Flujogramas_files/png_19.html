@@ -1,0 +1,169 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+Flujogramas
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="png_1.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript">
+	if( (parent.isSVG) || 
+		(parent.isVML && parent.vmlSupported) || 
+		(parent.isXAML && parent.isUpLevel)) 
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 13;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 0.871730;
+	viewMgr.visBBoxRight = 33.514839;
+	viewMgr.visBBoxBottom = 20.908316;
+	viewMgr.visBBoxTop = 35.794756;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Shows the location of the selected shape" src="arrow.png"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+<script type="text/javascript" language="javascript">
+// Displays the banner prompt to install Silverlight
+if (parent.slSupported && !parent.slInstalled)
+{
+	var slBanner = document.createElement("div");
+	slBanner.className = "banner";
+	slBanner.innerHTML = 'To enable full functionality such as Pan and Zoom, <a href="https://www.microsoft.com/silverlight/resources/install.aspx" target="parent">click here</a> to install the Silverlight plug-in.';
+
+	document.body.appendChild(slBanner);
+	document.body.style.paddingTop = "2.5em";
+}
+</script>
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="png_19.png" ALT="Actualizar la base de datos de contratos con la información contractual" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="4. Información Contractual v11.xlsx" origTitle="4. Información Contractual v11.xlsx" TITLE="4. Información Contractual v11.xlsx" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/RECOLECTAR%2520INFORMACI%25C3%2593N/INFORMACI%25C3%2593N%2520CONTRACTUAL/Informaci%25C3%25B3n%2520Contractual%2520v11.xlsx" target="_top" COORDS="37,316,37,285,18,285,18,316,18,320,18,351,101,351,101,320,356,320,356,285,55,285,55,316,37,316" onmouseover="UpdateTooltip(this,13,61,event)" onfocus="UpdateTooltip(this,13,61,event)" onclick="return OnShapeClick(13,61,event);" onkeyup="OnShapeKey(13,61,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3.  Manual Registro V1.pdf" origTitle="3.  Manual Registro V1.pdf" TITLE="3.  Manual Registro V1.pdf" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/RECOLECTAR%2520INFORMACI%25C3%2593N/INFORMACI%25C3%2593N%2520CONTRACTUAL/Manual%2520Registro%2520V1.pdf" target="_top" COORDS="16,247,16,282,36,282,36,247,16,247" onmouseover="UpdateTooltip(this,13,60,event)" onfocus="UpdateTooltip(this,13,60,event)" onclick="return OnShapeClick(13,60,event);" onkeyup="OnShapeKey(13,60,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3.  Manual Registro V1.pdf" origTitle="3.  Manual Registro V1.pdf" TITLE="3.  Manual Registro V1.pdf" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/RECOLECTAR%2520INFORMACI%25C3%2593N/INFORMACI%25C3%2593N%2520CONTRACTUAL/Manual%2520Registro%2520V1.pdf" target="_top" COORDS="59,247,53,247,53,282,59,282,309,282,309,247,59,247" onmouseover="UpdateTooltip(this,13,60,event)" onfocus="UpdateTooltip(this,13,60,event)" onclick="return OnShapeClick(13,60,event);" onkeyup="OnShapeKey(13,60,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Información Contractual v11.xlsx actualizado." origTitle="SALIDAS 1. Información Contractual v11.xlsx actualizado." TITLE="SALIDAS 1. Información Contractual v11.xlsx actualizado." HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/RECOLECTAR%2520INFORMACI%25C3%2593N/INFORMACI%25C3%2593N%2520CONTRACTUAL/Informaci%25C3%25B3n%2520Contractual%2520v11.xlsx" target="_top" COORDS="1004,357,1004,359,1008,355,702,355,706,359,706,357,698,357,698,359,702,363,1008,363,1012,359,1012,357,1004,357" onmouseover="UpdateTooltip(this,13,51,event)" onfocus="UpdateTooltip(this,13,51,event)" onclick="return OnShapeClick(13,51,event);" onkeyup="OnShapeKey(13,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Información Contractual v11.xlsx actualizado." origTitle="SALIDAS 1. Información Contractual v11.xlsx actualizado." TITLE="SALIDAS 1. Información Contractual v11.xlsx actualizado." HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/RECOLECTAR%2520INFORMACI%25C3%2593N/INFORMACI%25C3%2593N%2520CONTRACTUAL/Informaci%25C3%25B3n%2520Contractual%2520v11.xlsx" target="_top" COORDS="691,363,855,363,855,355,691,355,691,363" onmouseover="UpdateTooltip(this,13,51,event)" onfocus="UpdateTooltip(this,13,51,event)" onclick="return OnShapeClick(13,51,event);" onkeyup="OnShapeKey(13,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Información Contractual v11.xlsx actualizado." origTitle="SALIDAS 1. Información Contractual v11.xlsx actualizado." TITLE="SALIDAS 1. Información Contractual v11.xlsx actualizado." HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/RECOLECTAR%2520INFORMACI%25C3%2593N/INFORMACI%25C3%2593N%2520CONTRACTUAL/Informaci%25C3%25B3n%2520Contractual%2520v11.xlsx" target="_top" COORDS="922,174,1011,174,1011,138,793,138,793,107,705,107,705,138,705,142,705,170,705,174,705,205,922,205,922,174" onmouseover="UpdateTooltip(this,13,51,event)" onfocus="UpdateTooltip(this,13,51,event)" onclick="return OnShapeClick(13,51,event);" onkeyup="OnShapeKey(13,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS"  target="_top" COORDS="348,357,348,359,352,355,13,355,17,359,17,357,9,357,9,359,13,363,352,363,356,359,356,357,348,357" onmouseover="UpdateTooltip(this,13,49,event)" onfocus="UpdateTooltip(this,13,49,event)" onclick="return OnShapeClick(13,49,event);" onkeyup="OnShapeKey(13,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS"  target="_top" COORDS="0,360,13,363,14,355,1,352,0,360" onmouseover="UpdateTooltip(this,13,49,event)" onfocus="UpdateTooltip(this,13,49,event)" onclick="return OnShapeClick(13,49,event);" onkeyup="OnShapeKey(13,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS"  target="_top" COORDS="16,4,16,39,131,39,131,4,16,4" onmouseover="UpdateTooltip(this,13,49,event)" onfocus="UpdateTooltip(this,13,49,event)" onclick="return OnShapeClick(13,49,event);" onkeyup="OnShapeKey(13,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Actualizar la base de datos de contratos con la información..." origTitle="Actualizar la base de datos de contratos con la información..." TITLE="Actualizar la base de datos de contratos con la información..." HREF="png_15.htm" target="frmDrawing" COORDS="359,359,692,359,693,359,694,358,694,357,694,356,694,45,694,44,694,43,693,42,692,42,359,42,358,42,357,43,356,44,356,45,356,356,356,357,357,358,358,359,359,359" onmouseover="UpdateTooltip(this,13,26,event)" onfocus="UpdateTooltip(this,13,26,event)" onclick="return OnShapeClick(13,26,event);" onkeyup="OnShapeKey(13,26,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>
