@@ -1,0 +1,391 @@
+﻿
+@using Syncfusion.JavaScript
+@using System.Collections.Generic
+@using System.Linq
+
+@*@model IEnumerable<syncfusion_payc.Models.FlujoProyectosViewModels>*@
+@model IEnumerable<syncfusion_payc.Models.PREGUNTAS>
+@{
+    ViewBag.Title = "Agregar";
+}
+@if (User.Identity.IsAuthenticated)
+{
+    <div data-wizard-init>
+        <!-- Etapas CARGUE DE PROYECTOS-->
+        <!-- <ul class="steps">
+            <li class="img-circle step-purple" data-step="1">Etapa 1</li>
+            <li class="img-circle step-purple" data-step="2">Etapa 2</li>
+            <li class="img-circle step-purple" data-step="3">Etapa 3</li>
+            <li class="img-circle step-purple" data-step="4">Etapa 4</li>
+            <li class="img-circle step-purple" data-step="5">Etapa 5</li>
+            <li class="img-circle step-purple" data-step="6">Etapa 6</li>
+        </ul> -->
+
+        <ul class="steps">
+            <li class="img-circle step-purple" data-step="1">Etapa 1</li>
+        </ul>
+        <!-- Contenido Etapas -->
+        <div class="steps-content">
+            <h2 class="title">FORMULARIO DE REGISTRO DE PREGUNTAS</h2><br>
+            <div class="column-inter col-xs-12 col-md-6">
+                <!-- Etapa 1 CONTRATOS Y SUS CONDICIONES-->
+                <div data-Step="1">
+                    <!-- primera grid etapa 2-->
+                    <div class="column-inter col-xs-12 col-md-6">
+
+                        @*PREGUNTA*@
+                        <div class="form-group">
+                            <label>PREGUNTA</label>
+                            @Html.TextArea("DESCRIPCION", null,new { @class="e-textbox"})
+                            @*@Html.TextArea("DESCRIPCION", null, new { @class = "e-textbox" })*@
+                            <!-- style = "width: 500px;" -->
+                            <!-- @@Html.TextArea("DESCRIPCION", null, new {  style = "width: 500px;", rows = "20" }) -->
+                        </div>
+
+                        @*CONTRATO PROYECTO*@
+                        <div class="form-group">
+                        <!-- <div class="form-group oculta"> -->
+                            @*<label for="id_proyecto">DESCRIPCIÓN/label>*@
+                            @Html.TextArea("COD_PREGUNTA",null, new { @class = "e-textbox" })
+                        </div>
+
+                        @*BOTON REGISTRAR PREGUNTA -SE DEJA COMENTADO PARA LA VISTA EDIT PORQUE EN ESTA YA EXISTE UN ID DE ASPECTO QUE TIENE ATRIBUTOS ASOCIADOS)
+                        <div class="form-group">
+                            <div class="col-sm-4 col-md-3" id="registro_pregunta">
+                                <!-- <button class="btn btn-default" onclick="leer_pregunta($(this))">Registrar Pregunta</button> -->
+                                <button class="btn btn-default" onclick="leer_pregunta()">Registrar Aspecto</button>
+                            </div>
+                            <div class="col-sm-8 col-md-2">
+                            </div>
+                            <div class="col-sm-8 col-md-2">
+                            </div>
+                            <div class="col-sm-4 col-md-3" id="registro_pregunta">
+                                <p></p>
+                            </div>
+                            <div class="col-sm-8 col-md-2">
+                            </div>
+                        </div>
+                        <br /><br /><br />
+
+                        *@
+                        
+                    </div>
+                </div>
+
+                <!-- Etapa 2 GRID DE RESPUESTAS-->
+                <div data-Step="2">
+                    <!-- primera grid etapa 2-->
+                    <div class="column-inter col-xs-12 col-md-11">
+                        @*GRID DE ATRIBUTOS DEL ASPECTO*@
+                        <div class="form-group">
+                            <label>POSIBLES RESPUESTAS DE LA PREGUNTA:</label>
+                            <div class="control-section">
+                            @(Html.EJ().Grid<syncfusion_payc.Models.POSIBLES_RESPUESTAS>("Grid")
+                            .Datasource(ds => ds.URL("../GetOrderData_POSIBLES_RESPUESTAS").InsertURL("../PerformInsert_POSIBLES_RESPUESTAS").UpdateURL("../PerformUpdate_POSIBLES_RESPUESTAS").RemoveURL("../PerformDelete_POSIBLES_RESPUESTAS").Adaptor(AdaptorType.UrlAdaptor))
+                            .AllowPaging()
+                            .AllowFiltering()
+                            .Locale("es-CO")
+                            .AllowResizeToFit(true)
+                            .AllowMultiSorting()
+                            .AllowSorting()
+                            .FilterSettings(filter => { filter.FilterType(FilterType.Excel); })
+                            .EditSettings(edit => { edit.AllowAdding().AllowDeleting().AllowEditing().EditMode(EditMode.Dialog); })
+                            .ClientSideEvents(e => e.ActionBegin("inicio_grid_add_posible_respuesta"))
+                            .ToolbarSettings(toolbar =>
+                                {
+                                toolbar.ShowToolbar().ToolbarItems(items =>
+                                    {
+                                    items.AddTool(ToolBarItems.Add);
+                                    items.AddTool(ToolBarItems.Edit);
+                                    items.AddTool(ToolBarItems.Delete);
+                                    items.AddTool(ToolBarItems.Update);
+                                    items.AddTool(ToolBarItems.Cancel);
+                                    });
+                                })
+                            .Columns(col =>
+                                {
+
+                                
+
+                                col.Field("COD_POSIBLE_RESPUESTA").HeaderText("COD_POSIBLE_RESPUESTA").Visible(true).IsPrimaryKey(true).Format("{0:n0}").EditType(EditingType.NumericEdit).Add();
+                                col.Field("COD_PREGUNTA").HeaderText("COD_PREGUNTA").ForeignKeyField("COD_PREGUNTA").ForeignKeyValue("COD_PREGUNTA").Visible(true).Add();
+                                col.Field("TIPO_RESPUESTA").HeaderText("Posible respuesta").Add();
+                                col.Field("VALOR").HeaderText("Valor").Add();
+                                //col.Field("FECHA_CREACION").HeaderText("Fecha registro").Format("{0:dd/MM/yyyy}").EditType(EditingType.DateTimePicker).Add();
+                                //col.Field("FECHA_ULTIMA_MODIFICACION").HeaderText("Fecha última edición").Format("{0:dd/MM/yyyy}").EditType(EditingType.DateTimePicker).Add();
+                                //col.Field("COD_USUARIO_ULTIMA_MODIFICACION").HeaderText("Editado por").Add();
+
+                                //col.Field("COD_PREGUNTA").ForeignKeyField("COD_PREGUNTA").Type("string").ForeignKeyValue("DESCRIPCION").DataSource((IEnumerable<object>)new syncfusion_payc.Models.CONTRATISTAS_testEntities().PREGUNTAS.ToList()).HeaderText("COD_PREGUNTA").EditType(EditingType.DropdownEdit).Add();
+                                //col.Field("COD_POSIBLE_RESPUESTA").HeaderText("COD_POSIBLE_RESPUESTA").IsPrimaryKey(true).Visible(false).Format("{0:n0}").EditType(EditingType.NumericEdit).ValidationRules(v => v.AddRule("number", true)).Add();
+                                //col.Field("TIPO_RESPUESTA").HeaderText("TIPO_RESPUESTA").Add();
+                                //col.Field("VALOR").HeaderText("VALOR").Add();
+                                //col.Field("FECHA_INI").HeaderText("FECHA INICIO ROL").Format("{0:dd/MM/yyyy}").EditType(EditingType.DateTimePicker).ValidationRules(v => v.AddRule("validacion_fecha_rol_contrato", 5).AddRule("validacion_fecha_rol_ejecucion", 5).AddRule("required", true)).Add();
+                                //col.Field("COD_PREGUNTA").ForeignKeyField("COD_PREGUNTA").Type("string").ForeignKeyValue("DESCRIPCION").DataSource((IEnumerable<object>)new syncfusion_payc.Models.CONTRATISTAS_testEntities().PREGUNTAS.ToList()).HeaderText("COD_PREGUNTA").EditType(EditingType.DropdownEdit).Add();
+                                //col.Field("COD_POSIBLE_RESPUESTA").HeaderText("COD_POSIBLE_RESPUESTA").IsPrimaryKey(true).Visible(false).Format("{0:n0}").EditType(EditingType.NumericEdit).ValidationRules(v => v.AddRule("number", true)).Add();
+                                                                
+                                })
+                            )
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*Javascript*@
+    <script type="text/javascript">
+
+        function inicio_grid_add_posible_respuesta(args) {
+            var cod_pregunta = parseInt($("#COD_PREGUNTA").val());;
+            console.log(cod_pregunta)
+            //var test;
+            if (args.requestType == "save") {
+                args.data.COD_PREGUNTA = cod_pregunta;
+                //test = args.data;
+            }
+        }
+
+        
+        function leer_pregunta() {
+
+            //traer valores de preguntas y atributos seleccionados junto con timestamp e informacion de usuario
+            $pregunta= document.getElementById("DESCRIPCION").value;
+            $atributo=document.getElementById("ATRIBUTOS").value;
+            var fecha_creacion = "@HttpContext.Current.Timestamp";
+            var usuario_creacion = "@HttpContext.Current.User.Identity.Name"
+
+             //guardar valores de variables en arreglos representando filas a registrar en db
+             var pregunta = {
+                 COD_PREGUNTA: null,
+                 DESCRIPCION: $pregunta,
+                 COD_USUARIO_CREACION: null,
+                 COD_USUARIO_ULTIMA_MODIFICACION: null,
+                 FECHA_CREACION: fecha_creacion,
+                 FECHA_ULTIMA_MODIFICACION: fecha_creacion,
+                 ESTADO_PREGUNTA: null
+             };
+
+             //crear JSON con objetos asociados a arreglos(filas) para pasarlos como parametro a la db
+             var data = JSON.stringify({ PREGUNTA: pregunta });
+             //generación de url(accion) que realiza insert en DB
+             var url = "guardar_pregunta";
+             $.ajax({
+                 type: "POST",
+                 url: url,
+                 data: data,
+                 dataType: "json",
+                 contentType: "application/json; charset=utf-8",
+                 success: function (success) {
+                     alert(success);
+                 }
+             });
+        } 
+
+
+
+
+
+        //intento con el funciton para hacer un leer_ con un post que me  haga return de la info
+        @*function leer_pregunta(){
+
+            //traer valores de preguntas y atributos seleccionados junto con timestamp e informacion de usuario
+            $pregunta = "pregunta_1";
+            $atributo=document.getElementById("ATRIBUTOS").value;
+            var fecha_creacion = "@HttpContext.Current.Timestamp";
+            var usuario_creacion = "@HttpContext.Current.User.Identity.Name"
+
+            //guardar valores de variables en arreglos representando filas a registrar en db
+            //var pregunta = {
+            //    DESCRIPCION:$pregunta
+            //};
+
+            //crear JSON con objetos asociados a arreglos(filas) para pasarlos como parametro a la db
+            var data = JSON.stringify($pregunta);
+            //generación de url(accion) que realiza insert en DB
+            var url = "leer_pregunta";
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: data,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (success) {
+                    alert(success);
+                    console.log(success);
+                    $.each(success, function (i, item) {
+                        console.log(item.COD_PREGUNTA);
+                    });
+                },
+                error: function (e, text) {
+                    alert(e.message+text+"pailas")
+                }
+            });
+        }*@
+
+
+
+
+        @*function leer_pregunta(){
+
+            //traer valores de preguntas y atributos seleccionados junto con timestamp e informacion de usuario
+            $pregunta= document.getElementById("DESCRIPCION").value;
+            $atributo=document.getElementById("ATRIBUTOS").value;
+            var fecha_creacion = "@HttpContext.Current.Timestamp";
+            var usuario_creacion = "@HttpContext.Current.User.Identity.Name"
+
+            ////Traer valores
+            //var cod_cliente = $("#CLIENTES").data("ejDropDownList").option("value") || "";
+            //var valor_contrato = $("#VALOR_CONTRATO").data("ejCurrencyTextbox").getValue() || "";
+            //var ruta_contrato = $("#id_ruta_contrato").val() || "";
+            //var ruta_acta = $("#id_ruta_acta").val() || "";
+            //var cod_forma_pago = $("#FORMAS_PAGO").data("ejDropDownList").option("value") || "";
+            //var fecha_firma = $("#FECHA_FIRMA").data("ejDatePicker").getValue() || "";
+            //var fecha_inicio_ejecucion = $("#FECHA_INICIO_EJECUCION_CONTRATO").data("ejDatePicker").getValue() || "";
+            //var fecha_fin_ejecucion = $("#FECHA_FIN_EJECUCION").data("ejDatePicker").getValue() || "";
+            //var orden_servicio = $("#orden_servicio").val() || "";
+            //var tipos_condiciones_contractuales = $("#TIPO_CONDICION_CONTRACTUAL").data("ejDropDownList").option("value") || "";
+
+            //guardar valores de variables en arreglos representando filas a registrar en db
+            var pregunta = {
+                COD_PREGUNTA:null,
+                DESCRIPCION:$pregunta,
+                COD_USUARIO_CREACION:null,
+                COD_USUARIO_ULTIMA_MODIFICACION: null,
+                FECHA_CREACION: fecha_creacion,
+                FECHA_ULTIMA_MODIFICACION: fecha_creacion,
+                ESTADO_PREGUNTA: null
+            };
+
+            //crear JSON con objetos asociados a arreglos(filas) para pasarlos como parametro a la db
+            var data = JSON.stringify({ PREGUNTA: pregunta});
+            //generación de url(accion) que realiza insert en DB
+            var url = "guardar_pregunta";
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: data,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8"
+            });
+        }*@
+
+
+
+
+    var global_fecha_ini = "";
+    var global_fecha_fin = "";
+    var global_fecha_firma = "";
+
+    //Cargue de cultura
+    $(document).ready(function () {
+
+            //$("#Grid").ejGrid("model.locale", "es-CO");
+            ej.Grid.Locale["es-CO"] = {
+                EmptyRecord: "No hay registros que mostrar",
+                GroupDropArea: "Arrastre un encabezado de columna aquí para agrupar su columna",
+                DeleteOperationAlert: "No hay registros seleccionados para la operación de eliminación",
+                EditOperationAlert: "No hay registros seleccionados para la operación de edición",
+                SaveButton: "Guardar",
+                OKButton: "Aceptar",
+                CancelButton: "Cancelar",
+                EditFormTitle: "Detalles de ",
+                AddFormTitle: "Añadir nuevo registro",
+                GroupCaptionFormat: "{{:headerText}}: {{:key}} - {{:count}} {{if count == 1 }} ítem {{else}} artículos {{/if}} ",
+
+
+            };
+            ej.Pager.Locale["es-CO"] = {
+                pagerInfo: "{0} de {1} páginas ({2} artículos)",
+                firstPageTooltip: "Ir a la primera página",
+                lastPageTooltip: "Ir a la última página",
+                nextPageTooltip: "Ir a la página siguiente",
+                previousPageTooltip: "Ir a la página anterior",
+                nextPagerTooltip: "Ir al siguiente Pager",
+                previousPagerTooltip: "Ir a Pager anterior"
+            };
+
+            ej.ExcelFilter.Locale["es-CO"] = {
+                SortNoSmaller: "Ordenar de menor a mayor",
+                SortNoLarger: "Ordenar de mayor a menor",
+                SortTextAscending: "Ordenar de A a Z",
+                SortTextDescending: "Ordenar de Z a A",
+                SortDateOldest: "Ordenar por Más antiguos",
+                SortDateNewest: "Ordenar por Más reciente",
+                SortByColor: "Ordenar por color",
+                SortByCellColor: "Ordenar por color de la célula",
+                SortByFontColor: "Ordenar por Color de fuente",
+                FilterByColor: "Filtrar por color",
+                CustomSort: "Orden personalizado",
+                FilterByCellColor: "Filtrar por color de la célula",
+                FilterByFontColor: "Filtrar por color de fuente",
+                ClearFilter: "Borrar filtro",
+                NumberFilter: "Número Filtros",
+                GuidFilter: "Gud Filtros",
+                TextFilter: "Filtros de texto",
+                DateFilter: "Filtros de fecha",
+                DateTimeFilter: "Fecha filtros de tiempo",
+                SelectAll: "Seleccionar todo",
+                Blanks: "Los espacios en blanco",
+                Search: "Buscar",
+                Showrowswhere: "Mostrar filas",
+                NumericTextboxWaterMark: "introducir el valor",
+                StringMenuOptions: [{ text: "Igual", value: "equal" }, { text: "No es equal", value: "notequal" }, { text: "Comienza con", value: "startswith" }, { text: "Termina con", value: "endswith" }, { text: "contiene", value: "contains" }, { text: "Filtro personalizado", value: "customfilter" },],
+                NumberMenuOptions: [{ text: "Igual", value: "equal" }, { text: "No es equal", value: "notequal" }, { text: "Menos que", value: "lessthan" }, { text: "Menor o equal", value: "lessthanorequal" }, { text: "Mas grande que", value: "greaterthan" }, { text: "Mayor que o equal", value: "greaterthanorequal" }, { text: "Entre", value: "between" }, { text: "Filtro personalizado", value: "customfilter" },],
+                GuidMenuOptions: [{ text: "Igual", value: "equal" }, { text: "No es equal", value: "notequal" }, { text: "Filtro personalizado", value: "customfilter" },],
+                DateMenuOptions: [{ text: "Igual", value: "equal" }, { text: "No es equal", value: "notequal" }, { text: "Menos que", value: "lessthan" }, { text: "Menor o equal", value: "lessthanorequal" }, { text: "Mas grande que", value: "greaterthan" }, { text: "Mayor que o equal", value: "greaterthanorequal" }, { text: "Entre", value: "between" }, { text: "Filtro personalizado", value: "customfilter" },],
+                DatetimeMenuOptions: [{ text: "Igual", value: "equal" }, { text: "No es equal", value: "notequal" }, { text: "Menos que", value: "lessthan" }, { text: "Menor o equal", value: "lessthanorequal" }, { text: "Mas grande que", value: "greaterthan" }, { text: "Mayor que o equal", value: "greaterthanorequal" }, { text: "Entre", value: "between" }, { text: "Filtro personalizado", value: "customfilter" },],
+                Top10MenuOptions: [{ text: "Parte superior", value: "top" }, { text: "Fondo", value: "bottom" },],
+                title: "Filtro personalizado",
+                PredicateAnd: "Y",
+                PredicateOr: "O",
+                Ok: "Aceptar",
+                MatchCase: "Coincidencia",
+                Cancel: "Cancelar",
+                NoResult: "No se encontraron coincidencias",
+                CheckBoxStatusMsg: "No todos los elementos que muestran",
+                DatePickerWaterMark: "Seleccione fecha",
+                DateTimePickerWaterMark: "Seleccionar fecha y hora",
+                True: "cierto",
+                False: "falso"
+            };
+            ej.DatePicker.Locale["es-CO"] = {
+                watermarkText: "Seleccione fecha",
+                buttonText: "Hoy",
+            };
+            /*ej.Uploadbox.Locale["es-CO"] = {
+                buttonText: {
+                    upload: "Subir",
+                    browse: "Vistazo",
+                    cancel: "Cancelar",
+                    close: "Cerca"
+                },
+                dialogText: {
+                    title: "Subir Box",
+                    name: "Nombre",
+                    size: "tamaño",
+                    status: "Estado"
+                },
+                dropAreaText: "Soltar los archivos o haga clic para cargar",
+                filedetail: "El tamaño del archivo seleccionado es demasiado grande. Por favor, seleccione un archivo dentro del tamaño válido.",
+                denyError: "No se permiten archivos con extensiones #Extension.",
+                allowError: "Sólo se permiten archivos con extensiones #Extension.",
+                cancelToolTip: "Cancelar",
+                removeToolTip: "retirar",
+                retryToolTip: "Rever",
+                completedToolTip: "Terminado",
+                failedToolTip: "Ha fallado",
+                closeToolTip: "Cerca",
+            };*/
+            ej.NumericTextbox.Locale["es-CO"] = {
+                watermarkText: "introducir el valor",
+            };
+            ej.NumericTextbox.Locale = "es-CO";
+        });
+    </script>
+}
+
+<!--Modelos o templates para botones-->
+<script type="text/x-jsrender" id="Adjuntar">
+    <div id="boton_adjuntar"></div>
+</script>

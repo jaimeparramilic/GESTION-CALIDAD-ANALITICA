@@ -1,0 +1,1954 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="test_payc_contabilidadModelStoreContainer" CdmEntityContainer="test_payc_contabilidadEntities">
+    <EntitySetMapping Name="ASIGNACION_CARTERA">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.ASIGNACION_CARTERA">
+        <MappingFragment StoreEntitySet="ASIGNACION_CARTERA">
+          <ScalarProperty Name="FECHA_ASIGNACION" ColumnName="FECHA_ASIGNACION" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="COD_CARTERA" ColumnName="COD_CARTERA" />
+          <ScalarProperty Name="COD_ASIGN_CARTERA" ColumnName="COD_ASIGN_CARTERA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CARGOS">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.CARGOS">
+        <MappingFragment StoreEntitySet="CARGOS">
+          <ScalarProperty Name="DESCRIPCION_CARGO" ColumnName="DESCRIPCION_CARGO" />
+          <ScalarProperty Name="COD_CARGO" ColumnName="COD_CARGO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAUSA_ESTADO">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.CAUSA_ESTADO">
+        <MappingFragment StoreEntitySet="CAUSA_ESTADO">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_CAUSA_ESTADO" ColumnName="COD_CAUSA_ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CENTROS_COSTOS">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.CENTROS_COSTOS">
+        <MappingFragment StoreEntitySet="CENTROS_COSTOS">
+          <ScalarProperty Name="COD_ESTADO_CECO" ColumnName="COD_ESTADO_CECO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="CECO_PSL" ColumnName="CECO_PSL" />
+          <ScalarProperty Name="COD_CECO" ColumnName="COD_CECO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="COLABORADORES">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.COLABORADORES">
+        <MappingFragment StoreEntitySet="COLABORADORES">
+          <ScalarProperty Name="APELLIDOS" ColumnName="APELLIDOS" />
+          <ScalarProperty Name="NOMBRES" ColumnName="NOMBRES" />
+          <ScalarProperty Name="COD_ESTADO_COLABORADOR" ColumnName="COD_ESTADO_COLABORADOR" />
+          <ScalarProperty Name="COD_TIPO_DE_CONTRATO" ColumnName="COD_TIPO_DE_CONTRATO" />
+          <ScalarProperty Name="FECHA_INGRESO" ColumnName="FECHA_INGRESO" />
+          <ScalarProperty Name="CENTROS_COSTOS" ColumnName="CENTROS_COSTOS" />
+          <ScalarProperty Name="ESTADO_CIVIL" ColumnName="ESTADO_CIVIL" />
+          <ScalarProperty Name="CORREO_ELECTRONICO" ColumnName="CORREO_ELECTRONICO" />
+          <ScalarProperty Name="CELULAR" ColumnName="CELULAR" />
+          <ScalarProperty Name="FECHA_NACIMIENTO" ColumnName="FECHA_NACIMIENTO" />
+          <ScalarProperty Name="COD_GENERO" ColumnName="COD_GENERO" />
+          <ScalarProperty Name="CEDULA" ColumnName="CEDULA" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_CARGO" ColumnName="COD_CARGO" />
+          <ScalarProperty Name="COD_COLABORADOR" ColumnName="COD_COLABORADOR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="COMPROMISOS_ENTREGABLES">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.COMPROMISOS_ENTREGABLES">
+        <MappingFragment StoreEntitySet="COMPROMISOS_ENTREGABLES">
+          <ScalarProperty Name="RUTA_ENTREGABLE" ColumnName="RUTA_ENTREGABLE" />
+          <ScalarProperty Name="FECHA_COMPROMISO" ColumnName="FECHA_COMPROMISO" />
+          <ScalarProperty Name="ESTADO_COMPROMISO" ColumnName="ESTADO_COMPROMISO" />
+          <ScalarProperty Name="COD_ENTREGABLE" ColumnName="COD_ENTREGABLE" />
+          <ScalarProperty Name="COD_CARTERA" ColumnName="COD_CARTERA" />
+          <ScalarProperty Name="COD_COMPROMISO" ColumnName="COD_COMPROMISO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="COMPROMISOS_PAGOS">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.COMPROMISOS_PAGOS">
+        <MappingFragment StoreEntitySet="COMPROMISOS_PAGOS">
+          <ScalarProperty Name="ESTADO_COMPROMISO" ColumnName="ESTADO_COMPROMISO" />
+          <ScalarProperty Name="FECHA_COMPROMISO_PAGO" ColumnName="FECHA_COMPROMISO_PAGO" />
+          <ScalarProperty Name="COD_CARTERA" ColumnName="COD_CARTERA" />
+          <ScalarProperty Name="COD_COMPROMISO" ColumnName="COD_COMPROMISO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONCEPTOS">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.CONCEPTOS">
+        <MappingFragment StoreEntitySet="CONCEPTOS">
+          <ScalarProperty Name="TEXTO_EN_PSL" ColumnName="TEXTO_EN_PSL" />
+          <ScalarProperty Name="CODIGO_EN_PSL" ColumnName="CODIGO_EN_PSL" />
+          <ScalarProperty Name="COD_CONCEPTO_PSL" ColumnName="COD_CONCEPTO_PSL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONTRATO_COLABORADOR">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.CONTRATO_COLABORADOR">
+        <MappingFragment StoreEntitySet="CONTRATO_COLABORADOR">
+          <ScalarProperty Name="FECHA_FIN" ColumnName="FECHA_FIN" />
+          <ScalarProperty Name="FECHA_INI" ColumnName="FECHA_INI" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_COLABORADOR" ColumnName="COD_COLABORADOR" />
+          <ScalarProperty Name="COD_CONTRATO_COLABORADOR" ColumnName="COD_CONTRATO_COLABORADOR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONTRATO_ROL_CARGO">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.CONTRATO_ROL_CARGO">
+        <MappingFragment StoreEntitySet="CONTRATO_ROL_CARGO">
+          <ScalarProperty Name="COD_CARGO" ColumnName="COD_CARGO" />
+          <ScalarProperty Name="COD_CONTRATO_ROL_CARGO" ColumnName="COD_CONTRATO_ROL_CARGO" />
+          <ScalarProperty Name="COD_CONTRATO_ROL" ColumnName="COD_CONTRATO_ROL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONTRATOS">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.CONTRATOS">
+        <MappingFragment StoreEntitySet="CONTRATOS">
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO_1" ColumnName="COD_CONTRATO_PROYECTO_1" />
+          <ScalarProperty Name="RUTA_DOCUMENTO" ColumnName="RUTA_DOCUMENTO" />
+          <ScalarProperty Name="ORDEN_SERVICIO" ColumnName="ORDEN_SERVICIO" />
+          <ScalarProperty Name="VALOR_CONTRATO" ColumnName="VALOR_CONTRATO" />
+          <ScalarProperty Name="FECHA_FIN_EJECUCION" ColumnName="FECHA_FIN_EJECUCION" />
+          <ScalarProperty Name="FECHA_INICIO_EJECUCION" ColumnName="FECHA_INICIO_EJECUCION" />
+          <ScalarProperty Name="RUTA_ACTA_INICIO" ColumnName="RUTA_ACTA_INICIO" />
+          <ScalarProperty Name="FECHA_FIRMA" ColumnName="FECHA_FIRMA" />
+          <ScalarProperty Name="COD_CLIENTE" ColumnName="COD_CLIENTE" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_CONTRATO" ColumnName="COD_CONTRATO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONTRATOS_CONDICIONES">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.CONTRATOS_CONDICIONES">
+        <MappingFragment StoreEntitySet="CONTRATOS_CONDICIONES">
+          <ScalarProperty Name="FECHA_EXCLUSION" ColumnName="FECHA_EXCLUSION" />
+          <ScalarProperty Name="FECHA_INCLUSION" ColumnName="FECHA_INCLUSION" />
+          <ScalarProperty Name="VIGENTE" ColumnName="VIGENTE" />
+          <ScalarProperty Name="COD_TIPO_CONDICION" ColumnName="COD_TIPO_CONDICION" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_CONTRATO_CONDICION" ColumnName="COD_CONTRATO_CONDICION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONTRATOS_ROL">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.CONTRATOS_ROL">
+        <MappingFragment StoreEntitySet="CONTRATOS_ROL">
+          <ScalarProperty Name="COD_CONCEPTO_PSL" ColumnName="COD_CONCEPTO_PSL" />
+          <ScalarProperty Name="DIAS_FRACCION" ColumnName="DIAS_FRACCION" />
+          <ScalarProperty Name="RUTA_DOCUMENTO" ColumnName="RUTA_DOCUMENTO" />
+          <ScalarProperty Name="TIPO_TRIBUTACION" ColumnName="TIPO_TRIBUTACION" />
+          <ScalarProperty Name="OBSERVACIONES" ColumnName="OBSERVACIONES" />
+          <ScalarProperty Name="DEDICACION" ColumnName="DEDICACION" />
+          <ScalarProperty Name="VALOR_MENSUAL_PRESTACIONES_MULTIPLICADOR" ColumnName="VALOR_MENSUAL_PRESTACIONES_MULTIPLICADOR" />
+          <ScalarProperty Name="FACTOR_MULTIPLICADOR" ColumnName="FACTOR_MULTIPLICADOR" />
+          <ScalarProperty Name="VALOR_MENSUAL_PRESTACIONES" ColumnName="VALOR_MENSUAL_PRESTACIONES" />
+          <ScalarProperty Name="PRESTACIONES" ColumnName="PRESTACIONES" />
+          <ScalarProperty Name="VALOR_MENSUAL_SIN_PRESTACIONES" ColumnName="VALOR_MENSUAL_SIN_PRESTACIONES" />
+          <ScalarProperty Name="MESES" ColumnName="MESES" />
+          <ScalarProperty Name="FECHA_INI" ColumnName="FECHA_INI" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+          <ScalarProperty Name="COD_CONTRATO_ROL" ColumnName="COD_CONTRATO_ROL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DEBUG">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.DEBUG">
+        <MappingFragment StoreEntitySet="DEBUG">
+          <ScalarProperty Name="VARIABLE" ColumnName="VARIABLE" />
+          <ScalarProperty Name="DEBUG1" ColumnName="DEBUG" />
+          <ScalarProperty Name="COD_DEBUG" ColumnName="COD_DEBUG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DETALLE_FACTURA_ITEM">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.DETALLE_FACTURA_ITEM">
+        <MappingFragment StoreEntitySet="DETALLE_FACTURA_ITEM">
+          <ScalarProperty Name="COD_GRUPO_FACTURA" ColumnName="COD_GRUPO_FACTURA" />
+          <ScalarProperty Name="COD_CONCEPTO_PSL" ColumnName="COD_CONCEPTO_PSL" />
+          <ScalarProperty Name="COD_ESTADO_DETALLE" ColumnName="COD_ESTADO_DETALLE" />
+          <ScalarProperty Name="COD_FACTURA" ColumnName="COD_FACTURA" />
+          <ScalarProperty Name="OBSERVACIONES" ColumnName="OBSERVACIONES" />
+          <ScalarProperty Name="COD_CAUSA_ESTADO" ColumnName="COD_CAUSA_ESTADO" />
+          <ScalarProperty Name="COD_ESTADO_FACTURA" ColumnName="COD_ESTADO_FACTURA" />
+          <ScalarProperty Name="USUARIO" ColumnName="USUARIO" />
+          <ScalarProperty Name="FECHA_REGISTRO" ColumnName="FECHA_REGISTRO" />
+          <ScalarProperty Name="VALOR_SIN_IMPUESTOS" ColumnName="VALOR_SIN_IMPUESTOS" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="COD_ITEM_CONTRATO" ColumnName="COD_ITEM_CONTRATO" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_DETALLE_FACTURA_ITEM" ColumnName="COD_DETALLE_FACTURA_ITEM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DETALLE_FACTURA_PERS">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.DETALLE_FACTURA_PERS">
+        <MappingFragment StoreEntitySet="DETALLE_FACTURA_PERS">
+          <ScalarProperty Name="COD_GRUPO_FACTURA" ColumnName="COD_GRUPO_FACTURA" />
+          <ScalarProperty Name="COD_CONCEPTO_PSL" ColumnName="COD_CONCEPTO_PSL" />
+          <ScalarProperty Name="COD_ESTADO_DETALLE" ColumnName="COD_ESTADO_DETALLE" />
+          <ScalarProperty Name="COD_FACTURA" ColumnName="COD_FACTURA" />
+          <ScalarProperty Name="OBSERVACIONES" ColumnName="OBSERVACIONES" />
+          <ScalarProperty Name="COD_CAUSA_ESTADO" ColumnName="COD_CAUSA_ESTADO" />
+          <ScalarProperty Name="COD_ESTADO_FACTURA" ColumnName="COD_ESTADO_FACTURA" />
+          <ScalarProperty Name="USUARIO" ColumnName="USUARIO" />
+          <ScalarProperty Name="FECHA_REGISTRO" ColumnName="FECHA_REGISTRO" />
+          <ScalarProperty Name="VALOR_SIN_IMPUESTOS" ColumnName="VALOR_SIN_IMPUESTOS" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_DETALLE_FACTURA_PERS" ColumnName="COD_DETALLE_FACTURA_PERS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EMAIL_CLIENTES">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.EMAIL_CLIENTES">
+        <MappingFragment StoreEntitySet="EMAIL_CLIENTES">
+          <ScalarProperty Name="FACTURACION_ELECTRONICA" ColumnName="FACTURACION_ELECTRONICA" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="COD_CLIENTE" ColumnName="COD_CLIENTE" />
+          <ScalarProperty Name="COD_EMAIL" ColumnName="COD_EMAIL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ENTREGABLES">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.ENTREGABLES">
+        <MappingFragment StoreEntitySet="ENTREGABLES">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_COLABORADOR" ColumnName="COD_COLABORADOR" />
+          <ScalarProperty Name="COD_CONTRATO_CONDICION" ColumnName="COD_CONTRATO_CONDICION" />
+          <ScalarProperty Name="COD_ENTREGABLE" ColumnName="COD_ENTREGABLE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ESTADO_COLABORADOR">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.ESTADO_COLABORADOR">
+        <MappingFragment StoreEntitySet="ESTADO_COLABORADOR">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_ESTADO_COLABORADOR" ColumnName="COD_ESTADO_COLABORADOR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ESTADOS_CARTERA">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.ESTADOS_CARTERA">
+        <MappingFragment StoreEntitySet="ESTADOS_CARTERA">
+          <ScalarProperty Name="DIAS" ColumnName="DIAS" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_ESTADO_CARTERA" ColumnName="COD_ESTADO_CARTERA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ESTADOS_CECO">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.ESTADOS_CECO">
+        <MappingFragment StoreEntitySet="ESTADOS_CECO">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_ESTADO_CECO" ColumnName="COD_ESTADO_CECO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ESTADOS_DETALLE">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.ESTADOS_DETALLE">
+        <MappingFragment StoreEntitySet="ESTADOS_DETALLE">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_ESTADO_DETALLE" ColumnName="COD_ESTADO_DETALLE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ESTADOS_FACTURAS">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.ESTADOS_FACTURAS">
+        <MappingFragment StoreEntitySet="ESTADOS_FACTURAS">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_ESTADO_FACTURA" ColumnName="COD_ESTADO_FACTURA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ESTADOS_ORDEN_SERVICIO">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.ESTADOS_ORDEN_SERVICIO">
+        <MappingFragment StoreEntitySet="ESTADOS_ORDEN_SERVICIO">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_ESTADO_ORDEN_SERVICIO" ColumnName="COD_ESTADO_ORDEN_SERVICIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ESTUDIOS_COLABORADOR">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.ESTUDIOS_COLABORADOR">
+        <MappingFragment StoreEntitySet="ESTUDIOS_COLABORADOR">
+          <ScalarProperty Name="INSTITUCION_GRADO" ColumnName="INSTITUCION_GRADO" />
+          <ScalarProperty Name="FECHA_GRADO" ColumnName="FECHA_GRADO" />
+          <ScalarProperty Name="TITULO_ESTUDIO" ColumnName="TITULO_ESTUDIO" />
+          <ScalarProperty Name="NIVEL_ESTUDIO" ColumnName="NIVEL_ESTUDIO" />
+          <ScalarProperty Name="COD_COLABORADOR" ColumnName="COD_COLABORADOR" />
+          <ScalarProperty Name="COD_ESTUDIOS" ColumnName="COD_ESTUDIOS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FLUJO_INGRESOS_ITEMS">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.FLUJO_INGRESOS_ITEMS">
+        <MappingFragment StoreEntitySet="FLUJO_INGRESOS_ITEMS">
+          <ScalarProperty Name="USUARIO_REGISTRO" ColumnName="USUARIO_REGISTRO" />
+          <ScalarProperty Name="FECHA_REGISTRO" ColumnName="FECHA_REGISTRO" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="VALOR_TOTAL" ColumnName="VALOR_TOTAL" />
+          <ScalarProperty Name="VALOR_VARIABLE" ColumnName="VALOR_VARIABLE" />
+          <ScalarProperty Name="VALOR_FIJO" ColumnName="VALOR_FIJO" />
+          <ScalarProperty Name="ETAPA" ColumnName="ETAPA" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_ITEM_CONTRATO" ColumnName="COD_ITEM_CONTRATO" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="COD_FLUJO_INGRESOS_ITEMS" ColumnName="COD_FLUJO_INGRESOS_ITEMS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FLUJO_INGRESOS_ROL">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.FLUJO_INGRESOS_ROL">
+        <MappingFragment StoreEntitySet="FLUJO_INGRESOS_ROL">
+          <ScalarProperty Name="USUARIO_REGISTRO" ColumnName="USUARIO_REGISTRO" />
+          <ScalarProperty Name="FECHA_REGISTRO" ColumnName="FECHA_REGISTRO" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="VALOR_FACTOR_MULTIPLICADOR" ColumnName="VALOR_FACTOR_MULTIPLICADOR" />
+          <ScalarProperty Name="VALOR_CON_PRESTACIONES" ColumnName="VALOR_CON_PRESTACIONES" />
+          <ScalarProperty Name="VALOR_SIN_PRESTACIONES" ColumnName="VALOR_SIN_PRESTACIONES" />
+          <ScalarProperty Name="ETAPA" ColumnName="ETAPA" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="COD_FLUJO_INGRESOS_ROL" ColumnName="COD_FLUJO_INGRESOS_ROL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FORMAS_PAGO">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.FORMAS_PAGO">
+        <MappingFragment StoreEntitySet="FORMAS_PAGO">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_FORMA_PAGO" ColumnName="COD_FORMA_PAGO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FORMAS_PAGO_FECHAS">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.FORMAS_PAGO_FECHAS">
+        <MappingFragment StoreEntitySet="FORMAS_PAGO_FECHAS">
+          <ScalarProperty Name="PERIODO_TEXTO" ColumnName="PERIODO_TEXTO" />
+          <ScalarProperty Name="FECHA_FIN" ColumnName="FECHA_FIN" />
+          <ScalarProperty Name="FECHA_INICIO" ColumnName="FECHA_INICIO" />
+          <ScalarProperty Name="FECHA_FORMA_PAGO" ColumnName="FECHA_FORMA_PAGO" />
+          <ScalarProperty Name="COD_FORMA_PAGO" ColumnName="COD_FORMA_PAGO" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GENEROS">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.GENEROS">
+        <MappingFragment StoreEntitySet="GENEROS">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_GENERO" ColumnName="COD_GENERO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GESTION_ENTREGABLES">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.GESTION_ENTREGABLES">
+        <MappingFragment StoreEntitySet="GESTION_ENTREGABLES">
+          <ScalarProperty Name="OBSERVACIONES" ColumnName="OBSERVACIONES" />
+          <ScalarProperty Name="FECHA_CARGA" ColumnName="FECHA_CARGA" />
+          <ScalarProperty Name="URL_ARCHIVO" ColumnName="URL_ARCHIVO" />
+          <ScalarProperty Name="COD_ACUERDO_PAGO" ColumnName="COD_ACUERDO_PAGO" />
+          <ScalarProperty Name="COD_GEST_ENTREGABLE" ColumnName="COD_GEST_ENTREGABLE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GRUPOS_FACTURA">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.GRUPOS_FACTURA">
+        <MappingFragment StoreEntitySet="GRUPOS_FACTURA">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_GRUPO_FACTURA" ColumnName="COD_GRUPO_FACTURA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INCREMENTO_ORDEN">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.INCREMENTO_ORDEN">
+        <MappingFragment StoreEntitySet="INCREMENTO_ORDEN">
+          <ScalarProperty Name="FECHA_INCREMENTO" ColumnName="FECHA_INCREMENTO" />
+          <ScalarProperty Name="FACTOR_INCREMENTO" ColumnName="FACTOR_INCREMENTO" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_INCREMENTO_ORDEN" ColumnName="COD_INCREMENTO_ORDEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INCREMENTO_SALARIAL">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.INCREMENTO_SALARIAL">
+        <MappingFragment StoreEntitySet="INCREMENTO_SALARIAL">
+          <ScalarProperty Name="FACTOR_INCREMENTO" ColumnName="FACTOR_INCREMENTO" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="COD_INCREMENTO" ColumnName="COD_INCREMENTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ITEMS">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.ITEMS">
+        <MappingFragment StoreEntitySet="ITEMS">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_ITEM" ColumnName="COD_ITEM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ITEMS_CONTRATO">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.ITEMS_CONTRATO">
+        <MappingFragment StoreEntitySet="ITEMS_CONTRATO">
+          <ScalarProperty Name="COD_CONCEPTO_PSL" ColumnName="COD_CONCEPTO_PSL" />
+          <ScalarProperty Name="DIAS_FRACCION" ColumnName="DIAS_FRACCION" />
+          <ScalarProperty Name="COD_TIPO_REEMBOLSO" ColumnName="COD_TIPO_REEMBOLSO" />
+          <ScalarProperty Name="OBSERVACIONES" ColumnName="OBSERVACIONES" />
+          <ScalarProperty Name="MESES_USO" ColumnName="MESES_USO" />
+          <ScalarProperty Name="FECHA_INI_USO" ColumnName="FECHA_INI_USO" />
+          <ScalarProperty Name="CANTIDAD" ColumnName="CANTIDAD" />
+          <ScalarProperty Name="PORCENTAJE_PERSONAL" ColumnName="PORCENTAJE_PERSONAL" />
+          <ScalarProperty Name="COSTO_MENSUAL_UNITARIO" ColumnName="COSTO_MENSUAL_UNITARIO" />
+          <ScalarProperty Name="COSTO_INICIAL_UNITARIO" ColumnName="COSTO_INICIAL_UNITARIO" />
+          <ScalarProperty Name="REUTILIZABLE" ColumnName="REUTILIZABLE" />
+          <ScalarProperty Name="ITEM_REEMBOLZABLE" ColumnName="ITEM_REEMBOLZABLE" />
+          <ScalarProperty Name="COD_ITEM" ColumnName="COD_ITEM" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_ITEM_CONTRATO" ColumnName="COD_ITEM_CONTRATO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ITEMS_ROLES">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.ITEMS_ROLES">
+        <MappingFragment StoreEntitySet="ITEMS_ROLES">
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+          <ScalarProperty Name="COD_ITEM_CONTRATO" ColumnName="COD_ITEM_CONTRATO" />
+          <ScalarProperty Name="COD_ITEM_ROL" ColumnName="COD_ITEM_ROL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PROYECTOS">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.PROYECTOS">
+        <MappingFragment StoreEntitySet="PROYECTOS">
+          <ScalarProperty Name="COD_TIPO_OBRA" ColumnName="COD_TIPO_OBRA" />
+          <ScalarProperty Name="COD_TIPO_SERVICIO" ColumnName="COD_TIPO_SERVICIO" />
+          <ScalarProperty Name="DIRECCION" ColumnName="DIRECCION" />
+          <ScalarProperty Name="VALOR_PROYECTO" ColumnName="VALOR_PROYECTO" />
+          <ScalarProperty Name="PISOS" ColumnName="PISOS" />
+          <ScalarProperty Name="SOTANOS" ColumnName="SOTANOS" />
+          <ScalarProperty Name="CIMENTACION" ColumnName="CIMENTACION" />
+          <ScalarProperty Name="ESTRUCTURA" ColumnName="ESTRUCTURA" />
+          <ScalarProperty Name="FECHA_INI_LIQUIDACION" ColumnName="FECHA_INI_LIQUIDACION" />
+          <ScalarProperty Name="PLAZO_LIQUIDACION" ColumnName="PLAZO_LIQUIDACION" />
+          <ScalarProperty Name="FECHA_INI_OBRA" ColumnName="FECHA_INI_OBRA" />
+          <ScalarProperty Name="PLAZO_OBRA" ColumnName="PLAZO_OBRA" />
+          <ScalarProperty Name="FECHA_INI_PREVIA" ColumnName="FECHA_INI_PREVIA" />
+          <ScalarProperty Name="PLAZO_PREVIA" ColumnName="PLAZO_PREVIA" />
+          <ScalarProperty Name="AREA" ColumnName="AREA" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="CENTRO_COSTOS" ColumnName="CENTRO_COSTOS" />
+          <ScalarProperty Name="COD_PROYECTO" ColumnName="COD_PROYECTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REGISTRO_ITEMS_OTROS_COSTOS">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.REGISTRO_ITEMS_OTROS_COSTOS">
+        <MappingFragment StoreEntitySet="REGISTRO_ITEMS_OTROS_COSTOS">
+          <ScalarProperty Name="PARAMETRON" ColumnName="PARAMETRON" />
+          <ScalarProperty Name="PARAMETRO4" ColumnName="PARAMETRO4" />
+          <ScalarProperty Name="PARAMETRO3" ColumnName="PARAMETRO3" />
+          <ScalarProperty Name="PARAMETRO2" ColumnName="PARAMETRO2" />
+          <ScalarProperty Name="PARAMETRO1" ColumnName="PARAMETRO1" />
+          <ScalarProperty Name="CANTIDAD" ColumnName="CANTIDAD" />
+          <ScalarProperty Name="VALOR_COMERCIAL" ColumnName="VALOR_COMERCIAL" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_ITEM_CONTRATO" ColumnName="COD_ITEM_CONTRATO" />
+          <ScalarProperty Name="COD_REGISTRO_ITEMS" ColumnName="COD_REGISTRO_ITEMS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ROL_CARGO_ORDEN">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.ROL_CARGO_ORDEN">
+        <MappingFragment StoreEntitySet="ROL_CARGO_ORDEN">
+          <ScalarProperty Name="COD_CARGO" ColumnName="COD_CARGO" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_ROL_CARGO_ORDEN" ColumnName="COD_ROL_CARGO_ORDEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ROLES">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.ROLES">
+        <MappingFragment StoreEntitySet="ROLES">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SINO">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.SINO">
+        <MappingFragment StoreEntitySet="SINO">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_SINO" ColumnName="COD_SINO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAG_ORDEN">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.TAG_ORDEN">
+        <MappingFragment StoreEntitySet="TAG_ORDEN">
+          <ScalarProperty Name="TAG" ColumnName="TAG" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_TAG_ORDEN" ColumnName="COD_TAG_ORDEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPO_CONDICION_CONTRACTUAL">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.TIPO_CONDICION_CONTRACTUAL">
+        <MappingFragment StoreEntitySet="TIPO_CONDICION_CONTRACTUAL">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_TIPO_CONDICION" ColumnName="COD_TIPO_CONDICION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPO_CONTRATO">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.TIPO_CONTRATO">
+        <MappingFragment StoreEntitySet="TIPO_CONTRATO">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_TIPO_CONTRATO" ColumnName="COD_TIPO_CONTRATO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPOS_GESTION">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.TIPOS_GESTION">
+        <MappingFragment StoreEntitySet="TIPOS_GESTION">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_TIPO_GESTION" ColumnName="COD_TIPO_GESTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPOS_NOVEDAD">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.TIPOS_NOVEDAD">
+        <MappingFragment StoreEntitySet="TIPOS_NOVEDAD">
+          <ScalarProperty Name="FACTOR_MULTIPLICADOR" ColumnName="FACTOR_MULTIPLICADOR" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_TIPO_NOVEDAD" ColumnName="COD_TIPO_NOVEDAD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPOS_NOVEDAD_CONDICION">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.TIPOS_NOVEDAD_CONDICION">
+        <MappingFragment StoreEntitySet="TIPOS_NOVEDAD_CONDICION">
+          <ScalarProperty Name="COD_TIPO_CONDICION" ColumnName="COD_TIPO_CONDICION" />
+          <ScalarProperty Name="COD_TIPO_NOVEDAD" ColumnName="COD_TIPO_NOVEDAD" />
+          <ScalarProperty Name="COD_TIPO_NOVEDAD_CONDICION" ColumnName="COD_TIPO_NOVEDAD_CONDICION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPOS_OBRA">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.TIPOS_OBRA">
+        <MappingFragment StoreEntitySet="TIPOS_OBRA">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_TIPO_OBRA" ColumnName="COD_TIPO_OBRA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPOS_REEMBOLSO">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.TIPOS_REEMBOLSO">
+        <MappingFragment StoreEntitySet="TIPOS_REEMBOLSO">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_TIPO_REEMBOLSO" ColumnName="COD_TIPO_REEMBOLSO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPOS_SERVICIOS">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.TIPOS_SERVICIOS">
+        <MappingFragment StoreEntitySet="TIPOS_SERVICIOS">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_TIPO_SERVICIO" ColumnName="COD_TIPO_SERVICIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPOS_TRIBUTACION">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.TIPOS_TRIBUTACION">
+        <MappingFragment StoreEntitySet="TIPOS_TRIBUTACION">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_TIPO_TRIBUTACION" ColumnName="COD_TIPO_TRIBUTACION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="xTEMPO">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.xTEMPO">
+        <MappingFragment StoreEntitySet="xTEMPO">
+          <ScalarProperty Name="texto" ColumnName="texto" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="COMBINACIONES_GASTOS_ADMINISTRATIVOS">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.COMBINACIONES_GASTOS_ADMINISTRATIVOS">
+        <MappingFragment StoreEntitySet="COMBINACIONES_GASTOS_ADMINISTRATIVOS">
+          <ScalarProperty Name="SIGNO" ColumnName="SIGNO" />
+          <ScalarProperty Name="CUENTA" ColumnName="CUENTA" />
+          <ScalarProperty Name="CALCULO" ColumnName="CALCULO" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INCREMENTO_SALARIAL_TEMP">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.INCREMENTO_SALARIAL_TEMP">
+        <MappingFragment StoreEntitySet="INCREMENTO_SALARIAL_TEMP">
+          <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+          <ScalarProperty Name="FACTOR_INCREMENTO" ColumnName="FACTOR_INCREMENTO" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="COD_INCREMENTO" ColumnName="COD_INCREMENTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReportsTable">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.ReportsTable">
+        <MappingFragment StoreEntitySet="ReportsTable">
+          <ScalarProperty Name="Report" ColumnName="Report" />
+          <ScalarProperty Name="ReportName" ColumnName="ReportName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CHECK_COLABORADOR_MES">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.CHECK_COLABORADOR_MES">
+        <MappingFragment StoreEntitySet="CHECK_COLABORADOR_MES">
+          <ScalarProperty Name="ROL_TEXTO" ColumnName="ROL_TEXTO" />
+          <ScalarProperty Name="CUENTA" ColumnName="CUENTA" />
+          <ScalarProperty Name="FECHA_FORMA_PAGO" ColumnName="FECHA_FORMA_PAGO" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="COLABORADORES_CONTAR_ESTUDIOS">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.COLABORADORES_CONTAR_ESTUDIOS">
+        <MappingFragment StoreEntitySet="COLABORADORES_CONTAR_ESTUDIOS">
+          <ScalarProperty Name="Estudios" ColumnName="Estudios" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="TIPO_DE_CONTRATO" ColumnName="TIPO_DE_CONTRATO" />
+          <ScalarProperty Name="FECHA_INGRESO" ColumnName="FECHA_INGRESO" />
+          <ScalarProperty Name="CENTROS_COSTOS" ColumnName="CENTROS_COSTOS" />
+          <ScalarProperty Name="ESTADO_CIVIL" ColumnName="ESTADO_CIVIL" />
+          <ScalarProperty Name="CORREO_ELECTRONICO" ColumnName="CORREO_ELECTRONICO" />
+          <ScalarProperty Name="CELULAR" ColumnName="CELULAR" />
+          <ScalarProperty Name="FECHA_NACIMIENTO" ColumnName="FECHA_NACIMIENTO" />
+          <ScalarProperty Name="GENERO" ColumnName="GENERO" />
+          <ScalarProperty Name="CEDULA" ColumnName="CEDULA" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_CARGO" ColumnName="COD_CARGO" />
+          <ScalarProperty Name="COD_COLABORADOR" ColumnName="COD_COLABORADOR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="COLARADORES_CONCAT_ESTUDIOS">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.COLARADORES_CONCAT_ESTUDIOS">
+        <MappingFragment StoreEntitySet="COLARADORES_CONCAT_ESTUDIOS">
+          <ScalarProperty Name="Estudios" ColumnName="Estudios" />
+          <ScalarProperty Name="COD_ESTADO_COLABORADOR" ColumnName="COD_ESTADO_COLABORADOR" />
+          <ScalarProperty Name="COD_TIPO_DE_CONTRATO" ColumnName="COD_TIPO_DE_CONTRATO" />
+          <ScalarProperty Name="FECHA_INGRESO" ColumnName="FECHA_INGRESO" />
+          <ScalarProperty Name="CENTROS_COSTOS" ColumnName="CENTROS_COSTOS" />
+          <ScalarProperty Name="ESTADO_CIVIL" ColumnName="ESTADO_CIVIL" />
+          <ScalarProperty Name="CORREO_ELECTRONICO" ColumnName="CORREO_ELECTRONICO" />
+          <ScalarProperty Name="CELULAR" ColumnName="CELULAR" />
+          <ScalarProperty Name="FECHA_NACIMIENTO" ColumnName="FECHA_NACIMIENTO" />
+          <ScalarProperty Name="COD_GENERO" ColumnName="COD_GENERO" />
+          <ScalarProperty Name="CEDULA" ColumnName="CEDULA" />
+          <ScalarProperty Name="APELLIDOS" ColumnName="APELLIDOS" />
+          <ScalarProperty Name="NOMBRES" ColumnName="NOMBRES" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_CARGO" ColumnName="COD_CARGO" />
+          <ScalarProperty Name="COD_COLABORADOR" ColumnName="COD_COLABORADOR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONTRATO_COLABORADOR_COMERCIAL">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.CONTRATO_COLABORADOR_COMERCIAL">
+        <MappingFragment StoreEntitySet="CONTRATO_COLABORADOR_COMERCIAL">
+          <ScalarProperty Name="DESCRIPCION_CARGO" ColumnName="DESCRIPCION_CARGO" />
+          <ScalarProperty Name="COD_CONTRATO_ROL" ColumnName="COD_CONTRATO_ROL" />
+          <ScalarProperty Name="RUTA_DOCUMENTO" ColumnName="RUTA_DOCUMENTO" />
+          <ScalarProperty Name="TIPO_OBRA" ColumnName="TIPO_OBRA" />
+          <ScalarProperty Name="TIPO_SERVICIO" ColumnName="TIPO_SERVICIO" />
+          <ScalarProperty Name="OBSERVACIONES" ColumnName="OBSERVACIONES" />
+          <ScalarProperty Name="DEDICACION" ColumnName="DEDICACION" />
+          <ScalarProperty Name="VALOR_MENSUAL_PRESTACIONES_MULTIPLICADOR" ColumnName="VALOR_MENSUAL_PRESTACIONES_MULTIPLICADOR" />
+          <ScalarProperty Name="VALOR_MENSUAL_PRESTACIONES" ColumnName="VALOR_MENSUAL_PRESTACIONES" />
+          <ScalarProperty Name="VALOR_MENSUAL_SIN_PRESTACIONES" ColumnName="VALOR_MENSUAL_SIN_PRESTACIONES" />
+          <ScalarProperty Name="MESES" ColumnName="MESES" />
+          <ScalarProperty Name="FECHA_INI_COMERCIAL" ColumnName="FECHA_INI_COMERCIAL" />
+          <ScalarProperty Name="FECHA_FIN" ColumnName="FECHA_FIN" />
+          <ScalarProperty Name="FECHA_INI_COLABORADOR" ColumnName="FECHA_INI_COLABORADOR" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_COLABORADOR" ColumnName="COD_COLABORADOR" />
+          <ScalarProperty Name="COD_CONTRATO_COLABORADOR" ColumnName="COD_CONTRATO_COLABORADOR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONTRATO_COLABORADOR_INDEX">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.CONTRATO_COLABORADOR_INDEX">
+        <MappingFragment StoreEntitySet="CONTRATO_COLABORADOR_INDEX">
+          <ScalarProperty Name="TIPO_SERVICIO" ColumnName="TIPO_SERVICIO" />
+          <ScalarProperty Name="TIPO_OBRA" ColumnName="TIPO_OBRA" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="FECHA_FIN_EJECUCION" ColumnName="FECHA_FIN_EJECUCION" />
+          <ScalarProperty Name="FECHA_INICIO_EJECUCION" ColumnName="FECHA_INICIO_EJECUCION" />
+          <ScalarProperty Name="CENTRO_COSTOS" ColumnName="CENTRO_COSTOS" />
+          <ScalarProperty Name="ORDEN_SERVICIO" ColumnName="ORDEN_SERVICIO" />
+          <ScalarProperty Name="COD_CONTRATO" ColumnName="COD_CONTRATO" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONTRATO_PROYECTO_DESCRIPCION">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.CONTRATO_PROYECTO_DESCRIPCION">
+        <MappingFragment StoreEntitySet="CONTRATO_PROYECTO_DESCRIPCION">
+          <ScalarProperty Name="CENTRO_COSTOS" ColumnName="CENTRO_COSTOS" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_FORMA_PAGO" ColumnName="COD_FORMA_PAGO" />
+          <ScalarProperty Name="COD_PROYECTO" ColumnName="COD_PROYECTO" />
+          <ScalarProperty Name="COD_CONTRATO" ColumnName="COD_CONTRATO" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONTRATO_PROYECTO_DESCRIPCION_ESTADOS">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.CONTRATO_PROYECTO_DESCRIPCION_ESTADOS">
+        <MappingFragment StoreEntitySet="CONTRATO_PROYECTO_DESCRIPCION_ESTADOS">
+          <ScalarProperty Name="COMPLETA" ColumnName="COMPLETA" />
+          <ScalarProperty Name="COD_ESTADO_ORDEN_SERVICIO" ColumnName="COD_ESTADO_ORDEN_SERVICIO" />
+          <ScalarProperty Name="CENTRO_COSTOS" ColumnName="CENTRO_COSTOS" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_FORMA_PAGO" ColumnName="COD_FORMA_PAGO" />
+          <ScalarProperty Name="COD_PROYECTO" ColumnName="COD_PROYECTO" />
+          <ScalarProperty Name="COD_CONTRATO" ColumnName="COD_CONTRATO" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONTRATO_ROL_DESCRIPCION">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.CONTRATO_ROL_DESCRIPCION">
+        <MappingFragment StoreEntitySet="CONTRATO_ROL_DESCRIPCION">
+          <ScalarProperty Name="TIPO_TRIBUTACION" ColumnName="TIPO_TRIBUTACION" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="OBSERVACIONES" ColumnName="OBSERVACIONES" />
+          <ScalarProperty Name="DEDICACION" ColumnName="DEDICACION" />
+          <ScalarProperty Name="VALOR_MENSUAL_PRESTACIONES_MULTIPLICADOR" ColumnName="VALOR_MENSUAL_PRESTACIONES_MULTIPLICADOR" />
+          <ScalarProperty Name="FACTOR_MULTIPLICADOR" ColumnName="FACTOR_MULTIPLICADOR" />
+          <ScalarProperty Name="VALOR_MENSUAL_PRESTACIONES" ColumnName="VALOR_MENSUAL_PRESTACIONES" />
+          <ScalarProperty Name="PRESTACIONES" ColumnName="PRESTACIONES" />
+          <ScalarProperty Name="VALOR_MENSUAL_SIN_PRESTACIONES" ColumnName="VALOR_MENSUAL_SIN_PRESTACIONES" />
+          <ScalarProperty Name="MESES" ColumnName="MESES" />
+          <ScalarProperty Name="FECHA_INI" ColumnName="FECHA_INI" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+          <ScalarProperty Name="COD_CONTRATO_ROL" ColumnName="COD_CONTRATO_ROL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONTRATOS_CONDICIONES_VISTA">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.CONTRATOS_CONDICIONES_VISTA">
+        <MappingFragment StoreEntitySet="CONTRATOS_CONDICIONES_VISTA">
+          <ScalarProperty Name="FECHA_EXCLUSION" ColumnName="FECHA_EXCLUSION" />
+          <ScalarProperty Name="FECHA_INCLUSION" ColumnName="FECHA_INCLUSION" />
+          <ScalarProperty Name="VIGENTE" ColumnName="VIGENTE" />
+          <ScalarProperty Name="COD_TIPO_CONDICION" ColumnName="COD_TIPO_CONDICION" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="COD_CONTRATO_CONDICION" ColumnName="COD_CONTRATO_CONDICION" />
+          <ScalarProperty Name="CENTRO_COSTOS" ColumnName="CENTRO_COSTOS" />
+          <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA_CREACION" />
+          <ScalarProperty Name="CREADO_POR" ColumnName="CREADO_POR" />
+          <ScalarProperty Name="FECHA_ULTIMA_MODIFICACION" ColumnName="FECHA_ULTIMA_MODIFICACION" />
+          <ScalarProperty Name="MODIFICADO_POR" ColumnName="MODIFICADO_POR" />
+          <ScalarProperty Name="COMPLETA" ColumnName="COMPLETA" />
+          <ScalarProperty Name="COD_FORMA_PAGO" ColumnName="COD_FORMA_PAGO" />
+          <ScalarProperty Name="COD_PROYECTO" ColumnName="COD_PROYECTO" />
+          <ScalarProperty Name="COD_CONTRATO" ColumnName="COD_CONTRATO" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DATOS_VERIFICAR_FACTURA">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.DATOS_VERIFICAR_FACTURA">
+        <MappingFragment StoreEntitySet="DATOS_VERIFICAR_FACTURA">
+          <ScalarProperty Name="PERIODO_FACTURAR" ColumnName="PERIODO_FACTURAR" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="RANKING" ColumnName="RANKING" />
+          <ScalarProperty Name="VALOR_CON_IMPUESTOS" ColumnName="VALOR_CON_IMPUESTOS" />
+          <ScalarProperty Name="VALOR_SIN_IMPUESTOS" ColumnName="VALOR_SIN_IMPUESTOS" />
+          <ScalarProperty Name="COD_ESTADO_FACTURA" ColumnName="COD_ESTADO_FACTURA" />
+          <ScalarProperty Name="FECHA_FACTURA" ColumnName="FECHA_FACTURA" />
+          <ScalarProperty Name="NUMERO_FACTURA" ColumnName="NUMERO_FACTURA" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_FACTURA" ColumnName="COD_FACTURA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FLUJO_INGRESOS_ITEM">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.FLUJO_INGRESOS_ITEM">
+        <MappingFragment StoreEntitySet="FLUJO_INGRESOS_ITEM">
+          <ScalarProperty Name="COD_CONCEPTO_PSL" ColumnName="COD_CONCEPTO_PSL" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="FECHA_FORMA_PAGO" ColumnName="FECHA_FORMA_PAGO" />
+          <ScalarProperty Name="USUARIO_REGISTRO" ColumnName="USUARIO_REGISTRO" />
+          <ScalarProperty Name="FECHA_REGISTRO" ColumnName="FECHA_REGISTRO" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="VALOR_TOTAL" ColumnName="VALOR_TOTAL" />
+          <ScalarProperty Name="VALOR_VARIABLE" ColumnName="VALOR_VARIABLE" />
+          <ScalarProperty Name="VALOR_FIJO" ColumnName="VALOR_FIJO" />
+          <ScalarProperty Name="ETAPA" ColumnName="ETAPA" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_ITEM_CONTRATO" ColumnName="COD_ITEM_CONTRATO" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="COD_FLUJO_INGRESOS_ITEMS" ColumnName="COD_FLUJO_INGRESOS_ITEMS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FLUJO_INGRESOS_ROLES">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.FLUJO_INGRESOS_ROLES">
+        <MappingFragment StoreEntitySet="FLUJO_INGRESOS_ROLES">
+          <ScalarProperty Name="COD_CONCEPTO_PSL" ColumnName="COD_CONCEPTO_PSL" />
+          <ScalarProperty Name="USUARIO_REGISTRO" ColumnName="USUARIO_REGISTRO" />
+          <ScalarProperty Name="FECHA_REGISTRO" ColumnName="FECHA_REGISTRO" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="VALOR_FACTOR_MULTIPLICADOR" ColumnName="VALOR_FACTOR_MULTIPLICADOR" />
+          <ScalarProperty Name="VALOR_CON_PRESTACIONES" ColumnName="VALOR_CON_PRESTACIONES" />
+          <ScalarProperty Name="VALOR_SIN_PRESTACIONES" ColumnName="VALOR_SIN_PRESTACIONES" />
+          <ScalarProperty Name="ETAPA" ColumnName="ETAPA" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="COD_FLUJO_INGRESOS_ROL" ColumnName="COD_FLUJO_INGRESOS_ROL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GENERACION_COLABORADORES_PENDIENTES">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.GENERACION_COLABORADORES_PENDIENTES">
+        <MappingFragment StoreEntitySet="GENERACION_COLABORADORES_PENDIENTES">
+          <ScalarProperty Name="FECHA_INI" ColumnName="FECHA_INI" />
+          <ScalarProperty Name="FECHA_FIN" ColumnName="FECHA_FIN" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GENERACION_FLUJOS_ITEM">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.GENERACION_FLUJOS_ITEM">
+        <MappingFragment StoreEntitySet="GENERACION_FLUJOS_ITEM">
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="VALOR_TOTAL" ColumnName="VALOR_TOTAL" />
+          <ScalarProperty Name="VALOR_FIJO_UNITARIO" ColumnName="VALOR_FIJO_UNITARIO" />
+          <ScalarProperty Name="VALOR_FIJO" ColumnName="VALOR_FIJO" />
+          <ScalarProperty Name="VALOR_VARIABLE" ColumnName="VALOR_VARIABLE" />
+          <ScalarProperty Name="VALOR_VARIABLE_UNITARIO" ColumnName="VALOR_VARIABLE_UNITARIO" />
+          <ScalarProperty Name="COD_ITEM_CONTRATO" ColumnName="COD_ITEM_CONTRATO" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GENERACION_FLUJOS_ITEM2">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.GENERACION_FLUJOS_ITEM2">
+        <MappingFragment StoreEntitySet="GENERACION_FLUJOS_ITEM2">
+          <ScalarProperty Name="ETAPA" ColumnName="ETAPA" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="VALOR_FIJO" ColumnName="VALOR_FIJO" />
+          <ScalarProperty Name="VALOR_FIJO_UNITARIO" ColumnName="VALOR_FIJO_UNITARIO" />
+          <ScalarProperty Name="VALOR_TOTAL" ColumnName="VALOR_TOTAL" />
+          <ScalarProperty Name="VALOR_VARIABLE" ColumnName="VALOR_VARIABLE" />
+          <ScalarProperty Name="VALOR_VARIABLE_UNITARIO" ColumnName="VALOR_VARIABLE_UNITARIO" />
+          <ScalarProperty Name="COD_ITEM_CONTRATO" ColumnName="COD_ITEM_CONTRATO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GENERACION_FLUJOS_ITEM3">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.GENERACION_FLUJOS_ITEM3">
+        <MappingFragment StoreEntitySet="GENERACION_FLUJOS_ITEM3">
+          <ScalarProperty Name="VALOR_TOTAL" ColumnName="VALOR_TOTAL" />
+          <ScalarProperty Name="VALOR_FIJO_UNITARIO" ColumnName="VALOR_FIJO_UNITARIO" />
+          <ScalarProperty Name="VALOR_FIJO" ColumnName="VALOR_FIJO" />
+          <ScalarProperty Name="VALOR_VARIABLE" ColumnName="VALOR_VARIABLE" />
+          <ScalarProperty Name="VALOR_VARIABLE_UNITARIO" ColumnName="VALOR_VARIABLE_UNITARIO" />
+          <ScalarProperty Name="ETAPA" ColumnName="ETAPA" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="COD_ITEM_CONTRATO" ColumnName="COD_ITEM_CONTRATO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GENERACION_FLUJOS_ROL">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.GENERACION_FLUJOS_ROL">
+        <MappingFragment StoreEntitySet="GENERACION_FLUJOS_ROL">
+          <ScalarProperty Name="VALOR_MENSUAL_PRESTACIONES_MULTIPLICADOR" ColumnName="VALOR_MENSUAL_PRESTACIONES_MULTIPLICADOR" />
+          <ScalarProperty Name="VALOR_MENSUAL_PRESTACIONES" ColumnName="VALOR_MENSUAL_PRESTACIONES" />
+          <ScalarProperty Name="VALOR_MENSUAL_SIN_PRESTACIONES" ColumnName="VALOR_MENSUAL_SIN_PRESTACIONES" />
+          <ScalarProperty Name="ETAPA" ColumnName="ETAPA" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GENERACION_FLUJOS_ROL2">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.GENERACION_FLUJOS_ROL2">
+        <MappingFragment StoreEntitySet="GENERACION_FLUJOS_ROL2">
+          <ScalarProperty Name="FECHA_FORMA_PAGO" ColumnName="FECHA_FORMA_PAGO" />
+          <ScalarProperty Name="ETAPA" ColumnName="ETAPA" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="VALOR_SIN_PRESTACIONES" ColumnName="VALOR_SIN_PRESTACIONES" />
+          <ScalarProperty Name="VALOR_CON_PRESTACIONES" ColumnName="VALOR_CON_PRESTACIONES" />
+          <ScalarProperty Name="VALOR_FACTOR_MULTIPLICADOR" ColumnName="VALOR_FACTOR_MULTIPLICADOR" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GENERACION_FLUJOS_ROL3">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.GENERACION_FLUJOS_ROL3">
+        <MappingFragment StoreEntitySet="GENERACION_FLUJOS_ROL3">
+          <ScalarProperty Name="VALOR_FACTOR_MULTIPLICADOR" ColumnName="VALOR_FACTOR_MULTIPLICADOR" />
+          <ScalarProperty Name="VALOR_CON_PRESTACIONES" ColumnName="VALOR_CON_PRESTACIONES" />
+          <ScalarProperty Name="VALOR_SIN_PRESTACIONES" ColumnName="VALOR_SIN_PRESTACIONES" />
+          <ScalarProperty Name="ETAPA" ColumnName="ETAPA" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ITEMS_CONTRATO_DESCRIPCION">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.ITEMS_CONTRATO_DESCRIPCION">
+        <MappingFragment StoreEntitySet="ITEMS_CONTRATO_DESCRIPCION">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_CONCEPTO_PSL" ColumnName="COD_CONCEPTO_PSL" />
+          <ScalarProperty Name="DIAS_FRACCION" ColumnName="DIAS_FRACCION" />
+          <ScalarProperty Name="COD_TIPO_REEMBOLSO" ColumnName="COD_TIPO_REEMBOLSO" />
+          <ScalarProperty Name="OBSERVACIONES" ColumnName="OBSERVACIONES" />
+          <ScalarProperty Name="MESES_USO" ColumnName="MESES_USO" />
+          <ScalarProperty Name="FECHA_INI_USO" ColumnName="FECHA_INI_USO" />
+          <ScalarProperty Name="CANTIDAD" ColumnName="CANTIDAD" />
+          <ScalarProperty Name="PORCENTAJE_PERSONAL" ColumnName="PORCENTAJE_PERSONAL" />
+          <ScalarProperty Name="COSTO_MENSUAL_UNITARIO" ColumnName="COSTO_MENSUAL_UNITARIO" />
+          <ScalarProperty Name="COSTO_INICIAL_UNITARIO" ColumnName="COSTO_INICIAL_UNITARIO" />
+          <ScalarProperty Name="REUTILIZABLE" ColumnName="REUTILIZABLE" />
+          <ScalarProperty Name="ITEM_REEMBOLZABLE" ColumnName="ITEM_REEMBOLZABLE" />
+          <ScalarProperty Name="COD_ITEM" ColumnName="COD_ITEM" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_ITEM_CONTRATO" ColumnName="COD_ITEM_CONTRATO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ORDEN_SERVICIO_ROLES_PERIODO">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.ORDEN_SERVICIO_ROLES_PERIODO">
+        <MappingFragment StoreEntitySet="ORDEN_SERVICIO_ROLES_PERIODO">
+          <ScalarProperty Name="FECHA_FORMA_PAGO" ColumnName="FECHA_FORMA_PAGO" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="TIPO_OBRA" ColumnName="TIPO_OBRA" />
+          <ScalarProperty Name="TIPO_SERVICIO" ColumnName="TIPO_SERVICIO" />
+          <ScalarProperty Name="PROYECTO" ColumnName="PROYECTO" />
+          <ScalarProperty Name="ORDEN_SERVICIO" ColumnName="ORDEN_SERVICIO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="VALOR_FACTOR_MULTIPLICADOR" ColumnName="VALOR_FACTOR_MULTIPLICADOR" />
+          <ScalarProperty Name="VALOR_CON_PRESTACIONES" ColumnName="VALOR_CON_PRESTACIONES" />
+          <ScalarProperty Name="VALOR_SIN_PRESTACIONES" ColumnName="VALOR_SIN_PRESTACIONES" />
+          <ScalarProperty Name="ETAPA" ColumnName="ETAPA" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ORDENES_SERVICIO_INDEX">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.ORDENES_SERVICIO_INDEX">
+        <MappingFragment StoreEntitySet="ORDENES_SERVICIO_INDEX">
+          <ScalarProperty Name="COD_ESTADO_ORDEN_SERVICIO" ColumnName="COD_ESTADO_ORDEN_SERVICIO" />
+          <ScalarProperty Name="CENTRO_COSTOS" ColumnName="CENTRO_COSTOS" />
+          <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA_CREACION" />
+          <ScalarProperty Name="CREADO_POR" ColumnName="CREADO_POR" />
+          <ScalarProperty Name="FECHA_ULTIMA_MODIFICACION" ColumnName="FECHA_ULTIMA_MODIFICACION" />
+          <ScalarProperty Name="MODIFICADO_POR" ColumnName="MODIFICADO_POR" />
+          <ScalarProperty Name="COMPLETA" ColumnName="COMPLETA" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_FORMA_PAGO" ColumnName="COD_FORMA_PAGO" />
+          <ScalarProperty Name="COD_PROYECTO" ColumnName="COD_PROYECTO" />
+          <ScalarProperty Name="COD_CONTRATO" ColumnName="COD_CONTRATO" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ORDENES_SERVICIO_ROLES_COLABORADOR">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.ORDENES_SERVICIO_ROLES_COLABORADOR">
+        <MappingFragment StoreEntitySet="ORDENES_SERVICIO_ROLES_COLABORADOR">
+          <ScalarProperty Name="ROL_TEXTO" ColumnName="ROL_TEXTO" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="COD_COLABORADOR" ColumnName="COD_COLABORADOR" />
+          <ScalarProperty Name="FECHA_FORMA_PAGO" ColumnName="FECHA_FORMA_PAGO" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="TIPO_OBRA" ColumnName="TIPO_OBRA" />
+          <ScalarProperty Name="TIPO_SERVICIO" ColumnName="TIPO_SERVICIO" />
+          <ScalarProperty Name="PROYECTO" ColumnName="PROYECTO" />
+          <ScalarProperty Name="ORDEN_SERVICIO" ColumnName="ORDEN_SERVICIO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="VALOR_FACTOR_MULTIPLICADOR" ColumnName="VALOR_FACTOR_MULTIPLICADOR" />
+          <ScalarProperty Name="VALOR_CON_PRESTACIONES" ColumnName="VALOR_CON_PRESTACIONES" />
+          <ScalarProperty Name="VALOR_SIN_PRESTACIONES" ColumnName="VALOR_SIN_PRESTACIONES" />
+          <ScalarProperty Name="ETAPA" ColumnName="ETAPA" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PENDIENTES">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.PENDIENTES">
+        <MappingFragment StoreEntitySet="PENDIENTES">
+          <ScalarProperty Name="TIPO_OBRA" ColumnName="TIPO_OBRA" />
+          <ScalarProperty Name="TIPO_SERVICIO" ColumnName="TIPO_SERVICIO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="FECHA_FIN_EJECUCION" ColumnName="FECHA_FIN_EJECUCION" />
+          <ScalarProperty Name="FECHA_INICIO_EJECUCION" ColumnName="FECHA_INICIO_EJECUCION" />
+          <ScalarProperty Name="CENTRO_COSTOS" ColumnName="CENTRO_COSTOS" />
+          <ScalarProperty Name="ORDEN_SERVICIO" ColumnName="ORDEN_SERVICIO" />
+          <ScalarProperty Name="COD_CONTRATO" ColumnName="COD_CONTRATO" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PENDIENTES_REPORTE">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.PENDIENTES_REPORTE">
+        <MappingFragment StoreEntitySet="PENDIENTES_REPORTE">
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="TIPO_OBRA" ColumnName="TIPO_OBRA" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="TIPO_SERVICIO" ColumnName="TIPO_SERVICIO" />
+          <ScalarProperty Name="FECHA_FIN_EJECUCION" ColumnName="FECHA_FIN_EJECUCION" />
+          <ScalarProperty Name="FECHA_INICIO_EJECUCION" ColumnName="FECHA_INICIO_EJECUCION" />
+          <ScalarProperty Name="CENTRO_COSTOS" ColumnName="CENTRO_COSTOS" />
+          <ScalarProperty Name="ORDEN_SERVICIO" ColumnName="ORDEN_SERVICIO" />
+          <ScalarProperty Name="COD_CONTRATO" ColumnName="COD_CONTRATO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REGISTRO_NOVEDADES_FECHAS">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.REGISTRO_NOVEDADES_FECHAS">
+        <MappingFragment StoreEntitySet="REGISTRO_NOVEDADES_FECHAS">
+          <ScalarProperty Name="FECHA_FORMA_PAGO" ColumnName="FECHA_FORMA_PAGO" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="FECHA_FIN_NOVEDAD" ColumnName="FECHA_FIN_NOVEDAD" />
+          <ScalarProperty Name="FECHA_INICIO_NOVEDAD" ColumnName="FECHA_INICIO_NOVEDAD" />
+          <ScalarProperty Name="COD_COLABORADOR" ColumnName="COD_COLABORADOR" />
+          <ScalarProperty Name="COD_REGISTRO_NOVEDADES" ColumnName="COD_REGISTRO_NOVEDADES" />
+          <ScalarProperty Name="COD_TIPO_NOVEDAD" ColumnName="COD_TIPO_NOVEDAD" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TEST_VISTA_FLUJOS_CORREGIDOS">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.TEST_VISTA_FLUJOS_CORREGIDOS">
+        <MappingFragment StoreEntitySet="TEST_VISTA_FLUJOS_CORREGIDOS">
+          <ScalarProperty Name="DATEDIFF3" ColumnName="DATEDIFF3" />
+          <ScalarProperty Name="DATEDIFF2" ColumnName="DATEDIFF2" />
+          <ScalarProperty Name="DATEDIFF1" ColumnName="DATEDIFF1" />
+          <ScalarProperty Name="AAAA" ColumnName="AAAA" />
+          <ScalarProperty Name="AAA" ColumnName="AAA" />
+          <ScalarProperty Name="AA" ColumnName="AA" />
+          <ScalarProperty Name="USUARIO_REGISTRO" ColumnName="USUARIO_REGISTRO" />
+          <ScalarProperty Name="FECHA_REGISTRO" ColumnName="FECHA_REGISTRO" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="VALOR_FACTOR_MULTIPLICADOR" ColumnName="VALOR_FACTOR_MULTIPLICADOR" />
+          <ScalarProperty Name="VALOR_CON_PRESTACIONES" ColumnName="VALOR_CON_PRESTACIONES" />
+          <ScalarProperty Name="VALOR_SIN_PRESTACIONES" ColumnName="VALOR_SIN_PRESTACIONES" />
+          <ScalarProperty Name="ETAPA" ColumnName="ETAPA" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="COD_FLUJO_INGRESOS_ROL" ColumnName="COD_FLUJO_INGRESOS_ROL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_AGREGACION_ITEMS_DEPENDIENTES">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_AGREGACION_ITEMS_DEPENDIENTES">
+        <MappingFragment StoreEntitySet="VISTA_AGREGACION_ITEMS_DEPENDIENTES">
+          <ScalarProperty Name="VALOR_TOTAL" ColumnName="VALOR_TOTAL" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_ITEM_CONTRATO" ColumnName="COD_ITEM_CONTRATO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_CONTRATO_PROYECTO_FACTURAS">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_CONTRATO_PROYECTO_FACTURAS">
+        <MappingFragment StoreEntitySet="VISTA_CONTRATO_PROYECTO_FACTURAS">
+          <ScalarProperty Name="ESTADO_ORDEN" ColumnName="ESTADO_ORDEN" />
+          <ScalarProperty Name="ESTADO_ULTIMA_FACTURA" ColumnName="ESTADO_ULTIMA_FACTURA" />
+          <ScalarProperty Name="FECHA_INICIO_EJECUCION_ULTIMO_CONTRATO" ColumnName="FECHA_INICIO_EJECUCION_ULTIMO_CONTRATO" />
+          <ScalarProperty Name="MESES_SIN_FACTURAR" ColumnName="MESES_SIN_FACTURAR" />
+          <ScalarProperty Name="DIAS_SIN_FACTURAR" ColumnName="DIAS_SIN_FACTURAR" />
+          <ScalarProperty Name="FECHA_ULTIMA_FACTURA" ColumnName="FECHA_ULTIMA_FACTURA" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COMPLETA" ColumnName="COMPLETA" />
+          <ScalarProperty Name="COD_ESTADO_ORDEN_SERVICIO" ColumnName="COD_ESTADO_ORDEN_SERVICIO" />
+          <ScalarProperty Name="CENTRO_COSTOS" ColumnName="CENTRO_COSTOS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_CONTRATOS_ROL_DESCRIPCION">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_CONTRATOS_ROL_DESCRIPCION">
+        <MappingFragment StoreEntitySet="VISTA_CONTRATOS_ROL_DESCRIPCION">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="DIAS_FRACCION" ColumnName="DIAS_FRACCION" />
+          <ScalarProperty Name="RUTA_DOCUMENTO" ColumnName="RUTA_DOCUMENTO" />
+          <ScalarProperty Name="DEDICACION" ColumnName="DEDICACION" />
+          <ScalarProperty Name="TIPO_TRIBUTACION" ColumnName="TIPO_TRIBUTACION" />
+          <ScalarProperty Name="OBSERVACIONES" ColumnName="OBSERVACIONES" />
+          <ScalarProperty Name="VALOR_MENSUAL_PRESTACIONES_MULTIPLICADOR" ColumnName="VALOR_MENSUAL_PRESTACIONES_MULTIPLICADOR" />
+          <ScalarProperty Name="VALOR_MENSUAL_PRESTACIONES" ColumnName="VALOR_MENSUAL_PRESTACIONES" />
+          <ScalarProperty Name="FACTOR_MULTIPLICADOR" ColumnName="FACTOR_MULTIPLICADOR" />
+          <ScalarProperty Name="PRESTACIONES" ColumnName="PRESTACIONES" />
+          <ScalarProperty Name="MESES" ColumnName="MESES" />
+          <ScalarProperty Name="VALOR_MENSUAL_SIN_PRESTACIONES" ColumnName="VALOR_MENSUAL_SIN_PRESTACIONES" />
+          <ScalarProperty Name="FECHA_INI" ColumnName="FECHA_INI" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_CONTRATO_ROL" ColumnName="COD_CONTRATO_ROL" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_COSTOS_FLUJO_INGR">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_COSTOS_FLUJO_INGR">
+        <MappingFragment StoreEntitySet="VISTA_COSTOS_FLUJO_INGR">
+          <ScalarProperty Name="VALOR_TOTAL" ColumnName="VALOR_TOTAL" />
+          <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="CENTRO_COSTOS" ColumnName="CENTRO_COSTOS" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="FILA" ColumnName="FILA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_DETDOCVTAENTRA">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_DETDOCVTAENTRA">
+        <MappingFragment StoreEntitySet="VISTA_DETDOCVTAENTRA">
+          <ScalarProperty Name="FECHA_FACTURA" ColumnName="FECHA_FACTURA" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="ddvcentrorespo" ColumnName="ddvcentrorespo" />
+          <ScalarProperty Name="ddvdivision" ColumnName="ddvdivision" />
+          <ScalarProperty Name="ddvprectotaneto" ColumnName="ddvprectotaneto" />
+          <ScalarProperty Name="ddvprectotabrut" ColumnName="ddvprectotabrut" />
+          <ScalarProperty Name="ddvprecunitneto" ColumnName="ddvprecunitneto" />
+          <ScalarProperty Name="ddvprecunitbrut" ColumnName="ddvprecunitbrut" />
+          <ScalarProperty Name="ddvcanfacuniemp" ColumnName="ddvcanfacuniemp" />
+          <ScalarProperty Name="ddvcanfacunivta" ColumnName="ddvcanfacunivta" />
+          <ScalarProperty Name="ddvunidaempaq" ColumnName="ddvunidaempaq" />
+          <ScalarProperty Name="ddvunidaventa" ColumnName="ddvunidaventa" />
+          <ScalarProperty Name="ddvconcecxc" ColumnName="ddvconcecxc" />
+          <ScalarProperty Name="ddvconseregis" ColumnName="ddvconseregis" />
+          <ScalarProperty Name="ddvtipocons" ColumnName="ddvtipocons" />
+          <ScalarProperty Name="ddvnumedocu" ColumnName="ddvnumedocu" />
+          <ScalarProperty Name="ddvcompania" ColumnName="ddvcompania" />
+          <ScalarProperty Name="ddvcontrol" ColumnName="ddvcontrol" />
+          <ScalarProperty Name="ddvconseingre" ColumnName="ddvconseingre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_ENCDOCVTAENTRA">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_ENCDOCVTAENTRA">
+        <MappingFragment StoreEntitySet="VISTA_ENCDOCVTAENTRA">
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="FECHA_FACTURA" ColumnName="FECHA_FACTURA" />
+          <ScalarProperty Name="edvidentificador" ColumnName="edvidentificador" />
+          <ScalarProperty Name="edvformapago" ColumnName="edvformapago" />
+          <ScalarProperty Name="edvfechinteobra" ColumnName="edvfechinteobra" />
+          <ScalarProperty Name="edvvaloneto" ColumnName="edvvaloneto" />
+          <ScalarProperty Name="edvvalobruto" ColumnName="edvvalobruto" />
+          <ScalarProperty Name="edvfechaconta" ColumnName="edvfechaconta" />
+          <ScalarProperty Name="edvfechexpe" ColumnName="edvfechexpe" />
+          <ScalarProperty Name="eobusuario" ColumnName="eobusuario" />
+          <ScalarProperty Name="edvcentroresp" ColumnName="edvcentroresp" />
+          <ScalarProperty Name="edvtotamonenego" ColumnName="edvtotamonenego" />
+          <ScalarProperty Name="edvtotamoneloca" ColumnName="edvtotamoneloca" />
+          <ScalarProperty Name="edvmoneda" ColumnName="edvmoneda" />
+          <ScalarProperty Name="edvconcepto" ColumnName="edvconcepto" />
+          <ScalarProperty Name="edvcliente" ColumnName="edvcliente" />
+          <ScalarProperty Name="edvdivision" ColumnName="edvdivision" />
+          <ScalarProperty Name="edvclasdocuclie" ColumnName="edvclasdocuclie" />
+          <ScalarProperty Name="edvtipodocuclie" ColumnName="edvtipodocuclie" />
+          <ScalarProperty Name="edvcompania" ColumnName="edvcompania" />
+          <ScalarProperty Name="edvtipoconsclie" ColumnName="edvtipoconsclie" />
+          <ScalarProperty Name="edvnumedocuclie" ColumnName="edvnumedocuclie" />
+          <ScalarProperty Name="edvvaloconimp" ColumnName="edvvaloconimp" />
+          <ScalarProperty Name="edvcontrol" ColumnName="edvcontrol" />
+          <ScalarProperty Name="edvconseingre" ColumnName="edvconseingre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_ESTADOS_FINANCIEROS_PRUEBA1">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_ESTADOS_FINANCIEROS_PRUEBA1">
+        <MappingFragment StoreEntitySet="VISTA_ESTADOS_FINANCIEROS_PRUEBA1">
+          <ScalarProperty Name="GASTO_ADMINISTRATIVO" ColumnName="GASTO_ADMINISTRATIVO" />
+          <ScalarProperty Name="CLASE" ColumnName="CLASE" />
+          <ScalarProperty Name="AMORTIZACION" ColumnName="AMORTIZACION" />
+          <ScalarProperty Name="DEPRECIACION" ColumnName="DEPRECIACION" />
+          <ScalarProperty Name="INTERESES" ColumnName="INTERESES" />
+          <ScalarProperty Name="IMPUESTOS" ColumnName="IMPUESTOS" />
+          <ScalarProperty Name="GASTOS_FINANCIEROS" ColumnName="GASTOS_FINANCIEROS" />
+          <ScalarProperty Name="INGRESOS_FINANCIEROS" ColumnName="INGRESOS_FINANCIEROS" />
+          <ScalarProperty Name="OTROS_GASTOS" ColumnName="OTROS_GASTOS" />
+          <ScalarProperty Name="GASTOS_VENTA" ColumnName="GASTOS_VENTA" />
+          <ScalarProperty Name="OTROS_INGRESOS" ColumnName="OTROS_INGRESOS" />
+          <ScalarProperty Name="COSTO_VENTA" ColumnName="COSTO_VENTA" />
+          <ScalarProperty Name="INGRESOS_OPERACIONALES" ColumnName="INGRESOS_OPERACIONALES" />
+          <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+          <ScalarProperty Name="dcoorigen" ColumnName="dcoorigen" />
+          <ScalarProperty Name="dcoprefijo" ColumnName="dcoprefijo" />
+          <ScalarProperty Name="dcofechtran" ColumnName="dcofechtran" />
+          <ScalarProperty Name="dcofechconta" ColumnName="dcofechconta" />
+          <ScalarProperty Name="COMENTARIO" ColumnName="COMENTARIO" />
+          <ScalarProperty Name="TERCERO_NOMBRE" ColumnName="TERCERO_NOMBRE" />
+          <ScalarProperty Name="TERCERO" ColumnName="TERCERO" />
+          <ScalarProperty Name="CECO_NOMBRE" ColumnName="CECO_NOMBRE" />
+          <ScalarProperty Name="CECO" ColumnName="CECO" />
+          <ScalarProperty Name="NETO" ColumnName="NETO" />
+          <ScalarProperty Name="CREDITO" ColumnName="CREDITO" />
+          <ScalarProperty Name="DEBITO" ColumnName="DEBITO" />
+          <ScalarProperty Name="Nivel6" ColumnName="Nivel6" />
+          <ScalarProperty Name="Nivel4" ColumnName="Nivel4" />
+          <ScalarProperty Name="Nivel2" ColumnName="Nivel2" />
+          <ScalarProperty Name="Nivel1" ColumnName="Nivel1" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="COMPROBANTE" ColumnName="COMPROBANTE" />
+          <ScalarProperty Name="FUENTE" ColumnName="FUENTE" />
+          <ScalarProperty Name="PERIODO" ColumnName="PERIODO" />
+          <ScalarProperty Name="AÑO" ColumnName="AÑO" />
+          <ScalarProperty Name="SIGNO" ColumnName="SIGNO" />
+          <ScalarProperty Name="CUENTA" ColumnName="CUENTA" />
+          <ScalarProperty Name="CALCULO" ColumnName="CALCULO" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_FACTURAS_FECHA_PERIODO_FACTURACION">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_FACTURAS_FECHA_PERIODO_FACTURACION">
+        <MappingFragment StoreEntitySet="VISTA_FACTURAS_FECHA_PERIODO_FACTURACION">
+          <ScalarProperty Name="FECHA_FORMA_PAGO" ColumnName="FECHA_FORMA_PAGO" />
+          <ScalarProperty Name="RANKING" ColumnName="RANKING" />
+          <ScalarProperty Name="VALOR_CON_IMPUESTOS" ColumnName="VALOR_CON_IMPUESTOS" />
+          <ScalarProperty Name="VALOR_SIN_IMPUESTOS" ColumnName="VALOR_SIN_IMPUESTOS" />
+          <ScalarProperty Name="COD_ESTADO_FACTURA" ColumnName="COD_ESTADO_FACTURA" />
+          <ScalarProperty Name="FECHA_FACTURA" ColumnName="FECHA_FACTURA" />
+          <ScalarProperty Name="NUMERO_FACTURA" ColumnName="NUMERO_FACTURA" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_FACTURA" ColumnName="COD_FACTURA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_FINANCIERA">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_FINANCIERA">
+        <MappingFragment StoreEntitySet="VISTA_FINANCIERA">
+          <ScalarProperty Name="GASTO_ADMINISTRATIVO" ColumnName="GASTO_ADMINISTRATIVO" />
+          <ScalarProperty Name="CLASE" ColumnName="CLASE" />
+          <ScalarProperty Name="AMORTIZACION" ColumnName="AMORTIZACION" />
+          <ScalarProperty Name="DEPRECIACION" ColumnName="DEPRECIACION" />
+          <ScalarProperty Name="INTERESES" ColumnName="INTERESES" />
+          <ScalarProperty Name="IMPUESTOS" ColumnName="IMPUESTOS" />
+          <ScalarProperty Name="GASTOS_FINANCIEROS" ColumnName="GASTOS_FINANCIEROS" />
+          <ScalarProperty Name="INGRESOS_FINANCIEROS" ColumnName="INGRESOS_FINANCIEROS" />
+          <ScalarProperty Name="OTROS_GASTOS" ColumnName="OTROS_GASTOS" />
+          <ScalarProperty Name="GASTOS_VENTA" ColumnName="GASTOS_VENTA" />
+          <ScalarProperty Name="OTROS_INGRESOS" ColumnName="OTROS_INGRESOS" />
+          <ScalarProperty Name="COSTO_VENTA" ColumnName="COSTO_VENTA" />
+          <ScalarProperty Name="INGRESOS_OPERACIONALES" ColumnName="INGRESOS_OPERACIONALES" />
+          <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+          <ScalarProperty Name="dcoorigen" ColumnName="dcoorigen" />
+          <ScalarProperty Name="dcoprefijo" ColumnName="dcoprefijo" />
+          <ScalarProperty Name="dcofechtran" ColumnName="dcofechtran" />
+          <ScalarProperty Name="dcofechconta" ColumnName="dcofechconta" />
+          <ScalarProperty Name="COMENTARIO" ColumnName="COMENTARIO" />
+          <ScalarProperty Name="TERCERO_NOMBRE" ColumnName="TERCERO_NOMBRE" />
+          <ScalarProperty Name="TERCERO" ColumnName="TERCERO" />
+          <ScalarProperty Name="CECO_NOMBRE" ColumnName="CECO_NOMBRE" />
+          <ScalarProperty Name="CECO" ColumnName="CECO" />
+          <ScalarProperty Name="NETO" ColumnName="NETO" />
+          <ScalarProperty Name="CREDITO" ColumnName="CREDITO" />
+          <ScalarProperty Name="DEBITO" ColumnName="DEBITO" />
+          <ScalarProperty Name="Nivel6" ColumnName="Nivel6" />
+          <ScalarProperty Name="Nivel4" ColumnName="Nivel4" />
+          <ScalarProperty Name="Nivel2" ColumnName="Nivel2" />
+          <ScalarProperty Name="Nivel1" ColumnName="Nivel1" />
+          <ScalarProperty Name="CUENTA" ColumnName="CUENTA" />
+          <ScalarProperty Name="COMPROBANTE" ColumnName="COMPROBANTE" />
+          <ScalarProperty Name="FUENTE" ColumnName="FUENTE" />
+          <ScalarProperty Name="PERIODO" ColumnName="PERIODO" />
+          <ScalarProperty Name="AÑO" ColumnName="AÑO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_FLUJO_INGRESOS">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_FLUJO_INGRESOS">
+        <MappingFragment StoreEntitySet="VISTA_FLUJO_INGRESOS">
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="FECHA_FORMA_PAGO" ColumnName="FECHA_FORMA_PAGO" />
+          <ScalarProperty Name="VALOR_FACTOR_MULTIPLICADOR" ColumnName="VALOR_FACTOR_MULTIPLICADOR" />
+          <ScalarProperty Name="VALOR_CON_PRESTACIONES" ColumnName="VALOR_CON_PRESTACIONES" />
+          <ScalarProperty Name="VALOR_SIN_PRESTACIONES" ColumnName="VALOR_SIN_PRESTACIONES" />
+          <ScalarProperty Name="ETAPA" ColumnName="ETAPA" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="COD_FLUJO_INGRESOS_ROL" ColumnName="COD_FLUJO_INGRESOS_ROL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_FLUJO_INGRESOS_ITEM_TEMP">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_FLUJO_INGRESOS_ITEM_TEMP">
+        <MappingFragment StoreEntitySet="VISTA_FLUJO_INGRESOS_ITEM_TEMP">
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="VALOR_TOTAL" ColumnName="VALOR_TOTAL" />
+          <ScalarProperty Name="VALOR_FIJO_UNITARIO" ColumnName="VALOR_FIJO_UNITARIO" />
+          <ScalarProperty Name="VALOR_FIJO" ColumnName="VALOR_FIJO" />
+          <ScalarProperty Name="VALOR_VARIABLE" ColumnName="VALOR_VARIABLE" />
+          <ScalarProperty Name="VALOR_VARIABLE_UNITARIO" ColumnName="VALOR_VARIABLE_UNITARIO" />
+          <ScalarProperty Name="COD_ITEM_CONTRATO" ColumnName="COD_ITEM_CONTRATO" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_FLUJO_INGRESOS_ITEMS">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_FLUJO_INGRESOS_ITEMS">
+        <MappingFragment StoreEntitySet="VISTA_FLUJO_INGRESOS_ITEMS">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="FECHA_FORMA_PAGO" ColumnName="FECHA_FORMA_PAGO" />
+          <ScalarProperty Name="USUARIO_REGISTRO" ColumnName="USUARIO_REGISTRO" />
+          <ScalarProperty Name="FECHA_REGISTRO" ColumnName="FECHA_REGISTRO" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="VALOR_TOTAL" ColumnName="VALOR_TOTAL" />
+          <ScalarProperty Name="VALOR_VARIABLE" ColumnName="VALOR_VARIABLE" />
+          <ScalarProperty Name="VALOR_FIJO" ColumnName="VALOR_FIJO" />
+          <ScalarProperty Name="ETAPA" ColumnName="ETAPA" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_ITEM_CONTRATO" ColumnName="COD_ITEM_CONTRATO" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="COD_FLUJO_INGRESOS_ITEMS" ColumnName="COD_FLUJO_INGRESOS_ITEMS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_FLUJO_INGRESOS_ROL_CORREGIDA_REALIDAD">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_FLUJO_INGRESOS_ROL_CORREGIDA_REALIDAD">
+        <MappingFragment StoreEntitySet="VISTA_FLUJO_INGRESOS_ROL_CORREGIDA_REALIDAD">
+          <ScalarProperty Name="USUARIO_REGISTRO" ColumnName="USUARIO_REGISTRO" />
+          <ScalarProperty Name="FECHA_REGISTRO" ColumnName="FECHA_REGISTRO" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="VALOR_FACTOR_MULTIPLICADOR" ColumnName="VALOR_FACTOR_MULTIPLICADOR" />
+          <ScalarProperty Name="VALOR_CON_PRESTACIONES" ColumnName="VALOR_CON_PRESTACIONES" />
+          <ScalarProperty Name="VALOR_SIN_PRESTACIONES" ColumnName="VALOR_SIN_PRESTACIONES" />
+          <ScalarProperty Name="ETAPA" ColumnName="ETAPA" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="COD_FLUJO_INGRESOS_ROL" ColumnName="COD_FLUJO_INGRESOS_ROL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_GENERACION_DATOS_REGISTRO_NOVEDADES">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_GENERACION_DATOS_REGISTRO_NOVEDADES">
+        <MappingFragment StoreEntitySet="VISTA_GENERACION_DATOS_REGISTRO_NOVEDADES">
+          <ScalarProperty Name="RANDOM" ColumnName="RANDOM" />
+          <ScalarProperty Name="ROL_FECHA_INI" ColumnName="ROL_FECHA_INI" />
+          <ScalarProperty Name="FECHA_FIN" ColumnName="FECHA_FIN" />
+          <ScalarProperty Name="FECHA_FIN_NOVEDAD" ColumnName="FECHA_FIN_NOVEDAD" />
+          <ScalarProperty Name="FECHA_INI_NOVEDAD" ColumnName="FECHA_INI_NOVEDAD" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_COLABORADOR" ColumnName="COD_COLABORADOR" />
+          <ScalarProperty Name="COD_CONTRATO_COLABORADOR" ColumnName="COD_CONTRATO_COLABORADOR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_INGEELIMP">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_INGEELIMP">
+        <MappingFragment StoreEntitySet="VISTA_INGEELIMP">
+          <ScalarProperty Name="igedesactivadepre" ColumnName="igedesactivadepre" />
+          <ScalarProperty Name="igecodalter" ColumnName="igecodalter" />
+          <ScalarProperty Name="igedivisconta" ColumnName="igedivisconta" />
+          <ScalarProperty Name="eobusuario" ColumnName="eobusuario" />
+          <ScalarProperty Name="eobfecha" ColumnName="eobfecha" />
+          <ScalarProperty Name="eobnombre" ColumnName="eobnombre" />
+          <ScalarProperty Name="eobcodigo" ColumnName="eobcodigo" />
+          <ScalarProperty Name="igeimpuesto" ColumnName="igeimpuesto" />
+          <ScalarProperty Name="igenomblarg" ColumnName="igenomblarg" />
+          <ScalarProperty Name="igenombcort" ColumnName="igenombcort" />
+          <ScalarProperty Name="igedivision" ColumnName="igedivision" />
+          <ScalarProperty Name="igecompania" ColumnName="igecompania" />
+          <ScalarProperty Name="igeidentificador" ColumnName="igeidentificador" />
+          <ScalarProperty Name="igecodigo" ColumnName="igecodigo" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_ITEMS_CONTRATO">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_ITEMS_CONTRATO">
+        <MappingFragment StoreEntitySet="VISTA_ITEMS_CONTRATO">
+          <ScalarProperty Name="COD_ITEM" ColumnName="COD_ITEM" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="FECHA_INI_USO" ColumnName="FECHA_INI_USO" />
+          <ScalarProperty Name="TIPO_REEMBOLSO_DESCRIPCION" ColumnName="TIPO_REEMBOLSO_DESCRIPCION" />
+          <ScalarProperty Name="ITEM_REEMBOLZABLE" ColumnName="ITEM_REEMBOLZABLE" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_ITEM_CONTRATO" ColumnName="COD_ITEM_CONTRATO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_ITEMS_CONTRATO_DESCRIPCION">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_ITEMS_CONTRATO_DESCRIPCION">
+        <MappingFragment StoreEntitySet="VISTA_ITEMS_CONTRATO_DESCRIPCION">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_CONCEPTO_PSL" ColumnName="COD_CONCEPTO_PSL" />
+          <ScalarProperty Name="DIAS_FRACCION" ColumnName="DIAS_FRACCION" />
+          <ScalarProperty Name="COD_TIPO_REEMBOLSO" ColumnName="COD_TIPO_REEMBOLSO" />
+          <ScalarProperty Name="OBSERVACIONES" ColumnName="OBSERVACIONES" />
+          <ScalarProperty Name="MESES_USO" ColumnName="MESES_USO" />
+          <ScalarProperty Name="FECHA_INI_USO" ColumnName="FECHA_INI_USO" />
+          <ScalarProperty Name="CANTIDAD" ColumnName="CANTIDAD" />
+          <ScalarProperty Name="PORCENTAJE_PERSONAL" ColumnName="PORCENTAJE_PERSONAL" />
+          <ScalarProperty Name="COSTO_MENSUAL_UNITARIO" ColumnName="COSTO_MENSUAL_UNITARIO" />
+          <ScalarProperty Name="COSTO_INICIAL_UNITARIO" ColumnName="COSTO_INICIAL_UNITARIO" />
+          <ScalarProperty Name="REUTILIZABLE" ColumnName="REUTILIZABLE" />
+          <ScalarProperty Name="ITEM_REEMBOLZABLE" ColumnName="ITEM_REEMBOLZABLE" />
+          <ScalarProperty Name="COD_ITEM" ColumnName="COD_ITEM" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_ITEM_CONTRATO" ColumnName="COD_ITEM_CONTRATO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_ITEMS_VARIABLES">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_ITEMS_VARIABLES">
+        <MappingFragment StoreEntitySet="VISTA_ITEMS_VARIABLES">
+          <ScalarProperty Name="HONORARIOS" ColumnName="HONORARIOS" />
+          <ScalarProperty Name="VALOR_FACTOR_MULTIPLICADOR" ColumnName="VALOR_FACTOR_MULTIPLICADOR" />
+          <ScalarProperty Name="PORCENTAJE_PERSONAL" ColumnName="PORCENTAJE_PERSONAL" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+          <ScalarProperty Name="COD_ITEM_CONTRATO" ColumnName="COD_ITEM_CONTRATO" />
+          <ScalarProperty Name="COD_ITEM_ROL" ColumnName="COD_ITEM_ROL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_ORDENES_CENTRO_COSTOS">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_ORDENES_CENTRO_COSTOS">
+        <MappingFragment StoreEntitySet="VISTA_ORDENES_CENTRO_COSTOS">
+          <ScalarProperty Name="ESTADO_CENTRO_COSTO" ColumnName="ESTADO_CENTRO_COSTO" />
+          <ScalarProperty Name="FECHA_FIN_EJECUCION" ColumnName="FECHA_FIN_EJECUCION" />
+          <ScalarProperty Name="FECHA_INICIO_EJECUCION" ColumnName="FECHA_INICIO_EJECUCION" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="ESTADO_PSL" ColumnName="ESTADO_PSL" />
+          <ScalarProperty Name="COD_ESTADO_ORDEN_SERVICIO" ColumnName="COD_ESTADO_ORDEN_SERVICIO" />
+          <ScalarProperty Name="CENTRO_COSTOS" ColumnName="CENTRO_COSTOS" />
+          <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA_CREACION" />
+          <ScalarProperty Name="CREADO_POR" ColumnName="CREADO_POR" />
+          <ScalarProperty Name="FECHA_ULTIMA_MODIFICACION" ColumnName="FECHA_ULTIMA_MODIFICACION" />
+          <ScalarProperty Name="MODIFICADO_POR" ColumnName="MODIFICADO_POR" />
+          <ScalarProperty Name="COMPLETA" ColumnName="COMPLETA" />
+          <ScalarProperty Name="COD_FORMA_PAGO" ColumnName="COD_FORMA_PAGO" />
+          <ScalarProperty Name="COD_PROYECTO" ColumnName="COD_PROYECTO" />
+          <ScalarProperty Name="COD_CONTRATO" ColumnName="COD_CONTRATO" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_ORDENES_ROL_CARGO">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_ORDENES_ROL_CARGO">
+        <MappingFragment StoreEntitySet="VISTA_ORDENES_ROL_CARGO">
+          <ScalarProperty Name="DESCRIPCION_CARGO" ColumnName="DESCRIPCION_CARGO" />
+          <ScalarProperty Name="COD_CARGO" ColumnName="COD_CARGO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_COLABORADOR" ColumnName="COD_COLABORADOR" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+          <ScalarProperty Name="COD_CONTRATO_ROL" ColumnName="COD_CONTRATO_ROL" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_PENDIENTES_FACTURA">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_PENDIENTES_FACTURA">
+        <MappingFragment StoreEntitySet="VISTA_PENDIENTES_FACTURA">
+          <ScalarProperty Name="COD_ESTADO_ORDEN_SERVICIO" ColumnName="COD_ESTADO_ORDEN_SERVICIO" />
+          <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA_CREACION" />
+          <ScalarProperty Name="CREADO_POR" ColumnName="CREADO_POR" />
+          <ScalarProperty Name="FECHA_ULTIMA_MODIFICACION" ColumnName="FECHA_ULTIMA_MODIFICACION" />
+          <ScalarProperty Name="MODIFICADO_POR" ColumnName="MODIFICADO_POR" />
+          <ScalarProperty Name="COMPLETA" ColumnName="COMPLETA" />
+          <ScalarProperty Name="COD_FORMA_PAGO" ColumnName="COD_FORMA_PAGO" />
+          <ScalarProperty Name="COD_PROYECTO" ColumnName="COD_PROYECTO" />
+          <ScalarProperty Name="COD_CONTRATO" ColumnName="COD_CONTRATO" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="FECHA_FORMA_PAGO" ColumnName="FECHA_FORMA_PAGO" />
+          <ScalarProperty Name="CENTRO_COSTOS" ColumnName="CENTRO_COSTOS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_PENDIENTES_RETIRO">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_PENDIENTES_RETIRO">
+        <MappingFragment StoreEntitySet="VISTA_PENDIENTES_RETIRO">
+          <ScalarProperty Name="HOY" ColumnName="HOY" />
+          <ScalarProperty Name="DESCRIPCION_ROL" ColumnName="DESCRIPCION_ROL" />
+          <ScalarProperty Name="FECHA_FIN_PACTADA" ColumnName="FECHA_FIN_PACTADA" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="CENTRO_COSTOS_PROYECTO" ColumnName="CENTRO_COSTOS_PROYECTO" />
+          <ScalarProperty Name="CEDULA" ColumnName="CEDULA" />
+          <ScalarProperty Name="CENTROS_COSTOS" ColumnName="CENTROS_COSTOS" />
+          <ScalarProperty Name="COD_TIPO_DE_CONTRATO" ColumnName="COD_TIPO_DE_CONTRATO" />
+          <ScalarProperty Name="APELLIDOS" ColumnName="APELLIDOS" />
+          <ScalarProperty Name="NOMBRES" ColumnName="NOMBRES" />
+          <ScalarProperty Name="COD_CARGO" ColumnName="COD_CARGO" />
+          <ScalarProperty Name="COD_COLABORADOR" ColumnName="COD_COLABORADOR" />
+          <ScalarProperty Name="FECHA_INI" ColumnName="FECHA_INI" />
+          <ScalarProperty Name="FECHA_FIN" ColumnName="FECHA_FIN" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_PRUEBA_DECIMALES">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_PRUEBA_DECIMALES">
+        <MappingFragment StoreEntitySet="VISTA_PRUEBA_DECIMALES">
+          <ScalarProperty Name="USUARIO_REGISTRO" ColumnName="USUARIO_REGISTRO" />
+          <ScalarProperty Name="FECHA_REGISTRO" ColumnName="FECHA_REGISTRO" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="VALOR_FACTOR_MULTIPLICADOR" ColumnName="VALOR_FACTOR_MULTIPLICADOR" />
+          <ScalarProperty Name="VALOR_CON_PRESTACIONES" ColumnName="VALOR_CON_PRESTACIONES" />
+          <ScalarProperty Name="VALOR_SIN_PRESTACIONES" ColumnName="VALOR_SIN_PRESTACIONES" />
+          <ScalarProperty Name="ETAPA" ColumnName="ETAPA" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="COD_FLUJO_INGRESOS_ROL" ColumnName="COD_FLUJO_INGRESOS_ROL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_PRUEBA_PARA_R">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_PRUEBA_PARA_R">
+        <MappingFragment StoreEntitySet="VISTA_PRUEBA_PARA_R">
+          <ScalarProperty Name="SALARIO_COMERCIAL" ColumnName="SALARIO_COMERCIAL" />
+          <ScalarProperty Name="USUARIO_REGISTRO" ColumnName="USUARIO_REGISTRO" />
+          <ScalarProperty Name="FECHA_REGISTRO" ColumnName="FECHA_REGISTRO" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="VALOR_FACTOR_MULTIPLICADOR" ColumnName="VALOR_FACTOR_MULTIPLICADOR" />
+          <ScalarProperty Name="VALOR_CON_PRESTACIONES" ColumnName="VALOR_CON_PRESTACIONES" />
+          <ScalarProperty Name="VALOR_SIN_PRESTACIONES" ColumnName="VALOR_SIN_PRESTACIONES" />
+          <ScalarProperty Name="ETAPA" ColumnName="ETAPA" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="COD_FLUJO_INGRESOS_ROL" ColumnName="COD_FLUJO_INGRESOS_ROL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_REGISTRO_NOVEDADES">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_REGISTRO_NOVEDADES">
+        <MappingFragment StoreEntitySet="VISTA_REGISTRO_NOVEDADES">
+          <ScalarProperty Name="SALARIO_COMERCIAL" ColumnName="SALARIO_COMERCIAL" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="FECHA_FIN_NOVEDAD" ColumnName="FECHA_FIN_NOVEDAD" />
+          <ScalarProperty Name="FECHA_INICIO_NOVEDAD" ColumnName="FECHA_INICIO_NOVEDAD" />
+          <ScalarProperty Name="COD_COLABORADOR" ColumnName="COD_COLABORADOR" />
+          <ScalarProperty Name="COD_REGISTRO_NOVEDADES" ColumnName="COD_REGISTRO_NOVEDADES" />
+          <ScalarProperty Name="COD_TIPO_NOVEDAD" ColumnName="COD_TIPO_NOVEDAD" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_SALARIO_COMERCIAL_INCREMENTOS">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_SALARIO_COMERCIAL_INCREMENTOS">
+        <MappingFragment StoreEntitySet="VISTA_SALARIO_COMERCIAL_INCREMENTOS">
+          <ScalarProperty Name="SALARIO_COMERCIAL" ColumnName="SALARIO_COMERCIAL" />
+          <ScalarProperty Name="VALOR_MENSUAL_PRESTACIONES_MULTIPLICADOR" ColumnName="VALOR_MENSUAL_PRESTACIONES_MULTIPLICADOR" />
+          <ScalarProperty Name="VALOR_MENSUAL_PRESTACIONES" ColumnName="VALOR_MENSUAL_PRESTACIONES" />
+          <ScalarProperty Name="VALOR_MENSUAL_SIN_PRESTACIONES" ColumnName="VALOR_MENSUAL_SIN_PRESTACIONES" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_SALARIO_INCREMENTOS_TEMP">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_SALARIO_INCREMENTOS_TEMP">
+        <MappingFragment StoreEntitySet="VISTA_SALARIO_INCREMENTOS_TEMP">
+          <ScalarProperty Name="FECHA_FORMA_PAGO" ColumnName="FECHA_FORMA_PAGO" />
+          <ScalarProperty Name="SALARIO_COMERCIAL" ColumnName="SALARIO_COMERCIAL" />
+          <ScalarProperty Name="VALOR_MENSUAL_PRESTACIONES_MULTIPLICADOR" ColumnName="VALOR_MENSUAL_PRESTACIONES_MULTIPLICADOR" />
+          <ScalarProperty Name="VALOR_MENSUAL_PRESTACIONES" ColumnName="VALOR_MENSUAL_PRESTACIONES" />
+          <ScalarProperty Name="VALOR_MENSUAL_SIN_PRESTACIONES" ColumnName="VALOR_MENSUAL_SIN_PRESTACIONES" />
+          <ScalarProperty Name="ETAPA" ColumnName="ETAPA" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_TEMP">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_TEMP">
+        <MappingFragment StoreEntitySet="VISTA_TEMP">
+          <ScalarProperty Name="APELLIDOS" ColumnName="APELLIDOS" />
+          <ScalarProperty Name="NOMBRES" ColumnName="NOMBRES" />
+          <ScalarProperty Name="COD_ESTADO_COLABORADOR" ColumnName="COD_ESTADO_COLABORADOR" />
+          <ScalarProperty Name="COD_TIPO_DE_CONTRATO" ColumnName="COD_TIPO_DE_CONTRATO" />
+          <ScalarProperty Name="FECHA_INGRESO" ColumnName="FECHA_INGRESO" />
+          <ScalarProperty Name="CENTROS_COSTOS" ColumnName="CENTROS_COSTOS" />
+          <ScalarProperty Name="ESTADO_CIVIL" ColumnName="ESTADO_CIVIL" />
+          <ScalarProperty Name="CORREO_ELECTRONICO" ColumnName="CORREO_ELECTRONICO" />
+          <ScalarProperty Name="CELULAR" ColumnName="CELULAR" />
+          <ScalarProperty Name="FECHA_NACIMIENTO" ColumnName="FECHA_NACIMIENTO" />
+          <ScalarProperty Name="COD_GENERO" ColumnName="COD_GENERO" />
+          <ScalarProperty Name="CEDULA" ColumnName="CEDULA" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_CARGO" ColumnName="COD_CARGO" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="FECHA_FIN" ColumnName="FECHA_FIN" />
+          <ScalarProperty Name="FECHA_INI" ColumnName="FECHA_INI" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_COLABORADOR" ColumnName="COD_COLABORADOR" />
+          <ScalarProperty Name="COD_CONTRATO_COLABORADOR" ColumnName="COD_CONTRATO_COLABORADOR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_USUARIOS_AttendanceDB">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_USUARIOS_AttendanceDB">
+        <MappingFragment StoreEntitySet="VISTA_USUARIOS_AttendanceDB">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CARTERA">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.CARTERA">
+        <MappingFragment StoreEntitySet="CARTERA">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="ESTADO_CARTERA" ColumnName="ESTADO_CARTERA" />
+          <ScalarProperty Name="COD_FACTURA" ColumnName="COD_FACTURA" />
+          <ScalarProperty Name="COD_CARTERA" ColumnName="COD_CARTERA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_CARTERA_INDEX">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_CARTERA_INDEX">
+        <MappingFragment StoreEntitySet="VISTA_CARTERA_INDEX">
+          <ScalarProperty Name="CENTRO_COSTOS" ColumnName="CENTRO_COSTOS" />
+          <ScalarProperty Name="RANKING" ColumnName="RANKING" />
+          <ScalarProperty Name="FECHA_FACTURA" ColumnName="FECHA_FACTURA" />
+          <ScalarProperty Name="SALDO" ColumnName="SALDO" />
+          <ScalarProperty Name="GESTOR" ColumnName="GESTOR" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_CLIENTE" ColumnName="COD_CLIENTE" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_GESTION_CARTERA">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_GESTION_CARTERA">
+        <MappingFragment StoreEntitySet="VISTA_GESTION_CARTERA">
+          <ScalarProperty Name="DIAS" ColumnName="DIAS" />
+          <ScalarProperty Name="RANKING" ColumnName="RANKING" />
+          <ScalarProperty Name="VALOR_SIN_IMPUESTOS" ColumnName="VALOR_SIN_IMPUESTOS" />
+          <ScalarProperty Name="COD_ESTADO_FACTURA" ColumnName="COD_ESTADO_FACTURA" />
+          <ScalarProperty Name="FECHA_FACTURA" ColumnName="FECHA_FACTURA" />
+          <ScalarProperty Name="NUMERO_FACTURA" ColumnName="NUMERO_FACTURA" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="ESTADO_CARTERA" ColumnName="ESTADO_CARTERA" />
+          <ScalarProperty Name="COD_FACTURA" ColumnName="COD_FACTURA" />
+          <ScalarProperty Name="COD_CARTERA" ColumnName="COD_CARTERA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ACUERDOS_PAGO_ENTREGAB">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.ACUERDOS_PAGO_ENTREGAB">
+        <MappingFragment StoreEntitySet="ACUERDOS_PAGO_ENTREGAB">
+          <ScalarProperty Name="VALOR" ColumnName="VALOR" />
+          <ScalarProperty Name="COMENTARIOS" ColumnName="COMENTARIOS" />
+          <ScalarProperty Name="APROBADO" ColumnName="APROBADO" />
+          <ScalarProperty Name="FECHA_ACUERDO" ColumnName="FECHA_ACUERDO" />
+          <ScalarProperty Name="FECHA_REGISTRO" ColumnName="FECHA_REGISTRO" />
+          <ScalarProperty Name="COD_ESTADO_ACUERDO" ColumnName="COD_ESTADO_ACUERDO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="COD_CARTERA" ColumnName="COD_CARTERA" />
+          <ScalarProperty Name="COD_TIPO_ACUERDO" ColumnName="COD_TIPO_ACUERDO" />
+          <ScalarProperty Name="COD_ACUERDO_PAGO" ColumnName="COD_ACUERDO_PAGO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ESTADOS_ACUER_PAG_ENTREG">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.ESTADOS_ACUER_PAG_ENTREG">
+        <MappingFragment StoreEntitySet="ESTADOS_ACUER_PAG_ENTREG">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_ESTADO_ACUERDO" ColumnName="COD_ESTADO_ACUERDO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPOS_ACUERDO">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.TIPOS_ACUERDO">
+        <MappingFragment StoreEntitySet="TIPOS_ACUERDO">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_TIPO_ACUERDO" ColumnName="COD_TIPO_ACUERDO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONTRATO_PROYECTO">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.CONTRATO_PROYECTO">
+        <MappingFragment StoreEntitySet="CONTRATO_PROYECTO">
+          <ScalarProperty Name="OBSERVACIONES" ColumnName="OBSERVACIONES" />
+          <ScalarProperty Name="TELEFONO_RESPONSABLE" ColumnName="TELEFONO_RESPONSABLE" />
+          <ScalarProperty Name="CORREO_RESPONSABLE" ColumnName="CORREO_RESPONSABLE" />
+          <ScalarProperty Name="COD_ESTADO_ORDEN_SERVICIO" ColumnName="COD_ESTADO_ORDEN_SERVICIO" />
+          <ScalarProperty Name="CENTRO_COSTOS" ColumnName="CENTRO_COSTOS" />
+          <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA_CREACION" />
+          <ScalarProperty Name="CREADO_POR" ColumnName="CREADO_POR" />
+          <ScalarProperty Name="FECHA_ULTIMA_MODIFICACION" ColumnName="FECHA_ULTIMA_MODIFICACION" />
+          <ScalarProperty Name="MODIFICADO_POR" ColumnName="MODIFICADO_POR" />
+          <ScalarProperty Name="COMPLETA" ColumnName="COMPLETA" />
+          <ScalarProperty Name="COD_FORMA_PAGO" ColumnName="COD_FORMA_PAGO" />
+          <ScalarProperty Name="COD_PROYECTO" ColumnName="COD_PROYECTO" />
+          <ScalarProperty Name="COD_CONTRATO" ColumnName="COD_CONTRATO" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CLIENTES">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.CLIENTES">
+        <MappingFragment StoreEntitySet="CLIENTES">
+          <ScalarProperty Name="CORREO_FACTURACION" ColumnName="CORREO_FACTURACION" />
+          <ScalarProperty Name="CORREO_CLIENTE" ColumnName="CORREO_CLIENTE" />
+          <ScalarProperty Name="TELEFONO_FACTURACION" ColumnName="TELEFONO_FACTURACION" />
+          <ScalarProperty Name="TELEFONO_CLIENTE" ColumnName="TELEFONO_CLIENTE" />
+          <ScalarProperty Name="CONTACTO_FACTURACION" ColumnName="CONTACTO_FACTURACION" />
+          <ScalarProperty Name="CONTACTO_CONTRATANTE" ColumnName="CONTACTO_CONTRATANTE" />
+          <ScalarProperty Name="DIRECCION_FACTURACION" ColumnName="DIRECCION_FACTURACION" />
+          <ScalarProperty Name="DIRECCION_CLIENTE" ColumnName="DIRECCION_CLIENTE" />
+          <ScalarProperty Name="NIT" ColumnName="NIT" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_CLIENTE" ColumnName="COD_CLIENTE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GESTION_CARTERA">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.GESTION_CARTERA">
+        <MappingFragment StoreEntitySet="GESTION_CARTERA">
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="FECHA_GESTION" ColumnName="FECHA_GESTION" />
+          <ScalarProperty Name="TIPO_GESTION" ColumnName="TIPO_GESTION" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="COD_CARTERA" ColumnName="COD_CARTERA" />
+          <ScalarProperty Name="COD_GESTION" ColumnName="COD_GESTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DETALLE_FACTURA_ADJUNTO_PERS">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.DETALLE_FACTURA_ADJUNTO_PERS">
+        <MappingFragment StoreEntitySet="DETALLE_FACTURA_ADJUNTO_PERS">
+          <ScalarProperty Name="VALOR_SIN_IMPUESTOS" ColumnName="VALOR_SIN_IMPUESTOS" />
+          <ScalarProperty Name="VALOR_DIAS_LAB" ColumnName="VALOR_DIAS_LAB" />
+          <ScalarProperty Name="FECHA_FIN" ColumnName="FECHA_FIN" />
+          <ScalarProperty Name="FECHA_INI" ColumnName="FECHA_INI" />
+          <ScalarProperty Name="DESCUENTO_AUSENCIA" ColumnName="DESCUENTO_AUSENCIA" />
+          <ScalarProperty Name="HORAS_AUSENCIA" ColumnName="HORAS_AUSENCIA" />
+          <ScalarProperty Name="ADICIONES" ColumnName="ADICIONES" />
+          <ScalarProperty Name="HORAS_FN" ColumnName="HORAS_FN" />
+          <ScalarProperty Name="HORAS_FD" ColumnName="HORAS_FD" />
+          <ScalarProperty Name="HORAS_EN" ColumnName="HORAS_EN" />
+          <ScalarProperty Name="HORAS_ED" ColumnName="HORAS_ED" />
+          <ScalarProperty Name="COD_GRUPO_FACTURA" ColumnName="COD_GRUPO_FACTURA" />
+          <ScalarProperty Name="COD_CONCEPTO_PSL" ColumnName="COD_CONCEPTO_PSL" />
+          <ScalarProperty Name="COD_ESTADO_DETALLE" ColumnName="COD_ESTADO_DETALLE" />
+          <ScalarProperty Name="COD_FACTURA" ColumnName="COD_FACTURA" />
+          <ScalarProperty Name="OBSERVACIONES" ColumnName="OBSERVACIONES" />
+          <ScalarProperty Name="COD_CAUSA_ESTADO" ColumnName="COD_CAUSA_ESTADO" />
+          <ScalarProperty Name="COD_ESTADO_FACTURA" ColumnName="COD_ESTADO_FACTURA" />
+          <ScalarProperty Name="USUARIO" ColumnName="USUARIO" />
+          <ScalarProperty Name="FECHA_REGISTRO" ColumnName="FECHA_REGISTRO" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="COD_COLABORADOR" ColumnName="COD_COLABORADOR" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_DETALLE_FACTURA_ADJUNTO_PERS" ColumnName="COD_DETALLE_FACTURA_ADJUNTO_PERS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REGISTRO_NOVEDADES">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.REGISTRO_NOVEDADES">
+        <MappingFragment StoreEntitySet="REGISTRO_NOVEDADES">
+          <ScalarProperty Name="TRABAJA_SABADOS" ColumnName="TRABAJA_SABADOS" />
+          <ScalarProperty Name="FECHA_FIN_NOVEDAD" ColumnName="FECHA_FIN_NOVEDAD" />
+          <ScalarProperty Name="FECHA_INICIO_NOVEDAD" ColumnName="FECHA_INICIO_NOVEDAD" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="COD_TIPO_NOVEDAD" ColumnName="COD_TIPO_NOVEDAD" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_COLABORADOR" ColumnName="COD_COLABORADOR" />
+          <ScalarProperty Name="COD_REGISTRO_NOVEDADES" ColumnName="COD_REGISTRO_NOVEDADES" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRUEFALSE">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.TRUEFALSE">
+        <MappingFragment StoreEntitySet="TRUEFALSE">
+          <ScalarProperty Name="TEXTO" ColumnName="TEXTO" />
+          <ScalarProperty Name="BIT" ColumnName="BIT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_CONTRATO_PROYECTO_FACTURAS1">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_CONTRATO_PROYECTO_FACTURAS1">
+        <MappingFragment StoreEntitySet="VISTA_CONTRATO_PROYECTO_FACTURAS1">
+          <ScalarProperty Name="RANK1" ColumnName="RANK1" />
+          <ScalarProperty Name="ESTADO_ORDEN" ColumnName="ESTADO_ORDEN" />
+          <ScalarProperty Name="ESTADO_ULTIMA_FACTURA" ColumnName="ESTADO_ULTIMA_FACTURA" />
+          <ScalarProperty Name="FECHA_INICIO_EJECUCION_ULTIMO_CONTRATO" ColumnName="FECHA_INICIO_EJECUCION_ULTIMO_CONTRATO" />
+          <ScalarProperty Name="MESES_SIN_FACTURAR" ColumnName="MESES_SIN_FACTURAR" />
+          <ScalarProperty Name="DIAS_SIN_FACTURAR" ColumnName="DIAS_SIN_FACTURAR" />
+          <ScalarProperty Name="FECHA_ULTIMA_FACTURA" ColumnName="FECHA_ULTIMA_FACTURA" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COMPLETA" ColumnName="COMPLETA" />
+          <ScalarProperty Name="COD_ESTADO_ORDEN_SERVICIO" ColumnName="COD_ESTADO_ORDEN_SERVICIO" />
+          <ScalarProperty Name="CENTRO_COSTOS" ColumnName="CENTRO_COSTOS" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_CARTERA_INDEX1">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_CARTERA_INDEX1">
+        <MappingFragment StoreEntitySet="VISTA_CARTERA_INDEX1">
+          <ScalarProperty Name="RANK1" ColumnName="RANK1" />
+          <ScalarProperty Name="CENTRO_COSTOS" ColumnName="CENTRO_COSTOS" />
+          <ScalarProperty Name="RANKING" ColumnName="RANKING" />
+          <ScalarProperty Name="FECHA_FACTURA" ColumnName="FECHA_FACTURA" />
+          <ScalarProperty Name="SALDO" ColumnName="SALDO" />
+          <ScalarProperty Name="GESTOR" ColumnName="GESTOR" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_CLIENTE" ColumnName="COD_CLIENTE" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FACTURAS">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.FACTURAS">
+        <MappingFragment StoreEntitySet="FACTURAS">
+          <ScalarProperty Name="NUMERO_FACTURA_PRODUCTIVO" ColumnName="NUMERO_FACTURA_PRODUCTIVO" />
+          <ScalarProperty Name="FECHA_EMISION" ColumnName="FECHA_EMISION" />
+          <ScalarProperty Name="COD_CONCEPTO_PSL" ColumnName="COD_CONCEPTO_PSL" />
+          <ScalarProperty Name="RANKING" ColumnName="RANKING" />
+          <ScalarProperty Name="VALOR_CON_IMPUESTOS" ColumnName="VALOR_CON_IMPUESTOS" />
+          <ScalarProperty Name="VALOR_SIN_IMPUESTOS" ColumnName="VALOR_SIN_IMPUESTOS" />
+          <ScalarProperty Name="COD_ESTADO_FACTURA" ColumnName="COD_ESTADO_FACTURA" />
+          <ScalarProperty Name="FECHA_FACTURA" ColumnName="FECHA_FACTURA" />
+          <ScalarProperty Name="NUMERO_FACTURA" ColumnName="NUMERO_FACTURA" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_FACTURA" ColumnName="COD_FACTURA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_DETALLE_FACTURAS_REPORTE">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_DETALLE_FACTURAS_REPORTE">
+        <MappingFragment StoreEntitySet="VISTA_DETALLE_FACTURAS_REPORTE">
+          <ScalarProperty Name="DIAS_AUSENCIA" ColumnName="DIAS_AUSENCIA" />
+          <ScalarProperty Name="HORAS_EXTRA" ColumnName="HORAS_EXTRA" />
+          <ScalarProperty Name="TIPO_ELEMENTO" ColumnName="TIPO_ELEMENTO" />
+          <ScalarProperty Name="DEDICACION" ColumnName="DEDICACION" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="PRESTACIONES" ColumnName="PRESTACIONES" />
+          <ScalarProperty Name="SALARIO_COMERCIAL_SIN_PRESTACIONES_CON_INCREMENTOS" ColumnName="SALARIO_COMERCIAL_SIN_PRESTACIONES_CON_INCREMENTOS" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+          <ScalarProperty Name="PERIODO_FACTURACION" ColumnName="PERIODO_FACTURACION" />
+          <ScalarProperty Name="NUMERO_FACTURA_PRODUCTIVO" ColumnName="NUMERO_FACTURA_PRODUCTIVO" />
+          <ScalarProperty Name="NUMERO_FACTURA" ColumnName="NUMERO_FACTURA" />
+          <ScalarProperty Name="CENTRO_COSTOS" ColumnName="CENTRO_COSTOS" />
+          <ScalarProperty Name="NOVEDADES" ColumnName="NOVEDADES" />
+          <ScalarProperty Name="HORAS_AUSENCIA" ColumnName="HORAS_AUSENCIA" />
+          <ScalarProperty Name="HORAS_FN" ColumnName="HORAS_FN" />
+          <ScalarProperty Name="HORAS_FD" ColumnName="HORAS_FD" />
+          <ScalarProperty Name="HORAS_EN" ColumnName="HORAS_EN" />
+          <ScalarProperty Name="HORAS_ED" ColumnName="HORAS_ED" />
+          <ScalarProperty Name="DESCUENTO_AUSENCIA" ColumnName="DESCUENTO_AUSENCIA" />
+          <ScalarProperty Name="ADICIONES" ColumnName="ADICIONES" />
+          <ScalarProperty Name="VALOR_DIAS_LAB" ColumnName="VALOR_DIAS_LAB" />
+          <ScalarProperty Name="VALOR_SIN_IMPUESTOS" ColumnName="VALOR_SIN_IMPUESTOS" />
+          <ScalarProperty Name="FECHA_RETIRO_EN_CONTRATO" ColumnName="FECHA_RETIRO_EN_CONTRATO" />
+          <ScalarProperty Name="FECHA_INGRESO" ColumnName="FECHA_INGRESO" />
+          <ScalarProperty Name="NOMBRE_PERSONA" ColumnName="NOMBRE_PERSONA" />
+          <ScalarProperty Name="NOMBRE_ROL" ColumnName="NOMBRE_ROL" />
+          <ScalarProperty Name="NOMBRE_PROYECTO" ColumnName="NOMBRE_PROYECTO" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_DETALLE_ADJUNTOS_PERS">
+      <EntityTypeMapping TypeName="test_payc_contabilidadModel.VISTA_DETALLE_ADJUNTOS_PERS">
+        <MappingFragment StoreEntitySet="VISTA_DETALLE_ADJUNTOS_PERS">
+          <ScalarProperty Name="NOMBRE_PERSONA" ColumnName="NOMBRE_PERSONA" />
+          <ScalarProperty Name="FECHA_FIN_EJECUCION" ColumnName="FECHA_FIN_EJECUCION" />
+          <ScalarProperty Name="FECHA_INICIO_EJECUCION" ColumnName="FECHA_INICIO_EJECUCION" />
+          <ScalarProperty Name="NOMBRE_ROL" ColumnName="NOMBRE_ROL" />
+          <ScalarProperty Name="CENTRO_COSTOS" ColumnName="CENTRO_COSTOS" />
+          <ScalarProperty Name="NOMBRE_PROYECTO" ColumnName="NOMBRE_PROYECTO" />
+          <ScalarProperty Name="FECHA_FORMA_PAGO" ColumnName="FECHA_FORMA_PAGO" />
+          <ScalarProperty Name="CEDULA" ColumnName="CEDULA" />
+          <ScalarProperty Name="APELLIDOS" ColumnName="APELLIDOS" />
+          <ScalarProperty Name="NOMBRES" ColumnName="NOMBRES" />
+          <ScalarProperty Name="VALOR_SIN_IMPUESTOS" ColumnName="VALOR_SIN_IMPUESTOS" />
+          <ScalarProperty Name="VALOR_DIAS_LAB" ColumnName="VALOR_DIAS_LAB" />
+          <ScalarProperty Name="FECHA_FIN" ColumnName="FECHA_FIN" />
+          <ScalarProperty Name="FECHA_INI" ColumnName="FECHA_INI" />
+          <ScalarProperty Name="DESCUENTO_AUSENCIA" ColumnName="DESCUENTO_AUSENCIA" />
+          <ScalarProperty Name="HORAS_AUSENCIA" ColumnName="HORAS_AUSENCIA" />
+          <ScalarProperty Name="ADICIONES" ColumnName="ADICIONES" />
+          <ScalarProperty Name="HORAS_FN" ColumnName="HORAS_FN" />
+          <ScalarProperty Name="HORAS_FD" ColumnName="HORAS_FD" />
+          <ScalarProperty Name="HORAS_EN" ColumnName="HORAS_EN" />
+          <ScalarProperty Name="HORAS_ED" ColumnName="HORAS_ED" />
+          <ScalarProperty Name="COD_GRUPO_FACTURA" ColumnName="COD_GRUPO_FACTURA" />
+          <ScalarProperty Name="COD_CONCEPTO_PSL" ColumnName="COD_CONCEPTO_PSL" />
+          <ScalarProperty Name="COD_ESTADO_DETALLE" ColumnName="COD_ESTADO_DETALLE" />
+          <ScalarProperty Name="COD_FACTURA" ColumnName="COD_FACTURA" />
+          <ScalarProperty Name="OBSERVACIONES" ColumnName="OBSERVACIONES" />
+          <ScalarProperty Name="COD_CAUSA_ESTADO" ColumnName="COD_CAUSA_ESTADO" />
+          <ScalarProperty Name="COD_ESTADO_FACTURA" ColumnName="COD_ESTADO_FACTURA" />
+          <ScalarProperty Name="USUARIO" ColumnName="USUARIO" />
+          <ScalarProperty Name="FECHA_REGISTRO" ColumnName="FECHA_REGISTRO" />
+          <ScalarProperty Name="COD_FORMAS_PAGO_FECHAS" ColumnName="COD_FORMAS_PAGO_FECHAS" />
+          <ScalarProperty Name="COD_COLABORADOR" ColumnName="COD_COLABORADOR" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+          <ScalarProperty Name="COD_CONTRATO_PROYECTO" ColumnName="COD_CONTRATO_PROYECTO" />
+          <ScalarProperty Name="COD_DETALLE_FACTURA_ADJUNTO_PERS" ColumnName="COD_DETALLE_FACTURA_ADJUNTO_PERS" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

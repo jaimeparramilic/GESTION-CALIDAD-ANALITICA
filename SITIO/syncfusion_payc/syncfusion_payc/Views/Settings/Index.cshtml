@@ -1,0 +1,380 @@
+﻿@*@model IEnumerable<object>
+    @{
+        List<syncfusion_payc.Models.PREGUNTAS> lstPREGUNTAS = Model.ToList()[0] as List<syncfusion_payc.Models.PREGUNTAS>
+        List<syncfusion_payc.Models.ASPECTOS> lstASPECTOS = Model.ToList()[1] as List<syncfusion_payc.Models.ASPECTOS>
+    }
+    // @model IEnumerable<syncfusion_payc.Models.PREGUNTAS>
+    // @model IEnumerable<syncfusion_payc.Models.ASPECTOS>*@
+
+@{
+    ViewBag.Title = "Configuración";
+}
+
+
+<h2>GESTIÓN DE ENCUESTA</h2>
+@if (User.Identity.IsAuthenticated)
+{
+    <div class="control-section">
+        @{Html.EJ().Tab("SETTINGSTABS").Items(data =>
+            {
+            data.Add().ID("PREGUNTAS").Text("PREGUNTAS").ContentTemplate(
+                
+@<div class="e-tab">
+    @*@(Html.EJ().Grid<syncfusion_payc.Models.PREGUNTAS>("Grid")
+    @(Html.EJ().Grid<object>("PREGUNTAS")
+        .Datasource(ds => ds.URL("GetOrderData_PREGUNTAS").InsertURL("PerformInsert_PREGUNTAS").UpdateURL("PerformUpdate_PREGUNTAS").RemoveURL("PerformDelete_PREGUNTAS").Adaptor(AdaptorType.UrlAdaptor))
+        //.Datasource(ds => ds.URL("GetOrderData_PREGUNTAS").RemoveURL("PerformDelete_PREGUNTAS").Adaptor(AdaptorType.UrlAdaptor))
+        .AllowPaging()
+        .AllowFiltering()
+        .Locale("es-CO")
+        .AllowScrolling()
+        //.ClientSideEvents(e => e.ActionBegin("inicio_grid"))
+        .ClientSideEvents(a => a.RecordDoubleClick("editar_contrato_proyecto").BeginEdit("editar_contrato_proyecto").ActionBegin("inicio_accion_PREGUNTAS"))
+        //.ClientSideEvents(eve => eve.ToolbarClick("clicked"))  
+        .AllowResizeToFit(true)
+        //.AllowMultiSorting()
+        //.AllowSorting()
+        .FilterSettings(filter => { filter.FilterType(FilterType.Excel); })
+        .EditSettings(edit => { edit.AllowAdding().AllowDeleting().AllowEditing().EditMode(EditMode.Dialog); })
+        .ToolbarSettings(toolbar =>
+            {
+            toolbar.ShowToolbar().ToolbarItems(items =>
+                {
+                items.AddTool(ToolBarItems.Add);
+                items.AddTool(ToolBarItems.Edit);
+                items.AddTool(ToolBarItems.Delete);
+                items.AddTool(ToolBarItems.Update);
+                items.AddTool(ToolBarItems.Cancel);
+                });
+            })
+        .Columns(col =>
+            {
+            //col.Field("COD_USUARIO").ForeignKeyField("COD_USUARIO").Type("string").ForeignKeyValue("DESCRIPCION").DataSource((IEnumerable<object>)new syncfusion_payc.Models.CONTRATISTAS_testEntities().USUARIOS.ToList()).HeaderText("COD_USUARIO").EditType(EditingType.DropdownEdit).Add();
+            col.Field("COD_USUARIO").ForeignKeyField("COD_USUARIO").Type("string").ForeignKeyValue("DESCRIPCION").Visible(true).DataSource((IEnumerable<object>)new syncfusion_payc.Models.CONTRATISTAS_testEntities().USUARIOS.ToList()).HeaderText("COD_USUARIO").EditType(EditingType.DropdownEdit).Add();
+            col.Field("COD_PREGUNTA").HeaderText("COD_PREGUNTA").IsPrimaryKey(true).Visible(true).Format("{0:n0}");//.EditType(EditingType.NumericEdit).ValidationRules(v => v.AddRule("number", true)).Add();
+            col.Field("DESCRIPCION").HeaderText("PREGUNTA").Add();
+            col.Field("ESTADO_PREGUNTA").HeaderText("ESTADO").Add();
+            col.Field("FECHA_CREACION").HeaderText("FECHA_CREACION").Format("{0:dd/MM/yyyy}").EditType(EditingType.DateTimePicker).Add();
+            col.Field("FECHA_ULTIMA_MODIFICACION").HeaderText("FECHA_ULTIMA_MODIFICACION").Format("{0:dd/MM/yyyy}").EditType(EditingType.DateTimePicker).Add();
+            })
+    )*@
+
+    @*@(Html.EJ().Grid<syncfusion_payc.Models.PREGUNTAS>("Grid")*@
+    @(Html.EJ().Grid<object>("PREGUNTAS")
+        .Datasource(ds => ds.URL("GetOrderData_PREGUNTAS").InsertURL("PerformInsert_PREGUNTAS").UpdateURL("PerformUpdate_PREGUNTAS").RemoveURL(@Url.Action("PerformDelete_PREGUNTAS", "Settings", null, Request.Url.Scheme)).Adaptor(AdaptorType.UrlAdaptor))
+        //.Datasource(ds => ds.URL("GetOrderData_PREGUNTAS").RemoveURL("PerformDelete_PREGUNTAS").Adaptor(AdaptorType.UrlAdaptor))
+        .AllowPaging()
+        .AllowFiltering()
+        .Locale("es-CO")
+        .AllowScrolling()
+        //.ClientSideEvents(e => e.ActionBegin("inicio_grid"))
+        .ClientSideEvents(a => a.RecordDoubleClick("editar_PREGUNTAS").BeginEdit("editar_PREGUNTAS").ActionBegin("inicio_accion_PREGUNTAS"))
+        //.ClientSideEvents(a => a.RecordDoubleClick("editar_contrato_proyecto").BeginEdit("editar_contrato_proyecto").ActionBegin("inicio_accion_PREGUNTAS"))
+        //.ClientSideEvents(eve => eve.ToolbarClick("clicked"))  
+        .AllowResizeToFit(true)
+        //.AllowMultiSorting()
+        //.AllowSorting()
+        .FilterSettings(filter => { filter.FilterType(FilterType.Excel); })
+        .EditSettings(edit => { edit.AllowAdding().AllowDeleting().AllowEditing().EditMode(EditMode.Dialog).ShowDeleteConfirmDialog(); })
+        .ToolbarSettings(toolbar =>
+        {
+            toolbar.ShowToolbar().ToolbarItems(items =>
+            {
+                items.AddTool(ToolBarItems.Add);
+                items.AddTool(ToolBarItems.Edit);
+                items.AddTool(ToolBarItems.Delete);
+                items.AddTool(ToolBarItems.Update);
+                items.AddTool(ToolBarItems.Cancel);
+            });
+        })
+        .Columns(col =>
+        {
+            col.Field("COD_VISTA_DETALLES_PREGUNTAS").HeaderText("ID").Visible(false).IsPrimaryKey(true).Format("{0:n0}").EditType(EditingType.NumericEdit).Add();
+            col.Field("COD_PREGUNTA").HeaderText("COD_PREGUNTA").Visible(false).Format("{0:n0}").EditType(EditingType.NumericEdit).Add();
+            col.Field("COD_ATRIBUTO").HeaderText("COD_ATRIBUTO").Visible(false).Format("{0:n0}").EditType(EditingType.NumericEdit).Add();
+            col.Field("COD_ASPECTO").HeaderText("COD_ASPECTO").Visible(false).Format("{0:n0}").EditType(EditingType.NumericEdit).Add();
+            col.Field("PREGUNTA").HeaderText("Pregunta").Add();
+            col.Field("ATRIBUTO").HeaderText("Atributo").Add();
+            col.Field("ASPECTO").HeaderText("Aspecto").Add();
+            col.Field("C__de_Respuestas").HeaderText("# de respuestas").Add();
+            col.Field("FECHA_CREACION").HeaderText("Fecha de registro").Format("{0:dd/MM/yyyy}").EditType(EditingType.DateTimePicker).Add();
+            col.Field("FECHA_ULTIMA_MODIFICACION").HeaderText("Última edición").Format("{0:dd/MM/yyyy}").EditType(EditingType.DateTimePicker).Add();
+            col.Field("COD_USUARIO_ULTIMA_MODIFICACION").HeaderText("Editado por").Add();
+            //col.Field("ESTADO").HeaderText("Estado").Add()
+            //col.Field("COD_USUARIO").ForeignKeyField("COD_USUARIO").Type("string").ForeignKeyValue("DESCRIPCION").DataSource((IEnumerable<object>)new syncfusion_payc.Models.CONTRATISTAS_testEntities().USUARIOS.ToList()).HeaderText("COD_USUARIO").EditType(EditingType.DropdownEdit).Add();
+            //col.Field("COD_USUARIO").ForeignKeyField("COD_USUARIO").Type("string").ForeignKeyValue("DESCRIPCION").Visible(true).DataSource((IEnumerable<object>)new syncfusion_payc.Models.CONTRATISTAS_testEntities().USUARIOS.ToList()).HeaderText("COD_USUARIO").EditType(EditingType.DropdownEdit).Add();
+            //col.Field("COD_PREGUNTA").HeaderText("COD_PREGUNTA").IsPrimaryKey(true).Visible(true).Format("{0:n0}");//.EditType(EditingType.NumericEdit).ValidationRules(v => v.AddRule("number", true)).Add();
+            //col.Field("DESCRIPCION").HeaderText("PREGUNTA").Add();
+            //col.Field("ESTADO_PREGUNTA").HeaderText("ESTADO").Add();
+            //col.Field("FECHA_CREACION").HeaderText("FECHA_CREACION").Format("{0:dd/MM/yyyy}").EditType(EditingType.DateTimePicker).Add();
+            //col.Field("FECHA_ULTIMA_MODIFICACION").HeaderText("FECHA_ULTIMA_MODIFICACION").Format("{0:dd/MM/yyyy}").EditType(EditingType.DateTimePicker).Add();
+        })
+    )
+</div>
+);
+                      data.Add().ID("ASPECTOS").Text("ASPECTOS").ContentTemplate(
+@<div>
+    @*@(Html.EJ().Grid<syncfusion_payc.Models.ASPECTOS>("Grid")*@
+    @(Html.EJ().Grid<object>("ASPECTOS")
+        .Datasource(ds => ds.URL("GetOrderData_ASPECTOS").InsertURL("PerformInsert_ASPECTOS").UpdateURL("PerformUpdate_ASPECTOS").RemoveURL("PerformDelete_ASPECTOS").Adaptor(AdaptorType.UrlAdaptor))
+        //.Datasource(ds => ds.URL("GetOrderData_ASPECTOS").InsertURL("PerformInsert_ASPECTOS").UpdateURL("PerformUpdate_ASPECTOS").RemoveURL("PerformDelete_ASPECTOS"))
+        .AllowPaging()
+        .AllowFiltering()
+        .Locale("es-CO")
+        .AllowResizeToFit(true)
+        .AllowMultiSorting()
+        .AllowSorting()
+        .FilterSettings(filter => { filter.FilterType(FilterType.Excel); })
+        //.EditSettings(edit => { edit.AllowAdding().AllowDeleting().AllowEditing().EditMode(EditMode.Dialog); })
+        .EditSettings(edit => { edit.AllowAdding().AllowDeleting().AllowEditing().EditMode(EditMode.Dialog); })
+        .ClientSideEvents(e => e.RecordDoubleClick("editar_ASPECTOS").BeginEdit("editar_ASPECTOS").ActionBegin("inicio_accion_ASPECTOS"))
+        //.ClientSideEvents(e => e.RecordDoubleClick("editar_contrato_proyecto").BeginEdit("editar_contrato_proyecto").ActionBegin("inicio_accion_ASPECTOS"))
+        //.ClientSideEvents(e => e.ActionBegin("inicio_grid_ASPECTOS"))
+        .ToolbarSettings(toolbar =>
+        {
+            toolbar.ShowToolbar().ToolbarItems(items =>
+            {
+                items.AddTool(ToolBarItems.Add);
+                items.AddTool(ToolBarItems.Edit);
+                items.AddTool(ToolBarItems.Delete);
+                items.AddTool(ToolBarItems.Update);
+                items.AddTool(ToolBarItems.Cancel);
+            });
+        })
+        .Columns(col =>
+        {
+            //col.Field("COD_USUARIO").ForeignKeyField("COD_USUARIO").Type("string").ForeignKeyValue("DESCRIPCION").DataSource((IEnumerable<object>)new syncfusion_payc.Models.CONTRATISTAS_testEntities().USUARIOS.ToList()).HeaderText("COD_USUARIO").EditType(EditingType.DropdownEdit).Add();
+            //col.Field("COD_USUARIO").ForeignKeyField("COD_USUARIO").Type("string").Visible(false).ForeignKeyValue("DESCRIPCION").DataSource((IEnumerable<object>)new syncfusion_payc.Models.CONTRATISTAS_testEntities().USUARIOS.ToList()).HeaderText("COD_USUARIO").EditType(EditingType.DropdownEdit).Add();
+            col.Field("COD_VISTA_DETALLES_ASPECTOS").HeaderText("ID").Visible(false).IsPrimaryKey(true).Format("{0:n0}").EditType(EditingType.NumericEdit).Add();
+            col.Field("COD_ASPECTO").HeaderText("ID").Visible(false).Format("{0:n0}").EditType(EditingType.NumericEdit).Add();
+            col.Field("ASPECTO").HeaderText("Aspecto").Add();
+            col.Field("C__de_Atributos").HeaderText("# de atributos").Add();
+            col.Field("FECHA_CREACION").HeaderText("Fecha de registro").Format("{0:dd/MM/yyyy}").EditType(EditingType.DateTimePicker).Add();
+            col.Field("FECHA_MODIFICACION").HeaderText("Última edición").Format("{0:dd/MM/yyyy}").EditType(EditingType.DateTimePicker).Add();
+            col.Field("ESTADO").HeaderText("Estado").Add();
+            //col.Field("COD_USUARIO").ForeignKeyField("COD_USUARIO").Type("string").ForeignKeyValue("DESCRIPCION").DataSource((IEnumerable<object>)new syncfusion_payc.Models.CONTRATISTAS_testEntities().USUARIOS.ToList()).HeaderText("COD_USUARIO").EditType(EditingType.DropdownEdit).Add();
+            //col.Field("COD_USUARIO").ForeignKeyField("COD_USUARIO").Type("string").Visible(false).ForeignKeyValue("DESCRIPCION").DataSource((IEnumerable<object>)new syncfusion_payc.Models.CONTRATISTAS_testEntities().USUARIOS.ToList()).HeaderText("COD_USUARIO").EditType(EditingType.DropdownEdit).Add();
+            //col.Field("COD_ASPECTO").HeaderText("COD_ASPECTO").IsPrimaryKey(true).Visible(false).Format("{0:n0}").EditType(EditingType.NumericEdit).ValidationRules(v => v.AddRule("number", true)).Add();
+            //col.Field("DESCRIPCION").HeaderText("DESCRIPCION").Add();
+            //col.Field("FECHA_CREACION").HeaderText("FECHA_CREACION").Format("{0:dd/MM/yyyy}").EditType(EditingType.DateTimePicker).Add();
+            //col.Field("FECHA_ULTIMA_MODIFICACION").HeaderText("FECHA_ULTIMA_MODIFICACION").Format("{0:dd/MM/yyyy}").EditType(EditingType.DateTimePicker).Add();
+            //col.Field("ESTADO_ASPECTO").HeaderText("ESTADO_ASPECTO").Add();
+        })
+        .ChildGrid(child => child
+                //.Datasource(ds => ds.URL("GetOrderData_ASPECTOS_Child").InsertURL("PerformInsert").UpdateURL("PerformUpdate").RemoveURL("PerformDelete").Adaptor(AdaptorType.UrlAdaptor))
+                .Datasource(ds => ds.URL("GetOrderData_ASPECTOS_Child").Adaptor(AdaptorType.UrlAdaptor))
+                .AllowPaging()
+                .AllowFiltering()
+                .AllowKeyboardNavigation(false)
+                .Locale("es-CO")
+                .QueryString("COD_ASPECTO") //El campo al que se hace Query String es el campo hacia el cual se encuentra la primary key de la tabla mas no de la vista
+                .FilterSettings(filter => { filter.FilterType(FilterType.Excel); })
+                .EditSettings(edit => { edit.AllowAdding().AllowDeleting().AllowEditing().EditMode(EditMode.Dialog); })
+                .ClientSideEvents(e => e.ActionBegin("inicio_grid"))
+                //.ToolbarSettings(toolbar =>{
+              //      toolbar.ShowToolbar().ToolbarItems(items =>{
+            //            items.AddTool(ToolBarItems.Add);
+          //              items.AddTool(ToolBarItems.Edit);
+        //                items.AddTool(ToolBarItems.Delete);
+      //                  items.AddTool(ToolBarItems.Update);
+    //                    items.AddTool(ToolBarItems.Cancel);
+  //                  });
+//                })
+                .Columns(col =>
+                {
+                    col.Field("COD_VISTA_DETALLES_CRITERIOS").IsPrimaryKey(true).Visible(false).Format("{0:n0}").EditType(EditingType.NumericEdit).ValidationRules(v => v.AddRule("number", true)).Add();
+                    col.Field("COD_ASPECTO").HeaderText("COD_ASPECTO").Visible(false).Format("{0:n0}").EditType(EditingType.NumericEdit).ValidationRules(v => v.AddRule("number", true)).Add();
+                    col.Field("COD_ATRIBUTO").HeaderText("COD_ATRIBUTO").ForeignKeyField("COD_ASPECTO").Visible(false).Format("{0:n0}").EditType(EditingType.NumericEdit).ValidationRules(v => v.AddRule("number", true)).Add();
+                    col.Field("ASPECTO").Visible(false).HeaderText("ASPECTO").Add();
+                    col.Field("ATRIBUTO").HeaderText("Atributo").Add();
+                    col.Field("PONDERACION").HeaderText("Ponderación").Add();
+                    col.Field("C__de_preguntas").HeaderText("# de preguntas").Add();
+                })
+                )
+    )
+
+</div>
+);
+                      }
+        ).Render();
+        }
+    </div>
+}
+<script>
+    $(document).ready(function () {
+        ej.Grid.Locale["es-CO"] = {
+            EmptyRecord: "No hay registros que mostrar",
+            GroupDropArea: "Arrastre un encabezado de columna aquí para agrupar su columna",
+            DeleteOperationAlert: "No hay registros seleccionados para la operación de eliminación",
+            EditOperationAlert: "No hay registros seleccionados para la operación de edición",
+            SaveButton: "Guardar",
+            OKButton: "DE ACUERDO",
+            CancelButton: "Cancelar",
+            EditFormTitle: "Detalles de ",
+            AddFormTitle: "Añadir nuevo registro",
+            GroupCaptionFormat: "{{:headerText}}: {{:key}} - {{:count}} {{if count == 1 }} ítem {{else}} artículos {{/if}} ",
+
+
+        };
+        ej.Pager.Locale["es-CO"] = {
+            pagerInfo: "{0} de {1} páginas ({2} artículos)",
+            firstPageTooltip: "Ir a la primera página",
+            lastPageTooltip: "Ir a la última página",
+            nextPageTooltip: "Ir a la página siguiente",
+            previousPageTooltip: "Ir a la página anterior",
+            nextPagerTooltip: "Ir al siguiente Pager",
+            previousPagerTooltip: "Ir a Pager anterior"
+        };
+
+        ej.ExcelFilter.Locale["es-CO"] = {
+            SortNoSmaller: "Ordenar de menor a mayor",
+            SortNoLarger: "Ordenar de mayor a menor",
+            SortTextAscending: "Ordenar de A a Z",
+            SortTextDescending: "Ordenar de Z a A",
+            SortDateOldest: "Ordenar por Más antiguos",
+            SortDateNewest: "Ordenar por Más reciente",
+            SortByColor: "Ordenar por color",
+            SortByCellColor: "Ordenar por color de la célula",
+            SortByFontColor: "Ordenar por Color de fuente",
+            FilterByColor: "Filtrar por color",
+            CustomSort: "Orden personalizado",
+            FilterByCellColor: "Filtrar por color de la célula",
+            FilterByFontColor: "Filtrar por color de fuente",
+            ClearFilter: "Borrar filtro",
+            NumberFilter: "Número Filtros",
+            GuidFilter: "Gud Filtros",
+            TextFilter: "Filtros de texto",
+            DateFilter: "Filtros de fecha",
+            DateTimeFilter: "Fecha filtros de tiempo",
+            SelectAll: "Seleccionar todo",
+            Blanks: "Los espacios en blanco",
+            Search: "Buscar",
+            Showrowswhere: "Mostrar filas",
+            NumericTextboxWaterMark: "introducir el valor",
+            StringMenuOptions: [{ text: "Igual", value: "equal" }, { text: "No es equal", value: "notequal" }, { text: "Comienza con", value: "startswith" }, { text: "Termina con", value: "endswith" }, { text: "contiene", value: "contains" }, { text: "Filtro personalizado", value: "customfilter" },],
+            NumberMenuOptions: [{ text: "Igual", value: "equal" }, { text: "No es equal", value: "notequal" }, { text: "Menos que", value: "lessthan" }, { text: "Menor o equal", value: "lessthanorequal" }, { text: "Mas grande que", value: "greaterthan" }, { text: "Mayor que o equal", value: "greaterthanorequal" }, { text: "Entre", value: "between" }, { text: "Filtro personalizado", value: "customfilter" },],
+            GuidMenuOptions: [{ text: "Igual", value: "equal" }, { text: "No es equal", value: "notequal" }, { text: "Filtro personalizado", value: "customfilter" },],
+            DateMenuOptions: [{ text: "Igual", value: "equal" }, { text: "No es equal", value: "notequal" }, { text: "Menos que", value: "lessthan" }, { text: "Menor o equal", value: "lessthanorequal" }, { text: "Mas grande que", value: "greaterthan" }, { text: "Mayor que o equal", value: "greaterthanorequal" }, { text: "Entre", value: "between" }, { text: "Filtro personalizado", value: "customfilter" },],
+            DatetimeMenuOptions: [{ text: "Igual", value: "equal" }, { text: "No es equal", value: "notequal" }, { text: "Menos que", value: "lessthan" }, { text: "Menor o equal", value: "lessthanorequal" }, { text: "Mas grande que", value: "greaterthan" }, { text: "Mayor que o equal", value: "greaterthanorequal" }, { text: "Entre", value: "between" }, { text: "Filtro personalizado", value: "customfilter" },],
+            Top10MenuOptions: [{ text: "Parte superior", value: "top" }, { text: "Fondo", value: "bottom" },],
+            title: "Filtro personalizado",
+            PredicateAnd: "Y",
+            PredicateOr: "O",
+            Ok: "Aceptar",
+            MatchCase: "Coincidencia",
+            Cancel: "Cancelar",
+            NoResult: "No se encontraron coincidencias",
+            CheckBoxStatusMsg: "No todos los elementos que muestran",
+            DatePickerWaterMark: "Seleccione fecha",
+            DateTimePickerWaterMark: "Seleccionar fecha y hora",
+            True: "cierto",
+            False: "falso"
+        };
+    });
+
+
+    //#region
+    //REGION COMENTADA PORQUE APARENTEMENTE NO TIENE FUNCIONALIDAD.....EN EL EJEMPLO SOLO ESTA DECLARADA EN LA VISTA Y NO TIENE ACCIONES
+    //Funcion añadir contrato proyecto
+    // function añadir_contrato_proyecto(args) {
+
+    //     window.location = "Add";
+
+    // }
+    //#endregion
+
+    //Funcion inicio accion grid ((Acción del Botón Add de preguntas para redirigir a la view de registro_pregunta))
+    function inicio_accion_PREGUNTAS(args_preguntas) {
+        if (args_preguntas.requestType == "add") {
+            args_preguntas.cancel = true;
+            window.location = "RegistroPregunta";
+        } else if (args_preguntas.requestType == "delete") {
+            if (args_preguntas.rowData.C__de_Respuestas != 0) {
+                args_preguntas.cancel = true;
+                alert("Borre primero las " + args_preguntas.rowData.C__de_Respuestas + " posibles respuestas asociadas a la pregunta");
+            }
+        }
+    }
+
+    
+
+    //Funcion inicio accion grid ((Acción del Botón Add de aspectos para redirigir a la view de registro_aspecto))
+  //  function inicio_accion_ASPECTOS(args) {
+//        if (args.requestType == "add") {
+      //      args.cancel = true;
+    //        window.location = "RegistroAspecto";
+  //      }
+//    }
+
+
+//Funcion inicio accion grid ((Acción del Botón Add de aspectos para redirigir a la view de registro_aspecto))
+    function inicio_accion_ASPECTOS(args_aspectos) {
+        if (args_aspectos.requestType == "add") {
+            args_aspectos.cancel = true;
+            window.location = "RegistroAspecto";
+        } else if (args_aspectos.requestType=="delete") {
+            if (args_aspectos.rowData.C__de_Atributos !=0) {
+                args_aspectos.cancel = true;
+                alert("Borre primero los " + args_aspectos.rowData.C__de_Atributos + " atributos asociadas al aspecto");
+            }
+        }
+    }
+
+    function editar_ASPECTOS(args_aspectos) {
+        //console.log(args.rowData)
+        console.log(args_aspectos.rowData.COD_ASPECTO)
+        args_aspectos.cancel = true;
+        window.location = "EditAspecto/" + args_aspectos.rowData.COD_ASPECTO;
+    }
+
+    function editar_PREGUNTAS(args_preguntas) {
+        //console.log(args.rowData)
+        console.log(args_preguntas.rowData.COD_PREGUNTA)
+        args_preguntas.cancel = true;
+        window.location = "EditPregunta/" + args_preguntas.rowData.COD_PREGUNTA;
+    }    
+
+
+
+
+
+    // #region
+    // REGION PARA EL BOTON DEL EDIT DE LA GRID.....EN LOS BOTONES DE LA GRID SE NOMBRO "editarPREGUNTAS" y hay que reemplazarlo por el editar_contrato_proyecto y el editar_contrato_proyecto_click hay que incluirlo en la row de la grid apra traer el cod
+
+    //Funcion editar contrato proyecto
+    //function editar_contrato_proyecto(args) {
+    //
+    //    args.cancel = true;
+    //    window.location = "Edit/" + args.primaryKeyValue[0];
+    //}
+
+    //function editar_contrato_proyecto_click(cod_contrato_proyecto) {
+    //
+    //    window.location = "Edit/" + cod_contrato_proyecto;
+    //}
+    // #endregion
+
+
+
+
+
+
+
+
+	//Funcion para añadir buscador a los dropdown (Comentado porque aún no se reuqiere establecer buscador en las grid)
+	// function inicio_grid(args) {
+    //     if (args.requestType == "beginedit" || args.requestType == "add") {
+    //         if (args.model.dataSource.dataSource.url == "GetOrderData") {
+    //             setTimeout(function () {
+
+	// 				var drop = $("#GRIDCOD_USUARIO").ejDropDownList('instance');
+    //                 drop.option("enableFilterSearch", true);
+
+	// 				var drop = $("#GRIDCOD_USUARIO").ejDropDownList('instance');
+    //                 drop.option("enableFilterSearch", true);
+
+    //             }, 50);
+    //         }
+    //     }
+    // }
+</script>

@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - PAYC CALIDAD ANALITICA</title>
+    @*Del theme de Polifonía*@
+    <link href="~/Content/bootstrap.csfs" rel="stylesheet" />
+
+    <link href="~/Content/ej/ej.widgets.core.min.css" rel="stylesheet" />
+    <link href="~/Content/ej/bootstrap-theme/ej.theme.min.css" rel="stylesheet" />
+
+
+    @*theme polifonía*@
+
+    @Styles.Render("~/Content/css")
+
+    <link href="~/Content/Site2.css" rel="stylesheet" />
+    <link href="~/Content/main2.css" rel="stylesheet" />
+    <link href="~/Content/main.css" rel="stylesheet" />
+
+
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+
+    <link href="~/Content/ej/ej.widgets.core.min.css" rel="stylesheet" />
+    <link href="~/Content/ej/bootstrap-theme/ej.theme.min.css" rel="stylesheet" />
+    <link href="~/Content/ej/bootstrap-theme/ej.web.all.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/jquery-ui-min.js" type="text/javascript"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/jquery.easing-1.3.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/ej/ej.web.all.min.js" type="text/javascript"></script>
+    <!--<script src="~/Scripts/ej/ej.webform.min.js" type="text/javascript"></script>-->
+    <script src="~/Scripts/ej/ej.webform.js" type="text/javascript"></script>
+    <!--<script src="~/Scripts/webformsmin.js"></script>-->
+    <script src="~/Scripts/bootstrap.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/jquery.wizard.js"></script>
+    <script src="~/Scripts/jsrender.min.js"></script>
+    <script src="~/Scripts/traduccion/ej.culture.es-CO.min.js"></script>
+    <script src="~/Scripts/traduccion/ej.localetexts.es-CO.min.js"></script>
+
+    <script src="~/Scripts/require.min.js"></script>
+</head>
+<body>
+    <!-- /Loader-->
+    <div class="contenedor_loader">
+        <span class="e-image imagen_loader"></span>
+    </div>
+    <div class="contenedor_loader1">
+        <img class="e-image imagen_loader" src="~/images/waitingpopup.gif">
+
+    </div>
+    <!-- /Contenido-General-->
+    <div class="contenedor_universal">
+        <div id="wrapper">
+            <!-- Menu Top -->
+
+            <nav class="menu-top navbar navbar-default navbar-fixed-top">
+
+                <div class="container-fluid" style="padding: 0px 70px;">
+                    <div class="logo"><img class="logopayc" src="~/images/logopayc.png" /></div>
+                    <div class="navbar-header">
+                        <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        @Html.Partial("_LoginPartial")
+                        <a href="" class="navbar-brand">CALIDAD ANALITICA</a>
+                    </div>
+                    <div class="navbar-collapse collapse" id="navbar">
+                        <ul class="nav navbar-nav navbar-right"></ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </nav>
+            <!-- /Menu Top -->
+            <!-- Sidebar-wrapper  -->
+            <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+                <ul class="nav sidebar-nav">
+                    <h5 style="font-size:30px;">+</h5>
+                    @*Selección de tipo de gestión*@
+                </ul>
+            </nav>
+
+            <!-- /#sidebar-wrapper -->
+            <!-- Contenido-General -->
+            <div id="page-content-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <!-- Columna Menu Left -->
+                        <div class="col-xs-1 col-lg-1">
+
+                            <div class="menu-left">
+                                <button class="alert-open is-closed animated fadeInLeft btn-lg" type="button" data-toggle="offcanvas">
+                                    <span class="glyphicon glyphicon-bullhorn beige"></span>
+                                </button>
+                                @if (Request.IsAuthenticated)
+                                {
+                                <ul>
+                                    <!--ADMINISTRACIÓN CONTRATISTAS-->
+                                    <li class="left-icons icon-entida dropdown-submenu" title="PROCESOS MISIONALES">
+                                        <ul class="dropdown-menu derecha">
+                                            @*<h6>@Html.ActionLink("FLUJO PROYECTOS", "Index", "PROYECTOS")</h6>*@
+                                            <h6>@Html.ActionLink("Proyección variables", "Index", "PROYECCIONVARIABLES/Index")</h6>
+
+                                        </ul>
+                                    </li>
+                                    <!--CALIFICACIÓN CONTRATISTAS-->
+                                    <li class="left-icons icon-personaj dropdown-submenu" title="Calificación contratistas">
+                                        <ul class="dropdown-menu derecha">
+                                            <h6>@Html.ActionLink("Calificación contratistas", "Index", "Calificaciones/Index")</h6>
+
+                                        </ul>
+                                    </li>
+                                    <!--CONFIGURACIÓN CALIFICACIONES-->
+                                    <li class="left-icons icon-parrill dropdown-submenu" title="Configuración Calificaciones">
+                                        <ul class="dropdown-menu derecha">
+                                            <h6>@Html.ActionLink("Configuración Calificaciones", "Index", "Settings/Index")</h6>
+                                        </ul>
+                                    </li>
+                                    <!--ADMINSTRACIÓN USUARIOS-->
+                                    <li class="left-icons icon-general dropdown-submenu">
+                                        <ul class="dropdown-menu derecha">
+                                            <h6>@Html.ActionLink("Administración usuarios", "Index", "Management/Index")</h6>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                }
+                            </div>
+                        </div>
+                        <!-- /Columna Menu Left -->
+                        <!-- Columna Contenido -->
+                        <div class="col-xs-11 col-lg-11 contenedor_tablas">
+
+                            @RenderBody()
+                           
+
+
+                        </div>
+                    </div>
+                    <!-- /Columna Contenido -->
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- /Footer-->
+    <footer>
+        <div class="container body-content">
+            <hr />
+            <p>&copy; @DateTime.Now.Year - PAYC SAS</p>
+        </div>
+
+    </footer>
+    @RenderSection("scripts", required: false)
+    @(Html.EJ().ScriptManager())
+    <script type="text/javascript">
+
+    </script>
+    <script src="~/Scripts/main.js" type="text/javascript"></script>
+</body>
+</html>
+

@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+@if (User.Identity.IsAuthenticated) { 
+
+    if (ViewBag.displayMenu == "Yes")
+    {
+        <h1>Bienvenido Admin</h1>
+        @*<h3>
+                <li>@Html.ActionLink("Administrar roles", "Index", "Role")</li>
+            </h3>*@
+    }
+    else
+    {
+        <h2>  Bienvenido <strong>@ViewBag.Name</strong>   </h2>
+    }
+
+}
+<script>
+
+    //Función  selección archivos
+    function onFileSelected_entregables(args) {
+            var archivo = args.filesData[0].name;
+
+        var url = "../Duplicados";
+
+            var data = "{archivo:'" + archivo + "'}";
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: data,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                dataFilter: function (data) { return data; },
+                success: function (data) {
+                    if (data.responseText == "si") {
+                        $('.ruta_contrato .e-file-status').addClass("e-upload-fails");
+                        $('.ruta_contrato .e-file-status').text("Archivo duplicado, por favor renombrelo antes de cargalo");
+                    }
+                }
+            });
+
+        }
+    //Almacenaje de la ruta entregables
+    function fileuploadSuccess_entregables(e) {
+        var FileData = e.responseText.replace(" ","%20");
+       
+        $('.ruta_entregables_display').removeClass("oculta");
+        $(".archivo_entregable").attr("href", "ACUERDOS_PAGO_ENTREGAB/entregables/" + FileData);
+        $(".archivo_entregable").text(FileData.replace("%20"," "));
+        $(".ver_archivo").attr("href", "ACUERDOS_PAGO_ENTREGAB/entregables/" + FileData);
+    }
+    //Función que se activa al elimianar los archivos
+    function onFileRemove(args) {
+        args.postRawFile = false;
+    }
+    //remove completo entregables
+    function fileremovecomplete_entregables(e) {
+        $('.ruta_entregables_display').addClass("oculta");
+        $(".archivo_entregable").attr("href", "#");
+        $(".archivo_entregable").text("");
+        $(".ver_archivo").attr("href", "#");
+    }
+    //Función para ver los entregables
+    function ver_entregables(sender) {
+
+    }
+
+</script>
+

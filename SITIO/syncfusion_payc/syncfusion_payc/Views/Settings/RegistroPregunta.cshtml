@@ -1,0 +1,319 @@
+﻿
+@using Syncfusion.JavaScript
+@using System.Collections.Generic
+@using System.Linq
+
+@*@model IEnumerable<syncfusion_payc.Models.FlujoProyectosViewModels>*@
+@model IEnumerable<syncfusion_payc.Models.PREGUNTAS>
+@{
+    ViewBag.Title = "Agregar";
+}
+@if (User.Identity.IsAuthenticated)
+{
+<div data-wizard-init>
+    <!-- Contenido Etapas -->
+    <div class="steps-content">
+        <div class="column-inter col-xs-12 col-md-6">
+            <!-- Etapa 1 CONTRATOS Y SUS CONDICIONES-->
+            <div data-Step="1">
+                <h2 class="title">FORMULARIO DE REGISTRO DE PREGUNTAS</h2><br>
+                <!-- primera grid etapa 2-->
+                <div class="column-inter col-xs-12 col-md-6">
+
+                    @*PREGUNTA*@
+                    <div class="form-group div_cliente">
+                        <label>PREGUNTA</label>
+                        @Html.TextArea("DESCRIPCION", null, new { @class = "e-textbox" })
+                        <!-- style = "width: 500px;" -->
+                        <!-- @@Html.TextArea("DESCRIPCION", null, new {  style = "width: 500px;", rows = "20" }) -->
+                    </div>
+
+                    @*ASPECTO*@
+                    <div class="form-group">
+                        <label name="aspecto">ASPECTO</label>
+                        @*<ej-drop-down-list change="onChange">*@
+                        @(Html.EJ().DropDownList("ASPECTOS").PopupHeight("auto").Datasource((IEnumerable<syncfusion_payc.Models.ASPECTOS>)new syncfusion_payc.Models.CONTRATISTAS_testEntities().ASPECTOS.ToList()).ShowRoundedCorner(true).DropDownListFields(df => df.Text("DESCRIPCION").Value("COD_ASPECTO")).EnableIncrementalSearch(true).EnableFilterSearch(true).FilterType(SearchFilterType.StartsWith).CaseSensitiveSearch(false).WatermarkText("Seleccione un aspecto").CascadeTo("ATRIBUTOS"))
+                        @*@Html.EJ().DropDownList("ASPECTOS").PopupHeight("auto").Datasource((IEnumerable<syncfusion_payc.Models.ASPECTOS>)ViewBag.datasource_aspectos).DropDownListFields(df => df.Text("DESCRIPCION").Value("COD_ASPECTO")).EnableIncrementalSearch(true).EnableFilterSearch(true).FilterType(SearchFilterType.StartsWith).ShowRoundedCorner(true).CaseSensitiveSearch(false).WatermarkText("Seleccione el aspecto a evaluar")*@
+                        @*@Html.EJ().DropDownList("ASPECTOS").PopupHeight("auto").Datasource((IEnumerable<syncfusion_payc.Models.ASPECTOS>)ViewBag.datasource_aspectos).DropDownListFields(df => df.Text("DESCRIPCION").Value("COD_ASPECTO")).EnableIncrementalSearch(true).EnableFilterSearch(true).FilterType(SearchFilterType.StartsWith).ShowRoundedCorner(true).CaseSensitiveSearch(false).WatermarkText("Seleccione el aspecto a evaluar")*@
+                        @*</ej-drop-down-list>*@
+                    </div>
+
+
+                    @*ATRIBUTO Y PONDERACION*@
+                    <div class="row">
+                        <!-- <div class="form group column-inter col-md-6 col-md-6"> -->
+                        <!-- Main Column -->
+                        @*ATRIBUTO*@
+                        <div class="col-sm-8 col-md-6" onchange="onChange">
+                            <label>ATRIBUTO</label>
+                            @(Html.EJ().DropDownList("ATRIBUTOS").PopupHeight("auto").Datasource((IEnumerable<syncfusion_payc.Models.ATRIBUTOS>)new syncfusion_payc.Models.CONTRATISTAS_testEntities().ATRIBUTOS.ToList()).ShowRoundedCorner(true).DropDownListFields(df => df.Text("DESCRIPCION").Value("COD_ATRIBUTO")).EnableIncrementalSearch(true).EnableFilterSearch(true).FilterType(SearchFilterType.StartsWith).CaseSensitiveSearch(false).WatermarkText("Seleccione un atributo").Enabled(false))
+                            @*@Html.EJ().DropDownList("ATRIBUTOS").PopupHeight("auto").Datasource((IEnumerable<syncfusion_payc.Models.ATRIBUTOS>)ViewBag.datasource_atributos).Enabled(false).DropDownListFields(df => df.Text("COD_ASPECTO").Value("COD_ATRIBUTO")).EnableIncrementalSearch(true).EnableFilterSearch(true).FilterType(SearchFilterType.StartsWith).ShowRoundedCorner(true).CaseSensitiveSearch(false).WatermarkText("Seleccione el atributo asociado")*@
+                            @*@Html.EJ().DropDownList("ATRIBUTOS",ViewBag.ASPECTOS)*@
+                        </div>
+                        @*PONDERACION*@
+                        @*<div class="col-sm-8 col-md-6">
+                            <label>PONDERACIÓN</label>
+                            @(Html.EJ().DropDownList("ATRIBUTOS").PopupHeight("auto").Datasource((IEnumerable<syncfusion_payc.Models.ATRIBUTOS>)new syncfusion_payc.Models.CONTRATISTAS_testEntities().ATRIBUTOS.ToList()).ShowRoundedCorner(true).DropDownListFields(df => df.Text("DESCRIPCION").Value("COD_ATRIBUTO")).EnableIncrementalSearch(true).EnableFilterSearch(true).FilterType(SearchFilterType.StartsWith).CaseSensitiveSearch(false).WatermarkText("Seleccione un atributo").Enabled(false))
+                        </div>*@
+                    </div>
+                    <br />
+                    <br />
+
+
+                    @*BOTON REGISTRAR PREGUNTA*@
+                    <div class="form-group">
+                        <div class="col-sm-4 col-md-3" id="registro_pregunta">
+                            <!-- <button class="btn btn-default" onclick="leer_pregunta($(this))">Registrar Pregunta</button> -->
+                            <button class="btn btn-default" onclick="leer_pregunta()">Registrar Pregunta</button>
+                        </div>
+                        <div class="col-sm-8 col-md-2">
+                        </div>
+                        <div class="col-sm-8 col-md-2">
+                        </div>
+                        <div class="col-sm-4 col-md-3" id="registro_pregunta">
+                            <p></p>
+                        </div>
+                        <div class="col-sm-8 col-md-2">
+                        </div>
+                    </div>
+                    <br /><br /><br />
+
+
+                </div>
+            </div>
+
+
+
+            <!-- Etapa 2 GRID DE RESPUESTAS-->
+            <div data-Step="2">
+                <!-- primera grid etapa 2-->
+                <div class="column-inter col-xs-12 col-md-9">
+                    @*GRID DE RESPUESTAS*@
+                    <div class="form-group">
+                        <label name="aspecto">RESPUESTAS DE LA PREGUNTA:</label>
+
+                        <div class="control-section">
+
+                            @(Html.EJ().Grid<syncfusion_payc.Models.POSIBLES_RESPUESTAS>("Grid")
+                                                        .Datasource(ds => ds.URL("GetOrderData").InsertURL("PerformInsert").UpdateURL("PerformUpdate").RemoveURL("PerformDelete").Adaptor(AdaptorType.UrlAdaptor))
+                                                        .AllowPaging()
+                                                        .AllowFiltering()
+                                                        .Locale("es-CO")
+                                                        .AllowResizeToFit(true)
+                                                        .AllowMultiSorting()
+                                                        .AllowSorting()
+                                                        .FilterSettings(filter => { filter.FilterType(FilterType.Excel); })
+                                                        .EditSettings(edit => { edit.AllowAdding().AllowDeleting().AllowEditing().EditMode(EditMode.Dialog); })
+                                                        //.ClientSideEvents(e => e.ActionBegin("inicio_grid"))
+                                                        //.ToolbarSettings(toolbar =>
+                                                        //{
+                                                        //    toolbar.ShowToolbar().ToolbarItems(items =>
+                                                        //        {
+                                                        //            items.AddTool(ToolBarItems.Add);
+                                                        //            items.AddTool(ToolBarItems.Edit);
+                                                        //            items.AddTool(ToolBarItems.Delete);
+                                                        //            items.AddTool(ToolBarItems.Update);
+                                                        //            items.AddTool(ToolBarItems.Cancel);
+                                                        //        });
+                                                        //})
+                                                        .Columns(col =>
+                                                        {
+                                                            col.Field("COD_PREGUNTA").ForeignKeyField("COD_PREGUNTA").Type("string").ForeignKeyValue("DESCRIPCION").DataSource((IEnumerable<object>)new syncfusion_payc.Models.CONTRATISTAS_testEntities().PREGUNTAS.ToList()).HeaderText("COD_PREGUNTA").EditType(EditingType.DropdownEdit).Add();
+                                                            col.Field("COD_POSIBLE_RESPUESTA").HeaderText("COD_POSIBLE_RESPUESTA").IsPrimaryKey(true).Visible(false).Format("{0:n0}").EditType(EditingType.NumericEdit).ValidationRules(v => v.AddRule("number", true)).Add();
+                                                            col.Field("TIPO_RESPUESTA").HeaderText("TIPO_RESPUESTA").Add();
+                                                            col.Field("VALOR").HeaderText("VALOR").Add();
+                                                        })
+                            )
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @*<span class="btn btn-default btn-prev" onclick="validar_intervencion($(this))"><i class="wiz-icon-arrow-left"></i><span class="previous-text">&nbsp;&nbsp;&nbsp;Ant.</span></span>*@
+    </div>
+
+    
+</div>
+
+    @*Javascript*@
+    <script type="text/javascript">
+        
+        //var atributo_dropdown = document.getElementById("ASPECTOS");
+        //atributo_dropdown.onchange=function(){
+        //    alert("cambio");
+        //}
+        // function onChange() {
+        //     alert("cambio");
+        // }onchange="onChange"
+
+        //function validar_intervencion() {
+        //    window.location = "../Settings/Index";
+        //}
+
+
+        function leer_pregunta() {
+
+            //traer valores de preguntas y atributos seleccionados junto con timestamp e informacion de usuario
+            $pregunta= document.getElementById("DESCRIPCION").value;
+            $atributo = document.getElementById("ATRIBUTOS").value;
+            $aspecto = document.getElementById("ASPECTOS").value;
+            console.log("el valor de $atributo es: "+ $atributo + "y el valor de $aspecto es: " + $aspecto + "y el peso del atributo es: ")
+            //$aspecto
+            var fecha_creacion = "@HttpContext.Current.Timestamp";
+            var usuario_creacion = "@HttpContext.Current.User.Identity.Name"
+            //var aspecto = {
+            //    COD_ASPECTO: COD_ASPECTO,
+            //    DESCRIPCION: $pregunta,
+            //    COD_USUARIO_CREACION: null,
+            //    COD_USUARIO_ULTIMA_MODIFICACION: null,
+            //    FECHA_CREACION: fecha_creacion,
+            //    FECHA_ULTIMA_MODIFICACION: fecha_creacion,
+            //    ESTADO_PREGUNTA: null
+            //};
+             //guardar valores de variables en arreglos representando filas a registrar en db
+             var pregunta = {
+                 COD_PREGUNTA: null,
+                 DESCRIPCION: $pregunta,
+                 COD_USUARIO_CREACION: null,
+                 COD_USUARIO_ULTIMA_MODIFICACION: null,
+                 FECHA_CREACION: fecha_creacion,
+                 FECHA_ULTIMA_MODIFICACION: fecha_creacion,
+                 ESTADO_PREGUNTA: null,
+                 COD_ATRIBUTO:$atributo
+             };
+
+             //crear JSON con objetos asociados a arreglos(filas) para pasarlos como parametro a la db
+             var data = JSON.stringify({ PREGUNTA: pregunta });
+             //generación de url(accion) que realiza insert en DB
+             var url = "guardar_pregunta";
+             $.ajax({
+                 type: "POST",
+                 url: url,
+                 data: data,
+                 dataType: "json",
+                 contentType: "application/json; charset=utf-8",
+                 success: function (success) {
+                     //alert(success);
+                     console.log(success);
+                    window.location = "EditPregunta/" + success.COD_PREGUNTA;
+                 }
+             });
+        } 
+
+
+    var global_fecha_ini = "";
+    var global_fecha_fin = "";
+    var global_fecha_firma = "";
+
+    //Cargue de cultura
+    $(document).ready(function () {
+
+            //$("#Grid").ejGrid("model.locale", "es-CO");
+            ej.Grid.Locale["es-CO"] = {
+                EmptyRecord: "No hay registros que mostrar",
+                GroupDropArea: "Arrastre un encabezado de columna aquí para agrupar su columna",
+                DeleteOperationAlert: "No hay registros seleccionados para la operación de eliminación",
+                EditOperationAlert: "No hay registros seleccionados para la operación de edición",
+                SaveButton: "Guardar",
+                OKButton: "Aceptar",
+                CancelButton: "Cancelar",
+                EditFormTitle: "Detalles de ",
+                AddFormTitle: "Añadir nuevo registro",
+                GroupCaptionFormat: "{{:headerText}}: {{:key}} - {{:count}} {{if count == 1 }} ítem {{else}} artículos {{/if}} ",
+
+
+            };
+            ej.Pager.Locale["es-CO"] = {
+                pagerInfo: "{0} de {1} páginas ({2} artículos)",
+                firstPageTooltip: "Ir a la primera página",
+                lastPageTooltip: "Ir a la última página",
+                nextPageTooltip: "Ir a la página siguiente",
+                previousPageTooltip: "Ir a la página anterior",
+                nextPagerTooltip: "Ir al siguiente Pager",
+                previousPagerTooltip: "Ir a Pager anterior"
+            };
+
+            ej.ExcelFilter.Locale["es-CO"] = {
+                SortNoSmaller: "Ordenar de menor a mayor",
+                SortNoLarger: "Ordenar de mayor a menor",
+                SortTextAscending: "Ordenar de A a Z",
+                SortTextDescending: "Ordenar de Z a A",
+                SortDateOldest: "Ordenar por Más antiguos",
+                SortDateNewest: "Ordenar por Más reciente",
+                SortByColor: "Ordenar por color",
+                SortByCellColor: "Ordenar por color de la célula",
+                SortByFontColor: "Ordenar por Color de fuente",
+                FilterByColor: "Filtrar por color",
+                CustomSort: "Orden personalizado",
+                FilterByCellColor: "Filtrar por color de la célula",
+                FilterByFontColor: "Filtrar por color de fuente",
+                ClearFilter: "Borrar filtro",
+                NumberFilter: "Número Filtros",
+                GuidFilter: "Gud Filtros",
+                TextFilter: "Filtros de texto",
+                DateFilter: "Filtros de fecha",
+                DateTimeFilter: "Fecha filtros de tiempo",
+                SelectAll: "Seleccionar todo",
+                Blanks: "Los espacios en blanco",
+                Search: "Buscar",
+                Showrowswhere: "Mostrar filas",
+                NumericTextboxWaterMark: "introducir el valor",
+                StringMenuOptions: [{ text: "Igual", value: "equal" }, { text: "No es equal", value: "notequal" }, { text: "Comienza con", value: "startswith" }, { text: "Termina con", value: "endswith" }, { text: "contiene", value: "contains" }, { text: "Filtro personalizado", value: "customfilter" },],
+                NumberMenuOptions: [{ text: "Igual", value: "equal" }, { text: "No es equal", value: "notequal" }, { text: "Menos que", value: "lessthan" }, { text: "Menor o equal", value: "lessthanorequal" }, { text: "Mas grande que", value: "greaterthan" }, { text: "Mayor que o equal", value: "greaterthanorequal" }, { text: "Entre", value: "between" }, { text: "Filtro personalizado", value: "customfilter" },],
+                GuidMenuOptions: [{ text: "Igual", value: "equal" }, { text: "No es equal", value: "notequal" }, { text: "Filtro personalizado", value: "customfilter" },],
+                DateMenuOptions: [{ text: "Igual", value: "equal" }, { text: "No es equal", value: "notequal" }, { text: "Menos que", value: "lessthan" }, { text: "Menor o equal", value: "lessthanorequal" }, { text: "Mas grande que", value: "greaterthan" }, { text: "Mayor que o equal", value: "greaterthanorequal" }, { text: "Entre", value: "between" }, { text: "Filtro personalizado", value: "customfilter" },],
+                DatetimeMenuOptions: [{ text: "Igual", value: "equal" }, { text: "No es equal", value: "notequal" }, { text: "Menos que", value: "lessthan" }, { text: "Menor o equal", value: "lessthanorequal" }, { text: "Mas grande que", value: "greaterthan" }, { text: "Mayor que o equal", value: "greaterthanorequal" }, { text: "Entre", value: "between" }, { text: "Filtro personalizado", value: "customfilter" },],
+                Top10MenuOptions: [{ text: "Parte superior", value: "top" }, { text: "Fondo", value: "bottom" },],
+                title: "Filtro personalizado",
+                PredicateAnd: "Y",
+                PredicateOr: "O",
+                Ok: "Aceptar",
+                MatchCase: "Coincidencia",
+                Cancel: "Cancelar",
+                NoResult: "No se encontraron coincidencias",
+                CheckBoxStatusMsg: "No todos los elementos que muestran",
+                DatePickerWaterMark: "Seleccione fecha",
+                DateTimePickerWaterMark: "Seleccionar fecha y hora",
+                True: "cierto",
+                False: "falso"
+            };
+            ej.DatePicker.Locale["es-CO"] = {
+                watermarkText: "Seleccione fecha",
+                buttonText: "Hoy",
+            };
+            /*ej.Uploadbox.Locale["es-CO"] = {
+                buttonText: {
+                    upload: "Subir",
+                    browse: "Vistazo",
+                    cancel: "Cancelar",
+                    close: "Cerca"
+                },
+                dialogText: {
+                    title: "Subir Box",
+                    name: "Nombre",
+                    size: "tamaño",
+                    status: "Estado"
+                },
+                dropAreaText: "Soltar los archivos o haga clic para cargar",
+                filedetail: "El tamaño del archivo seleccionado es demasiado grande. Por favor, seleccione un archivo dentro del tamaño válido.",
+                denyError: "No se permiten archivos con extensiones #Extension.",
+                allowError: "Sólo se permiten archivos con extensiones #Extension.",
+                cancelToolTip: "Cancelar",
+                removeToolTip: "retirar",
+                retryToolTip: "Rever",
+                completedToolTip: "Terminado",
+                failedToolTip: "Ha fallado",
+                closeToolTip: "Cerca",
+            };*/
+            ej.NumericTextbox.Locale["es-CO"] = {
+                watermarkText: "introducir el valor",
+            };
+            ej.NumericTextbox.Locale = "es-CO";
+        });
+    </script>
+}
+
+<!--Modelos o templates para botones-->
+<script type="text/x-jsrender" id="Adjuntar">
+    <div id="boton_adjuntar"></div>
+</script>

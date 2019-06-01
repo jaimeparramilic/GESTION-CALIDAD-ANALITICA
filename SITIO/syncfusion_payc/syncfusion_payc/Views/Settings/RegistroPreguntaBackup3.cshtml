@@ -1,0 +1,1710 @@
+
+@using Syncfusion.JavaScript
+@using System.Collections.Generic
+@using System.Linq
+
+@*@model IEnumerable<syncfusion_payc.Models.FlujoProyectosViewModels>*@
+@model IEnumerable<syncfusion_payc.Models.PREGUNTAS>
+@{
+    ViewBag.Title = "Agregar";
+}
+@if (User.Identity.IsAuthenticated)
+{
+    <div data-wizard-init>
+        <!-- Etapas CARGUE DE PROYECTOS-->
+        <!-- <ul class="steps">
+            <li class="img-circle step-purple" data-step="1">Etapa 1</li>
+            <li class="img-circle step-purple" data-step="2">Etapa 2</li>
+            <li class="img-circle step-purple" data-step="3">Etapa 3</li>
+            <li class="img-circle step-purple" data-step="4">Etapa 4</li>
+            <li class="img-circle step-purple" data-step="5">Etapa 5</li>
+            <li class="img-circle step-purple" data-step="6">Etapa 6</li>
+        </ul> -->
+
+        <ul class="steps">
+            <li class="img-circle step-purple" data-step="1">Etapa 1</li>
+        </ul>
+        <!-- Contenido Etapas -->
+        <div class="steps-content">
+            <div class="column-inter col-xs-12 col-md-6">
+                <!-- Etapa 1 CONTRATOS Y SUS CONDICIONES-->
+                <div data-Step="1">
+                    <h2 class="title">FORMULARIO DE REGISTRO DE PREGUNTAS</h2><br>
+                    <!-- primera grid etapa 2-->
+                    <div class="column-inter col-xs-12 col-md-6">
+
+                        @*PREGUNTA*@
+                        <div class="form-group div_cliente">
+                            <label>PREGUNTA</label>
+                            @Html.TextArea("DESCRIPCION", null, new { @class = "e-textbox" })
+                            <!-- style = "width: 500px;" -->
+                            <!-- @Html.TextArea("DESCRIPCION", null, new {  style = "width: 500px;", rows = "20" }) -->
+                        </div>
+
+                        @*ASPECTO*@
+                        <div class="form-group">
+                            <label name="aspecto">ASPECTO</label>
+
+                            @(Html.EJ().DropDownList("ASPECTOS").PopupHeight("auto").Datasource((IEnumerable<syncfusion_payc.Models.ASPECTOS>)new syncfusion_payc.Models.CONTRATISTAS_testEntities().ASPECTOS.ToList()).ShowRoundedCorner(true).DropDownListFields(df => df.Text("DESCRIPCION").Value("COD_ASPECTO")).EnableIncrementalSearch(true).EnableFilterSearch(true).FilterType(SearchFilterType.StartsWith).CaseSensitiveSearch(false).WatermarkText("Seleccione un aspecto").CascadeTo("ATRIBUTOS"))
+
+                            @*@Html.EJ().DropDownList("ASPECTOS").PopupHeight("auto").Datasource((IEnumerable<syncfusion_payc.Models.ASPECTOS>)ViewBag.datasource_aspectos).DropDownListFields(df => df.Text("DESCRIPCION").Value("COD_ASPECTO")).EnableIncrementalSearch(true).EnableFilterSearch(true).FilterType(SearchFilterType.StartsWith).ShowRoundedCorner(true).CaseSensitiveSearch(false).WatermarkText("Seleccione el aspecto a evaluar")*@
+                            @*@Html.EJ().DropDownList("ASPECTOS").PopupHeight("auto").Datasource((IEnumerable<syncfusion_payc.Models.ASPECTOS>)ViewBag.datasource_aspectos).DropDownListFields(df => df.Text("DESCRIPCION").Value("COD_ASPECTO")).EnableIncrementalSearch(true).EnableFilterSearch(true).FilterType(SearchFilterType.StartsWith).ShowRoundedCorner(true).CaseSensitiveSearch(false).WatermarkText("Seleccione el aspecto a evaluar")*@
+                        </div>
+
+
+                        @*ATRIBUTO Y PONDERACION*@
+                        <div class="row">
+                            <!-- <div class="form group column-inter col-md-6 col-md-6"> -->
+                            <!-- Main Column -->
+                            @*ATRIBUTO*@
+                            <div class="col-sm-8 col-md-6">
+                                <label>ASPECTOS</label>
+                                @(Html.EJ().DropDownList("ATRIBUTOS").PopupHeight("auto").Datasource((IEnumerable<syncfusion_payc.Models.ATRIBUTOS>)new syncfusion_payc.Models.CONTRATISTAS_testEntities().ATRIBUTOS.ToList()).ShowRoundedCorner(true).DropDownListFields(df => df.Text("DESCRIPCION").Value("COD_ATRIBUTO")).EnableIncrementalSearch(true).EnableFilterSearch(true).FilterType(SearchFilterType.StartsWith).CaseSensitiveSearch(false).WatermarkText("Seleccione un atributo").Enabled(false))
+                                @*@Html.EJ().DropDownList("ATRIBUTOS").PopupHeight("auto").Datasource((IEnumerable<syncfusion_payc.Models.ATRIBUTOS>)ViewBag.datasource_atributos).Enabled(false).DropDownListFields(df => df.Text("COD_ASPECTO").Value("COD_ATRIBUTO")).EnableIncrementalSearch(true).EnableFilterSearch(true).FilterType(SearchFilterType.StartsWith).ShowRoundedCorner(true).CaseSensitiveSearch(false).WatermarkText("Seleccione el atributo asociado")*@
+                                @*@Html.EJ().DropDownList("ATRIBUTOS",ViewBag.ASPECTOS)*@
+                            </div>
+                            @*PONDERACION*@
+                            <div class="col-sm-4 col-md-3 hidden-xs" id="Ponderacion">
+                                <p>ss</p>
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+
+
+                        @*BOTON REGISTRAR PREGUNTA*@
+                        <div class="form-group">
+                            <div class="col-sm-4 col-md-3" id="registro_pregunta">
+                                <button class="btn btn-default">Registrar Pregunta</button>
+                            </div>
+                            <div class="col-sm-8 col-md-2">
+                            </div>
+                            <div class="col-sm-8 col-md-2">
+                            </div>
+                            <div class="col-sm-4 col-md-3" id="registro_pregunta">
+                                <p></p>
+                            </div>
+                            <div class="col-sm-8 col-md-2">
+                            </div>
+                        </div>
+                        <br /><br /><br />
+                    </div>
+                </div>
+
+
+
+                <!-- Etapa 2 GRID DE RESPUESTAS-->
+                <div data-Step="2">
+                    <!-- primera grid etapa 2-->
+                    <div class="column-inter col-xs-12 col-md-9">
+                        @*GRID DE RESPUESTAS*@
+                        <div class="form-group">
+                            <label name="aspecto">RESPUESTAS DE LA PREGUNTA:</label>
+
+                            <div class="control-section">
+
+                                @(Html.EJ().Grid<syncfusion_payc.Models.POSIBLES_RESPUESTAS>("Grid")
+                                                                                                .Datasource(ds => ds.URL("GetOrderData").InsertURL("PerformInsert").UpdateURL("PerformUpdate").RemoveURL("PerformDelete").Adaptor(AdaptorType.UrlAdaptor))
+                                                                                                .AllowPaging()
+                                                                                                .AllowFiltering()
+                                                                                                .Locale("es-CO")
+                                                                                                .AllowResizeToFit(true)
+                                                                                                .AllowMultiSorting()
+                                                                                                .AllowSorting()
+                                                                                                .FilterSettings(filter => { filter.FilterType(FilterType.Excel); })
+                                                                                                .EditSettings(edit => { edit.AllowAdding().AllowDeleting().AllowEditing().EditMode(EditMode.Dialog); })
+                                                                                                .ClientSideEvents(e => e.ActionBegin("inicio_grid"))
+                                                                                                .ToolbarSettings(toolbar =>
+                                                                                                {
+                                                                                                    toolbar.ShowToolbar().ToolbarItems(items =>
+                                                                                                    {
+                                                                                                        items.AddTool(ToolBarItems.Add);
+                                                                                                        items.AddTool(ToolBarItems.Edit);
+                                                                                                        items.AddTool(ToolBarItems.Delete);
+                                                                                                        items.AddTool(ToolBarItems.Update);
+                                                                                                        items.AddTool(ToolBarItems.Cancel);
+                                                                                                    });
+
+                                                                                                }).Columns(col =>
+                                                                                        {
+
+                                                                                            col.Field("COD_PREGUNTA").ForeignKeyField("COD_PREGUNTA").Type("string").ForeignKeyValue("DESCRIPCION").DataSource((IEnumerable<object>)new syncfusion_payc.Models.CONTRATISTAS_testEntities().PREGUNTAS.ToList()).HeaderText("COD_PREGUNTA").EditType(EditingType.DropdownEdit).Add();
+
+                                                                                            col.Field("COD_POSIBLE_RESPUESTA").HeaderText("COD_POSIBLE_RESPUESTA").IsPrimaryKey(true).Visible(false).Format("{0:n0}").EditType(EditingType.NumericEdit).ValidationRules(v => v.AddRule("number", true)).Add();
+
+                                                                                            col.Field("TIPO_RESPUESTA").HeaderText("TIPO_RESPUESTA").Add();
+
+                                                                                            col.Field("VALOR").HeaderText("VALOR").Add();
+
+                                                                                        }))
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*Javascript*@
+    <script type="text/javascript">
+
+    var global_fecha_ini = "";
+    var global_fecha_fin = "";
+    var global_fecha_firma = "";
+
+    //Variables auxiliares para ingeniería inversa
+    var preload_pivot = [];
+    var obj = [];
+
+    var contrato_proyecto = 1;
+
+    //Cargue de cultura
+    $(document).ready(function () {
+
+            //$("#Grid").ejGrid("model.locale", "es-CO");
+            ej.Grid.Locale["es-CO"] = {
+                EmptyRecord: "No hay registros que mostrar",
+                GroupDropArea: "Arrastre un encabezado de columna aquí para agrupar su columna",
+                DeleteOperationAlert: "No hay registros seleccionados para la operación de eliminación",
+                EditOperationAlert: "No hay registros seleccionados para la operación de edición",
+                SaveButton: "Guardar",
+                OKButton: "Aceptar",
+                CancelButton: "Cancelar",
+                EditFormTitle: "Detalles de ",
+                AddFormTitle: "Añadir nuevo registro",
+                GroupCaptionFormat: "{{:headerText}}: {{:key}} - {{:count}} {{if count == 1 }} ítem {{else}} artículos {{/if}} ",
+
+
+            };
+            ej.Pager.Locale["es-CO"] = {
+                pagerInfo: "{0} de {1} páginas ({2} artículos)",
+                firstPageTooltip: "Ir a la primera página",
+                lastPageTooltip: "Ir a la última página",
+                nextPageTooltip: "Ir a la página siguiente",
+                previousPageTooltip: "Ir a la página anterior",
+                nextPagerTooltip: "Ir al siguiente Pager",
+                previousPagerTooltip: "Ir a Pager anterior"
+            };
+
+            ej.ExcelFilter.Locale["es-CO"] = {
+                SortNoSmaller: "Ordenar de menor a mayor",
+                SortNoLarger: "Ordenar de mayor a menor",
+                SortTextAscending: "Ordenar de A a Z",
+                SortTextDescending: "Ordenar de Z a A",
+                SortDateOldest: "Ordenar por Más antiguos",
+                SortDateNewest: "Ordenar por Más reciente",
+                SortByColor: "Ordenar por color",
+                SortByCellColor: "Ordenar por color de la célula",
+                SortByFontColor: "Ordenar por Color de fuente",
+                FilterByColor: "Filtrar por color",
+                CustomSort: "Orden personalizado",
+                FilterByCellColor: "Filtrar por color de la célula",
+                FilterByFontColor: "Filtrar por color de fuente",
+                ClearFilter: "Borrar filtro",
+                NumberFilter: "Número Filtros",
+                GuidFilter: "Gud Filtros",
+                TextFilter: "Filtros de texto",
+                DateFilter: "Filtros de fecha",
+                DateTimeFilter: "Fecha filtros de tiempo",
+                SelectAll: "Seleccionar todo",
+                Blanks: "Los espacios en blanco",
+                Search: "Buscar",
+                Showrowswhere: "Mostrar filas",
+                NumericTextboxWaterMark: "introducir el valor",
+                StringMenuOptions: [{ text: "Igual", value: "equal" }, { text: "No es equal", value: "notequal" }, { text: "Comienza con", value: "startswith" }, { text: "Termina con", value: "endswith" }, { text: "contiene", value: "contains" }, { text: "Filtro personalizado", value: "customfilter" },],
+                NumberMenuOptions: [{ text: "Igual", value: "equal" }, { text: "No es equal", value: "notequal" }, { text: "Menos que", value: "lessthan" }, { text: "Menor o equal", value: "lessthanorequal" }, { text: "Mas grande que", value: "greaterthan" }, { text: "Mayor que o equal", value: "greaterthanorequal" }, { text: "Entre", value: "between" }, { text: "Filtro personalizado", value: "customfilter" },],
+                GuidMenuOptions: [{ text: "Igual", value: "equal" }, { text: "No es equal", value: "notequal" }, { text: "Filtro personalizado", value: "customfilter" },],
+                DateMenuOptions: [{ text: "Igual", value: "equal" }, { text: "No es equal", value: "notequal" }, { text: "Menos que", value: "lessthan" }, { text: "Menor o equal", value: "lessthanorequal" }, { text: "Mas grande que", value: "greaterthan" }, { text: "Mayor que o equal", value: "greaterthanorequal" }, { text: "Entre", value: "between" }, { text: "Filtro personalizado", value: "customfilter" },],
+                DatetimeMenuOptions: [{ text: "Igual", value: "equal" }, { text: "No es equal", value: "notequal" }, { text: "Menos que", value: "lessthan" }, { text: "Menor o equal", value: "lessthanorequal" }, { text: "Mas grande que", value: "greaterthan" }, { text: "Mayor que o equal", value: "greaterthanorequal" }, { text: "Entre", value: "between" }, { text: "Filtro personalizado", value: "customfilter" },],
+                Top10MenuOptions: [{ text: "Parte superior", value: "top" }, { text: "Fondo", value: "bottom" },],
+                title: "Filtro personalizado",
+                PredicateAnd: "Y",
+                PredicateOr: "O",
+                Ok: "Aceptar",
+                MatchCase: "Coincidencia",
+                Cancel: "Cancelar",
+                NoResult: "No se encontraron coincidencias",
+                CheckBoxStatusMsg: "No todos los elementos que muestran",
+                DatePickerWaterMark: "Seleccione fecha",
+                DateTimePickerWaterMark: "Seleccionar fecha y hora",
+                True: "cierto",
+                False: "falso"
+            };
+            ej.DatePicker.Locale["es-CO"] = {
+                watermarkText: "Seleccione fecha",
+                buttonText: "Hoy",
+            };
+            /*ej.Uploadbox.Locale["es-CO"] = {
+                buttonText: {
+                    upload: "Subir",
+                    browse: "Vistazo",
+                    cancel: "Cancelar",
+                    close: "Cerca"
+                },
+                dialogText: {
+                    title: "Subir Box",
+                    name: "Nombre",
+                    size: "tamaño",
+                    status: "Estado"
+                },
+                dropAreaText: "Soltar los archivos o haga clic para cargar",
+                filedetail: "El tamaño del archivo seleccionado es demasiado grande. Por favor, seleccione un archivo dentro del tamaño válido.",
+                denyError: "No se permiten archivos con extensiones #Extension.",
+                allowError: "Sólo se permiten archivos con extensiones #Extension.",
+                cancelToolTip: "Cancelar",
+                removeToolTip: "retirar",
+                retryToolTip: "Rever",
+                completedToolTip: "Terminado",
+                failedToolTip: "Ha fallado",
+                closeToolTip: "Cerca",
+            };*/
+            ej.NumericTextbox.Locale["es-CO"] = {
+                watermarkText: "introducir el valor",
+            };
+            ej.NumericTextbox.Locale = "es-CO";
+
+
+
+        });
+
+    /*Cargue de archivos - revisión duplicados contratos*/
+    function onFileSelected_contratos(args) {
+            var archivo = args.filesData[0].name;
+
+        var url = "Duplicados";
+
+            var data = "{archivo:'" + archivo + "'}";
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: data,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                dataFilter: function (data) { return data; },
+                success: function (data) {
+                    if (data.responseText == "si") {
+                        $('.ruta_contrato .e-file-status').addClass("e-upload-fails");
+                        $('.ruta_contrato .e-file-status').text("Archivo duplicado, por favor renombrelo antes de cargalo");
+                    }
+                }
+            });
+
+        }
+
+    //Almacenaje de la ruta contratos
+    function fileuploadSuccess_contratos(e) {
+        var FileData = e.responseText;
+        $('#id_ruta_contrato').val(FileData);
+        $('.ruta_contrato_display').removeClass("oculta");
+        $('#id_ruta_contrato_display').val($("#id_ruta_contrato").val());
+    }
+
+    /*Cargue de archivos - revisión duplicados actas*/
+    function onFileSelected_acta(args) {
+            var archivo = args.filesData[0].name;
+
+        var url = "Duplicados";
+
+            var data = "{archivo:'" + archivo + "'}";
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: data,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                dataFilter: function (data) { return data; },
+                success: function (data) {
+                    if (data.responseText == "si") {
+                        $('.ruta_contrato .e-file-status').addClass("e-upload-fails");
+                        $('.ruta_contrato .e-file-status').text("Archivo duplicado, por favor renombrelo antes de cargalo");
+                    }
+                }
+            });
+
+        }
+
+    //Almacenaje de la ruta acta
+    function fileuploadSuccess_actas(e) {
+        var FileData = e.responseText;
+        $('#id_ruta_acta').val(FileData);
+        $('.ruta_acta_display').removeClass("oculta");
+        $('#id_ruta_acta_display').val($("#id_ruta_acta").val());
+
+    }
+
+    //Función que se activa al elimianar los archivos
+    function onFileRemove(args) {
+            args.postRawFile = false;
+    }
+
+    //Variable indicadora que establece si existe o no edición para refrescar
+    var flag_edicion = false;
+    var flag_edicion_item = false;
+
+    //Función que pasa los parámetros adecuados para la edición de los flujos de ingresos rol para
+    function editar_flujo_rol(args) {
+        flag_edicion = true;
+        var a = { columna: args.editCellsInfo.columnHeader[0].replace("SIN ETAPA 1#", ""), fila: args.editCellsInfo.rowHeader[0].replace("SIN ETAPA 1#", ""), id_contrato_proyecto: contrato_proyecto };
+        args.customObject = a;
+        args.model.customObject = a;
+        }
+    
+    //Función que se ejecuta al dar click en la celda
+    function click_flujo_rol(args) {
+        //alert("click_editar_flujo_rol")
+    }
+
+    //Función que pasa los parámetros adecuados para la edición de los flujos de ingresos rol para
+    function editar_flujo_item(args) {
+
+        var a = { columna: args.editCellsInfo.columnHeader[0].replace("SIN ETAPA 1#", ""), fila: args.editCellsInfo.rowHeader[0].replace("SIN ETAPA 1#", ""), id_contrato_proyecto: contrato_proyecto }
+       
+        args.customObject = a;
+        args.model.customObject = a;
+        flag_edicion_item = true;
+
+        }
+   
+    //Función que refresca la pivotgrid después de la edición para roles
+    function flujo_rol_despues(args) {
+        if (flag_edicion) {
+            var gridObj = $("#PivotGrid1").data("ejPivotGrid");
+            gridObj.refreshPivotGrid();
+            flag_edicion = false;
+        }
+    }
+
+    //Función que refresca la pivotgrid después de la edición para items
+    function flujo_item_despues(args) {
+        if (flag_edicion_item) {
+            var gridObj = $("#PivotGrid2").data("ejPivotGrid");
+            gridObj.refreshPivotGrid();
+            flag_edicion_item = false;
+        }
+    }
+
+    //Función para el cargue el filtrado del contrato proyecto item
+    function onLoad(args) {
+        //Hace falta calcular contrato proyecto
+        args.customObject = { COD_CONTRATO_PROYECTO: contrato_proyecto };
+
+        args.model.customObject = { COD_CONTRATO_PROYECTO: contrato_proyecto };
+    }
+
+    /*Funcion que permite validar y guardar las intervenciones*/
+    function validar_intervencion(sender) {
+        $('.contenedor_loader').show();
+        var errorestot = 0;
+        $(".alert").remove();
+        if (!$('body').attr('errorestot')) {
+            errorestot = 0;
+        }
+        else {
+            errorestot = parseInt($('body').attr('errorestot'));
+        }
+        var paso = $('.steps li.active').attr("data-step");
+        var mensaje = "";
+        var div_mensaje = "";
+        var mensaje1 = "";
+        var div_mensaje1 = "";
+        //Variable para capturar si es next o prev del botón de los pasos
+        var next_prev = "";
+        if (sender.hasClass("btn-next")) {
+            next_prev = "next";
+        }
+        //generación pivots
+        if ((paso == "3" && next_prev == "next") || (paso == "5" && next_prev == "prev")) {
+            cargar_pivot("roles");
+        }
+        if ((paso == "5" && next_prev == "next")) {
+            cargar_pivot("items");
+        }
+
+        //Validación etapa 1
+        if (paso == "1") {
+
+            var completos_paso1 = 9;
+            var errores_paso1 = 0;
+            var warnings_paso1 = 0;
+            //Remover errores
+            $("#CLIENTES_container").removeClass("error");
+            $("#FORMAS_PAGO_container").removeClass("error");
+            $("#TIPO_CONDICION_CONTRACTUAL_container").removeClass("error");
+            $(".div_valor_contrato span.e-box").removeClass("error");
+            $("CARGUE_ARCHIVOS_SelectButton").parent().removeClass("error");
+            $("CARGUE_ACTA_SelectButton").parent().removeClass("error");
+            $(".div_firma_contrato span.e-box").removeClass("error");
+            $(".div_inicio_ejecucion span.e-box").removeClass("error");
+            $(".div_fin_ejecucion span.e-box").removeClass("error");
+            $("#orden_servicio").removeClass("error");
+
+            //Remover warning
+            $("#CLIENTES_container").removeClass("warning");
+            $("#FORMAS_PAGO_container").removeClass("warning");
+            $("#TIPO_CONDICION_CONTRACTUAL_container").removeClass("warning");
+            $(".div_valor_contrato span.e-box").removeClass("warning");
+            $("#CARGUE_ARCHIVOS_SelectButton").parent().removeClass("warning");
+            $("#CARGUE_ACTA_SelectButton").parent().removeClass("warning");
+            $(".div_firma_contrato span.e-box").removeClass("warning");
+            $(".div_inicio_ejecucion span.e-box").removeClass("warning");
+            $(".div_fin_ejecucion span.e-box").removeClass("warning");
+            $("#orden_servicio").removeClass("warning");
+
+            //Traer valores
+            var cod_cliente = $("#CLIENTES").data("ejDropDownList").option("value") || "";
+            var valor_contrato = $("#VALOR_CONTRATO").data("ejCurrencyTextbox").getValue() || "";
+            var ruta_contrato = $("#id_ruta_contrato").val() || "";
+            var ruta_acta = $("#id_ruta_acta").val() || "";
+            var cod_forma_pago = $("#FORMAS_PAGO").data("ejDropDownList").option("value") || "";
+            var fecha_firma = $("#FECHA_FIRMA").data("ejDatePicker").getValue() || "";
+            var fecha_inicio_ejecucion = $("#FECHA_INICIO_EJECUCION_CONTRATO").data("ejDatePicker").getValue() || "";
+            var fecha_fin_ejecucion = $("#FECHA_FIN_EJECUCION").data("ejDatePicker").getValue() || "";
+            var orden_servicio = $("#orden_servicio").val() || "";
+            var tipos_condiciones_contractuales = $("#TIPO_CONDICION_CONTRACTUAL").data("ejDropDownList").option("value") || "";
+
+            //Revisar campos con errores
+            if (cod_cliente == "") {
+                $("#CLIENTES_container").addClass("error");
+                completos_paso1 = completos_paso1 - 1;
+                errores_paso1 = errores_paso1 + 1;
+            }
+            if (cod_forma_pago == "") {
+                $("#FORMAS_PAGO_container").addClass("error");
+                completos_paso1 = completos_paso1 - 1;
+                errores_paso1 = errores_paso1 + 1;
+            }
+            if (tipos_condiciones_contractuales[0] == "") {
+                $("#TIPO_CONDICION_CONTRACTUAL_container").addClass("error");
+                completos_paso1 = completos_paso1 - 1;
+                errores_paso1 = errores_paso1 + 1;
+            }
+            else {
+                tipos_condiciones_contractuales = tipos_condiciones_contractuales.split(",");
+            }
+            if (fecha_firma == "") {
+                $(".div_firma_contrato span.e-box").addClass("error");
+                completos_paso1 = completos_paso1 - 1;
+                errores_paso1 = errores_paso1 + 1;
+            }
+            else {
+                global_fecha_firma = fecha_firma;
+            }
+            if (fecha_inicio_ejecucion == "") {
+                $(".div_inicio_ejecucion span.e-box").addClass("error");
+                completos_paso1 = completos_paso1 - 1;
+                errores_paso1 = errores_paso1 + 1;
+            }
+            else {
+                global_fecha_ini = fecha_inicio_ejecucion;
+            }
+            if (fecha_fin_ejecucion == "") {
+                $(".div_fin_ejecucion span.e-box").addClass("error");
+                completos_paso1 = completos_paso1 - 1;
+                errores_paso1 = errores_paso1 + 1;
+            }
+            else {
+                global_fecha_fin = fecha_fin_ejecucion;
+            }
+
+            //Revisar warning
+            if (valor_contrato == "") {
+                $(".div_valor_contrato span.e-box").addClass("warning");
+                completos_paso1 = completos_paso1 - 1;
+                warnings_paso1 = warnings_paso1 + 1;
+            }
+            if (ruta_contrato == "") {
+                $("#CARGUE_ARCHIVOS_SelectButton").parent().addClass("warning");
+                completos_paso1 = completos_paso1 - 1;
+                warnings_paso1 = warnings_paso1 + 1;
+            }
+            if (ruta_acta == "") {
+                $("#CARGUE_ACTA_SelectButton").parent().addClass("warning");
+                completos_paso1 = completos_paso1 - 1;
+                warnings_paso1 = warnings_paso1 + 1;
+            }
+
+            /*if (orden_servicio == "") {
+                $("#orden_servicio").addClass("warning");
+                completos_paso1 = completos_paso1 - 1;
+                warnings_paso1 = warnings_paso1 + 1;
+            }*/
+
+            if (errores_paso1 > 0 || warnings_paso1 > 0) {
+                mensaje = "Corrija los errores en rojo y tome decisiones sobre advertencias las resaltadas en amarillo de la etapa " + paso;
+                div_mensaje = "<div class='alert mensajes'><span class='closebtn' onclick='$(this).parent().remove();'>&times;</span>"
+                div_mensaje = div_mensaje + mensaje + "</div > ";
+            }
+            $("#errores1").val(errores_paso1);
+            var id_contrato = $("#id_contrato").val();
+
+            //Mostrar resultados
+            $('.steps .img-circle.active .percent').empty().prepend(Math.round(((completos_paso1) / 9) * 100) + "%");
+
+            //Guardar resultados
+            if (id_contrato == "1") {
+                $(".mensajes").remove();
+                mensaje1 = "Guardando " + paso;
+                div_mensaje1 = "<div class='operando mensajes'><div class='loader_mensajes'><span class='e-image1'></span><div><span class='closebtn' onclick='$(this).parent().remove();'>&times;</span>"
+                div_mensaje1 = div_mensaje1 + mensaje1 + "</div >";
+                $(".contenedor_tablas").prepend(div_mensaje1);
+
+                var contrato = {
+                    COD_CONTRATO: null,
+                    DESCRIPCION: ruta_contrato,
+                    VALOR_CONTRATO: valor_contrato,
+                    COD_CLIENTE: cod_cliente,
+                    FECHA_FIRMA: fecha_firma,
+                    RUTA_ACTA_INICIO: ruta_acta,
+                    FECHA_INICIO_EJECUCION: fecha_inicio_ejecucion,
+                    FECHA_FIN_EJECUCION: fecha_fin_ejecucion,
+                    ORDEN_SERVICIO: orden_servicio,
+                    RUTA_DOCUMENTO: ruta_contrato
+                };
+                var data = JSON.stringify({ CONTRATO: contrato, TIPO_CONDICIONES: tipos_condiciones_contractuales });
+                var url = "guardar_contrato";
+                    $.ajax({
+                        type: "POST",
+                        url: url,
+                        data: data,
+                        dataType: "json",
+                        contentType: "application/json; charset=utf-8",
+                        dataFilter: function (data) { return data; },
+                        success: function (data) {
+                            var mensaje2 = "¡Datos almacenados con éxito!";
+                            var tipo_mensaje = "";
+                            if (mensaje == "") {
+                                tipo_mensaje = "success";
+                            }
+                            else {
+                                tipo_mensaje = "alert";
+                            }
+                            div_mensaje = "<div class='"+tipo_mensaje+" mensajes'><span class='closebtn' onclick='$(this).parent().remove();'>&times;</span>"
+                            div_mensaje = div_mensaje +mensaje2+ mensaje + "</div > ";
+                            $(".mensajes").remove();
+                            $(".contenedor_tablas").prepend(div_mensaje);
+                            $("#id_contrato").val(data.responseText);
+                        },
+                        error: function (XMLHttpRequest, textStatus, errorThrown) {
+                            var mensaje2 = "¡Ha ocurrido un error de almacenaje! Por favor, vuelva a intentarlo.";
+                            div_mensaje = "<div class='alert mensajes'><span class='closebtn' onclick='$(this).parent().remove();'>&times;</span>"
+                            div_mensaje = div_mensaje + mensaje2 + mensaje + "</div > ";
+                            $(".mensajes").remove();
+                            $(".contenedor_tablas").prepend(div_mensaje);
+                        }
+                    });
+                }
+            else {
+                $(".mensajes").remove();
+                mensaje1 = "Guardando " + paso;
+                div_mensaje1 = "<div class='operando mensajes'><div class='loader_mensajes'><span class='e-image1'></span><div><span class='closebtn' onclick='$(this).parent().remove();'>&times;</span>"
+                div_mensaje1 = div_mensaje1 + mensaje1 + "</div >";
+                $(".contenedor_tablas").prepend(div_mensaje1);
+                var contrato = {
+                    COD_CONTRATO: id_contrato,
+                    DESCRIPCION: ruta_contrato,
+                    VALOR_CONTRATO: valor_contrato,
+                    COD_CLIENTE: cod_cliente,
+                    FECHA_FIRMA: fecha_firma,
+                    RUTA_ACTA_INICIO: ruta_acta,
+                    FECHA_INICIO_EJECUCION: fecha_inicio_ejecucion,
+                    FECHA_FIN_EJECUCION: fecha_fin_ejecucion,
+                    ORDEN_SERVICIO: orden_servicio,
+                    RUTA_DOCUMENTO: ruta_contrato
+                };
+                    var data = JSON.stringify({ CONTRATO: contrato, TIPO_CONDICIONES: tipos_condiciones_contractuales });
+
+
+                var url = "actualizar_contrato";
+                    $.ajax({
+                        type: "POST",
+                        url: url,
+                        data: data,
+                        dataType: "json",
+                        contentType: "application/json; charset=utf-8",
+                        dataFilter: function (data) { return data; },
+                        success: function (data) {
+                            var mensaje2 = "¡Datos almacenados con éxito!";
+                            var tipo_mensaje = "";
+                            if (mensaje == "") {
+                                tipo_mensaje = "success";
+                            }
+                            else {
+                                tipo_mensaje = "alert";
+                            }
+                            div_mensaje = "<div class='" + tipo_mensaje + " mensajes'><span class='closebtn' onclick='$(this).parent().remove();'>&times;</span>"
+                            div_mensaje = div_mensaje + mensaje2 + mensaje + "</div > ";
+                            $(".mensajes").remove();
+                            $(".contenedor_tablas").prepend(div_mensaje);
+
+                        },
+                        error: function (XMLHttpRequest, textStatus, errorThrown) {
+                            var mensaje2 = "¡Ha ocurrido un error de almacenaje! Por favor, vuelva a intentarlo.";
+                            div_mensaje = "<div class='alert mensajes'><span class='closebtn' onclick='$(this).parent().remove();'>&times;</span>"
+                            div_mensaje = div_mensaje + mensaje2 + mensaje + "</div > ";
+                            $(".mensajes").remove();
+                            $(".contenedor_tablas").prepend(div_mensaje);
+                        }
+                    });
+                }
+
+        }
+
+        //Validación etapa 2
+        else if (paso == "2") {
+
+            var completos_paso2 = 19;
+            var errores_paso2 = 0;
+            var warnings_paso2 = 0;
+            //Remover errores
+            $('#desc_proyecto').removeClass("error").removeClass("warning");
+            $('#direccion').removeClass("error").removeClass("warning");
+            $('#telefono').removeClass("error").removeClass("warning");
+            $('#correo').removeClass("error").removeClass("warning");
+            $("#TIPO_SERVICIO_container").removeClass("error").removeClass("warning");
+            $('#centro_costos').removeClass("error").removeClass("warning");
+            $("#TIPO_OBRA_container").removeClass("error").removeClass("warning");
+            $('#tipo_estructura').removeClass("error").removeClass("warning");
+            $('#tipo_cimentacion').removeClass("error").removeClass("warning");
+            $(".div_area span.e-box").removeClass("error").removeClass("warning");
+            $(".div_valor_proyecto span.e-box").removeClass("error").removeClass("warning");
+            $(".div_sotanos span.e-box").removeClass("error").removeClass("warning");
+            $(".div_pisos span.e-box").removeClass("error").removeClass("warning");
+            $('#obser_proyecto').removeClass("error").removeClass("warning");
+            $(".div_plazo_previa span.e-box").removeClass("error").removeClass("warning");
+            $(".div_plazo_obra span.e-box").removeClass("error").removeClass("warning");
+            $(".div_plazo_liquidacion span.e-box").removeClass("error").removeClass("warning");
+            $("#FECHA_INI_ETAPA_OBRA").parent().removeClass("error").removeClass("warning");
+            $("#FECHA_INI_ETAPA_PREVIA").parent().removeClass("error").removeClass("warning");
+            $("#FECHA_INI_ETAPA_LIQUIDACION").parent().removeClass("error").removeClass("warning");
+
+            //#region variables
+            //Traer valores
+            var descripcion = $('#desc_proyecto').val() || "";
+            var direccion = $('#direccion').val() || "";
+            var correo = $('#correo').val() || "";
+            var telefono = $('#telefono').val() || "";
+            var tipo_servicio = $("#TIPO_SERVICIO").data("ejDropDownList").option("value") || "";
+            var tipo_obra = $("#TIPO_OBRA").data("ejDropDownList").option("value") || "";
+            var tipo_estructura = $('#tipo_estructura').val() || "";
+            var tipo_cimentacion = $('#tipo_cimentacion').val() || "";
+            var area = $("#AREA").data("ejNumericTextbox").getValue() || "";
+            var valor_proyecto = $("#VALOR_PROYECTO").data("ejCurrencyTextbox").getValue() || "";
+            var sotanos = $("#SOTANOS").data("ejNumericTextbox").getValue() || "";
+            var pisos = $("#PISOS").data("ejNumericTextbox").getValue() || "";
+            var observaciones = $('#obser_proyecto').val() || "";
+            var plazo_previa = $("#PLAZO_PREVIA").data("ejNumericTextbox").getValue() || "";
+            var plazo_obra = $("#PLAZO_OBRA").data("ejNumericTextbox").getValue() || "";
+            var plazo_liquidacion = $("#PLAZO_LIQUIDACION").data("ejNumericTextbox").getValue() || "";
+            var fecha_ini_etapa_previa = $("#FECHA_INI_ETAPA_PREVIA").data("ejDatePicker").getValue() || "";
+            var fecha_ini_etapa_obra = $("#FECHA_INI_ETAPA_OBRA").data("ejDatePicker").getValue() || "";
+            var fecha_ini_etapa_liquidacion = $("#FECHA_INI_ETAPA_LIQUIDACION").data("ejDatePicker").getValue() || "";
+            var tipos_condiciones_contractuales = $("#TIPO_CONDICION_CONTRACTUAL").data("ejDropDownList").option("value") || "";
+            var cod_forma_pago = $("#FORMAS_PAGO").data("ejDropDownList").option("value") || "1";
+            var centro_costos = $("#centro_costos").val();
+            var tags = $("#TAGS").ejAutocomplete("getValue").split(",") || [""];
+            var check_etapa_previa = $("#check_etapa_previa").is(':checked');
+            var check_etapa_obra = $("#check_etapa_obra").is(':checked');
+            var check_etapa_liquidacion = $("#check_etapa_liquidacion").is(':checked');
+            //endregion
+            //Revisar campos con errores
+            if (descripcion == "") {
+                $('#desc_proyecto').addClass("error");
+                completos_paso2 = completos_paso2 - 1;
+                errores_paso2 = errores_paso2 + 1;
+            }
+            if (correo == "" || !validar_email(correo)) {
+                $('#correo').addClass("error");
+                completos_paso2 = completos_paso2 - 1;
+                errores_paso2 = errores_paso2 + 1;
+            }
+            if (telefono == "" || !validar_telefono(telefono)) {
+                $('#telefono').addClass("error");
+                completos_paso2 = completos_paso2 - 1;
+                errores_paso2 = errores_paso2 + 1;
+            }
+            if (plazo_previa == "" && check_etapa_previa) {
+                $(".div_plazo_previa span.e-box").addClass("error");
+                completos_paso2 = completos_paso2 - 1;
+                errores_paso2 = errores_paso2 + 1;
+            }
+            if (plazo_obra == "" && check_etapa_obra) {
+                $(".div_plazo_obra span.e-box").addClass("error");
+                completos_paso2 = completos_paso2 - 1;
+                errores_paso2 = errores_paso2 + 1;
+            }
+            if (plazo_liquidacion == "" && check_etapa_liquidacion) {
+                $(".div_plazo_liquidacion span.e-box").addClass("error");
+                completos_paso2 = completos_paso2 - 1;
+                errores_paso2 = errores_paso2 + 1;
+            }
+            if (fecha_ini_etapa_liquidacion == "" && check_etapa_liquidacion) {
+                $("#FECHA_INI_ETAPA_LIQUIDACION").parent().addClass("error");
+                completos_paso2 = completos_paso2 - 1;
+                errores_paso2 = errores_paso2 + 1;
+            }
+            if (fecha_ini_etapa_obra == "" && check_etapa_obra) {
+                $("#FECHA_INI_ETAPA_OBRA").parent().addClass("error");
+                completos_paso2 = completos_paso2 - 1;
+                errores_paso2 = errores_paso2 + 1;
+            }
+            if (fecha_ini_etapa_previa == "" && check_etapa_previa) {
+                $("#FECHA_INI_ETAPA_PREVIA").parent().addClass("error");
+                completos_paso2 = completos_paso2 - 1;
+                errores_paso2 = errores_paso2 + 1;
+            }
+            /*if (centro_costos == "") {
+                $("#centro_costos").addClass("error");
+                completos_paso2 = completos_paso2 - 1;
+                errores_paso2 = errores_paso2 + 1;
+            }*/
+
+            //Warning
+            if (direccion == "") {
+                $('#direccion').addClass("warning");
+                completos_paso2 = completos_paso2 - 1;
+                warnings_paso2 = warnings_paso2 + 1;
+            }
+            if (tipo_servicio == "") {
+                $('#TIPO_SERVICIO_container').addClass("error");
+                completos_paso2 = completos_paso2 - 1;
+                errores_paso2 = errores_paso2 + 1;
+            }
+            if (tipo_obra == "") {
+                $('#TIPO_OBRA_container').addClass("warning");
+                completos_paso2 = completos_paso2 - 1;
+                warnings_paso2 = warnings_paso2 + 1;
+            }
+            if (tipo_estructura == "") {
+                $('#tipo_estructura').addClass("warning");
+                completos_paso2 = completos_paso2 - 1;
+                warnings_paso2 = warnings_paso2 + 1;
+            }
+            if (tipo_cimentacion == "") {
+                $('#tipo_cimentacion').addClass("warning");
+                completos_paso2 = completos_paso2 - 1;
+                warnings_paso2 = warnings_paso2 + 1;
+            }
+            if (valor_proyecto== "") {
+                $(".div_valor_proyecto span.e-box").addClass("warning");
+                completos_paso2 = completos_paso2 - 1;
+                warnings_paso2 = warnings_paso2 + 1;
+            }
+            if (observaciones == "") {
+                $('#obser_proyecto').addClass("error");
+                completos_paso2 = completos_paso2 - 1;
+                errores_paso2 = errores_paso2 + 1;
+            }
+            if (pisos == "") {
+                $(".div_pisos span.e-box").addClass("warning");
+                completos_paso2 = completos_paso2 - 1;
+                warnings_paso2 = warnings_paso2 + 1;
+            }
+            
+            if (area == "") {
+                $(".div_area span.e-box").addClass("warning");
+                completos_paso2 = completos_paso2 - 1;
+                warnings_paso2 = warnings_paso2 + 1;
+            }
+            if (sotanos == "") {
+                $(".div_sotanos span.e-box").addClass("warning");
+                completos_paso2 = completos_paso2 - 1;
+                warnings_paso2 = warnings_paso2 + 1;
+            }
+
+            if (errores_paso2 > 0 || warnings_paso2 > 0) {
+                mensaje = "Corrija los errores en rojo y tome decisiones sobre advertencias las resaltadas en amarillo de la etapa " + paso;
+                div_mensaje = "<div class='alert mensajes'><span class='closebtn' onclick='$(this).parent().remove();'>&times;</span>"
+                div_mensaje = div_mensaje + mensaje + "</div > ";
+            }
+
+            //Mostrar resultados
+            $('.steps .img-circle.active .percent').empty().prepend(Math.round(((completos_paso2) / 19) * 100) + "%");
+
+            //Guardar etapa 2
+
+            //Refrescar grids de acuerdo con contrato proyecto
+
+            var id_proyecto = $("#id_proyecto").val();
+            var id_contrato = $("#id_contrato").val();
+
+            var proyecto = {
+                COD_PROYECTO: null,
+                DESCRIPCION: descripcion,
+                DIRECCION: direccion,
+                COD_TIPO_SERVICIO: tipo_servicio,
+                COD_TIPO_OBRA: tipo_obra,
+                ESTRUCTURA: tipo_estructura,
+                CIMENTACION: tipo_cimentacion,
+                AREA: area,
+                VALOR_PROYECTO: valor_proyecto,
+                SOTANOS: sotanos,
+                PISOS: pisos,
+                OBSERVACIONES: observaciones,
+                PLAZO_PREVIA: plazo_previa,
+                PLAZO_OBRA: plazo_obra,
+                PLAZO_LIQUIDACION: plazo_liquidacion,
+                FECHA_INI_PREVIA: fecha_ini_etapa_previa,
+                FECHA_INI_OBRA: fecha_ini_etapa_obra,
+                FECHA_INI_LIQUIDACION: fecha_ini_etapa_liquidacion,
+                CENTRO_COSTOS: centro_costos
+            };
+            var adicional = {
+                CORREO_RESPONSABLE: correo,
+                TELEFONO_RESPONSABLE: telefono
+            };
+            if (tipos_condiciones_contractuales[0] == "") {
+
+            }
+            else {
+                tipos_condiciones_contractuales = tipos_condiciones_contractuales.split(",");
+            }
+            if (id_proyecto == "1") {
+                $(".mensajes").remove();
+                mensaje1 = "Guardando " + paso;
+                div_mensaje1 = "<div class='operando mensajes'><div class='loader_mensajes'><span class='e-image1'></span><div><span class='closebtn' onclick='$(this).parent().remove();'>&times;</span>"
+                div_mensaje1 = div_mensaje1 + mensaje1 + "</div >";
+                $(".contenedor_tablas").prepend(div_mensaje1);
+                var data = JSON.stringify({ PROYECTO: proyecto, COD_CONTRATO: id_contrato, TIPO_CONDICIONES: tipos_condiciones_contractuales, COD_FORMA_PAGO: cod_forma_pago, TAGS: tags, ADICIONAL: adicional, OBSERVACIONES: observaciones  });
+                var url = "guardar_proyecto";
+                $.ajax({
+                    type: "POST",
+                    url: url,
+                    data: data,
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    dataFilter: function (data) { return data; },
+                    success: function (data) {
+                        var datos = data.responseText.split(",");
+                        $("#id_proyecto").val(datos[0]);
+                        contrato_proyecto = datos[1];
+                        $("#id_contrato_proyecto").val(contrato_proyecto);
+                        $("#GRID_ROLES").ejGrid("instance").filterColumn("COD_CONTRATO_PROYECTO", "equal", contrato_proyecto, "and", true);
+                        $("#GRID_ITEMS").ejGrid("instance").filterColumn("COD_CONTRATO_PROYECTO", "equal", contrato_proyecto, "and", true);
+                        $("#Grid_INCREMENTOS").ejGrid("instance").filterColumn("COD_CONTRATO_PROYECTO", "equal", contrato_proyecto, "and", true);
+                        var mensaje2 = "¡Datos almacenados con éxito!";
+                        var tipo_mensaje = "";
+                        if (mensaje == "") {
+                            tipo_mensaje = "success";
+                        }
+                        else {
+                            tipo_mensaje = "alert";
+                        }
+                        div_mensaje = "<div class='" + tipo_mensaje + " mensajes'><span class='closebtn' onclick='$(this).parent().remove();'>&times;</span>"
+                        div_mensaje = div_mensaje + mensaje2 + mensaje + "</div > ";
+                        $(".mensajes").remove();
+                        $(".contenedor_tablas").prepend(div_mensaje);
+                    },
+                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                        var mensaje2 = "¡Ha ocurrido un error de almacenaje!  Por favor, vuelva a intentarlo.";
+                        div_mensaje = "<div class='alert mensajes'><span class='closebtn' onclick='$(this).parent().remove();'>&times;</span>"
+                        div_mensaje = div_mensaje + mensaje2 + mensaje + "</div > ";
+                        $(".mensajes").remove();
+                        $(".contenedor_tablas").prepend(div_mensaje);
+                    }
+                });
+            }
+            else {
+                $(".mensajes").remove();
+                mensaje1 = "Guardando " + paso;
+                div_mensaje1 = "<div class='operando mensajes'><div class='loader_mensajes'><span class='e-image1'></span><div><span class='closebtn' onclick='$(this).parent().remove();'>&times;</span>"
+                div_mensaje1 = div_mensaje1 + mensaje1 + "</div >";
+                $(".contenedor_tablas").prepend(div_mensaje1);
+                proyecto.COD_PROYECTO = id_proyecto;
+                var data = JSON.stringify({ PROYECTO: proyecto, COD_CONTRATO: id_contrato, TIPO_CONDICIONES: tipos_condiciones_contractuales, COD_FORMA_PAGO: cod_forma_pago, COD_CONTRATO_PROYECTO: contrato_proyecto, TAGS: tags, ADICIONAL: adicional, OBSERVACIONES: observaciones  });
+                var url = "actualizar_proyecto";
+                $.ajax({
+                    type: "POST",
+                    url: url,
+                    data: data,
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    dataFilter: function (data) { return data; },
+                    success: function (data) {
+                        var datos = data.responseText.split(",");
+                        $("#id_proyecto").val(datos[0]);
+                        contrato_proyecto = datos[1];
+                        $("#id_contrato_proyecto").val(contrato_proyecto);
+                        $("#GRID_ROLES").ejGrid("instance").filterColumn("COD_CONTRATO_PROYECTO", "equal", contrato_proyecto, "and", true);
+                        $("#GRID_ITEMS").ejGrid("instance").filterColumn("COD_CONTRATO_PROYECTO", "equal", contrato_proyecto, "and", true);
+                        $("#Grid_INCREMENTOS").ejGrid("instance").filterColumn("COD_CONTRATO_PROYECTO", "equal", contrato_proyecto, "and", true);
+                        var mensaje2 = "¡Datos almacenados con éxito!";
+                        var tipo_mensaje = "";
+                        if (mensaje == "") {
+                            tipo_mensaje = "success";
+                        }
+                        else {
+                            tipo_mensaje = "alert";
+                        }
+                        div_mensaje = "<div class='" + tipo_mensaje + " mensajes'><span class='closebtn' onclick='$(this).parent().remove();'>&times;</span>"
+                        div_mensaje = div_mensaje + mensaje2 + mensaje + "</div > ";
+                        $(".mensajes").remove();
+                        $(".contenedor_tablas").prepend(div_mensaje);
+                    },
+                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                        var mensaje2 = "¡Ha ocurrido un error de almacenaje! Por favor, vuelva a intentarlo.";
+                        div_mensaje = "<div class='alert mensajes'><span class='closebtn' onclick='$(this).parent().remove();'>&times;</span>"
+                        div_mensaje = div_mensaje + mensaje2 + mensaje + "</div > ";
+                        $(".mensajes").remove();
+                        $(".contenedor_tablas").prepend(div_mensaje);
+                    }
+                });
+            }
+            $("#errores2").val(errores_paso2);
+        }
+
+        //Validación etapa 3
+        else if (paso == "3") {
+            var grid_roles= $("#GRID_ROLES").data("ejGrid");
+            var cantidad_roles = grid_roles._currentJsonData.length;
+
+            if (true) {
+                $('.steps .img-circle.active .percent').empty().prepend("100%");
+                //regenerar_flujo_rol();
+                $("#errores3").val(0);
+            }
+            else {
+                mensaje = "No cargó ningún rol asociado al proyecto en la etapa " + paso;
+                div_mensaje = "<div class='alert mensajes'><span class='closebtn' onclick='$(this).parent().remove();'>&times;</span>"
+                div_mensaje = div_mensaje + mensaje + "</div > ";
+                $('.steps .img-circle.active .percent').empty().prepend("0%");
+                $("#errores3").val(1);
+
+            }
+            $(".mensajes").remove();
+            if (div_mensaje != "") {
+                $(".contenedor_tablas").prepend(div_mensaje);
+            }
+
+        }
+
+        //Validación etapa 4
+        else if (paso == "4") {
+
+            $('.steps .img-circle.active .percent').empty().prepend("100%");
+            $(".mensajes").remove();
+            if (div_mensaje != "") {
+                $(".contenedor_tablas").prepend(div_mensaje);
+            }
+        }
+
+        //Validación etapa 5
+        else if (paso == "5") {
+            var grid_items = $("#GRID_ITEMS").data("ejGrid");
+            var cantidad_items = grid_items._currentJsonData.length;
+
+            if (true) {
+                $('.steps .img-circle.active .percent').empty().prepend("100%");
+                //regenerar_flujo_item();
+                $("#errores5").val(0);
+            }
+            else {
+                mensaje = "No cargó ningún item asociado al proyecto en la etapa " + paso;
+                div_mensaje = "<div class='alert mensajes'><span class='closebtn' onclick='$(this).parent().remove();'>&times;</span>"
+                div_mensaje = div_mensaje + mensaje + "</div > ";
+                $('.steps .img-circle.active .percent').empty().prepend("0%");
+
+            }
+            $(".mensajes").remove();
+            if (div_mensaje != "") {
+                $(".contenedor_tablas").prepend(div_mensaje);
+            }
+        }
+
+        //Validación etapa 6
+        else if (paso == "6") {
+            $('.steps .img-circle.active .percent').empty().prepend("100%");
+            var errores1 = parseInt($("#errores1").val());
+            var errores2 = parseInt($("#errores2").val());
+            var errores3 = parseInt($("#errores3").val());
+            var errores4 = parseInt($("#errores4").val());
+            var errores5 = parseInt($("#errores5").val());
+            var errores6 = parseInt($("#errores6").val());
+            var total = 0;
+            var errores_texto = "";
+            total = errores1 + errores2 + errores3 + errores4 + errores5 + errores6;
+            if (errores1>0) {
+                errores_texto = errores_texto + "1;";
+            }
+            if (errores2 > 0) {
+                errores_texto = errores_texto + "2;";
+            }
+            if (errores3 > 0) {
+                errores_texto = errores_texto + "3;";
+            }
+            if (errores4 > 0) {
+                errores_texto = errores_texto + "4;";
+            }
+            if (errores5 > 0) {
+                errores_texto = errores_texto + "5;";
+            }
+            if (errores6 > 0) {
+                errores_texto = errores_texto + "6;";
+            }
+
+            if (total == 0) {
+                mensaje = "Proyecto cargado con éxito ";
+                div_mensaje = "<div class='success mensajes'><div class='col-md-10'>";
+                div_mensaje = div_mensaje + mensaje + "</div><div class='col-md-2'><span class='closebtn' onclick='$(this).parent().parent().remove();'>&times;</span><button type='button' class='btn btn-purple mensaje' onclick='inicio()'>INICIO</button></div></div > ";
+                cerrar_cargue();
+            }
+            else {
+                mensaje = "Corrija los errores en rojo y tome decisiones sobre advertencias las resaltadas en amarillo de las etapas: " + errores_texto;
+                div_mensaje = "<div class='alert mensajes'><span class='closebtn' onclick='$(this).parent().remove();'>&times;</span>"
+                div_mensaje = div_mensaje + mensaje + "</div > ";
+            }
+            $(".mensajes").remove();
+            if (div_mensaje != "") {
+                $(".contenedor_tablas").prepend(div_mensaje);
+            }
+        }
+        //Imprimir mensaje
+
+        $('.contenedor_loader').hide();
+    }
+
+    //Funciones de validación JQUERY
+    $(function () {
+
+            //Adicionar a jquery validate la revisión de las fechas contra la firma del contrato
+            $.validator.addMethod("validacion_fecha_rol_contrato", function (value, element, params) {
+                var parts = global_fecha_firma.split("/");
+                var fin = new Date(parseInt(parts[2], 10),
+                    parseInt(parts[1], 10) - 1,
+                    parseInt(parts[0], 10));
+                parts = element.value.split("/");
+                var fecha = new Date(parseInt(parts[2], 10),
+                    parseInt(parts[1], 10) - 1,
+                    parseInt(parts[0], 10));
+                return fecha >= fin && global_fecha_firma != "";
+            }, "La fecha de inicio debe ser mayor o igual a la fecha de firma del contrato inicial");
+
+            //Adicionar a jquery validate la revisión de las fechas de inicio y fin de ejecución
+            $.validator.addMethod("validacion_fecha_rol_ejecucion", function (value, element, params) {
+                var parts = global_fecha_ini.split("/");
+                var ini = new Date(parseInt(parts[2], 10),
+                    parseInt(parts[1], 10) - 1,
+                    parseInt(parts[0], 10));
+                parts = global_fecha_fin.split("/");
+                var fin = new Date(parseInt(parts[2], 10),
+                    parseInt(parts[1], 10) - 1,
+                    parseInt(parts[0], 10));
+                parts = element.value.split("/");
+                var fecha = new Date(parseInt(parts[2], 10),
+                    parseInt(parts[1], 10) - 1,
+                    parseInt(parts[0], 10));
+                return fecha >= ini && global_fecha_ini != "" && fecha <= fin && global_fecha_fin != "";
+            }, "La fecha no es consistente con la fecha de inicio o fin de ejecución del contrato");
+
+            //Adicionar a jquery validate la revisión de las fechas de inicio y fin de ejecución y meses
+            $.validator.addMethod("validacion_meses", function (value, element, params) {
+                var parts = global_fecha_fin.split("/");
+                var fin = new Date(parseInt(parts[2], 10),
+                    parseInt(parts[1], 10) - 1,
+                    parseInt(parts[0], 10));
+
+                var meses = parseInt(element.value);
+                var fecha_texto = "";
+                if (params == "rol") {
+                    fecha_texto = $("#GRID_ROLESFECHA_INI").val();
+                }
+                else if (params = "item") {
+                    fecha_texto = $("#GRID_ITEMSFECHA_INI_USO").val();
+                }
+                parts = fecha_texto.split("/");
+                var fecha = new Date(parseInt(parts[2], 10),
+                    parseInt(parts[1], 10) - 1,
+                    parseInt(parts[0], 10));
+                fecha = fecha.setMonth(fecha.getMonth() + meses);
+                return fecha <= fin && global_fecha_fin != "";
+            }, "Inconsistencia entre los meses y la fecha de fin de ejecución del contrato");
+
+            // Validar que no se incluyan roles duplicados para etapa 3 roles
+            $.validator.addMethod("valid_rol_duplicado", function (value, element, params) {
+                //window.alert("Entró a valid_rol_duplicado");
+                // Create grid object.._editedData.COD_CONTRATO_ROL
+                var gridObj = $("#GRID_ROLES").ejGrid("instance");
+                var cod_contrato_rol = 0;
+
+                if (agregar_editar == "editar") {
+                    cod_contrato_rol = gridObj._editedData.COD_CONTRATO_ROL;
+                }
+                var cont = gridObj.getCurrentViewData().length;
+                var cont1 = 0;
+                if (cont == null) { cont = 0 };
+                var rol_ingresa = $("#GRID_ROLESCOD_ROL").val();
+                if (cont > 0) {
+                    var datos = gridObj.getCurrentViewData();
+                    for (j = 1; cont; j++) {
+                        if (j > cont) { break }
+                        k = j - 1;
+                        if (datos[k].COD_ROL == rol_ingresa && cod_contrato_rol != datos[k].COD_CONTRATO_ROL) { return false; }
+                    };
+                }
+
+                return true;
+            }, "El rol que está ingresando ya existe. No está permitido incluir roles duplicados");
+
+        });
+
+    //Variable para determinar si se edita o se agrega
+     var agregar_editar = "";
+    //Funcion para añadir el codigo contrato proyecto generado a la tabla de roles por contrato
+    function inicio_rol(args) {
+
+
+            if (args.requestType == "save") {
+                args.data.COD_CONTRATO_PROYECTO = contrato_proyecto;
+            }
+            if (args.requestType == "begin") {
+
+                args.data.COD_CONTRATO_PROYECTO = contrato_proyecto;
+            }
+            if (args.requestType == "beginedit" || args.requestType == "add") {
+                if (args.requestType == "beginedit") {
+                    agregar_editar = "editar";
+                }
+                else {
+                    agregar_editar = "agregar";
+                }
+                if (args.model.dataSource.dataSource.url == "GetOrderData_rol") {
+
+                    setTimeout(function () {
+                        var drop = $("#GRID_ROLESCOD_ROL").ejDropDownList('instance');
+
+                        drop.option("enableFilterSearch", true);
+
+
+                    }, 50);
+
+                }
+                try {
+                    setTimeout(function () {
+                        var valor_prestaciones = $("#GRID_ROLESVALOR_MENSUAL_SIN_PRESTACIONES").ejNumericTextbox('instance');
+                        valor_prestaciones.model.focusOut = "generar_valores_prestaciones";
+                        var prestaciones = $("#GRID_ROLESPRESTACIONES").ejNumericTextbox('instance');
+                        prestaciones.model.focusOut = "generar_valores_prestaciones";
+                        var factor = $("#GRID_ROLESFACTOR_MULTIPLICADOR").ejNumericTextbox('instance');
+                        factor.model.focusOut = "generar_valores_prestaciones";
+                        var dedicacion = $("#GRID_ROLESDEDICACION").ejNumericTextbox('instance');
+                        dedicacion.model.focusOut = "generar_valores_prestaciones";
+                    }, 50);
+                }
+                catch{
+                    console.log("error");
+                }
+
+            }
+        }
+
+    //funcion calculo de valor pretaciones y factor {multiplicador
+    function generar_valores_prestaciones() {
+            var valor_prestaciones;
+            var factor;
+            var prestaciones;
+            var valor1, valor2, valor3,valor4;
+            try {
+                valor_prestaciones = $("#GRID_ROLESVALOR_MENSUAL_SIN_PRESTACIONES").data("ejNumericTextbox");
+                valor1 = valor_prestaciones.getValue();
+            }
+            catch{
+                valor1 = 0;
+            }
+            try {
+                prestaciones = $("#GRID_ROLESPRESTACIONES").data("ejNumericTextbox");
+                valor2 = prestaciones.getValue() + 1;
+            }
+            catch{
+                valor2 = 0;
+            }
+            try {
+                factor = $("#GRID_ROLESFACTOR_MULTIPLICADOR").data("ejNumericTextbox");
+                valor3 = factor.getValue();
+            }
+            catch{
+                valor3 = 0;
+            }
+            try {
+                factor = $("#GRID_ROLESDEDICACION").data("ejNumericTextbox");
+                valor4 = factor.getValue();
+            }
+            catch{
+               valor4 = 1;
+            }
+
+            var valor_mensual_prestaciones = valor1*valor2*valor4;
+            var valor_mensual_factor = valor_mensual_prestaciones * valor3;
+            
+            $("#GRID_ROLESVALOR_MENSUAL_PRESTACIONES").ejNumericTextbox({ value: valor_mensual_prestaciones });
+            $("#GRID_ROLESVALOR_MENSUAL_PRESTACIONES_MULTIPLICADOR").ejNumericTextbox({ value: valor_mensual_factor });
+        }
+
+    //Función para regenerar flujo rol
+    function regenerar_flujo_rol() {
+        $('.contenedor_loader').show();
+        var data = JSON.stringify({ COD_CONTRATO_PROYECTO: parseInt(contrato_proyecto)});
+        var url = "regenerar_flujo_rol";
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: data,
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            dataFilter: function (data) { return data; },
+            success: function (data) {
+                $('.contenedor_loader').hide();
+                $("#PivotGrid1").show();
+                var gridObj = $("#PivotGrid1").data("ejPivotGrid");
+                gridObj.refreshPivotGrid();
+            }
+        });
+    }
+
+    //Función para regenerar flujo item
+    function regenerar_flujo_item() {
+        $('.contenedor_loader').show();
+        var data = JSON.stringify({ COD_CONTRATO_PROYECTO: parseInt(contrato_proyecto) });
+        var url = "regenerar_flujo_item";
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: data,
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            dataFilter: function (data) { return data; },
+            success: function (data) {
+                $('.contenedor_loader').hide();
+                $("#PivotGrid2").show();
+                var gridObj = $("#PivotGrid2").data("ejPivotGrid");
+                gridObj.refreshPivotGrid();
+            }
+        });
+    }
+
+    //Antes de iniciar grids
+    function beforeserviceinvoke(args) {
+        if (args.action == "initialize") {
+            var tot = parseInt($("#id_contrato_proyecto").val());
+            args.model.customObject = {COD_CONTRATO_PROYECTO:tot };
+            args.customObject = { COD_CONTRATO_PROYECTO: tot };
+        }
+    }
+
+    //Volver al index
+    function inicio() {
+        window.location = "Index";
+    }
+
+    //Función para regenerar flujo item
+    function cerrar_cargue() {
+        var data = JSON.stringify({ COD_CONTRATO_PROYECTO: parseInt(contrato_proyecto) });
+        var url = "cerrar_cargue";
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: data,
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            dataFilter: function (data) { return data; },
+            success: function (data) {
+
+            }
+        });
+    }
+
+    //Remove completo contrato
+    function fileremovecomplete_contrato(e) {
+        $('.ruta_contrato_display').addClass("oculta");
+        $('#id_ruta_contrato_display').val("");
+        $('#id_ruta_contrato').val("");
+    }
+
+    //Remove completo acta
+    function fileremovecomplete_acta(e) {
+        $('.ruta_acta_display').addClass("oculta");
+        $('#id_ruta_acta_display').val("");
+        $('#id_ruta_acta').val("");
+    }
+
+    //Traducción validación
+    $.extend($.validator.messages, {
+        required: "Este campo es obligatorio.",
+        remote: "Por favor, rellena este campo.",
+        email: "Por favor, escribe una dirección de correo válida.",
+        url: "Por favor, escribe una URL válida.",
+        date: "Por favor, escribe una fecha válida.",
+        dateISO: "Por favor, escribe una fecha (ISO) válida.",
+        number: "Por favor, escribe un número válido.",
+        digits: "Por favor, escribe sólo dígitos.",
+        creditcard: "Por favor, escribe un número de tarjeta válido.",
+        equalTo: "Por favor, escribe el mismo valor de nuevo.",
+        extension: "Por favor, escribe un valor con una extensión aceptada.",
+        maxlength: $.validator.format("Por favor, no escribas más de {0} caracteres."),
+        minlength: $.validator.format("Por favor, no escribas menos de {0} caracteres."),
+        rangelength: $.validator.format("Por favor, escribe un valor entre {0} y {1} caracteres."),
+        range: $.validator.format("Por favor, escribe un valor entre {0} y {1}."),
+        max: $.validator.format("Por favor, escribe un valor menor o igual a {0}."),
+        min: $.validator.format("Por favor, escribe un valor mayor o igual a {0}."),
+        nifES: "Por favor, escribe un NIF válido.",
+        nieES: "Por favor, escribe un NIE válido.",
+        cifES: "Por favor, escribe un CIF válido."
+        });
+
+    //Funcion para calcular los campos calculados
+    function calcular(args) {
+
+     }
+
+    //Cargue de grid
+    function cargue_grid_rol(args) {
+
+    }
+
+    //Abrir incrementos
+    function abrir_incrementos() {
+       if ($(".incrementos").hasClass("oculta")) {
+           $(".incrementos").show(1000)
+           $(".incrementos").removeClass("oculta");
+           $(".boton_incrementos").text('OCULTAR INCREMENTOS SALARIALES');
+       }
+       else {
+           $(".incrementos").addClass("oculta");
+           $(".boton_incrementos").text('MOSTRAR INCREMENTOS SALARIALES');
+           $(".incrementos").hide(1000);
+       }
+   }
+
+    //Cargar incrementos
+    function inicio_grid_incrementos(args) {
+        var tot1 = 1;
+        try {
+            tot1 = parseInt($("#id_contrato_proyecto").val());
+        }
+        catch{
+            tot1 = 1;
+        }
+
+        if (args.requestType == "save") {
+            args.data.COD_CONTRATO_PROYECTO = tot1;
+        }
+        if (args.requestType == "begin") {
+            args.data.COD_CONTRATO_PROYECTO = tot1;
+        }
+        if (args.requestType == "beginedit" || args.requestType == "add") {
+            if (args.model.dataSource.dataSource.url == "GetOrderData_incrementos") {
+                setTimeout(function () {
+                    var drop = $("#GRIDCOD_CONTRATO_PROYECTO").ejDropDownList('instance');
+                        drop.option("enableFilterSearch", true);
+                        var drop = $("#GRIDCOD_FORMAS_PAGO_FECHAS").ejDropDownList('instance');
+                        drop.option("enableFilterSearch", true);
+                        var drop = $("#GRIDCOD_INCREMENTO").ejDropDownList('instance');
+                        drop.option("enableFilterSearch", true);
+
+                    }, 50);
+                }
+            }
+        }
+
+    //Cambio de checks
+    function cambiar_check(element) {
+    var id = element.attr("id");
+    var fechas;
+    var meses;
+    var meses_ej;
+
+    if (id == "check_etapa_previa") {
+            fechas = $("#FECHA_INI_ETAPA_PREVIA").data("ejDatePicker");
+            meses_ej = $("#PLAZO_PREVIA").ejNumericTextbox("instance")
+            meses = $("#PLAZO_PREVIA");
+        }
+    if (id == "check_etapa_obra") {
+            fechas = $("#FECHA_INI_ETAPA_OBRA").data("ejDatePicker");
+            meses_ej = $("#PLAZO_OBRA").ejNumericTextbox("instance")
+            meses = $("#PLAZO_OBRA");
+        }
+    if (id == "check_etapa_liquidacion") {
+            fechas = $("#FECHA_INI_ETAPA_LIQUIDACION").data("ejDatePicker");
+        meses_ej = $("#PLAZO_LIQUIDACION").ejNumericTextbox("instance");
+            meses = $("#PLAZO_LIQUIDACION");
+        }
+    
+    if (!element.is(':checked')) {
+        meses_ej.option({ value: null });
+        meses_ej.disable();
+        fechas.option({ value: null });
+        fechas.disable();
+    }
+    else {
+        meses_ej.enable();
+        fechas.enable();
+       }
+  }
+
+    //Function para cargar los archivos asociados al rol
+    function cargar_archivo_rol(contrato_proyecto, id) {
+
+
+        }
+
+    //Evento creación grid roles para crear uploadbox
+    function create(args) {
+        $("#boton_adjuntar").ejUploadbox({
+            saveUrl: "../FlujoProyectos/Save_anexos",
+            removeUrl: "../FlujoProyectos/Remove_anexos",
+            success: fileuploadSuccess_anexos,
+            remove: fileremovecomplete_anexos,
+            autoUpload: true,
+            showFileDetails: false,
+            fileSize: 10000000,
+            extensionsAllow: ".doc, .docx,.pdf",
+            uploadName: "CARGUE_ANEXOS",
+            cssClass: "custom",
+            buttonText: {
+                browse: ""
+            },
+            create: function (args) {
+                $(".custom .e-selectpart").prepend("<span class='e-icon e-upload'></span>");
+            }
+        });
+    }
+
+    //Funcion para detectar click de cargue de archivo anexo a los roles
+    function clicked(sender) {
+
+        //$target = $(sender.target);
+        //if ($target.hasClass("adjuntar")) {
+            //Instancia grid roles
+            //var instancia = $("#GRID_ROLES").ejGrid("instance");
+            //Verificar selección de filas
+            /*try {
+                var seleccionados = instancia.getSelectedRecords()[0].length;
+                if (instancia.getSelectedRecords().length > 1) {
+                    alert("Se detectó más de una fila seleccionada. Por favor seleccione una sola fila para adjuntar un archivo");
+                }
+                else {
+                    var fila = instancia.getSelectedRecords()[0];
+                    //Abrir uploadbox
+
+                }
+
+            }
+            catch{
+
+                alert("Por favor seleccione una fila para adjuntar un archivo");
+            }*/
+        //}
+
+        }
+
+    //Cargue de archivos - revisión duplicados*/
+    function onFileSelected_anexos(args) {
+            var archivo = args.filesData[0].name;
+
+        var url = "../Duplicados";
+
+            var data = "{archivo:'" + archivo + "'}";
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: data,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                dataFilter: function (data) { return data; },
+                success: function (data) {
+                    if (data.responseText == "si") {
+                        $('.ruta_contrato .e-file-status').addClass("e-upload-fails");
+                        $('.ruta_contrato .e-file-status').text("Archivo duplicado, por favor renombrelo antes de cargalo");
+                    }
+                }
+            });
+
+        }
+
+    //Almacenaje de la ruta anexos
+    function fileuploadSuccess_anexos(e) {
+        var FileData = e.responseText;
+        //Guardar valor
+        var instancia = $("#GRID_ROLES").ejGrid("instance");
+            //Verificar selección de filas
+        try {
+            var seleccionados = instancia.getSelectedRecords()[0];
+            var fila = instancia.selectedRowsIndexes;
+            seleccionados.RUTA_DOCUMENTO = FileData;
+            instancia.updateRecord("COD_CONTRATO_ROL", seleccionados);
+            setTimeout(function () { instancia.refreshContent();},1000);
+        }
+        catch{
+            alert("Por favor seleccione una fila para adjuntar un archivo");
+        }
+        }
+
+    //Remove completo anexos
+    function fileremovecomplete_anexos(e) {
+        var instancia = $("#GRID_ROLES").ejGrid("instance");
+        var fila = instancia.selectedRowsIndexes;
+        //Guardar valor de la ruta en la fila seleccionada
+        instancia.setCellValue(fila, "RUTA_DOCUMENTO", "");
+        }
+
+    //Función para destruir y crear grids
+    function cargar_pivot(tipo){
+        if (tipo == "roles") {
+            try {
+                gridObj = $("#PivotGrid2").data("ejPivotGrid");
+                gridObj.destroy();
+
+            }
+            catch{
+
+            }
+            gridObj = $("#PivotGrid1").ejPivotGrid({
+                enableCompleteDataExport: true,
+                locale:"es-CO",
+                url:"../servicios/FlujoIngresosRoles.svc",
+                enableColumnResizing:false,
+                enableToolTip:false,
+                enableCellContext:false,
+                enableCellSelection:false,
+                enableJSONRendering:false,
+                isResponsive:false,
+                enableVirtualScrolling:false,
+                enableDefaultValue:false,
+                enableCellClick:false,
+                enableCellDoubleClick:false,
+                enableCollapseByDefault:false,
+                enableConditionalFormatting:false,
+                enableDeferUpdate:false,
+                enableDrillThrough:false,
+                enableXHRCredentials:false,
+                enableRTL:false,
+                frozenHeaderSettings: { enableFrozenHeaders: true, enableFrozenRowHeaders: true },
+                enableMemberEditorPaging:false,
+                enableCellEditing: true,
+                
+                cellEdit: "editar_flujo_rol",
+                load:"onLoad",
+                beforeServiceInvoke:"beforeserviceinvoke",
+
+                afterServiceInvoke:"flujo_rol_despues"
+
+            });
+            
+        }
+        if (tipo == "items") {
+            try {
+                gridObj = $("#PivotGrid1").data("ejPivotGrid");
+                gridObj.destroy();
+
+            }
+            catch{
+
+            }
+            gridObj = $("#PivotGrid2").ejPivotGrid({
+                enableCompleteDataExport: true,
+                locale: "es-CO",
+                url: "../servicios/FlujoIngresosItems.svc",
+                enableColumnResizing: false,
+                enableToolTip: false,
+                enableCellContext: false,
+                enableCellSelection: false,
+                enableJSONRendering: false,
+                isResponsive: false,
+                enableVirtualScrolling: false,
+                enableDefaultValue: false,
+                enableCellClick: false,
+                enableCellDoubleClick: false,
+                enableCollapseByDefault: false,
+                enableConditionalFormatting: false,
+                enableDeferUpdate: false,
+                enableDrillThrough: false,
+                enableXHRCredentials: false,
+                enableRTL: false,
+                frozenHeaderSettings: { enableFrozenHeaders: true, enableFrozenRowHeaders: true },
+                enableMemberEditorPaging: false,
+                enableCellEditing: true,
+                
+                cellEdit: "editar_flujo_item",
+                load: "onLoad",
+                beforeServiceInvoke: "beforeserviceinvoke",
+
+                afterServiceInvoke: "flujo_item_despues"
+
+            });
+
+        }
+        }
+
+         //Funcion para añadir buscador a los dropdown a la grid hijo de items rol
+	function inicio_grid_items_rol(args) {
+        
+        if (args.requestType == "beginedit" || args.requestType == "add") {
+           
+                setTimeout(function () {
+                    var drop = $(".e-dropdownlist[name='COD_ROL']").ejDropDownList('instance');
+                    //Traer datos del proyecto
+                    var data = JSON.stringify({ COD_CONTRATO_PROYECTO: contrato_proyecto });
+                    var url = "../lista_items_roles";
+                    $.ajax({
+                        type: "POST",
+                        url: url,
+                        data: data,
+                        dataType: "json",
+                        contentType: "application/json; charset=utf-8",
+                        dataFilter: function (data) { return data; },
+                        success: function (data) {
+                            
+                            var lista_roles = data.data;
+                            var dataManager = ej.DataManager(lista_roles);
+                            drop.option("dataSource", dataManager);
+                            drop.option("fields", { text: "DESCRIPCION", value: "COD_ROL" });
+                            drop.option("enableFilterSearch", true);
+                        }
+                    });
+                    drop.option("enableFilterSearch", true);
+                }, 500); 
+            }
+        
+        }
+
+    //Funcion para añadir buscador a los dropdown a la grid hijo
+	function inicio_grid(args) {
+        
+        if (args.requestType == "beginedit" || args.requestType == "add") {
+           
+                setTimeout(function () {
+                    var drop = $(".e-dropdownlist[name='COD_CARGO']").ejDropDownList('instance');
+                    drop.option("enableFilterSearch", true);
+                }, 50); 
+            }
+        
+        }
+    
+    //Función para validar que el patrón de correos electrónicos se cumpla
+    function validar_email(email) {
+        var re = /^(([^<>()[\]\\.,;:\s@@\"]+(\.[^<>()[\]\\.,;:\s@@\"]+)*)|(\".+\"))@@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    }
+
+    //Funcion para validar teléfonos de 10 digitos (celulares)
+    function validar_telefono(telefono) {
+        var pattern = /^\d{10}$/;
+        if (pattern.test(telefono)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+        return false;
+        }
+    
+    </script>
+}
+
+<!--Modelos o templates para botones-->
+<script type="text/x-jsrender" id="Adjuntar">
+    <div id="boton_adjuntar"></div>
+</script>

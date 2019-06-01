@@ -1,0 +1,626 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CONTRATISTAS_testModelStoreContainer" CdmEntityContainer="CONTRATISTAS_testEntities">
+    <EntitySetMapping Name="C__MigrationHistory">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.C__MigrationHistory">
+        <MappingFragment StoreEntitySet="__MigrationHistory">
+          <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+          <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ACCIONISTAS">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.ACCIONISTAS">
+        <MappingFragment StoreEntitySet="ACCIONISTAS">
+          <ScalarProperty Name="NIT_CEDULA" ColumnName="NIT_CEDULA" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="COD_ACCIONISTA" ColumnName="COD_ACCIONISTA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ACTIVIDADES">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.ACTIVIDADES">
+        <MappingFragment StoreEntitySet="ACTIVIDADES">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_ACTIVIDAD" ColumnName="COD_ACTIVIDAD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ASPECTOS">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.ASPECTOS">
+        <MappingFragment StoreEntitySet="ASPECTOS">
+          <ScalarProperty Name="ESTADO_ASPECTO" ColumnName="ESTADO_ASPECTO" />
+          <ScalarProperty Name="FECHA_ULTIMA_MODIFICACION" ColumnName="FECHA_ULTIMA_MODIFICACION" />
+          <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA_CREACION" />
+          <ScalarProperty Name="COD_USUARIO_ULTIMA_MODIFICACION" ColumnName="COD_USUARIO_ULTIMA_MODIFICACION" />
+          <ScalarProperty Name="COD_USUARIO_CREACION" ColumnName="COD_USUARIO_CREACION" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_ASPECTO" ColumnName="COD_ASPECTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetRoles">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.AspNetRoles">
+        <MappingFragment StoreEntitySet="AspNetRoles">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserClaims">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.AspNetUserClaims">
+        <MappingFragment StoreEntitySet="AspNetUserClaims">
+          <ScalarProperty Name="ClaimValue" ColumnName="ClaimValue" />
+          <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserLogins">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.AspNetUserLogins">
+        <MappingFragment StoreEntitySet="AspNetUserLogins">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
+          <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUsers">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.AspNetUsers">
+        <MappingFragment StoreEntitySet="AspNetUsers">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ATRIBUTOS">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.ATRIBUTOS">
+        <MappingFragment StoreEntitySet="ATRIBUTOS">
+          <ScalarProperty Name="ESTADO_ATRIBUTO" ColumnName="ESTADO_ATRIBUTO" />
+          <ScalarProperty Name="FECHA_ULTIMA_MODIFICACION" ColumnName="FECHA_ULTIMA_MODIFICACION" />
+          <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA_CREACION" />
+          <ScalarProperty Name="COD_USUARIO_ULTIMA_MODIFICACION" ColumnName="COD_USUARIO_ULTIMA_MODIFICACION" />
+          <ScalarProperty Name="COD_USUARIO_CREACION" ColumnName="COD_USUARIO_CREACION" />
+          <ScalarProperty Name="PESO" ColumnName="PESO" />
+          <ScalarProperty Name="COD_ASPECTO" ColumnName="COD_ASPECTO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_ATRIBUTO" ColumnName="COD_ATRIBUTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CALIFICACIONES">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.CALIFICACIONES">
+        <MappingFragment StoreEntitySet="CALIFICACIONES">
+          <ScalarProperty Name="COD_ESTADO" ColumnName="COD_ESTADO" />
+          <ScalarProperty Name="ACCIONES_REALIZADAS_MES_ANTERIOR" ColumnName="ACCIONES_REALIZADAS_MES_ANTERIOR" />
+          <ScalarProperty Name="OBSERVACIONES_CONTRATISTAS" ColumnName="OBSERVACIONES_CONTRATISTAS" />
+          <ScalarProperty Name="ACCIONES_REQUERIDAS" ColumnName="ACCIONES_REQUERIDAS" />
+          <ScalarProperty Name="FECHA_ULTIMA_MODIFICACION" ColumnName="FECHA_ULTIMA_MODIFICACION" />
+          <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA_CREACION" />
+          <ScalarProperty Name="COD_USUARIO_ULTIMA_MODIFICACION" ColumnName="COD_USUARIO_ULTIMA_MODIFICACION" />
+          <ScalarProperty Name="COD_USUARIO_CREACION" ColumnName="COD_USUARIO_CREACION" />
+          <ScalarProperty Name="COD_REGISTRO_CALIFICACION" ColumnName="COD_REGISTRO_CALIFICACION" />
+          <ScalarProperty Name="MEDIO_AMBIENTE" ColumnName="MEDIO_AMBIENTE" />
+          <ScalarProperty Name="SEGURIDAD_INDUSTRIAL" ColumnName="SEGURIDAD_INDUSTRIAL" />
+          <ScalarProperty Name="MANEJO" ColumnName="MANEJO" />
+          <ScalarProperty Name="CALIDAD" ColumnName="CALIDAD" />
+          <ScalarProperty Name="CUMPLIMIENTO" ColumnName="CUMPLIMIENTO" />
+          <ScalarProperty Name="COD_CALIFICACION" ColumnName="COD_CALIFICACION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAPITULOS">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.CAPITULOS">
+        <MappingFragment StoreEntitySet="CAPITULOS">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_CAPITULO" ColumnName="COD_CAPITULO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAPITULOS_EXPERIENCIA">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.CAPITULOS_EXPERIENCIA">
+        <MappingFragment StoreEntitySet="CAPITULOS_EXPERIENCIA">
+          <ScalarProperty Name="COD_CAPITULO" ColumnName="COD_CAPITULO" />
+          <ScalarProperty Name="COD_EXPERIENCIA" ColumnName="COD_EXPERIENCIA" />
+          <ScalarProperty Name="COD_EXPERIENCIA_CAPITULO" ColumnName="COD_EXPERIENCIA_CAPITULO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CIUDADES">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.CIUDADES">
+        <MappingFragment StoreEntitySet="CIUDADES">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_CIUDAD" ColumnName="COD_CIUDAD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CIUDADES_TRABAJO">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.CIUDADES_TRABAJO">
+        <MappingFragment StoreEntitySet="CIUDADES_TRABAJO">
+          <ScalarProperty Name="COD_CONTRATISTA" ColumnName="COD_CONTRATISTA" />
+          <ScalarProperty Name="COD_CIUDAD" ColumnName="COD_CIUDAD" />
+          <ScalarProperty Name="COD_CIUDAD_TRABAJO" ColumnName="COD_CIUDAD_TRABAJO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONTACTOS">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.CONTACTOS">
+        <MappingFragment StoreEntitySet="CONTACTOS">
+          <ScalarProperty Name="COD_CONTRATISTA" ColumnName="COD_CONTRATISTA" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="TELEFONO" ColumnName="TELEFONO" />
+          <ScalarProperty Name="CELULAR" ColumnName="CELULAR" />
+          <ScalarProperty Name="CARGO" ColumnName="CARGO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_CONTACTO" ColumnName="COD_CONTACTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONTRATISTAS">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.CONTRATISTAS">
+        <MappingFragment StoreEntitySet="CONTRATISTAS">
+          <ScalarProperty Name="EXPERIENCIA_PAYC" ColumnName="EXPERIENCIA_PAYC" />
+          <ScalarProperty Name="COD_REGISTRO_CONTRATISTA" ColumnName="COD_REGISTRO_CONTRATISTA" />
+          <ScalarProperty Name="COD_CIUDAD" ColumnName="COD_CIUDAD" />
+          <ScalarProperty Name="COD_ESTADO" ColumnName="COD_ESTADO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="NIT" ColumnName="NIT" />
+          <ScalarProperty Name="COD_CONTRATISTA" ColumnName="COD_CONTRATISTA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONTRATISTAS_ACCIONISTAS">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.CONTRATISTAS_ACCIONISTAS">
+        <MappingFragment StoreEntitySet="CONTRATISTAS_ACCIONISTAS">
+          <ScalarProperty Name="PARTICIPACION" ColumnName="PARTICIPACION" />
+          <ScalarProperty Name="COD_ACCIONISTA" ColumnName="COD_ACCIONISTA" />
+          <ScalarProperty Name="COD_CONTRATISTA" ColumnName="COD_CONTRATISTA" />
+          <ScalarProperty Name="COD_CONTRATISTA_ACCIONISTA" ColumnName="COD_CONTRATISTA_ACCIONISTA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ESTADOS">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.ESTADOS">
+        <MappingFragment StoreEntitySet="ESTADOS">
+          <ScalarProperty Name="TABLA_ESTADO" ColumnName="TABLA_ESTADO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_ESTADO" ColumnName="COD_ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EXPERIENCIAS">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.EXPERIENCIAS">
+        <MappingFragment StoreEntitySet="EXPERIENCIAS">
+          <ScalarProperty Name="OBJETO_CONTRACTUAL" ColumnName="OBJETO_CONTRACTUAL" />
+          <ScalarProperty Name="RUTA_CERTIFICACION" ColumnName="RUTA_CERTIFICACION" />
+          <ScalarProperty Name="OBSERVACION_REVISION" ColumnName="OBSERVACION_REVISION" />
+          <ScalarProperty Name="EXPERIENCIA_PAYC" ColumnName="EXPERIENCIA_PAYC" />
+          <ScalarProperty Name="COD_ESTADO" ColumnName="COD_ESTADO" />
+          <ScalarProperty Name="OBSERVACIONES" ColumnName="OBSERVACIONES" />
+          <ScalarProperty Name="UNIDAD_MEDIDA_TRABAJO" ColumnName="UNIDAD_MEDIDA_TRABAJO" />
+          <ScalarProperty Name="MEDIDA_TRABAJO" ColumnName="MEDIDA_TRABAJO" />
+          <ScalarProperty Name="FECHA_FIN" ColumnName="FECHA_FIN" />
+          <ScalarProperty Name="FECHA_INICIO" ColumnName="FECHA_INICIO" />
+          <ScalarProperty Name="CONTRATANTE" ColumnName="CONTRATANTE" />
+          <ScalarProperty Name="COD_CIUDAD" ColumnName="COD_CIUDAD" />
+          <ScalarProperty Name="PROYECTO" ColumnName="PROYECTO" />
+          <ScalarProperty Name="MONEDA" ColumnName="MONEDA" />
+          <ScalarProperty Name="VALOR" ColumnName="VALOR" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_REGISTRO_CONTRATISTA" ColumnName="COD_REGISTRO_CONTRATISTA" />
+          <ScalarProperty Name="COD_EXPERIENCIA" ColumnName="COD_EXPERIENCIA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFORMACIONES_FINANCIERAS">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.INFORMACIONES_FINANCIERAS">
+        <MappingFragment StoreEntitySet="INFORMACIONES_FINANCIERAS">
+          <ScalarProperty Name="RUTA_ESTADOS_FINANCIEROS" ColumnName="RUTA_ESTADOS_FINANCIEROS" />
+          <ScalarProperty Name="OBSERVACION_REVISION" ColumnName="OBSERVACION_REVISION" />
+          <ScalarProperty Name="UTILIDAD" ColumnName="UTILIDAD" />
+          <ScalarProperty Name="VENTAS" ColumnName="VENTAS" />
+          <ScalarProperty Name="MAQUINARIA_EQUIPO" ColumnName="MAQUINARIA_EQUIPO" />
+          <ScalarProperty Name="ANTICIPOS_TOTALES" ColumnName="ANTICIPOS_TOTALES" />
+          <ScalarProperty Name="ANTICIPOS_CORRIENTES" ColumnName="ANTICIPOS_CORRIENTES" />
+          <ScalarProperty Name="PATRIMONIO" ColumnName="PATRIMONIO" />
+          <ScalarProperty Name="PASIVO_TOTAL" ColumnName="PASIVO_TOTAL" />
+          <ScalarProperty Name="PASIVO_CORRIENTE" ColumnName="PASIVO_CORRIENTE" />
+          <ScalarProperty Name="ACTIVO_TOTAL" ColumnName="ACTIVO_TOTAL" />
+          <ScalarProperty Name="ACTIVO_CORRIENTE" ColumnName="ACTIVO_CORRIENTE" />
+          <ScalarProperty Name="FECHA_CORTE" ColumnName="FECHA_CORTE" />
+          <ScalarProperty Name="COD_REGISTRO_CONTRATISTA" ColumnName="COD_REGISTRO_CONTRATISTA" />
+          <ScalarProperty Name="COD_INFORMACION_FINANCIERA" ColumnName="COD_INFORMACION_FINANCIERA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PASSWORD">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.PASSWORD">
+        <MappingFragment StoreEntitySet="PASSWORD">
+          <ScalarProperty Name="COD_USUARIO" ColumnName="COD_USUARIO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_PASSWORD" ColumnName="COD_PASSWORD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="POSIBLES_RESPUESTAS">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.POSIBLES_RESPUESTAS">
+        <MappingFragment StoreEntitySet="POSIBLES_RESPUESTAS">
+          <ScalarProperty Name="VALOR" ColumnName="VALOR" />
+          <ScalarProperty Name="TIPO_RESPUESTA" ColumnName="TIPO_RESPUESTA" />
+          <ScalarProperty Name="COD_PREGUNTA" ColumnName="COD_PREGUNTA" />
+          <ScalarProperty Name="COD_POSIBLE_RESPUESTA" ColumnName="COD_POSIBLE_RESPUESTA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PREGUNTAS">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.PREGUNTAS">
+        <MappingFragment StoreEntitySet="PREGUNTAS">
+          <ScalarProperty Name="COD_ATRIBUTO" ColumnName="COD_ATRIBUTO" />
+          <ScalarProperty Name="ESTADO_PREGUNTA" ColumnName="ESTADO_PREGUNTA" />
+          <ScalarProperty Name="FECHA_ULTIMA_MODIFICACION" ColumnName="FECHA_ULTIMA_MODIFICACION" />
+          <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA_CREACION" />
+          <ScalarProperty Name="COD_USUARIO_ULTIMA_MODIFICACION" ColumnName="COD_USUARIO_ULTIMA_MODIFICACION" />
+          <ScalarProperty Name="COD_USUARIO_CREACION" ColumnName="COD_USUARIO_CREACION" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_PREGUNTA" ColumnName="COD_PREGUNTA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PROCESOS">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.PROCESOS">
+        <MappingFragment StoreEntitySet="PROCESOS">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_PROCESO" ColumnName="COD_PROCESO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PROYECTOS">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.PROYECTOS">
+        <MappingFragment StoreEntitySet="PROYECTOS">
+          <ScalarProperty Name="FECHA_FIN" ColumnName="FECHA_FIN" />
+          <ScalarProperty Name="FECHA_INICIO" ColumnName="FECHA_INICIO" />
+          <ScalarProperty Name="EXISTE_INTEGRAPP" ColumnName="EXISTE_INTEGRAPP" />
+          <ScalarProperty Name="COD_USUARIO_REVISAR" ColumnName="COD_USUARIO_REVISAR" />
+          <ScalarProperty Name="COD_USUARIO_CALIFICAR" ColumnName="COD_USUARIO_CALIFICAR" />
+          <ScalarProperty Name="COD_ESTADO" ColumnName="COD_ESTADO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="CECO" ColumnName="CECO" />
+          <ScalarProperty Name="COD_PROYECTO" ColumnName="COD_PROYECTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REGISTRO_CONTRATISTAS">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.REGISTRO_CONTRATISTAS">
+        <MappingFragment StoreEntitySet="REGISTRO_CONTRATISTAS">
+          <ScalarProperty Name="TIPO_REGISTRO" ColumnName="TIPO_REGISTRO" />
+          <ScalarProperty Name="FECHA_CAMARA" ColumnName="FECHA_CAMARA" />
+          <ScalarProperty Name="RUTA_CAMARA" ColumnName="RUTA_CAMARA" />
+          <ScalarProperty Name="TIENE_ESTADOS_FINANCIEROS" ColumnName="TIENE_ESTADOS_FINANCIEROS" />
+          <ScalarProperty Name="TIENE_EXPERIENCIAS" ColumnName="TIENE_EXPERIENCIAS" />
+          <ScalarProperty Name="FECHA_RUT" ColumnName="FECHA_RUT" />
+          <ScalarProperty Name="RUTA_RUT" ColumnName="RUTA_RUT" />
+          <ScalarProperty Name="FECHA_ULTIMO_REGISTRO" ColumnName="FECHA_ULTIMO_REGISTRO" />
+          <ScalarProperty Name="FECHA_CONSTITUCION" ColumnName="FECHA_CONSTITUCION" />
+          <ScalarProperty Name="EMAIL_REPRESENTANTE" ColumnName="EMAIL_REPRESENTANTE" />
+          <ScalarProperty Name="TELEFONO_REPRESENTANTE" ColumnName="TELEFONO_REPRESENTANTE" />
+          <ScalarProperty Name="REPRESENTANTE_LEGAL" ColumnName="REPRESENTANTE_LEGAL" />
+          <ScalarProperty Name="DIRECCION" ColumnName="DIRECCION" />
+          <ScalarProperty Name="COD_USUARIO_CONTRATISTA" ColumnName="COD_USUARIO_CONTRATISTA" />
+          <ScalarProperty Name="COD_USUARIO_PAYC_REVISION" ColumnName="COD_USUARIO_PAYC_REVISION" />
+          <ScalarProperty Name="FECHA_ULTIMA_ACTUALIZACION" ColumnName="FECHA_ULTIMA_ACTUALIZACION" />
+          <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA_CREACION" />
+          <ScalarProperty Name="COD_CONTRATISTA" ColumnName="COD_CONTRATISTA" />
+          <ScalarProperty Name="COD_ESTADO" ColumnName="COD_ESTADO" />
+          <ScalarProperty Name="COD_REGISTRO_CONTRATISTA" ColumnName="COD_REGISTRO_CONTRATISTA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REGISTROS_CALIFICACIONES">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.REGISTROS_CALIFICACIONES">
+        <MappingFragment StoreEntitySet="REGISTROS_CALIFICACIONES">
+          <ScalarProperty Name="PERIODO_CALIFICADO" ColumnName="PERIODO_CALIFICADO" />
+          <ScalarProperty Name="COD_CIUDAD" ColumnName="COD_CIUDAD" />
+          <ScalarProperty Name="COD_ESTADO" ColumnName="COD_ESTADO" />
+          <ScalarProperty Name="FECHA_ULTIMA_MODIFICACION" ColumnName="FECHA_ULTIMA_MODIFICACION" />
+          <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA_CREACION" />
+          <ScalarProperty Name="COD_USUARIO_ULTIMA_MODIFICACION" ColumnName="COD_USUARIO_ULTIMA_MODIFICACION" />
+          <ScalarProperty Name="COD_USUARIO_CREACION" ColumnName="COD_USUARIO_CREACION" />
+          <ScalarProperty Name="DESCRIPCION_PROCESO" ColumnName="DESCRIPCION_PROCESO" />
+          <ScalarProperty Name="COD_PROCESO" ColumnName="COD_PROCESO" />
+          <ScalarProperty Name="COD_SUBCAPITULO" ColumnName="COD_SUBCAPITULO" />
+          <ScalarProperty Name="COD_CAPITULO" ColumnName="COD_CAPITULO" />
+          <ScalarProperty Name="COD_ACTIVIDAD" ColumnName="COD_ACTIVIDAD" />
+          <ScalarProperty Name="COD_CONTRATISTA" ColumnName="COD_CONTRATISTA" />
+          <ScalarProperty Name="COD_PROYECTO" ColumnName="COD_PROYECTO" />
+          <ScalarProperty Name="COD_REGISTRO_CALIFICACION" ColumnName="COD_REGISTRO_CALIFICACION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RESPUESTAS">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.RESPUESTAS">
+        <MappingFragment StoreEntitySet="RESPUESTAS">
+          <ScalarProperty Name="VALOR_COD_POSIBLE_RESPUESTA" ColumnName="VALOR_COD_POSIBLE_RESPUESTA" />
+          <ScalarProperty Name="DESCRIPCION_RESPUESTA" ColumnName="DESCRIPCION_RESPUESTA" />
+          <ScalarProperty Name="VALOR_RESPUESTA_SELECCIONADA" ColumnName="VALOR_RESPUESTA_SELECCIONADA" />
+          <ScalarProperty Name="ESTADO_RESPUESTA" ColumnName="ESTADO_RESPUESTA" />
+          <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA_CREACION" />
+          <ScalarProperty Name="COD_USUARIO_CREACION" ColumnName="COD_USUARIO_CREACION" />
+          <ScalarProperty Name="COD_CALIFICACION" ColumnName="COD_CALIFICACION" />
+          <ScalarProperty Name="RESPUESTA_INGRESADA" ColumnName="RESPUESTA_INGRESADA" />
+          <ScalarProperty Name="COD_PREGUNTA" ColumnName="COD_PREGUNTA" />
+          <ScalarProperty Name="COD_RESPUESTA" ColumnName="COD_RESPUESTA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ROLES">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.ROLES">
+        <MappingFragment StoreEntitySet="ROLES">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SUBCAPITULOS">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.SUBCAPITULOS">
+        <MappingFragment StoreEntitySet="SUBCAPITULOS">
+          <ScalarProperty Name="COD_CAPITULO" ColumnName="COD_CAPITULO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_SUBCAPITULO" ColumnName="COD_SUBCAPITULO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SUBCAPITULOS_EXPERIENCIA">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.SUBCAPITULOS_EXPERIENCIA">
+        <MappingFragment StoreEntitySet="SUBCAPITULOS_EXPERIENCIA">
+          <ScalarProperty Name="COD_SUBCAPITULO" ColumnName="COD_SUBCAPITULO" />
+          <ScalarProperty Name="COD_EXPERIENCIA" ColumnName="COD_EXPERIENCIA" />
+          <ScalarProperty Name="COD_EXPERIENCIA_SUBCAPITULO" ColumnName="COD_EXPERIENCIA_SUBCAPITULO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USUARIOS">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.USUARIOS">
+        <MappingFragment StoreEntitySet="USUARIOS">
+          <ScalarProperty Name="COD_ROL" ColumnName="COD_ROL" />
+          <ScalarProperty Name="ESTADO_USUARIO" ColumnName="ESTADO_USUARIO" />
+          <ScalarProperty Name="FECHA_ULTIMA_MODIFICACION" ColumnName="FECHA_ULTIMA_MODIFICACION" />
+          <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA_CREACION" />
+          <ScalarProperty Name="COD_USUARIO_ULTIMA_MODIFICACION" ColumnName="COD_USUARIO_ULTIMA_MODIFICACION" />
+          <ScalarProperty Name="COD_USUARIO_CREACION" ColumnName="COD_USUARIO_CREACION" />
+          <ScalarProperty Name="CARGO" ColumnName="CARGO" />
+          <ScalarProperty Name="APELLIDO" ColumnName="APELLIDO" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_USUARIO" ColumnName="COD_USUARIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONTRATISTAS_EXPERIENCIAS">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.CONTRATISTAS_EXPERIENCIAS">
+        <MappingFragment StoreEntitySet="CONTRATISTAS_EXPERIENCIAS">
+          <ScalarProperty Name="EXPERIENCIA_PAYC" ColumnName="EXPERIENCIA_PAYC" />
+          <ScalarProperty Name="COD_CONTRATISTA" ColumnName="COD_CONTRATISTA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_ACCIONISTAS">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.VISTA_ACCIONISTAS">
+        <MappingFragment StoreEntitySet="VISTA_ACCIONISTAS">
+          <ScalarProperty Name="COD_CONTRATISTA_ACCIONISTA" ColumnName="COD_CONTRATISTA_ACCIONISTA" />
+          <ScalarProperty Name="PARTICIPACION" ColumnName="PARTICIPACION" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_CONTRATISTA" ColumnName="COD_CONTRATISTA" />
+          <ScalarProperty Name="NIT_CEDULA" ColumnName="NIT_CEDULA" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="COD_ACCIONISTA" ColumnName="COD_ACCIONISTA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_CONTRATISTAS_EXPERIENCIAS">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.VISTA_CONTRATISTAS_EXPERIENCIAS">
+        <MappingFragment StoreEntitySet="VISTA_CONTRATISTAS_EXPERIENCIAS">
+          <ScalarProperty Name="OBJETO_CONTRACTUAL" ColumnName="OBJETO_CONTRACTUAL" />
+          <ScalarProperty Name="RUTA_CERTIFICACION" ColumnName="RUTA_CERTIFICACION" />
+          <ScalarProperty Name="OBSERVACION_REVISION" ColumnName="OBSERVACION_REVISION" />
+          <ScalarProperty Name="EXPERIENCIA_PAYC" ColumnName="EXPERIENCIA_PAYC" />
+          <ScalarProperty Name="COD_ESTADO" ColumnName="COD_ESTADO" />
+          <ScalarProperty Name="OBSERVACIONES" ColumnName="OBSERVACIONES" />
+          <ScalarProperty Name="UNIDAD_MEDIDA_TRABAJO" ColumnName="UNIDAD_MEDIDA_TRABAJO" />
+          <ScalarProperty Name="MEDIDA_TRABAJO" ColumnName="MEDIDA_TRABAJO" />
+          <ScalarProperty Name="FECHA_FIN" ColumnName="FECHA_FIN" />
+          <ScalarProperty Name="FECHA_INICIO" ColumnName="FECHA_INICIO" />
+          <ScalarProperty Name="CONTRATANTE" ColumnName="CONTRATANTE" />
+          <ScalarProperty Name="COD_CIUDAD" ColumnName="COD_CIUDAD" />
+          <ScalarProperty Name="PROYECTO" ColumnName="PROYECTO" />
+          <ScalarProperty Name="MONEDA" ColumnName="MONEDA" />
+          <ScalarProperty Name="VALOR" ColumnName="VALOR" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_REGISTRO_CONTRATISTA" ColumnName="COD_REGISTRO_CONTRATISTA" />
+          <ScalarProperty Name="COD_EXPERIENCIA" ColumnName="COD_EXPERIENCIA" />
+          <ScalarProperty Name="COD_CONTRATISTA" ColumnName="COD_CONTRATISTA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_DETALLES_ASPECTOS">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.VISTA_DETALLES_ASPECTOS">
+        <MappingFragment StoreEntitySet="VISTA_DETALLES_ASPECTOS">
+          <ScalarProperty Name="EDITADO_POR" ColumnName="EDITADO POR" />
+          <ScalarProperty Name="FECHA_MODIFICACION" ColumnName="FECHA MODIFICACION" />
+          <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA CREACION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="C__de_Atributos" ColumnName="# de Atributos" />
+          <ScalarProperty Name="ASPECTO" ColumnName="ASPECTO" />
+          <ScalarProperty Name="COD_ASPECTO" ColumnName="COD_ASPECTO" />
+          <ScalarProperty Name="COD_VISTA_DETALLES_ASPECTOS" ColumnName="COD_VISTA_DETALLES_ASPECTOS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_DETALLES_CRITERIOS">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.VISTA_DETALLES_CRITERIOS">
+        <MappingFragment StoreEntitySet="VISTA_DETALLES_CRITERIOS">
+          <ScalarProperty Name="COD_USUARIO_ULTIMA_MODIFICACION" ColumnName="COD_USUARIO_ULTIMA_MODIFICACION" />
+          <ScalarProperty Name="FECHA_EDICION" ColumnName="FECHA EDICION" />
+          <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA CREACION" />
+          <ScalarProperty Name="C__de_preguntas" ColumnName="# de preguntas" />
+          <ScalarProperty Name="PONDERACION" ColumnName="PONDERACION" />
+          <ScalarProperty Name="ATRIBUTO" ColumnName="ATRIBUTO" />
+          <ScalarProperty Name="COD_ATRIBUTO" ColumnName="COD_ATRIBUTO" />
+          <ScalarProperty Name="ASPECTO" ColumnName="ASPECTO" />
+          <ScalarProperty Name="COD_ASPECTO" ColumnName="COD_ASPECTO" />
+          <ScalarProperty Name="COD_VISTA_DETALLES_CRITERIOS" ColumnName="COD_VISTA_DETALLES_CRITERIOS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_DETALLES_PREGUNTAS">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.VISTA_DETALLES_PREGUNTAS">
+        <MappingFragment StoreEntitySet="VISTA_DETALLES_PREGUNTAS">
+          <ScalarProperty Name="COD_USUARIO_ULTIMA_MODIFICACION" ColumnName="COD_USUARIO_ULTIMA_MODIFICACION" />
+          <ScalarProperty Name="FECHA_ULTIMA_MODIFICACION" ColumnName="FECHA_ULTIMA_MODIFICACION" />
+          <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA_CREACION" />
+          <ScalarProperty Name="ASPECTO" ColumnName="ASPECTO" />
+          <ScalarProperty Name="ATRIBUTO" ColumnName="ATRIBUTO" />
+          <ScalarProperty Name="C__de_Respuestas" ColumnName="# de Respuestas" />
+          <ScalarProperty Name="PREGUNTA" ColumnName="PREGUNTA" />
+          <ScalarProperty Name="COD_ASPECTO" ColumnName="COD_ASPECTO" />
+          <ScalarProperty Name="COD_ATRIBUTO" ColumnName="COD_ATRIBUTO" />
+          <ScalarProperty Name="COD_PREGUNTA" ColumnName="COD_PREGUNTA" />
+          <ScalarProperty Name="COD_VISTA_DETALLES_PREGUNTAS" ColumnName="COD_VISTA_DETALLES_PREGUNTAS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_DETALLES_REGISTROS_CALIFICACIONES">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.VISTA_DETALLES_REGISTROS_CALIFICACIONES">
+        <MappingFragment StoreEntitySet="VISTA_DETALLES_REGISTROS_CALIFICACIONES">
+          <ScalarProperty Name="COD_CONTRATISTA" ColumnName="COD_CONTRATISTA" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="FECHA_CREACION_REGISTRO_CALIFICACION" ColumnName="FECHA_CREACION_REGISTRO_CALIFICACION" />
+          <ScalarProperty Name="COD_REGISTRO_CALIFICACION" ColumnName="COD_REGISTRO_CALIFICACION" />
+          <ScalarProperty Name="ULTIMA_CALIFICACION" ColumnName="ULTIMA_CALIFICACION" />
+          <ScalarProperty Name="FECHA_FIN" ColumnName="FECHA_FIN" />
+          <ScalarProperty Name="FECHA_INICIO" ColumnName="FECHA_INICIO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="COD_PROYECTO" ColumnName="COD_PROYECTO" />
+          <ScalarProperty Name="COD_VISTA_DETALLES_REGISTROS_CALIFICACIONES" ColumnName="COD_VISTA_DETALLES_REGISTROS_CALIFICACIONES" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD">
+        <MappingFragment StoreEntitySet="VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD">
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="COD_ESTADO" ColumnName="COD_ESTADO" />
+          <ScalarProperty Name="PROCESO" ColumnName="PROCESO" />
+          <ScalarProperty Name="COD_PROCESO" ColumnName="COD_PROCESO" />
+          <ScalarProperty Name="ACTIVIDAD" ColumnName="ACTIVIDAD" />
+          <ScalarProperty Name="COD_ACTIVIDAD" ColumnName="COD_ACTIVIDAD" />
+          <ScalarProperty Name="FECHA_ULTIMA_MODIFICACION" ColumnName="FECHA_ULTIMA_MODIFICACION" />
+          <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA_CREACION" />
+          <ScalarProperty Name="CONTRATISTA" ColumnName="CONTRATISTA" />
+          <ScalarProperty Name="COD_CONTRATISTA" ColumnName="COD_CONTRATISTA" />
+          <ScalarProperty Name="EDITADO_POR" ColumnName="EDITADO_POR" />
+          <ScalarProperty Name="CREADO_POR" ColumnName="CREADO_POR" />
+          <ScalarProperty Name="COD_USUARIO_ULTIMA_MODIFICACION" ColumnName="COD_USUARIO_ULTIMA_MODIFICACION" />
+          <ScalarProperty Name="COD_USUARIO_CREACION" ColumnName="COD_USUARIO_CREACION" />
+          <ScalarProperty Name="COD_PROYECTO" ColumnName="COD_PROYECTO" />
+          <ScalarProperty Name="COD_REGISTRO_CALIFICACION" ColumnName="COD_REGISTRO_CALIFICACION" />
+          <ScalarProperty Name="COD_CALIFICACION" ColumnName="COD_CALIFICACION" />
+          <ScalarProperty Name="COD_VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD" ColumnName="COD_VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_INFORMACION_FINANCIERA">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.VISTA_INFORMACION_FINANCIERA">
+        <MappingFragment StoreEntitySet="VISTA_INFORMACION_FINANCIERA">
+          <ScalarProperty Name="COD_CONTRATISTA" ColumnName="COD_CONTRATISTA" />
+          <ScalarProperty Name="RUTA_ESTADOS_FINANCIEROS" ColumnName="RUTA_ESTADOS_FINANCIEROS" />
+          <ScalarProperty Name="OBSERVACION_REVISION" ColumnName="OBSERVACION_REVISION" />
+          <ScalarProperty Name="PATRIMONIO" ColumnName="PATRIMONIO" />
+          <ScalarProperty Name="PASIVO_TOTAL" ColumnName="PASIVO_TOTAL" />
+          <ScalarProperty Name="PASIVO_CORRIENTE" ColumnName="PASIVO_CORRIENTE" />
+          <ScalarProperty Name="ACTIVO_TOTAL" ColumnName="ACTIVO_TOTAL" />
+          <ScalarProperty Name="ACTIVO_CORRIENTE" ColumnName="ACTIVO_CORRIENTE" />
+          <ScalarProperty Name="FECHA_CORTE" ColumnName="FECHA_CORTE" />
+          <ScalarProperty Name="COD_REGISTRO_CONTRATISTA" ColumnName="COD_REGISTRO_CONTRATISTA" />
+          <ScalarProperty Name="COD_INFORMACION_FINANCIERA" ColumnName="COD_INFORMACION_FINANCIERA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_REPORTE_CONTRATISTAS1">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.VISTA_REPORTE_CONTRATISTAS1">
+        <MappingFragment StoreEntitySet="VISTA_REPORTE_CONTRATISTAS1">
+          <ScalarProperty Name="CIUDAD" ColumnName="CIUDAD" />
+          <ScalarProperty Name="FECHA_ESTADO_FINANCIERO" ColumnName="FECHA_ESTADO_FINANCIERO" />
+          <ScalarProperty Name="PATRIMONIO" ColumnName="PATRIMONIO" />
+          <ScalarProperty Name="PASIVO_TOTAL" ColumnName="PASIVO_TOTAL" />
+          <ScalarProperty Name="PASIVO_CORRIENTE" ColumnName="PASIVO_CORRIENTE" />
+          <ScalarProperty Name="ACTIVO_TOTAL" ColumnName="ACTIVO_TOTAL" />
+          <ScalarProperty Name="ACTIVO_CORRIENTE" ColumnName="ACTIVO_CORRIENTE" />
+          <ScalarProperty Name="EXPERIENCIA_PAYC" ColumnName="EXPERIENCIA_PAYC" />
+          <ScalarProperty Name="COD_REGISTRO_CONTRATISTA" ColumnName="COD_REGISTRO_CONTRATISTA" />
+          <ScalarProperty Name="COD_ACTIVIDAD" ColumnName="COD_ACTIVIDAD" />
+          <ScalarProperty Name="COD_PROYECTO" ColumnName="COD_PROYECTO" />
+          <ScalarProperty Name="COD_PROCESO" ColumnName="COD_PROCESO" />
+          <ScalarProperty Name="COD_SUBCAPITULO" ColumnName="COD_SUBCAPITULO" />
+          <ScalarProperty Name="COD_CAPITULO" ColumnName="COD_CAPITULO" />
+          <ScalarProperty Name="COD_REGISTRO_CALIFICACION" ColumnName="COD_REGISTRO_CALIFICACION" />
+          <ScalarProperty Name="PROCESOS_DETALLE" ColumnName="PROCESOS_DETALLE" />
+          <ScalarProperty Name="CONTRATISTA" ColumnName="CONTRATISTA" />
+          <ScalarProperty Name="NIT" ColumnName="NIT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTA_REPORTEADOR1">
+      <EntityTypeMapping TypeName="CONTRATISTAS_testModel.VISTA_REPORTEADOR1">
+        <MappingFragment StoreEntitySet="VISTA_REPORTEADOR1">
+          <ScalarProperty Name="COD_ESTADO" ColumnName="COD_ESTADO" />
+          <ScalarProperty Name="FECHA_ULTIMA_MODIFICACION" ColumnName="FECHA_ULTIMA_MODIFICACION" />
+          <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA_CREACION" />
+          <ScalarProperty Name="COD_USUARIO_ULTIMA_MODIFICACION" ColumnName="COD_USUARIO_ULTIMA_MODIFICACION" />
+          <ScalarProperty Name="COD_USUARIO_CREACION" ColumnName="COD_USUARIO_CREACION" />
+          <ScalarProperty Name="DESCRIPCION_PROCESO" ColumnName="DESCRIPCION_PROCESO" />
+          <ScalarProperty Name="COD_PROCESO" ColumnName="COD_PROCESO" />
+          <ScalarProperty Name="COD_ACTIVIDAD" ColumnName="COD_ACTIVIDAD" />
+          <ScalarProperty Name="COD_CONTRATISTA" ColumnName="COD_CONTRATISTA" />
+          <ScalarProperty Name="COD_PROYECTO" ColumnName="COD_PROYECTO" />
+          <ScalarProperty Name="COD_REGISTRO_CALIFICACION" ColumnName="COD_REGISTRO_CALIFICACION" />
+          <ScalarProperty Name="CIUDAD_CALIFICACION" ColumnName="CIUDAD_CALIFICACION" />
+          <ScalarProperty Name="PROCESO" ColumnName="PROCESO" />
+          <ScalarProperty Name="SUBCAPITULO" ColumnName="SUBCAPITULO" />
+          <ScalarProperty Name="CAPITULO" ColumnName="CAPITULO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AspNetUserRoles" TypeName="CONTRATISTAS_testModel.AspNetUserRoles" StoreEntitySet="AspNetUserRoles">
+      <EndProperty Name="AspNetUsers">
+        <ScalarProperty Name="Id" ColumnName="UserId" />
+      </EndProperty>
+      <EndProperty Name="AspNetRoles">
+        <ScalarProperty Name="Id" ColumnName="RoleId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

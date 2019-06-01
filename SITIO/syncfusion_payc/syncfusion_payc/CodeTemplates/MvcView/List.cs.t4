@@ -1,0 +1,160 @@
+﻿<#@ template language="C#" HostSpecific="True" #>
+<#@ output extension=".cshtml" #>
+<#@ include file="Imports.include.t4" #>
+@model IEnumerable<#= "<object>" #>
+@{
+    ViewBag.Title = "";    
+	}
+<h2></h2>
+<div class="control-section">
+<#
+string tabla_ori = ModelMetadata.EntitySetName;
+IEnumerable<PropertyMetadata> properties = ModelMetadata.Properties;
+var relatedProperties = ModelMetadata.RelatedEntities.ToDictionary(item => item.AssociationPropertyName);#>
+					@(Html.EJ().Grid<object>("Grid")
+					.Datasource(ds => ds.URL("GetOrderData").InsertURL("PerformInsert").UpdateURL("PerformUpdate").RemoveURL("PerformDelete").Adaptor(AdaptorType.UrlAdaptor))
+					.AllowPaging()
+                    .AllowFiltering()
+					.Locale("es-CO")
+					.AllowResizeToFit(true)
+					.AllowMultiSorting()
+					.AllowSorting()
+					.FilterSettings(filter => { filter.FilterType(FilterType.Excel); })
+                    .EditSettings(edit => { edit.AllowAdding().AllowDeleting().AllowEditing().EditMode(EditMode.Dialog); })
+					.ClientSideEvents(e => e.ActionBegin("inicio_grid"))
+                    .ToolbarSettings(toolbar =>
+                    {
+                        toolbar.ShowToolbar().ToolbarItems(items =>
+                        {
+                            items.AddTool(ToolBarItems.Add);
+                            items.AddTool(ToolBarItems.Edit);
+                            items.AddTool(ToolBarItems.Delete);
+                            items.AddTool(ToolBarItems.Update);
+                            items.AddTool(ToolBarItems.Cancel);
+                        });
+
+                    }).Columns(col =>
+            {
+<#
+foreach (var property in relatedProperties.Values) {
+#>
+				col.Field("<#= property.PrimaryKeyNames[0] #>").ForeignKeyField("<#= property.PrimaryKeyNames[0] #>").Type("string").ForeignKeyValue("DESCRIPCION").DataSource((IEnumerable<object>)new syncfusion_payc.Models.CONTRATISTAS_testEntities().<#= property.EntitySetName #>.ToList()).HeaderText("<#= property.PrimaryKeyNames[0] #>").EditType(EditingType.DropdownEdit).Add();	
+			<# } 
+foreach (PropertyMetadata property in properties) {
+var tipo=property.TypeName.ToString();
+string format="";
+string tipo_edicion="";
+if(tipo.Contains("Date")){
+	format=".Format(\"{0:dd/MM/yyyy}\")";
+	tipo_edicion=".EditType(EditingType.DateTimePicker)";
+}
+if(tipo.Contains("Int")){
+	format=".Format(\"{0:n0}\")";
+	tipo_edicion=".EditType(EditingType.NumericEdit).ValidationRules(v => v.AddRule(\"number\", true))";
+
+}
+if(tipo.Contains("Single")){
+	format=".Format(\"{0:n2}\")";
+	tipo_edicion=".EditType(EditingType.NumericEdit).ValidationRules(v => v.AddRule(\"number\", true))";
+
+}
+    if (property.Scaffold && !property.IsForeignKey && !property.IsAssociation) {
+#>
+<#
+        // We do not want to show any association properties for which there is
+        // no associated foreign key.
+        if (property.IsAssociation && GetRelatedModelMetadata(property) == null) {
+            continue;
+        }
+#>col.Field("<#= GetValueExpression(property) #>").HeaderText("<#= GetValueExpression(property) #>")<#if(property.IsPrimaryKey){#>.IsPrimaryKey(true).Visible(false) <#}#><#= format #><#= tipo_edicion#>.Add();    
+<#
+    }
+}
+#> 
+}))
+</div>
+<script>  
+    $(document).ready(function () {
+        ej.Grid.Locale["es-CO"] = {
+            EmptyRecord: "No hay registros que mostrar",
+            GroupDropArea: "Arrastre un encabezado de columna aquí para agrupar su columna",
+            DeleteOperationAlert: "No hay registros seleccionados para la operación de eliminación",
+            EditOperationAlert: "No hay registros seleccionados para la operación de edición",
+            SaveButton: "Guardar",
+            OKButton: "DE ACUERDO",
+            CancelButton: "Cancelar",
+            EditFormTitle: "Detalles de ",
+            AddFormTitle: "Añadir nuevo registro",
+            GroupCaptionFormat: "{{:headerText}}: {{:key}} - {{:count}} {{if count == 1 }} ítem {{else}} artículos {{/if}} ",
+        };
+        ej.Pager.Locale["es-CO"] = {
+            pagerInfo: "{0} de {1} páginas ({2} artículos)",
+            firstPageTooltip: "Ir a la primera página",
+            lastPageTooltip: "Ir a la última página",
+            nextPageTooltip: "Ir a la página siguiente",
+            previousPageTooltip: "Ir a la página anterior",
+            nextPagerTooltip: "Ir al siguiente Pager",
+            previousPagerTooltip: "Ir a Pager anterior"
+        };
+
+        ej.ExcelFilter.Locale["es-CO"] = {
+            SortNoSmaller: "Ordenar de menor a mayor",
+            SortNoLarger: "Ordenar de mayor a menor",
+            SortTextAscending: "Ordenar de A a Z",
+            SortTextDescending: "Ordenar de Z a A",
+            SortDateOldest: "Ordenar por Más antiguos",
+            SortDateNewest: "Ordenar por Más reciente",
+            SortByColor: "Ordenar por color",
+            SortByCellColor: "Ordenar por color de la célula",
+            SortByFontColor: "Ordenar por Color de fuente",
+            FilterByColor: "Filtrar por color",
+            CustomSort: "Orden personalizado",
+            FilterByCellColor: "Filtrar por color de la célula",
+            FilterByFontColor: "Filtrar por color de fuente",
+            ClearFilter: "Borrar filtro",
+            NumberFilter: "Número Filtros",
+            GuidFilter: "Gud Filtros",
+            TextFilter: "Filtros de texto",
+            DateFilter: "Filtros de fecha",
+            DateTimeFilter: "Fecha filtros de tiempo",
+            SelectAll: "Seleccionar todo",
+            Blanks: "Los espacios en blanco",
+            Search: "Buscar",
+            Showrowswhere: "Mostrar filas",
+            NumericTextboxWaterMark: "introducir el valor",
+            StringMenuOptions: [{ text: "Igual", value: "equal" }, { text: "No es equal", value: "notequal" }, { text: "Comienza con", value: "startswith" }, { text: "Termina con", value: "endswith" }, { text: "contiene", value: "contains" }, { text: "Filtro personalizado", value: "customfilter" },],
+            NumberMenuOptions: [{ text: "Igual", value: "equal" }, { text: "No es equal", value: "notequal" }, { text: "Menos que", value: "lessthan" }, { text: "Menor o equal", value: "lessthanorequal" }, { text: "Mas grande que", value: "greaterthan" }, { text: "Mayor que o equal", value: "greaterthanorequal" }, { text: "Entre", value: "between" }, { text: "Filtro personalizado", value: "customfilter" },],
+            GuidMenuOptions: [{ text: "Igual", value: "equal" }, { text: "No es equal", value: "notequal" }, { text: "Filtro personalizado", value: "customfilter" },],
+            DateMenuOptions: [{ text: "Igual", value: "equal" }, { text: "No es equal", value: "notequal" }, { text: "Menos que", value: "lessthan" }, { text: "Menor o equal", value: "lessthanorequal" }, { text: "Mas grande que", value: "greaterthan" }, { text: "Mayor que o equal", value: "greaterthanorequal" }, { text: "Entre", value: "between" }, { text: "Filtro personalizado", value: "customfilter" },],
+            DatetimeMenuOptions: [{ text: "Igual", value: "equal" }, { text: "No es equal", value: "notequal" }, { text: "Menos que", value: "lessthan" }, { text: "Menor o equal", value: "lessthanorequal" }, { text: "Mas grande que", value: "greaterthan" }, { text: "Mayor que o equal", value: "greaterthanorequal" }, { text: "Entre", value: "between" }, { text: "Filtro personalizado", value: "customfilter" },],
+            Top10MenuOptions: [{ text: "Parte superior", value: "top" }, { text: "Fondo", value: "bottom" },],
+            title: "Filtro personalizado",
+            PredicateAnd: "Y",
+            PredicateOr: "O",
+            Ok: "Aceptar",
+            MatchCase: "Coincidencia",
+            Cancel: "Cancelar",
+            NoResult: "No se encontraron coincidencias",
+            CheckBoxStatusMsg: "No todos los elementos que muestran",
+            DatePickerWaterMark: "Seleccione fecha",
+            DateTimePickerWaterMark: "Seleccionar fecha y hora",
+            True: "cierto",
+            False: "falso"
+        };
+    });
+	//Funcion para añadir buscador a los dropdown
+	function inicio_grid(args) {
+        if (args.requestType == "beginedit" || args.requestType == "add") {
+            if (args.model.dataSource.dataSource.url == "GetOrderData") {
+                setTimeout(function () {
+                   <#
+					foreach (var property in relatedProperties.Values) { #>
+					var drop = $("#GRID<#= property.PrimaryKeyNames[0] #>").ejDropDownList('instance');
+                    drop.option("enableFilterSearch", true);              
+					}, 50); 
+				}<# } #>    
+			}
+		}
+	}
+</script>
+<#@ include file="ModelMetadataFunctions.cs.include.t4" #>

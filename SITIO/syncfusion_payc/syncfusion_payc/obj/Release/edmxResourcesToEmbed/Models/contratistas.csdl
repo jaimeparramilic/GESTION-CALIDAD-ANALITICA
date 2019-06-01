@@ -1,0 +1,1505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CONTRATISTAS_testModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="CONTRATISTAS_testEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="C__MigrationHistory" EntityType="CONTRATISTAS_testModel.C__MigrationHistory" />
+    <EntitySet Name="ACCIONISTAS" EntityType="CONTRATISTAS_testModel.ACCIONISTAS" />
+    <EntitySet Name="ACTIVIDADES" EntityType="CONTRATISTAS_testModel.ACTIVIDADES" />
+    <EntitySet Name="ASPECTOS" EntityType="CONTRATISTAS_testModel.ASPECTOS" />
+    <EntitySet Name="AspNetRoles" EntityType="CONTRATISTAS_testModel.AspNetRoles" />
+    <EntitySet Name="AspNetUserClaims" EntityType="CONTRATISTAS_testModel.AspNetUserClaims" />
+    <EntitySet Name="AspNetUserLogins" EntityType="CONTRATISTAS_testModel.AspNetUserLogins" />
+    <EntitySet Name="AspNetUsers" EntityType="CONTRATISTAS_testModel.AspNetUsers" />
+    <EntitySet Name="ATRIBUTOS" EntityType="CONTRATISTAS_testModel.ATRIBUTOS" />
+    <EntitySet Name="CALIFICACIONES" EntityType="CONTRATISTAS_testModel.CALIFICACIONES" />
+    <EntitySet Name="CAPITULOS" EntityType="CONTRATISTAS_testModel.CAPITULOS" />
+    <EntitySet Name="CAPITULOS_EXPERIENCIA" EntityType="CONTRATISTAS_testModel.CAPITULOS_EXPERIENCIA" />
+    <EntitySet Name="CIUDADES" EntityType="CONTRATISTAS_testModel.CIUDADES" />
+    <EntitySet Name="CIUDADES_TRABAJO" EntityType="CONTRATISTAS_testModel.CIUDADES_TRABAJO" />
+    <EntitySet Name="CONTACTOS" EntityType="CONTRATISTAS_testModel.CONTACTOS" />
+    <EntitySet Name="CONTRATISTAS" EntityType="CONTRATISTAS_testModel.CONTRATISTAS" />
+    <EntitySet Name="CONTRATISTAS_ACCIONISTAS" EntityType="CONTRATISTAS_testModel.CONTRATISTAS_ACCIONISTAS" />
+    <EntitySet Name="ESTADOS" EntityType="CONTRATISTAS_testModel.ESTADOS" />
+    <EntitySet Name="EXPERIENCIAS" EntityType="CONTRATISTAS_testModel.EXPERIENCIAS" />
+    <EntitySet Name="INFORMACIONES_FINANCIERAS" EntityType="CONTRATISTAS_testModel.INFORMACIONES_FINANCIERAS" />
+    <EntitySet Name="PASSWORD" EntityType="CONTRATISTAS_testModel.PASSWORD" />
+    <EntitySet Name="POSIBLES_RESPUESTAS" EntityType="CONTRATISTAS_testModel.POSIBLES_RESPUESTAS" />
+    <EntitySet Name="PREGUNTAS" EntityType="CONTRATISTAS_testModel.PREGUNTAS" />
+    <EntitySet Name="PROCESOS" EntityType="CONTRATISTAS_testModel.PROCESOS" />
+    <EntitySet Name="PROYECTOS" EntityType="CONTRATISTAS_testModel.PROYECTOS" />
+    <EntitySet Name="REGISTRO_CONTRATISTAS" EntityType="CONTRATISTAS_testModel.REGISTRO_CONTRATISTAS" />
+    <EntitySet Name="REGISTROS_CALIFICACIONES" EntityType="CONTRATISTAS_testModel.REGISTROS_CALIFICACIONES" />
+    <EntitySet Name="RESPUESTAS" EntityType="CONTRATISTAS_testModel.RESPUESTAS" />
+    <EntitySet Name="ROLES" EntityType="CONTRATISTAS_testModel.ROLES" />
+    <EntitySet Name="SUBCAPITULOS" EntityType="CONTRATISTAS_testModel.SUBCAPITULOS" />
+    <EntitySet Name="SUBCAPITULOS_EXPERIENCIA" EntityType="CONTRATISTAS_testModel.SUBCAPITULOS_EXPERIENCIA" />
+    <EntitySet Name="sysdiagrams" EntityType="CONTRATISTAS_testModel.sysdiagrams" />
+    <EntitySet Name="USUARIOS" EntityType="CONTRATISTAS_testModel.USUARIOS" />
+    <EntitySet Name="CONTRATISTAS_EXPERIENCIAS" EntityType="CONTRATISTAS_testModel.CONTRATISTAS_EXPERIENCIAS" />
+    <EntitySet Name="VISTA_ACCIONISTAS" EntityType="CONTRATISTAS_testModel.VISTA_ACCIONISTAS" />
+    <EntitySet Name="VISTA_CONTRATISTAS_EXPERIENCIAS" EntityType="CONTRATISTAS_testModel.VISTA_CONTRATISTAS_EXPERIENCIAS" />
+    <EntitySet Name="VISTA_DETALLES_ASPECTOS" EntityType="CONTRATISTAS_testModel.VISTA_DETALLES_ASPECTOS" />
+    <EntitySet Name="VISTA_DETALLES_CRITERIOS" EntityType="CONTRATISTAS_testModel.VISTA_DETALLES_CRITERIOS" />
+    <EntitySet Name="VISTA_DETALLES_PREGUNTAS" EntityType="CONTRATISTAS_testModel.VISTA_DETALLES_PREGUNTAS" />
+    <EntitySet Name="VISTA_DETALLES_REGISTROS_CALIFICACIONES" EntityType="CONTRATISTAS_testModel.VISTA_DETALLES_REGISTROS_CALIFICACIONES" />
+    <EntitySet Name="VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD" EntityType="CONTRATISTAS_testModel.VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD" />
+    <EntitySet Name="VISTA_INFORMACION_FINANCIERA" EntityType="CONTRATISTAS_testModel.VISTA_INFORMACION_FINANCIERA" />
+    <EntitySet Name="VISTA_REPORTE_CONTRATISTAS1" EntityType="CONTRATISTAS_testModel.VISTA_REPORTE_CONTRATISTAS1" />
+    <EntitySet Name="VISTA_REPORTEADOR1" EntityType="CONTRATISTAS_testModel.VISTA_REPORTEADOR1" />
+    <AssociationSet Name="FK_CONTRATISTAS_ACCIONISTAS_ACCIONISTAS" Association="CONTRATISTAS_testModel.FK_CONTRATISTAS_ACCIONISTAS_ACCIONISTAS">
+      <End Role="ACCIONISTAS" EntitySet="ACCIONISTAS" />
+      <End Role="CONTRATISTAS_ACCIONISTAS" EntitySet="CONTRATISTAS_ACCIONISTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGISTROS_CALIFICACIONES_ACTIVIDADES" Association="CONTRATISTAS_testModel.FK_REGISTROS_CALIFICACIONES_ACTIVIDADES">
+      <End Role="ACTIVIDADES" EntitySet="ACTIVIDADES" />
+      <End Role="REGISTROS_CALIFICACIONES" EntitySet="REGISTROS_CALIFICACIONES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ASPECTOS_USUARIOS" Association="CONTRATISTAS_testModel.FK_ASPECTOS_USUARIOS">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="ASPECTOS" EntitySet="ASPECTOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ASPECTOS_USUARIOS1" Association="CONTRATISTAS_testModel.FK_ASPECTOS_USUARIOS1">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="ASPECTOS" EntitySet="ASPECTOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ATRIBUTOS_ASPECTOS" Association="CONTRATISTAS_testModel.FK_ATRIBUTOS_ASPECTOS">
+      <End Role="ASPECTOS" EntitySet="ASPECTOS" />
+      <End Role="ATRIBUTOS" EntitySet="ATRIBUTOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="CONTRATISTAS_testModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="CONTRATISTAS_testModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ATRIBUTOS_USUARIOS" Association="CONTRATISTAS_testModel.FK_ATRIBUTOS_USUARIOS">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="ATRIBUTOS" EntitySet="ATRIBUTOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ATRIBUTOS_USUARIOS1" Association="CONTRATISTAS_testModel.FK_ATRIBUTOS_USUARIOS1">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="ATRIBUTOS" EntitySet="ATRIBUTOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PREGUNTAS_ATRIBUTOS" Association="CONTRATISTAS_testModel.FK_PREGUNTAS_ATRIBUTOS">
+      <End Role="ATRIBUTOS" EntitySet="ATRIBUTOS" />
+      <End Role="PREGUNTAS" EntitySet="PREGUNTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CALIFICACIONES_ESTADOS" Association="CONTRATISTAS_testModel.FK_CALIFICACIONES_ESTADOS">
+      <End Role="ESTADOS" EntitySet="ESTADOS" />
+      <End Role="CALIFICACIONES" EntitySet="CALIFICACIONES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CALIFICACIONES_REGISTROS_CALIFICACIONES" Association="CONTRATISTAS_testModel.FK_CALIFICACIONES_REGISTROS_CALIFICACIONES">
+      <End Role="REGISTROS_CALIFICACIONES" EntitySet="REGISTROS_CALIFICACIONES" />
+      <End Role="CALIFICACIONES" EntitySet="CALIFICACIONES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CALIFICACIONES_USUARIOS" Association="CONTRATISTAS_testModel.FK_CALIFICACIONES_USUARIOS">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="CALIFICACIONES" EntitySet="CALIFICACIONES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CALIFICACIONES_USUARIOS1" Association="CONTRATISTAS_testModel.FK_CALIFICACIONES_USUARIOS1">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="CALIFICACIONES" EntitySet="CALIFICACIONES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RESPUESTAS_CALIFICACIONES" Association="CONTRATISTAS_testModel.FK_RESPUESTAS_CALIFICACIONES">
+      <End Role="CALIFICACIONES" EntitySet="CALIFICACIONES" />
+      <End Role="RESPUESTAS" EntitySet="RESPUESTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGISTROS_CALIFICACIONES_CAPITULOS" Association="CONTRATISTAS_testModel.FK_REGISTROS_CALIFICACIONES_CAPITULOS">
+      <End Role="CAPITULOS" EntitySet="CAPITULOS" />
+      <End Role="REGISTROS_CALIFICACIONES" EntitySet="REGISTROS_CALIFICACIONES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUBCAPITULOS_CAPITULOS" Association="CONTRATISTAS_testModel.FK_SUBCAPITULOS_CAPITULOS">
+      <End Role="CAPITULOS" EntitySet="CAPITULOS" />
+      <End Role="SUBCAPITULOS" EntitySet="SUBCAPITULOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CAPITULOS_EXPERIENCIA_EXPERIENCIAS" Association="CONTRATISTAS_testModel.FK_CAPITULOS_EXPERIENCIA_EXPERIENCIAS">
+      <End Role="EXPERIENCIAS" EntitySet="EXPERIENCIAS" />
+      <End Role="CAPITULOS_EXPERIENCIA" EntitySet="CAPITULOS_EXPERIENCIA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CIUDADES_TRABAJO_CIUDADES" Association="CONTRATISTAS_testModel.FK_CIUDADES_TRABAJO_CIUDADES">
+      <End Role="CIUDADES" EntitySet="CIUDADES" />
+      <End Role="CIUDADES_TRABAJO" EntitySet="CIUDADES_TRABAJO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CONTRATISTAS_CIUDADES" Association="CONTRATISTAS_testModel.FK_CONTRATISTAS_CIUDADES">
+      <End Role="CIUDADES" EntitySet="CIUDADES" />
+      <End Role="CONTRATISTAS" EntitySet="CONTRATISTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EXPERIENCIAS_CIUDADES" Association="CONTRATISTAS_testModel.FK_EXPERIENCIAS_CIUDADES">
+      <End Role="CIUDADES" EntitySet="CIUDADES" />
+      <End Role="EXPERIENCIAS" EntitySet="EXPERIENCIAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGISTROS_CALIFICACIONES_CIUDADES" Association="CONTRATISTAS_testModel.FK_REGISTROS_CALIFICACIONES_CIUDADES">
+      <End Role="CIUDADES" EntitySet="CIUDADES" />
+      <End Role="REGISTROS_CALIFICACIONES" EntitySet="REGISTROS_CALIFICACIONES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CONTRATISTAS_ESTADOS" Association="CONTRATISTAS_testModel.FK_CONTRATISTAS_ESTADOS">
+      <End Role="ESTADOS" EntitySet="ESTADOS" />
+      <End Role="CONTRATISTAS" EntitySet="CONTRATISTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGISTRO_CONTRATISTAS_CONTRATISTAS" Association="CONTRATISTAS_testModel.FK_REGISTRO_CONTRATISTAS_CONTRATISTAS">
+      <End Role="CONTRATISTAS" EntitySet="CONTRATISTAS" />
+      <End Role="REGISTRO_CONTRATISTAS" EntitySet="REGISTRO_CONTRATISTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGISTROS_CALIFICACIONES_CONTRATISTAS" Association="CONTRATISTAS_testModel.FK_REGISTROS_CALIFICACIONES_CONTRATISTAS">
+      <End Role="CONTRATISTAS" EntitySet="CONTRATISTAS" />
+      <End Role="REGISTROS_CALIFICACIONES" EntitySet="REGISTROS_CALIFICACIONES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CONTRATISTAS_ACCIONISTAS_CONTRATISTAS_ACCIONISTAS" Association="CONTRATISTAS_testModel.FK_CONTRATISTAS_ACCIONISTAS_CONTRATISTAS_ACCIONISTAS">
+      <End Role="CONTRATISTAS_ACCIONISTAS" EntitySet="CONTRATISTAS_ACCIONISTAS" />
+      <End Role="CONTRATISTAS_ACCIONISTAS1" EntitySet="CONTRATISTAS_ACCIONISTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EXPERIENCIAS_ESTADOS" Association="CONTRATISTAS_testModel.FK_EXPERIENCIAS_ESTADOS">
+      <End Role="ESTADOS" EntitySet="ESTADOS" />
+      <End Role="EXPERIENCIAS" EntitySet="EXPERIENCIAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PROYECTOS_ESTADOS" Association="CONTRATISTAS_testModel.FK_PROYECTOS_ESTADOS">
+      <End Role="ESTADOS" EntitySet="ESTADOS" />
+      <End Role="PROYECTOS" EntitySet="PROYECTOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGISTRO_CONTRATISTAS_ESTADOS" Association="CONTRATISTAS_testModel.FK_REGISTRO_CONTRATISTAS_ESTADOS">
+      <End Role="ESTADOS" EntitySet="ESTADOS" />
+      <End Role="REGISTRO_CONTRATISTAS" EntitySet="REGISTRO_CONTRATISTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGISTROS_CALIFICACIONES_ESTADOS" Association="CONTRATISTAS_testModel.FK_REGISTROS_CALIFICACIONES_ESTADOS">
+      <End Role="ESTADOS" EntitySet="ESTADOS" />
+      <End Role="REGISTROS_CALIFICACIONES" EntitySet="REGISTROS_CALIFICACIONES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EXPERIENCIAS_REGISTRO_CONTRATISTAS" Association="CONTRATISTAS_testModel.FK_EXPERIENCIAS_REGISTRO_CONTRATISTAS">
+      <End Role="REGISTRO_CONTRATISTAS" EntitySet="REGISTRO_CONTRATISTAS" />
+      <End Role="EXPERIENCIAS" EntitySet="EXPERIENCIAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUBCAPITULOS_EXPERIENCIA_EXPERIENCIAS" Association="CONTRATISTAS_testModel.FK_SUBCAPITULOS_EXPERIENCIA_EXPERIENCIAS">
+      <End Role="EXPERIENCIAS" EntitySet="EXPERIENCIAS" />
+      <End Role="SUBCAPITULOS_EXPERIENCIA" EntitySet="SUBCAPITULOS_EXPERIENCIA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INFORMACIONES_FINANCIERAS_REGISTRO_CONTRATISTAS" Association="CONTRATISTAS_testModel.FK_INFORMACIONES_FINANCIERAS_REGISTRO_CONTRATISTAS">
+      <End Role="REGISTRO_CONTRATISTAS" EntitySet="REGISTRO_CONTRATISTAS" />
+      <End Role="INFORMACIONES_FINANCIERAS" EntitySet="INFORMACIONES_FINANCIERAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PASSWORD_USUARIOS" Association="CONTRATISTAS_testModel.FK_PASSWORD_USUARIOS">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="PASSWORD" EntitySet="PASSWORD" />
+    </AssociationSet>
+    <AssociationSet Name="FK_POSIBLES_RESPUESTAS_PREGUNTAS" Association="CONTRATISTAS_testModel.FK_POSIBLES_RESPUESTAS_PREGUNTAS">
+      <End Role="PREGUNTAS" EntitySet="PREGUNTAS" />
+      <End Role="POSIBLES_RESPUESTAS" EntitySet="POSIBLES_RESPUESTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PREGUNTAS_USUARIOS" Association="CONTRATISTAS_testModel.FK_PREGUNTAS_USUARIOS">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="PREGUNTAS" EntitySet="PREGUNTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PREGUNTAS_USUARIOS1" Association="CONTRATISTAS_testModel.FK_PREGUNTAS_USUARIOS1">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="PREGUNTAS" EntitySet="PREGUNTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RESPUESTAS_PREGUNTAS" Association="CONTRATISTAS_testModel.FK_RESPUESTAS_PREGUNTAS">
+      <End Role="PREGUNTAS" EntitySet="PREGUNTAS" />
+      <End Role="RESPUESTAS" EntitySet="RESPUESTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGISTROS_CALIFICACIONES_PROCESOS" Association="CONTRATISTAS_testModel.FK_REGISTROS_CALIFICACIONES_PROCESOS">
+      <End Role="PROCESOS" EntitySet="PROCESOS" />
+      <End Role="REGISTROS_CALIFICACIONES" EntitySet="REGISTROS_CALIFICACIONES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGISTROS_CALIFICACIONES_PROYECTOS" Association="CONTRATISTAS_testModel.FK_REGISTROS_CALIFICACIONES_PROYECTOS">
+      <End Role="PROYECTOS" EntitySet="PROYECTOS" />
+      <End Role="REGISTROS_CALIFICACIONES" EntitySet="REGISTROS_CALIFICACIONES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGISTRO_CONTRATISTAS_USUARIOS" Association="CONTRATISTAS_testModel.FK_REGISTRO_CONTRATISTAS_USUARIOS">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="REGISTRO_CONTRATISTAS" EntitySet="REGISTRO_CONTRATISTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGISTRO_CONTRATISTAS_USUARIOS1" Association="CONTRATISTAS_testModel.FK_REGISTRO_CONTRATISTAS_USUARIOS1">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="REGISTRO_CONTRATISTAS" EntitySet="REGISTRO_CONTRATISTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGISTROS_CALIFICACIONES_SUBCAPITULOS" Association="CONTRATISTAS_testModel.FK_REGISTROS_CALIFICACIONES_SUBCAPITULOS">
+      <End Role="SUBCAPITULOS" EntitySet="SUBCAPITULOS" />
+      <End Role="REGISTROS_CALIFICACIONES" EntitySet="REGISTROS_CALIFICACIONES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGISTROS_CALIFICACIONES_USUARIOS" Association="CONTRATISTAS_testModel.FK_REGISTROS_CALIFICACIONES_USUARIOS">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="REGISTROS_CALIFICACIONES" EntitySet="REGISTROS_CALIFICACIONES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGISTROS_CALIFICACIONES_USUARIOS1" Association="CONTRATISTAS_testModel.FK_REGISTROS_CALIFICACIONES_USUARIOS1">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="REGISTROS_CALIFICACIONES" EntitySet="REGISTROS_CALIFICACIONES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RESPUESTAS_USUARIOS" Association="CONTRATISTAS_testModel.FK_RESPUESTAS_USUARIOS">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="RESPUESTAS" EntitySet="RESPUESTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_USUARIOS_ROLES" Association="CONTRATISTAS_testModel.FK_USUARIOS_ROLES">
+      <End Role="ROLES" EntitySet="ROLES" />
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUBCAPITULOS_EXPERIENCIA_SUBCAPITULOS" Association="CONTRATISTAS_testModel.FK_SUBCAPITULOS_EXPERIENCIA_SUBCAPITULOS">
+      <End Role="SUBCAPITULOS" EntitySet="SUBCAPITULOS" />
+      <End Role="SUBCAPITULOS_EXPERIENCIA" EntitySet="SUBCAPITULOS_EXPERIENCIA" />
+    </AssociationSet>
+    <AssociationSet Name="AspNetUserRoles" Association="CONTRATISTAS_testModel.AspNetUserRoles">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="C__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="ContextKey" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="Model" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="ProductVersion" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ACCIONISTAS">
+    <Key>
+      <PropertyRef Name="COD_ACCIONISTA" />
+    </Key>
+    <Property Name="COD_ACCIONISTA" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOMBRE" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="NIT_CEDULA" Type="Int64" />
+    <NavigationProperty Name="CONTRATISTAS_ACCIONISTAS" Relationship="CONTRATISTAS_testModel.FK_CONTRATISTAS_ACCIONISTAS_ACCIONISTAS" FromRole="ACCIONISTAS" ToRole="CONTRATISTAS_ACCIONISTAS" />
+  </EntityType>
+  <EntityType Name="ACTIVIDADES">
+    <Key>
+      <PropertyRef Name="COD_ACTIVIDAD" />
+    </Key>
+    <Property Name="COD_ACTIVIDAD" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="REGISTROS_CALIFICACIONES" Relationship="CONTRATISTAS_testModel.FK_REGISTROS_CALIFICACIONES_ACTIVIDADES" FromRole="ACTIVIDADES" ToRole="REGISTROS_CALIFICACIONES" />
+  </EntityType>
+  <EntityType Name="ASPECTOS">
+    <Key>
+      <PropertyRef Name="COD_ASPECTO" />
+    </Key>
+    <Property Name="COD_ASPECTO" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="COD_USUARIO_CREACION" Type="Int64" />
+    <Property Name="COD_USUARIO_ULTIMA_MODIFICACION" Type="Int64" />
+    <Property Name="FECHA_CREACION" Type="DateTime" Precision="3" />
+    <Property Name="FECHA_ULTIMA_MODIFICACION" Type="DateTime" Precision="3" />
+    <Property Name="ESTADO_ASPECTO" Type="Boolean" />
+    <NavigationProperty Name="USUARIOS" Relationship="CONTRATISTAS_testModel.FK_ASPECTOS_USUARIOS" FromRole="ASPECTOS" ToRole="USUARIOS" />
+    <NavigationProperty Name="USUARIOS1" Relationship="CONTRATISTAS_testModel.FK_ASPECTOS_USUARIOS1" FromRole="ASPECTOS" ToRole="USUARIOS" />
+    <NavigationProperty Name="ATRIBUTOS" Relationship="CONTRATISTAS_testModel.FK_ATRIBUTOS_ASPECTOS" FromRole="ASPECTOS" ToRole="ATRIBUTOS" />
+  </EntityType>
+  <EntityType Name="AspNetRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUsers" Relationship="CONTRATISTAS_testModel.AspNetUserRoles" FromRole="AspNetRoles" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaims">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUsers" Relationship="CONTRATISTAS_testModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUserClaims" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogins">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ProviderKey" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUsers" Relationship="CONTRATISTAS_testModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUserLogins" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+    <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUserClaims" Relationship="CONTRATISTAS_testModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserClaims" />
+    <NavigationProperty Name="AspNetUserLogins" Relationship="CONTRATISTAS_testModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserLogins" />
+    <NavigationProperty Name="AspNetRoles" Relationship="CONTRATISTAS_testModel.AspNetUserRoles" FromRole="AspNetUsers" ToRole="AspNetRoles" />
+  </EntityType>
+  <EntityType Name="ATRIBUTOS">
+    <Key>
+      <PropertyRef Name="COD_ATRIBUTO" />
+    </Key>
+    <Property Name="COD_ATRIBUTO" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="COD_ASPECTO" Type="Int64" />
+    <Property Name="PESO" Type="Decimal" Precision="30" Scale="20" />
+    <Property Name="COD_USUARIO_CREACION" Type="Int64" />
+    <Property Name="COD_USUARIO_ULTIMA_MODIFICACION" Type="Int64" />
+    <Property Name="FECHA_CREACION" Type="DateTime" Precision="3" />
+    <Property Name="FECHA_ULTIMA_MODIFICACION" Type="DateTime" Precision="3" />
+    <Property Name="ESTADO_ATRIBUTO" Type="Boolean" />
+    <NavigationProperty Name="ASPECTOS" Relationship="CONTRATISTAS_testModel.FK_ATRIBUTOS_ASPECTOS" FromRole="ATRIBUTOS" ToRole="ASPECTOS" />
+    <NavigationProperty Name="USUARIOS" Relationship="CONTRATISTAS_testModel.FK_ATRIBUTOS_USUARIOS" FromRole="ATRIBUTOS" ToRole="USUARIOS" />
+    <NavigationProperty Name="USUARIOS1" Relationship="CONTRATISTAS_testModel.FK_ATRIBUTOS_USUARIOS1" FromRole="ATRIBUTOS" ToRole="USUARIOS" />
+    <NavigationProperty Name="PREGUNTAS" Relationship="CONTRATISTAS_testModel.FK_PREGUNTAS_ATRIBUTOS" FromRole="ATRIBUTOS" ToRole="PREGUNTAS" />
+  </EntityType>
+  <EntityType Name="CALIFICACIONES">
+    <Key>
+      <PropertyRef Name="COD_CALIFICACION" />
+    </Key>
+    <Property Name="COD_CALIFICACION" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CUMPLIMIENTO" Type="Decimal" Precision="30" Scale="20" />
+    <Property Name="CALIDAD" Type="Decimal" Precision="30" Scale="20" />
+    <Property Name="MANEJO" Type="Decimal" Precision="30" Scale="20" />
+    <Property Name="SEGURIDAD_INDUSTRIAL" Type="Decimal" Precision="30" Scale="20" />
+    <Property Name="MEDIO_AMBIENTE" Type="Decimal" Precision="30" Scale="20" />
+    <Property Name="COD_REGISTRO_CALIFICACION" Type="Int64" />
+    <Property Name="COD_USUARIO_CREACION" Type="Int64" />
+    <Property Name="COD_USUARIO_ULTIMA_MODIFICACION" Type="Int64" />
+    <Property Name="FECHA_CREACION" Type="DateTime" Precision="3" />
+    <Property Name="FECHA_ULTIMA_MODIFICACION" Type="DateTime" Precision="3" />
+    <Property Name="ACCIONES_REQUERIDAS" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="OBSERVACIONES_CONTRATISTAS" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="ACCIONES_REALIZADAS_MES_ANTERIOR" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="COD_ESTADO" Type="Int64" />
+    <NavigationProperty Name="ESTADOS" Relationship="CONTRATISTAS_testModel.FK_CALIFICACIONES_ESTADOS" FromRole="CALIFICACIONES" ToRole="ESTADOS" />
+    <NavigationProperty Name="REGISTROS_CALIFICACIONES" Relationship="CONTRATISTAS_testModel.FK_CALIFICACIONES_REGISTROS_CALIFICACIONES" FromRole="CALIFICACIONES" ToRole="REGISTROS_CALIFICACIONES" />
+    <NavigationProperty Name="USUARIOS" Relationship="CONTRATISTAS_testModel.FK_CALIFICACIONES_USUARIOS" FromRole="CALIFICACIONES" ToRole="USUARIOS" />
+    <NavigationProperty Name="USUARIOS1" Relationship="CONTRATISTAS_testModel.FK_CALIFICACIONES_USUARIOS1" FromRole="CALIFICACIONES" ToRole="USUARIOS" />
+    <NavigationProperty Name="RESPUESTAS" Relationship="CONTRATISTAS_testModel.FK_RESPUESTAS_CALIFICACIONES" FromRole="CALIFICACIONES" ToRole="RESPUESTAS" />
+  </EntityType>
+  <EntityType Name="CAPITULOS">
+    <Key>
+      <PropertyRef Name="COD_CAPITULO" />
+    </Key>
+    <Property Name="COD_CAPITULO" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="REGISTROS_CALIFICACIONES" Relationship="CONTRATISTAS_testModel.FK_REGISTROS_CALIFICACIONES_CAPITULOS" FromRole="CAPITULOS" ToRole="REGISTROS_CALIFICACIONES" />
+    <NavigationProperty Name="SUBCAPITULOS" Relationship="CONTRATISTAS_testModel.FK_SUBCAPITULOS_CAPITULOS" FromRole="CAPITULOS" ToRole="SUBCAPITULOS" />
+  </EntityType>
+  <EntityType Name="CAPITULOS_EXPERIENCIA">
+    <Key>
+      <PropertyRef Name="COD_EXPERIENCIA_CAPITULO" />
+    </Key>
+    <Property Name="COD_EXPERIENCIA_CAPITULO" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="COD_EXPERIENCIA" Type="Int64" />
+    <Property Name="COD_CAPITULO" Type="Int64" />
+    <NavigationProperty Name="EXPERIENCIAS" Relationship="CONTRATISTAS_testModel.FK_CAPITULOS_EXPERIENCIA_EXPERIENCIAS" FromRole="CAPITULOS_EXPERIENCIA" ToRole="EXPERIENCIAS" />
+  </EntityType>
+  <EntityType Name="CIUDADES">
+    <Key>
+      <PropertyRef Name="COD_CIUDAD" />
+    </Key>
+    <Property Name="COD_CIUDAD" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="CIUDADES_TRABAJO" Relationship="CONTRATISTAS_testModel.FK_CIUDADES_TRABAJO_CIUDADES" FromRole="CIUDADES" ToRole="CIUDADES_TRABAJO" />
+    <NavigationProperty Name="CONTRATISTAS" Relationship="CONTRATISTAS_testModel.FK_CONTRATISTAS_CIUDADES" FromRole="CIUDADES" ToRole="CONTRATISTAS" />
+    <NavigationProperty Name="EXPERIENCIAS" Relationship="CONTRATISTAS_testModel.FK_EXPERIENCIAS_CIUDADES" FromRole="CIUDADES" ToRole="EXPERIENCIAS" />
+    <NavigationProperty Name="REGISTROS_CALIFICACIONES" Relationship="CONTRATISTAS_testModel.FK_REGISTROS_CALIFICACIONES_CIUDADES" FromRole="CIUDADES" ToRole="REGISTROS_CALIFICACIONES" />
+  </EntityType>
+  <EntityType Name="CIUDADES_TRABAJO">
+    <Key>
+      <PropertyRef Name="COD_CIUDAD_TRABAJO" />
+    </Key>
+    <Property Name="COD_CIUDAD_TRABAJO" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="COD_CIUDAD" Type="Int64" />
+    <Property Name="COD_CONTRATISTA" Type="Int64" />
+    <NavigationProperty Name="CIUDADES" Relationship="CONTRATISTAS_testModel.FK_CIUDADES_TRABAJO_CIUDADES" FromRole="CIUDADES_TRABAJO" ToRole="CIUDADES" />
+  </EntityType>
+  <EntityType Name="CONTACTOS">
+    <Key>
+      <PropertyRef Name="COD_CONTACTO" />
+    </Key>
+    <Property Name="COD_CONTACTO" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="CARGO" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="CELULAR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TELEFONO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="COD_CONTRATISTA" Type="Int64" />
+  </EntityType>
+  <EntityType Name="CONTRATISTAS">
+    <Key>
+      <PropertyRef Name="COD_CONTRATISTA" />
+    </Key>
+    <Property Name="COD_CONTRATISTA" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NIT" Type="Int64" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="COD_ESTADO" Type="Int64" />
+    <Property Name="COD_CIUDAD" Type="Int64" />
+    <Property Name="COD_REGISTRO_CONTRATISTA" Type="Int64" />
+    <Property Name="EXPERIENCIA_PAYC" Type="Boolean" />
+    <NavigationProperty Name="CIUDADES" Relationship="CONTRATISTAS_testModel.FK_CONTRATISTAS_CIUDADES" FromRole="CONTRATISTAS" ToRole="CIUDADES" />
+    <NavigationProperty Name="ESTADOS" Relationship="CONTRATISTAS_testModel.FK_CONTRATISTAS_ESTADOS" FromRole="CONTRATISTAS" ToRole="ESTADOS" />
+    <NavigationProperty Name="REGISTRO_CONTRATISTAS" Relationship="CONTRATISTAS_testModel.FK_REGISTRO_CONTRATISTAS_CONTRATISTAS" FromRole="CONTRATISTAS" ToRole="REGISTRO_CONTRATISTAS" />
+    <NavigationProperty Name="REGISTROS_CALIFICACIONES" Relationship="CONTRATISTAS_testModel.FK_REGISTROS_CALIFICACIONES_CONTRATISTAS" FromRole="CONTRATISTAS" ToRole="REGISTROS_CALIFICACIONES" />
+  </EntityType>
+  <EntityType Name="CONTRATISTAS_ACCIONISTAS">
+    <Key>
+      <PropertyRef Name="COD_CONTRATISTA_ACCIONISTA" />
+    </Key>
+    <Property Name="COD_CONTRATISTA_ACCIONISTA" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="COD_CONTRATISTA" Type="Int64" />
+    <Property Name="COD_ACCIONISTA" Type="Int64" />
+    <Property Name="PARTICIPACION" Type="Decimal" Precision="30" Scale="20" />
+    <NavigationProperty Name="ACCIONISTAS" Relationship="CONTRATISTAS_testModel.FK_CONTRATISTAS_ACCIONISTAS_ACCIONISTAS" FromRole="CONTRATISTAS_ACCIONISTAS" ToRole="ACCIONISTAS" />
+    <NavigationProperty Name="CONTRATISTAS_ACCIONISTAS1" Relationship="CONTRATISTAS_testModel.FK_CONTRATISTAS_ACCIONISTAS_CONTRATISTAS_ACCIONISTAS" FromRole="CONTRATISTAS_ACCIONISTAS" ToRole="CONTRATISTAS_ACCIONISTAS1" />
+    <NavigationProperty Name="CONTRATISTAS_ACCIONISTAS2" Relationship="CONTRATISTAS_testModel.FK_CONTRATISTAS_ACCIONISTAS_CONTRATISTAS_ACCIONISTAS" FromRole="CONTRATISTAS_ACCIONISTAS1" ToRole="CONTRATISTAS_ACCIONISTAS" />
+  </EntityType>
+  <EntityType Name="ESTADOS">
+    <Key>
+      <PropertyRef Name="COD_ESTADO" />
+    </Key>
+    <Property Name="COD_ESTADO" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="TABLA_ESTADO" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="CALIFICACIONES" Relationship="CONTRATISTAS_testModel.FK_CALIFICACIONES_ESTADOS" FromRole="ESTADOS" ToRole="CALIFICACIONES" />
+    <NavigationProperty Name="CONTRATISTAS" Relationship="CONTRATISTAS_testModel.FK_CONTRATISTAS_ESTADOS" FromRole="ESTADOS" ToRole="CONTRATISTAS" />
+    <NavigationProperty Name="EXPERIENCIAS" Relationship="CONTRATISTAS_testModel.FK_EXPERIENCIAS_ESTADOS" FromRole="ESTADOS" ToRole="EXPERIENCIAS" />
+    <NavigationProperty Name="PROYECTOS" Relationship="CONTRATISTAS_testModel.FK_PROYECTOS_ESTADOS" FromRole="ESTADOS" ToRole="PROYECTOS" />
+    <NavigationProperty Name="REGISTRO_CONTRATISTAS" Relationship="CONTRATISTAS_testModel.FK_REGISTRO_CONTRATISTAS_ESTADOS" FromRole="ESTADOS" ToRole="REGISTRO_CONTRATISTAS" />
+    <NavigationProperty Name="REGISTROS_CALIFICACIONES" Relationship="CONTRATISTAS_testModel.FK_REGISTROS_CALIFICACIONES_ESTADOS" FromRole="ESTADOS" ToRole="REGISTROS_CALIFICACIONES" />
+  </EntityType>
+  <EntityType Name="EXPERIENCIAS">
+    <Key>
+      <PropertyRef Name="COD_EXPERIENCIA" />
+    </Key>
+    <Property Name="COD_EXPERIENCIA" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="COD_REGISTRO_CONTRATISTA" Type="Int64" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="VALOR" Type="Decimal" Precision="30" Scale="15" />
+    <Property Name="MONEDA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PROYECTO" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="COD_CIUDAD" Type="Int64" />
+    <Property Name="CONTRATANTE" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="FECHA_INICIO" Type="DateTime" Precision="0" />
+    <Property Name="FECHA_FIN" Type="DateTime" Precision="0" />
+    <Property Name="MEDIDA_TRABAJO" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="UNIDAD_MEDIDA_TRABAJO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="OBSERVACIONES" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="COD_ESTADO" Type="Int64" />
+    <Property Name="EXPERIENCIA_PAYC" Type="Boolean" />
+    <Property Name="OBSERVACION_REVISION" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="RUTA_CERTIFICACION" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="OBJETO_CONTRACTUAL" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="CAPITULOS_EXPERIENCIA" Relationship="CONTRATISTAS_testModel.FK_CAPITULOS_EXPERIENCIA_EXPERIENCIAS" FromRole="EXPERIENCIAS" ToRole="CAPITULOS_EXPERIENCIA" />
+    <NavigationProperty Name="CIUDADES" Relationship="CONTRATISTAS_testModel.FK_EXPERIENCIAS_CIUDADES" FromRole="EXPERIENCIAS" ToRole="CIUDADES" />
+    <NavigationProperty Name="ESTADOS" Relationship="CONTRATISTAS_testModel.FK_EXPERIENCIAS_ESTADOS" FromRole="EXPERIENCIAS" ToRole="ESTADOS" />
+    <NavigationProperty Name="REGISTRO_CONTRATISTAS" Relationship="CONTRATISTAS_testModel.FK_EXPERIENCIAS_REGISTRO_CONTRATISTAS" FromRole="EXPERIENCIAS" ToRole="REGISTRO_CONTRATISTAS" />
+    <NavigationProperty Name="SUBCAPITULOS_EXPERIENCIA" Relationship="CONTRATISTAS_testModel.FK_SUBCAPITULOS_EXPERIENCIA_EXPERIENCIAS" FromRole="EXPERIENCIAS" ToRole="SUBCAPITULOS_EXPERIENCIA" />
+  </EntityType>
+  <EntityType Name="INFORMACIONES_FINANCIERAS">
+    <Key>
+      <PropertyRef Name="COD_INFORMACION_FINANCIERA" />
+    </Key>
+    <Property Name="COD_INFORMACION_FINANCIERA" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="COD_REGISTRO_CONTRATISTA" Type="Int64" />
+    <Property Name="FECHA_CORTE" Type="DateTime" Precision="0" />
+    <Property Name="ACTIVO_CORRIENTE" Type="Decimal" Precision="30" Scale="15" />
+    <Property Name="ACTIVO_TOTAL" Type="Decimal" Precision="30" Scale="15" />
+    <Property Name="PASIVO_CORRIENTE" Type="Decimal" Precision="30" Scale="15" />
+    <Property Name="PASIVO_TOTAL" Type="Decimal" Precision="30" Scale="15" />
+    <Property Name="PATRIMONIO" Type="Decimal" Precision="30" Scale="15" />
+    <Property Name="ANTICIPOS_CORRIENTES" Type="Decimal" Precision="30" Scale="15" />
+    <Property Name="ANTICIPOS_TOTALES" Type="Decimal" Precision="30" Scale="15" />
+    <Property Name="MAQUINARIA_EQUIPO" Type="Decimal" Precision="30" Scale="15" />
+    <Property Name="VENTAS" Type="Decimal" Precision="30" Scale="15" />
+    <Property Name="UTILIDAD" Type="Decimal" Precision="30" Scale="15" />
+    <Property Name="OBSERVACION_REVISION" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="RUTA_ESTADOS_FINANCIEROS" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="REGISTRO_CONTRATISTAS" Relationship="CONTRATISTAS_testModel.FK_INFORMACIONES_FINANCIERAS_REGISTRO_CONTRATISTAS" FromRole="INFORMACIONES_FINANCIERAS" ToRole="REGISTRO_CONTRATISTAS" />
+  </EntityType>
+  <EntityType Name="PASSWORD">
+    <Key>
+      <PropertyRef Name="COD_PASSWORD" />
+    </Key>
+    <Property Name="COD_PASSWORD" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="COD_USUARIO" Type="Int64" />
+    <NavigationProperty Name="USUARIOS" Relationship="CONTRATISTAS_testModel.FK_PASSWORD_USUARIOS" FromRole="PASSWORD" ToRole="USUARIOS" />
+  </EntityType>
+  <EntityType Name="POSIBLES_RESPUESTAS">
+    <Key>
+      <PropertyRef Name="COD_POSIBLE_RESPUESTA" />
+    </Key>
+    <Property Name="COD_POSIBLE_RESPUESTA" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="COD_PREGUNTA" Type="Int64" />
+    <Property Name="TIPO_RESPUESTA" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="VALOR" Type="Decimal" Precision="30" Scale="20" />
+    <NavigationProperty Name="PREGUNTAS" Relationship="CONTRATISTAS_testModel.FK_POSIBLES_RESPUESTAS_PREGUNTAS" FromRole="POSIBLES_RESPUESTAS" ToRole="PREGUNTAS" />
+  </EntityType>
+  <EntityType Name="PREGUNTAS">
+    <Key>
+      <PropertyRef Name="COD_PREGUNTA" />
+    </Key>
+    <Property Name="COD_PREGUNTA" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="COD_USUARIO_CREACION" Type="Int64" />
+    <Property Name="COD_USUARIO_ULTIMA_MODIFICACION" Type="Int64" />
+    <Property Name="FECHA_CREACION" Type="DateTime" Precision="3" />
+    <Property Name="FECHA_ULTIMA_MODIFICACION" Type="DateTime" Precision="3" />
+    <Property Name="ESTADO_PREGUNTA" Type="Boolean" />
+    <Property Name="COD_ATRIBUTO" Type="Int64" />
+    <NavigationProperty Name="ATRIBUTOS" Relationship="CONTRATISTAS_testModel.FK_PREGUNTAS_ATRIBUTOS" FromRole="PREGUNTAS" ToRole="ATRIBUTOS" />
+    <NavigationProperty Name="POSIBLES_RESPUESTAS" Relationship="CONTRATISTAS_testModel.FK_POSIBLES_RESPUESTAS_PREGUNTAS" FromRole="PREGUNTAS" ToRole="POSIBLES_RESPUESTAS" />
+    <NavigationProperty Name="USUARIOS" Relationship="CONTRATISTAS_testModel.FK_PREGUNTAS_USUARIOS" FromRole="PREGUNTAS" ToRole="USUARIOS" />
+    <NavigationProperty Name="USUARIOS1" Relationship="CONTRATISTAS_testModel.FK_PREGUNTAS_USUARIOS1" FromRole="PREGUNTAS" ToRole="USUARIOS" />
+    <NavigationProperty Name="RESPUESTAS" Relationship="CONTRATISTAS_testModel.FK_RESPUESTAS_PREGUNTAS" FromRole="PREGUNTAS" ToRole="RESPUESTAS" />
+  </EntityType>
+  <EntityType Name="PROCESOS">
+    <Key>
+      <PropertyRef Name="COD_PROCESO" />
+    </Key>
+    <Property Name="COD_PROCESO" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="REGISTROS_CALIFICACIONES" Relationship="CONTRATISTAS_testModel.FK_REGISTROS_CALIFICACIONES_PROCESOS" FromRole="PROCESOS" ToRole="REGISTROS_CALIFICACIONES" />
+  </EntityType>
+  <EntityType Name="PROYECTOS">
+    <Key>
+      <PropertyRef Name="COD_PROYECTO" />
+    </Key>
+    <Property Name="COD_PROYECTO" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CECO" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="COD_ESTADO" Type="Int64" />
+    <Property Name="COD_USUARIO_CALIFICAR" Type="Int64" />
+    <Property Name="COD_USUARIO_REVISAR" Type="Int64" />
+    <Property Name="EXISTE_INTEGRAPP" Type="Boolean" />
+    <Property Name="FECHA_INICIO" Type="DateTime" Precision="0" />
+    <Property Name="FECHA_FIN" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="ESTADOS" Relationship="CONTRATISTAS_testModel.FK_PROYECTOS_ESTADOS" FromRole="PROYECTOS" ToRole="ESTADOS" />
+    <NavigationProperty Name="REGISTROS_CALIFICACIONES" Relationship="CONTRATISTAS_testModel.FK_REGISTROS_CALIFICACIONES_PROYECTOS" FromRole="PROYECTOS" ToRole="REGISTROS_CALIFICACIONES" />
+  </EntityType>
+  <EntityType Name="REGISTRO_CONTRATISTAS">
+    <Key>
+      <PropertyRef Name="COD_REGISTRO_CONTRATISTA" />
+    </Key>
+    <Property Name="COD_REGISTRO_CONTRATISTA" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="COD_ESTADO" Type="Int64" />
+    <Property Name="COD_CONTRATISTA" Type="Int64" />
+    <Property Name="FECHA_CREACION" Type="DateTime" Precision="3" />
+    <Property Name="FECHA_ULTIMA_ACTUALIZACION" Type="DateTime" Precision="3" />
+    <Property Name="COD_USUARIO_PAYC_REVISION" Type="Int64" />
+    <Property Name="COD_USUARIO_CONTRATISTA" Type="Int64" />
+    <Property Name="DIRECCION" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="REPRESENTANTE_LEGAL" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="TELEFONO_REPRESENTANTE" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="EMAIL_REPRESENTANTE" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="FECHA_CONSTITUCION" Type="DateTime" Precision="0" />
+    <Property Name="FECHA_ULTIMO_REGISTRO" Type="DateTime" Precision="3" />
+    <Property Name="RUTA_RUT" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="FECHA_RUT" Type="DateTime" Precision="0" />
+    <Property Name="TIENE_EXPERIENCIAS" Type="Boolean" />
+    <Property Name="TIENE_ESTADOS_FINANCIEROS" Type="Boolean" />
+    <Property Name="RUTA_CAMARA" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="FECHA_CAMARA" Type="DateTime" Precision="0" />
+    <Property Name="TIPO_REGISTRO" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="CONTRATISTAS" Relationship="CONTRATISTAS_testModel.FK_REGISTRO_CONTRATISTAS_CONTRATISTAS" FromRole="REGISTRO_CONTRATISTAS" ToRole="CONTRATISTAS" />
+    <NavigationProperty Name="ESTADOS" Relationship="CONTRATISTAS_testModel.FK_REGISTRO_CONTRATISTAS_ESTADOS" FromRole="REGISTRO_CONTRATISTAS" ToRole="ESTADOS" />
+    <NavigationProperty Name="EXPERIENCIAS" Relationship="CONTRATISTAS_testModel.FK_EXPERIENCIAS_REGISTRO_CONTRATISTAS" FromRole="REGISTRO_CONTRATISTAS" ToRole="EXPERIENCIAS" />
+    <NavigationProperty Name="INFORMACIONES_FINANCIERAS" Relationship="CONTRATISTAS_testModel.FK_INFORMACIONES_FINANCIERAS_REGISTRO_CONTRATISTAS" FromRole="REGISTRO_CONTRATISTAS" ToRole="INFORMACIONES_FINANCIERAS" />
+    <NavigationProperty Name="USUARIOS" Relationship="CONTRATISTAS_testModel.FK_REGISTRO_CONTRATISTAS_USUARIOS" FromRole="REGISTRO_CONTRATISTAS" ToRole="USUARIOS" />
+    <NavigationProperty Name="USUARIOS1" Relationship="CONTRATISTAS_testModel.FK_REGISTRO_CONTRATISTAS_USUARIOS1" FromRole="REGISTRO_CONTRATISTAS" ToRole="USUARIOS" />
+  </EntityType>
+  <EntityType Name="REGISTROS_CALIFICACIONES">
+    <Key>
+      <PropertyRef Name="COD_REGISTRO_CALIFICACION" />
+    </Key>
+    <Property Name="COD_REGISTRO_CALIFICACION" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="COD_PROYECTO" Type="Int64" />
+    <Property Name="COD_CONTRATISTA" Type="Int64" />
+    <Property Name="COD_ACTIVIDAD" Type="Int64" />
+    <Property Name="COD_CAPITULO" Type="Int64" />
+    <Property Name="COD_SUBCAPITULO" Type="Int64" />
+    <Property Name="COD_PROCESO" Type="Int64" />
+    <Property Name="DESCRIPCION_PROCESO" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="COD_USUARIO_CREACION" Type="Int64" />
+    <Property Name="COD_USUARIO_ULTIMA_MODIFICACION" Type="Int64" />
+    <Property Name="FECHA_CREACION" Type="DateTime" Precision="3" />
+    <Property Name="FECHA_ULTIMA_MODIFICACION" Type="DateTime" Precision="3" />
+    <Property Name="COD_ESTADO" Type="Int64" />
+    <Property Name="COD_CIUDAD" Type="Int64" />
+    <Property Name="PERIODO_CALIFICADO" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="ACTIVIDADES" Relationship="CONTRATISTAS_testModel.FK_REGISTROS_CALIFICACIONES_ACTIVIDADES" FromRole="REGISTROS_CALIFICACIONES" ToRole="ACTIVIDADES" />
+    <NavigationProperty Name="CALIFICACIONES" Relationship="CONTRATISTAS_testModel.FK_CALIFICACIONES_REGISTROS_CALIFICACIONES" FromRole="REGISTROS_CALIFICACIONES" ToRole="CALIFICACIONES" />
+    <NavigationProperty Name="CAPITULOS" Relationship="CONTRATISTAS_testModel.FK_REGISTROS_CALIFICACIONES_CAPITULOS" FromRole="REGISTROS_CALIFICACIONES" ToRole="CAPITULOS" />
+    <NavigationProperty Name="CIUDADES" Relationship="CONTRATISTAS_testModel.FK_REGISTROS_CALIFICACIONES_CIUDADES" FromRole="REGISTROS_CALIFICACIONES" ToRole="CIUDADES" />
+    <NavigationProperty Name="CONTRATISTAS" Relationship="CONTRATISTAS_testModel.FK_REGISTROS_CALIFICACIONES_CONTRATISTAS" FromRole="REGISTROS_CALIFICACIONES" ToRole="CONTRATISTAS" />
+    <NavigationProperty Name="ESTADOS" Relationship="CONTRATISTAS_testModel.FK_REGISTROS_CALIFICACIONES_ESTADOS" FromRole="REGISTROS_CALIFICACIONES" ToRole="ESTADOS" />
+    <NavigationProperty Name="PROCESOS" Relationship="CONTRATISTAS_testModel.FK_REGISTROS_CALIFICACIONES_PROCESOS" FromRole="REGISTROS_CALIFICACIONES" ToRole="PROCESOS" />
+    <NavigationProperty Name="PROYECTOS" Relationship="CONTRATISTAS_testModel.FK_REGISTROS_CALIFICACIONES_PROYECTOS" FromRole="REGISTROS_CALIFICACIONES" ToRole="PROYECTOS" />
+    <NavigationProperty Name="SUBCAPITULOS" Relationship="CONTRATISTAS_testModel.FK_REGISTROS_CALIFICACIONES_SUBCAPITULOS" FromRole="REGISTROS_CALIFICACIONES" ToRole="SUBCAPITULOS" />
+    <NavigationProperty Name="USUARIOS" Relationship="CONTRATISTAS_testModel.FK_REGISTROS_CALIFICACIONES_USUARIOS" FromRole="REGISTROS_CALIFICACIONES" ToRole="USUARIOS" />
+    <NavigationProperty Name="USUARIOS1" Relationship="CONTRATISTAS_testModel.FK_REGISTROS_CALIFICACIONES_USUARIOS1" FromRole="REGISTROS_CALIFICACIONES" ToRole="USUARIOS" />
+  </EntityType>
+  <EntityType Name="RESPUESTAS">
+    <Key>
+      <PropertyRef Name="COD_RESPUESTA" />
+    </Key>
+    <Property Name="COD_RESPUESTA" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="COD_PREGUNTA" Type="Int64" />
+    <Property Name="RESPUESTA_INGRESADA" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="COD_CALIFICACION" Type="Int64" />
+    <Property Name="COD_USUARIO_CREACION" Type="Int64" />
+    <Property Name="FECHA_CREACION" Type="DateTime" Precision="3" />
+    <Property Name="ESTADO_RESPUESTA" Type="Boolean" />
+    <Property Name="VALOR_RESPUESTA_SELECCIONADA" Type="Decimal" Precision="30" Scale="20" />
+    <Property Name="DESCRIPCION_RESPUESTA" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="VALOR_COD_POSIBLE_RESPUESTA" Type="Int64" />
+    <NavigationProperty Name="CALIFICACIONES" Relationship="CONTRATISTAS_testModel.FK_RESPUESTAS_CALIFICACIONES" FromRole="RESPUESTAS" ToRole="CALIFICACIONES" />
+    <NavigationProperty Name="PREGUNTAS" Relationship="CONTRATISTAS_testModel.FK_RESPUESTAS_PREGUNTAS" FromRole="RESPUESTAS" ToRole="PREGUNTAS" />
+    <NavigationProperty Name="USUARIOS" Relationship="CONTRATISTAS_testModel.FK_RESPUESTAS_USUARIOS" FromRole="RESPUESTAS" ToRole="USUARIOS" />
+  </EntityType>
+  <EntityType Name="ROLES">
+    <Key>
+      <PropertyRef Name="COD_ROL" />
+    </Key>
+    <Property Name="COD_ROL" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="USUARIOS" Relationship="CONTRATISTAS_testModel.FK_USUARIOS_ROLES" FromRole="ROLES" ToRole="USUARIOS" />
+  </EntityType>
+  <EntityType Name="SUBCAPITULOS">
+    <Key>
+      <PropertyRef Name="COD_SUBCAPITULO" />
+    </Key>
+    <Property Name="COD_SUBCAPITULO" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="COD_CAPITULO" Type="Int64" />
+    <NavigationProperty Name="CAPITULOS" Relationship="CONTRATISTAS_testModel.FK_SUBCAPITULOS_CAPITULOS" FromRole="SUBCAPITULOS" ToRole="CAPITULOS" />
+    <NavigationProperty Name="REGISTROS_CALIFICACIONES" Relationship="CONTRATISTAS_testModel.FK_REGISTROS_CALIFICACIONES_SUBCAPITULOS" FromRole="SUBCAPITULOS" ToRole="REGISTROS_CALIFICACIONES" />
+    <NavigationProperty Name="SUBCAPITULOS_EXPERIENCIA" Relationship="CONTRATISTAS_testModel.FK_SUBCAPITULOS_EXPERIENCIA_SUBCAPITULOS" FromRole="SUBCAPITULOS" ToRole="SUBCAPITULOS_EXPERIENCIA" />
+  </EntityType>
+  <EntityType Name="SUBCAPITULOS_EXPERIENCIA">
+    <Key>
+      <PropertyRef Name="COD_EXPERIENCIA_SUBCAPITULO" />
+    </Key>
+    <Property Name="COD_EXPERIENCIA_SUBCAPITULO" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="COD_EXPERIENCIA" Type="Int64" />
+    <Property Name="COD_SUBCAPITULO" Type="Int64" />
+    <NavigationProperty Name="EXPERIENCIAS" Relationship="CONTRATISTAS_testModel.FK_SUBCAPITULOS_EXPERIENCIA_EXPERIENCIAS" FromRole="SUBCAPITULOS_EXPERIENCIA" ToRole="EXPERIENCIAS" />
+    <NavigationProperty Name="SUBCAPITULOS" Relationship="CONTRATISTAS_testModel.FK_SUBCAPITULOS_EXPERIENCIA_SUBCAPITULOS" FromRole="SUBCAPITULOS_EXPERIENCIA" ToRole="SUBCAPITULOS" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="USUARIOS">
+    <Key>
+      <PropertyRef Name="COD_USUARIO" />
+    </Key>
+    <Property Name="COD_USUARIO" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="NOMBRE" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="APELLIDO" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="CARGO" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="COD_USUARIO_CREACION" Type="Int64" />
+    <Property Name="COD_USUARIO_ULTIMA_MODIFICACION" Type="Int64" />
+    <Property Name="FECHA_CREACION" Type="DateTime" Precision="3" />
+    <Property Name="FECHA_ULTIMA_MODIFICACION" Type="DateTime" Precision="3" />
+    <Property Name="ESTADO_USUARIO" Type="Boolean" />
+    <Property Name="COD_ROL" Type="Int64" />
+    <NavigationProperty Name="ASPECTOS" Relationship="CONTRATISTAS_testModel.FK_ASPECTOS_USUARIOS" FromRole="USUARIOS" ToRole="ASPECTOS" />
+    <NavigationProperty Name="ASPECTOS1" Relationship="CONTRATISTAS_testModel.FK_ASPECTOS_USUARIOS1" FromRole="USUARIOS" ToRole="ASPECTOS" />
+    <NavigationProperty Name="ATRIBUTOS" Relationship="CONTRATISTAS_testModel.FK_ATRIBUTOS_USUARIOS" FromRole="USUARIOS" ToRole="ATRIBUTOS" />
+    <NavigationProperty Name="ATRIBUTOS1" Relationship="CONTRATISTAS_testModel.FK_ATRIBUTOS_USUARIOS1" FromRole="USUARIOS" ToRole="ATRIBUTOS" />
+    <NavigationProperty Name="CALIFICACIONES" Relationship="CONTRATISTAS_testModel.FK_CALIFICACIONES_USUARIOS" FromRole="USUARIOS" ToRole="CALIFICACIONES" />
+    <NavigationProperty Name="CALIFICACIONES1" Relationship="CONTRATISTAS_testModel.FK_CALIFICACIONES_USUARIOS1" FromRole="USUARIOS" ToRole="CALIFICACIONES" />
+    <NavigationProperty Name="PASSWORD" Relationship="CONTRATISTAS_testModel.FK_PASSWORD_USUARIOS" FromRole="USUARIOS" ToRole="PASSWORD" />
+    <NavigationProperty Name="PREGUNTAS" Relationship="CONTRATISTAS_testModel.FK_PREGUNTAS_USUARIOS" FromRole="USUARIOS" ToRole="PREGUNTAS" />
+    <NavigationProperty Name="PREGUNTAS1" Relationship="CONTRATISTAS_testModel.FK_PREGUNTAS_USUARIOS1" FromRole="USUARIOS" ToRole="PREGUNTAS" />
+    <NavigationProperty Name="REGISTRO_CONTRATISTAS" Relationship="CONTRATISTAS_testModel.FK_REGISTRO_CONTRATISTAS_USUARIOS" FromRole="USUARIOS" ToRole="REGISTRO_CONTRATISTAS" />
+    <NavigationProperty Name="REGISTRO_CONTRATISTAS1" Relationship="CONTRATISTAS_testModel.FK_REGISTRO_CONTRATISTAS_USUARIOS1" FromRole="USUARIOS" ToRole="REGISTRO_CONTRATISTAS" />
+    <NavigationProperty Name="REGISTROS_CALIFICACIONES" Relationship="CONTRATISTAS_testModel.FK_REGISTROS_CALIFICACIONES_USUARIOS" FromRole="USUARIOS" ToRole="REGISTROS_CALIFICACIONES" />
+    <NavigationProperty Name="REGISTROS_CALIFICACIONES1" Relationship="CONTRATISTAS_testModel.FK_REGISTROS_CALIFICACIONES_USUARIOS1" FromRole="USUARIOS" ToRole="REGISTROS_CALIFICACIONES" />
+    <NavigationProperty Name="RESPUESTAS" Relationship="CONTRATISTAS_testModel.FK_RESPUESTAS_USUARIOS" FromRole="USUARIOS" ToRole="RESPUESTAS" />
+    <NavigationProperty Name="ROLES" Relationship="CONTRATISTAS_testModel.FK_USUARIOS_ROLES" FromRole="USUARIOS" ToRole="ROLES" />
+  </EntityType>
+  <EntityType Name="CONTRATISTAS_EXPERIENCIAS">
+    <Key>
+      <PropertyRef Name="COD_CONTRATISTA" />
+      <PropertyRef Name="EXPERIENCIA_PAYC" />
+    </Key>
+    <Property Name="COD_CONTRATISTA" Type="Int64" Nullable="false" />
+    <Property Name="EXPERIENCIA_PAYC" Type="String" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VISTA_ACCIONISTAS">
+    <Key>
+      <PropertyRef Name="COD_ACCIONISTA" />
+      <PropertyRef Name="COD_CONTRATISTA" />
+      <PropertyRef Name="COD_CONTRATISTA_ACCIONISTA" />
+    </Key>
+    <Property Name="COD_ACCIONISTA" Type="Int64" Nullable="false" />
+    <Property Name="NOMBRE" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="NIT_CEDULA" Type="Int64" />
+    <Property Name="COD_CONTRATISTA" Type="Int64" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="PARTICIPACION" Type="Decimal" Precision="30" Scale="20" />
+    <Property Name="COD_CONTRATISTA_ACCIONISTA" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VISTA_CONTRATISTAS_EXPERIENCIAS">
+    <Key>
+      <PropertyRef Name="COD_CONTRATISTA" />
+      <PropertyRef Name="COD_EXPERIENCIA" />
+    </Key>
+    <Property Name="COD_CONTRATISTA" Type="Int64" Nullable="false" />
+    <Property Name="COD_EXPERIENCIA" Type="Int64" Nullable="false" />
+    <Property Name="COD_REGISTRO_CONTRATISTA" Type="Int64" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="VALOR" Type="Decimal" Precision="30" Scale="15" />
+    <Property Name="MONEDA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PROYECTO" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="COD_CIUDAD" Type="Int64" />
+    <Property Name="CONTRATANTE" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="FECHA_INICIO" Type="DateTime" Precision="0" />
+    <Property Name="FECHA_FIN" Type="DateTime" Precision="0" />
+    <Property Name="MEDIDA_TRABAJO" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="UNIDAD_MEDIDA_TRABAJO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="OBSERVACIONES" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="COD_ESTADO" Type="Int64" />
+    <Property Name="EXPERIENCIA_PAYC" Type="Boolean" />
+    <Property Name="OBSERVACION_REVISION" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="RUTA_CERTIFICACION" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="OBJETO_CONTRACTUAL" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VISTA_DETALLES_ASPECTOS">
+    <Key>
+      <PropertyRef Name="COD_ASPECTO" />
+    </Key>
+    <Property Name="COD_VISTA_DETALLES_ASPECTOS" Type="Int64" />
+    <Property Name="COD_ASPECTO" Type="Int64" Nullable="false" />
+    <Property Name="ASPECTO" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="C__de_Atributos" Type="Int32" />
+    <Property Name="ESTADO" Type="Boolean" />
+    <Property Name="FECHA_CREACION" Type="DateTime" Precision="3" />
+    <Property Name="FECHA_MODIFICACION" Type="DateTime" Precision="3" />
+    <Property Name="EDITADO_POR" Type="Int64" />
+  </EntityType>
+  <EntityType Name="VISTA_DETALLES_CRITERIOS">
+    <Key>
+      <PropertyRef Name="COD_ASPECTO" />
+      <PropertyRef Name="COD_ATRIBUTO" />
+    </Key>
+    <Property Name="COD_VISTA_DETALLES_CRITERIOS" Type="Int64" />
+    <Property Name="COD_ASPECTO" Type="Int64" Nullable="false" />
+    <Property Name="ASPECTO" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="COD_ATRIBUTO" Type="Int64" Nullable="false" />
+    <Property Name="ATRIBUTO" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="PONDERACION" Type="Decimal" Precision="30" Scale="20" />
+    <Property Name="C__de_preguntas" Type="Int32" />
+    <Property Name="FECHA_CREACION" Type="DateTime" Precision="3" />
+    <Property Name="FECHA_EDICION" Type="DateTime" Precision="3" />
+    <Property Name="COD_USUARIO_ULTIMA_MODIFICACION" Type="Int64" />
+  </EntityType>
+  <EntityType Name="VISTA_DETALLES_PREGUNTAS">
+    <Key>
+      <PropertyRef Name="COD_PREGUNTA" />
+    </Key>
+    <Property Name="COD_VISTA_DETALLES_PREGUNTAS" Type="Int64" />
+    <Property Name="COD_PREGUNTA" Type="Int64" Nullable="false" />
+    <Property Name="COD_ATRIBUTO" Type="Int64" />
+    <Property Name="COD_ASPECTO" Type="Int64" />
+    <Property Name="PREGUNTA" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="C__de_Respuestas" Type="Int32" />
+    <Property Name="ATRIBUTO" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="ASPECTO" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="FECHA_CREACION" Type="DateTime" Precision="3" />
+    <Property Name="FECHA_ULTIMA_MODIFICACION" Type="DateTime" Precision="3" />
+    <Property Name="COD_USUARIO_ULTIMA_MODIFICACION" Type="Int64" />
+  </EntityType>
+  <EntityType Name="VISTA_DETALLES_REGISTROS_CALIFICACIONES">
+    <Key>
+      <PropertyRef Name="COD_PROYECTO" />
+    </Key>
+    <Property Name="COD_VISTA_DETALLES_REGISTROS_CALIFICACIONES" Type="Int64" />
+    <Property Name="COD_PROYECTO" Type="Int64" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="FECHA_INICIO" Type="DateTime" Precision="0" />
+    <Property Name="FECHA_FIN" Type="DateTime" Precision="0" />
+    <Property Name="ULTIMA_CALIFICACION" Type="DateTime" Precision="3" />
+    <Property Name="COD_REGISTRO_CALIFICACION" Type="Int64" />
+    <Property Name="FECHA_CREACION_REGISTRO_CALIFICACION" Type="DateTime" Precision="3" />
+    <Property Name="ESTADO" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="COD_CONTRATISTA" Type="Int64" />
+  </EntityType>
+  <EntityType Name="VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD">
+    <Key>
+      <PropertyRef Name="COD_CALIFICACION" />
+    </Key>
+    <Property Name="COD_VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD" Type="Int64" />
+    <Property Name="COD_CALIFICACION" Type="Int64" Nullable="false" />
+    <Property Name="COD_REGISTRO_CALIFICACION" Type="Int64" />
+    <Property Name="COD_PROYECTO" Type="Int64" />
+    <Property Name="COD_USUARIO_CREACION" Type="Int64" />
+    <Property Name="COD_USUARIO_ULTIMA_MODIFICACION" Type="Int64" />
+    <Property Name="CREADO_POR" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="EDITADO_POR" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="COD_CONTRATISTA" Type="Int64" />
+    <Property Name="CONTRATISTA" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="FECHA_CREACION" Type="DateTime" Precision="3" />
+    <Property Name="FECHA_ULTIMA_MODIFICACION" Type="DateTime" Precision="3" />
+    <Property Name="COD_ACTIVIDAD" Type="Int64" />
+    <Property Name="ACTIVIDAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="COD_PROCESO" Type="Int64" />
+    <Property Name="PROCESO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="COD_ESTADO" Type="Int64" />
+    <Property Name="ESTADO" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VISTA_INFORMACION_FINANCIERA">
+    <Key>
+      <PropertyRef Name="COD_INFORMACION_FINANCIERA" />
+      <PropertyRef Name="COD_CONTRATISTA" />
+    </Key>
+    <Property Name="COD_INFORMACION_FINANCIERA" Type="Int64" Nullable="false" />
+    <Property Name="COD_REGISTRO_CONTRATISTA" Type="Int64" />
+    <Property Name="FECHA_CORTE" Type="DateTime" Precision="0" />
+    <Property Name="ACTIVO_CORRIENTE" Type="Decimal" Precision="30" Scale="15" />
+    <Property Name="ACTIVO_TOTAL" Type="Decimal" Precision="30" Scale="15" />
+    <Property Name="PASIVO_CORRIENTE" Type="Decimal" Precision="30" Scale="15" />
+    <Property Name="PASIVO_TOTAL" Type="Decimal" Precision="30" Scale="15" />
+    <Property Name="PATRIMONIO" Type="Decimal" Precision="30" Scale="15" />
+    <Property Name="OBSERVACION_REVISION" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="RUTA_ESTADOS_FINANCIEROS" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="COD_CONTRATISTA" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VISTA_REPORTE_CONTRATISTAS1">
+    <Key>
+      <PropertyRef Name="COD_REGISTRO_CALIFICACION" />
+    </Key>
+    <Property Name="NIT" Type="Int64" />
+    <Property Name="CONTRATISTA" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="PROCESOS_DETALLE" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="COD_REGISTRO_CALIFICACION" Type="Int64" Nullable="false" />
+    <Property Name="COD_CAPITULO" Type="Int64" />
+    <Property Name="COD_SUBCAPITULO" Type="Int64" />
+    <Property Name="COD_PROCESO" Type="Int64" />
+    <Property Name="COD_PROYECTO" Type="Int64" />
+    <Property Name="COD_ACTIVIDAD" Type="Int64" />
+    <Property Name="COD_REGISTRO_CONTRATISTA" Type="Int64" />
+    <Property Name="EXPERIENCIA_PAYC" Type="Boolean" />
+    <Property Name="ACTIVO_CORRIENTE" Type="Decimal" Precision="30" Scale="15" />
+    <Property Name="ACTIVO_TOTAL" Type="Decimal" Precision="30" Scale="15" />
+    <Property Name="PASIVO_CORRIENTE" Type="Decimal" Precision="30" Scale="15" />
+    <Property Name="PASIVO_TOTAL" Type="Decimal" Precision="30" Scale="15" />
+    <Property Name="PATRIMONIO" Type="Decimal" Precision="30" Scale="15" />
+    <Property Name="FECHA_ESTADO_FINANCIERO" Type="DateTime" Precision="0" />
+    <Property Name="CIUDAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VISTA_REPORTEADOR1">
+    <Key>
+      <PropertyRef Name="COD_REGISTRO_CALIFICACION" />
+    </Key>
+    <Property Name="CAPITULO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SUBCAPITULO" Type="Int64" />
+    <Property Name="PROCESO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CIUDAD_CALIFICACION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="COD_REGISTRO_CALIFICACION" Type="Int64" Nullable="false" />
+    <Property Name="COD_PROYECTO" Type="Int64" />
+    <Property Name="COD_CONTRATISTA" Type="Int64" />
+    <Property Name="COD_ACTIVIDAD" Type="Int64" />
+    <Property Name="COD_PROCESO" Type="Int64" />
+    <Property Name="DESCRIPCION_PROCESO" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="COD_USUARIO_CREACION" Type="Int64" />
+    <Property Name="COD_USUARIO_ULTIMA_MODIFICACION" Type="Int64" />
+    <Property Name="FECHA_CREACION" Type="DateTime" Precision="3" />
+    <Property Name="FECHA_ULTIMA_MODIFICACION" Type="DateTime" Precision="3" />
+    <Property Name="COD_ESTADO" Type="Int64" />
+  </EntityType>
+  <Association Name="FK_CONTRATISTAS_ACCIONISTAS_ACCIONISTAS">
+    <End Type="CONTRATISTAS_testModel.ACCIONISTAS" Role="ACCIONISTAS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.CONTRATISTAS_ACCIONISTAS" Role="CONTRATISTAS_ACCIONISTAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ACCIONISTAS">
+        <PropertyRef Name="COD_ACCIONISTA" />
+      </Principal>
+      <Dependent Role="CONTRATISTAS_ACCIONISTAS">
+        <PropertyRef Name="COD_ACCIONISTA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGISTROS_CALIFICACIONES_ACTIVIDADES">
+    <End Type="CONTRATISTAS_testModel.ACTIVIDADES" Role="ACTIVIDADES" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.REGISTROS_CALIFICACIONES" Role="REGISTROS_CALIFICACIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ACTIVIDADES">
+        <PropertyRef Name="COD_ACTIVIDAD" />
+      </Principal>
+      <Dependent Role="REGISTROS_CALIFICACIONES">
+        <PropertyRef Name="COD_ACTIVIDAD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ASPECTOS_USUARIOS">
+    <End Type="CONTRATISTAS_testModel.USUARIOS" Role="USUARIOS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.ASPECTOS" Role="ASPECTOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="COD_USUARIO" />
+      </Principal>
+      <Dependent Role="ASPECTOS">
+        <PropertyRef Name="COD_USUARIO_CREACION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ASPECTOS_USUARIOS1">
+    <End Type="CONTRATISTAS_testModel.USUARIOS" Role="USUARIOS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.ASPECTOS" Role="ASPECTOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="COD_USUARIO" />
+      </Principal>
+      <Dependent Role="ASPECTOS">
+        <PropertyRef Name="COD_USUARIO_ULTIMA_MODIFICACION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ATRIBUTOS_ASPECTOS">
+    <End Type="CONTRATISTAS_testModel.ASPECTOS" Role="ASPECTOS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.ATRIBUTOS" Role="ATRIBUTOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ASPECTOS">
+        <PropertyRef Name="COD_ASPECTO" />
+      </Principal>
+      <Dependent Role="ATRIBUTOS">
+        <PropertyRef Name="COD_ASPECTO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+    <End Type="CONTRATISTAS_testModel.AspNetUsers" Role="AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="CONTRATISTAS_testModel.AspNetUserClaims" Role="AspNetUserClaims" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaims">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+    <End Type="CONTRATISTAS_testModel.AspNetUsers" Role="AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="CONTRATISTAS_testModel.AspNetUserLogins" Role="AspNetUserLogins" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogins">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ATRIBUTOS_USUARIOS">
+    <End Type="CONTRATISTAS_testModel.USUARIOS" Role="USUARIOS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.ATRIBUTOS" Role="ATRIBUTOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="COD_USUARIO" />
+      </Principal>
+      <Dependent Role="ATRIBUTOS">
+        <PropertyRef Name="COD_USUARIO_CREACION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ATRIBUTOS_USUARIOS1">
+    <End Type="CONTRATISTAS_testModel.USUARIOS" Role="USUARIOS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.ATRIBUTOS" Role="ATRIBUTOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="COD_USUARIO" />
+      </Principal>
+      <Dependent Role="ATRIBUTOS">
+        <PropertyRef Name="COD_USUARIO_ULTIMA_MODIFICACION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PREGUNTAS_ATRIBUTOS">
+    <End Type="CONTRATISTAS_testModel.ATRIBUTOS" Role="ATRIBUTOS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.PREGUNTAS" Role="PREGUNTAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ATRIBUTOS">
+        <PropertyRef Name="COD_ATRIBUTO" />
+      </Principal>
+      <Dependent Role="PREGUNTAS">
+        <PropertyRef Name="COD_ATRIBUTO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CALIFICACIONES_ESTADOS">
+    <End Type="CONTRATISTAS_testModel.ESTADOS" Role="ESTADOS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.CALIFICACIONES" Role="CALIFICACIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ESTADOS">
+        <PropertyRef Name="COD_ESTADO" />
+      </Principal>
+      <Dependent Role="CALIFICACIONES">
+        <PropertyRef Name="COD_ESTADO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CALIFICACIONES_REGISTROS_CALIFICACIONES">
+    <End Type="CONTRATISTAS_testModel.REGISTROS_CALIFICACIONES" Role="REGISTROS_CALIFICACIONES" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.CALIFICACIONES" Role="CALIFICACIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="REGISTROS_CALIFICACIONES">
+        <PropertyRef Name="COD_REGISTRO_CALIFICACION" />
+      </Principal>
+      <Dependent Role="CALIFICACIONES">
+        <PropertyRef Name="COD_REGISTRO_CALIFICACION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CALIFICACIONES_USUARIOS">
+    <End Type="CONTRATISTAS_testModel.USUARIOS" Role="USUARIOS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.CALIFICACIONES" Role="CALIFICACIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="COD_USUARIO" />
+      </Principal>
+      <Dependent Role="CALIFICACIONES">
+        <PropertyRef Name="COD_USUARIO_CREACION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CALIFICACIONES_USUARIOS1">
+    <End Type="CONTRATISTAS_testModel.USUARIOS" Role="USUARIOS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.CALIFICACIONES" Role="CALIFICACIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="COD_USUARIO" />
+      </Principal>
+      <Dependent Role="CALIFICACIONES">
+        <PropertyRef Name="COD_USUARIO_ULTIMA_MODIFICACION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RESPUESTAS_CALIFICACIONES">
+    <End Type="CONTRATISTAS_testModel.CALIFICACIONES" Role="CALIFICACIONES" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.RESPUESTAS" Role="RESPUESTAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CALIFICACIONES">
+        <PropertyRef Name="COD_CALIFICACION" />
+      </Principal>
+      <Dependent Role="RESPUESTAS">
+        <PropertyRef Name="COD_CALIFICACION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGISTROS_CALIFICACIONES_CAPITULOS">
+    <End Type="CONTRATISTAS_testModel.CAPITULOS" Role="CAPITULOS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.REGISTROS_CALIFICACIONES" Role="REGISTROS_CALIFICACIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAPITULOS">
+        <PropertyRef Name="COD_CAPITULO" />
+      </Principal>
+      <Dependent Role="REGISTROS_CALIFICACIONES">
+        <PropertyRef Name="COD_CAPITULO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUBCAPITULOS_CAPITULOS">
+    <End Type="CONTRATISTAS_testModel.CAPITULOS" Role="CAPITULOS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.SUBCAPITULOS" Role="SUBCAPITULOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAPITULOS">
+        <PropertyRef Name="COD_CAPITULO" />
+      </Principal>
+      <Dependent Role="SUBCAPITULOS">
+        <PropertyRef Name="COD_CAPITULO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CAPITULOS_EXPERIENCIA_EXPERIENCIAS">
+    <End Type="CONTRATISTAS_testModel.EXPERIENCIAS" Role="EXPERIENCIAS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.CAPITULOS_EXPERIENCIA" Role="CAPITULOS_EXPERIENCIA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EXPERIENCIAS">
+        <PropertyRef Name="COD_EXPERIENCIA" />
+      </Principal>
+      <Dependent Role="CAPITULOS_EXPERIENCIA">
+        <PropertyRef Name="COD_EXPERIENCIA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CIUDADES_TRABAJO_CIUDADES">
+    <End Type="CONTRATISTAS_testModel.CIUDADES" Role="CIUDADES" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.CIUDADES_TRABAJO" Role="CIUDADES_TRABAJO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CIUDADES">
+        <PropertyRef Name="COD_CIUDAD" />
+      </Principal>
+      <Dependent Role="CIUDADES_TRABAJO">
+        <PropertyRef Name="COD_CIUDAD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CONTRATISTAS_CIUDADES">
+    <End Type="CONTRATISTAS_testModel.CIUDADES" Role="CIUDADES" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.CONTRATISTAS" Role="CONTRATISTAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CIUDADES">
+        <PropertyRef Name="COD_CIUDAD" />
+      </Principal>
+      <Dependent Role="CONTRATISTAS">
+        <PropertyRef Name="COD_CIUDAD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EXPERIENCIAS_CIUDADES">
+    <End Type="CONTRATISTAS_testModel.CIUDADES" Role="CIUDADES" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.EXPERIENCIAS" Role="EXPERIENCIAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CIUDADES">
+        <PropertyRef Name="COD_CIUDAD" />
+      </Principal>
+      <Dependent Role="EXPERIENCIAS">
+        <PropertyRef Name="COD_CIUDAD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGISTROS_CALIFICACIONES_CIUDADES">
+    <End Type="CONTRATISTAS_testModel.CIUDADES" Role="CIUDADES" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.REGISTROS_CALIFICACIONES" Role="REGISTROS_CALIFICACIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CIUDADES">
+        <PropertyRef Name="COD_CIUDAD" />
+      </Principal>
+      <Dependent Role="REGISTROS_CALIFICACIONES">
+        <PropertyRef Name="COD_CIUDAD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CONTRATISTAS_ESTADOS">
+    <End Type="CONTRATISTAS_testModel.ESTADOS" Role="ESTADOS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.CONTRATISTAS" Role="CONTRATISTAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ESTADOS">
+        <PropertyRef Name="COD_ESTADO" />
+      </Principal>
+      <Dependent Role="CONTRATISTAS">
+        <PropertyRef Name="COD_ESTADO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGISTRO_CONTRATISTAS_CONTRATISTAS">
+    <End Type="CONTRATISTAS_testModel.CONTRATISTAS" Role="CONTRATISTAS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.REGISTRO_CONTRATISTAS" Role="REGISTRO_CONTRATISTAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CONTRATISTAS">
+        <PropertyRef Name="COD_CONTRATISTA" />
+      </Principal>
+      <Dependent Role="REGISTRO_CONTRATISTAS">
+        <PropertyRef Name="COD_CONTRATISTA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGISTROS_CALIFICACIONES_CONTRATISTAS">
+    <End Type="CONTRATISTAS_testModel.CONTRATISTAS" Role="CONTRATISTAS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.REGISTROS_CALIFICACIONES" Role="REGISTROS_CALIFICACIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CONTRATISTAS">
+        <PropertyRef Name="COD_CONTRATISTA" />
+      </Principal>
+      <Dependent Role="REGISTROS_CALIFICACIONES">
+        <PropertyRef Name="COD_CONTRATISTA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CONTRATISTAS_ACCIONISTAS_CONTRATISTAS_ACCIONISTAS">
+    <End Type="CONTRATISTAS_testModel.CONTRATISTAS_ACCIONISTAS" Role="CONTRATISTAS_ACCIONISTAS" Multiplicity="1" />
+    <End Type="CONTRATISTAS_testModel.CONTRATISTAS_ACCIONISTAS" Role="CONTRATISTAS_ACCIONISTAS1" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="CONTRATISTAS_ACCIONISTAS">
+        <PropertyRef Name="COD_CONTRATISTA_ACCIONISTA" />
+      </Principal>
+      <Dependent Role="CONTRATISTAS_ACCIONISTAS1">
+        <PropertyRef Name="COD_CONTRATISTA_ACCIONISTA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EXPERIENCIAS_ESTADOS">
+    <End Type="CONTRATISTAS_testModel.ESTADOS" Role="ESTADOS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.EXPERIENCIAS" Role="EXPERIENCIAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ESTADOS">
+        <PropertyRef Name="COD_ESTADO" />
+      </Principal>
+      <Dependent Role="EXPERIENCIAS">
+        <PropertyRef Name="COD_ESTADO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PROYECTOS_ESTADOS">
+    <End Type="CONTRATISTAS_testModel.ESTADOS" Role="ESTADOS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.PROYECTOS" Role="PROYECTOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ESTADOS">
+        <PropertyRef Name="COD_ESTADO" />
+      </Principal>
+      <Dependent Role="PROYECTOS">
+        <PropertyRef Name="COD_ESTADO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGISTRO_CONTRATISTAS_ESTADOS">
+    <End Type="CONTRATISTAS_testModel.ESTADOS" Role="ESTADOS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.REGISTRO_CONTRATISTAS" Role="REGISTRO_CONTRATISTAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ESTADOS">
+        <PropertyRef Name="COD_ESTADO" />
+      </Principal>
+      <Dependent Role="REGISTRO_CONTRATISTAS">
+        <PropertyRef Name="COD_ESTADO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGISTROS_CALIFICACIONES_ESTADOS">
+    <End Type="CONTRATISTAS_testModel.ESTADOS" Role="ESTADOS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.REGISTROS_CALIFICACIONES" Role="REGISTROS_CALIFICACIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ESTADOS">
+        <PropertyRef Name="COD_ESTADO" />
+      </Principal>
+      <Dependent Role="REGISTROS_CALIFICACIONES">
+        <PropertyRef Name="COD_ESTADO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EXPERIENCIAS_REGISTRO_CONTRATISTAS">
+    <End Type="CONTRATISTAS_testModel.REGISTRO_CONTRATISTAS" Role="REGISTRO_CONTRATISTAS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.EXPERIENCIAS" Role="EXPERIENCIAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="REGISTRO_CONTRATISTAS">
+        <PropertyRef Name="COD_REGISTRO_CONTRATISTA" />
+      </Principal>
+      <Dependent Role="EXPERIENCIAS">
+        <PropertyRef Name="COD_REGISTRO_CONTRATISTA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUBCAPITULOS_EXPERIENCIA_EXPERIENCIAS">
+    <End Type="CONTRATISTAS_testModel.EXPERIENCIAS" Role="EXPERIENCIAS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.SUBCAPITULOS_EXPERIENCIA" Role="SUBCAPITULOS_EXPERIENCIA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EXPERIENCIAS">
+        <PropertyRef Name="COD_EXPERIENCIA" />
+      </Principal>
+      <Dependent Role="SUBCAPITULOS_EXPERIENCIA">
+        <PropertyRef Name="COD_EXPERIENCIA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INFORMACIONES_FINANCIERAS_REGISTRO_CONTRATISTAS">
+    <End Type="CONTRATISTAS_testModel.REGISTRO_CONTRATISTAS" Role="REGISTRO_CONTRATISTAS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.INFORMACIONES_FINANCIERAS" Role="INFORMACIONES_FINANCIERAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="REGISTRO_CONTRATISTAS">
+        <PropertyRef Name="COD_REGISTRO_CONTRATISTA" />
+      </Principal>
+      <Dependent Role="INFORMACIONES_FINANCIERAS">
+        <PropertyRef Name="COD_REGISTRO_CONTRATISTA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PASSWORD_USUARIOS">
+    <End Type="CONTRATISTAS_testModel.USUARIOS" Role="USUARIOS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.PASSWORD" Role="PASSWORD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="COD_USUARIO" />
+      </Principal>
+      <Dependent Role="PASSWORD">
+        <PropertyRef Name="COD_USUARIO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_POSIBLES_RESPUESTAS_PREGUNTAS">
+    <End Type="CONTRATISTAS_testModel.PREGUNTAS" Role="PREGUNTAS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.POSIBLES_RESPUESTAS" Role="POSIBLES_RESPUESTAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PREGUNTAS">
+        <PropertyRef Name="COD_PREGUNTA" />
+      </Principal>
+      <Dependent Role="POSIBLES_RESPUESTAS">
+        <PropertyRef Name="COD_PREGUNTA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PREGUNTAS_USUARIOS">
+    <End Type="CONTRATISTAS_testModel.USUARIOS" Role="USUARIOS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.PREGUNTAS" Role="PREGUNTAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="COD_USUARIO" />
+      </Principal>
+      <Dependent Role="PREGUNTAS">
+        <PropertyRef Name="COD_USUARIO_CREACION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PREGUNTAS_USUARIOS1">
+    <End Type="CONTRATISTAS_testModel.USUARIOS" Role="USUARIOS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.PREGUNTAS" Role="PREGUNTAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="COD_USUARIO" />
+      </Principal>
+      <Dependent Role="PREGUNTAS">
+        <PropertyRef Name="COD_USUARIO_ULTIMA_MODIFICACION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RESPUESTAS_PREGUNTAS">
+    <End Type="CONTRATISTAS_testModel.PREGUNTAS" Role="PREGUNTAS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.RESPUESTAS" Role="RESPUESTAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PREGUNTAS">
+        <PropertyRef Name="COD_PREGUNTA" />
+      </Principal>
+      <Dependent Role="RESPUESTAS">
+        <PropertyRef Name="COD_PREGUNTA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGISTROS_CALIFICACIONES_PROCESOS">
+    <End Type="CONTRATISTAS_testModel.PROCESOS" Role="PROCESOS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.REGISTROS_CALIFICACIONES" Role="REGISTROS_CALIFICACIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PROCESOS">
+        <PropertyRef Name="COD_PROCESO" />
+      </Principal>
+      <Dependent Role="REGISTROS_CALIFICACIONES">
+        <PropertyRef Name="COD_PROCESO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGISTROS_CALIFICACIONES_PROYECTOS">
+    <End Type="CONTRATISTAS_testModel.PROYECTOS" Role="PROYECTOS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.REGISTROS_CALIFICACIONES" Role="REGISTROS_CALIFICACIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PROYECTOS">
+        <PropertyRef Name="COD_PROYECTO" />
+      </Principal>
+      <Dependent Role="REGISTROS_CALIFICACIONES">
+        <PropertyRef Name="COD_PROYECTO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGISTRO_CONTRATISTAS_USUARIOS">
+    <End Type="CONTRATISTAS_testModel.USUARIOS" Role="USUARIOS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.REGISTRO_CONTRATISTAS" Role="REGISTRO_CONTRATISTAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="COD_USUARIO" />
+      </Principal>
+      <Dependent Role="REGISTRO_CONTRATISTAS">
+        <PropertyRef Name="COD_USUARIO_CONTRATISTA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGISTRO_CONTRATISTAS_USUARIOS1">
+    <End Type="CONTRATISTAS_testModel.USUARIOS" Role="USUARIOS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.REGISTRO_CONTRATISTAS" Role="REGISTRO_CONTRATISTAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="COD_USUARIO" />
+      </Principal>
+      <Dependent Role="REGISTRO_CONTRATISTAS">
+        <PropertyRef Name="COD_USUARIO_PAYC_REVISION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGISTROS_CALIFICACIONES_SUBCAPITULOS">
+    <End Type="CONTRATISTAS_testModel.SUBCAPITULOS" Role="SUBCAPITULOS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.REGISTROS_CALIFICACIONES" Role="REGISTROS_CALIFICACIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SUBCAPITULOS">
+        <PropertyRef Name="COD_SUBCAPITULO" />
+      </Principal>
+      <Dependent Role="REGISTROS_CALIFICACIONES">
+        <PropertyRef Name="COD_SUBCAPITULO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGISTROS_CALIFICACIONES_USUARIOS">
+    <End Type="CONTRATISTAS_testModel.USUARIOS" Role="USUARIOS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.REGISTROS_CALIFICACIONES" Role="REGISTROS_CALIFICACIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="COD_USUARIO" />
+      </Principal>
+      <Dependent Role="REGISTROS_CALIFICACIONES">
+        <PropertyRef Name="COD_USUARIO_CREACION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGISTROS_CALIFICACIONES_USUARIOS1">
+    <End Type="CONTRATISTAS_testModel.USUARIOS" Role="USUARIOS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.REGISTROS_CALIFICACIONES" Role="REGISTROS_CALIFICACIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="COD_USUARIO" />
+      </Principal>
+      <Dependent Role="REGISTROS_CALIFICACIONES">
+        <PropertyRef Name="COD_USUARIO_ULTIMA_MODIFICACION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RESPUESTAS_USUARIOS">
+    <End Type="CONTRATISTAS_testModel.USUARIOS" Role="USUARIOS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.RESPUESTAS" Role="RESPUESTAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="COD_USUARIO" />
+      </Principal>
+      <Dependent Role="RESPUESTAS">
+        <PropertyRef Name="COD_USUARIO_CREACION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_USUARIOS_ROLES">
+    <End Type="CONTRATISTAS_testModel.ROLES" Role="ROLES" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.USUARIOS" Role="USUARIOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ROLES">
+        <PropertyRef Name="COD_ROL" />
+      </Principal>
+      <Dependent Role="USUARIOS">
+        <PropertyRef Name="COD_ROL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUBCAPITULOS_EXPERIENCIA_SUBCAPITULOS">
+    <End Type="CONTRATISTAS_testModel.SUBCAPITULOS" Role="SUBCAPITULOS" Multiplicity="0..1" />
+    <End Type="CONTRATISTAS_testModel.SUBCAPITULOS_EXPERIENCIA" Role="SUBCAPITULOS_EXPERIENCIA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SUBCAPITULOS">
+        <PropertyRef Name="COD_SUBCAPITULO" />
+      </Principal>
+      <Dependent Role="SUBCAPITULOS_EXPERIENCIA">
+        <PropertyRef Name="COD_SUBCAPITULO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AspNetUserRoles">
+    <End Type="CONTRATISTAS_testModel.AspNetRoles" Role="AspNetRoles" Multiplicity="*" />
+    <End Type="CONTRATISTAS_testModel.AspNetUsers" Role="AspNetUsers" Multiplicity="*" />
+  </Association>
+</Schema>

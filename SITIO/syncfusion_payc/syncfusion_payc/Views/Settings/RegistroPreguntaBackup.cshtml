@@ -1,0 +1,31 @@
+//BACKUP DEL REGISTRO DE PREGUNTAS!!!!!
+
+@model syncfusion_payc.Models.PREGUNTAS
+@{
+    ViewBag.Title = "Registro de Pregunta";
+}
+<h2>Registro de Pregunta</h2>
+@*@using (Html.BeginForm(FormMethod.Post, new { @class = "form-horizontal", role = "form" }))*@
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(model => model.DESCRIPCION)
+        @Html.EditorFor(model => model.DESCRIPCION, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.DESCRIPCION, "", new { @class = "text-danger" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.FECHA_CREACION)
+        @Html.EditorFor(model => model.FECHA_CREACION, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.FECHA_CREACION, "", new { @class = "text-danger" })
+    </div>
+
+    <input type="submit" value="Create" class="btn btn-default" />
+}
+<div>
+    @Html.ActionLink("Configuración Calificaciones", "Index", "Settings/Index")
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

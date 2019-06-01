@@ -1,0 +1,1885 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CONTRATISTAS_testModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="ContextKey" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="Model" Type="varbinary(max)" Nullable="false" />
+    <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ACCIONISTAS">
+    <Key>
+      <PropertyRef Name="COD_ACCIONISTA" />
+    </Key>
+    <Property Name="COD_ACCIONISTA" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOMBRE" Type="varchar" MaxLength="350" />
+    <Property Name="NIT_CEDULA" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ACTIVIDADES">
+    <Key>
+      <PropertyRef Name="COD_ACTIVIDAD" />
+    </Key>
+    <Property Name="COD_ACTIVIDAD" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ASPECTOS">
+    <Key>
+      <PropertyRef Name="COD_ASPECTO" />
+    </Key>
+    <Property Name="COD_ASPECTO" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="varchar" MaxLength="250" />
+    <Property Name="COD_USUARIO_CREACION" Type="bigint" />
+    <Property Name="COD_USUARIO_ULTIMA_MODIFICACION" Type="bigint" />
+    <Property Name="FECHA_CREACION" Type="datetime" />
+    <Property Name="FECHA_ULTIMA_MODIFICACION" Type="datetime" />
+    <Property Name="ESTADO_ASPECTO" Type="bit" />
+  </EntityType>
+  <EntityType Name="AspNetRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="256" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaims">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="ClaimType" Type="nvarchar(max)" />
+    <Property Name="ClaimValue" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogins">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="ProviderKey" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUserRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="RoleId" Type="nvarchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="EmailConfirmed" Type="bit" Nullable="false" />
+    <Property Name="PasswordHash" Type="nvarchar(max)" />
+    <Property Name="SecurityStamp" Type="nvarchar(max)" />
+    <Property Name="PhoneNumber" Type="nvarchar(max)" />
+    <Property Name="PhoneNumberConfirmed" Type="bit" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="bit" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="datetime" />
+    <Property Name="LockoutEnabled" Type="bit" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="256" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ATRIBUTOS">
+    <Key>
+      <PropertyRef Name="COD_ATRIBUTO" />
+    </Key>
+    <Property Name="COD_ATRIBUTO" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="varchar" MaxLength="350" />
+    <Property Name="COD_ASPECTO" Type="bigint" />
+    <Property Name="PESO" Type="numeric" Precision="30" Scale="20" />
+    <Property Name="COD_USUARIO_CREACION" Type="bigint" />
+    <Property Name="COD_USUARIO_ULTIMA_MODIFICACION" Type="bigint" />
+    <Property Name="FECHA_CREACION" Type="datetime" />
+    <Property Name="FECHA_ULTIMA_MODIFICACION" Type="datetime" />
+    <Property Name="ESTADO_ATRIBUTO" Type="bit" />
+  </EntityType>
+  <EntityType Name="CALIFICACIONES">
+    <Key>
+      <PropertyRef Name="COD_CALIFICACION" />
+    </Key>
+    <Property Name="COD_CALIFICACION" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CUMPLIMIENTO" Type="numeric" Precision="30" Scale="20" />
+    <Property Name="CALIDAD" Type="numeric" Precision="30" Scale="20" />
+    <Property Name="MANEJO" Type="numeric" Precision="30" Scale="20" />
+    <Property Name="SEGURIDAD_INDUSTRIAL" Type="numeric" Precision="30" Scale="20" />
+    <Property Name="MEDIO_AMBIENTE" Type="numeric" Precision="30" Scale="20" />
+    <Property Name="COD_REGISTRO_CALIFICACION" Type="bigint" />
+    <Property Name="COD_USUARIO_CREACION" Type="bigint" />
+    <Property Name="COD_USUARIO_ULTIMA_MODIFICACION" Type="bigint" />
+    <Property Name="FECHA_CREACION" Type="datetime" />
+    <Property Name="FECHA_ULTIMA_MODIFICACION" Type="datetime" />
+    <Property Name="ACCIONES_REQUERIDAS" Type="varchar" MaxLength="350" />
+    <Property Name="OBSERVACIONES_CONTRATISTAS" Type="varchar" MaxLength="350" />
+    <Property Name="ACCIONES_REALIZADAS_MES_ANTERIOR" Type="varchar" MaxLength="350" />
+    <Property Name="COD_ESTADO" Type="bigint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'CONTRATISTAS_test.dbo.CALIFICACIONES_TEMP' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="CALIFICACIONES_TEMP">
+          <Property Name="COD_CALIFICACION" Type="bigint" />
+          <Property Name="CUMPLIMIENTO" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="CALIDAD" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="MANEJO" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="SEGURIDAD_INDUSTRIAL" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="MEDIO_AMBIENTE" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="COD_REGISTRO_CALIFICACION" Type="bigint" />
+          <Property Name="COD_USUARIO_CREACION" Type="bigint" />
+          <Property Name="COD_USUARIO_ULTIMA_MODIFICACION" Type="bigint" />
+          <Property Name="FECHA_CREACION" Type="datetime" />
+          <Property Name="FECHA_ULTIMA_MODIFICACION" Type="datetime" />
+          <Property Name="ACCIONES_REQUERIDAS" Type="varchar" MaxLength="350" />
+          <Property Name="OBSERVACIONES_CONTRATISTAS" Type="varchar" MaxLength="350" />
+          <Property Name="ACCIONES_REALIZADAS_MES_ANTERIOR" Type="varchar" MaxLength="350" />
+          <Property Name="COD_ESTADO" Type="bigint" />
+          <Property Name="NIT" Type="bigint" />
+          <Property Name="COD_CONTRATISTA" Type="bigint" />
+        </EntityType>-->
+  <EntityType Name="CAPITULOS">
+    <Key>
+      <PropertyRef Name="COD_CAPITULO" />
+    </Key>
+    <Property Name="COD_CAPITULO" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CAPITULOS_EXPERIENCIA">
+    <Key>
+      <PropertyRef Name="COD_EXPERIENCIA_CAPITULO" />
+    </Key>
+    <Property Name="COD_EXPERIENCIA_CAPITULO" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="COD_EXPERIENCIA" Type="bigint" />
+    <Property Name="COD_CAPITULO" Type="bigint" />
+  </EntityType>
+  <EntityType Name="CIUDADES">
+    <Key>
+      <PropertyRef Name="COD_CIUDAD" />
+    </Key>
+    <Property Name="COD_CIUDAD" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CIUDADES_TRABAJO">
+    <Key>
+      <PropertyRef Name="COD_CIUDAD_TRABAJO" />
+    </Key>
+    <Property Name="COD_CIUDAD_TRABAJO" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="COD_CIUDAD" Type="bigint" />
+    <Property Name="COD_CONTRATISTA" Type="bigint" />
+  </EntityType>
+  <EntityType Name="CONTACTOS">
+    <Key>
+      <PropertyRef Name="COD_CONTACTO" />
+    </Key>
+    <Property Name="COD_CONTACTO" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="varchar" MaxLength="250" />
+    <Property Name="CARGO" Type="varchar" MaxLength="150" />
+    <Property Name="CELULAR" Type="varchar" MaxLength="50" />
+    <Property Name="TELEFONO" Type="varchar" MaxLength="50" />
+    <Property Name="EMAIL" Type="varchar" MaxLength="150" />
+    <Property Name="COD_CONTRATISTA" Type="bigint" />
+  </EntityType>
+  <EntityType Name="CONTRATISTAS">
+    <Key>
+      <PropertyRef Name="COD_CONTRATISTA" />
+    </Key>
+    <Property Name="COD_CONTRATISTA" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NIT" Type="bigint" />
+    <Property Name="DESCRIPCION" Type="varchar" MaxLength="350" />
+    <Property Name="COD_ESTADO" Type="bigint" />
+    <Property Name="COD_CIUDAD" Type="bigint" />
+    <Property Name="COD_REGISTRO_CONTRATISTA" Type="bigint" />
+    <Property Name="EXPERIENCIA_PAYC" Type="bit" />
+  </EntityType>
+  <EntityType Name="CONTRATISTAS_ACCIONISTAS">
+    <Key>
+      <PropertyRef Name="COD_CONTRATISTA_ACCIONISTA" />
+    </Key>
+    <Property Name="COD_CONTRATISTA_ACCIONISTA" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="COD_CONTRATISTA" Type="bigint" />
+    <Property Name="COD_ACCIONISTA" Type="bigint" />
+    <Property Name="PARTICIPACION" Type="numeric" Precision="30" Scale="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'CONTRATISTAS_test.dbo.CONTRATISTAS_TEMP' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="CONTRATISTAS_TEMP">
+          <Property Name="COD_CONTRATISTA" Type="bigint" />
+          <Property Name="NIT" Type="bigint" />
+          <Property Name="DESCRIPCION" Type="varchar" MaxLength="350" />
+          <Property Name="COD_ESTADO" Type="bigint" />
+          <Property Name="COD_CIUDAD" Type="bigint" />
+          <Property Name="COD_REGISTRO_CONTRATISTA" Type="bigint" />
+          <Property Name="EXPERIENCIA_PAYC" Type="bit" />
+        </EntityType>-->
+  <EntityType Name="ESTADOS">
+    <Key>
+      <PropertyRef Name="COD_ESTADO" />
+    </Key>
+    <Property Name="COD_ESTADO" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="varchar" MaxLength="350" />
+    <Property Name="TABLA_ESTADO" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="EXPERIENCIAS">
+    <Key>
+      <PropertyRef Name="COD_EXPERIENCIA" />
+    </Key>
+    <Property Name="COD_EXPERIENCIA" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="COD_REGISTRO_CONTRATISTA" Type="bigint" />
+    <Property Name="DESCRIPCION" Type="varchar(max)" />
+    <Property Name="VALOR" Type="numeric" Precision="30" Scale="15" />
+    <Property Name="MONEDA" Type="varchar" MaxLength="50" />
+    <Property Name="PROYECTO" Type="varchar(max)" />
+    <Property Name="COD_CIUDAD" Type="bigint" />
+    <Property Name="CONTRATANTE" Type="varchar(max)" />
+    <Property Name="FECHA_INICIO" Type="date" />
+    <Property Name="FECHA_FIN" Type="date" />
+    <Property Name="MEDIDA_TRABAJO" Type="varchar" MaxLength="250" />
+    <Property Name="UNIDAD_MEDIDA_TRABAJO" Type="varchar" MaxLength="50" />
+    <Property Name="OBSERVACIONES" Type="varchar" MaxLength="250" />
+    <Property Name="COD_ESTADO" Type="bigint" />
+    <Property Name="EXPERIENCIA_PAYC" Type="bit" />
+    <Property Name="OBSERVACION_REVISION" Type="varchar(max)" />
+    <Property Name="RUTA_CERTIFICACION" Type="varchar" MaxLength="350" />
+    <Property Name="OBJETO_CONTRACTUAL" Type="varchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'CONTRATISTAS_test.dbo.EXPERIENCIAS_TEMP' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="EXPERIENCIAS_TEMP">
+          <Property Name="COD_EXPERIENCIA" Type="bigint" />
+          <Property Name="COD_REGISTRO_CONTRATISTA" Type="bigint" />
+          <Property Name="DESCRIPCION" Type="varchar(max)" />
+          <Property Name="VALOR" Type="numeric" Precision="30" Scale="15" />
+          <Property Name="MONEDA" Type="varchar" MaxLength="50" />
+          <Property Name="PROYECTO" Type="varchar(max)" />
+          <Property Name="COD_CIUDAD" Type="bigint" />
+          <Property Name="CONTRATANTE" Type="varchar(max)" />
+          <Property Name="FECHA_INICIO" Type="date" />
+          <Property Name="FECHA_FIN" Type="date" />
+          <Property Name="MEDIDA_TRABAJO" Type="varchar" MaxLength="250" />
+          <Property Name="UNIDAD_MEDIDA_TRABAJO" Type="varchar" MaxLength="50" />
+          <Property Name="OBSERVACIONES" Type="varchar" MaxLength="250" />
+          <Property Name="COD_ESTADO" Type="bigint" />
+          <Property Name="EXPERIENCIA_PAYC" Type="bit" />
+          <Property Name="OBSERVACION_REVISION" Type="varchar(max)" />
+          <Property Name="RUTA_CERTIFICACION" Type="varchar" MaxLength="350" />
+          <Property Name="OBJETO_CONTRACTUAL" Type="varchar(max)" />
+          <Property Name="NIT" Type="bigint" />
+          <Property Name="COD_CONTRATISTA" Type="bigint" />
+        </EntityType>-->
+  <EntityType Name="INFORMACIONES_FINANCIERAS">
+    <Key>
+      <PropertyRef Name="COD_INFORMACION_FINANCIERA" />
+    </Key>
+    <Property Name="COD_INFORMACION_FINANCIERA" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="COD_REGISTRO_CONTRATISTA" Type="bigint" />
+    <Property Name="FECHA_CORTE" Type="date" />
+    <Property Name="ACTIVO_CORRIENTE" Type="numeric" Precision="30" Scale="15" />
+    <Property Name="ACTIVO_TOTAL" Type="numeric" Precision="30" Scale="15" />
+    <Property Name="PASIVO_CORRIENTE" Type="numeric" Precision="30" Scale="15" />
+    <Property Name="PASIVO_TOTAL" Type="numeric" Precision="30" Scale="15" />
+    <Property Name="PATRIMONIO" Type="numeric" Precision="30" Scale="15" />
+    <Property Name="ANTICIPOS_CORRIENTES" Type="numeric" Precision="30" Scale="15" />
+    <Property Name="ANTICIPOS_TOTALES" Type="numeric" Precision="30" Scale="15" />
+    <Property Name="MAQUINARIA_EQUIPO" Type="numeric" Precision="30" Scale="15" />
+    <Property Name="VENTAS" Type="numeric" Precision="30" Scale="15" />
+    <Property Name="UTILIDAD" Type="numeric" Precision="30" Scale="15" />
+    <Property Name="OBSERVACION_REVISION" Type="varchar" MaxLength="350" />
+    <Property Name="RUTA_ESTADOS_FINANCIEROS" Type="varchar" MaxLength="350" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'CONTRATISTAS_test.dbo.INFORMACIONES_FINANCIERAS_TEMP' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="INFORMACIONES_FINANCIERAS_TEMP">
+          <Property Name="COD_INFORMACION_FINANCIERA" Type="bigint" />
+          <Property Name="COD_REGISTRO_CONTRATISTA" Type="bigint" />
+          <Property Name="FECHA_CORTE" Type="date" />
+          <Property Name="ACTIVO_CORRIENTE" Type="numeric" Precision="30" Scale="15" />
+          <Property Name="ACTIVO_TOTAL" Type="numeric" Precision="30" Scale="15" />
+          <Property Name="PASIVO_CORRIENTE" Type="numeric" Precision="30" Scale="15" />
+          <Property Name="PASIVO_TOTAL" Type="numeric" Precision="30" Scale="15" />
+          <Property Name="PATRIMONIO" Type="numeric" Precision="30" Scale="15" />
+          <Property Name="OBSERVACION_REVISION" Type="varchar" MaxLength="350" />
+          <Property Name="RUTA_ESTADOS_FINANCIEROS" Type="varchar" MaxLength="350" />
+          <Property Name="NIT" Type="bigint" />
+          <Property Name="COD_CONTRATISTA" Type="bigint" />
+        </EntityType>-->
+  <EntityType Name="PASSWORD">
+    <Key>
+      <PropertyRef Name="COD_PASSWORD" />
+    </Key>
+    <Property Name="COD_PASSWORD" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="varchar" MaxLength="50" />
+    <Property Name="COD_USUARIO" Type="bigint" />
+  </EntityType>
+  <EntityType Name="POSIBLES_RESPUESTAS">
+    <Key>
+      <PropertyRef Name="COD_POSIBLE_RESPUESTA" />
+    </Key>
+    <Property Name="COD_POSIBLE_RESPUESTA" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="COD_PREGUNTA" Type="bigint" />
+    <Property Name="TIPO_RESPUESTA" Type="varchar" MaxLength="250" />
+    <Property Name="VALOR" Type="numeric" Precision="30" Scale="20" />
+  </EntityType>
+  <EntityType Name="PREGUNTAS">
+    <Key>
+      <PropertyRef Name="COD_PREGUNTA" />
+    </Key>
+    <Property Name="COD_PREGUNTA" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="varchar" MaxLength="250" />
+    <Property Name="COD_USUARIO_CREACION" Type="bigint" />
+    <Property Name="COD_USUARIO_ULTIMA_MODIFICACION" Type="bigint" />
+    <Property Name="FECHA_CREACION" Type="datetime" />
+    <Property Name="FECHA_ULTIMA_MODIFICACION" Type="datetime" />
+    <Property Name="ESTADO_PREGUNTA" Type="bit" />
+    <Property Name="COD_ATRIBUTO" Type="bigint" />
+  </EntityType>
+  <EntityType Name="PROCESOS">
+    <Key>
+      <PropertyRef Name="COD_PROCESO" />
+    </Key>
+    <Property Name="COD_PROCESO" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="PROYECTOS">
+    <Key>
+      <PropertyRef Name="COD_PROYECTO" />
+    </Key>
+    <Property Name="COD_PROYECTO" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CECO" Type="varchar" MaxLength="350" />
+    <Property Name="DESCRIPCION" Type="varchar" MaxLength="350" />
+    <Property Name="COD_ESTADO" Type="bigint" />
+    <Property Name="COD_USUARIO_CALIFICAR" Type="bigint" />
+    <Property Name="COD_USUARIO_REVISAR" Type="bigint" />
+    <Property Name="EXISTE_INTEGRAPP" Type="bit" />
+    <Property Name="FECHA_INICIO" Type="date" />
+    <Property Name="FECHA_FIN" Type="date" />
+  </EntityType>
+  <EntityType Name="REGISTRO_CONTRATISTAS">
+    <Key>
+      <PropertyRef Name="COD_REGISTRO_CONTRATISTA" />
+    </Key>
+    <Property Name="COD_REGISTRO_CONTRATISTA" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="COD_ESTADO" Type="bigint" />
+    <Property Name="COD_CONTRATISTA" Type="bigint" />
+    <Property Name="FECHA_CREACION" Type="datetime" />
+    <Property Name="FECHA_ULTIMA_ACTUALIZACION" Type="datetime" />
+    <Property Name="COD_USUARIO_PAYC_REVISION" Type="bigint" />
+    <Property Name="COD_USUARIO_CONTRATISTA" Type="bigint" />
+    <Property Name="DIRECCION" Type="varchar" MaxLength="350" />
+    <Property Name="REPRESENTANTE_LEGAL" Type="varchar" MaxLength="350" />
+    <Property Name="TELEFONO_REPRESENTANTE" Type="varchar" MaxLength="350" />
+    <Property Name="EMAIL_REPRESENTANTE" Type="varchar" MaxLength="350" />
+    <Property Name="FECHA_CONSTITUCION" Type="date" />
+    <Property Name="FECHA_ULTIMO_REGISTRO" Type="datetime" />
+    <Property Name="RUTA_RUT" Type="varchar" MaxLength="250" />
+    <Property Name="FECHA_RUT" Type="date" />
+    <Property Name="TIENE_EXPERIENCIAS" Type="bit" />
+    <Property Name="TIENE_ESTADOS_FINANCIEROS" Type="bit" />
+    <Property Name="RUTA_CAMARA" Type="varchar" MaxLength="250" />
+    <Property Name="FECHA_CAMARA" Type="date" />
+    <Property Name="TIPO_REGISTRO" Type="varchar" MaxLength="350" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'CONTRATISTAS_test.dbo.REGISTRO_CONTRATISTAS_TEMP' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="REGISTRO_CONTRATISTAS_TEMP">
+          <Property Name="COD_REGISTRO_CONTRATISTA" Type="bigint" />
+          <Property Name="COD_ESTADO" Type="bigint" />
+          <Property Name="COD_CONTRATISTA" Type="bigint" />
+          <Property Name="FECHA_CREACION" Type="datetime" />
+          <Property Name="FECHA_ULTIMA_ACTUALIZACION" Type="datetime" />
+          <Property Name="COD_USUARIO_PAYC_REVISION" Type="bigint" />
+          <Property Name="COD_USUARIO_CONTRATISTA" Type="bigint" />
+          <Property Name="DIRECCION" Type="varchar" MaxLength="350" />
+          <Property Name="REPRESENTANTE_LEGAL" Type="varchar" MaxLength="350" />
+          <Property Name="TELEFONO_REPRESENTANTE" Type="varchar" MaxLength="350" />
+          <Property Name="EMAIL_REPRESENTANTE" Type="varchar" MaxLength="350" />
+          <Property Name="FECHA_CONSTITUCION" Type="date" />
+          <Property Name="FECHA_ULTIMO_REGISTRO" Type="datetime" />
+          <Property Name="RUTA_RUT" Type="varchar" MaxLength="250" />
+          <Property Name="FECHA_RUT" Type="date" />
+          <Property Name="TIENE_EXPERIENCIAS" Type="bit" />
+          <Property Name="TIENE_ESTADOS_FINANCIEROS" Type="bit" />
+          <Property Name="RUTA_CAMARA" Type="varchar" MaxLength="250" />
+          <Property Name="FECHA_CAMARA" Type="date" />
+          <Property Name="TIPO_REGISTRO" Type="varchar" MaxLength="350" />
+          <Property Name="NIT" Type="bigint" />
+        </EntityType>-->
+  <EntityType Name="REGISTROS_CALIFICACIONES">
+    <Key>
+      <PropertyRef Name="COD_REGISTRO_CALIFICACION" />
+    </Key>
+    <Property Name="COD_REGISTRO_CALIFICACION" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="COD_PROYECTO" Type="bigint" />
+    <Property Name="COD_CONTRATISTA" Type="bigint" />
+    <Property Name="COD_ACTIVIDAD" Type="bigint" />
+    <Property Name="COD_CAPITULO" Type="bigint" />
+    <Property Name="COD_SUBCAPITULO" Type="bigint" />
+    <Property Name="COD_PROCESO" Type="bigint" />
+    <Property Name="DESCRIPCION_PROCESO" Type="varchar(max)" />
+    <Property Name="COD_USUARIO_CREACION" Type="bigint" />
+    <Property Name="COD_USUARIO_ULTIMA_MODIFICACION" Type="bigint" />
+    <Property Name="FECHA_CREACION" Type="datetime" />
+    <Property Name="FECHA_ULTIMA_MODIFICACION" Type="datetime" />
+    <Property Name="COD_ESTADO" Type="bigint" />
+    <Property Name="COD_CIUDAD" Type="bigint" />
+    <Property Name="PERIODO_CALIFICADO" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'CONTRATISTAS_test.dbo.REGISTROS_CALIFICACIONES_TEMP' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="REGISTROS_CALIFICACIONES_TEMP">
+          <Property Name="COD_REGISTRO_CALIFICACION" Type="bigint" />
+          <Property Name="COD_PROYECTO" Type="bigint" />
+          <Property Name="COD_CONTRATISTA" Type="bigint" />
+          <Property Name="COD_ACTIVIDAD" Type="bigint" />
+          <Property Name="COD_CAPITULO" Type="bigint" />
+          <Property Name="COD_SUBCAPITULO" Type="bigint" />
+          <Property Name="COD_PROCESO" Type="bigint" />
+          <Property Name="DESCRIPCION_PROCESO" Type="varchar(max)" />
+          <Property Name="COD_USUARIO_CREACION" Type="bigint" />
+          <Property Name="COD_USUARIO_ULTIMA_MODIFICACION" Type="bigint" />
+          <Property Name="FECHA_CREACION" Type="datetime" />
+          <Property Name="FECHA_ULTIMA_MODIFICACION" Type="datetime" />
+          <Property Name="COD_ESTADO" Type="bigint" />
+          <Property Name="COD_CIUDAD" Type="bigint" />
+          <Property Name="NIT" Type="bigint" />
+          <Property Name="CIUDAD" Type="varchar" MaxLength="100" />
+          <Property Name="CECO" Type="varchar" MaxLength="50" />
+        </EntityType>-->
+  <EntityType Name="RESPUESTAS">
+    <Key>
+      <PropertyRef Name="COD_RESPUESTA" />
+    </Key>
+    <Property Name="COD_RESPUESTA" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="COD_PREGUNTA" Type="bigint" />
+    <Property Name="RESPUESTA_INGRESADA" Type="varchar" MaxLength="250" />
+    <Property Name="COD_CALIFICACION" Type="bigint" />
+    <Property Name="COD_USUARIO_CREACION" Type="bigint" />
+    <Property Name="FECHA_CREACION" Type="datetime" />
+    <Property Name="ESTADO_RESPUESTA" Type="bit" />
+    <Property Name="VALOR_RESPUESTA_SELECCIONADA" Type="numeric" Precision="30" Scale="20" />
+    <Property Name="DESCRIPCION_RESPUESTA" Type="varchar" MaxLength="250" />
+    <Property Name="VALOR_COD_POSIBLE_RESPUESTA" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ROLES">
+    <Key>
+      <PropertyRef Name="COD_ROL" />
+    </Key>
+    <Property Name="COD_ROL" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SUBCAPITULOS">
+    <Key>
+      <PropertyRef Name="COD_SUBCAPITULO" />
+    </Key>
+    <Property Name="COD_SUBCAPITULO" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="varchar" MaxLength="350" />
+    <Property Name="COD_CAPITULO" Type="bigint" />
+  </EntityType>
+  <EntityType Name="SUBCAPITULOS_EXPERIENCIA">
+    <Key>
+      <PropertyRef Name="COD_EXPERIENCIA_SUBCAPITULO" />
+    </Key>
+    <Property Name="COD_EXPERIENCIA_SUBCAPITULO" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="COD_EXPERIENCIA" Type="bigint" />
+    <Property Name="COD_SUBCAPITULO" Type="bigint" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="USUARIOS">
+    <Key>
+      <PropertyRef Name="COD_USUARIO" />
+    </Key>
+    <Property Name="COD_USUARIO" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="varchar" MaxLength="350" />
+    <Property Name="NOMBRE" Type="varchar" MaxLength="350" />
+    <Property Name="APELLIDO" Type="varchar" MaxLength="350" />
+    <Property Name="CARGO" Type="varchar" MaxLength="350" />
+    <Property Name="COD_USUARIO_CREACION" Type="bigint" />
+    <Property Name="COD_USUARIO_ULTIMA_MODIFICACION" Type="bigint" />
+    <Property Name="FECHA_CREACION" Type="datetime" />
+    <Property Name="FECHA_ULTIMA_MODIFICACION" Type="datetime" />
+    <Property Name="ESTADO_USUARIO" Type="bit" />
+    <Property Name="COD_ROL" Type="bigint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CONTRATISTAS_test.dbo.CONTRATISTAS_EXPERIENCIAS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="CONTRATISTAS_EXPERIENCIAS">
+    <Key>
+      <PropertyRef Name="COD_CONTRATISTA" />
+      <PropertyRef Name="EXPERIENCIA_PAYC" />
+    </Key>
+    <Property Name="COD_CONTRATISTA" Type="bigint" Nullable="false" />
+    <Property Name="EXPERIENCIA_PAYC" Type="varchar" MaxLength="2" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CONTRATISTAS_test.dbo.VISTA_ACCIONISTAS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VISTA_ACCIONISTAS">
+    <Key>
+      <PropertyRef Name="COD_ACCIONISTA" />
+      <PropertyRef Name="COD_CONTRATISTA" />
+      <PropertyRef Name="COD_CONTRATISTA_ACCIONISTA" />
+    </Key>
+    <Property Name="COD_ACCIONISTA" Type="bigint" Nullable="false" />
+    <Property Name="NOMBRE" Type="varchar" MaxLength="350" />
+    <Property Name="NIT_CEDULA" Type="bigint" />
+    <Property Name="COD_CONTRATISTA" Type="bigint" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="varchar" MaxLength="350" />
+    <Property Name="PARTICIPACION" Type="numeric" Precision="30" Scale="20" />
+    <Property Name="COD_CONTRATISTA_ACCIONISTA" Type="bigint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CONTRATISTAS_test.dbo.VISTA_CONTRATISTAS_EXPERIENCIAS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VISTA_CONTRATISTAS_EXPERIENCIAS">
+    <Key>
+      <PropertyRef Name="COD_CONTRATISTA" />
+      <PropertyRef Name="COD_EXPERIENCIA" />
+    </Key>
+    <Property Name="COD_CONTRATISTA" Type="bigint" Nullable="false" />
+    <Property Name="COD_EXPERIENCIA" Type="bigint" Nullable="false" />
+    <Property Name="COD_REGISTRO_CONTRATISTA" Type="bigint" />
+    <Property Name="DESCRIPCION" Type="varchar(max)" />
+    <Property Name="VALOR" Type="numeric" Precision="30" Scale="15" />
+    <Property Name="MONEDA" Type="varchar" MaxLength="50" />
+    <Property Name="PROYECTO" Type="varchar(max)" />
+    <Property Name="COD_CIUDAD" Type="bigint" />
+    <Property Name="CONTRATANTE" Type="varchar(max)" />
+    <Property Name="FECHA_INICIO" Type="date" />
+    <Property Name="FECHA_FIN" Type="date" />
+    <Property Name="MEDIDA_TRABAJO" Type="varchar" MaxLength="250" />
+    <Property Name="UNIDAD_MEDIDA_TRABAJO" Type="varchar" MaxLength="50" />
+    <Property Name="OBSERVACIONES" Type="varchar" MaxLength="250" />
+    <Property Name="COD_ESTADO" Type="bigint" />
+    <Property Name="EXPERIENCIA_PAYC" Type="bit" />
+    <Property Name="OBSERVACION_REVISION" Type="varchar(max)" />
+    <Property Name="RUTA_CERTIFICACION" Type="varchar" MaxLength="350" />
+    <Property Name="OBJETO_CONTRACTUAL" Type="varchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CONTRATISTAS_test.dbo.VISTA_DETALLES_ASPECTOS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VISTA_DETALLES_ASPECTOS">
+    <Key>
+      <PropertyRef Name="COD_ASPECTO" />
+    </Key>
+    <Property Name="COD_VISTA_DETALLES_ASPECTOS" Type="bigint" />
+    <Property Name="COD_ASPECTO" Type="bigint" Nullable="false" />
+    <Property Name="ASPECTO" Type="varchar" MaxLength="250" />
+    <Property Name="# de Atributos" Type="int" />
+    <Property Name="ESTADO" Type="bit" />
+    <Property Name="FECHA CREACION" Type="datetime" />
+    <Property Name="FECHA MODIFICACION" Type="datetime" />
+    <Property Name="EDITADO POR" Type="bigint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CONTRATISTAS_test.dbo.VISTA_DETALLES_CRITERIOS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VISTA_DETALLES_CRITERIOS">
+    <Key>
+      <PropertyRef Name="COD_ASPECTO" />
+      <PropertyRef Name="COD_ATRIBUTO" />
+    </Key>
+    <Property Name="COD_VISTA_DETALLES_CRITERIOS" Type="bigint" />
+    <Property Name="COD_ASPECTO" Type="bigint" Nullable="false" />
+    <Property Name="ASPECTO" Type="varchar" MaxLength="250" />
+    <Property Name="COD_ATRIBUTO" Type="bigint" Nullable="false" />
+    <Property Name="ATRIBUTO" Type="varchar" MaxLength="350" />
+    <Property Name="PONDERACION" Type="numeric" Precision="30" Scale="20" />
+    <Property Name="# de preguntas" Type="int" />
+    <Property Name="FECHA CREACION" Type="datetime" />
+    <Property Name="FECHA EDICION" Type="datetime" />
+    <Property Name="COD_USUARIO_ULTIMA_MODIFICACION" Type="bigint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CONTRATISTAS_test.dbo.VISTA_DETALLES_PREGUNTAS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VISTA_DETALLES_PREGUNTAS">
+    <Key>
+      <PropertyRef Name="COD_PREGUNTA" />
+    </Key>
+    <Property Name="COD_VISTA_DETALLES_PREGUNTAS" Type="bigint" />
+    <Property Name="COD_PREGUNTA" Type="bigint" Nullable="false" />
+    <Property Name="COD_ATRIBUTO" Type="bigint" />
+    <Property Name="COD_ASPECTO" Type="bigint" />
+    <Property Name="PREGUNTA" Type="varchar" MaxLength="250" />
+    <Property Name="# de Respuestas" Type="int" />
+    <Property Name="ATRIBUTO" Type="varchar" MaxLength="350" />
+    <Property Name="ASPECTO" Type="varchar" MaxLength="250" />
+    <Property Name="FECHA_CREACION" Type="datetime" />
+    <Property Name="FECHA_ULTIMA_MODIFICACION" Type="datetime" />
+    <Property Name="COD_USUARIO_ULTIMA_MODIFICACION" Type="bigint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CONTRATISTAS_test.dbo.VISTA_DETALLES_REGISTROS_CALIFICACIONES' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VISTA_DETALLES_REGISTROS_CALIFICACIONES">
+    <Key>
+      <PropertyRef Name="COD_PROYECTO" />
+    </Key>
+    <Property Name="COD_VISTA_DETALLES_REGISTROS_CALIFICACIONES" Type="bigint" />
+    <Property Name="COD_PROYECTO" Type="bigint" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="varchar" MaxLength="350" />
+    <Property Name="FECHA_INICIO" Type="date" />
+    <Property Name="FECHA_FIN" Type="date" />
+    <Property Name="ULTIMA_CALIFICACION" Type="datetime" />
+    <Property Name="COD_REGISTRO_CALIFICACION" Type="bigint" />
+    <Property Name="FECHA_CREACION_REGISTRO_CALIFICACION" Type="datetime" />
+    <Property Name="ESTADO" Type="varchar" MaxLength="350" />
+    <Property Name="COD_CONTRATISTA" Type="bigint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CONTRATISTAS_test.dbo.VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD">
+    <Key>
+      <PropertyRef Name="COD_CALIFICACION" />
+    </Key>
+    <Property Name="COD_VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD" Type="bigint" />
+    <Property Name="COD_CALIFICACION" Type="bigint" Nullable="false" />
+    <Property Name="COD_REGISTRO_CALIFICACION" Type="bigint" />
+    <Property Name="COD_PROYECTO" Type="bigint" />
+    <Property Name="COD_USUARIO_CREACION" Type="bigint" />
+    <Property Name="COD_USUARIO_ULTIMA_MODIFICACION" Type="bigint" />
+    <Property Name="CREADO_POR" Type="varchar" MaxLength="350" />
+    <Property Name="EDITADO_POR" Type="varchar" MaxLength="350" />
+    <Property Name="COD_CONTRATISTA" Type="bigint" />
+    <Property Name="CONTRATISTA" Type="varchar" MaxLength="350" />
+    <Property Name="FECHA_CREACION" Type="datetime" />
+    <Property Name="FECHA_ULTIMA_MODIFICACION" Type="datetime" />
+    <Property Name="COD_ACTIVIDAD" Type="bigint" />
+    <Property Name="ACTIVIDAD" Type="varchar" MaxLength="50" />
+    <Property Name="COD_PROCESO" Type="bigint" />
+    <Property Name="PROCESO" Type="varchar" MaxLength="50" />
+    <Property Name="COD_ESTADO" Type="bigint" />
+    <Property Name="ESTADO" Type="varchar" MaxLength="350" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CONTRATISTAS_test.dbo.VISTA_INFORMACION_FINANCIERA' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VISTA_INFORMACION_FINANCIERA">
+    <Key>
+      <PropertyRef Name="COD_INFORMACION_FINANCIERA" />
+      <PropertyRef Name="COD_CONTRATISTA" />
+    </Key>
+    <Property Name="COD_INFORMACION_FINANCIERA" Type="bigint" Nullable="false" />
+    <Property Name="COD_REGISTRO_CONTRATISTA" Type="bigint" />
+    <Property Name="FECHA_CORTE" Type="date" />
+    <Property Name="ACTIVO_CORRIENTE" Type="numeric" Precision="30" Scale="15" />
+    <Property Name="ACTIVO_TOTAL" Type="numeric" Precision="30" Scale="15" />
+    <Property Name="PASIVO_CORRIENTE" Type="numeric" Precision="30" Scale="15" />
+    <Property Name="PASIVO_TOTAL" Type="numeric" Precision="30" Scale="15" />
+    <Property Name="PATRIMONIO" Type="numeric" Precision="30" Scale="15" />
+    <Property Name="OBSERVACION_REVISION" Type="varchar" MaxLength="350" />
+    <Property Name="RUTA_ESTADOS_FINANCIEROS" Type="varchar" MaxLength="350" />
+    <Property Name="COD_CONTRATISTA" Type="bigint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'CONTRATISTAS_test.dbo.VISTA_REPORTE_CONTRATACIONES' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="VISTA_REPORTE_CONTRATACIONES">
+          <Property Name="PROCESOS" Type="varchar" MaxLength="50" />
+          <Property Name="ACTIVIDADES" Type="varchar" MaxLength="50" />
+          <Property Name="ACTIVO_TOTAL" Type="numeric" Precision="30" Scale="15" />
+          <Property Name="PASIVO_TOTAL" Type="numeric" Precision="30" Scale="15" />
+          <Property Name="PATRIMONIO" Type="numeric" Precision="30" Scale="15" />
+          <Property Name="MEDIDA_TRABAJO" Type="varchar" MaxLength="250" />
+          <Property Name="CUMPLIMIENTO" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="CALIDAD" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="MANEJO" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="SEGURIDAD_INDUSTRIAL" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="MEDIO_AMBIENTE" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="CAPITULO" Type="varchar" MaxLength="50" />
+          <Property Name="CIUDAD" Type="varchar" MaxLength="50" />
+          <Property Name="CONTRATISTA" Type="varchar" MaxLength="350" />
+          <Property Name="EXPERIENCIAS" Type="varchar(max)" />
+          <Property Name="FECHA_CORTE" Type="date" />
+          <Property Name="NIT" Type="bigint" />
+          <Property Name="SUBCAPITULOS" Type="varchar" MaxLength="350" />
+          <Property Name="VALOR_EXPERIENCIA" Type="numeric" Precision="30" Scale="15" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CONTRATISTAS_test.dbo.VISTA_REPORTE_CONTRATISTAS1' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VISTA_REPORTE_CONTRATISTAS1">
+    <Key>
+      <PropertyRef Name="COD_REGISTRO_CALIFICACION" />
+    </Key>
+    <Property Name="NIT" Type="bigint" />
+    <Property Name="CONTRATISTA" Type="varchar" MaxLength="350" />
+    <Property Name="PROCESOS_DETALLE" Type="varchar(max)" />
+    <Property Name="COD_REGISTRO_CALIFICACION" Type="bigint" Nullable="false" />
+    <Property Name="COD_CAPITULO" Type="bigint" />
+    <Property Name="COD_SUBCAPITULO" Type="bigint" />
+    <Property Name="COD_PROCESO" Type="bigint" />
+    <Property Name="COD_PROYECTO" Type="bigint" />
+    <Property Name="COD_ACTIVIDAD" Type="bigint" />
+    <Property Name="COD_REGISTRO_CONTRATISTA" Type="bigint" />
+    <Property Name="EXPERIENCIA_PAYC" Type="bit" />
+    <Property Name="ACTIVO_CORRIENTE" Type="numeric" Precision="30" Scale="15" />
+    <Property Name="ACTIVO_TOTAL" Type="numeric" Precision="30" Scale="15" />
+    <Property Name="PASIVO_CORRIENTE" Type="numeric" Precision="30" Scale="15" />
+    <Property Name="PASIVO_TOTAL" Type="numeric" Precision="30" Scale="15" />
+    <Property Name="PATRIMONIO" Type="numeric" Precision="30" Scale="15" />
+    <Property Name="FECHA_ESTADO_FINANCIERO" Type="date" />
+    <Property Name="CIUDAD" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'CONTRATISTAS_test.dbo.VISTA_REPORTE_CONTRATISTAS2' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="VISTA_REPORTE_CONTRATISTAS2">
+          <Property Name="NIT" Type="bigint" />
+          <Property Name="CONTRATISTA" Type="varchar" MaxLength="350" />
+          <Property Name="PROCESOS_DETALLE" Type="varchar(max)" />
+          <Property Name="COD_CAPITULO" Type="bigint" />
+          <Property Name="COD_SUBCAPITULO" Type="bigint" />
+          <Property Name="COD_PROCESO" Type="bigint" />
+          <Property Name="COD_PROYECTO" Type="bigint" />
+          <Property Name="COD_ACTIVIDAD" Type="bigint" />
+          <Property Name="CUMPLIMIENTO" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="CALIDAD" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="MANEJO" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="SEGURIDAD_INDUSTRIAL" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="MEDIO_AMBIENTE" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="COD_REGISTRO_CONTRATISTA" Type="bigint" />
+          <Property Name="EXPERIENCIA_PAYC" Type="bit" />
+          <Property Name="ACTIVO_CORRIENTE" Type="numeric" Precision="30" Scale="15" />
+          <Property Name="ACTIVO_TOTAL" Type="numeric" Precision="30" Scale="15" />
+          <Property Name="PASIVO_CORRIENTE" Type="numeric" Precision="30" Scale="15" />
+          <Property Name="PASIVO_TOTAL" Type="numeric" Precision="30" Scale="15" />
+          <Property Name="FECHA_ESTADO_FINANCIERO" Type="date" />
+          <Property Name="PATRIMONIO" Type="numeric" Precision="30" Scale="15" />
+          <Property Name="CIUDAD" Type="varchar" MaxLength="50" />
+          <Property Name="FECHA_CALIFICACION" Type="datetime" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'CONTRATISTAS_test.dbo.VISTA_REPORTE_CONTRATISTAS3' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="VISTA_REPORTE_CONTRATISTAS3">
+          <Property Name="NIT" Type="bigint" />
+          <Property Name="CONTRATISTA" Type="varchar" MaxLength="350" />
+          <Property Name="CECO" Type="varchar" MaxLength="350" />
+          <Property Name="PROYECTO" Type="varchar" MaxLength="350" />
+          <Property Name="CAPITULO" Type="varchar" MaxLength="50" />
+          <Property Name="SUBCAPITULO" Type="varchar" MaxLength="350" />
+          <Property Name="PROCESOS_DETALLE" Type="varchar(max)" />
+          <Property Name="COD_PROCESO" Type="bigint" />
+          <Property Name="COD_ACTIVIDAD" Type="bigint" />
+          <Property Name="CUMPLIMIENTO" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="CALIDAD" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="MANEJO" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="SEGURIDAD_INDUSTRIAL" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="MEDIO_AMBIENTE" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="COD_REGISTRO_CONTRATISTA" Type="bigint" />
+          <Property Name="EXPERIENCIA_PAYC" Type="bit" />
+          <Property Name="ACTIVO_CORRIENTE" Type="numeric" Precision="30" Scale="15" />
+          <Property Name="ACTIVO_TOTAL" Type="numeric" Precision="30" Scale="15" />
+          <Property Name="PASIVO_CORRIENTE" Type="numeric" Precision="30" Scale="15" />
+          <Property Name="PASIVO_TOTAL" Type="numeric" Precision="30" Scale="15" />
+          <Property Name="FECHA_ESTADO_FINANCIERO" Type="date" />
+          <Property Name="PATRIMONIO" Type="numeric" Precision="30" Scale="15" />
+          <Property Name="CIUDAD" Type="varchar" MaxLength="50" />
+          <Property Name="FECHA_CALIFICACION" Type="datetime" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'CONTRATISTAS_test.dbo.VISTA_REPORTE_CONTRATISTAS4' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="VISTA_REPORTE_CONTRATISTAS4">
+          <Property Name="NIT" Type="bigint" />
+          <Property Name="DESCRIPCION" Type="varchar(max)" />
+          <Property Name="VALOR" Type="numeric" Precision="30" Scale="15" />
+          <Property Name="MONEDA" Type="varchar" MaxLength="50" />
+          <Property Name="EMPRESA_EXPERIENCIA" Type="varchar(max)" />
+          <Property Name="CONTRATANTE" Type="varchar(max)" />
+          <Property Name="EXPERIENCIA_PAYC" Type="bit" />
+          <Property Name="FECHA_INICIO" Type="date" />
+          <Property Name="FECHA_FIN" Type="date" />
+          <Property Name="COD_REGISTRO_CONTRATISTA" Type="bigint" />
+          <Property Name="MESES_EXPERIENCIA" Type="int" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'CONTRATISTAS_test.dbo.VISTA_REPORTEADOR_CONTRATISTAS' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="VISTA_REPORTEADOR_CONTRATISTAS">
+          <Property Name="NIT" Type="bigint" />
+          <Property Name="CONTRATISTA" Type="varchar" MaxLength="350" />
+          <Property Name="CIUDAD" Type="varchar" MaxLength="50" />
+          <Property Name="FECHA_CORTE" Type="date" />
+          <Property Name="PATRIMONIO" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="ACTIVO_TOTAL" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="PASIVO_TOTAL" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="VALOR" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="MEDIDA_TRABAJO" Type="varchar" MaxLength="250" />
+          <Property Name="ACTIVIDADES" Type="varchar" MaxLength="50" />
+          <Property Name="CAPITULO" Type="varchar" MaxLength="50" />
+          <Property Name="PROCESOS" Type="varchar" MaxLength="50" />
+          <Property Name="PROCESOS_DETALLE" Type="varchar(max)" />
+          <Property Name="EXPERIENCIAS" Type="varchar(max)" />
+          <Property Name="SUBCAPITULOS" Type="varchar" MaxLength="350" />
+          <Property Name="CUMPLIMIENTO" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="CALIDAD" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="MANEJO" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="SEGURIDAD_INDUSTRIAL" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="MEDIO_AMBIENTE" Type="numeric" Precision="30" Scale="20" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CONTRATISTAS_test.dbo.VISTA_REPORTEADOR1' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VISTA_REPORTEADOR1">
+    <Key>
+      <PropertyRef Name="COD_REGISTRO_CALIFICACION" />
+    </Key>
+    <Property Name="CAPITULO" Type="varchar" MaxLength="50" />
+    <Property Name="SUBCAPITULO" Type="bigint" />
+    <Property Name="PROCESO" Type="varchar" MaxLength="50" />
+    <Property Name="CIUDAD_CALIFICACION" Type="varchar" MaxLength="50" />
+    <Property Name="COD_REGISTRO_CALIFICACION" Type="bigint" Nullable="false" />
+    <Property Name="COD_PROYECTO" Type="bigint" />
+    <Property Name="COD_CONTRATISTA" Type="bigint" />
+    <Property Name="COD_ACTIVIDAD" Type="bigint" />
+    <Property Name="COD_PROCESO" Type="bigint" />
+    <Property Name="DESCRIPCION_PROCESO" Type="varchar(max)" />
+    <Property Name="COD_USUARIO_CREACION" Type="bigint" />
+    <Property Name="COD_USUARIO_ULTIMA_MODIFICACION" Type="bigint" />
+    <Property Name="FECHA_CREACION" Type="datetime" />
+    <Property Name="FECHA_ULTIMA_MODIFICACION" Type="datetime" />
+    <Property Name="COD_ESTADO" Type="bigint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'CONTRATISTAS_test.dbo.VISTA_REPORTEADOR2' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="VISTA_REPORTEADOR2">
+          <Property Name="CAPITULO" Type="varchar" MaxLength="50" />
+          <Property Name="SUBCAPITULO" Type="bigint" />
+          <Property Name="PROCESO" Type="varchar" MaxLength="50" />
+          <Property Name="CIUDAD_CALIFICACION" Type="varchar" MaxLength="50" />
+          <Property Name="DESCRIPCION_PROCESO" Type="varchar(max)" />
+          <Property Name="FECHA_CREACION" Type="datetime" />
+          <Property Name="FECHA_ULTIMA_MODIFICACION" Type="datetime" />
+          <Property Name="COD_ESTADO" Type="bigint" />
+          <Property Name="CIUDAD_CONTRATISTA" Type="varchar" MaxLength="50" />
+          <Property Name="NOMBRE_CONTRATISTA" Type="varchar" MaxLength="350" />
+          <Property Name="CUMPLIMIENTO" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="CALIDAD" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="MANEJO" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="SEGURIDAD_INDUSTRIAL" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="MEDIO_AMBIENTE" Type="numeric" Precision="30" Scale="20" />
+          <Property Name="AREAM2" Type="varchar" MaxLength="250" />
+          <Property Name="EXPERIENCIA" Type="varchar(max)" />
+          <Property Name="NIT" Type="bigint" />
+        </EntityType>-->
+  <Association Name="FK_ASPECTOS_USUARIOS">
+    <End Role="USUARIOS" Type="Self.USUARIOS" Multiplicity="0..1" />
+    <End Role="ASPECTOS" Type="Self.ASPECTOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="COD_USUARIO" />
+      </Principal>
+      <Dependent Role="ASPECTOS">
+        <PropertyRef Name="COD_USUARIO_CREACION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ASPECTOS_USUARIOS1">
+    <End Role="USUARIOS" Type="Self.USUARIOS" Multiplicity="0..1" />
+    <End Role="ASPECTOS" Type="Self.ASPECTOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="COD_USUARIO" />
+      </Principal>
+      <Dependent Role="ASPECTOS">
+        <PropertyRef Name="COD_USUARIO_ULTIMA_MODIFICACION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ATRIBUTOS_ASPECTOS">
+    <End Role="ASPECTOS" Type="Self.ASPECTOS" Multiplicity="0..1" />
+    <End Role="ATRIBUTOS" Type="Self.ATRIBUTOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ASPECTOS">
+        <PropertyRef Name="COD_ASPECTO" />
+      </Principal>
+      <Dependent Role="ATRIBUTOS">
+        <PropertyRef Name="COD_ASPECTO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ATRIBUTOS_USUARIOS">
+    <End Role="USUARIOS" Type="Self.USUARIOS" Multiplicity="0..1" />
+    <End Role="ATRIBUTOS" Type="Self.ATRIBUTOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="COD_USUARIO" />
+      </Principal>
+      <Dependent Role="ATRIBUTOS">
+        <PropertyRef Name="COD_USUARIO_CREACION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ATRIBUTOS_USUARIOS1">
+    <End Role="USUARIOS" Type="Self.USUARIOS" Multiplicity="0..1" />
+    <End Role="ATRIBUTOS" Type="Self.ATRIBUTOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="COD_USUARIO" />
+      </Principal>
+      <Dependent Role="ATRIBUTOS">
+        <PropertyRef Name="COD_USUARIO_ULTIMA_MODIFICACION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CALIFICACIONES_ESTADOS">
+    <End Role="ESTADOS" Type="Self.ESTADOS" Multiplicity="0..1" />
+    <End Role="CALIFICACIONES" Type="Self.CALIFICACIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ESTADOS">
+        <PropertyRef Name="COD_ESTADO" />
+      </Principal>
+      <Dependent Role="CALIFICACIONES">
+        <PropertyRef Name="COD_ESTADO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CALIFICACIONES_REGISTROS_CALIFICACIONES">
+    <End Role="REGISTROS_CALIFICACIONES" Type="Self.REGISTROS_CALIFICACIONES" Multiplicity="0..1" />
+    <End Role="CALIFICACIONES" Type="Self.CALIFICACIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="REGISTROS_CALIFICACIONES">
+        <PropertyRef Name="COD_REGISTRO_CALIFICACION" />
+      </Principal>
+      <Dependent Role="CALIFICACIONES">
+        <PropertyRef Name="COD_REGISTRO_CALIFICACION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CALIFICACIONES_USUARIOS">
+    <End Role="USUARIOS" Type="Self.USUARIOS" Multiplicity="0..1" />
+    <End Role="CALIFICACIONES" Type="Self.CALIFICACIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="COD_USUARIO" />
+      </Principal>
+      <Dependent Role="CALIFICACIONES">
+        <PropertyRef Name="COD_USUARIO_CREACION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CALIFICACIONES_USUARIOS1">
+    <End Role="USUARIOS" Type="Self.USUARIOS" Multiplicity="0..1" />
+    <End Role="CALIFICACIONES" Type="Self.CALIFICACIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="COD_USUARIO" />
+      </Principal>
+      <Dependent Role="CALIFICACIONES">
+        <PropertyRef Name="COD_USUARIO_ULTIMA_MODIFICACION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CAPITULOS_EXPERIENCIA_EXPERIENCIAS">
+    <End Role="EXPERIENCIAS" Type="Self.EXPERIENCIAS" Multiplicity="0..1" />
+    <End Role="CAPITULOS_EXPERIENCIA" Type="Self.CAPITULOS_EXPERIENCIA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EXPERIENCIAS">
+        <PropertyRef Name="COD_EXPERIENCIA" />
+      </Principal>
+      <Dependent Role="CAPITULOS_EXPERIENCIA">
+        <PropertyRef Name="COD_EXPERIENCIA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CIUDADES_TRABAJO_CIUDADES">
+    <End Role="CIUDADES" Type="Self.CIUDADES" Multiplicity="0..1" />
+    <End Role="CIUDADES_TRABAJO" Type="Self.CIUDADES_TRABAJO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CIUDADES">
+        <PropertyRef Name="COD_CIUDAD" />
+      </Principal>
+      <Dependent Role="CIUDADES_TRABAJO">
+        <PropertyRef Name="COD_CIUDAD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CONTRATISTAS_ACCIONISTAS_ACCIONISTAS">
+    <End Role="ACCIONISTAS" Type="Self.ACCIONISTAS" Multiplicity="0..1" />
+    <End Role="CONTRATISTAS_ACCIONISTAS" Type="Self.CONTRATISTAS_ACCIONISTAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ACCIONISTAS">
+        <PropertyRef Name="COD_ACCIONISTA" />
+      </Principal>
+      <Dependent Role="CONTRATISTAS_ACCIONISTAS">
+        <PropertyRef Name="COD_ACCIONISTA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CONTRATISTAS_ACCIONISTAS_CONTRATISTAS_ACCIONISTAS">
+    <End Role="CONTRATISTAS_ACCIONISTAS" Type="Self.CONTRATISTAS_ACCIONISTAS" Multiplicity="1" />
+    <End Role="CONTRATISTAS_ACCIONISTAS1" Type="Self.CONTRATISTAS_ACCIONISTAS" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="CONTRATISTAS_ACCIONISTAS">
+        <PropertyRef Name="COD_CONTRATISTA_ACCIONISTA" />
+      </Principal>
+      <Dependent Role="CONTRATISTAS_ACCIONISTAS1">
+        <PropertyRef Name="COD_CONTRATISTA_ACCIONISTA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CONTRATISTAS_CIUDADES">
+    <End Role="CIUDADES" Type="Self.CIUDADES" Multiplicity="0..1" />
+    <End Role="CONTRATISTAS" Type="Self.CONTRATISTAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CIUDADES">
+        <PropertyRef Name="COD_CIUDAD" />
+      </Principal>
+      <Dependent Role="CONTRATISTAS">
+        <PropertyRef Name="COD_CIUDAD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CONTRATISTAS_ESTADOS">
+    <End Role="ESTADOS" Type="Self.ESTADOS" Multiplicity="0..1" />
+    <End Role="CONTRATISTAS" Type="Self.CONTRATISTAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ESTADOS">
+        <PropertyRef Name="COD_ESTADO" />
+      </Principal>
+      <Dependent Role="CONTRATISTAS">
+        <PropertyRef Name="COD_ESTADO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserClaims" Type="Self.AspNetUserClaims" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaims">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserLogins" Type="Self.AspNetUserLogins" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogins">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
+    <End Role="AspNetRoles" Type="Self.AspNetRoles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetRoles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserRoles">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserRoles">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EXPERIENCIAS_CIUDADES">
+    <End Role="CIUDADES" Type="Self.CIUDADES" Multiplicity="0..1" />
+    <End Role="EXPERIENCIAS" Type="Self.EXPERIENCIAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CIUDADES">
+        <PropertyRef Name="COD_CIUDAD" />
+      </Principal>
+      <Dependent Role="EXPERIENCIAS">
+        <PropertyRef Name="COD_CIUDAD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EXPERIENCIAS_ESTADOS">
+    <End Role="ESTADOS" Type="Self.ESTADOS" Multiplicity="0..1" />
+    <End Role="EXPERIENCIAS" Type="Self.EXPERIENCIAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ESTADOS">
+        <PropertyRef Name="COD_ESTADO" />
+      </Principal>
+      <Dependent Role="EXPERIENCIAS">
+        <PropertyRef Name="COD_ESTADO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EXPERIENCIAS_REGISTRO_CONTRATISTAS">
+    <End Role="REGISTRO_CONTRATISTAS" Type="Self.REGISTRO_CONTRATISTAS" Multiplicity="0..1" />
+    <End Role="EXPERIENCIAS" Type="Self.EXPERIENCIAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="REGISTRO_CONTRATISTAS">
+        <PropertyRef Name="COD_REGISTRO_CONTRATISTA" />
+      </Principal>
+      <Dependent Role="EXPERIENCIAS">
+        <PropertyRef Name="COD_REGISTRO_CONTRATISTA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INFORMACIONES_FINANCIERAS_REGISTRO_CONTRATISTAS">
+    <End Role="REGISTRO_CONTRATISTAS" Type="Self.REGISTRO_CONTRATISTAS" Multiplicity="0..1" />
+    <End Role="INFORMACIONES_FINANCIERAS" Type="Self.INFORMACIONES_FINANCIERAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="REGISTRO_CONTRATISTAS">
+        <PropertyRef Name="COD_REGISTRO_CONTRATISTA" />
+      </Principal>
+      <Dependent Role="INFORMACIONES_FINANCIERAS">
+        <PropertyRef Name="COD_REGISTRO_CONTRATISTA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PASSWORD_USUARIOS">
+    <End Role="USUARIOS" Type="Self.USUARIOS" Multiplicity="0..1" />
+    <End Role="PASSWORD" Type="Self.PASSWORD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="COD_USUARIO" />
+      </Principal>
+      <Dependent Role="PASSWORD">
+        <PropertyRef Name="COD_USUARIO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_POSIBLES_RESPUESTAS_PREGUNTAS">
+    <End Role="PREGUNTAS" Type="Self.PREGUNTAS" Multiplicity="0..1" />
+    <End Role="POSIBLES_RESPUESTAS" Type="Self.POSIBLES_RESPUESTAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PREGUNTAS">
+        <PropertyRef Name="COD_PREGUNTA" />
+      </Principal>
+      <Dependent Role="POSIBLES_RESPUESTAS">
+        <PropertyRef Name="COD_PREGUNTA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PREGUNTAS_ATRIBUTOS">
+    <End Role="ATRIBUTOS" Type="Self.ATRIBUTOS" Multiplicity="0..1" />
+    <End Role="PREGUNTAS" Type="Self.PREGUNTAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ATRIBUTOS">
+        <PropertyRef Name="COD_ATRIBUTO" />
+      </Principal>
+      <Dependent Role="PREGUNTAS">
+        <PropertyRef Name="COD_ATRIBUTO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PREGUNTAS_USUARIOS">
+    <End Role="USUARIOS" Type="Self.USUARIOS" Multiplicity="0..1" />
+    <End Role="PREGUNTAS" Type="Self.PREGUNTAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="COD_USUARIO" />
+      </Principal>
+      <Dependent Role="PREGUNTAS">
+        <PropertyRef Name="COD_USUARIO_CREACION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PREGUNTAS_USUARIOS1">
+    <End Role="USUARIOS" Type="Self.USUARIOS" Multiplicity="0..1" />
+    <End Role="PREGUNTAS" Type="Self.PREGUNTAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="COD_USUARIO" />
+      </Principal>
+      <Dependent Role="PREGUNTAS">
+        <PropertyRef Name="COD_USUARIO_ULTIMA_MODIFICACION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PROYECTOS_ESTADOS">
+    <End Role="ESTADOS" Type="Self.ESTADOS" Multiplicity="0..1" />
+    <End Role="PROYECTOS" Type="Self.PROYECTOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ESTADOS">
+        <PropertyRef Name="COD_ESTADO" />
+      </Principal>
+      <Dependent Role="PROYECTOS">
+        <PropertyRef Name="COD_ESTADO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGISTRO_CONTRATISTAS_CONTRATISTAS">
+    <End Role="CONTRATISTAS" Type="Self.CONTRATISTAS" Multiplicity="0..1" />
+    <End Role="REGISTRO_CONTRATISTAS" Type="Self.REGISTRO_CONTRATISTAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CONTRATISTAS">
+        <PropertyRef Name="COD_CONTRATISTA" />
+      </Principal>
+      <Dependent Role="REGISTRO_CONTRATISTAS">
+        <PropertyRef Name="COD_CONTRATISTA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGISTRO_CONTRATISTAS_ESTADOS">
+    <End Role="ESTADOS" Type="Self.ESTADOS" Multiplicity="0..1" />
+    <End Role="REGISTRO_CONTRATISTAS" Type="Self.REGISTRO_CONTRATISTAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ESTADOS">
+        <PropertyRef Name="COD_ESTADO" />
+      </Principal>
+      <Dependent Role="REGISTRO_CONTRATISTAS">
+        <PropertyRef Name="COD_ESTADO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGISTRO_CONTRATISTAS_USUARIOS">
+    <End Role="USUARIOS" Type="Self.USUARIOS" Multiplicity="0..1" />
+    <End Role="REGISTRO_CONTRATISTAS" Type="Self.REGISTRO_CONTRATISTAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="COD_USUARIO" />
+      </Principal>
+      <Dependent Role="REGISTRO_CONTRATISTAS">
+        <PropertyRef Name="COD_USUARIO_CONTRATISTA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGISTRO_CONTRATISTAS_USUARIOS1">
+    <End Role="USUARIOS" Type="Self.USUARIOS" Multiplicity="0..1" />
+    <End Role="REGISTRO_CONTRATISTAS" Type="Self.REGISTRO_CONTRATISTAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="COD_USUARIO" />
+      </Principal>
+      <Dependent Role="REGISTRO_CONTRATISTAS">
+        <PropertyRef Name="COD_USUARIO_PAYC_REVISION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGISTROS_CALIFICACIONES_ACTIVIDADES">
+    <End Role="ACTIVIDADES" Type="Self.ACTIVIDADES" Multiplicity="0..1" />
+    <End Role="REGISTROS_CALIFICACIONES" Type="Self.REGISTROS_CALIFICACIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ACTIVIDADES">
+        <PropertyRef Name="COD_ACTIVIDAD" />
+      </Principal>
+      <Dependent Role="REGISTROS_CALIFICACIONES">
+        <PropertyRef Name="COD_ACTIVIDAD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGISTROS_CALIFICACIONES_CAPITULOS">
+    <End Role="CAPITULOS" Type="Self.CAPITULOS" Multiplicity="0..1" />
+    <End Role="REGISTROS_CALIFICACIONES" Type="Self.REGISTROS_CALIFICACIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAPITULOS">
+        <PropertyRef Name="COD_CAPITULO" />
+      </Principal>
+      <Dependent Role="REGISTROS_CALIFICACIONES">
+        <PropertyRef Name="COD_CAPITULO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGISTROS_CALIFICACIONES_CIUDADES">
+    <End Role="CIUDADES" Type="Self.CIUDADES" Multiplicity="0..1" />
+    <End Role="REGISTROS_CALIFICACIONES" Type="Self.REGISTROS_CALIFICACIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CIUDADES">
+        <PropertyRef Name="COD_CIUDAD" />
+      </Principal>
+      <Dependent Role="REGISTROS_CALIFICACIONES">
+        <PropertyRef Name="COD_CIUDAD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGISTROS_CALIFICACIONES_CONTRATISTAS">
+    <End Role="CONTRATISTAS" Type="Self.CONTRATISTAS" Multiplicity="0..1" />
+    <End Role="REGISTROS_CALIFICACIONES" Type="Self.REGISTROS_CALIFICACIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CONTRATISTAS">
+        <PropertyRef Name="COD_CONTRATISTA" />
+      </Principal>
+      <Dependent Role="REGISTROS_CALIFICACIONES">
+        <PropertyRef Name="COD_CONTRATISTA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGISTROS_CALIFICACIONES_ESTADOS">
+    <End Role="ESTADOS" Type="Self.ESTADOS" Multiplicity="0..1" />
+    <End Role="REGISTROS_CALIFICACIONES" Type="Self.REGISTROS_CALIFICACIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ESTADOS">
+        <PropertyRef Name="COD_ESTADO" />
+      </Principal>
+      <Dependent Role="REGISTROS_CALIFICACIONES">
+        <PropertyRef Name="COD_ESTADO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGISTROS_CALIFICACIONES_PROCESOS">
+    <End Role="PROCESOS" Type="Self.PROCESOS" Multiplicity="0..1" />
+    <End Role="REGISTROS_CALIFICACIONES" Type="Self.REGISTROS_CALIFICACIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PROCESOS">
+        <PropertyRef Name="COD_PROCESO" />
+      </Principal>
+      <Dependent Role="REGISTROS_CALIFICACIONES">
+        <PropertyRef Name="COD_PROCESO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGISTROS_CALIFICACIONES_PROYECTOS">
+    <End Role="PROYECTOS" Type="Self.PROYECTOS" Multiplicity="0..1" />
+    <End Role="REGISTROS_CALIFICACIONES" Type="Self.REGISTROS_CALIFICACIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PROYECTOS">
+        <PropertyRef Name="COD_PROYECTO" />
+      </Principal>
+      <Dependent Role="REGISTROS_CALIFICACIONES">
+        <PropertyRef Name="COD_PROYECTO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGISTROS_CALIFICACIONES_SUBCAPITULOS">
+    <End Role="SUBCAPITULOS" Type="Self.SUBCAPITULOS" Multiplicity="0..1" />
+    <End Role="REGISTROS_CALIFICACIONES" Type="Self.REGISTROS_CALIFICACIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SUBCAPITULOS">
+        <PropertyRef Name="COD_SUBCAPITULO" />
+      </Principal>
+      <Dependent Role="REGISTROS_CALIFICACIONES">
+        <PropertyRef Name="COD_SUBCAPITULO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGISTROS_CALIFICACIONES_USUARIOS">
+    <End Role="USUARIOS" Type="Self.USUARIOS" Multiplicity="0..1" />
+    <End Role="REGISTROS_CALIFICACIONES" Type="Self.REGISTROS_CALIFICACIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="COD_USUARIO" />
+      </Principal>
+      <Dependent Role="REGISTROS_CALIFICACIONES">
+        <PropertyRef Name="COD_USUARIO_CREACION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGISTROS_CALIFICACIONES_USUARIOS1">
+    <End Role="USUARIOS" Type="Self.USUARIOS" Multiplicity="0..1" />
+    <End Role="REGISTROS_CALIFICACIONES" Type="Self.REGISTROS_CALIFICACIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="COD_USUARIO" />
+      </Principal>
+      <Dependent Role="REGISTROS_CALIFICACIONES">
+        <PropertyRef Name="COD_USUARIO_ULTIMA_MODIFICACION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RESPUESTAS_CALIFICACIONES">
+    <End Role="CALIFICACIONES" Type="Self.CALIFICACIONES" Multiplicity="0..1" />
+    <End Role="RESPUESTAS" Type="Self.RESPUESTAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CALIFICACIONES">
+        <PropertyRef Name="COD_CALIFICACION" />
+      </Principal>
+      <Dependent Role="RESPUESTAS">
+        <PropertyRef Name="COD_CALIFICACION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RESPUESTAS_PREGUNTAS">
+    <End Role="PREGUNTAS" Type="Self.PREGUNTAS" Multiplicity="0..1" />
+    <End Role="RESPUESTAS" Type="Self.RESPUESTAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PREGUNTAS">
+        <PropertyRef Name="COD_PREGUNTA" />
+      </Principal>
+      <Dependent Role="RESPUESTAS">
+        <PropertyRef Name="COD_PREGUNTA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RESPUESTAS_USUARIOS">
+    <End Role="USUARIOS" Type="Self.USUARIOS" Multiplicity="0..1" />
+    <End Role="RESPUESTAS" Type="Self.RESPUESTAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIOS">
+        <PropertyRef Name="COD_USUARIO" />
+      </Principal>
+      <Dependent Role="RESPUESTAS">
+        <PropertyRef Name="COD_USUARIO_CREACION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUBCAPITULOS_CAPITULOS">
+    <End Role="CAPITULOS" Type="Self.CAPITULOS" Multiplicity="0..1" />
+    <End Role="SUBCAPITULOS" Type="Self.SUBCAPITULOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAPITULOS">
+        <PropertyRef Name="COD_CAPITULO" />
+      </Principal>
+      <Dependent Role="SUBCAPITULOS">
+        <PropertyRef Name="COD_CAPITULO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUBCAPITULOS_EXPERIENCIA_EXPERIENCIAS">
+    <End Role="EXPERIENCIAS" Type="Self.EXPERIENCIAS" Multiplicity="0..1" />
+    <End Role="SUBCAPITULOS_EXPERIENCIA" Type="Self.SUBCAPITULOS_EXPERIENCIA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EXPERIENCIAS">
+        <PropertyRef Name="COD_EXPERIENCIA" />
+      </Principal>
+      <Dependent Role="SUBCAPITULOS_EXPERIENCIA">
+        <PropertyRef Name="COD_EXPERIENCIA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUBCAPITULOS_EXPERIENCIA_SUBCAPITULOS">
+    <End Role="SUBCAPITULOS" Type="Self.SUBCAPITULOS" Multiplicity="0..1" />
+    <End Role="SUBCAPITULOS_EXPERIENCIA" Type="Self.SUBCAPITULOS_EXPERIENCIA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SUBCAPITULOS">
+        <PropertyRef Name="COD_SUBCAPITULO" />
+      </Principal>
+      <Dependent Role="SUBCAPITULOS_EXPERIENCIA">
+        <PropertyRef Name="COD_SUBCAPITULO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_USUARIOS_ROLES">
+    <End Role="ROLES" Type="Self.ROLES" Multiplicity="0..1" />
+    <End Role="USUARIOS" Type="Self.USUARIOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ROLES">
+        <PropertyRef Name="COD_ROL" />
+      </Principal>
+      <Dependent Role="USUARIOS">
+        <PropertyRef Name="COD_ROL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CONTRATISTAS_testModelStoreContainer">
+    <EntitySet Name="__MigrationHistory" EntityType="Self.__MigrationHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ACCIONISTAS" EntityType="Self.ACCIONISTAS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ACTIVIDADES" EntityType="Self.ACTIVIDADES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ASPECTOS" EntityType="Self.ASPECTOS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaims" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserLogins" EntityType="Self.AspNetUserLogins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserRoles" EntityType="Self.AspNetUserRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUsers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ATRIBUTOS" EntityType="Self.ATRIBUTOS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CALIFICACIONES" EntityType="Self.CALIFICACIONES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CAPITULOS" EntityType="Self.CAPITULOS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CAPITULOS_EXPERIENCIA" EntityType="Self.CAPITULOS_EXPERIENCIA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CIUDADES" EntityType="Self.CIUDADES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CIUDADES_TRABAJO" EntityType="Self.CIUDADES_TRABAJO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CONTACTOS" EntityType="Self.CONTACTOS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CONTRATISTAS" EntityType="Self.CONTRATISTAS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CONTRATISTAS_ACCIONISTAS" EntityType="Self.CONTRATISTAS_ACCIONISTAS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ESTADOS" EntityType="Self.ESTADOS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EXPERIENCIAS" EntityType="Self.EXPERIENCIAS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INFORMACIONES_FINANCIERAS" EntityType="Self.INFORMACIONES_FINANCIERAS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PASSWORD" EntityType="Self.PASSWORD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="POSIBLES_RESPUESTAS" EntityType="Self.POSIBLES_RESPUESTAS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PREGUNTAS" EntityType="Self.PREGUNTAS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PROCESOS" EntityType="Self.PROCESOS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PROYECTOS" EntityType="Self.PROYECTOS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="REGISTRO_CONTRATISTAS" EntityType="Self.REGISTRO_CONTRATISTAS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="REGISTROS_CALIFICACIONES" EntityType="Self.REGISTROS_CALIFICACIONES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RESPUESTAS" EntityType="Self.RESPUESTAS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ROLES" EntityType="Self.ROLES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SUBCAPITULOS" EntityType="Self.SUBCAPITULOS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SUBCAPITULOS_EXPERIENCIA" EntityType="Self.SUBCAPITULOS_EXPERIENCIA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="USUARIOS" EntityType="Self.USUARIOS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CONTRATISTAS_EXPERIENCIAS" EntityType="Self.CONTRATISTAS_EXPERIENCIAS" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [CONTRATISTAS_EXPERIENCIAS].[COD_CONTRATISTA] AS [COD_CONTRATISTA], 
+    [CONTRATISTAS_EXPERIENCIAS].[EXPERIENCIA_PAYC] AS [EXPERIENCIA_PAYC]
+    FROM [dbo].[CONTRATISTAS_EXPERIENCIAS] AS [CONTRATISTAS_EXPERIENCIAS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VISTA_ACCIONISTAS" EntityType="Self.VISTA_ACCIONISTAS" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VISTA_ACCIONISTAS].[COD_ACCIONISTA] AS [COD_ACCIONISTA], 
+    [VISTA_ACCIONISTAS].[NOMBRE] AS [NOMBRE], 
+    [VISTA_ACCIONISTAS].[NIT_CEDULA] AS [NIT_CEDULA], 
+    [VISTA_ACCIONISTAS].[COD_CONTRATISTA] AS [COD_CONTRATISTA], 
+    [VISTA_ACCIONISTAS].[DESCRIPCION] AS [DESCRIPCION], 
+    [VISTA_ACCIONISTAS].[PARTICIPACION] AS [PARTICIPACION], 
+    [VISTA_ACCIONISTAS].[COD_CONTRATISTA_ACCIONISTA] AS [COD_CONTRATISTA_ACCIONISTA]
+    FROM [dbo].[VISTA_ACCIONISTAS] AS [VISTA_ACCIONISTAS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VISTA_CONTRATISTAS_EXPERIENCIAS" EntityType="Self.VISTA_CONTRATISTAS_EXPERIENCIAS" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VISTA_CONTRATISTAS_EXPERIENCIAS].[COD_CONTRATISTA] AS [COD_CONTRATISTA], 
+    [VISTA_CONTRATISTAS_EXPERIENCIAS].[COD_EXPERIENCIA] AS [COD_EXPERIENCIA], 
+    [VISTA_CONTRATISTAS_EXPERIENCIAS].[COD_REGISTRO_CONTRATISTA] AS [COD_REGISTRO_CONTRATISTA], 
+    [VISTA_CONTRATISTAS_EXPERIENCIAS].[DESCRIPCION] AS [DESCRIPCION], 
+    [VISTA_CONTRATISTAS_EXPERIENCIAS].[VALOR] AS [VALOR], 
+    [VISTA_CONTRATISTAS_EXPERIENCIAS].[MONEDA] AS [MONEDA], 
+    [VISTA_CONTRATISTAS_EXPERIENCIAS].[PROYECTO] AS [PROYECTO], 
+    [VISTA_CONTRATISTAS_EXPERIENCIAS].[COD_CIUDAD] AS [COD_CIUDAD], 
+    [VISTA_CONTRATISTAS_EXPERIENCIAS].[CONTRATANTE] AS [CONTRATANTE], 
+    [VISTA_CONTRATISTAS_EXPERIENCIAS].[FECHA_INICIO] AS [FECHA_INICIO], 
+    [VISTA_CONTRATISTAS_EXPERIENCIAS].[FECHA_FIN] AS [FECHA_FIN], 
+    [VISTA_CONTRATISTAS_EXPERIENCIAS].[MEDIDA_TRABAJO] AS [MEDIDA_TRABAJO], 
+    [VISTA_CONTRATISTAS_EXPERIENCIAS].[UNIDAD_MEDIDA_TRABAJO] AS [UNIDAD_MEDIDA_TRABAJO], 
+    [VISTA_CONTRATISTAS_EXPERIENCIAS].[OBSERVACIONES] AS [OBSERVACIONES], 
+    [VISTA_CONTRATISTAS_EXPERIENCIAS].[COD_ESTADO] AS [COD_ESTADO], 
+    [VISTA_CONTRATISTAS_EXPERIENCIAS].[EXPERIENCIA_PAYC] AS [EXPERIENCIA_PAYC], 
+    [VISTA_CONTRATISTAS_EXPERIENCIAS].[OBSERVACION_REVISION] AS [OBSERVACION_REVISION], 
+    [VISTA_CONTRATISTAS_EXPERIENCIAS].[RUTA_CERTIFICACION] AS [RUTA_CERTIFICACION], 
+    [VISTA_CONTRATISTAS_EXPERIENCIAS].[OBJETO_CONTRACTUAL] AS [OBJETO_CONTRACTUAL]
+    FROM [dbo].[VISTA_CONTRATISTAS_EXPERIENCIAS] AS [VISTA_CONTRATISTAS_EXPERIENCIAS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VISTA_DETALLES_ASPECTOS" EntityType="Self.VISTA_DETALLES_ASPECTOS" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VISTA_DETALLES_ASPECTOS].[COD_VISTA_DETALLES_ASPECTOS] AS [COD_VISTA_DETALLES_ASPECTOS], 
+    [VISTA_DETALLES_ASPECTOS].[COD_ASPECTO] AS [COD_ASPECTO], 
+    [VISTA_DETALLES_ASPECTOS].[ASPECTO] AS [ASPECTO], 
+    [VISTA_DETALLES_ASPECTOS].[# de Atributos] AS [# de Atributos], 
+    [VISTA_DETALLES_ASPECTOS].[ESTADO] AS [ESTADO], 
+    [VISTA_DETALLES_ASPECTOS].[FECHA CREACION] AS [FECHA CREACION], 
+    [VISTA_DETALLES_ASPECTOS].[FECHA MODIFICACION] AS [FECHA MODIFICACION], 
+    [VISTA_DETALLES_ASPECTOS].[EDITADO POR] AS [EDITADO POR]
+    FROM [dbo].[VISTA_DETALLES_ASPECTOS] AS [VISTA_DETALLES_ASPECTOS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VISTA_DETALLES_CRITERIOS" EntityType="Self.VISTA_DETALLES_CRITERIOS" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VISTA_DETALLES_CRITERIOS].[COD_VISTA_DETALLES_CRITERIOS] AS [COD_VISTA_DETALLES_CRITERIOS], 
+    [VISTA_DETALLES_CRITERIOS].[COD_ASPECTO] AS [COD_ASPECTO], 
+    [VISTA_DETALLES_CRITERIOS].[ASPECTO] AS [ASPECTO], 
+    [VISTA_DETALLES_CRITERIOS].[COD_ATRIBUTO] AS [COD_ATRIBUTO], 
+    [VISTA_DETALLES_CRITERIOS].[ATRIBUTO] AS [ATRIBUTO], 
+    [VISTA_DETALLES_CRITERIOS].[PONDERACION] AS [PONDERACION], 
+    [VISTA_DETALLES_CRITERIOS].[# de preguntas] AS [# de preguntas], 
+    [VISTA_DETALLES_CRITERIOS].[FECHA CREACION] AS [FECHA CREACION], 
+    [VISTA_DETALLES_CRITERIOS].[FECHA EDICION] AS [FECHA EDICION], 
+    [VISTA_DETALLES_CRITERIOS].[COD_USUARIO_ULTIMA_MODIFICACION] AS [COD_USUARIO_ULTIMA_MODIFICACION]
+    FROM [dbo].[VISTA_DETALLES_CRITERIOS] AS [VISTA_DETALLES_CRITERIOS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VISTA_DETALLES_PREGUNTAS" EntityType="Self.VISTA_DETALLES_PREGUNTAS" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VISTA_DETALLES_PREGUNTAS].[COD_VISTA_DETALLES_PREGUNTAS] AS [COD_VISTA_DETALLES_PREGUNTAS], 
+    [VISTA_DETALLES_PREGUNTAS].[COD_PREGUNTA] AS [COD_PREGUNTA], 
+    [VISTA_DETALLES_PREGUNTAS].[COD_ATRIBUTO] AS [COD_ATRIBUTO], 
+    [VISTA_DETALLES_PREGUNTAS].[COD_ASPECTO] AS [COD_ASPECTO], 
+    [VISTA_DETALLES_PREGUNTAS].[PREGUNTA] AS [PREGUNTA], 
+    [VISTA_DETALLES_PREGUNTAS].[# de Respuestas] AS [# de Respuestas], 
+    [VISTA_DETALLES_PREGUNTAS].[ATRIBUTO] AS [ATRIBUTO], 
+    [VISTA_DETALLES_PREGUNTAS].[ASPECTO] AS [ASPECTO], 
+    [VISTA_DETALLES_PREGUNTAS].[FECHA_CREACION] AS [FECHA_CREACION], 
+    [VISTA_DETALLES_PREGUNTAS].[FECHA_ULTIMA_MODIFICACION] AS [FECHA_ULTIMA_MODIFICACION], 
+    [VISTA_DETALLES_PREGUNTAS].[COD_USUARIO_ULTIMA_MODIFICACION] AS [COD_USUARIO_ULTIMA_MODIFICACION]
+    FROM [dbo].[VISTA_DETALLES_PREGUNTAS] AS [VISTA_DETALLES_PREGUNTAS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VISTA_DETALLES_REGISTROS_CALIFICACIONES" EntityType="Self.VISTA_DETALLES_REGISTROS_CALIFICACIONES" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VISTA_DETALLES_REGISTROS_CALIFICACIONES].[COD_VISTA_DETALLES_REGISTROS_CALIFICACIONES] AS [COD_VISTA_DETALLES_REGISTROS_CALIFICACIONES], 
+    [VISTA_DETALLES_REGISTROS_CALIFICACIONES].[COD_PROYECTO] AS [COD_PROYECTO], 
+    [VISTA_DETALLES_REGISTROS_CALIFICACIONES].[DESCRIPCION] AS [DESCRIPCION], 
+    [VISTA_DETALLES_REGISTROS_CALIFICACIONES].[FECHA_INICIO] AS [FECHA_INICIO], 
+    [VISTA_DETALLES_REGISTROS_CALIFICACIONES].[FECHA_FIN] AS [FECHA_FIN], 
+    [VISTA_DETALLES_REGISTROS_CALIFICACIONES].[ULTIMA_CALIFICACION] AS [ULTIMA_CALIFICACION], 
+    [VISTA_DETALLES_REGISTROS_CALIFICACIONES].[COD_REGISTRO_CALIFICACION] AS [COD_REGISTRO_CALIFICACION], 
+    [VISTA_DETALLES_REGISTROS_CALIFICACIONES].[FECHA_CREACION_REGISTRO_CALIFICACION] AS [FECHA_CREACION_REGISTRO_CALIFICACION], 
+    [VISTA_DETALLES_REGISTROS_CALIFICACIONES].[ESTADO] AS [ESTADO], 
+    [VISTA_DETALLES_REGISTROS_CALIFICACIONES].[COD_CONTRATISTA] AS [COD_CONTRATISTA]
+    FROM [dbo].[VISTA_DETALLES_REGISTROS_CALIFICACIONES] AS [VISTA_DETALLES_REGISTROS_CALIFICACIONES]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD" EntityType="Self.VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD].[COD_VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD] AS [COD_VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD], 
+    [VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD].[COD_CALIFICACION] AS [COD_CALIFICACION], 
+    [VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD].[COD_REGISTRO_CALIFICACION] AS [COD_REGISTRO_CALIFICACION], 
+    [VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD].[COD_PROYECTO] AS [COD_PROYECTO], 
+    [VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD].[COD_USUARIO_CREACION] AS [COD_USUARIO_CREACION], 
+    [VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD].[COD_USUARIO_ULTIMA_MODIFICACION] AS [COD_USUARIO_ULTIMA_MODIFICACION], 
+    [VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD].[CREADO_POR] AS [CREADO_POR], 
+    [VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD].[EDITADO_POR] AS [EDITADO_POR], 
+    [VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD].[COD_CONTRATISTA] AS [COD_CONTRATISTA], 
+    [VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD].[CONTRATISTA] AS [CONTRATISTA], 
+    [VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD].[FECHA_CREACION] AS [FECHA_CREACION], 
+    [VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD].[FECHA_ULTIMA_MODIFICACION] AS [FECHA_ULTIMA_MODIFICACION], 
+    [VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD].[COD_ACTIVIDAD] AS [COD_ACTIVIDAD], 
+    [VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD].[ACTIVIDAD] AS [ACTIVIDAD], 
+    [VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD].[COD_PROCESO] AS [COD_PROCESO], 
+    [VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD].[PROCESO] AS [PROCESO], 
+    [VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD].[COD_ESTADO] AS [COD_ESTADO], 
+    [VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD].[ESTADO] AS [ESTADO]
+    FROM [dbo].[VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD] AS [VISTA_DETALLES_REGISTROS_CALIFICACIONES_CHILD]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VISTA_INFORMACION_FINANCIERA" EntityType="Self.VISTA_INFORMACION_FINANCIERA" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VISTA_INFORMACION_FINANCIERA].[COD_INFORMACION_FINANCIERA] AS [COD_INFORMACION_FINANCIERA], 
+    [VISTA_INFORMACION_FINANCIERA].[COD_REGISTRO_CONTRATISTA] AS [COD_REGISTRO_CONTRATISTA], 
+    [VISTA_INFORMACION_FINANCIERA].[FECHA_CORTE] AS [FECHA_CORTE], 
+    [VISTA_INFORMACION_FINANCIERA].[ACTIVO_CORRIENTE] AS [ACTIVO_CORRIENTE], 
+    [VISTA_INFORMACION_FINANCIERA].[ACTIVO_TOTAL] AS [ACTIVO_TOTAL], 
+    [VISTA_INFORMACION_FINANCIERA].[PASIVO_CORRIENTE] AS [PASIVO_CORRIENTE], 
+    [VISTA_INFORMACION_FINANCIERA].[PASIVO_TOTAL] AS [PASIVO_TOTAL], 
+    [VISTA_INFORMACION_FINANCIERA].[PATRIMONIO] AS [PATRIMONIO], 
+    [VISTA_INFORMACION_FINANCIERA].[OBSERVACION_REVISION] AS [OBSERVACION_REVISION], 
+    [VISTA_INFORMACION_FINANCIERA].[RUTA_ESTADOS_FINANCIEROS] AS [RUTA_ESTADOS_FINANCIEROS], 
+    [VISTA_INFORMACION_FINANCIERA].[COD_CONTRATISTA] AS [COD_CONTRATISTA]
+    FROM [dbo].[VISTA_INFORMACION_FINANCIERA] AS [VISTA_INFORMACION_FINANCIERA]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VISTA_REPORTE_CONTRATISTAS1" EntityType="Self.VISTA_REPORTE_CONTRATISTAS1" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VISTA_REPORTE_CONTRATISTAS1].[NIT] AS [NIT], 
+    [VISTA_REPORTE_CONTRATISTAS1].[CONTRATISTA] AS [CONTRATISTA], 
+    [VISTA_REPORTE_CONTRATISTAS1].[PROCESOS_DETALLE] AS [PROCESOS_DETALLE], 
+    [VISTA_REPORTE_CONTRATISTAS1].[COD_REGISTRO_CALIFICACION] AS [COD_REGISTRO_CALIFICACION], 
+    [VISTA_REPORTE_CONTRATISTAS1].[COD_CAPITULO] AS [COD_CAPITULO], 
+    [VISTA_REPORTE_CONTRATISTAS1].[COD_SUBCAPITULO] AS [COD_SUBCAPITULO], 
+    [VISTA_REPORTE_CONTRATISTAS1].[COD_PROCESO] AS [COD_PROCESO], 
+    [VISTA_REPORTE_CONTRATISTAS1].[COD_PROYECTO] AS [COD_PROYECTO], 
+    [VISTA_REPORTE_CONTRATISTAS1].[COD_ACTIVIDAD] AS [COD_ACTIVIDAD], 
+    [VISTA_REPORTE_CONTRATISTAS1].[COD_REGISTRO_CONTRATISTA] AS [COD_REGISTRO_CONTRATISTA], 
+    [VISTA_REPORTE_CONTRATISTAS1].[EXPERIENCIA_PAYC] AS [EXPERIENCIA_PAYC], 
+    [VISTA_REPORTE_CONTRATISTAS1].[ACTIVO_CORRIENTE] AS [ACTIVO_CORRIENTE], 
+    [VISTA_REPORTE_CONTRATISTAS1].[ACTIVO_TOTAL] AS [ACTIVO_TOTAL], 
+    [VISTA_REPORTE_CONTRATISTAS1].[PASIVO_CORRIENTE] AS [PASIVO_CORRIENTE], 
+    [VISTA_REPORTE_CONTRATISTAS1].[PASIVO_TOTAL] AS [PASIVO_TOTAL], 
+    [VISTA_REPORTE_CONTRATISTAS1].[PATRIMONIO] AS [PATRIMONIO], 
+    [VISTA_REPORTE_CONTRATISTAS1].[FECHA_ESTADO_FINANCIERO] AS [FECHA_ESTADO_FINANCIERO], 
+    [VISTA_REPORTE_CONTRATISTAS1].[CIUDAD] AS [CIUDAD]
+    FROM [dbo].[VISTA_REPORTE_CONTRATISTAS1] AS [VISTA_REPORTE_CONTRATISTAS1]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VISTA_REPORTEADOR1" EntityType="Self.VISTA_REPORTEADOR1" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VISTA_REPORTEADOR1].[CAPITULO] AS [CAPITULO], 
+    [VISTA_REPORTEADOR1].[SUBCAPITULO] AS [SUBCAPITULO], 
+    [VISTA_REPORTEADOR1].[PROCESO] AS [PROCESO], 
+    [VISTA_REPORTEADOR1].[CIUDAD_CALIFICACION] AS [CIUDAD_CALIFICACION], 
+    [VISTA_REPORTEADOR1].[COD_REGISTRO_CALIFICACION] AS [COD_REGISTRO_CALIFICACION], 
+    [VISTA_REPORTEADOR1].[COD_PROYECTO] AS [COD_PROYECTO], 
+    [VISTA_REPORTEADOR1].[COD_CONTRATISTA] AS [COD_CONTRATISTA], 
+    [VISTA_REPORTEADOR1].[COD_ACTIVIDAD] AS [COD_ACTIVIDAD], 
+    [VISTA_REPORTEADOR1].[COD_PROCESO] AS [COD_PROCESO], 
+    [VISTA_REPORTEADOR1].[DESCRIPCION_PROCESO] AS [DESCRIPCION_PROCESO], 
+    [VISTA_REPORTEADOR1].[COD_USUARIO_CREACION] AS [COD_USUARIO_CREACION], 
+    [VISTA_REPORTEADOR1].[COD_USUARIO_ULTIMA_MODIFICACION] AS [COD_USUARIO_ULTIMA_MODIFICACION], 
+    [VISTA_REPORTEADOR1].[FECHA_CREACION] AS [FECHA_CREACION], 
+    [VISTA_REPORTEADOR1].[FECHA_ULTIMA_MODIFICACION] AS [FECHA_ULTIMA_MODIFICACION], 
+    [VISTA_REPORTEADOR1].[COD_ESTADO] AS [COD_ESTADO]
+    FROM [dbo].[VISTA_REPORTEADOR1] AS [VISTA_REPORTEADOR1]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_ASPECTOS_USUARIOS" Association="Self.FK_ASPECTOS_USUARIOS">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="ASPECTOS" EntitySet="ASPECTOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ASPECTOS_USUARIOS1" Association="Self.FK_ASPECTOS_USUARIOS1">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="ASPECTOS" EntitySet="ASPECTOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ATRIBUTOS_ASPECTOS" Association="Self.FK_ATRIBUTOS_ASPECTOS">
+      <End Role="ASPECTOS" EntitySet="ASPECTOS" />
+      <End Role="ATRIBUTOS" EntitySet="ATRIBUTOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ATRIBUTOS_USUARIOS" Association="Self.FK_ATRIBUTOS_USUARIOS">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="ATRIBUTOS" EntitySet="ATRIBUTOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ATRIBUTOS_USUARIOS1" Association="Self.FK_ATRIBUTOS_USUARIOS1">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="ATRIBUTOS" EntitySet="ATRIBUTOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CALIFICACIONES_ESTADOS" Association="Self.FK_CALIFICACIONES_ESTADOS">
+      <End Role="ESTADOS" EntitySet="ESTADOS" />
+      <End Role="CALIFICACIONES" EntitySet="CALIFICACIONES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CALIFICACIONES_REGISTROS_CALIFICACIONES" Association="Self.FK_CALIFICACIONES_REGISTROS_CALIFICACIONES">
+      <End Role="REGISTROS_CALIFICACIONES" EntitySet="REGISTROS_CALIFICACIONES" />
+      <End Role="CALIFICACIONES" EntitySet="CALIFICACIONES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CALIFICACIONES_USUARIOS" Association="Self.FK_CALIFICACIONES_USUARIOS">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="CALIFICACIONES" EntitySet="CALIFICACIONES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CALIFICACIONES_USUARIOS1" Association="Self.FK_CALIFICACIONES_USUARIOS1">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="CALIFICACIONES" EntitySet="CALIFICACIONES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CAPITULOS_EXPERIENCIA_EXPERIENCIAS" Association="Self.FK_CAPITULOS_EXPERIENCIA_EXPERIENCIAS">
+      <End Role="EXPERIENCIAS" EntitySet="EXPERIENCIAS" />
+      <End Role="CAPITULOS_EXPERIENCIA" EntitySet="CAPITULOS_EXPERIENCIA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CIUDADES_TRABAJO_CIUDADES" Association="Self.FK_CIUDADES_TRABAJO_CIUDADES">
+      <End Role="CIUDADES" EntitySet="CIUDADES" />
+      <End Role="CIUDADES_TRABAJO" EntitySet="CIUDADES_TRABAJO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CONTRATISTAS_ACCIONISTAS_ACCIONISTAS" Association="Self.FK_CONTRATISTAS_ACCIONISTAS_ACCIONISTAS">
+      <End Role="ACCIONISTAS" EntitySet="ACCIONISTAS" />
+      <End Role="CONTRATISTAS_ACCIONISTAS" EntitySet="CONTRATISTAS_ACCIONISTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CONTRATISTAS_ACCIONISTAS_CONTRATISTAS_ACCIONISTAS" Association="Self.FK_CONTRATISTAS_ACCIONISTAS_CONTRATISTAS_ACCIONISTAS">
+      <End Role="CONTRATISTAS_ACCIONISTAS" EntitySet="CONTRATISTAS_ACCIONISTAS" />
+      <End Role="CONTRATISTAS_ACCIONISTAS1" EntitySet="CONTRATISTAS_ACCIONISTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CONTRATISTAS_CIUDADES" Association="Self.FK_CONTRATISTAS_CIUDADES">
+      <End Role="CIUDADES" EntitySet="CIUDADES" />
+      <End Role="CONTRATISTAS" EntitySet="CONTRATISTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CONTRATISTAS_ESTADOS" Association="Self.FK_CONTRATISTAS_ESTADOS">
+      <End Role="ESTADOS" EntitySet="ESTADOS" />
+      <End Role="CONTRATISTAS" EntitySet="CONTRATISTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EXPERIENCIAS_CIUDADES" Association="Self.FK_EXPERIENCIAS_CIUDADES">
+      <End Role="CIUDADES" EntitySet="CIUDADES" />
+      <End Role="EXPERIENCIAS" EntitySet="EXPERIENCIAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EXPERIENCIAS_ESTADOS" Association="Self.FK_EXPERIENCIAS_ESTADOS">
+      <End Role="ESTADOS" EntitySet="ESTADOS" />
+      <End Role="EXPERIENCIAS" EntitySet="EXPERIENCIAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EXPERIENCIAS_REGISTRO_CONTRATISTAS" Association="Self.FK_EXPERIENCIAS_REGISTRO_CONTRATISTAS">
+      <End Role="REGISTRO_CONTRATISTAS" EntitySet="REGISTRO_CONTRATISTAS" />
+      <End Role="EXPERIENCIAS" EntitySet="EXPERIENCIAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INFORMACIONES_FINANCIERAS_REGISTRO_CONTRATISTAS" Association="Self.FK_INFORMACIONES_FINANCIERAS_REGISTRO_CONTRATISTAS">
+      <End Role="REGISTRO_CONTRATISTAS" EntitySet="REGISTRO_CONTRATISTAS" />
+      <End Role="INFORMACIONES_FINANCIERAS" EntitySet="INFORMACIONES_FINANCIERAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PASSWORD_USUARIOS" Association="Self.FK_PASSWORD_USUARIOS">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="PASSWORD" EntitySet="PASSWORD" />
+    </AssociationSet>
+    <AssociationSet Name="FK_POSIBLES_RESPUESTAS_PREGUNTAS" Association="Self.FK_POSIBLES_RESPUESTAS_PREGUNTAS">
+      <End Role="PREGUNTAS" EntitySet="PREGUNTAS" />
+      <End Role="POSIBLES_RESPUESTAS" EntitySet="POSIBLES_RESPUESTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PREGUNTAS_ATRIBUTOS" Association="Self.FK_PREGUNTAS_ATRIBUTOS">
+      <End Role="ATRIBUTOS" EntitySet="ATRIBUTOS" />
+      <End Role="PREGUNTAS" EntitySet="PREGUNTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PREGUNTAS_USUARIOS" Association="Self.FK_PREGUNTAS_USUARIOS">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="PREGUNTAS" EntitySet="PREGUNTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PREGUNTAS_USUARIOS1" Association="Self.FK_PREGUNTAS_USUARIOS1">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="PREGUNTAS" EntitySet="PREGUNTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PROYECTOS_ESTADOS" Association="Self.FK_PROYECTOS_ESTADOS">
+      <End Role="ESTADOS" EntitySet="ESTADOS" />
+      <End Role="PROYECTOS" EntitySet="PROYECTOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGISTRO_CONTRATISTAS_CONTRATISTAS" Association="Self.FK_REGISTRO_CONTRATISTAS_CONTRATISTAS">
+      <End Role="CONTRATISTAS" EntitySet="CONTRATISTAS" />
+      <End Role="REGISTRO_CONTRATISTAS" EntitySet="REGISTRO_CONTRATISTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGISTRO_CONTRATISTAS_ESTADOS" Association="Self.FK_REGISTRO_CONTRATISTAS_ESTADOS">
+      <End Role="ESTADOS" EntitySet="ESTADOS" />
+      <End Role="REGISTRO_CONTRATISTAS" EntitySet="REGISTRO_CONTRATISTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGISTRO_CONTRATISTAS_USUARIOS" Association="Self.FK_REGISTRO_CONTRATISTAS_USUARIOS">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="REGISTRO_CONTRATISTAS" EntitySet="REGISTRO_CONTRATISTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGISTRO_CONTRATISTAS_USUARIOS1" Association="Self.FK_REGISTRO_CONTRATISTAS_USUARIOS1">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="REGISTRO_CONTRATISTAS" EntitySet="REGISTRO_CONTRATISTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGISTROS_CALIFICACIONES_ACTIVIDADES" Association="Self.FK_REGISTROS_CALIFICACIONES_ACTIVIDADES">
+      <End Role="ACTIVIDADES" EntitySet="ACTIVIDADES" />
+      <End Role="REGISTROS_CALIFICACIONES" EntitySet="REGISTROS_CALIFICACIONES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGISTROS_CALIFICACIONES_CAPITULOS" Association="Self.FK_REGISTROS_CALIFICACIONES_CAPITULOS">
+      <End Role="CAPITULOS" EntitySet="CAPITULOS" />
+      <End Role="REGISTROS_CALIFICACIONES" EntitySet="REGISTROS_CALIFICACIONES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGISTROS_CALIFICACIONES_CIUDADES" Association="Self.FK_REGISTROS_CALIFICACIONES_CIUDADES">
+      <End Role="CIUDADES" EntitySet="CIUDADES" />
+      <End Role="REGISTROS_CALIFICACIONES" EntitySet="REGISTROS_CALIFICACIONES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGISTROS_CALIFICACIONES_CONTRATISTAS" Association="Self.FK_REGISTROS_CALIFICACIONES_CONTRATISTAS">
+      <End Role="CONTRATISTAS" EntitySet="CONTRATISTAS" />
+      <End Role="REGISTROS_CALIFICACIONES" EntitySet="REGISTROS_CALIFICACIONES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGISTROS_CALIFICACIONES_ESTADOS" Association="Self.FK_REGISTROS_CALIFICACIONES_ESTADOS">
+      <End Role="ESTADOS" EntitySet="ESTADOS" />
+      <End Role="REGISTROS_CALIFICACIONES" EntitySet="REGISTROS_CALIFICACIONES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGISTROS_CALIFICACIONES_PROCESOS" Association="Self.FK_REGISTROS_CALIFICACIONES_PROCESOS">
+      <End Role="PROCESOS" EntitySet="PROCESOS" />
+      <End Role="REGISTROS_CALIFICACIONES" EntitySet="REGISTROS_CALIFICACIONES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGISTROS_CALIFICACIONES_PROYECTOS" Association="Self.FK_REGISTROS_CALIFICACIONES_PROYECTOS">
+      <End Role="PROYECTOS" EntitySet="PROYECTOS" />
+      <End Role="REGISTROS_CALIFICACIONES" EntitySet="REGISTROS_CALIFICACIONES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGISTROS_CALIFICACIONES_SUBCAPITULOS" Association="Self.FK_REGISTROS_CALIFICACIONES_SUBCAPITULOS">
+      <End Role="SUBCAPITULOS" EntitySet="SUBCAPITULOS" />
+      <End Role="REGISTROS_CALIFICACIONES" EntitySet="REGISTROS_CALIFICACIONES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGISTROS_CALIFICACIONES_USUARIOS" Association="Self.FK_REGISTROS_CALIFICACIONES_USUARIOS">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="REGISTROS_CALIFICACIONES" EntitySet="REGISTROS_CALIFICACIONES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGISTROS_CALIFICACIONES_USUARIOS1" Association="Self.FK_REGISTROS_CALIFICACIONES_USUARIOS1">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="REGISTROS_CALIFICACIONES" EntitySet="REGISTROS_CALIFICACIONES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RESPUESTAS_CALIFICACIONES" Association="Self.FK_RESPUESTAS_CALIFICACIONES">
+      <End Role="CALIFICACIONES" EntitySet="CALIFICACIONES" />
+      <End Role="RESPUESTAS" EntitySet="RESPUESTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RESPUESTAS_PREGUNTAS" Association="Self.FK_RESPUESTAS_PREGUNTAS">
+      <End Role="PREGUNTAS" EntitySet="PREGUNTAS" />
+      <End Role="RESPUESTAS" EntitySet="RESPUESTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RESPUESTAS_USUARIOS" Association="Self.FK_RESPUESTAS_USUARIOS">
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+      <End Role="RESPUESTAS" EntitySet="RESPUESTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUBCAPITULOS_CAPITULOS" Association="Self.FK_SUBCAPITULOS_CAPITULOS">
+      <End Role="CAPITULOS" EntitySet="CAPITULOS" />
+      <End Role="SUBCAPITULOS" EntitySet="SUBCAPITULOS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUBCAPITULOS_EXPERIENCIA_EXPERIENCIAS" Association="Self.FK_SUBCAPITULOS_EXPERIENCIA_EXPERIENCIAS">
+      <End Role="EXPERIENCIAS" EntitySet="EXPERIENCIAS" />
+      <End Role="SUBCAPITULOS_EXPERIENCIA" EntitySet="SUBCAPITULOS_EXPERIENCIA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUBCAPITULOS_EXPERIENCIA_SUBCAPITULOS" Association="Self.FK_SUBCAPITULOS_EXPERIENCIA_SUBCAPITULOS">
+      <End Role="SUBCAPITULOS" EntitySet="SUBCAPITULOS" />
+      <End Role="SUBCAPITULOS_EXPERIENCIA" EntitySet="SUBCAPITULOS_EXPERIENCIA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_USUARIOS_ROLES" Association="Self.FK_USUARIOS_ROLES">
+      <End Role="ROLES" EntitySet="ROLES" />
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

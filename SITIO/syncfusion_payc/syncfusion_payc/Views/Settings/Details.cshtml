@@ -1,0 +1,120 @@
+﻿
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@model syncfusion_payc.Models.PREGUNTAS
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+
+<div>
+    <h4>PREGUNTAS</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DESCRIPCION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DESCRIPCION)
+        </dd>
+
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FECHA_CREACION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FECHA_CREACION)
+        </dd>
+
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FECHA_ULTIMA_MODIFICACION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FECHA_ULTIMA_MODIFICACION)
+        </dd>
+
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ESTADO_PREGUNTA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ESTADO_PREGUNTA)
+        </dd>
+
+
+
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.USUARIOS.DESCRIPCION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.USUARIOS.DESCRIPCION)
+        </dd>
+
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.USUARIOS1.DESCRIPCION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.USUARIOS1.DESCRIPCION)
+        </dd>
+
+
+
+    </dl>
+</div>
+<p>
+
+    @Html.ActionLink("Edit", "Edit", new { id = Model.COD_PREGUNTA }) |
+    @Html.ActionLink("Back to List", "Index")
+
+</p>
+
+
+</body>
+</html>
+
+
