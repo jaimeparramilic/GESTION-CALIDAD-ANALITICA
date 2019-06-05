@@ -947,7 +947,7 @@ Solución</Text>
 					</Prop>
 				</Shape>
 				<Shape ID="767" UniqueID="{6D359607-1D07-452E-A2EF-9E50F4053826}" Name="Gateway.767" NameU="Gateway.767">
-					<Text>Es urgente o de solución inmediata(menos de 10 minutos)</Text>
+					<Text>Es urgente, de solución inmediata o redirección</Text>
 					<XForm>
 						<PinX Unit="MM">15.837648498425938</PinX>
 						<PinY Unit="MM">35.416346870028455</PinY>
@@ -4101,7 +4101,8 @@ corto</Text>
 1. El responsable de solucionar el caso debe solucionarlo (ya sea de soporte o de mantenimiento de una herramienta o producto). 
 2. El responsable del caso debe enviar un correo electrónico al solicitante notificando el cierre y notificarlo por el canal de recepción de la solicitud una vez cerrado el caso.
 3. El responsable del caso debe documentar el caso en caso de ser mantenimiento de una herramienta o documento.
-4. El responsable del caso debe cerrarlo en el registro de google sheets o la herramienta que este siendo utilizada en su momento.</Text>
+4. El responsable del caso debe cerrarlo en el registro de google sheets o la herramienta que este siendo utilizada en su momento.
+5. En caso de ser una redirección el responsable de atención debe contactar al solicitante con el área o personal idoneo para atender su solicitud.</Text>
 					<XForm>
 						<PinX Unit="MM">17.072679441567971</PinX>
 						<PinY Unit="MM">13.035433405746080</PinY>
@@ -4175,7 +4176,7 @@ corto</Text>
 					<Text>1.	Correo electrónico con la corrección o ajuste (sin ejemplo)</Text>
 					<XForm>
 						<PinX Unit="MM">28.023050828849229</PinX>
-						<PinY Unit="MM">29.669291500559080</PinY>
+						<PinY Unit="MM">31.244094685187306</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -4200,6 +4201,9 @@ corto</Text>
 				</Shape>
 				<Shape ID="65" UniqueID="{8F345496-39EF-4B5E-B5C7-26B4A1BE261B}" Name="Text Annotation.65" NameU="Text Annotation.65" Master="9">
 					<Text>SALIDAS
+
+
+
 </Text>
 					<XForm>
 						<PinX Unit="MM">28.023050828849229</PinX>
@@ -4221,7 +4225,34 @@ corto</Text>
 					<Text>2. Solicitud cerrada en el registro </Text>
 					<XForm>
 						<PinX Unit="MM">27.975394597007011</PinX>
-						<PinY Unit="MM">27.307086723616749</PinY>
+						<PinY Unit="MM">28.488189112087912</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address>https://docs.google.com/spreadsheets/d/17PfaLaGlwiHCWlYZ4oyKEfvwVMzuqpaJiYXCdXS0JZk/edit#gid=0</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+										<HLURL:AbsoluteURL>https://docs.google.com/spreadsheets/d/17PfaLaGlwiHCWlYZ4oyKEfvwVMzuqpaJiYXCdXS0JZk/edit#gid=0</HLURL:AbsoluteURL>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="72" UniqueID="{B316101C-FFC9-4463-9565-1980EAD8A9FB}" Name="Text Annotation.72" NameU="Text Annotation.72">
+					<Text>3. Redirección de la solicitud </Text>
+					<XForm>
+						<PinX Unit="MM">28.122047620580194</PinX>
+						<PinY Unit="MM">26.126929243301788</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
