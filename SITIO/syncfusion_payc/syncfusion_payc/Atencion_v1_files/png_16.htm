@@ -1,0 +1,146 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+Atencion_v1
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="png_1.js" type="text/javascript" language="javascript"></script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 38;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 0.871730;
+	viewMgr.visBBoxRight = 33.395966;
+	viewMgr.visBBoxBottom = 13.908327;
+	viewMgr.visBBoxTop = 35.192702;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Shows the location of the selected shape" src="arrow.gif"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="png_16.png" ALT="Gestion de la tercerizacion" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="1256,424,1256,427,1260,423,877,423,881,427,881,424,873,424,873,427,877,431,1260,431,1264,427,1264,424,1256,424" onmouseover="UpdateTooltip(this,38,65,event)" onfocus="UpdateTooltip(this,38,65,event)" onclick="return OnShapeClick(38,65,event);" onkeyup="OnShapeKey(38,65,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="903,431,1069,431,1069,423,903,423,903,431" onmouseover="UpdateTooltip(this,38,65,event)" onfocus="UpdateTooltip(this,38,65,event)" onclick="return OnShapeClick(38,65,event);" onkeyup="OnShapeKey(38,65,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="880,5,880,49,990,49,990,5,880,5" onmouseover="UpdateTooltip(this,38,65,event)" onfocus="UpdateTooltip(this,38,65,event)" onclick="return OnShapeClick(38,65,event);" onkeyup="OnShapeKey(38,65,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/RECOLECTAR%2520INFORMACI%25C3%2593N/PROYECCIONES%2520ABR-19%2520v7.xlsm" target="_top" COORDS="437,424,437,427,441,423,17,423,21,427,21,424,13,424,13,427,17,431,441,431,445,427,445,424,437,424" onmouseover="UpdateTooltip(this,38,49,event)" onfocus="UpdateTooltip(this,38,49,event)" onclick="return OnShapeClick(38,49,event);" onkeyup="OnShapeKey(38,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/RECOLECTAR%2520INFORMACI%25C3%2593N/PROYECCIONES%2520ABR-19%2520v7.xlsm" target="_top" COORDS="0,427,16,430,18,423,1,420,0,427" onmouseover="UpdateTooltip(this,38,49,event)" onfocus="UpdateTooltip(this,38,49,event)" onclick="return OnShapeClick(38,49,event);" onkeyup="OnShapeKey(38,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/RECOLECTAR%2520INFORMACI%25C3%2593N/PROYECCIONES%2520ABR-19%2520v7.xlsm" target="_top" COORDS="20,99,20,144,164,144,164,99,20,99" onmouseover="UpdateTooltip(this,38,49,event)" onfocus="UpdateTooltip(this,38,49,event)" onclick="return OnShapeClick(38,49,event);" onkeyup="OnShapeKey(38,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Gestión de la tercerización" origTitle="Gestión de la tercerización" TITLE="Gestión de la tercerización" HREF="png_16.htm" target="frmDrawing" COORDS="450,427,868,427,869,426,870,426,871,425,871,423,871,32,871,31,870,30,869,29,868,29,450,29,449,29,448,30,447,31,447,32,447,423,447,425,448,426,449,426,450,427" onmouseover="UpdateTooltip(this,38,26,event)" onfocus="UpdateTooltip(this,38,26,event)" onclick="return OnShapeClick(38,26,event);" onkeyup="OnShapeKey(38,26,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>

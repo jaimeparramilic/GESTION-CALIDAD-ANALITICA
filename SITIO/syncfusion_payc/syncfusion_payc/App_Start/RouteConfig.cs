@@ -16,6 +16,7 @@ namespace syncfusion_payc
             routes.IgnoreRoute("servicios/{resource}.svc/{*pathInfo}");
             routes.IgnoreRoute("servicios/{resource}.svc");
             routes.IgnoreRoute("Flujogramas_files/{*pathInfo}");
+            routes.IgnoreRoute("Atencion_v1/{*pathInfo}");
             routes.MapRoute(
 				name: "Default",
 				url: "{controller}/{action}/{id}",

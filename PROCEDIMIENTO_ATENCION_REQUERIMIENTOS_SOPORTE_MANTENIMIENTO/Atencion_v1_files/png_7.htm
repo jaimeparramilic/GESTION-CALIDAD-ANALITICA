@@ -1,0 +1,150 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+Atencion_v1
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="png_1.js" type="text/javascript" language="javascript"></script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 23;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 0.871730;
+	viewMgr.visBBoxRight = 32.899115;
+	viewMgr.visBBoxBottom = 15.908324;
+	viewMgr.visBBoxTop = 34.451999;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Shows the location of the selected shape" src="arrow.gif"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="png_7.png" ALT="Se registra la solicitud y se realiza el análisis preliminar" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="1276,401,1276,404,1280,400,890,400,894,404,894,401,886,401,886,404,890,408,1280,408,1280,404,1280,401,1276,401" onmouseover="UpdateTooltip(this,23,65,event)" onfocus="UpdateTooltip(this,23,65,event)" onclick="return OnShapeClick(23,65,event);" onkeyup="OnShapeKey(23,65,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="917,408,1085,408,1085,400,917,400,917,408" onmouseover="UpdateTooltip(this,23,65,event)" onfocus="UpdateTooltip(this,23,65,event)" onclick="return OnShapeClick(23,65,event);" onkeyup="OnShapeKey(23,65,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="894,75,894,120,1006,120,1006,75,894,75" onmouseover="UpdateTooltip(this,23,65,event)" onfocus="UpdateTooltip(this,23,65,event)" onclick="return OnShapeClick(23,65,event);" onkeyup="OnShapeKey(23,65,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="1. Solicitud registrada." origTitle="1. Solicitud registrada." TITLE="1. Solicitud registrada." HREF="https://docs.google.com/spreadsheets/d/17PfaLaGlwiHCWlYZ4oyKEfvwVMzuqpaJiYXCdXS0JZk/edit#gid=0" target="_top" COORDS="894,144,894,189,919,189,919,144,894,144" onmouseover="UpdateTooltip(this,23,64,event)" onfocus="UpdateTooltip(this,23,64,event)" onclick="return OnShapeClick(23,64,event);" onkeyup="OnShapeKey(23,64,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="1. Solicitud registrada." origTitle="1. Solicitud registrada." TITLE="1. Solicitud registrada." HREF="https://docs.google.com/spreadsheets/d/17PfaLaGlwiHCWlYZ4oyKEfvwVMzuqpaJiYXCdXS0JZk/edit#gid=0" target="_top" COORDS="941,144,941,189,1210,189,1210,144,941,144" onmouseover="UpdateTooltip(this,23,64,event)" onfocus="UpdateTooltip(this,23,64,event)" onclick="return OnShapeClick(23,64,event);" onkeyup="OnShapeKey(23,64,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="1. Solicitud de por algún canal" origTitle="1. Solicitud de por algún canal" TITLE="1. Solicitud de por algún canal" HREF="https://docs.google.com/spreadsheets/d/17PfaLaGlwiHCWlYZ4oyKEfvwVMzuqpaJiYXCdXS0JZk/edit#gid=0" target="_top" COORDS="20,120,20,165,46,165,46,120,20,120" onmouseover="UpdateTooltip(this,23,59,event)" onfocus="UpdateTooltip(this,23,59,event)" onclick="return OnShapeClick(23,59,event);" onkeyup="OnShapeKey(23,59,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="1. Solicitud de por algún canal" origTitle="1. Solicitud de por algún canal" TITLE="1. Solicitud de por algún canal" HREF="https://docs.google.com/spreadsheets/d/17PfaLaGlwiHCWlYZ4oyKEfvwVMzuqpaJiYXCdXS0JZk/edit#gid=0" target="_top" COORDS="68,120,68,165,440,165,440,120,68,120" onmouseover="UpdateTooltip(this,23,59,event)" onfocus="UpdateTooltip(this,23,59,event)" onclick="return OnShapeClick(23,59,event);" onkeyup="OnShapeKey(23,59,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/RECOLECTAR%2520INFORMACI%25C3%2593N/PROYECCIONES%2520ABR-19%2520v7.xlsm" target="_top" COORDS="444,401,444,404,448,400,17,400,21,404,21,401,13,401,13,404,17,408,448,408,452,404,452,401,444,401" onmouseover="UpdateTooltip(this,23,49,event)" onfocus="UpdateTooltip(this,23,49,event)" onclick="return OnShapeClick(23,49,event);" onkeyup="OnShapeKey(23,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/RECOLECTAR%2520INFORMACI%25C3%2593N/PROYECCIONES%2520ABR-19%2520v7.xlsm" target="_top" COORDS="0,404,16,407,18,400,1,396,0,404" onmouseover="UpdateTooltip(this,23,49,event)" onfocus="UpdateTooltip(this,23,49,event)" onclick="return OnShapeClick(23,49,event);" onkeyup="OnShapeKey(23,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/RECOLECTAR%2520INFORMACI%25C3%2593N/PROYECCIONES%2520ABR-19%2520v7.xlsm" target="_top" COORDS="20,71,20,116,167,116,167,71,20,71" onmouseover="UpdateTooltip(this,23,49,event)" onfocus="UpdateTooltip(this,23,49,event)" onclick="return OnShapeClick(23,49,event);" onkeyup="OnShapeKey(23,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Se registra la solicitud, se asigna a un responsable inicial y..." origTitle="Se registra la solicitud, se asigna a un responsable inicial y..." TITLE="Se registra la solicitud, se asigna a un responsable inicial y..." HREF="png_7.htm" target="frmDrawing" COORDS="457,404,881,404,883,403,884,403,884,402,885,400,885,3,884,2,884,1,883,0,881,0,457,0,456,0,455,1,454,2,454,3,454,400,454,402,455,403,456,403,457,404" onmouseover="UpdateTooltip(this,23,26,event)" onfocus="UpdateTooltip(this,23,26,event)" onclick="return OnShapeClick(23,26,event);" onkeyup="OnShapeKey(23,26,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>

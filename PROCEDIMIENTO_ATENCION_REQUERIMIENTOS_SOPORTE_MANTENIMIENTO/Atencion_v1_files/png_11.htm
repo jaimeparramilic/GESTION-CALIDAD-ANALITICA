@@ -1,0 +1,150 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+Atencion_v1
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="png_1.js" type="text/javascript" language="javascript"></script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 31;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 0.871730;
+	viewMgr.visBBoxRight = 33.415842;
+	viewMgr.visBBoxBottom = 18.908320;
+	viewMgr.visBBoxTop = 34.451999;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Shows the location of the selected shape" src="arrow.gif"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="png_11.png" ALT="Determinar si el solicitante esta satisfecho con la propuesta de solución" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="2. Compromiso de solución" origTitle="2. Compromiso de solución" TITLE="2. Compromiso de solución" HREF="https://docs.google.com/spreadsheets/d/17PfaLaGlwiHCWlYZ4oyKEfvwVMzuqpaJiYXCdXS0JZk/edit#gid=0" target="_top" COORDS="883,218,883,262,908,262,908,218,883,218" onmouseover="UpdateTooltip(this,31,69,event)" onfocus="UpdateTooltip(this,31,69,event)" onclick="return OnShapeClick(31,69,event);" onkeyup="OnShapeKey(31,69,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="2. Compromiso de solución" origTitle="2. Compromiso de solución" TITLE="2. Compromiso de solución" HREF="https://docs.google.com/spreadsheets/d/17PfaLaGlwiHCWlYZ4oyKEfvwVMzuqpaJiYXCdXS0JZk/edit#gid=0" target="_top" COORDS="930,218,930,262,1260,262,1260,218,930,218" onmouseover="UpdateTooltip(this,31,69,event)" onfocus="UpdateTooltip(this,31,69,event)" onclick="return OnShapeClick(31,69,event);" onkeyup="OnShapeKey(31,69,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="1255,395,1255,397,1259,393,876,393,880,397,880,395,872,395,872,397,876,401,1259,401,1263,397,1263,395,1255,395" onmouseover="UpdateTooltip(this,31,65,event)" onfocus="UpdateTooltip(this,31,65,event)" onclick="return OnShapeClick(31,65,event);" onkeyup="OnShapeKey(31,65,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="902,401,1068,401,1068,393,902,393,902,401" onmouseover="UpdateTooltip(this,31,65,event)" onfocus="UpdateTooltip(this,31,65,event)" onclick="return OnShapeClick(31,65,event);" onkeyup="OnShapeKey(31,65,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="880,74,880,118,990,118,990,74,880,74" onmouseover="UpdateTooltip(this,31,65,event)" onfocus="UpdateTooltip(this,31,65,event)" onclick="return OnShapeClick(31,65,event);" onkeyup="OnShapeKey(31,65,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="1. Necesidad de ajuste propuesta" origTitle="1. Necesidad de ajuste propuesta" TITLE="1. Necesidad de ajuste propuesta" HREF="https://docs.google.com/spreadsheets/d/17PfaLaGlwiHCWlYZ4oyKEfvwVMzuqpaJiYXCdXS0JZk/edit#gid=0" target="_top" COORDS="904,167,904,127,880,127,880,167,880,172,880,211,1016,211,1016,172,1264,172,1264,127,926,127,926,167,904,167" onmouseover="UpdateTooltip(this,31,64,event)" onfocus="UpdateTooltip(this,31,64,event)" onclick="return OnShapeClick(31,64,event);" onkeyup="OnShapeKey(31,64,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="1. Registro solicitudes y solución planteada" origTitle="1. Registro solicitudes y solución planteada" TITLE="1. Registro solicitudes y solución planteada" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx" target="_top" COORDS="45,148,45,108,20,108,20,148,20,152,20,192,272,192,272,152,445,152,445,108,67,108,67,148,45,148" onmouseover="UpdateTooltip(this,31,59,event)" onfocus="UpdateTooltip(this,31,59,event)" onclick="return OnShapeClick(31,59,event);" onkeyup="OnShapeKey(31,59,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/RECOLECTAR%2520INFORMACI%25C3%2593N/PROYECCIONES%2520ABR-19%2520v7.xlsm" target="_top" COORDS="437,395,437,397,441,393,17,393,21,397,21,395,13,395,13,397,17,401,441,401,445,397,445,395,437,395" onmouseover="UpdateTooltip(this,31,49,event)" onfocus="UpdateTooltip(this,31,49,event)" onclick="return OnShapeClick(31,49,event);" onkeyup="OnShapeKey(31,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/RECOLECTAR%2520INFORMACI%25C3%2593N/PROYECCIONES%2520ABR-19%2520v7.xlsm" target="_top" COORDS="0,398,16,401,18,393,1,390,0,398" onmouseover="UpdateTooltip(this,31,49,event)" onfocus="UpdateTooltip(this,31,49,event)" onclick="return OnShapeClick(31,49,event);" onkeyup="OnShapeKey(31,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/RECOLECTAR%2520INFORMACI%25C3%2593N/PROYECCIONES%2520ABR-19%2520v7.xlsm" target="_top" COORDS="20,70,20,114,164,114,164,70,20,70" onmouseover="UpdateTooltip(this,31,49,event)" onfocus="UpdateTooltip(this,31,49,event)" onclick="return OnShapeClick(31,49,event);" onkeyup="OnShapeKey(31,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Determinar si el solicitante esta satisfecho con la propuesta..." origTitle="Determinar si el solicitante esta satisfecho con la propuesta..." TITLE="Determinar si el solicitante esta satisfecho con la propuesta..." HREF="png_11.htm" target="frmDrawing" COORDS="870,135,870,3,870,2,870,1,869,0,867,0,450,0,448,0,447,1,447,2,447,3,447,394,447,395,447,396,448,397,450,397,867,397,869,397,870,396,870,395,870,394,870,179,876,179,876,135,870,135" onmouseover="UpdateTooltip(this,31,26,event)" onfocus="UpdateTooltip(this,31,26,event)" onclick="return OnShapeClick(31,26,event);" onkeyup="OnShapeKey(31,26,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>
