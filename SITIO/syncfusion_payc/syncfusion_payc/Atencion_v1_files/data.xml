@@ -2591,8 +2591,8 @@ de análisis</Text>
 				</Shape>
 				<Shape ID="1386" UniqueID="{5029FD2F-55E6-4DBA-BC30-CF90BE705E67}" Name="Sequence Flow.1386" NameU="Sequence Flow.1386" Master="5">
 					<XForm>
-						<PinX Unit="MM">17.092518957877001</PinX>
-						<PinY Unit="MM">18.202755927739702</PinY>
+						<PinX Unit="MM">16.907232552772964</PinX>
+						<PinY Unit="MM">18.187601156151057</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -2691,14 +2691,14 @@ de análisis</Text>
 				</Shape>
 				<Shape ID="1412" UniqueID="{025C262C-3132-4B36-875A-77A0782A494C}" Name="Sheet.1412" NameU="Sheet.1412">
 					<XForm>
-						<PinX Unit="MM">20.055612367235391</PinX>
-						<PinY Unit="MM">18.448819023284631</PinY>
+						<PinX Unit="MM">19.685039557027331</PinX>
+						<PinY Unit="MM">18.418509480107357</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="1413" UniqueID="{4CBAD4EE-6887-4033-AF95-E306989A4B72}" Name="Gateway" NameU="Gateway" Master="10">
 					<XForm>
-						<PinX Unit="MM">20.055612367235391</PinX>
-						<PinY Unit="MM">18.251968555978266</PinY>
+						<PinX Unit="MM">19.685039557027331</PinX>
+						<PinY Unit="MM">18.221659012800991</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>0</LayerMember>
@@ -2727,8 +2727,8 @@ de análisis</Text>
 				<Shape ID="1428" UniqueID="{BD47311F-391C-4896-A134-51AEDA16B939}" Name="Gateway.767" NameU="Gateway.767">
 					<Text>Es priorizado</Text>
 					<XForm>
-						<PinX Unit="MM">20.055612367235391</PinX>
-						<PinY Unit="MM">18.304223017554591</PinY>
+						<PinX Unit="MM">19.685039557027331</PinX>
+						<PinY Unit="MM">18.273913474377316</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>0</LayerMember>
@@ -2737,8 +2737,8 @@ de análisis</Text>
 				<Shape ID="1429" UniqueID="{93583E2B-957C-499D-B169-F6D944149624}" Name="Sequence Flow.1429" NameU="Sequence Flow.1429" Master="5">
 					<Text>Si</Text>
 					<XForm>
-						<PinX Unit="MM">23.205218332322431</PinX>
-						<PinY Unit="MM">18.251968555978269</PinY>
+						<PinX Unit="MM">23.019931927218401</PinX>
+						<PinY Unit="MM">18.221659012800995</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -2763,8 +2763,8 @@ de análisis</Text>
 				<Shape ID="1430" UniqueID="{3CCB55DF-807D-4942-9D69-8CE3F22C068F}" Name="Sequence Flow.1430" NameU="Sequence Flow.1430" Master="5">
 					<Text>No</Text>
 					<XForm>
-						<PinX Unit="MM">16.858031869887949</PinX>
-						<PinY Unit="MM">17.086020853149559</PinY>
+						<PinX Unit="MM">16.672745464783922</PinX>
+						<PinY Unit="MM">17.070866081560922</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -2958,11 +2958,10 @@ corto</Text>
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
 										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Elaborar presentación con resultados</HLURL:SubAddress>
+										<HLURL:SubAddress>Analizar y establecer solucion</HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>E:\REPOSITORIOS\GESTION-CALIDAD-ANALITICA\PROCEDIMIENTO_ATENCION_REQUERIMIENTOS_SOPORTE_MANTENIMIENTO\Atencion_v1.vsdx#Elaborar presentación con resultados</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -3009,11 +3008,10 @@ corto</Text>
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
 										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Elaborar presentación con resultados</HLURL:SubAddress>
+										<HLURL:SubAddress>Implementar solucion</HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>E:\REPOSITORIOS\GESTION-CALIDAD-ANALITICA\PROCEDIMIENTO_ATENCION_REQUERIMIENTOS_SOPORTE_MANTENIMIENTO\Atencion_v1.vsdx#Elaborar presentación con resultados</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -3229,7 +3227,7 @@ corto</Text>
 					<Text>Realizar reunión de inicio</Text>
 					<XForm>
 						<PinX Unit="MM">5.115737078531754</PinX>
-						<PinY Unit="MM">5.860084528775508</PinY>
+						<PinY Unit="MM">1.716535399811405</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>0</LayerMember>
@@ -3279,7 +3277,7 @@ corto</Text>
 					<Text>Diseño</Text>
 					<XForm>
 						<PinX Unit="MM">9.840146471601468</PinX>
-						<PinY Unit="MM">5.860084528775508</PinY>
+						<PinY Unit="MM">1.716535399811405</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>0</LayerMember>
@@ -3291,11 +3289,10 @@ corto</Text>
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
 										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Compartir archivo con resultados y presentación</HLURL:SubAddress>
+										<HLURL:SubAddress>Diseño</HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>E:\REPOSITORIOS\GESTION-CALIDAD-ANALITICA\PROCEDIMIENTO_ATENCION_REQUERIMIENTOS_SOPORTE_MANTENIMIENTO\Atencion_v1.vsdx#Compartir archivo con resultados y presentación</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -3330,7 +3327,7 @@ corto</Text>
 					<Text>Implementación</Text>
 					<XForm>
 						<PinX Unit="MM">14.159853160488611</PinX>
-						<PinY Unit="MM">5.860084528775508</PinY>
+						<PinY Unit="MM">1.716535399811405</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>0</LayerMember>
@@ -3342,11 +3339,10 @@ corto</Text>
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
 										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Compartir archivo con resultados y presentación</HLURL:SubAddress>
+										<HLURL:SubAddress>Implementacion</HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>E:\REPOSITORIOS\GESTION-CALIDAD-ANALITICA\PROCEDIMIENTO_ATENCION_REQUERIMIENTOS_SOPORTE_MANTENIMIENTO\Atencion_v1.vsdx#Compartir archivo con resultados y presentación</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -3381,7 +3377,7 @@ corto</Text>
 					<Text>Cierre</Text>
 					<XForm>
 						<PinX Unit="MM">18.687412162180429</PinX>
-						<PinY Unit="MM">5.860084528775508</PinY>
+						<PinY Unit="MM">1.716535399811405</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>0</LayerMember>
@@ -3393,11 +3389,10 @@ corto</Text>
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
 										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Compartir archivo con resultados y presentación</HLURL:SubAddress>
+										<HLURL:SubAddress>Cierre</HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>E:\REPOSITORIOS\GESTION-CALIDAD-ANALITICA\PROCEDIMIENTO_ATENCION_REQUERIMIENTOS_SOPORTE_MANTENIMIENTO\Atencion_v1.vsdx#Compartir archivo con resultados y presentación</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -3431,7 +3426,7 @@ corto</Text>
 				<Shape ID="93" UniqueID="{69407DD3-11AD-4A95-BE10-CAB75E1FFE68}" Name="Sequence Flow.769" NameU="Sequence Flow.769" Master="5">
 					<XForm>
 						<PinX Unit="MM">7.477941775066610</PinX>
-						<PinY Unit="MM">5.860084528775508</PinY>
+						<PinY Unit="MM">1.716535399811405</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -3456,7 +3451,7 @@ corto</Text>
 				<Shape ID="94" UniqueID="{7B9FB00F-42FC-4CA9-868E-FBC44C473A07}" Name="Sequence Flow.94" NameU="Sequence Flow.94" Master="5">
 					<XForm>
 						<PinX Unit="MM">11.999999816045040</PinX>
-						<PinY Unit="MM">5.860084528775508</PinY>
+						<PinY Unit="MM">1.716535399811405</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -3481,7 +3476,7 @@ corto</Text>
 				<Shape ID="95" UniqueID="{EC51AFA2-FDC7-42A3-A367-CEA5C0536DB4}" Name="Sequence Flow.95" NameU="Sequence Flow.95" Master="5">
 					<XForm>
 						<PinX Unit="MM">16.423632661334519</PinX>
-						<PinY Unit="MM">5.860084528775508</PinY>
+						<PinY Unit="MM">1.716535399811405</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -3506,7 +3501,7 @@ corto</Text>
 				<Shape ID="109" UniqueID="{F20AE69A-1B7E-43E8-B0DA-C27C803DFC86}" Name="End Event.2183" NameU="End Event.2183" Master="7">
 					<XForm>
 						<PinX Unit="MM">22.334645046628822</PinX>
-						<PinY Unit="MM">5.850394407593500</PinY>
+						<PinY Unit="MM">1.716535399811407</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>0</LayerMember>
@@ -3530,8 +3525,8 @@ corto</Text>
 				</Shape>
 				<Shape ID="123" UniqueID="{314E026E-8E62-46FA-8BDE-DA5BFBCC1060}" Name="Sequence Flow.123" NameU="Sequence Flow.123" Master="5">
 					<XForm>
-						<PinX Unit="MM">21.039224084696951</PinX>
-						<PinY Unit="MM">5.855239468184504</PinY>
+						<PinX Unit="MM">21.039224084696947</PinX>
+						<PinY Unit="MM">1.716535399811406</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -3556,7 +3551,7 @@ corto</Text>
 				<Shape ID="124" UniqueID="{393402D9-7E6A-4B67-828C-44B68749A81E}" Name="Start Event.2197" NameU="Start Event.2197" Master="2">
 					<XForm>
 						<PinX Unit="MM">1.468504206267340</PinX>
-						<PinY Unit="MM">5.850394407593498</PinY>
+						<PinY Unit="MM">1.716535399811406</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>0</LayerMember>
@@ -3581,7 +3576,7 @@ corto</Text>
 				<Shape ID="150" UniqueID="{A74ED29B-D2A8-47AB-A1A7-B44EB9EDE8D9}" Name="Sequence Flow.150" NameU="Sequence Flow.150" Master="5">
 					<XForm>
 						<PinX Unit="MM">2.763925162107226</PinX>
-						<PinY Unit="MM">5.855239468184503</PinY>
+						<PinY Unit="MM">1.716535399811405</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -5422,7 +5417,7 @@ corto</Text>
 				<Shape ID="57" UniqueID="{EA3BE7D5-64F1-4EC1-977D-D1890F2A836D}" Name="Sheet.57" NameU="Sheet.57">
 					<Text>RESPONSABLES
 1. El director de la Unidad designa un líder del proyecto de parte de la unidad que será el responsable de las comunicaciones con el cliente, la agenda del proyecto y de la etapa de implementación.
-2. En conjunto, el director de la unidad o gestor del proyecto con el líder se encargan de realizar un plan de trabajo, establecer el equipo de trabajo necesario, los recursos, evaluar los riesgos, costear el proyecto y explorar otras alternativas.
+2. En conjunto, el director de la unidad o gestor del proyecto con el líder se encargan de levantar los requerimientos, realizar un plan de trabajo, establecer el equipo de trabajo necesario, los recursos, evaluar los riesgos, costear el proyecto y explorar otras alternativas.
 3. El director de la unidad con el apoyo del líder elaborará una presentación con todos las salidas relacionadas con esta actividad.
 4. El líder del proyecto deberá presentar el proyecto al solicitante para su ajuste.
 5. El director de la Unidad, en conjunto con el líder y el solicitante deberán presentar el proyecto a la alta dirección para que decida sobre el mismo (incluirlo en el programa de proyectos de la Unidad, tercerizar la elaboración, excluir  del programa de proyectos de la Unidad o ajustar la concepción del mismo)</Text>
@@ -5499,7 +5494,7 @@ corto</Text>
 					<Text>1.	Alcance y objetivos</Text>
 					<XForm>
 						<PinX Unit="MM">27.975394597007011</PinX>
-						<PinY Unit="MM">32.080472649981999</PinY>
+						<PinY Unit="MM">33.852126232689194</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -5509,15 +5504,6 @@ corto</Text>
 							<SolutionXML>
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
-										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://docs.google.com/spreadsheets/d/17PfaLaGlwiHCWlYZ4oyKEfvwVMzuqpaJiYXCdXS0JZk/edit#gid=0</HLURL:Address>
-										<HLURL:SubAddress></HLURL:SubAddress>
-										<HLURL:ExtraInfo></HLURL:ExtraInfo>
-										<HLURL:Default>0</HLURL:Default>
-										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://docs.google.com/spreadsheets/d/17PfaLaGlwiHCWlYZ4oyKEfvwVMzuqpaJiYXCdXS0JZk/edit#gid=0</HLURL:AbsoluteURL>
-									</HLURL:Hyperlink>
-									<HLURL:Hyperlink ID="2">
 										<HLURL:Description></HLURL:Description>
 										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/tree/master/PROCEDIMIENTO_ATENCION_REQUERIMIENTOS_SOPORTE_MANTENIMIENTO/ATENCION_SOLUCIONES/PROYECTOS/CONCEPCION</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
@@ -5537,10 +5523,12 @@ corto</Text>
 
 
 
+
+
 </Text>
 					<XForm>
 						<PinX Unit="MM">28.023050828849229</PinX>
-						<PinY Unit="MM">31.440945066434129</PinY>
+						<PinY Unit="MM">31.440945100097544</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -5558,7 +5546,7 @@ corto</Text>
 					<Text>2.   Plan de trabajo</Text>
 					<XForm>
 						<PinX Unit="MM">27.975394597007011</PinX>
-						<PinY Unit="MM">31.096220659589370</PinY>
+						<PinY Unit="MM">32.867874242296566</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -5585,7 +5573,7 @@ corto</Text>
 					<Text>3.   Equipo de trabajo</Text>
 					<XForm>
 						<PinX Unit="MM">27.975394597007011</PinX>
-						<PinY Unit="MM">29.915118271118200</PinY>
+						<PinY Unit="MM">31.686771853825395</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -5612,7 +5600,7 @@ corto</Text>
 					<Text>4.   Recursos</Text>
 					<XForm>
 						<PinX Unit="MM">27.925197222501669</PinX>
-						<PinY Unit="MM">28.930866280725549</PinY>
+						<PinY Unit="MM">30.702519863432745</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -5639,7 +5627,7 @@ corto</Text>
 					<Text>5.   Riesgos</Text>
 					<XForm>
 						<PinX Unit="MM">27.975394597007011</PinX>
-						<PinY Unit="MM">27.946614290332910</PinY>
+						<PinY Unit="MM">29.718267873040105</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -5666,7 +5654,7 @@ corto</Text>
 					<Text>6.   Costos</Text>
 					<XForm>
 						<PinX Unit="MM">27.975394597007011</PinX>
-						<PinY Unit="MM">27.061259953057640</PinY>
+						<PinY Unit="MM">28.832913535764835</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -5693,7 +5681,7 @@ corto</Text>
 					<Text>7.  Otras alternativas</Text>
 					<XForm>
 						<PinX Unit="MM">27.975394597007011</PinX>
-						<PinY Unit="MM">26.077007962665000</PinY>
+						<PinY Unit="MM">27.848661545372195</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -5720,7 +5708,34 @@ corto</Text>
 					<Text>8.  Presentación</Text>
 					<XForm>
 						<PinX Unit="MM">27.975394597007011</PinX>
-						<PinY Unit="MM">24.944881946674411</PinY>
+						<PinY Unit="MM">26.716535529381606</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/tree/master/PROCEDIMIENTO_ATENCION_REQUERIMIENTOS_SOPORTE_MANTENIMIENTO/ATENCION_SOLUCIONES/PROYECTOS/CONCEPCION</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/tree/master/PROCEDIMIENTO_ATENCION_REQUERIMIENTOS_SOPORTE_MANTENIMIENTO/ATENCION_SOLUCIONES/PROYECTOS/CONCEPCION</HLURL:AbsoluteURL>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="131" UniqueID="{737B993B-E245-4B42-BEF8-9184813D1031}" Name="Text Annotation.131" NameU="Text Annotation.131">
+					<Text>9.  Requerimientos</Text>
+					<XForm>
+						<PinX Unit="MM">27.975394597007014</PinX>
+						<PinY Unit="MM">25.535433140909991</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
