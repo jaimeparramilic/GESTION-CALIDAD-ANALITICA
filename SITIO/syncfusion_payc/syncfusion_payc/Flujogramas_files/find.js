@@ -3,13 +3,13 @@ var SelectSingleNode = parent.SelectSingleNode;
 var SelectNodes = parent.SelectNodes;
 var MSIE = parent.MSIE
 
-var strShapeName	= "Shape Name";
-var strShapeText	= "Shape Text";
-var strProps		= "Shape Data";
-var strResults		= "Search results for:";
+var strShapeName	= "Nombre de forma";
+var strShapeText	= "Texto de la forma";
+var strProps		= "Datos de formas";
+var strResults		= "Resultados de la búsqueda de:";
 
-var strShape	= "Shape Name:";
-var strNoCustomPropertiesToDisplayText = "CTRL+click a shape in the drawing to view details.";
+var strShape	= "Nombre de forma:";
+var strNoCustomPropertiesToDisplayText = "Use la combinación CTRL+clic en una forma del dibujo para ver los detalles.";
 
 var FindShapeXML = parent.FindShapeXML;
 var Unquote = parent.Unquote;
@@ -63,7 +63,7 @@ function FindOnClick()
 	{
 		var findArray = Find(searchTokensArray, fieldsToSearchArray);
 		var ArrayLength = findArray.length;
-		var strResultsHTML = "No matches found.";
+		var strResultsHTML = "No se han encontrado registros coincidentes.";
 		var lastPageID = null;
 		var shapeID;
 		
@@ -80,7 +80,7 @@ function FindOnClick()
 				}
 
 				shapeID = findArray[count].ShapeID;
-				strResultsHTML += '<p class="results"><a href="javascript:populateSearchResultDetails(\'results_'+ lastPageID +'_'+ shapeID +'\', '+ lastPageID +','+ shapeID +'); TogglePlus(\'results_' + lastPageID + '_' + shapeID + '\',\'img_' + lastPageID + '_' + shapeID + '\', hideResults)"><img src="plus.gif" style="padding-left:13px" alt="Shows/hides shape details" width="13" height="9" border="0" id="img_'+ lastPageID +'_'+ shapeID +'"></a>\n'
+				strResultsHTML += '<p class="results"><a href="javascript:populateSearchResultDetails(\'results_'+ lastPageID +'_'+ shapeID +'\', '+ lastPageID +','+ shapeID +'); TogglePlus(\'results_' + lastPageID + '_' + shapeID + '\',\'img_' + lastPageID + '_' + shapeID + '\', hideResults)"><img src="plus.gif" style="padding-left:13px" alt="Muestra u oculta los detalles de la forma" width="13" height="9" border="0" id="img_'+ lastPageID +'_'+ shapeID +'"></a>\n'
 				strResultsHTML += '<a  class="blu1" href="JavaScript:FindQuerySelect(';
 
 				strResultsHTML += findArray[count].PageID + ",";
