@@ -1,4 +1,4 @@
-﻿<html>
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <link rel="stylesheet" type="text/css" href="visio.css"/>
@@ -11,6 +11,14 @@ function OnShapeClick(){};
 </script>
 
 <script src="png_1.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript">
+	if( (parent.isSVG) || 
+		(parent.isVML && parent.vmlSupported) || 
+		(parent.isXAML && parent.isUpLevel)) 
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
 
 
 <script type="text/javascript" language="javascript">
@@ -69,7 +77,7 @@ function load ()
 {
 	if(isUpLevel)
 	{
-		arrowdiv.innerHTML = '<img id="arrowgif" alt="Shows the location of the selected shape" src="arrow.gif"/>';
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Muestra la ubicación de la forma seleccionada" src="arrow.png"/>';
 
 		var pageIndex = parent.PageIndexFromID (pageID);
 		parent.CurPageUpdate (pageIndex);
@@ -117,6 +125,18 @@ div.banner {
 
 <body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
 
+<script type="text/javascript" language="javascript">
+// Displays the banner prompt to install Silverlight
+if (parent.slSupported && !parent.slInstalled)
+{
+	var slBanner = document.createElement("div");
+	slBanner.className = "banner";
+	slBanner.innerHTML = 'Para habilitar toda la funcionalidad como Panorámica y zoom, <a href="https://www.microsoft.com/silverlight/resources/install.aspx" target="parent">haga clic aquí</a> para instalar el complemento Silverlight.';
+
+	document.body.appendChild(slBanner);
+	document.body.style.paddingTop = "2.5em";
+}
+</script>
 
 
 <div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
@@ -131,14 +151,14 @@ div.banner {
 </center>
 
 <MAP NAME="visImageMap">
-  <AREA shape="POLYGON" tabindex="1" ALT="2. Instrumento recolección percepciones V2.xlsx" origTitle="2. Instrumento recolección percepciones V2.xlsx" TITLE="2. Instrumento recolección percepciones V2.xlsx" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/PERCEPCION_OTROSIES/Instrumento_recoleccion_percepciones_V2.xlsx" target="_top" COORDS="294,319,442,319,442,275,18,275,18,314,18,319,18,358,294,358,294,319" onmouseover="UpdateTooltip(this,15,59,event)" onfocus="UpdateTooltip(this,15,59,event)" onclick="return OnShapeClick(15,59,event);" onkeyup="OnShapeKey(15,59,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Instrumento recolección percepciones V2.xlsx..." origTitle="SALIDAS 1. Instrumento recolección percepciones V2.xlsx..." TITLE="SALIDAS 1. Instrumento recolección percepciones V2.xlsx..." HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/PERCEPCION_OTROSIES/Instrumento_recoleccion_percepciones_V2.xlsx" target="_top" COORDS="1256,394,1256,396,1260,392,878,392,882,396,882,394,874,394,874,396,878,400,1260,400,1264,396,1264,394,1256,394" onmouseover="UpdateTooltip(this,15,51,event)" onfocus="UpdateTooltip(this,15,51,event)" onclick="return OnShapeClick(15,51,event);" onkeyup="OnShapeKey(15,51,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Instrumento recolección percepciones V2.xlsx..." origTitle="SALIDAS 1. Instrumento recolección percepciones V2.xlsx..." TITLE="SALIDAS 1. Instrumento recolección percepciones V2.xlsx..." HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/PERCEPCION_OTROSIES/Instrumento_recoleccion_percepciones_V2.xlsx" target="_top" COORDS="863,400,1069,400,1069,392,863,392,863,400" onmouseover="UpdateTooltip(this,15,51,event)" onfocus="UpdateTooltip(this,15,51,event)" onclick="return OnShapeClick(15,51,event);" onkeyup="OnShapeKey(15,51,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Instrumento recolección percepciones V2.xlsx..." origTitle="SALIDAS 1. Instrumento recolección percepciones V2.xlsx..." TITLE="SALIDAS 1. Instrumento recolección percepciones V2.xlsx..." HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/PERCEPCION_OTROSIES/Instrumento_recoleccion_percepciones_V2.xlsx" target="_top" COORDS="1040,184,1264,184,1264,145,1264,140,1264,101,991,101,991,61,881,61,881,101,881,106,881,140,881,145,881,179,881,184,881,223,1040,223,1040,184" onmouseover="UpdateTooltip(this,15,51,event)" onfocus="UpdateTooltip(this,15,51,event)" onclick="return OnShapeClick(15,51,event);" onkeyup="OnShapeKey(15,51,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS"  target="_top" COORDS="436,394,436,396,440,392,17,392,21,396,21,394,13,394,13,396,17,400,440,400,444,396,444,394,436,394" onmouseover="UpdateTooltip(this,15,49,event)" onfocus="UpdateTooltip(this,15,49,event)" onclick="return OnShapeClick(15,49,event);" onkeyup="OnShapeKey(15,49,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS"  target="_top" COORDS="0,397,16,400,18,392,1,389,0,397" onmouseover="UpdateTooltip(this,15,49,event)" onfocus="UpdateTooltip(this,15,49,event)" onclick="return OnShapeClick(15,49,event);" onkeyup="OnShapeKey(15,49,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS"  target="_top" COORDS="20,50,20,94,164,94,164,50,20,50" onmouseover="UpdateTooltip(this,15,49,event)" onfocus="UpdateTooltip(this,15,49,event)" onclick="return OnShapeClick(15,49,event);" onkeyup="OnShapeKey(15,49,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="Recolectar del área técnica y comercial para que incluya sus..." origTitle="Recolectar del área técnica y comercial para que incluya sus..." TITLE="Recolectar del área técnica y comercial para que incluya sus..." HREF="png_15.htm" target="frmDrawing" COORDS="448,396,865,396,866,396,867,395,868,394,868,393,868,3,868,2,867,1,866,0,865,0,448,0,447,0,446,1,446,2,445,3,445,393,446,394,446,395,447,396,448,396" onmouseover="UpdateTooltip(this,15,26,event)" onfocus="UpdateTooltip(this,15,26,event)" onclick="return OnShapeClick(15,26,event);" onkeyup="OnShapeKey(15,26,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="2. Instrumento recolección percepciones V2.xlsx" origTitle="2. Instrumento recolección percepciones V2.xlsx" TITLE="2. Instrumento recolección percepciones V2.xlsx" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/RECOLECTAR_INFORMACI%25C3%2593N/PERCEPCION_OTROSIES/Instrumento_recoleccion_percepciones_V2.xlsx" target="_top" COORDS="235,255,353,255,353,220,15,220,15,251,15,255,15,286,235,286,235,255" onmouseover="UpdateTooltip(this,15,59,event)" onfocus="UpdateTooltip(this,15,59,event)" onclick="return OnShapeClick(15,59,event);" onkeyup="OnShapeKey(15,59,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Instrumento recolección percepciones V2.xlsx..." origTitle="SALIDAS 1. Instrumento recolección percepciones V2.xlsx..." TITLE="SALIDAS 1. Instrumento recolección percepciones V2.xlsx..." HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/RECOLECTAR_INFORMACI%25C3%2593N/PERCEPCION_OTROSIES/Instrumento_recoleccion_percepciones_V2.xlsx" target="_top" COORDS="1004,315,1004,317,1008,313,702,313,706,317,706,315,698,315,698,317,702,321,1008,321,1012,317,1012,315,1004,315" onmouseover="UpdateTooltip(this,15,51,event)" onfocus="UpdateTooltip(this,15,51,event)" onclick="return OnShapeClick(15,51,event);" onkeyup="OnShapeKey(15,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Instrumento recolección percepciones V2.xlsx..." origTitle="SALIDAS 1. Instrumento recolección percepciones V2.xlsx..." TITLE="SALIDAS 1. Instrumento recolección percepciones V2.xlsx..." HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/RECOLECTAR_INFORMACI%25C3%2593N/PERCEPCION_OTROSIES/Instrumento_recoleccion_percepciones_V2.xlsx" target="_top" COORDS="691,321,855,321,855,313,691,313,691,321" onmouseover="UpdateTooltip(this,15,51,event)" onfocus="UpdateTooltip(this,15,51,event)" onclick="return OnShapeClick(15,51,event);" onkeyup="OnShapeKey(15,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Instrumento recolección percepciones V2.xlsx..." origTitle="SALIDAS 1. Instrumento recolección percepciones V2.xlsx..." TITLE="SALIDAS 1. Instrumento recolección percepciones V2.xlsx..." HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/RECOLECTAR_INFORMACI%25C3%2593N/PERCEPCION_OTROSIES/Instrumento_recoleccion_percepciones_V2.xlsx" target="_top" COORDS="832,147,1011,147,1011,116,1011,112,1011,81,793,81,793,49,705,49,705,81,705,84,705,112,705,116,705,143,705,147,705,179,832,179,832,147" onmouseover="UpdateTooltip(this,15,51,event)" onfocus="UpdateTooltip(this,15,51,event)" onclick="return OnShapeClick(15,51,event);" onkeyup="OnShapeKey(15,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS"  target="_top" COORDS="348,315,348,317,352,313,14,313,18,317,18,315,10,315,10,317,14,321,352,321,356,317,356,315,348,315" onmouseover="UpdateTooltip(this,15,49,event)" onfocus="UpdateTooltip(this,15,49,event)" onclick="return OnShapeClick(15,49,event);" onkeyup="OnShapeKey(15,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS"  target="_top" COORDS="0,318,13,321,14,313,1,310,0,318" onmouseover="UpdateTooltip(this,15,49,event)" onfocus="UpdateTooltip(this,15,49,event)" onclick="return OnShapeClick(15,49,event);" onkeyup="OnShapeKey(15,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS"  target="_top" COORDS="16,40,16,76,131,76,131,40,16,40" onmouseover="UpdateTooltip(this,15,49,event)" onfocus="UpdateTooltip(this,15,49,event)" onclick="return OnShapeClick(15,49,event);" onkeyup="OnShapeKey(15,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Recolectar del área técnica y comercial para que incluya sus..." origTitle="Recolectar del área técnica y comercial para que incluya sus..." TITLE="Recolectar del área técnica y comercial para que incluya sus..." HREF="png_2.htm" target="frmDrawing" COORDS="359,317,692,317,693,317,694,316,694,315,694,314,694,3,694,2,694,1,693,0,692,0,359,0,358,0,357,1,356,2,356,3,356,314,356,315,357,316,358,317,359,317" onmouseover="UpdateTooltip(this,15,26,event)" onfocus="UpdateTooltip(this,15,26,event)" onclick="return OnShapeClick(15,26,event);" onkeyup="OnShapeKey(15,26,event);">
 </MAP>
 
 

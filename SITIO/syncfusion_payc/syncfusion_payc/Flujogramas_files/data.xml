@@ -24,8 +24,8 @@
 				<Shape ID="1" UniqueID="{5972982C-9690-4939-A5FE-9B952231E8EE}" Name="Collapsed Sub-Process" NameU="Collapsed Sub-Process" Master="6">
 					<Text>RECOLECTAR INFORMACIÓN</Text>
 					<XForm>
-						<PinX Unit="MM">9.046556406707072</PinX>
-						<PinY Unit="MM">7.724462632108512</PinY>
+						<PinX Unit="MM">8.652855603198244</PinX>
+						<PinY Unit="MM">6.149659418073160</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>0</LayerMember>
@@ -37,7 +37,7 @@
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
 										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>REECOLECTAR INFORMACIÓN</HLURL:SubAddress>
+										<HLURL:SubAddress>RECOLECTAR INFORMACIÓN</HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
@@ -77,8 +77,8 @@
 				</Shape>
 				<Shape ID="24" UniqueID="{764BF154-7836-40C3-BE03-3ADA16440058}" Name="Start Event.313" NameU="Start Event.313" Master="2">
 					<XForm>
-						<PinX Unit="MM">2.888181824659856</PinX>
-						<PinY Unit="MM">7.724462632108512</PinY>
+						<PinX Unit="MM">2.494481021151028</PinX>
+						<PinY Unit="MM">6.149659418073160</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>0</LayerMember>
@@ -102,8 +102,8 @@
 				</Shape>
 				<Shape ID="37" UniqueID="{A7116BB1-2C35-4B6F-9E16-C21628DE8F9E}" Name="Sequence Flow.326" NameU="Sequence Flow.326" Master="5">
 					<XForm>
-						<PinX Unit="MM">4.792472119831947</PinX>
-						<PinY Unit="MM">7.724462632108512</PinY>
+						<PinX Unit="MM">4.398771316323119</PinX>
+						<PinY Unit="MM">6.149659418073160</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -127,8 +127,8 @@
 				</Shape>
 				<Shape ID="38" UniqueID="{3C1A0D40-EFAC-41DB-9338-8239F81CD1F0}" Name="Sequence Flow.327" NameU="Sequence Flow.327" Master="5">
 					<XForm>
-						<PinX Unit="MM">13.665337164869859</PinX>
-						<PinY Unit="MM">7.724462672474866</PinY>
+						<PinX Unit="MM">13.271636361361033</PinX>
+						<PinY Unit="MM">6.149659458439514</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -153,8 +153,8 @@
 				<Shape ID="39" UniqueID="{65A5E5B6-9541-4F44-AD5C-5F40A708CB26}" Name="Collapsed Sub-Process.328" NameU="Collapsed Sub-Process.328" Master="6">
 					<Text>REALIZAR PROYECCIONES</Text>
 					<XForm>
-						<PinX Unit="MM">18.284117923032650</PinX>
-						<PinY Unit="MM">7.724462712841223</PinY>
+						<PinX Unit="MM">17.890417119523821</PinX>
+						<PinY Unit="MM">6.149659498805871</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>0</LayerMember>
@@ -206,8 +206,8 @@
 				</Shape>
 				<Shape ID="62" UniqueID="{786AA280-CC1B-4A02-A9C8-C38508BEDE50}" Name="Sequence Flow.374" NameU="Sequence Flow.374" Master="5">
 					<XForm>
-						<PinX Unit="MM">22.902899720833130</PinX>
-						<PinY Unit="MM">7.724462712841220</PinY>
+						<PinX Unit="MM">22.509198917324305</PinX>
+						<PinY Unit="MM">6.149659498805869</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -232,8 +232,8 @@
 				<Shape ID="63" UniqueID="{3D63B683-C18B-44C2-A2BA-99DB66D724B2}" Name="Collapsed Sub-Process.375" NameU="Collapsed Sub-Process.375" Master="6">
 					<Text>PRESENTAR RESULTADOS</Text>
 					<XForm>
-						<PinX Unit="MM">27.521681518633621</PinX>
-						<PinY Unit="MM">7.724466782999155</PinY>
+						<PinX Unit="MM">27.127980715124792</PinX>
+						<PinY Unit="MM">6.149663568963803</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>0</LayerMember>
@@ -285,8 +285,8 @@
 				</Shape>
 				<Shape ID="86" UniqueID="{0E2B0EC1-975F-4ADF-9120-A9B43AC7BED2}" Name="End Event" NameU="End Event" Master="7">
 					<XForm>
-						<PinX Unit="MM">33.680055696369557</PinX>
-						<PinY Unit="MM">7.724466782999155</PinY>
+						<PinX Unit="MM">33.286354892860729</PinX>
+						<PinY Unit="MM">6.149663568963803</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>0</LayerMember>
@@ -310,8 +310,8 @@
 				</Shape>
 				<Shape ID="99" UniqueID="{5D32BE80-3BEC-4272-82E8-6EA78BB4053D}" Name="Sequence Flow.412" NameU="Sequence Flow.412" Master="5">
 					<XForm>
-						<PinX Unit="MM">31.775765603353111</PinX>
-						<PinY Unit="MM">7.724466782999154</PinY>
+						<PinX Unit="MM">31.382064799844276</PinX>
+						<PinY Unit="MM">6.149663568963802</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -334,36 +334,36 @@
 					</Prop>
 				</Shape>
 				<Shape ID="100" UniqueID="{1E7805A5-C969-48A4-A5CA-D0883F286974}" Name="Sheet.100" NameU="Sheet.100">
-					<Text>PRIMERAS DOS SEMANAS DEL MES POSTERIOR AL FIN TRIMESRAL</Text>
+					<Text>PRIMERAS DOS SEMANAS DEL MES POSTERIOR AL FIN TRIMESTRAL</Text>
 					<XForm>
-						<PinX Unit="MM">9.046556406707074</PinX>
-						<PinY Unit="MM">3.909448642941856</PinY>
+						<PinX Unit="MM">8.652855603198246</PinX>
+						<PinY Unit="MM">2.334645428906504</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="102" UniqueID="{B78608A2-34E6-4CB7-B989-82DA16A8CC55}" Name="Sheet.102" NameU="Sheet.102">
-					<Text>TERCERA SEMANA DEL MES POSTERIOR AL FIN TRIMESRAL</Text>
+					<Text>TERCERA SEMANA DEL MES POSTERIOR AL FIN TRIMESTRAL</Text>
 					<XForm>
-						<PinX Unit="MM">18.284117923032650</PinX>
-						<PinY Unit="MM">3.909448599649974</PinY>
+						<PinX Unit="MM">17.890417119523821</PinX>
+						<PinY Unit="MM">2.334645385614622</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="103" UniqueID="{DC6A6433-37B3-4A8D-9092-2E8EF2E7960B}" Name="Sheet.103" NameU="Sheet.103">
-					<Text>ÚLTIMA SEMANA DEL MES POSTERIOR AL FIN TRIMESRAL</Text>
+					<Text>ÚLTIMA SEMANA DEL MES POSTERIOR AL FIN TRIMESTRAL</Text>
 					<XForm>
-						<PinX Unit="MM">27.521679439358230</PinX>
-						<PinY Unit="MM">3.909448599649974</PinY>
+						<PinX Unit="MM">27.127978635849402</PinX>
+						<PinY Unit="MM">2.334645385614622</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="104" UniqueID="{A8365B56-F6E8-4D2C-B861-14C345CACDCD}" Name="Sheet.104" NameU="Sheet.104">
-					<Text>OBJETIVO: GENERAR ESCENARIOS DE PROYECCIÓN DE VARIABLES DE NEGOCIO DE PAYC CON PRESICIÓN Y OPORTUNIDAD</Text>
+					<Text>OBJETIVO: GENERAR ESCENARIOS DE PROYECCIÓN DE VARIABLES DE NEGOCIO DE PAYC CON PRECISIÓN Y OPORTUNIDAD</Text>
 					<XForm>
-						<PinX Unit="MM">20.078740978950730</PinX>
-						<PinY Unit="MM">1.566929082447405</PinY>
+						<PinX Unit="MM">19.291339371933073</PinX>
+						<PinY Unit="MM">10.385826736349943</PinY>
 					</XForm>
 				</Shape>
 			</Shapes>
 		</Page>
-		<Page ID="5" Name="REECOLECTAR INFORMACIÓN" NameU="REECOLECTAR INFORMACIÓN">
+		<Page ID="5" Name="RECOLECTAR INFORMACIÓN" NameU="REECOLECTAR INFORMACIÓN">
 			<PageProps>
 				<PageScale Unit="MM">0.039370078740157</PageScale>
 				<DrawingScale Unit="MM">0.039370078740157</DrawingScale>
@@ -387,6 +387,22 @@
 					<LayerMem>
 						<LayerMember>0</LayerMember>
 					</LayerMem>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address></HLURL:Address>
+										<HLURL:SubAddress>DIGRAMA DE ALTO NIVEL</HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
 					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
 						<Value></Value>
 						<Label>Categories</Label>
@@ -862,6 +878,22 @@
 					<LayerMem>
 						<LayerMember>0</LayerMember>
 					</LayerMem>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address></HLURL:Address>
+										<HLURL:SubAddress>DIGRAMA DE ALTO NIVEL</HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
 					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
 						<Value></Value>
 						<Label>Categories</Label>
@@ -1030,7 +1062,7 @@
 					</Prop>
 				</Shape>
 				<Shape ID="557" UniqueID="{0C67E987-049A-4C1B-A38F-E131C855BEC9}" Name="Task.575" NameU="Task.575" Master="4">
-					<Text>Solicitar a ffie el estado actual de los proyectos y cronogramas</Text>
+					<Text>Solicitar a FFIE el estado actual de los proyectos y cronogramas</Text>
 					<XForm>
 						<PinX Unit="MM">7.099642466950817</PinX>
 						<PinY Unit="MM">11.276601578413960</PinY>
@@ -1482,80 +1514,79 @@
 				<Shape ID="689" UniqueID="{09BEABC0-885A-400E-8507-2DE0915EDEA5}" Name="Sheet.689" NameU="Sheet.689">
 					<Text>INFORMACIÓN CONTRACTUAL</Text>
 					<XForm>
-						<PinX Unit="MM">7.031873983949652</PinX>
-						<PinY Unit="MM">3.948382293520108</PinY>
+						<PinX Unit="MM">16.746489746357561</PinX>
+						<PinY Unit="MM">3.948382949956766</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="690" UniqueID="{D4561FE7-29EE-4C76-87BC-E9B68FB58362}" Name="Sheet.690" NameU="Sheet.690">
 					<XForm>
-						<PinX Unit="MM">2.758484093121400</PinX>
-						<PinY Unit="MM">3.948382293520108</PinY>
+						<PinX Unit="MM">12.068401063000261</PinX>
+						<PinY Unit="MM">3.948382949956766</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="691" UniqueID="{FA580DFA-37CF-4C03-A246-561114DFC46A}" Name="Sheet.691" NameU="Sheet.691">
 					<Text>INFORMACIÓN PROPUESTAS</Text>
 					<XForm>
-						<PinX Unit="MM">16.093430991648290</PinX>
-						<PinY Unit="MM">3.948382293520108</PinY>
+						<PinX Unit="MM">7.390312379642960</PinX>
+						<PinY Unit="MM">3.948382949956763</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="692" UniqueID="{A7A97AFB-53B5-4461-905D-BCCDC11AFF50}" Name="Sheet.692" NameU="Sheet.692">
 					<XForm>
-						<PinX Unit="MM">11.655017733768901</PinX>
-						<PinY Unit="MM">3.948382293520108</PinY>
+						<PinX Unit="MM">2.712223696285662</PinX>
+						<PinY Unit="MM">3.948382949956762</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="693" UniqueID="{63BECD48-3E91-4BF0-90A3-191C6BA76F8F}" Name="Sheet.693" NameU="Sheet.693">
-					<Text>PERCEPCIÓN
-OTRIES</Text>
+					<Text>PERCEPCIÓN OTROSÍES</Text>
 					<XForm>
-						<PinX Unit="MM">25.723952301814592</PinX>
-						<PinY Unit="MM">3.948382293520108</PinY>
+						<PinX Unit="MM">26.102667113072162</PinX>
+						<PinY Unit="MM">3.948382949956763</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="694" UniqueID="{1593F830-4CA8-40B3-909E-C8DBBEB67D8C}" Name="Sheet.694" NameU="Sheet.694">
 					<XForm>
-						<PinX Unit="MM">21.130366050290249</PinX>
-						<PinY Unit="MM">3.948382293520108</PinY>
+						<PinX Unit="MM">21.424578429714860</PinX>
+						<PinY Unit="MM">3.948382949956763</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="695" UniqueID="{427FEBFE-E2DB-49AD-9D7E-8E1466EBD578}" Name="Sheet.695" NameU="Sheet.695">
 					<Text>INFORMACIÓN FFIE</Text>
 					<XForm>
-						<PinX Unit="MM">25.707374398636379</PinX>
-						<PinY Unit="MM">1.846892336212974</PinY>
+						<PinX Unit="MM">16.746489746357561</PinX>
+						<PinY Unit="MM">1.814568104870048</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="696" UniqueID="{076B6D50-3027-412C-B97F-432C11B910BE}" Name="Sheet.696" NameU="Sheet.696">
 					<XForm>
-						<PinX Unit="MM">21.126103467683709</PinX>
-						<PinY Unit="MM">1.846892336212974</PinY>
+						<PinX Unit="MM">12.068401063000261</PinX>
+						<PinY Unit="MM">1.814568104870048</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="697" UniqueID="{697403CD-4DB5-401A-844A-2C1551FA8684}" Name="Sheet.697" NameU="Sheet.697">
 					<Text>INFORMACIÓN FINANCIERA</Text>
 					<XForm>
-						<PinX Unit="MM">7.031873579734780</PinX>
-						<PinY Unit="MM">1.814568104870050</PinY>
+						<PinX Unit="MM">7.390312379642961</PinX>
+						<PinY Unit="MM">1.814568104870048</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="698" UniqueID="{E86FFA94-950F-4637-B891-E5926BAF043D}" Name="Sheet.698" NameU="Sheet.698">
 					<XForm>
-						<PinX Unit="MM">2.758483688906528</PinX>
-						<PinY Unit="MM">1.814568104870050</PinY>
+						<PinX Unit="MM">2.712223696285662</PinX>
+						<PinY Unit="MM">1.814568104870048</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="699" UniqueID="{47E2FEDA-6ADD-4E8F-9A94-D2103AF81A14}" Name="Sheet.699" NameU="Sheet.699">
 					<Text>INFORMACIÓN GASTO ADMIN</Text>
 					<XForm>
-						<PinX Unit="MM">16.549095119337569</PinX>
-						<PinY Unit="MM">1.814568210697557</PinY>
+						<PinX Unit="MM">26.102667113072151</PinX>
+						<PinY Unit="MM">1.814568104870048</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="700" UniqueID="{A7EEEAA9-AEB8-43A1-9067-D0B870D2FAEB}" Name="Sheet.700" NameU="Sheet.700">
 					<XForm>
-						<PinX Unit="MM">11.655017733768901</PinX>
-						<PinY Unit="MM">1.814568157783813</PinY>
+						<PinX Unit="MM">21.424578429714849</PinX>
+						<PinY Unit="MM">1.814568104870048</PinY>
 					</XForm>
 				</Shape>
 			</Shapes>
@@ -1572,6 +1603,11 @@ OTRIES</Text>
 			</Layer>
 			<Layer IX="1">
 				<Name>Connector</Name>
+				<NameUniv>Connector</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="2">
+				<Name>Conector</Name>
 				<NameUniv>Connector</NameUniv>
 				<Visible>1</Visible>
 			</Layer>
@@ -1734,7 +1770,7 @@ OTRIES</Text>
 				<Shape ID="408" UniqueID="{6BDA6902-4568-4FBF-9659-B0CF79B56E7D}" Name="Sequence Flow.1078" NameU="Sequence Flow.1078" Master="5">
 					<Text>No</Text>
 					<XForm>
-						<PinX Unit="MM">24.869321147472540</PinX>
+						<PinX Unit="MM">24.122818522778889</PinX>
 						<PinY Unit="MM">17.303949605806231</PinY>
 					</XForm>
 					<LayerMem>
@@ -1790,6 +1826,22 @@ OTRIES</Text>
 					<LayerMem>
 						<LayerMember>0</LayerMember>
 					</LayerMem>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address></HLURL:Address>
+										<HLURL:SubAddress>DIGRAMA DE ALTO NIVEL</HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
 					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
 						<Value></Value>
 						<Label>Categories</Label>
@@ -1834,12 +1886,28 @@ OTRIES</Text>
 				</Shape>
 				<Shape ID="424" UniqueID="{EFC9F7A1-5C35-4830-91AA-AF76C7A3CFEA}" Name="End Event.1167" NameU="End Event.1167" Master="7">
 					<XForm>
-						<PinX Unit="MM">59.829218161267882</PinX>
+						<PinX Unit="MM">68.441826685129328</PinX>
 						<PinY Unit="MM">19.594174945832151</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>0</LayerMember>
 					</LayerMem>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address></HLURL:Address>
+										<HLURL:SubAddress>DIGRAMA DE ALTO NIVEL</HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
 					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
 						<Value></Value>
 						<Label>Categories</Label>
@@ -1984,8 +2052,8 @@ OTRIES</Text>
 				</Shape>
 				<Shape ID="484" UniqueID="{4B904416-70DC-4173-8B09-07CD90258DD2}" Name="Sequence Flow.1272" NameU="Sequence Flow.1272" Master="5">
 					<XForm>
-						<PinX Unit="MM">58.021895944029403</PinX>
-						<PinY Unit="MM">19.594174945832119</PinY>
+						<PinX Unit="MM">58.375583816743152</PinX>
+						<PinY Unit="MM">19.594174945832091</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -2084,7 +2152,7 @@ OTRIES</Text>
 				</Shape>
 				<Shape ID="509" UniqueID="{F57FF569-2EDA-49E9-98F2-386100E2ADB3}" Name="Sequence Flow.2326" NameU="Sequence Flow.2326" Master="5">
 					<XForm>
-						<PinX Unit="MM">36.506904684124599</PinX>
+						<PinX Unit="MM">36.506904684124613</PinX>
 						<PinY Unit="MM">19.594174945832091</PinY>
 					</XForm>
 					<LayerMem>
@@ -2182,65 +2250,11 @@ OTRIES</Text>
 						<Label>ConditionType</Label>
 					</Prop>
 				</Shape>
-				<Shape ID="534" UniqueID="{F13E6BC0-CFC8-43E9-940C-56852215CF0E}" Name="Gateway.2390" NameU="Gateway.2390" Master="10">
-					<XForm>
-						<PinX Unit="MM">54.422967427526167</PinX>
-						<PinY Unit="MM">13.296055443181119</PinY>
-					</XForm>
-					<LayerMem>
-						<LayerMember>0</LayerMember>
-					</LayerMem>
-					<Prop ID="3" Name="BpmnCategories" NameU="BpmnCategories">
-						<Value></Value>
-						<Label>Categories</Label>
-					</Prop>
-					<Prop ID="4" Name="BpmnDocumentation" NameU="BpmnDocumentation">
-						<Value></Value>
-						<Label>Documentation</Label>
-					</Prop>
-					<Prop ID="6" Name="BpmnGatewayType" NameU="BpmnGatewayType">
-						<Value Unit="STR">Exclusive</Value>
-						<Label>GatewayType</Label>
-					</Prop>
-					<Prop ID="7" Name="BpmnExclusiveType" NameU="BpmnExclusiveType">
-						<Value Unit="STR">Data</Value>
-						<Label>ExclusiveType</Label>
-					</Prop>
-					<Prop ID="8" Name="BpmnMarkerVisible" NameU="BpmnMarkerVisible">
-						<Value Unit="STR">FALSE</Value>
-						<Label>MarkerVisible</Label>
-					</Prop>
-				</Shape>
 				<Shape ID="549" UniqueID="{291855FA-1F9D-4F51-9371-F76417CF8727}" Name="Sequence Flow.2405" NameU="Sequence Flow.2405" Master="5">
+					<Text>Sí, inconsistencia de información</Text>
 					<XForm>
-						<PinX Unit="MM">54.422967427526167</PinX>
-						<PinY Unit="MM">16.754295606454921</PinY>
-					</XForm>
-					<LayerMem>
-						<LayerMember>1</LayerMember>
-					</LayerMem>
-					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
-						<Value></Value>
-						<Label>Categories</Label>
-					</Prop>
-					<Prop ID="3" Name="BpmnDocumentation" NameU="BpmnDocumentation">
-						<Value></Value>
-						<Label>Documentation</Label>
-					</Prop>
-					<Prop ID="5" Name="BpmnConnectingObjectType" NameU="BpmnConnectingObjectType">
-						<Value Unit="STR">Sequence Flow</Value>
-						<Label>ConnectingObjectType</Label>
-					</Prop>
-					<Prop ID="6" Name="BpmnConditionType" NameU="BpmnConditionType">
-						<Value Unit="STR">None</Value>
-						<Label>ConditionType</Label>
-					</Prop>
-				</Shape>
-				<Shape ID="550" UniqueID="{43EAFF36-C5A2-4739-88A8-87CB3B4BA67B}" Name="Sequence Flow.2406" NameU="Sequence Flow.2406" Master="5">
-					<Text>No</Text>
-					<XForm>
-						<PinX Unit="MM">45.166334881324971</PinX>
-						<PinY Unit="MM">9.723304290483460</PinY>
+						<PinX Unit="MM">49.118951323220010</PinX>
+						<PinY Unit="MM">13.181544453757271</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -2314,8 +2328,8 @@ OTRIES</Text>
 				</Shape>
 				<Shape ID="574" UniqueID="{85B94570-F2DC-434B-8540-1F93C2254E1F}" Name="Sequence Flow.2430" NameU="Sequence Flow.2430" Master="5">
 					<XForm>
-						<PinX Unit="MM">29.937681586820510</PinX>
-						<PinY Unit="MM">13.754100989012780</PinY>
+						<PinX Unit="MM">32.923692334840993</PinX>
+						<PinY Unit="MM">14.326657084321919</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -2337,10 +2351,73 @@ OTRIES</Text>
 						<Label>ConditionType</Label>
 					</Prop>
 				</Shape>
-				<Shape ID="575" UniqueID="{E55A3A4A-0C5C-4C48-8A10-D592A53C80E2}" Name="Gateway.2433" NameU="Gateway.2433" Master="10">
+				<Shape ID="590" UniqueID="{774F58A3-C931-431D-8D70-C1BC3EC1253E}" Name="Sequence Flow.2448" NameU="Sequence Flow.2448" Master="5">
+					<Text>Sí, metodológicos</Text>
 					<XForm>
-						<PinX Unit="MM">54.422967427526167</PinX>
-						<PinY Unit="MM">25.273933624586459</PinY>
+						<PinX Unit="MM">43.445531177476802</PinX>
+						<PinY Unit="MM">21.884400153188750</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
+						<Value></Value>
+						<Label>Categories</Label>
+					</Prop>
+					<Prop ID="3" Name="BpmnDocumentation" NameU="BpmnDocumentation">
+						<Value></Value>
+						<Label>Documentation</Label>
+					</Prop>
+					<Prop ID="5" Name="BpmnConnectingObjectType" NameU="BpmnConnectingObjectType">
+						<Value Unit="STR">Sequence Flow</Value>
+						<Label>ConnectingObjectType</Label>
+					</Prop>
+					<Prop ID="6" Name="BpmnConditionType" NameU="BpmnConditionType">
+						<Value Unit="STR">None</Value>
+						<Label>ConditionType</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="594" UniqueID="{7DD70B4C-BE2D-4562-B94F-B39C978C0DDC}" Name="Gateway.322" NameU="Gateway.322">
+					<Text>¿Es necesario actualizar rutina?</Text>
+					<XForm>
+						<PinX Unit="MM">16.814949960104080</PinX>
+						<PinY Unit="MM">19.226987148462069</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="612" UniqueID="{F5251482-26A9-4451-97FB-EB8777274290}" Name="Sequence Flow.612" NameU="Sequence Flow.612" Master="5">
+					<Text>No</Text>
+					<XForm>
+						<PinX Unit="MM">66.280816595177100</PinX>
+						<PinY Unit="MM">19.594174945832119</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
+						<Value></Value>
+						<Label>Categories</Label>
+					</Prop>
+					<Prop ID="3" Name="BpmnDocumentation" NameU="BpmnDocumentation">
+						<Value></Value>
+						<Label>Documentation</Label>
+					</Prop>
+					<Prop ID="5" Name="BpmnConnectingObjectType" NameU="BpmnConnectingObjectType">
+						<Value Unit="STR">Sequence Flow</Value>
+						<Label>ConnectingObjectType</Label>
+					</Prop>
+					<Prop ID="6" Name="BpmnConditionType" NameU="BpmnConditionType">
+						<Value Unit="STR">None</Value>
+						<Label>ConditionType</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="597" UniqueID="{790E8D38-0868-4657-8AD8-36BEC55D4897}" Name="Gateway.597" NameU="Gateway.597" Master="10">
+					<Text>¿</Text>
+					<XForm>
+						<PinX Unit="MM">62.328200205960130</PinX>
+						<PinY Unit="MM">19.594174945832091</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>0</LayerMember>
@@ -2366,82 +2443,11 @@ OTRIES</Text>
 						<Label>MarkerVisible</Label>
 					</Prop>
 				</Shape>
-				<Shape ID="590" UniqueID="{774F58A3-C931-431D-8D70-C1BC3EC1253E}" Name="Sequence Flow.2448" NameU="Sequence Flow.2448" Master="5">
+				<Shape ID="614" UniqueID="{3C2C803F-0AA1-44B7-BC69-B374B207EF6F}" Name="Gateway.614" NameU="Gateway.614">
+					<Text>¿Existen problemas?</Text>
 					<XForm>
-						<PinX Unit="MM">54.422967427526167</PinX>
-						<PinY Unit="MM">22.434054285209282</PinY>
-					</XForm>
-					<LayerMem>
-						<LayerMember>1</LayerMember>
-					</LayerMem>
-					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
-						<Value></Value>
-						<Label>Categories</Label>
-					</Prop>
-					<Prop ID="3" Name="BpmnDocumentation" NameU="BpmnDocumentation">
-						<Value></Value>
-						<Label>Documentation</Label>
-					</Prop>
-					<Prop ID="5" Name="BpmnConnectingObjectType" NameU="BpmnConnectingObjectType">
-						<Value Unit="STR">Sequence Flow</Value>
-						<Label>ConnectingObjectType</Label>
-					</Prop>
-					<Prop ID="6" Name="BpmnConditionType" NameU="BpmnConditionType">
-						<Value Unit="STR">None</Value>
-						<Label>ConditionType</Label>
-					</Prop>
-				</Shape>
-				<Shape ID="591" UniqueID="{4B7FD46B-23B6-42B8-AE35-AEEBDF82D4E1}" Name="Sequence Flow.2450" NameU="Sequence Flow.2450" Master="5">
-					<Text>Si</Text>
-					<XForm>
-						<PinX Unit="MM">39.492914788259817</PinX>
-						<PinY Unit="MM">24.724279492565930</PinY>
-					</XForm>
-					<LayerMem>
-						<LayerMember>1</LayerMember>
-					</LayerMem>
-					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
-						<Value></Value>
-						<Label>Categories</Label>
-					</Prop>
-					<Prop ID="3" Name="BpmnDocumentation" NameU="BpmnDocumentation">
-						<Value></Value>
-						<Label>Documentation</Label>
-					</Prop>
-					<Prop ID="5" Name="BpmnConnectingObjectType" NameU="BpmnConnectingObjectType">
-						<Value Unit="STR">Sequence Flow</Value>
-						<Label>ConnectingObjectType</Label>
-					</Prop>
-					<Prop ID="6" Name="BpmnConditionType" NameU="BpmnConditionType">
-						<Value Unit="STR">None</Value>
-						<Label>ConditionType</Label>
-					</Prop>
-				</Shape>
-				<Shape ID="592" UniqueID="{E55A3A4A-0C5C-4C48-8A10-D592A53C80E2}" Name="Gateway.320" NameU="Gateway.320">
-					<Text>Existe problemas metodológicos</Text>
-					<XForm>
-						<PinX Unit="MM">54.422967427526167</PinX>
-						<PinY Unit="MM">25.273933624586441</PinY>
-					</XForm>
-					<LayerMem>
-						<LayerMember>0</LayerMember>
-					</LayerMem>
-				</Shape>
-				<Shape ID="593" UniqueID="{F13E6BC0-CFC8-43E9-940C-56852215CF0E}" Name="Gateway.321" NameU="Gateway.321">
-					<Text>Existen problemas de consistencia de información</Text>
-					<XForm>
-						<PinX Unit="MM">54.422967427526167</PinX>
-						<PinY Unit="MM">12.874820340121151</PinY>
-					</XForm>
-					<LayerMem>
-						<LayerMember>0</LayerMember>
-					</LayerMem>
-				</Shape>
-				<Shape ID="594" UniqueID="{7DD70B4C-BE2D-4562-B94F-B39C978C0DDC}" Name="Gateway.322" NameU="Gateway.322">
-					<Text>Es necesario actualizar rutina</Text>
-					<XForm>
-						<PinX Unit="MM">16.814949960104080</PinX>
-						<PinY Unit="MM">19.226987148462069</PinY>
+						<PinX Unit="MM">62.334315691437510</PinX>
+						<PinY Unit="MM">19.594174945832151</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>0</LayerMember>
@@ -2673,6 +2679,22 @@ OTRIES</Text>
 					<LayerMem>
 						<LayerMember>0</LayerMember>
 					</LayerMem>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address></HLURL:Address>
+										<HLURL:SubAddress>DIGRAMA DE ALTO NIVEL</HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
 					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
 						<Value></Value>
 						<Label>Categories</Label>
@@ -2723,6 +2745,22 @@ OTRIES</Text>
 					<LayerMem>
 						<LayerMember>0</LayerMember>
 					</LayerMem>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address></HLURL:Address>
+										<HLURL:SubAddress>DIGRAMA DE ALTO NIVEL</HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
 					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
 						<Value></Value>
 						<Label>Categories</Label>
@@ -2799,7 +2837,7 @@ OTRIES</Text>
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
 										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Determinar si es necesario actualizar alguna metodología, rutina, script o escenarios de proyección.</HLURL:SubAddress>
+										<HLURL:SubAddress>REALIZAR PROYECCIONES</HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
@@ -2896,12 +2934,12 @@ OTRIES</Text>
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -2923,12 +2961,12 @@ OTRIES</Text>
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/INDICADORES_FINANCIEROS/REPORTE_INDICADORES_DE_GESTI%C3%93N_v1.1.pbix</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/INDICADORES_FINANCIEROS/REPORTE_INDICADORES_DE_GESTI%C3%93N_v1.1.pbix</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/INDICADORES_FINANCIEROS/REPORTE_INDICADORES_DE_GESTI%C3%93N_v1.1.pbix</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/INDICADORES_FINANCIEROS/REPORTE_INDICADORES_DE_GESTI%C3%93N_v1.1.pbix</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -2963,7 +3001,7 @@ OTRIES</Text>
 					</Scratch>
 				</Shape>
 				<Shape ID="64" UniqueID="{3BD2D164-9901-4E2F-8F51-E6AE49BC2B94}" Name="Text Annotation.64" NameU="Text Annotation.64">
-					<Text>1.	Archivo Excel con las diferencias(Sin ejemplo)</Text>
+					<Text>1.	Archivo Excel con las diferencias (sin ejemplo)</Text>
 					<XForm>
 						<PinX Unit="MM">28.023050828849229</PinX>
 						<PinY Unit="MM">36.338389978951113</PinY>
@@ -3067,7 +3105,7 @@ OTRIES</Text>
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
 										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Elaborar presentación con resultados</HLURL:SubAddress>
+										<HLURL:SubAddress>PRESENTAR PROYECCIONES</HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
@@ -3163,12 +3201,12 @@ OTRIES</Text>
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/PROYECCIONES_ABR-19_v7.xlsm</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/PROYECCIONES_ABR-19_v7.xlsm</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/PROYECCIONES_ABR-19_v7.xlsm</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/PROYECCIONES_ABR-19_v7.xlsm</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -3190,12 +3228,12 @@ OTRIES</Text>
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -3221,7 +3259,7 @@ OTRIES</Text>
 			</Layer>
 			<Shapes>
 				<Shape ID="26" UniqueID="{5616087D-F061-466D-A65E-2D3149EA945C}" Name="Task.26" NameU="Task.26" Master="4">
-					<Text>Elaborar presentación con resultados</Text>
+					<Text>Presentar resultados</Text>
 					<XForm>
 						<PinX Unit="MM">17.614691317446859</PinX>
 						<PinY Unit="MM">29.402331134136130</PinY>
@@ -3236,7 +3274,7 @@ OTRIES</Text>
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
 										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Presentar resultados</HLURL:SubAddress>
+										<HLURL:SubAddress>PRESENTAR PROYECCIONES</HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
@@ -3297,12 +3335,12 @@ OTRIES</Text>
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -3370,7 +3408,7 @@ OTRIES</Text>
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
 										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Compartir archivo con resultados y presentación</HLURL:SubAddress>
+										<HLURL:SubAddress>PRESENTAR PROYECCIONES</HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
@@ -3472,12 +3510,12 @@ OTRIES</Text>
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -3509,12 +3547,12 @@ OTRIES</Text>
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -3536,12 +3574,12 @@ OTRIES</Text>
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR%20RESULTADOS/PROYECCIONES%20ABR-19%20v7.xlsm</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR%20RESULTADOS/PROYECCIONES%20ABR-19%20v7.xlsm</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR%20RESULTADOS/PROYECCIONES%20ABR-19%20v7.xlsm</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR%20RESULTADOS/PROYECCIONES%20ABR-19%20v7.xlsm</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -3582,7 +3620,7 @@ OTRIES</Text>
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
 										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Actualizar rutina y validar</HLURL:SubAddress>
+										<HLURL:SubAddress>REALIZAR PROYECCIONES</HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
@@ -3708,7 +3746,7 @@ OTRIES</Text>
 					</Scratch>
 				</Shape>
 				<Shape ID="60" UniqueID="{59ED8735-10D6-4B7E-9C64-3ACCCB348BF3}" Name="Text Annotation.60" NameU="Text Annotation.60">
-					<Text>2.	Documento con planificación de las modificaciones(sin ejemplo)</Text>
+					<Text>2.	Documento con planificación de las modificaciones (sin ejemplo)</Text>
 					<XForm>
 						<PinX Unit="MM">6.688148632391258</PinX>
 						<PinY Unit="MM">28.291338638761740</PinY>
@@ -3732,12 +3770,12 @@ OTRIES</Text>
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -3842,7 +3880,7 @@ OTRIES</Text>
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
 										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Actualizar bases de datos para scripts o macros de proyección</HLURL:SubAddress>
+										<HLURL:SubAddress>REALIZAR PROYECCIONES</HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
@@ -3892,7 +3930,7 @@ OTRIES</Text>
 1.	Información recolectada durante la etapa de recolección.</Text>
 					<XForm>
 						<PinX Unit="MM">6.688148632391255</PinX>
-						<PinY Unit="MM">31.042977946945079</PinY>
+						<PinY Unit="MM">29.621097685453080</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -3903,12 +3941,12 @@ OTRIES</Text>
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/tree/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/tree/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/tree/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/tree/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -3993,7 +4031,7 @@ OTRIES</Text>
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
 										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Ejecutar rutinas de proyección</HLURL:SubAddress>
+										<HLURL:SubAddress>REALIZAR PROYECCIONES</HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
@@ -4045,7 +4083,7 @@ OTRIES</Text>
 </Text>
 					<XForm>
 						<PinX Unit="MM">6.688148632391255</PinX>
-						<PinY Unit="MM">31.042977946945079</PinY>
+						<PinY Unit="MM">29.621097685452924</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -4146,7 +4184,7 @@ OTRIES</Text>
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
 										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Consolidar la base de datos con las proyecciones</HLURL:SubAddress>
+										<HLURL:SubAddress>REALIZAR PROYECCIONES</HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
@@ -4197,7 +4235,7 @@ OTRIES</Text>
 </Text>
 					<XForm>
 						<PinX Unit="MM">6.688148632391255</PinX>
-						<PinY Unit="MM">31.042977946945079</PinY>
+						<PinY Unit="MM">29.621097685452991</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -4208,12 +4246,12 @@ OTRIES</Text>
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/tree/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/REALIZAR_PROYECCIONES</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/tree/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/REALIZAR_PROYECCIONES</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/tree/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/REALIZAR_PROYECCIONES</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/tree/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/REALIZAR_PROYECCIONES</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -4244,12 +4282,12 @@ OTRIES</Text>
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/REALIZAR%20PROYECCIONES/PROYECCIONES%20ABR-19%20v7.xlsm</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/REALIZAR%20PROYECCIONES/PROYECCIONES%20ABR-19%20v7.xlsm</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/REALIZAR%20PROYECCIONES/PROYECCIONES%20ABR-19%20v7.xlsm</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/REALIZAR%20PROYECCIONES/PROYECCIONES%20ABR-19%20v7.xlsm</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -4298,7 +4336,7 @@ OTRIES</Text>
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
 										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Validar y ajustar proyecciones con el área financiera</HLURL:SubAddress>
+										<HLURL:SubAddress>REALIZAR PROYECCIONES</HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
@@ -4351,7 +4389,7 @@ OTRIES</Text>
 1.	Archivo con las proyecciones consolidadas</Text>
 					<XForm>
 						<PinX Unit="MM">6.688148632391255</PinX>
-						<PinY Unit="MM">31.042977946945079</PinY>
+						<PinY Unit="MM">29.621097685452991</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -4362,12 +4400,12 @@ OTRIES</Text>
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/REALIZAR_PROYECCIONES/PROYECCIONES_ABR_19_v7.xlsm</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/REALIZAR_PROYECCIONES/PROYECCIONES_ABR_19_v7.xlsm</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/REALIZAR_PROYECCIONES/PROYECCIONES_ABR_19_v7.xlsm</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/REALIZAR_PROYECCIONES/PROYECCIONES_ABR_19_v7.xlsm</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -4399,12 +4437,12 @@ OTRIES</Text>
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/REALIZAR_PROYECCIONES/PROYECCIONES_ABR_19_v7.xlsm</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/REALIZAR_PROYECCIONES/PROYECCIONES_ABR_19_v7.xlsm</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/REALIZAR_PROYECCIONES/PROYECCIONES_ABR_19_v7.xlsm</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/REALIZAR_PROYECCIONES/PROYECCIONES_ABR_19_v7.xlsm</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -4453,7 +4491,7 @@ OTRIES</Text>
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
 										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Corregir información</HLURL:SubAddress>
+										<HLURL:SubAddress>REALIZAR PROYECCIONES</HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
@@ -4505,7 +4543,7 @@ OTRIES</Text>
 2.	Archivo con las proyecciones consolidadas</Text>
 					<XForm>
 						<PinX Unit="MM">6.688148632391255</PinX>
-						<PinY Unit="MM">31.042977946945079</PinY>
+						<PinY Unit="MM">29.621097685452991</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -4516,12 +4554,12 @@ OTRIES</Text>
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/REALIZAR_PROYECCIONES/PROYECCIONES_ABR_19_v7.xlsm</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/REALIZAR_PROYECCIONES/PROYECCIONES_ABR_19_v7.xlsm</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/REALIZAR_PROYECCIONES/PROYECCIONES_ABR_19_v7.xlsm</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/REALIZAR_PROYECCIONES/PROYECCIONES_ABR_19_v7.xlsm</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -4552,12 +4590,12 @@ OTRIES</Text>
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/REALIZAR_PROYECCIONES/PROYECCIONES_ABR_19_v7.xlsm</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/REALIZAR_PROYECCIONES/PROYECCIONES_ABR_19_v7.xlsm</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/REALIZAR_PROYECCIONES/PROYECCIONES_ABR_19_v7.xlsm</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/REALIZAR_PROYECCIONES/PROYECCIONES_ABR_19_v7.xlsm</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -4606,7 +4644,7 @@ OTRIES</Text>
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
 										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Solicitar al área comercial la base de datos de propuestas</HLURL:SubAddress>
+										<HLURL:SubAddress>RECOLECTAR INFORMACIÓN</HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
@@ -4655,7 +4693,7 @@ OTRIES</Text>
 N/A</Text>
 					<XForm>
 						<PinX Unit="MM">6.688148632391255</PinX>
-						<PinY Unit="MM">31.042977946945079</PinY>
+						<PinY Unit="MM">29.621097685452902</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -4724,7 +4762,7 @@ N/A</Text>
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
 										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Solicitar al área comercial la base de datos de propuestas</HLURL:SubAddress>
+										<HLURL:SubAddress>RECOLECTAR INFORMACIÓN</HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
@@ -4772,7 +4810,7 @@ N/A</Text>
 1.	Formato COLR017 (sin ejemplo)</Text>
 					<XForm>
 						<PinX Unit="MM">6.688148632391255</PinX>
-						<PinY Unit="MM">31.042977946945079</PinY>
+						<PinY Unit="MM">29.621097685452909</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -4803,12 +4841,12 @@ N/A</Text>
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/PROPUESTAS/Revision_Comercial_Formato_final_V2.xlsx</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/PROPUESTAS/Revisi%C3%B3n_Comercial_Formato_final_V2.xlsx</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/PROPUESTAS/Revision_Comercial_Formato_final_V2.xlsx</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/PROPUESTAS/Revisi%C3%B3n_Comercial_Formato_final_V2.xlsx</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -4857,7 +4895,7 @@ N/A</Text>
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
 										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Solicitar al área comercial la base de datos de propuestas</HLURL:SubAddress>
+										<HLURL:SubAddress>RECOLECTAR INFORMACIÓN</HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
@@ -4906,7 +4944,7 @@ N/A</Text>
 1.	Base de datos consolidado propuestas V2.xlsx</Text>
 					<XForm>
 						<PinX Unit="MM">6.688148632391255</PinX>
-						<PinY Unit="MM">31.042977946945079</PinY>
+						<PinY Unit="MM">29.621097685452902</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -4917,12 +4955,12 @@ N/A</Text>
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/PROPUESTAS/Revision_Comercial_Formato_final_V2.xlsx</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/PROPUESTAS/Revisi%C3%B3n_Comercial_Formato_final_V2.xlsx</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/PROPUESTAS/Revision_Comercial_Formato_final_V2.xlsx</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/PROPUESTAS/Revisi%C3%B3n_Comercial_Formato_final_V2.xlsx</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -4985,12 +5023,12 @@ N/A</Text>
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/PROPUESTAS/Revision_Comercial_Formato_final_V2.xlsx</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/PROPUESTAS/Revisi%C3%B3n_Comercial_Formato_final_V2.xlsx</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/PROPUESTAS/Revision_Comercial_Formato_final_V2.xlsx</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/PROPUESTAS/Revisi%C3%B3n_Comercial_Formato_final_V2.xlsx</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -5031,7 +5069,7 @@ N/A</Text>
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
 										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Solicitar al área comercial la base de datos de propuestas</HLURL:SubAddress>
+										<HLURL:SubAddress>RECOLECTAR INFORMACIÓN</HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
@@ -5067,7 +5105,7 @@ N/A</Text>
 				</Shape>
 				<Shape ID="57" UniqueID="{4911F723-4B31-40B8-9BA9-17B05E2257E4}" Name="Sheet.57" NameU="Sheet.57">
 					<Text>RESPONSABLES
-1.Profesional en analítica avanzada envía correo electrónico y consolida las bases de datos
+1. Profesional en analítica avanzada envía correo electrónico y consolida las bases de datos
 2. Área financiera, financiera y comercial envían los proyectos actuales
 
 
@@ -5179,7 +5217,7 @@ N/A
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
 										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Solicitar al área comercial la base de datos de propuestas</HLURL:SubAddress>
+										<HLURL:SubAddress>RECOLECTAR INFORMACIÓN</HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
@@ -5267,12 +5305,12 @@ N/A
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/INFORMACION_CONTRACTUAL/Informacion_Contractual_v11.xlsx</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/INFORMACION_CONTRACTUAL/Informaci%C3%B3n_Contractual_v11.xlsx</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/INFORMACION_CONTRACTUAL/Informacion_Contractual_v11.xlsx</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/INFORMACION_CONTRACTUAL/Informaci%C3%B3n_Contractual_v11.xlsx</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -5322,12 +5360,12 @@ N/A
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/INFORMACION_CONTRACTUAL/Manual_Registro_V1.pdf</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/INFORMACION_CONTRACTUAL/Manual_Registro_V1.pdf</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/INFORMACION_CONTRACTUAL/Manual_Registro_V1.pdf</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/INFORMACION_CONTRACTUAL/Manual_Registro_V1.pdf</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -5349,12 +5387,12 @@ N/A
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/INFORMACION_CONTRACTUAL/Informacion_Contractual_v11.xlsx</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/INFORMACION_CONTRACTUAL/Informaci%C3%B3n_Contractual_v11.xlsx</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/INFORMACION_CONTRACTUAL/Informacion_Contractual_v11.xlsx</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/INFORMACION_CONTRACTUAL/Informaci%C3%B3n_Contractual_v11.xlsx</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -5395,7 +5433,7 @@ N/A
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
 										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Solicitar al área comercial la base de datos de propuestas</HLURL:SubAddress>
+										<HLURL:SubAddress>RECOLECTAR INFORMACIÓN</HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
@@ -5448,7 +5486,7 @@ N/A
 </Text>
 					<XForm>
 						<PinX Unit="MM">6.688148632391255</PinX>
-						<PinY Unit="MM">31.042977946945079</PinY>
+						<PinY Unit="MM">29.402331134136126</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -5459,12 +5497,12 @@ N/A
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/INFORMACION_CONTRACTUAL/Informacion_Contractual_v11.xlsx</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/INFORMACION_CONTRACTUAL/Informaci%C3%B3n_Contractual_v11.xlsx</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/INFORMACION_CONTRACTUAL/Informacion_Contractual_v11.xlsx</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/INFORMACION_CONTRACTUAL/Informaci%C3%B3n_Contractual_v11.xlsx</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -5485,7 +5523,7 @@ N/A
 </Text>
 					<XForm>
 						<PinX Unit="MM">28.122047936706810</PinX>
-						<PinY Unit="MM">30.259842590174038</PinY>
+						<PinY Unit="MM">29.402331134136126</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -5496,12 +5534,12 @@ N/A
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/INFORMACION_CONTRACTUAL/Informacion_Contractual_v11.xlsx</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/INFORMACION_CONTRACTUAL/Informaci%C3%B3n_Contractual_v11.xlsx</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/INFORMACION_CONTRACTUAL/Informacion_Contractual_v11.xlsx</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/INFORMACION_CONTRACTUAL/Informaci%C3%B3n_Contractual_v11.xlsx</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -5560,7 +5598,7 @@ N/A
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
 										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Solicitar al área comercial la base de datos de propuestas</HLURL:SubAddress>
+										<HLURL:SubAddress>RECOLECTAR INFORMACIÓN</HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
@@ -5643,12 +5681,12 @@ N/A
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/PERCEPCION_OTROSIES/Instrumento_recoleccion_percepciones_V2.xlsx</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/PERCEPCION_OTROSIES/Instrumento_recoleccion_percepciones_V2.xlsx</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/PERCEPCION_OTROSIES/Instrumento_recoleccion_percepciones_V2.xlsx</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/PERCEPCION_OTROSIES/Instrumento_recoleccion_percepciones_V2.xlsx</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -5688,12 +5726,12 @@ N/A
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/PERCEPCION_OTROSIES/Instrumento_recoleccion_percepciones_V2.xlsx</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/PERCEPCION_OTROSIES/Instrumento_recoleccion_percepciones_V2.xlsx</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/PERCEPCION_OTROSIES/Instrumento_recoleccion_percepciones_V2.xlsx</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/PERCEPCION_OTROSIES/Instrumento_recoleccion_percepciones_V2.xlsx</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -5734,7 +5772,7 @@ N/A
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
 										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Solicitar al área comercial la base de datos de propuestas</HLURL:SubAddress>
+										<HLURL:SubAddress>RECOLECTAR INFORMACIÓN</HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
@@ -5798,12 +5836,12 @@ N/A
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/INDICADORES_FINANCIEROS/REPORTE_INDICADORES_DE_GESTI%C3%93N_v1.1.pbix</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/INDICADORES_FINANCIEROS/REPORTE_INDICADORES_DE_GESTI%C3%93N_v1.1.pbix</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/INDICADORES_FINANCIEROS/REPORTE_INDICADORES_DE_GESTI%C3%93N_v1.1.pbix</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/INDICADORES_FINANCIEROS/REPORTE_INDICADORES_DE_GESTI%C3%93N_v1.1.pbix</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -5901,7 +5939,7 @@ N/A
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
 										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Solicitar al área comercial la base de datos de propuestas</HLURL:SubAddress>
+										<HLURL:SubAddress>RECOLECTAR INFORMACIÓN</HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
@@ -6006,12 +6044,12 @@ N/A
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/INDICADORES_FINANCIEROS/DICCIONARIO_DE_DATOS_CALCULO_INDICADORES_V1.docx</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/INDICADORES_FINANCIEROS/DICCIONARIO_DE_DATOS_CALCULO_INDICADORES_V1.docx</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/INDICADORES_FINANCIEROS/DICCIONARIO_DE_DATOS_CALCULO_INDICADORES_V1.docx</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/INDICADORES_FINANCIEROS/DICCIONARIO_DE_DATOS_CALCULO_INDICADORES_V1.docx</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -6033,12 +6071,12 @@ N/A
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/INDICADORES_FINANCIEROS/DICCIONARIO_DE_DATOS_CALCULO_INDICADORES_V1.docx</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/INDICADORES_FINANCIEROS/DICCIONARIO_DE_DATOS_CALCULO_INDICADORES_V1.docx</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/INDICADORES_FINANCIEROS/DICCIONARIO_DE_DATOS_CALCULO_INDICADORES_V1.docx</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/INDICADORES_FINANCIEROS/DICCIONARIO_DE_DATOS_CALCULO_INDICADORES_V1.docx</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -6064,7 +6102,7 @@ N/A
 			</Layer>
 			<Shapes>
 				<Shape ID="26" UniqueID="{AB30250D-D38F-4CCE-ABAA-9FA62642A574}" Name="Task.26" NameU="Task.26" Master="4">
-					<Text>Solicitar a ffie el estado actual de los proyectos y cronogramas</Text>
+					<Text>Solicitar a FFIE el estado actual de los proyectos y cronogramas</Text>
 					<XForm>
 						<PinX Unit="MM">17.614691317446859</PinX>
 						<PinY Unit="MM">29.402331134136130</PinY>
@@ -6079,7 +6117,7 @@ N/A
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
 										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Solicitar al área comercial la base de datos de propuestas</HLURL:SubAddress>
+										<HLURL:SubAddress>RECOLECTAR INFORMACIÓN</HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
@@ -6144,12 +6182,12 @@ N/A
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/FFIE/Instrumento_recoleccion_estado_FFIE_V3.xlsx</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/FFIE/Instrumento_recolecci%C3%B3n_estado_FFIE_V3.xlsx</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/FFIE/Instrumento_recoleccion_estado_FFIE_V3.xlsx</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/FFIE/Instrumento_recolecci%C3%B3n_estado_FFIE_V3.xlsx</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -6182,12 +6220,12 @@ N/A
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/FFIE/Instrumento_recoleccion_estado_FFIE_V3.xlsx</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/FFIE/Instrumento_recolecci%C3%B3n_estado_FFIE_V3.xlsx</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/FFIE/Instrumento_recoleccion_estado_FFIE_V3.xlsx</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/FFIE/Instrumento_recolecci%C3%B3n_estado_FFIE_V3.xlsx</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -6236,7 +6274,7 @@ N/A
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
 										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Solicitar al área comercial la base de datos de propuestas</HLURL:SubAddress>
+										<HLURL:SubAddress>RECOLECTAR INFORMACIÓN</HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
@@ -6301,12 +6339,12 @@ N/A
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/FFIE/Instrumento_recoleccion_estado_FFIE_V3.xlsx</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/FFIE/Instrumento_recolecci%C3%B3n_estado_FFIE_V3.xlsx</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/FFIE/Instrumento_recoleccion_estado_FFIE_V3.xlsx</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/FFIE/Instrumento_recolecci%C3%B3n_estado_FFIE_V3.xlsx</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -6338,12 +6376,12 @@ N/A
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/FFIE/Instrumento_recoleccion_estado_FFIE_V3.xlsx</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/FFIE/Instrumento_recolecci%C3%B3n_estado_FFIE_V3.xlsx</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/FFIE/Instrumento_recoleccion_estado_FFIE_V3.xlsx</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/FFIE/Instrumento_recolecci%C3%B3n_estado_FFIE_V3.xlsx</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>
@@ -6392,7 +6430,7 @@ N/A
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
 										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Solicitar al área comercial la base de datos de propuestas</HLURL:SubAddress>
+										<HLURL:SubAddress>RECOLECTAR INFORMACIÓN</HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
@@ -6475,12 +6513,12 @@ N/A</Text>
 								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
-										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/INDICADORES_FINANCIEROS/Evolucion_Payc_2018.xlsx</HLURL:Address>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/INDICADORES_FINANCIEROS/Evoluci%C3%B3n_Payc_2018.xlsx</HLURL:Address>
 										<HLURL:SubAddress></HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/INDICADORES_FINANCIEROS/Evolucion_Payc_2018.xlsx</HLURL:AbsoluteURL>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACI%C3%93N/INDICADORES_FINANCIEROS/Evoluci%C3%B3n_Payc_2018.xlsx</HLURL:AbsoluteURL>
 									</HLURL:Hyperlink>
 								</HLURL:Hyperlinks>
 							</SolutionXML>

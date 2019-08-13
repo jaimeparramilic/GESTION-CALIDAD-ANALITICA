@@ -1,4 +1,4 @@
-﻿<html>
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <link rel="stylesheet" type="text/css" href="visio.css"/>
@@ -11,6 +11,14 @@ function OnShapeClick(){};
 </script>
 
 <script src="png_1.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript">
+	if( (parent.isSVG) || 
+		(parent.isVML && parent.vmlSupported) || 
+		(parent.isXAML && parent.isUpLevel)) 
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
 
 
 <script type="text/javascript" language="javascript">
@@ -69,7 +77,7 @@ function load ()
 {
 	if(isUpLevel)
 	{
-		arrowdiv.innerHTML = '<img id="arrowgif" alt="Shows the location of the selected shape" src="arrow.gif"/>';
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Muestra la ubicación de la forma seleccionada" src="arrow.png"/>';
 
 		var pageIndex = parent.PageIndexFromID (pageID);
 		parent.CurPageUpdate (pageIndex);
@@ -117,6 +125,18 @@ div.banner {
 
 <body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
 
+<script type="text/javascript" language="javascript">
+// Displays the banner prompt to install Silverlight
+if (parent.slSupported && !parent.slInstalled)
+{
+	var slBanner = document.createElement("div");
+	slBanner.className = "banner";
+	slBanner.innerHTML = 'Para habilitar toda la funcionalidad como Panorámica y zoom, <a href="https://www.microsoft.com/silverlight/resources/install.aspx" target="parent">haga clic aquí</a> para instalar el complemento Silverlight.';
+
+	document.body.appendChild(slBanner);
+	document.body.style.paddingTop = "2.5em";
+}
+</script>
 
 
 <div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
@@ -131,15 +151,15 @@ div.banner {
 </center>
 
 <MAP NAME="visImageMap">
-  <AREA shape="POLYGON" tabindex="1" ALT="1. Presentación proyecciones" origTitle="1. Presentación proyecciones" TITLE="1. Presentación proyecciones" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx" target="_top" COORDS="916,196,916,156,891,156,891,196,891,201,891,241,1069,241,1069,201,1121,201,1121,156,938,156,938,196,916,196" onmouseover="UpdateTooltip(this,34,60,event)" onfocus="UpdateTooltip(this,34,60,event)" onclick="return OnShapeClick(34,60,event);" onkeyup="OnShapeKey(34,60,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="1. Archivo con las proyecciones consolidadas y ajustadas" origTitle="1. Archivo con las proyecciones consolidadas y ajustadas" TITLE="1. Archivo con las proyecciones consolidadas y ajustadas" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/PROYECCIONES_ABR-19_v7.xlsm" target="_top" COORDS="148,243,451,243,451,203,451,198,451,159,67,159,67,198,46,198,46,159,20,159,20,198,20,203,20,238,20,243,20,283,148,283,148,243" onmouseover="UpdateTooltip(this,34,58,event)" onfocus="UpdateTooltip(this,34,58,event)" onclick="return OnShapeClick(34,58,event);" onkeyup="OnShapeKey(34,58,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="1276,400,1276,402,1280,398,892,398,896,402,896,400,888,400,888,402,892,406,1280,406,1280,402,1280,400,1276,400" onmouseover="UpdateTooltip(this,34,51,event)" onfocus="UpdateTooltip(this,34,51,event)" onclick="return OnShapeClick(34,51,event);" onkeyup="OnShapeKey(34,51,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="934,406,1086,406,1086,398,934,398,934,406" onmouseover="UpdateTooltip(this,34,51,event)" onfocus="UpdateTooltip(this,34,51,event)" onclick="return OnShapeClick(34,51,event);" onkeyup="OnShapeKey(34,51,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="895,121,895,166,1007,166,1007,121,895,121" onmouseover="UpdateTooltip(this,34,51,event)" onfocus="UpdateTooltip(this,34,51,event)" onclick="return OnShapeClick(34,51,event);" onkeyup="OnShapeKey(34,51,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS"  target="_top" COORDS="442,400,442,402,446,398,17,398,21,402,21,400,13,400,13,402,17,406,446,406,450,402,450,400,442,400" onmouseover="UpdateTooltip(this,34,49,event)" onfocus="UpdateTooltip(this,34,49,event)" onclick="return OnShapeClick(34,49,event);" onkeyup="OnShapeKey(34,49,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS"  target="_top" COORDS="0,403,16,406,18,398,1,395,0,403" onmouseover="UpdateTooltip(this,34,49,event)" onfocus="UpdateTooltip(this,34,49,event)" onclick="return OnShapeClick(34,49,event);" onkeyup="OnShapeKey(34,49,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS"  target="_top" COORDS="20,111,20,156,166,156,166,111,20,111" onmouseover="UpdateTooltip(this,34,49,event)" onfocus="UpdateTooltip(this,34,49,event)" onclick="return OnShapeClick(34,49,event);" onkeyup="OnShapeKey(34,49,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="Elaborar presentación con resultados" origTitle="Elaborar presentación con resultados" TITLE="Elaborar presentación con resultados" HREF="png_6.htm" target="frmDrawing" COORDS="455,402,879,402,880,402,881,401,882,400,882,399,882,3,882,2,881,1,880,0,879,0,455,0,454,0,453,1,453,2,452,3,452,399,453,400,453,401,454,402,455,402" onmouseover="UpdateTooltip(this,34,26,event)" onfocus="UpdateTooltip(this,34,26,event)" onclick="return OnShapeClick(34,26,event);" onkeyup="OnShapeKey(34,26,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="1. Presentación proyecciones" origTitle="1. Presentación proyecciones" TITLE="1. Presentación proyecciones" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx" target="_top" COORDS="733,157,733,125,713,125,713,157,713,161,713,193,855,193,855,161,897,161,897,125,750,125,750,157,733,157" onmouseover="UpdateTooltip(this,34,60,event)" onfocus="UpdateTooltip(this,34,60,event)" onclick="return OnShapeClick(34,60,event);" onkeyup="OnShapeKey(34,60,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="1. Archivo con las proyecciones consolidadas y ajustadas" origTitle="1. Archivo con las proyecciones consolidadas y ajustadas" TITLE="1. Archivo con las proyecciones consolidadas y ajustadas" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/PRESENTAR_RESULTADOS/PROYECCIONES_ABR-19_v7.xlsm" target="_top" COORDS="118,195,361,195,361,163,361,159,361,127,54,127,54,159,36,159,36,127,16,127,16,159,16,163,16,191,16,195,16,227,118,227,118,195" onmouseover="UpdateTooltip(this,34,58,event)" onfocus="UpdateTooltip(this,34,58,event)" onclick="return OnShapeClick(34,58,event);" onkeyup="OnShapeKey(34,58,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="1020,320,1020,322,1024,318,713,318,717,322,717,320,709,320,709,322,713,326,1024,326,1024,322,1024,320,1020,320" onmouseover="UpdateTooltip(this,34,51,event)" onfocus="UpdateTooltip(this,34,51,event)" onclick="return OnShapeClick(34,51,event);" onkeyup="OnShapeKey(34,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="748,326,869,326,869,318,748,318,748,326" onmouseover="UpdateTooltip(this,34,51,event)" onfocus="UpdateTooltip(this,34,51,event)" onclick="return OnShapeClick(34,51,event);" onkeyup="OnShapeKey(34,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="716,97,716,133,805,133,805,97,716,97" onmouseover="UpdateTooltip(this,34,51,event)" onfocus="UpdateTooltip(this,34,51,event)" onclick="return OnShapeClick(34,51,event);" onkeyup="OnShapeKey(34,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS"  target="_top" COORDS="353,320,353,322,357,318,14,318,18,322,18,320,10,320,10,322,14,326,357,326,361,322,361,320,353,320" onmouseover="UpdateTooltip(this,34,49,event)" onfocus="UpdateTooltip(this,34,49,event)" onclick="return OnShapeClick(34,49,event);" onkeyup="OnShapeKey(34,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS"  target="_top" COORDS="0,323,13,326,14,318,1,315,0,323" onmouseover="UpdateTooltip(this,34,49,event)" onfocus="UpdateTooltip(this,34,49,event)" onclick="return OnShapeClick(34,49,event);" onkeyup="OnShapeKey(34,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS"  target="_top" COORDS="16,89,16,125,133,125,133,89,16,89" onmouseover="UpdateTooltip(this,34,49,event)" onfocus="UpdateTooltip(this,34,49,event)" onclick="return OnShapeClick(34,49,event);" onkeyup="OnShapeKey(34,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Elaborar presentación con resultados" origTitle="Elaborar presentación con resultados" TITLE="Elaborar presentación con resultados" HREF="png_4.htm" target="frmDrawing" COORDS="364,322,703,322,704,322,705,321,705,320,705,319,705,3,705,2,705,1,704,0,703,0,364,0,363,0,363,1,362,2,362,3,362,319,362,320,363,321,363,322,364,322" onmouseover="UpdateTooltip(this,34,26,event)" onfocus="UpdateTooltip(this,34,26,event)" onclick="return OnShapeClick(34,26,event);" onkeyup="OnShapeKey(34,26,event);">
 </MAP>
 
 

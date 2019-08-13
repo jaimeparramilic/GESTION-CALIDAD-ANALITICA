@@ -1,4 +1,4 @@
-﻿<html>
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <link rel="stylesheet" type="text/css" href="visio.css"/>
@@ -11,6 +11,14 @@ function OnShapeClick(){};
 </script>
 
 <script src="png_1.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript">
+	if( (parent.isSVG) || 
+		(parent.isVML && parent.vmlSupported) || 
+		(parent.isXAML && parent.isUpLevel)) 
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
 
 
 <script type="text/javascript" language="javascript">
@@ -69,7 +77,7 @@ function load ()
 {
 	if(isUpLevel)
 	{
-		arrowdiv.innerHTML = '<img id="arrowgif" alt="Shows the location of the selected shape" src="arrow.gif"/>';
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Muestra la ubicación de la forma seleccionada" src="arrow.png"/>';
 
 		var pageIndex = parent.PageIndexFromID (pageID);
 		parent.CurPageUpdate (pageIndex);
@@ -117,6 +125,18 @@ div.banner {
 
 <body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
 
+<script type="text/javascript" language="javascript">
+// Displays the banner prompt to install Silverlight
+if (parent.slSupported && !parent.slInstalled)
+{
+	var slBanner = document.createElement("div");
+	slBanner.className = "banner";
+	slBanner.innerHTML = 'Para habilitar toda la funcionalidad como Panorámica y zoom, <a href="https://www.microsoft.com/silverlight/resources/install.aspx" target="parent">haga clic aquí</a> para instalar el complemento Silverlight.';
+
+	document.body.appendChild(slBanner);
+	document.body.style.paddingTop = "2.5em";
+}
+</script>
 
 
 <div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
@@ -131,15 +151,15 @@ div.banner {
 </center>
 
 <MAP NAME="visImageMap">
-  <AREA shape="POLYGON" tabindex="1" ALT="1. Procedimiento almacenado de cálculo ajustado" origTitle="1. Procedimiento almacenado de cálculo ajustado" TITLE="1. Procedimiento almacenado de cálculo ajustado" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/INDICADORES_FINANCIEROS/DICCIONARIO_DE_DATOS_CALCULO_INDICADORES_V1.docx" target="_top" COORDS="995,143,1264,143,1264,104,1264,99,1264,60,881,60,881,99,881,104,881,138,881,143,881,183,995,183,995,143" onmouseover="UpdateTooltip(this,17,59,event)" onfocus="UpdateTooltip(this,17,59,event)" onclick="return OnShapeClick(17,59,event);" onkeyup="OnShapeKey(17,59,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="2. Documentación modelo de datos cálculo de indicadores..." origTitle="2. Documentación modelo de datos cálculo de indicadores..." TITLE="2. Documentación modelo de datos cálculo de indicadores..." HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/RECOLECTAR_INFORMACION/INDICADORES_FINANCIEROS/DICCIONARIO_DE_DATOS_CALCULO_INDICADORES_V1.docx" target="_top" COORDS="1197,285,1260,285,1260,245,1260,241,1260,201,877,201,877,241,877,245,877,280,877,285,877,324,1197,324,1197,285" onmouseover="UpdateTooltip(this,17,58,event)" onfocus="UpdateTooltip(this,17,58,event)" onclick="return OnShapeClick(17,58,event);" onkeyup="OnShapeKey(17,58,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="1256,396,1256,398,1260,394,878,394,882,398,882,396,874,396,874,398,878,402,1260,402,1264,398,1264,396,1256,396" onmouseover="UpdateTooltip(this,17,51,event)" onfocus="UpdateTooltip(this,17,51,event)" onclick="return OnShapeClick(17,51,event);" onkeyup="OnShapeKey(17,51,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="863,402,1069,402,1069,394,863,394,863,402" onmouseover="UpdateTooltip(this,17,51,event)" onfocus="UpdateTooltip(this,17,51,event)" onclick="return OnShapeClick(17,51,event);" onkeyup="OnShapeKey(17,51,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="881,5,881,49,991,49,991,5,881,5" onmouseover="UpdateTooltip(this,17,51,event)" onfocus="UpdateTooltip(this,17,51,event)" onclick="return OnShapeClick(17,51,event);" onkeyup="OnShapeKey(17,51,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Correo electrónico solicitando la revisión por..." origTitle="ENTRADAS 1. Correo electrónico solicitando la revisión por..." TITLE="ENTRADAS 1. Correo electrónico solicitando la revisión por..."  target="_top" COORDS="435,396,435,398,439,394,17,394,21,398,21,396,13,396,13,398,17,402,439,402,443,398,443,396,435,396" onmouseover="UpdateTooltip(this,17,49,event)" onfocus="UpdateTooltip(this,17,49,event)" onclick="return OnShapeClick(17,49,event);" onkeyup="OnShapeKey(17,49,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Correo electrónico solicitando la revisión por..." origTitle="ENTRADAS 1. Correo electrónico solicitando la revisión por..." TITLE="ENTRADAS 1. Correo electrónico solicitando la revisión por..."  target="_top" COORDS="0,399,16,402,17,394,1,391,0,399" onmouseover="UpdateTooltip(this,17,49,event)" onfocus="UpdateTooltip(this,17,49,event)" onclick="return OnShapeClick(17,49,event);" onkeyup="OnShapeKey(17,49,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Correo electrónico solicitando la revisión por..." origTitle="ENTRADAS 1. Correo electrónico solicitando la revisión por..." TITLE="ENTRADAS 1. Correo electrónico solicitando la revisión por..."  target="_top" COORDS="406,195,444,195,444,156,444,151,444,116,444,112,444,72,164,72,164,33,20,33,20,72,20,77,20,112,20,116,20,151,20,156,20,190,20,195,20,234,406,234,406,195" onmouseover="UpdateTooltip(this,17,49,event)" onfocus="UpdateTooltip(this,17,49,event)" onclick="return OnShapeClick(17,49,event);" onkeyup="OnShapeKey(17,49,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="Ajustar la procedimientos de cálculo en caso de existir..." origTitle="Ajustar la procedimientos de cálculo en caso de existir..." TITLE="Ajustar la procedimientos de cálculo en caso de existir..." HREF="png_15.htm" target="frmDrawing" COORDS="448,398,865,398,866,398,867,397,868,396,868,395,868,5,868,4,867,3,866,3,865,2,448,2,447,3,446,3,445,4,445,5,445,395,445,396,446,397,447,398,448,398" onmouseover="UpdateTooltip(this,17,26,event)" onfocus="UpdateTooltip(this,17,26,event)" onclick="return OnShapeClick(17,26,event);" onkeyup="OnShapeKey(17,26,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="1. Procedimiento almacenado de cálculo ajustado" origTitle="1. Procedimiento almacenado de cálculo ajustado" TITLE="1. Procedimiento almacenado de cálculo ajustado" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/RECOLECTAR_INFORMACI%25C3%2593N/INDICADORES_FINANCIEROS/DICCIONARIO_DE_DATOS_CALCULO_INDICADORES_V1.docx" target="_top" COORDS="796,115,1011,115,1011,83,1011,79,1011,48,705,48,705,79,705,83,705,111,705,115,705,146,796,146,796,115" onmouseover="UpdateTooltip(this,17,59,event)" onfocus="UpdateTooltip(this,17,59,event)" onclick="return OnShapeClick(17,59,event);" onkeyup="OnShapeKey(17,59,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="2. Documentación modelo de datos cálculo de indicadores..." origTitle="2. Documentación modelo de datos cálculo de indicadores..." TITLE="2. Documentación modelo de datos cálculo de indicadores..." HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/RECOLECTAR_INFORMACI%25C3%2593N/INDICADORES_FINANCIEROS/DICCIONARIO_DE_DATOS_CALCULO_INDICADORES_V1.docx" target="_top" COORDS="958,228,1008,228,1008,196,1008,192,1008,161,702,161,702,192,702,196,702,224,702,228,702,259,958,259,958,228" onmouseover="UpdateTooltip(this,17,58,event)" onfocus="UpdateTooltip(this,17,58,event)" onclick="return OnShapeClick(17,58,event);" onkeyup="OnShapeKey(17,58,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="1004,317,1004,319,1008,315,702,315,706,319,706,317,698,317,698,319,702,323,1008,323,1012,319,1012,317,1004,317" onmouseover="UpdateTooltip(this,17,51,event)" onfocus="UpdateTooltip(this,17,51,event)" onclick="return OnShapeClick(17,51,event);" onkeyup="OnShapeKey(17,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="691,323,855,323,855,315,691,315,691,323" onmouseover="UpdateTooltip(this,17,51,event)" onfocus="UpdateTooltip(this,17,51,event)" onclick="return OnShapeClick(17,51,event);" onkeyup="OnShapeKey(17,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="705,4,705,39,793,39,793,4,705,4" onmouseover="UpdateTooltip(this,17,51,event)" onfocus="UpdateTooltip(this,17,51,event)" onclick="return OnShapeClick(17,51,event);" onkeyup="OnShapeKey(17,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Correo electrónico solicitando la revisión por..." origTitle="ENTRADAS 1. Correo electrónico solicitando la revisión por..." TITLE="ENTRADAS 1. Correo electrónico solicitando la revisión por..."  target="_top" COORDS="348,317,348,319,352,315,13,315,17,319,17,317,9,317,9,319,13,323,352,323,356,319,356,317,348,317" onmouseover="UpdateTooltip(this,17,49,event)" onfocus="UpdateTooltip(this,17,49,event)" onclick="return OnShapeClick(17,49,event);" onkeyup="OnShapeKey(17,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Correo electrónico solicitando la revisión por..." origTitle="ENTRADAS 1. Correo electrónico solicitando la revisión por..." TITLE="ENTRADAS 1. Correo electrónico solicitando la revisión por..."  target="_top" COORDS="0,320,13,323,14,315,1,312,0,320" onmouseover="UpdateTooltip(this,17,49,event)" onfocus="UpdateTooltip(this,17,49,event)" onclick="return OnShapeClick(17,49,event);" onkeyup="OnShapeKey(17,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Correo electrónico solicitando la revisión por..." origTitle="ENTRADAS 1. Correo electrónico solicitando la revisión por..." TITLE="ENTRADAS 1. Correo electrónico solicitando la revisión por..."  target="_top" COORDS="325,156,355,156,355,124,355,121,355,93,355,89,355,58,131,58,131,26,16,26,16,58,16,62,16,89,16,93,16,121,16,124,16,152,16,156,16,187,325,187,325,156" onmouseover="UpdateTooltip(this,17,49,event)" onfocus="UpdateTooltip(this,17,49,event)" onclick="return OnShapeClick(17,49,event);" onkeyup="OnShapeKey(17,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Ajustar la procedimientos de cálculo en caso de existir..." origTitle="Ajustar la procedimientos de cálculo en caso de existir..." TITLE="Ajustar la procedimientos de cálculo en caso de existir..." HREF="png_2.htm" target="frmDrawing" COORDS="359,319,692,319,693,318,694,318,694,317,694,316,694,4,694,3,694,3,693,2,692,2,359,2,358,2,357,3,356,3,356,4,356,316,356,317,357,318,358,318,359,319" onmouseover="UpdateTooltip(this,17,26,event)" onfocus="UpdateTooltip(this,17,26,event)" onclick="return OnShapeClick(17,26,event);" onkeyup="OnShapeKey(17,26,event);">
 </MAP>
 
 

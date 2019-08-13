@@ -1,4 +1,4 @@
-﻿<html>
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <link rel="stylesheet" type="text/css" href="visio.css"/>
@@ -11,6 +11,14 @@ function OnShapeClick(){};
 </script>
 
 <script src="png_1.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript">
+	if( (parent.isSVG) || 
+		(parent.isVML && parent.vmlSupported) || 
+		(parent.isXAML && parent.isUpLevel)) 
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
 
 
 <script type="text/javascript" language="javascript">
@@ -69,7 +77,7 @@ function load ()
 {
 	if(isUpLevel)
 	{
-		arrowdiv.innerHTML = '<img id="arrowgif" alt="Shows the location of the selected shape" src="arrow.gif"/>';
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Muestra la ubicación de la forma seleccionada" src="arrow.png"/>';
 
 		var pageIndex = parent.PageIndexFromID (pageID);
 		parent.CurPageUpdate (pageIndex);
@@ -117,6 +125,18 @@ div.banner {
 
 <body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
 
+<script type="text/javascript" language="javascript">
+// Displays the banner prompt to install Silverlight
+if (parent.slSupported && !parent.slInstalled)
+{
+	var slBanner = document.createElement("div");
+	slBanner.className = "banner";
+	slBanner.innerHTML = 'Para habilitar toda la funcionalidad como Panorámica y zoom, <a href="https://www.microsoft.com/silverlight/resources/install.aspx" target="parent">haga clic aquí</a> para instalar el complemento Silverlight.';
+
+	document.body.appendChild(slBanner);
+	document.body.style.paddingTop = "2.5em";
+}
+</script>
 
 
 <div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
@@ -131,18 +151,18 @@ div.banner {
 </center>
 
 <MAP NAME="visImageMap">
-  <AREA shape="POLYGON" tabindex="1" ALT="3. Documentación de la rutina o script de proyección." origTitle="3. Documentación de la rutina o script de proyección." TITLE="3. Documentación de la rutina o script de proyección." HREF="https://docs.google.com/spreadsheets/d/1t_5G4eSgsmuGZ6e4WYfIcw13Mi63Epj9I9TjcKd40Mo/edit#gid=0" target="_top" COORDS="1035,497,1264,497,1264,458,1264,453,1264,414,926,414,926,453,905,453,905,414,880,414,880,453,880,458,880,493,880,497,880,537,1035,537,1035,497" onmouseover="UpdateTooltip(this,26,65,event)" onfocus="UpdateTooltip(this,26,65,event)" onclick="return OnShapeClick(26,65,event);" onkeyup="OnShapeKey(26,65,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="1. Scripts y macros actualizadas y validadas." origTitle="1. Scripts y macros actualizadas y validadas." TITLE="1. Scripts y macros actualizadas y validadas." HREF="https://docs.google.com/spreadsheets/d/1t_5G4eSgsmuGZ6e4WYfIcw13Mi63Epj9I9TjcKd40Mo/edit#gid=0" target="_top" COORDS="905,99,905,59,880,59,880,99,880,104,880,143,1205,143,1205,104,1264,104,1264,59,926,59,926,99,905,99" onmouseover="UpdateTooltip(this,26,63,event)" onfocus="UpdateTooltip(this,26,63,event)" onclick="return OnShapeClick(26,63,event);" onkeyup="OnShapeKey(26,63,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="3. Proyecciones anteriores" origTitle="3. Proyecciones anteriores" TITLE="3. Proyecciones anteriores" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx" target="_top" COORDS="20,483,20,527,45,527,45,483,20,483" onmouseover="UpdateTooltip(this,26,61,event)" onfocus="UpdateTooltip(this,26,61,event)" onclick="return OnShapeClick(26,61,event);" onkeyup="OnShapeKey(26,61,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="3. Proyecciones anteriores" origTitle="3. Proyecciones anteriores" TITLE="3. Proyecciones anteriores" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCION%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx" target="_top" COORDS="67,483,67,527,387,527,387,483,67,483" onmouseover="UpdateTooltip(this,26,61,event)" onfocus="UpdateTooltip(this,26,61,event)" onclick="return OnShapeClick(26,61,event);" onkeyup="OnShapeKey(26,61,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="1. Scripts y Macros para proyección proyección anterior" origTitle="1. Scripts y Macros para proyección proyección anterior" TITLE="1. Scripts y Macros para proyección proyección anterior" HREF="https://docs.google.com/spreadsheets/d/1t_5G4eSgsmuGZ6e4WYfIcw13Mi63Epj9I9TjcKd40Mo/edit#gid=0" target="_top" COORDS="41,279,41,240,16,240,16,279,16,284,16,324,433,324,433,284,441,284,441,240,63,240,63,279,41,279" onmouseover="UpdateTooltip(this,26,59,event)" onfocus="UpdateTooltip(this,26,59,event)" onclick="return OnShapeClick(26,59,event);" onkeyup="OnShapeKey(26,59,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="1259,553,1259,555,1263,551,880,551,884,555,884,553,876,553,876,555,880,559,1263,559,1267,555,1267,553,1259,553" onmouseover="UpdateTooltip(this,26,51,event)" onfocus="UpdateTooltip(this,26,51,event)" onclick="return OnShapeClick(26,51,event);" onkeyup="OnShapeKey(26,51,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="901,559,1072,559,1072,551,901,551,901,559" onmouseover="UpdateTooltip(this,26,51,event)" onfocus="UpdateTooltip(this,26,51,event)" onclick="return OnShapeClick(26,51,event);" onkeyup="OnShapeKey(26,51,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="884,5,884,49,994,49,994,5,884,5" onmouseover="UpdateTooltip(this,26,51,event)" onfocus="UpdateTooltip(this,26,51,event)" onclick="return OnShapeClick(26,51,event);" onkeyup="OnShapeKey(26,51,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS"  target="_top" COORDS="437,553,437,555,441,551,17,551,21,555,21,553,13,553,13,555,17,559,441,559,445,555,445,553,437,553" onmouseover="UpdateTooltip(this,26,49,event)" onfocus="UpdateTooltip(this,26,49,event)" onclick="return OnShapeClick(26,49,event);" onkeyup="OnShapeKey(26,49,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS"  target="_top" COORDS="0,556,16,559,18,551,1,548,0,556" onmouseover="UpdateTooltip(this,26,49,event)" onfocus="UpdateTooltip(this,26,49,event)" onclick="return OnShapeClick(26,49,event);" onkeyup="OnShapeKey(26,49,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS"  target="_top" COORDS="20,189,20,233,164,233,164,189,20,189" onmouseover="UpdateTooltip(this,26,49,event)" onfocus="UpdateTooltip(this,26,49,event)" onclick="return OnShapeClick(26,49,event);" onkeyup="OnShapeKey(26,49,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="Actualizar rutina y validar" origTitle="Actualizar rutina y validar" TITLE="Actualizar rutina y validar" HREF="png_9.htm" target="frmDrawing" COORDS="450,555,867,555,869,555,870,554,870,553,871,552,871,161,870,160,870,159,869,158,867,158,450,158,449,158,448,159,447,160,447,161,447,552,447,553,448,554,449,555,450,555" onmouseover="UpdateTooltip(this,26,26,event)" onfocus="UpdateTooltip(this,26,26,event)" onclick="return OnShapeClick(26,26,event);" onkeyup="OnShapeKey(26,26,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3. Documentación de la rutina o script de proyección." origTitle="3. Documentación de la rutina o script de proyección." TITLE="3. Documentación de la rutina o script de proyección." HREF="https://docs.google.com/spreadsheets/d/1t_5G4eSgsmuGZ6e4WYfIcw13Mi63Epj9I9TjcKd40Mo/edit#gid=0" target="_top" COORDS="828,398,1011,398,1011,367,1011,363,1011,331,741,331,741,363,724,363,724,331,704,331,704,363,704,367,704,394,704,398,704,429,828,429,828,398" onmouseover="UpdateTooltip(this,26,65,event)" onfocus="UpdateTooltip(this,26,65,event)" onclick="return OnShapeClick(26,65,event);" onkeyup="OnShapeKey(26,65,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="1. Scripts y macros actualizadas y validadas." origTitle="1. Scripts y macros actualizadas y validadas." TITLE="1. Scripts y macros actualizadas y validadas." HREF="https://docs.google.com/spreadsheets/d/1t_5G4eSgsmuGZ6e4WYfIcw13Mi63Epj9I9TjcKd40Mo/edit#gid=0" target="_top" COORDS="724,79,724,47,704,47,704,79,704,83,704,114,964,114,964,83,1011,83,1011,47,741,47,741,79,724,79" onmouseover="UpdateTooltip(this,26,63,event)" onfocus="UpdateTooltip(this,26,63,event)" onclick="return OnShapeClick(26,63,event);" onkeyup="OnShapeKey(26,63,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3. Proyecciones anteriores" origTitle="3. Proyecciones anteriores" TITLE="3. Proyecciones anteriores" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx" target="_top" COORDS="16,386,16,422,36,422,36,386,16,386" onmouseover="UpdateTooltip(this,26,61,event)" onfocus="UpdateTooltip(this,26,61,event)" onclick="return OnShapeClick(26,61,event);" onkeyup="OnShapeKey(26,61,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3. Proyecciones anteriores" origTitle="3. Proyecciones anteriores" TITLE="3. Proyecciones anteriores" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%2520PARA%2520PROYECCI%25C3%2593N%2520DE%2520VARIABLES%2520DE%2520NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx" target="_top" COORDS="53,386,53,422,309,422,309,386,53,386" onmouseover="UpdateTooltip(this,26,61,event)" onfocus="UpdateTooltip(this,26,61,event)" onclick="return OnShapeClick(26,61,event);" onkeyup="OnShapeKey(26,61,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="1. Scripts y Macros para proyección proyección anterior" origTitle="1. Scripts y Macros para proyección proyección anterior" TITLE="1. Scripts y Macros para proyección proyección anterior" HREF="https://docs.google.com/spreadsheets/d/1t_5G4eSgsmuGZ6e4WYfIcw13Mi63Epj9I9TjcKd40Mo/edit#gid=0" target="_top" COORDS="33,223,33,192,13,192,13,223,13,227,13,259,346,259,346,227,353,227,353,192,50,192,50,223,33,223" onmouseover="UpdateTooltip(this,26,59,event)" onfocus="UpdateTooltip(this,26,59,event)" onclick="return OnShapeClick(26,59,event);" onkeyup="OnShapeKey(26,59,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="1007,442,1007,444,1011,440,704,440,708,444,708,442,700,442,700,444,704,448,1011,448,1015,444,1015,442,1007,442" onmouseover="UpdateTooltip(this,26,51,event)" onfocus="UpdateTooltip(this,26,51,event)" onclick="return OnShapeClick(26,51,event);" onkeyup="OnShapeKey(26,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="720,448,857,448,857,440,720,440,720,448" onmouseover="UpdateTooltip(this,26,51,event)" onfocus="UpdateTooltip(this,26,51,event)" onclick="return OnShapeClick(26,51,event);" onkeyup="OnShapeKey(26,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="707,4,707,39,795,39,795,4,707,4" onmouseover="UpdateTooltip(this,26,51,event)" onfocus="UpdateTooltip(this,26,51,event)" onclick="return OnShapeClick(26,51,event);" onkeyup="OnShapeKey(26,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS"  target="_top" COORDS="349,442,349,444,353,440,14,440,18,444,18,442,10,442,10,444,14,448,353,448,357,444,357,442,349,442" onmouseover="UpdateTooltip(this,26,49,event)" onfocus="UpdateTooltip(this,26,49,event)" onclick="return OnShapeClick(26,49,event);" onkeyup="OnShapeKey(26,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS"  target="_top" COORDS="0,446,13,448,14,440,1,438,0,446" onmouseover="UpdateTooltip(this,26,49,event)" onfocus="UpdateTooltip(this,26,49,event)" onclick="return OnShapeClick(26,49,event);" onkeyup="OnShapeKey(26,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS"  target="_top" COORDS="16,151,16,187,131,187,131,151,16,151" onmouseover="UpdateTooltip(this,26,49,event)" onfocus="UpdateTooltip(this,26,49,event)" onclick="return OnShapeClick(26,49,event);" onkeyup="OnShapeKey(26,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Actualizar rutina y validar" origTitle="Actualizar rutina y validar" TITLE="Actualizar rutina y validar" HREF="png_3.htm" target="frmDrawing" COORDS="360,444,694,444,695,444,696,443,696,443,696,442,696,129,696,128,696,127,695,127,694,127,360,127,359,127,358,127,358,128,357,129,357,442,358,443,358,443,359,444,360,444" onmouseover="UpdateTooltip(this,26,26,event)" onfocus="UpdateTooltip(this,26,26,event)" onclick="return OnShapeClick(26,26,event);" onkeyup="OnShapeKey(26,26,event);">
 </MAP>
 
 

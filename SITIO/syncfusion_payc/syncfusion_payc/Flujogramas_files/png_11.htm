@@ -11,6 +11,14 @@ function OnShapeClick(){};
 </script>
 
 <script src="png_1.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript">
+	if( (parent.isSVG) || 
+		(parent.isVML && parent.vmlSupported) || 
+		(parent.isXAML && parent.isUpLevel)) 
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
 
 
 <script type="text/javascript" language="javascript">
@@ -58,7 +66,7 @@ if (parent.isUpLevel)
 	viewMgr.SupportsSearch = true;
 
 	viewMgr.put_Location = ViewMgrSetRasterLocation;
-	viewMgr.visBBoxLeft = 0.871730;
+	viewMgr.visBBoxLeft = 0.937794;
 	viewMgr.visBBoxRight = 33.514839;
 	viewMgr.visBBoxBottom = 21.908316;
 	viewMgr.visBBoxTop = 34.451999;
@@ -69,7 +77,7 @@ function load ()
 {
 	if(isUpLevel)
 	{
-		arrowdiv.innerHTML = '<img id="arrowgif" alt="Shows the location of the selected shape" src="arrow.gif"/>';
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Muestra la ubicación de la forma seleccionada" src="arrow.png"/>';
 
 		var pageIndex = parent.PageIndexFromID (pageID);
 		parent.CurPageUpdate (pageIndex);
@@ -117,6 +125,18 @@ div.banner {
 
 <body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
 
+<script type="text/javascript" language="javascript">
+// Displays the banner prompt to install Silverlight
+if (parent.slSupported && !parent.slInstalled)
+{
+	var slBanner = document.createElement("div");
+	slBanner.className = "banner";
+	slBanner.innerHTML = 'Para habilitar toda la funcionalidad como Panorámica y zoom, <a href="https://www.microsoft.com/silverlight/resources/install.aspx" target="parent">haga clic aquí</a> para instalar el complemento Silverlight.';
+
+	document.body.appendChild(slBanner);
+	document.body.style.paddingTop = "2.5em";
+}
+</script>
 
 
 <div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
@@ -131,16 +151,16 @@ div.banner {
 </center>
 
 <MAP NAME="visImageMap">
-  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Archivos con resultados de las ejecuciones realizadas" origTitle="SALIDAS 1. Archivos con resultados de las ejecuciones realizadas" TITLE="SALIDAS 1. Archivos con resultados de las ejecuciones realizadas" HREF="https://docs.google.com/spreadsheets/d/1t_5G4eSgsmuGZ6e4WYfIcw13Mi63Epj9I9TjcKd40Mo/edit#gid=0" target="_top" COORDS="1256,394,1256,396,1260,392,878,392,882,396,882,394,874,394,874,396,878,400,1260,400,1264,396,1264,394,1256,394" onmouseover="UpdateTooltip(this,28,51,event)" onfocus="UpdateTooltip(this,28,51,event)" onclick="return OnShapeClick(28,51,event);" onkeyup="OnShapeKey(28,51,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Archivos con resultados de las ejecuciones realizadas" origTitle="SALIDAS 1. Archivos con resultados de las ejecuciones realizadas" TITLE="SALIDAS 1. Archivos con resultados de las ejecuciones realizadas" HREF="https://docs.google.com/spreadsheets/d/1t_5G4eSgsmuGZ6e4WYfIcw13Mi63Epj9I9TjcKd40Mo/edit#gid=0" target="_top" COORDS="931,400,1069,400,1069,392,931,392,931,400" onmouseover="UpdateTooltip(this,28,51,event)" onfocus="UpdateTooltip(this,28,51,event)" onclick="return OnShapeClick(28,51,event);" onkeyup="OnShapeKey(28,51,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Archivos con resultados de las ejecuciones realizadas" origTitle="SALIDAS 1. Archivos con resultados de las ejecuciones realizadas" TITLE="SALIDAS 1. Archivos con resultados de las ejecuciones realizadas" HREF="https://docs.google.com/spreadsheets/d/1t_5G4eSgsmuGZ6e4WYfIcw13Mi63Epj9I9TjcKd40Mo/edit#gid=0" target="_top" COORDS="906,185,906,150,927,150,927,185,906,185" onmouseover="UpdateTooltip(this,28,51,event)" onfocus="UpdateTooltip(this,28,51,event)" onclick="return OnShapeClick(28,51,event);" onkeyup="OnShapeKey(28,51,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Archivos con resultados de las ejecuciones realizadas" origTitle="SALIDAS 1. Archivos con resultados de las ejecuciones realizadas" TITLE="SALIDAS 1. Archivos con resultados de las ejecuciones realizadas" HREF="https://docs.google.com/spreadsheets/d/1t_5G4eSgsmuGZ6e4WYfIcw13Mi63Epj9I9TjcKd40Mo/edit#gid=0" target="_top" COORDS="1013,229,1264,229,1264,189,1264,185,1264,145,991,145,991,106,881,106,881,145,881,150,881,185,881,189,881,224,881,229,881,268,1013,268,1013,229" onmouseover="UpdateTooltip(this,28,51,event)" onfocus="UpdateTooltip(this,28,51,event)" onclick="return OnShapeClick(28,51,event);" onkeyup="OnShapeKey(28,51,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Bases de datos rutinas actualizadas 2. Scripts en..." origTitle="ENTRADAS 1. Bases de datos rutinas actualizadas 2. Scripts en..." TITLE="ENTRADAS 1. Bases de datos rutinas actualizadas 2. Scripts en..." HREF="https://docs.google.com/spreadsheets/d/1t_5G4eSgsmuGZ6e4WYfIcw13Mi63Epj9I9TjcKd40Mo/edit#gid=0" target="_top" COORDS="435,394,435,396,439,392,17,392,21,396,21,394,13,394,13,396,17,400,439,400,443,396,443,394,435,394" onmouseover="UpdateTooltip(this,28,49,event)" onfocus="UpdateTooltip(this,28,49,event)" onclick="return OnShapeClick(28,49,event);" onkeyup="OnShapeKey(28,49,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Bases de datos rutinas actualizadas 2. Scripts en..." origTitle="ENTRADAS 1. Bases de datos rutinas actualizadas 2. Scripts en..." TITLE="ENTRADAS 1. Bases de datos rutinas actualizadas 2. Scripts en..." HREF="https://docs.google.com/spreadsheets/d/1t_5G4eSgsmuGZ6e4WYfIcw13Mi63Epj9I9TjcKd40Mo/edit#gid=0" target="_top" COORDS="0,397,16,400,17,392,1,389,0,397" onmouseover="UpdateTooltip(this,28,49,event)" onfocus="UpdateTooltip(this,28,49,event)" onclick="return OnShapeClick(28,49,event);" onkeyup="OnShapeKey(28,49,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Bases de datos rutinas actualizadas 2. Scripts en..." origTitle="ENTRADAS 1. Bases de datos rutinas actualizadas 2. Scripts en..." TITLE="ENTRADAS 1. Bases de datos rutinas actualizadas 2. Scripts en..." HREF="https://docs.google.com/spreadsheets/d/1t_5G4eSgsmuGZ6e4WYfIcw13Mi63Epj9I9TjcKd40Mo/edit#gid=0" target="_top" COORDS="45,90,45,55,66,55,66,90,45,90" onmouseover="UpdateTooltip(this,28,49,event)" onfocus="UpdateTooltip(this,28,49,event)" onclick="return OnShapeClick(28,49,event);" onkeyup="OnShapeKey(28,49,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Bases de datos rutinas actualizadas 2. Scripts en..." origTitle="ENTRADAS 1. Bases de datos rutinas actualizadas 2. Scripts en..." TITLE="ENTRADAS 1. Bases de datos rutinas actualizadas 2. Scripts en..." HREF="https://docs.google.com/spreadsheets/d/1t_5G4eSgsmuGZ6e4WYfIcw13Mi63Epj9I9TjcKd40Mo/edit#gid=0" target="_top" COORDS="430,173,444,173,444,129,182,129,182,94,444,94,444,50,164,50,164,11,20,11,20,50,20,55,20,90,20,94,20,129,20,134,20,168,20,173,20,212,430,212,430,173" onmouseover="UpdateTooltip(this,28,49,event)" onfocus="UpdateTooltip(this,28,49,event)" onclick="return OnShapeClick(28,49,event);" onkeyup="OnShapeKey(28,49,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Bases de datos rutinas actualizadas 2. Scripts en..." origTitle="ENTRADAS 1. Bases de datos rutinas actualizadas 2. Scripts en..." TITLE="ENTRADAS 1. Bases de datos rutinas actualizadas 2. Scripts en..." HREF="https://docs.google.com/spreadsheets/d/1t_5G4eSgsmuGZ6e4WYfIcw13Mi63Epj9I9TjcKd40Mo/edit#gid=0" target="_top" COORDS="45,168,45,134,66,134,66,168,45,168" onmouseover="UpdateTooltip(this,28,49,event)" onfocus="UpdateTooltip(this,28,49,event)" onclick="return OnShapeClick(28,49,event);" onkeyup="OnShapeKey(28,49,event);">
-  <AREA shape="POLYGON" tabindex="1" ALT="Ejecutar rutinas de proyección" origTitle="Ejecutar rutinas de proyección" TITLE="Ejecutar rutinas de proyección" HREF="png_11.htm" target="frmDrawing" COORDS="448,396,865,396,866,396,867,395,868,394,868,393,868,3,868,2,867,1,866,0,865,0,448,0,447,0,446,1,445,2,445,3,445,393,445,394,446,395,447,396,448,396" onmouseover="UpdateTooltip(this,28,26,event)" onfocus="UpdateTooltip(this,28,26,event)" onclick="return OnShapeClick(28,26,event);" onkeyup="OnShapeKey(28,26,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Archivos con resultados de las ejecuciones realizadas" origTitle="SALIDAS 1. Archivos con resultados de las ejecuciones realizadas" TITLE="SALIDAS 1. Archivos con resultados de las ejecuciones realizadas" HREF="https://docs.google.com/spreadsheets/d/1t_5G4eSgsmuGZ6e4WYfIcw13Mi63Epj9I9TjcKd40Mo/edit#gid=0" target="_top" COORDS="1004,316,1004,317,1008,313,701,313,705,317,705,316,697,316,697,317,701,321,1008,321,1012,317,1012,316,1004,316" onmouseover="UpdateTooltip(this,28,51,event)" onfocus="UpdateTooltip(this,28,51,event)" onclick="return OnShapeClick(28,51,event);" onkeyup="OnShapeKey(28,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Archivos con resultados de las ejecuciones realizadas" origTitle="SALIDAS 1. Archivos con resultados de las ejecuciones realizadas" TITLE="SALIDAS 1. Archivos con resultados de las ejecuciones realizadas" HREF="https://docs.google.com/spreadsheets/d/1t_5G4eSgsmuGZ6e4WYfIcw13Mi63Epj9I9TjcKd40Mo/edit#gid=0" target="_top" COORDS="744,321,854,321,854,313,744,313,744,321" onmouseover="UpdateTooltip(this,28,51,event)" onfocus="UpdateTooltip(this,28,51,event)" onclick="return OnShapeClick(28,51,event);" onkeyup="OnShapeKey(28,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Archivos con resultados de las ejecuciones realizadas" origTitle="SALIDAS 1. Archivos con resultados de las ejecuciones realizadas" TITLE="SALIDAS 1. Archivos con resultados de las ejecuciones realizadas" HREF="https://docs.google.com/spreadsheets/d/1t_5G4eSgsmuGZ6e4WYfIcw13Mi63Epj9I9TjcKd40Mo/edit#gid=0" target="_top" COORDS="724,148,724,120,741,120,741,148,724,148" onmouseover="UpdateTooltip(this,28,51,event)" onfocus="UpdateTooltip(this,28,51,event)" onclick="return OnShapeClick(28,51,event);" onkeyup="OnShapeKey(28,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Archivos con resultados de las ejecuciones realizadas" origTitle="SALIDAS 1. Archivos con resultados de las ejecuciones realizadas" TITLE="SALIDAS 1. Archivos con resultados de las ejecuciones realizadas" HREF="https://docs.google.com/spreadsheets/d/1t_5G4eSgsmuGZ6e4WYfIcw13Mi63Epj9I9TjcKd40Mo/edit#gid=0" target="_top" COORDS="810,183,1011,183,1011,152,1011,148,1011,116,792,116,792,85,704,85,704,116,704,120,704,148,704,152,704,179,704,183,704,215,810,215,810,183" onmouseover="UpdateTooltip(this,28,51,event)" onfocus="UpdateTooltip(this,28,51,event)" onclick="return OnShapeClick(28,51,event);" onkeyup="OnShapeKey(28,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Bases de datos rutinas actualizadas 2. Scripts en..." origTitle="ENTRADAS 1. Bases de datos rutinas actualizadas 2. Scripts en..." TITLE="ENTRADAS 1. Bases de datos rutinas actualizadas 2. Scripts en..." HREF="https://docs.google.com/spreadsheets/d/1t_5G4eSgsmuGZ6e4WYfIcw13Mi63Epj9I9TjcKd40Mo/edit#gid=0" target="_top" COORDS="346,316,346,317,350,313,11,313,15,317,15,316,7,316,7,317,11,321,350,321,354,317,354,316,346,316" onmouseover="UpdateTooltip(this,28,49,event)" onfocus="UpdateTooltip(this,28,49,event)" onclick="return OnShapeClick(28,49,event);" onkeyup="OnShapeKey(28,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Bases de datos rutinas actualizadas 2. Scripts en..." origTitle="ENTRADAS 1. Bases de datos rutinas actualizadas 2. Scripts en..." TITLE="ENTRADAS 1. Bases de datos rutinas actualizadas 2. Scripts en..." HREF="https://docs.google.com/spreadsheets/d/1t_5G4eSgsmuGZ6e4WYfIcw13Mi63Epj9I9TjcKd40Mo/edit#gid=0" target="_top" COORDS="284,313,181,313,181,321,284,321,284,313" onmouseover="UpdateTooltip(this,28,49,event)" onfocus="UpdateTooltip(this,28,49,event)" onclick="return OnShapeClick(28,49,event);" onkeyup="OnShapeKey(28,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Bases de datos rutinas actualizadas 2. Scripts en..." origTitle="ENTRADAS 1. Bases de datos rutinas actualizadas 2. Scripts en..." TITLE="ENTRADAS 1. Bases de datos rutinas actualizadas 2. Scripts en..." HREF="https://docs.google.com/spreadsheets/d/1t_5G4eSgsmuGZ6e4WYfIcw13Mi63Epj9I9TjcKd40Mo/edit#gid=0" target="_top" COORDS="34,116,34,89,51,89,51,116,34,116" onmouseover="UpdateTooltip(this,28,49,event)" onfocus="UpdateTooltip(this,28,49,event)" onclick="return OnShapeClick(28,49,event);" onkeyup="OnShapeKey(28,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Bases de datos rutinas actualizadas 2. Scripts en..." origTitle="ENTRADAS 1. Bases de datos rutinas actualizadas 2. Scripts en..." TITLE="ENTRADAS 1. Bases de datos rutinas actualizadas 2. Scripts en..." HREF="https://docs.google.com/spreadsheets/d/1t_5G4eSgsmuGZ6e4WYfIcw13Mi63Epj9I9TjcKd40Mo/edit#gid=0" target="_top" COORDS="342,183,353,183,353,148,144,148,144,120,353,120,353,85,129,85,129,54,14,54,14,85,14,89,14,116,14,120,14,148,14,152,14,179,14,183,14,215,342,215,342,183" onmouseover="UpdateTooltip(this,28,49,event)" onfocus="UpdateTooltip(this,28,49,event)" onclick="return OnShapeClick(28,49,event);" onkeyup="OnShapeKey(28,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Bases de datos rutinas actualizadas 2. Scripts en..." origTitle="ENTRADAS 1. Bases de datos rutinas actualizadas 2. Scripts en..." TITLE="ENTRADAS 1. Bases de datos rutinas actualizadas 2. Scripts en..." HREF="https://docs.google.com/spreadsheets/d/1t_5G4eSgsmuGZ6e4WYfIcw13Mi63Epj9I9TjcKd40Mo/edit#gid=0" target="_top" COORDS="34,179,34,152,51,152,51,179,34,179" onmouseover="UpdateTooltip(this,28,49,event)" onfocus="UpdateTooltip(this,28,49,event)" onclick="return OnShapeClick(28,49,event);" onkeyup="OnShapeKey(28,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Ejecutar rutinas de proyección" origTitle="Ejecutar rutinas de proyección" TITLE="Ejecutar rutinas de proyección" HREF="png_3.htm" target="frmDrawing" COORDS="357,317,691,317,692,317,693,317,693,316,694,315,694,3,693,2,693,1,692,0,691,0,357,0,356,0,356,1,355,2,355,3,355,315,355,316,356,317,356,317,357,317" onmouseover="UpdateTooltip(this,28,26,event)" onfocus="UpdateTooltip(this,28,26,event)" onclick="return OnShapeClick(28,26,event);" onkeyup="OnShapeKey(28,26,event);">
 </MAP>
 
 
