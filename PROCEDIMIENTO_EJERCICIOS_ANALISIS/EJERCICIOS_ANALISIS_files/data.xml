@@ -130,8 +130,8 @@
 de
 análisis</Text>
 					<XForm>
-						<PinX Unit="MM">14.042280451625011</PinX>
-						<PinY Unit="MM">6.222441092151835</PinY>
+						<PinX Unit="MM">14.042280451625009</PinX>
+						<PinY Unit="MM">6.222441092151834</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -314,61 +314,6 @@ y ajustados</Text>
 						<Label>ConditionType</Label>
 					</Prop>
 				</Shape>
-				<Shape ID="99" UniqueID="{1647A9DA-07F5-49FF-B509-028469A468E7}" Name="Collapsed Sub-Process.2378" NameU="Collapsed Sub-Process.2378" Master="6">
-					<Text>RECOLECTAR INFORMACIÓN </Text>
-					<XForm>
-						<PinX Unit="MM">18.176138888467808</PinX>
-						<PinY Unit="MM">6.222441035669096</PinY>
-					</XForm>
-					<LayerMem>
-						<LayerMember>0</LayerMember>
-					</LayerMem>
-					<Scratch>
-						<B>
-							<SolutionXML>
-								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
-									<HLURL:Hyperlink ID="1">
-										<HLURL:Description></HLURL:Description>
-										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>RECOLECTAR INFORMACIÓN</HLURL:SubAddress>
-										<HLURL:ExtraInfo></HLURL:ExtraInfo>
-										<HLURL:Default>0</HLURL:Default>
-										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>E:\REPOSITORIOS\GESTION-CALIDAD-ANALITICA\PROCEDIMIENTO_EJERCICIOS_ANALISIS\EJERCICIOS_ANALISIS.vsdx#RECOLECTAR INFORMACIÓN</HLURL:AbsoluteURL>
-									</HLURL:Hyperlink>
-								</HLURL:Hyperlinks>
-							</SolutionXML>
-						</B>
-					</Scratch>
-					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
-						<Value></Value>
-						<Label>Categories</Label>
-					</Prop>
-					<Prop ID="3" Name="BpmnDocumentation" NameU="BpmnDocumentation">
-						<Value></Value>
-						<Label>Documentation</Label>
-					</Prop>
-					<Prop ID="6" Name="BpmnLoopType" NameU="BpmnLoopType">
-						<Value Unit="STR">None</Value>
-						<Label>LoopType</Label>
-					</Prop>
-					<Prop ID="10" Name="BpmnSubProcessType" NameU="BpmnSubProcessType">
-						<Value Unit="STR">Embedded</Value>
-						<Label>SubProcessType</Label>
-					</Prop>
-					<Prop ID="13" Name="BpmnIsForCompensation" NameU="BpmnIsForCompensation">
-						<Value Unit="STR">FALSE</Value>
-						<Label>IsForCompensation</Label>
-					</Prop>
-					<Prop ID="15" Name="BpmnAdHoc" NameU="BpmnAdHoc">
-						<Value Unit="STR">FALSE</Value>
-						<Label>AdHoc</Label>
-					</Prop>
-					<Prop ID="17" Name="BpmnBoundaryType" NameU="BpmnBoundaryType">
-						<Value Unit="STR">Default</Value>
-						<Label>BoundaryType</Label>
-					</Prop>
-				</Shape>
 				<Shape ID="122" UniqueID="{4AC3504F-CD16-440F-BE63-83861B0F388F}" Name="Sequence Flow.2990" NameU="Sequence Flow.2990" Master="5">
 					<Text>Instrumentos
 de recolección
@@ -376,7 +321,7 @@ diligenciados
 y validados</Text>
 					<XForm>
 						<PinX Unit="MM">22.670747165288812</PinX>
-						<PinY Unit="MM">6.222441092151835</PinY>
+						<PinY Unit="MM">6.222441092151834</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -460,6 +405,60 @@ de análisis</Text>
 						<PinX Unit="MM">22.775590732186611</PinX>
 						<PinY Unit="MM">1.350393650217462</PinY>
 					</XForm>
+				</Shape>
+				<Shape ID="159" UniqueID="{2552BA9A-4B0B-474F-A2F4-E0DF2C75E224}" Name="Collapsed Sub-Process.159" NameU="Collapsed Sub-Process.159" Master="6">
+					<Text>RECOLECTAR INFORMACIÓN</Text>
+					<XForm>
+						<PinX Unit="MM">18.176138888467804</PinX>
+						<PinY Unit="MM">6.222441035669094</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address></HLURL:Address>
+										<HLURL:SubAddress>RECOLECCION INFORMACION</HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
+						<Value></Value>
+						<Label>Categories</Label>
+					</Prop>
+					<Prop ID="3" Name="BpmnDocumentation" NameU="BpmnDocumentation">
+						<Value></Value>
+						<Label>Documentation</Label>
+					</Prop>
+					<Prop ID="6" Name="BpmnLoopType" NameU="BpmnLoopType">
+						<Value Unit="STR">None</Value>
+						<Label>LoopType</Label>
+					</Prop>
+					<Prop ID="10" Name="BpmnSubProcessType" NameU="BpmnSubProcessType">
+						<Value Unit="STR">Embedded</Value>
+						<Label>SubProcessType</Label>
+					</Prop>
+					<Prop ID="13" Name="BpmnIsForCompensation" NameU="BpmnIsForCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>IsForCompensation</Label>
+					</Prop>
+					<Prop ID="15" Name="BpmnAdHoc" NameU="BpmnAdHoc">
+						<Value Unit="STR">FALSE</Value>
+						<Label>AdHoc</Label>
+					</Prop>
+					<Prop ID="17" Name="BpmnBoundaryType" NameU="BpmnBoundaryType">
+						<Value Unit="STR">Default</Value>
+						<Label>BoundaryType</Label>
+					</Prop>
 				</Shape>
 			</Shapes>
 		</Page>
@@ -931,7 +930,400 @@ de análisis</Text>
 				</Shape>
 			</Shapes>
 		</Page>
-		<Page ID="4" Name="Actualizar la encuesta con los últimos ejercicios de análisis y variables a proyectar" NameU="Page-5">
+		<Page ID="28" Name="RECOLECCION INFORMACION" NameU="RECOLECCION INFORMACION">
+			<PageProps>
+				<PageScale Unit="MM">0.039370078740157</PageScale>
+				<DrawingScale Unit="MM">0.039370078740157</DrawingScale>
+			</PageProps>
+			<Layer IX="0">
+				<Name>Flowchart</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="1">
+				<Name>Connector</Name>
+				<NameUniv>Connector</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Shapes>
+				<Shape ID="1" UniqueID="{97A145BB-DFB1-4D0D-A3AF-5104EE0B98A6}" Name="Start Event.2819" NameU="Start Event.2819" Master="2">
+					<XForm>
+						<PinX Unit="MM">5.634444685063277</PinX>
+						<PinY Unit="MM">5.910172017610116</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
+						<Value></Value>
+						<Label>Categories</Label>
+					</Prop>
+					<Prop ID="3" Name="BpmnDocumentation" NameU="BpmnDocumentation">
+						<Value></Value>
+						<Label>Documentation</Label>
+					</Prop>
+					<Prop ID="5" Name="BpmnEventType" NameU="BpmnEventType">
+						<Value Unit="STR">Start</Value>
+						<Label>EventType</Label>
+					</Prop>
+					<Prop ID="7" Name="BpmnTriggerOrResult_Start" NameU="BpmnTriggerOrResult_Start">
+						<Value Unit="STR">None</Value>
+						<Label>TriggerOrResult</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="14" UniqueID="{E285AF34-60BE-4775-AC6C-A3CE9E8F55E2}" Name="Task.2832" NameU="Task.2832" Master="4">
+					<Text>Establecer necesidades de información para cada ejercicio de análisis</Text>
+					<XForm>
+						<PinX Unit="MM">10.263360262305600</PinX>
+						<PinY Unit="MM">5.910172017610106</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address></HLURL:Address>
+										<HLURL:SubAddress>Establecer necesidades de información para cada ejercicio de análisis</HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
+						<Value></Value>
+						<Label>Categories</Label>
+					</Prop>
+					<Prop ID="3" Name="BpmnDocumentation" NameU="BpmnDocumentation">
+						<Value></Value>
+						<Label>Documentation</Label>
+					</Prop>
+					<Prop ID="6" Name="BpmnLoopType" NameU="BpmnLoopType">
+						<Value Unit="STR">None</Value>
+						<Label>LoopType</Label>
+					</Prop>
+					<Prop ID="7" Name="BpmnTaskType" NameU="BpmnTaskType">
+						<Value Unit="STR">None</Value>
+						<Label>TaskType</Label>
+					</Prop>
+					<Prop ID="13" Name="BpmnIsForCompensation" NameU="BpmnIsForCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>IsForCompensation</Label>
+					</Prop>
+					<Prop ID="17" Name="BpmnBoundaryType" NameU="BpmnBoundaryType">
+						<Value Unit="STR">Default</Value>
+						<Label>BoundaryType</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="37" UniqueID="{B380558F-713A-46E4-8FEF-17D55DD2D57A}" Name="Sequence Flow.2855" NameU="Sequence Flow.2855" Master="5">
+					<XForm>
+						<PinX Unit="MM">7.254565137098091</PinX>
+						<PinY Unit="MM">5.910172017610116</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
+						<Value></Value>
+						<Label>Categories</Label>
+					</Prop>
+					<Prop ID="3" Name="BpmnDocumentation" NameU="BpmnDocumentation">
+						<Value></Value>
+						<Label>Documentation</Label>
+					</Prop>
+					<Prop ID="5" Name="BpmnConnectingObjectType" NameU="BpmnConnectingObjectType">
+						<Value Unit="STR">Sequence Flow</Value>
+						<Label>ConnectingObjectType</Label>
+					</Prop>
+					<Prop ID="6" Name="BpmnConditionType" NameU="BpmnConditionType">
+						<Value Unit="STR">None</Value>
+						<Label>ConditionType</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="38" UniqueID="{08917934-806D-4090-865B-56ED84D2768C}" Name="Task.2856" NameU="Task.2856" Master="4">
+					<Text>Recolectar información </Text>
+					<XForm>
+						<PinX Unit="MM">16.637821283329671</PinX>
+						<PinY Unit="MM">5.910172017610106</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address></HLURL:Address>
+										<HLURL:SubAddress>recoleccion informacion operativa</HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
+						<Value></Value>
+						<Label>Categories</Label>
+					</Prop>
+					<Prop ID="3" Name="BpmnDocumentation" NameU="BpmnDocumentation">
+						<Value></Value>
+						<Label>Documentation</Label>
+					</Prop>
+					<Prop ID="6" Name="BpmnLoopType" NameU="BpmnLoopType">
+						<Value Unit="STR">None</Value>
+						<Label>LoopType</Label>
+					</Prop>
+					<Prop ID="7" Name="BpmnTaskType" NameU="BpmnTaskType">
+						<Value Unit="STR">None</Value>
+						<Label>TaskType</Label>
+					</Prop>
+					<Prop ID="13" Name="BpmnIsForCompensation" NameU="BpmnIsForCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>IsForCompensation</Label>
+					</Prop>
+					<Prop ID="17" Name="BpmnBoundaryType" NameU="BpmnBoundaryType">
+						<Value Unit="STR">Default</Value>
+						<Label>BoundaryType</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="61" UniqueID="{58A36C7F-179A-4EDD-B4EC-524BF1A3025B}" Name="Sequence Flow.2879" NameU="Sequence Flow.2879" Master="5">
+					<XForm>
+						<PinX Unit="MM">13.450590772817637</PinX>
+						<PinY Unit="MM">5.910172017610106</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
+						<Value></Value>
+						<Label>Categories</Label>
+					</Prop>
+					<Prop ID="3" Name="BpmnDocumentation" NameU="BpmnDocumentation">
+						<Value></Value>
+						<Label>Documentation</Label>
+					</Prop>
+					<Prop ID="5" Name="BpmnConnectingObjectType" NameU="BpmnConnectingObjectType">
+						<Value Unit="STR">Sequence Flow</Value>
+						<Label>ConnectingObjectType</Label>
+					</Prop>
+					<Prop ID="6" Name="BpmnConditionType" NameU="BpmnConditionType">
+						<Value Unit="STR">None</Value>
+						<Label>ConditionType</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="62" UniqueID="{E9AE99C1-11BD-4A11-8926-8BE68C91CA3A}" Name="Task.2880" NameU="Task.2880" Master="4">
+					<Text>Validar información</Text>
+					<XForm>
+						<PinX Unit="MM">23.012282304353739</PinX>
+						<PinY Unit="MM">6.014104739357782</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address></HLURL:Address>
+										<HLURL:SubAddress>Validar información</HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
+						<Value></Value>
+						<Label>Categories</Label>
+					</Prop>
+					<Prop ID="3" Name="BpmnDocumentation" NameU="BpmnDocumentation">
+						<Value></Value>
+						<Label>Documentation</Label>
+					</Prop>
+					<Prop ID="6" Name="BpmnLoopType" NameU="BpmnLoopType">
+						<Value Unit="STR">None</Value>
+						<Label>LoopType</Label>
+					</Prop>
+					<Prop ID="7" Name="BpmnTaskType" NameU="BpmnTaskType">
+						<Value Unit="STR">None</Value>
+						<Label>TaskType</Label>
+					</Prop>
+					<Prop ID="13" Name="BpmnIsForCompensation" NameU="BpmnIsForCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>IsForCompensation</Label>
+					</Prop>
+					<Prop ID="17" Name="BpmnBoundaryType" NameU="BpmnBoundaryType">
+						<Value Unit="STR">Default</Value>
+						<Label>BoundaryType</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="85" UniqueID="{107DDD74-EC9D-42D8-BE84-DDBF3DB6FB08}" Name="Task.2903" NameU="Task.2903" Master="4">
+					<Text>Ajustar información</Text>
+					<XForm>
+						<PinX Unit="MM">29.386743325377793</PinX>
+						<PinY Unit="MM">6.014104739357783</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address></HLURL:Address>
+										<HLURL:SubAddress>Ajustar información</HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
+						<Value></Value>
+						<Label>Categories</Label>
+					</Prop>
+					<Prop ID="3" Name="BpmnDocumentation" NameU="BpmnDocumentation">
+						<Value></Value>
+						<Label>Documentation</Label>
+					</Prop>
+					<Prop ID="6" Name="BpmnLoopType" NameU="BpmnLoopType">
+						<Value Unit="STR">None</Value>
+						<Label>LoopType</Label>
+					</Prop>
+					<Prop ID="7" Name="BpmnTaskType" NameU="BpmnTaskType">
+						<Value Unit="STR">None</Value>
+						<Label>TaskType</Label>
+					</Prop>
+					<Prop ID="13" Name="BpmnIsForCompensation" NameU="BpmnIsForCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>IsForCompensation</Label>
+					</Prop>
+					<Prop ID="17" Name="BpmnBoundaryType" NameU="BpmnBoundaryType">
+						<Value Unit="STR">Default</Value>
+						<Label>BoundaryType</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="108" UniqueID="{C3F9519F-C4F4-449C-B4ED-BD3FBD9E1A0C}" Name="Sequence Flow.2949" NameU="Sequence Flow.2949" Master="5">
+					<XForm>
+						<PinX Unit="MM">19.825051793841705</PinX>
+						<PinY Unit="MM">5.910172017610106</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
+						<Value></Value>
+						<Label>Categories</Label>
+					</Prop>
+					<Prop ID="3" Name="BpmnDocumentation" NameU="BpmnDocumentation">
+						<Value></Value>
+						<Label>Documentation</Label>
+					</Prop>
+					<Prop ID="5" Name="BpmnConnectingObjectType" NameU="BpmnConnectingObjectType">
+						<Value Unit="STR">Sequence Flow</Value>
+						<Label>ConnectingObjectType</Label>
+					</Prop>
+					<Prop ID="6" Name="BpmnConditionType" NameU="BpmnConditionType">
+						<Value Unit="STR">None</Value>
+						<Label>ConditionType</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="109" UniqueID="{F8C824AD-3A9B-413F-B91D-C74D06D55468}" Name="Sequence Flow.2950" NameU="Sequence Flow.2950" Master="5">
+					<XForm>
+						<PinX Unit="MM">26.199512814865770</PinX>
+						<PinY Unit="MM">6.014104739357782</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
+						<Value></Value>
+						<Label>Categories</Label>
+					</Prop>
+					<Prop ID="3" Name="BpmnDocumentation" NameU="BpmnDocumentation">
+						<Value></Value>
+						<Label>Documentation</Label>
+					</Prop>
+					<Prop ID="5" Name="BpmnConnectingObjectType" NameU="BpmnConnectingObjectType">
+						<Value Unit="STR">Sequence Flow</Value>
+						<Label>ConnectingObjectType</Label>
+					</Prop>
+					<Prop ID="6" Name="BpmnConditionType" NameU="BpmnConditionType">
+						<Value Unit="STR">None</Value>
+						<Label>ConditionType</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="110" UniqueID="{F9F7DAEC-F1C8-4546-B62F-190DBF1D5F09}" Name="Sequence Flow.2951" NameU="Sequence Flow.2951" Master="5">
+					<XForm>
+						<PinX Unit="MM">32.273188334600107</PinX>
+						<PinY Unit="MM">6.022419999631987</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
+						<Value></Value>
+						<Label>Categories</Label>
+					</Prop>
+					<Prop ID="3" Name="BpmnDocumentation" NameU="BpmnDocumentation">
+						<Value></Value>
+						<Label>Documentation</Label>
+					</Prop>
+					<Prop ID="5" Name="BpmnConnectingObjectType" NameU="BpmnConnectingObjectType">
+						<Value Unit="STR">Sequence Flow</Value>
+						<Label>ConnectingObjectType</Label>
+					</Prop>
+					<Prop ID="6" Name="BpmnConditionType" NameU="BpmnConditionType">
+						<Value Unit="STR">None</Value>
+						<Label>ConditionType</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="111" UniqueID="{8795E108-32AF-489F-A662-352C7F442FB2}" Name="End Event.2976" NameU="End Event.2976" Master="7">
+					<XForm>
+						<PinX Unit="MM">33.737548307128790</PinX>
+						<PinY Unit="MM">6.030735259906193</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
+						<Value></Value>
+						<Label>Categories</Label>
+					</Prop>
+					<Prop ID="3" Name="BpmnDocumentation" NameU="BpmnDocumentation">
+						<Value></Value>
+						<Label>Documentation</Label>
+					</Prop>
+					<Prop ID="5" Name="BpmnEventType" NameU="BpmnEventType">
+						<Value Unit="STR">End</Value>
+						<Label>EventType</Label>
+					</Prop>
+					<Prop ID="10" Name="BpmnTriggerOrResult_End" NameU="BpmnTriggerOrResult_End">
+						<Value Unit="STR">None</Value>
+						<Label>TriggerOrResult</Label>
+					</Prop>
+				</Shape>
+			</Shapes>
+		</Page>
+		<Page ID="4" Name="Actualizar la encuesta con los últimos ejercicios de análisis y variables a proyectar" NameU="Page-4">
 			<PageProps>
 				<PageScale Unit="MM">0.039370078740157</PageScale>
 				<DrawingScale Unit="MM">0.039370078740157</DrawingScale>
@@ -1927,400 +2319,6 @@ de análisis</Text>
 				</Shape>
 			</Shapes>
 		</Page>
-		<Page ID="7" Name="RECOLECTAR INFORMACIÓN" NameU="Page-8">
-			<PageProps>
-				<PageScale Unit="MM">0.039370078740157</PageScale>
-				<DrawingScale Unit="MM">0.039370078740157</DrawingScale>
-			</PageProps>
-			<Layer IX="0">
-				<Name>Flowchart</Name>
-				<NameUniv>Flowchart</NameUniv>
-				<Visible>1</Visible>
-			</Layer>
-			<Layer IX="1">
-				<Name>Connector</Name>
-				<NameUniv>Connector</NameUniv>
-				<Visible>1</Visible>
-			</Layer>
-			<Shapes>
-				<Shape ID="1" UniqueID="{2CBE7591-B994-4D05-AF3F-81277024C0A7}" Name="Start Event.2819" NameU="Start Event.2819" Master="2">
-					<XForm>
-						<PinX Unit="MM">1.500586441593855</PinX>
-						<PinY Unit="MM">5.849268781289264</PinY>
-					</XForm>
-					<LayerMem>
-						<LayerMember>0</LayerMember>
-					</LayerMem>
-					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
-						<Value></Value>
-						<Label>Categories</Label>
-					</Prop>
-					<Prop ID="3" Name="BpmnDocumentation" NameU="BpmnDocumentation">
-						<Value></Value>
-						<Label>Documentation</Label>
-					</Prop>
-					<Prop ID="5" Name="BpmnEventType" NameU="BpmnEventType">
-						<Value Unit="STR">Start</Value>
-						<Label>EventType</Label>
-					</Prop>
-					<Prop ID="7" Name="BpmnTriggerOrResult_Start" NameU="BpmnTriggerOrResult_Start">
-						<Value Unit="STR">None</Value>
-						<Label>TriggerOrResult</Label>
-					</Prop>
-				</Shape>
-				<Shape ID="14" UniqueID="{6AF1F028-1DEB-4F38-9357-6E18E6848E85}" Name="Task.2832" NameU="Task.2832" Master="4">
-					<Text>Establecer necesidades de información para cada ejercicio de análisis</Text>
-					<XForm>
-						<PinX Unit="MM">6.129502018836178</PinX>
-						<PinY Unit="MM">5.849268781289253</PinY>
-					</XForm>
-					<LayerMem>
-						<LayerMember>0</LayerMember>
-					</LayerMem>
-					<Scratch>
-						<B>
-							<SolutionXML>
-								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
-									<HLURL:Hyperlink ID="1">
-										<HLURL:Description></HLURL:Description>
-										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Establecer necesidades de información para cada ejercicio de análisis</HLURL:SubAddress>
-										<HLURL:ExtraInfo></HLURL:ExtraInfo>
-										<HLURL:Default>0</HLURL:Default>
-										<HLURL:NewWindow>0</HLURL:NewWindow>
-									</HLURL:Hyperlink>
-								</HLURL:Hyperlinks>
-							</SolutionXML>
-						</B>
-					</Scratch>
-					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
-						<Value></Value>
-						<Label>Categories</Label>
-					</Prop>
-					<Prop ID="3" Name="BpmnDocumentation" NameU="BpmnDocumentation">
-						<Value></Value>
-						<Label>Documentation</Label>
-					</Prop>
-					<Prop ID="6" Name="BpmnLoopType" NameU="BpmnLoopType">
-						<Value Unit="STR">None</Value>
-						<Label>LoopType</Label>
-					</Prop>
-					<Prop ID="7" Name="BpmnTaskType" NameU="BpmnTaskType">
-						<Value Unit="STR">None</Value>
-						<Label>TaskType</Label>
-					</Prop>
-					<Prop ID="13" Name="BpmnIsForCompensation" NameU="BpmnIsForCompensation">
-						<Value Unit="STR">FALSE</Value>
-						<Label>IsForCompensation</Label>
-					</Prop>
-					<Prop ID="17" Name="BpmnBoundaryType" NameU="BpmnBoundaryType">
-						<Value Unit="STR">Default</Value>
-						<Label>BoundaryType</Label>
-					</Prop>
-				</Shape>
-				<Shape ID="37" UniqueID="{2D833076-440C-4BA4-834A-623D7A15D142}" Name="Sequence Flow.2855" NameU="Sequence Flow.2855" Master="5">
-					<XForm>
-						<PinX Unit="MM">3.120706893628668</PinX>
-						<PinY Unit="MM">5.849268781289259</PinY>
-					</XForm>
-					<LayerMem>
-						<LayerMember>1</LayerMember>
-					</LayerMem>
-					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
-						<Value></Value>
-						<Label>Categories</Label>
-					</Prop>
-					<Prop ID="3" Name="BpmnDocumentation" NameU="BpmnDocumentation">
-						<Value></Value>
-						<Label>Documentation</Label>
-					</Prop>
-					<Prop ID="5" Name="BpmnConnectingObjectType" NameU="BpmnConnectingObjectType">
-						<Value Unit="STR">Sequence Flow</Value>
-						<Label>ConnectingObjectType</Label>
-					</Prop>
-					<Prop ID="6" Name="BpmnConditionType" NameU="BpmnConditionType">
-						<Value Unit="STR">None</Value>
-						<Label>ConditionType</Label>
-					</Prop>
-				</Shape>
-				<Shape ID="38" UniqueID="{365F350C-40B3-4F05-B56D-07D105FC2DF4}" Name="Task.2856" NameU="Task.2856" Master="4">
-					<Text>Recolectar información </Text>
-					<XForm>
-						<PinX Unit="MM">12.503963039860249</PinX>
-						<PinY Unit="MM">5.849268781289254</PinY>
-					</XForm>
-					<LayerMem>
-						<LayerMember>0</LayerMember>
-					</LayerMem>
-					<Scratch>
-						<B>
-							<SolutionXML>
-								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
-									<HLURL:Hyperlink ID="1">
-										<HLURL:Description></HLURL:Description>
-										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Recolectar información1</HLURL:SubAddress>
-										<HLURL:ExtraInfo></HLURL:ExtraInfo>
-										<HLURL:Default>0</HLURL:Default>
-										<HLURL:NewWindow>0</HLURL:NewWindow>
-										<HLURL:AbsoluteURL>E:\REPOSITORIOS\GESTION-CALIDAD-ANALITICA\PROCEDIMIENTO_EJERCICIOS_ANALISIS\EJERCICIOS_ANALISIS.vsdx#Recolectar información1</HLURL:AbsoluteURL>
-									</HLURL:Hyperlink>
-								</HLURL:Hyperlinks>
-							</SolutionXML>
-						</B>
-					</Scratch>
-					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
-						<Value></Value>
-						<Label>Categories</Label>
-					</Prop>
-					<Prop ID="3" Name="BpmnDocumentation" NameU="BpmnDocumentation">
-						<Value></Value>
-						<Label>Documentation</Label>
-					</Prop>
-					<Prop ID="6" Name="BpmnLoopType" NameU="BpmnLoopType">
-						<Value Unit="STR">None</Value>
-						<Label>LoopType</Label>
-					</Prop>
-					<Prop ID="7" Name="BpmnTaskType" NameU="BpmnTaskType">
-						<Value Unit="STR">None</Value>
-						<Label>TaskType</Label>
-					</Prop>
-					<Prop ID="13" Name="BpmnIsForCompensation" NameU="BpmnIsForCompensation">
-						<Value Unit="STR">FALSE</Value>
-						<Label>IsForCompensation</Label>
-					</Prop>
-					<Prop ID="17" Name="BpmnBoundaryType" NameU="BpmnBoundaryType">
-						<Value Unit="STR">Default</Value>
-						<Label>BoundaryType</Label>
-					</Prop>
-				</Shape>
-				<Shape ID="61" UniqueID="{F59CDDE3-C996-43A4-AFE7-CA18573C6B2C}" Name="Sequence Flow.2879" NameU="Sequence Flow.2879" Master="5">
-					<XForm>
-						<PinX Unit="MM">9.316732529348215</PinX>
-						<PinY Unit="MM">5.849268781289253</PinY>
-					</XForm>
-					<LayerMem>
-						<LayerMember>1</LayerMember>
-					</LayerMem>
-					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
-						<Value></Value>
-						<Label>Categories</Label>
-					</Prop>
-					<Prop ID="3" Name="BpmnDocumentation" NameU="BpmnDocumentation">
-						<Value></Value>
-						<Label>Documentation</Label>
-					</Prop>
-					<Prop ID="5" Name="BpmnConnectingObjectType" NameU="BpmnConnectingObjectType">
-						<Value Unit="STR">Sequence Flow</Value>
-						<Label>ConnectingObjectType</Label>
-					</Prop>
-					<Prop ID="6" Name="BpmnConditionType" NameU="BpmnConditionType">
-						<Value Unit="STR">None</Value>
-						<Label>ConditionType</Label>
-					</Prop>
-				</Shape>
-				<Shape ID="62" UniqueID="{F32BB535-F01B-4B07-9508-EE6F9F8D78A5}" Name="Task.2880" NameU="Task.2880" Master="4">
-					<Text>Validar información</Text>
-					<XForm>
-						<PinX Unit="MM">18.878424060884317</PinX>
-						<PinY Unit="MM">5.953201503036929</PinY>
-					</XForm>
-					<LayerMem>
-						<LayerMember>0</LayerMember>
-					</LayerMem>
-					<Scratch>
-						<B>
-							<SolutionXML>
-								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
-									<HLURL:Hyperlink ID="1">
-										<HLURL:Description></HLURL:Description>
-										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Validar información</HLURL:SubAddress>
-										<HLURL:ExtraInfo></HLURL:ExtraInfo>
-										<HLURL:Default>0</HLURL:Default>
-										<HLURL:NewWindow>0</HLURL:NewWindow>
-									</HLURL:Hyperlink>
-								</HLURL:Hyperlinks>
-							</SolutionXML>
-						</B>
-					</Scratch>
-					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
-						<Value></Value>
-						<Label>Categories</Label>
-					</Prop>
-					<Prop ID="3" Name="BpmnDocumentation" NameU="BpmnDocumentation">
-						<Value></Value>
-						<Label>Documentation</Label>
-					</Prop>
-					<Prop ID="6" Name="BpmnLoopType" NameU="BpmnLoopType">
-						<Value Unit="STR">None</Value>
-						<Label>LoopType</Label>
-					</Prop>
-					<Prop ID="7" Name="BpmnTaskType" NameU="BpmnTaskType">
-						<Value Unit="STR">None</Value>
-						<Label>TaskType</Label>
-					</Prop>
-					<Prop ID="13" Name="BpmnIsForCompensation" NameU="BpmnIsForCompensation">
-						<Value Unit="STR">FALSE</Value>
-						<Label>IsForCompensation</Label>
-					</Prop>
-					<Prop ID="17" Name="BpmnBoundaryType" NameU="BpmnBoundaryType">
-						<Value Unit="STR">Default</Value>
-						<Label>BoundaryType</Label>
-					</Prop>
-				</Shape>
-				<Shape ID="85" UniqueID="{D346A0B1-3F1A-4CD9-8854-C2CEFD12CD2D}" Name="Task.2903" NameU="Task.2903" Master="4">
-					<Text>Ajustar información</Text>
-					<XForm>
-						<PinX Unit="MM">25.252885081908371</PinX>
-						<PinY Unit="MM">5.953201503036930</PinY>
-					</XForm>
-					<LayerMem>
-						<LayerMember>0</LayerMember>
-					</LayerMem>
-					<Scratch>
-						<B>
-							<SolutionXML>
-								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
-									<HLURL:Hyperlink ID="1">
-										<HLURL:Description></HLURL:Description>
-										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Ajustar información</HLURL:SubAddress>
-										<HLURL:ExtraInfo></HLURL:ExtraInfo>
-										<HLURL:Default>0</HLURL:Default>
-										<HLURL:NewWindow>0</HLURL:NewWindow>
-									</HLURL:Hyperlink>
-								</HLURL:Hyperlinks>
-							</SolutionXML>
-						</B>
-					</Scratch>
-					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
-						<Value></Value>
-						<Label>Categories</Label>
-					</Prop>
-					<Prop ID="3" Name="BpmnDocumentation" NameU="BpmnDocumentation">
-						<Value></Value>
-						<Label>Documentation</Label>
-					</Prop>
-					<Prop ID="6" Name="BpmnLoopType" NameU="BpmnLoopType">
-						<Value Unit="STR">None</Value>
-						<Label>LoopType</Label>
-					</Prop>
-					<Prop ID="7" Name="BpmnTaskType" NameU="BpmnTaskType">
-						<Value Unit="STR">None</Value>
-						<Label>TaskType</Label>
-					</Prop>
-					<Prop ID="13" Name="BpmnIsForCompensation" NameU="BpmnIsForCompensation">
-						<Value Unit="STR">FALSE</Value>
-						<Label>IsForCompensation</Label>
-					</Prop>
-					<Prop ID="17" Name="BpmnBoundaryType" NameU="BpmnBoundaryType">
-						<Value Unit="STR">Default</Value>
-						<Label>BoundaryType</Label>
-					</Prop>
-				</Shape>
-				<Shape ID="108" UniqueID="{7EF22575-EBE4-407D-8FDF-21BA04066B92}" Name="Sequence Flow.2949" NameU="Sequence Flow.2949" Master="5">
-					<XForm>
-						<PinX Unit="MM">15.691193550372283</PinX>
-						<PinY Unit="MM">5.849268781289254</PinY>
-					</XForm>
-					<LayerMem>
-						<LayerMember>1</LayerMember>
-					</LayerMem>
-					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
-						<Value></Value>
-						<Label>Categories</Label>
-					</Prop>
-					<Prop ID="3" Name="BpmnDocumentation" NameU="BpmnDocumentation">
-						<Value></Value>
-						<Label>Documentation</Label>
-					</Prop>
-					<Prop ID="5" Name="BpmnConnectingObjectType" NameU="BpmnConnectingObjectType">
-						<Value Unit="STR">Sequence Flow</Value>
-						<Label>ConnectingObjectType</Label>
-					</Prop>
-					<Prop ID="6" Name="BpmnConditionType" NameU="BpmnConditionType">
-						<Value Unit="STR">None</Value>
-						<Label>ConditionType</Label>
-					</Prop>
-				</Shape>
-				<Shape ID="109" UniqueID="{95419172-47A8-4CF4-845A-03B93C0FB93D}" Name="Sequence Flow.2950" NameU="Sequence Flow.2950" Master="5">
-					<XForm>
-						<PinX Unit="MM">22.065654571396344</PinX>
-						<PinY Unit="MM">5.953201503036929</PinY>
-					</XForm>
-					<LayerMem>
-						<LayerMember>1</LayerMember>
-					</LayerMem>
-					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
-						<Value></Value>
-						<Label>Categories</Label>
-					</Prop>
-					<Prop ID="3" Name="BpmnDocumentation" NameU="BpmnDocumentation">
-						<Value></Value>
-						<Label>Documentation</Label>
-					</Prop>
-					<Prop ID="5" Name="BpmnConnectingObjectType" NameU="BpmnConnectingObjectType">
-						<Value Unit="STR">Sequence Flow</Value>
-						<Label>ConnectingObjectType</Label>
-					</Prop>
-					<Prop ID="6" Name="BpmnConditionType" NameU="BpmnConditionType">
-						<Value Unit="STR">None</Value>
-						<Label>ConditionType</Label>
-					</Prop>
-				</Shape>
-				<Shape ID="110" UniqueID="{077E9394-217C-4E4D-95B3-FCECF041CD39}" Name="Sequence Flow.2951" NameU="Sequence Flow.2951" Master="5">
-					<XForm>
-						<PinX Unit="MM">28.139330091130681</PinX>
-						<PinY Unit="MM">5.961516763311136</PinY>
-					</XForm>
-					<LayerMem>
-						<LayerMember>1</LayerMember>
-					</LayerMem>
-					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
-						<Value></Value>
-						<Label>Categories</Label>
-					</Prop>
-					<Prop ID="3" Name="BpmnDocumentation" NameU="BpmnDocumentation">
-						<Value></Value>
-						<Label>Documentation</Label>
-					</Prop>
-					<Prop ID="5" Name="BpmnConnectingObjectType" NameU="BpmnConnectingObjectType">
-						<Value Unit="STR">Sequence Flow</Value>
-						<Label>ConnectingObjectType</Label>
-					</Prop>
-					<Prop ID="6" Name="BpmnConditionType" NameU="BpmnConditionType">
-						<Value Unit="STR">None</Value>
-						<Label>ConditionType</Label>
-					</Prop>
-				</Shape>
-				<Shape ID="111" UniqueID="{7AA83C0C-AAD1-407A-9079-4594F23F5DFE}" Name="End Event.2976" NameU="End Event.2976" Master="7">
-					<XForm>
-						<PinX Unit="MM">29.603690063659364</PinX>
-						<PinY Unit="MM">5.969832023585340</PinY>
-					</XForm>
-					<LayerMem>
-						<LayerMember>0</LayerMember>
-					</LayerMem>
-					<Prop ID="2" Name="BpmnCategories" NameU="BpmnCategories">
-						<Value></Value>
-						<Label>Categories</Label>
-					</Prop>
-					<Prop ID="3" Name="BpmnDocumentation" NameU="BpmnDocumentation">
-						<Value></Value>
-						<Label>Documentation</Label>
-					</Prop>
-					<Prop ID="5" Name="BpmnEventType" NameU="BpmnEventType">
-						<Value Unit="STR">End</Value>
-						<Label>EventType</Label>
-					</Prop>
-					<Prop ID="10" Name="BpmnTriggerOrResult_End" NameU="BpmnTriggerOrResult_End">
-						<Value Unit="STR">None</Value>
-						<Label>TriggerOrResult</Label>
-					</Prop>
-				</Shape>
-			</Shapes>
-		</Page>
 		<Page ID="15" Name="Establecer necesidades de información para cada ejercicio de análisis" NameU="Establecer necesidades de información para cada ejercicio de análisis">
 			<PageProps>
 				<PageScale Unit="MM">0.039370078740157</PageScale>
@@ -2509,7 +2507,7 @@ de análisis</Text>
 				</Shape>
 			</Shapes>
 		</Page>
-		<Page ID="16" Name="Recolectar información1" NameU="Recolectar información1">
+		<Page ID="29" Name="recoleccion informacion operativa" NameU="recoleccion informacion operativa">
 			<PageProps>
 				<PageScale Unit="MM">0.039370078740157</PageScale>
 				<DrawingScale Unit="MM">0.039370078740157</DrawingScale>
@@ -2525,11 +2523,11 @@ de análisis</Text>
 				<Visible>1</Visible>
 			</Layer>
 			<Shapes>
-				<Shape ID="33" UniqueID="{BBC1C484-D08A-4D23-9395-53B000B720ED}" Name="Task.26" NameU="Task.26" Master="4">
+				<Shape ID="30" UniqueID="{8E528D11-86F6-4122-9060-8D81368C0C7B}" Name="Task.26" NameU="Task.26" Master="4">
 					<Text>Recolectar información </Text>
 					<XForm>
-						<PinX Unit="MM">20.384499786478273</PinX>
-						<PinY Unit="MM">32.284220449289485</PinY>
+						<PinX Unit="MM">20.398560528719546</PinX>
+						<PinY Unit="MM">37.517983091423787</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>0</LayerMember>
@@ -2541,7 +2539,7 @@ de análisis</Text>
 									<HLURL:Hyperlink ID="1">
 										<HLURL:Description></HLURL:Description>
 										<HLURL:Address></HLURL:Address>
-										<HLURL:SubAddress>Recolectar información1 </HLURL:SubAddress>
+										<HLURL:SubAddress>recoleccion informacion operativa</HLURL:SubAddress>
 										<HLURL:ExtraInfo></HLURL:ExtraInfo>
 										<HLURL:Default>0</HLURL:Default>
 										<HLURL:NewWindow>0</HLURL:NewWindow>
@@ -2575,7 +2573,7 @@ de análisis</Text>
 						<Label>BoundaryType</Label>
 					</Prop>
 				</Shape>
-				<Shape ID="56" UniqueID="{A775619B-E328-49FC-A3D7-FB0C328097B5}" Name="Sheet.56" NameU="Sheet.56">
+				<Shape ID="53" UniqueID="{DA946272-01B7-41A0-B861-8EA5EDD56CDB}" Name="Sheet.53" NameU="Sheet.53">
 					<Text>RESPONSABLES
 1. El profesional en analítica avanzada con el apoyo del resto del equipo elabora los instrumentos de recolección con sus reglas de validación.
 2. El profesional en analítica avanzada solicita la información a las áreas encargadas.
@@ -2583,17 +2581,17 @@ de análisis</Text>
 
 </Text>
 					<XForm>
-						<PinX Unit="MM">19.842487910599381</PinX>
-						<PinY Unit="MM">15.917322720899433</PinY>
+						<PinX Unit="MM">19.856548652840655</PinX>
+						<PinY Unit="MM">21.151085363033729</PinY>
 					</XForm>
 				</Shape>
-				<Shape ID="57" UniqueID="{493924D2-D5F8-4FCA-A9F9-34F8D8553C2F}" Name="Text Annotation" NameU="Text Annotation" Master="9">
+				<Shape ID="54" UniqueID="{83FC3BD3-7187-45BD-9F96-DAD6B204D69F}" Name="Text Annotation" NameU="Text Annotation" Master="9">
 					<Text>ENTRADAS
 
 </Text>
 					<XForm>
-						<PinX Unit="MM">9.457957101422661</PinX>
-						<PinY Unit="MM">33.924867262098431</PinY>
+						<PinX Unit="MM">9.472017843663934</PinX>
+						<PinY Unit="MM">39.158629904232725</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -2624,12 +2622,12 @@ de análisis</Text>
 						<Label>Documentation</Label>
 					</Prop>
 				</Shape>
-				<Shape ID="61" UniqueID="{24AA0E82-A0F6-4AA9-9BF9-CFBAD85681F3}" Name="Text Annotation.65" NameU="Text Annotation.65" Master="9">
+				<Shape ID="56" UniqueID="{0CA1CAA3-9E1C-43C1-B721-A22690A0B48B}" Name="Text Annotation.65" NameU="Text Annotation.65" Master="9">
 					<Text>SALIDAS
 </Text>
 					<XForm>
-						<PinX Unit="MM">30.792859297880639</PinX>
-						<PinY Unit="MM">34.322834381587484</PinY>
+						<PinX Unit="MM">30.806920040121913</PinX>
+						<PinY Unit="MM">39.556597023721778</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -2643,11 +2641,11 @@ de análisis</Text>
 						<Label>Documentation</Label>
 					</Prop>
 				</Shape>
-				<Shape ID="67" UniqueID="{871DC7CA-A3F5-4956-9852-97BB8A74443B}" Name="Sheet.67" NameU="Sheet.67">
+				<Shape ID="58" UniqueID="{F0E8062F-C0A3-44C4-B7DF-674FD7894C82}" Name="Sheet.58" NameU="Sheet.58">
 					<Text>1. Bases de datos con información recolectada.</Text>
 					<XForm>
-						<PinX Unit="MM">30.792859297880643</PinX>
-						<PinY Unit="MM">31.862204064763546</PinY>
+						<PinX Unit="MM">30.806920040121916</PinX>
+						<PinY Unit="MM">37.095966706897840</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -2670,11 +2668,11 @@ de análisis</Text>
 						</B>
 					</Scratch>
 				</Shape>
-				<Shape ID="70" UniqueID="{9D52E286-651B-4B94-BCC8-A50B6D7C2A6D}" Name="Sheet.70" NameU="Sheet.70">
+				<Shape ID="59" UniqueID="{0CFBB2EE-D61C-4342-A571-A9896E918F65}" Name="Sheet.59" NameU="Sheet.59">
 					<Text>1.	Registro actualizado con necesidades de información</Text>
 					<XForm>
-						<PinX Unit="MM">8.939773927769433</PinX>
-						<PinY Unit="MM">32.836613519976623</PinY>
+						<PinX Unit="MM">8.953834670010707</PinX>
+						<PinY Unit="MM">38.070376162110918</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
