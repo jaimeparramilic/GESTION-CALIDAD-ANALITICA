@@ -25,7 +25,7 @@
 					<Text>RECEPCIÓN DE SOLICITUDES</Text>
 					<XForm>
 						<PinX Unit="MM">8.690420985975043</PinX>
-						<PinY Unit="MM">13.405568847066602</PinY>
+						<PinY Unit="MM">13.405568847066601</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>0</LayerMember>
@@ -78,7 +78,7 @@
 				<Shape ID="24" UniqueID="{764BF154-7836-40C3-BE03-3ADA16440058}" Name="Start Event.313" NameU="Start Event.313" Master="2">
 					<XForm>
 						<PinX Unit="MM">4.498554210514410</PinX>
-						<PinY Unit="MM">13.405568847066602</PinY>
+						<PinY Unit="MM">13.405568847066601</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>0</LayerMember>
@@ -103,7 +103,7 @@
 				<Shape ID="37" UniqueID="{A7116BB1-2C35-4B6F-9E16-C21628DE8F9E}" Name="Sequence Flow.326" NameU="Sequence Flow.326" Master="5">
 					<XForm>
 						<PinX Unit="MM">5.419590602393210</PinX>
-						<PinY Unit="MM">13.405568847066604</PinY>
+						<PinY Unit="MM">13.405568847066601</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -130,8 +130,8 @@
 de 
 solución</Text>
 					<XForm>
-						<PinX Unit="MM">13.331929719040284</PinX>
-						<PinY Unit="MM">13.403628993303048</PinY>
+						<PinX Unit="MM">13.331929719040280</PinX>
+						<PinY Unit="MM">13.403628993303050</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -156,7 +156,7 @@ solución</Text>
 				<Shape ID="39" UniqueID="{65A5E5B6-9541-4F44-AD5C-5F40A708CB26}" Name="Collapsed Sub-Process.328" NameU="Collapsed Sub-Process.328" Master="6">
 					<Text>SOLUCIÓN DE CASOS</Text>
 					<XForm>
-						<PinX Unit="MM">27.911341220861004</PinX>
+						<PinX Unit="MM">27.911341220861001</PinX>
 						<PinY Unit="MM">13.405569809272469</PinY>
 					</XForm>
 					<LayerMem>
@@ -214,7 +214,7 @@ o mantenimiento
 realizado</Text>
 					<XForm>
 						<PinX Unit="MM">33.296721205277422</PinX>
-						<PinY Unit="MM">13.405569809272468</PinY>
+						<PinY Unit="MM">13.405569809272469</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -318,8 +318,8 @@ realizado</Text>
 				<Shape ID="99" UniqueID="{5D32BE80-3BEC-4272-82E8-6EA78BB4053D}" Name="Sequence Flow.412" NameU="Sequence Flow.412" Master="5">
 					<Text>Entrega</Text>
 					<XForm>
-						<PinX Unit="MM">43.168245446846925</PinX>
-						<PinY Unit="MM">13.405569809272468</PinY>
+						<PinX Unit="MM">43.168245446846932</PinX>
+						<PinY Unit="MM">13.405569809272469</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -351,19 +351,17 @@ SE OFICIALIZA LA PROPUESTA MEDIANTE CORREO ELECTRÓNICO Y SE CONTACTA AL SOLICIT
 					</XForm>
 				</Shape>
 				<Shape ID="103" UniqueID="{DC6A6433-37B3-4A8D-9092-2E8EF2E7960B}" Name="Sheet.103" NameU="Sheet.103">
-					<Text>SE CIERRA CUANDO EL SOLICITANTE INDIQUE QUE ESTA SATISFECHO
-
-¿IDEAL, COMO LOGRARLO?</Text>
+					<Text>SE CIERRA CUANDO EL SOLICITANTE INDIQUE QUE ESTA SATISFECHO O 2 SEMANAS DESPUÉS DE HABER NOTIFICADO SU SOLUCIÓN</Text>
 					<XForm>
 						<PinX Unit="MM">38.738113317354049</PinX>
-						<PinY Unit="MM">8.606299615893652</PinY>
+						<PinY Unit="MM">8.114172917973477</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="104" UniqueID="{A8365B56-F6E8-4D2C-B861-14C345CACDCD}" Name="Sheet.104" NameU="Sheet.104">
 					<Text>OBJETIVO: ATENDER LAS SOLICITUDES DE REQUERIMIENTOS NUEVOS, PARA BRINDAR SOPORTE ADHOC Y REALIZAR MANTENIMIENTO A LAS HERRAMIENTAS DE ANALÍTCA DE MANERA OPORTUNA, CON CALIDAD Y SASTISFACIENDO LAS EXPECTATIVAS DE NUESTROS CLIENTES.</Text>
 					<XForm>
-						<PinX Unit="MM">23.622046490213464</PinX>
-						<PinY Unit="MM">21.185039318667876</PinY>
+						<PinX Unit="MM">23.622046490213460</PinX>
+						<PinY Unit="MM">21.185039318667879</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="105" UniqueID="{F257C1D5-8783-4690-A116-D35DEDB1779D}" Name="Sheet.105" NameU="Sheet.105">
@@ -376,8 +374,8 @@ SE OFICIALIZA LA PROPUESTA MEDIANTE CORREO ELECTRÓNICO Y SE CONTACTA AL SOLICIT
 				<Shape ID="107" UniqueID="{7330F96B-B1A4-4AAF-B4D4-B782411D79AD}" Name="Collapsed Sub-Process.107" NameU="Collapsed Sub-Process.107" Master="6">
 					<Text>NEGOCIACIÓN PROPUESTA</Text>
 					<XForm>
-						<PinX Unit="MM">17.973438452105523</PinX>
-						<PinY Unit="MM">13.401689139539497</PinY>
+						<PinX Unit="MM">17.973438452105519</PinX>
+						<PinY Unit="MM">13.401689139539499</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>0</LayerMember>
@@ -433,7 +431,7 @@ SE OFICIALIZA LA PROPUESTA MEDIANTE CORREO ELECTRÓNICO Y SE CONTACTA AL SOLICIT
 
 LAS SALIDAS PUEDEN SER O EJERCICIOS TRIMESTRALES DE REPLANIFICACIÓN, O DE ATENCIÓN DE CORTO PLAZO, O PROYECTOS NUEVOS</Text>
 					<XForm>
-						<PinX Unit="MM">17.942389269842945</PinX>
+						<PinX Unit="MM">17.942389269842948</PinX>
 						<PinY Unit="MM">7.267716700757852</PinY>
 					</XForm>
 				</Shape>
@@ -442,8 +440,8 @@ LAS SALIDAS PUEDEN SER O EJERCICIOS TRIMESTRALES DE REPLANIFICACIÓN, O DE ATENC
 De
 Solución</Text>
 					<XForm>
-						<PinX Unit="MM">22.942389836483265</PinX>
-						<PinY Unit="MM">13.403629474405982</PinY>
+						<PinX Unit="MM">22.942389836483269</PinX>
+						<PinY Unit="MM">13.403629474405980</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -468,13 +466,13 @@ Solución</Text>
 				<Shape ID="132" UniqueID="{79FF8006-C10B-4E0E-BCFB-AFE6967BAF41}" Name="Sheet.132" NameU="Sheet.132">
 					<XForm>
 						<PinX Unit="MM">2.048303678111198</PinX>
-						<PinY Unit="MM">16.662560749837382</PinY>
+						<PinY Unit="MM">16.662560749837379</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="133" UniqueID="{F67DC7FE-AD34-4F9B-A112-017F330D23D9}" Name="Sheet.133" NameU="Sheet.133">
 					<XForm>
 						<PinX Unit="MM">1.905116166153121</PinX>
-						<PinY Unit="MM">14.716045616451181</PinY>
+						<PinY Unit="MM">14.716045616451179</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="134" UniqueID="{5989B8DC-0A65-4041-AF1B-706CC254102D}" Name="Sheet.134" NameU="Sheet.134">
@@ -491,8 +489,8 @@ Solución</Text>
 				</Shape>
 				<Shape ID="148" UniqueID="{151AB735-2D4F-498D-A1AE-BC5A56A197F7}" Name="Sequence Flow.702" NameU="Sequence Flow.702" Master="5">
 					<XForm>
-						<PinX Unit="MM">3.147011489041565</PinX>
-						<PinY Unit="MM">14.091598443701677</PinY>
+						<PinX Unit="MM">3.147011489041566</PinX>
+						<PinY Unit="MM">14.091598443701679</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -517,7 +515,7 @@ Solución</Text>
 				<Shape ID="149" UniqueID="{981C9725-9C8E-440E-B212-DE249326652E}" Name="Sequence Flow.704" NameU="Sequence Flow.704" Master="5">
 					<XForm>
 						<PinX Unit="MM">3.172032513020854</PinX>
-						<PinY Unit="MM">12.559578794119005</PinY>
+						<PinY Unit="MM">12.559578794119011</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -542,7 +540,7 @@ Solución</Text>
 				<Shape ID="150" UniqueID="{418B2D08-ED7D-4324-8B75-3BBD4FDC76A0}" Name="Sequence Flow.705" NameU="Sequence Flow.705" Master="5">
 					<XForm>
 						<PinX Unit="MM">3.228734300466323</PinX>
-						<PinY Unit="MM">11.550167364913532</PinY>
+						<PinY Unit="MM">11.550167364913531</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -567,7 +565,7 @@ Solución</Text>
 				<Shape ID="151" UniqueID="{1C6BA11A-3741-4ECD-B06A-2B65605B24F6}" Name="Sequence Flow.750" NameU="Sequence Flow.750" Master="5">
 					<XForm>
 						<PinX Unit="MM">3.318429382517127</PinX>
-						<PinY Unit="MM">15.012906415540638</PinY>
+						<PinY Unit="MM">15.012906415540639</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -1693,7 +1691,7 @@ Solución</Text>
 				</Shape>
 				<Shape ID="732" UniqueID="{2854E68B-A763-4DF9-B8DB-ADABFD7881EE}" Name="Sequence Flow.732" NameU="Sequence Flow.732" Master="5">
 					<XForm>
-						<PinX Unit="MM">29.248911439015234</PinX>
+						<PinX Unit="MM">29.248911439015231</PinX>
 						<PinY Unit="MM">8.240157359510482</PinY>
 					</XForm>
 					<LayerMem>
@@ -2591,8 +2589,8 @@ de análisis</Text>
 				</Shape>
 				<Shape ID="1386" UniqueID="{5029FD2F-55E6-4DBA-BC30-CF90BE705E67}" Name="Sequence Flow.1386" NameU="Sequence Flow.1386" Master="5">
 					<XForm>
-						<PinX Unit="MM">16.907232552772964</PinX>
-						<PinY Unit="MM">18.187601156151057</PinY>
+						<PinX Unit="MM">16.907232552772960</PinX>
+						<PinY Unit="MM">18.187601156151061</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -2692,13 +2690,13 @@ de análisis</Text>
 				<Shape ID="1412" UniqueID="{025C262C-3132-4B36-875A-77A0782A494C}" Name="Sheet.1412" NameU="Sheet.1412">
 					<XForm>
 						<PinX Unit="MM">19.685039557027331</PinX>
-						<PinY Unit="MM">18.418509480107357</PinY>
+						<PinY Unit="MM">18.418509480107360</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="1413" UniqueID="{4CBAD4EE-6887-4033-AF95-E306989A4B72}" Name="Gateway" NameU="Gateway" Master="10">
 					<XForm>
 						<PinX Unit="MM">19.685039557027331</PinX>
-						<PinY Unit="MM">18.221659012800991</PinY>
+						<PinY Unit="MM">18.221659012800998</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>0</LayerMember>
@@ -2728,7 +2726,7 @@ de análisis</Text>
 					<Text>Es priorizado</Text>
 					<XForm>
 						<PinX Unit="MM">19.685039557027331</PinX>
-						<PinY Unit="MM">18.273913474377316</PinY>
+						<PinY Unit="MM">18.273913474377320</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>0</LayerMember>
@@ -2738,7 +2736,7 @@ de análisis</Text>
 					<Text>Si</Text>
 					<XForm>
 						<PinX Unit="MM">23.019931927218401</PinX>
-						<PinY Unit="MM">18.221659012800995</PinY>
+						<PinY Unit="MM">18.221659012800998</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -2763,8 +2761,8 @@ de análisis</Text>
 				<Shape ID="1430" UniqueID="{3CCB55DF-807D-4942-9D69-8CE3F22C068F}" Name="Sequence Flow.1430" NameU="Sequence Flow.1430" Master="5">
 					<Text>No</Text>
 					<XForm>
-						<PinX Unit="MM">16.672745464783922</PinX>
-						<PinY Unit="MM">17.070866081560922</PinY>
+						<PinX Unit="MM">16.672745464783919</PinX>
+						<PinY Unit="MM">17.070866081560919</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -2920,7 +2918,7 @@ Requerimiento
 corto</Text>
 					<XForm>
 						<PinX Unit="MM">9.071367650408483</PinX>
-						<PinY Unit="MM">25.747051050930672</PinY>
+						<PinY Unit="MM">25.747051050930668</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -3501,7 +3499,7 @@ corto</Text>
 				<Shape ID="109" UniqueID="{F20AE69A-1B7E-43E8-B0DA-C27C803DFC86}" Name="End Event.2183" NameU="End Event.2183" Master="7">
 					<XForm>
 						<PinX Unit="MM">22.334645046628822</PinX>
-						<PinY Unit="MM">1.716535399811407</PinY>
+						<PinY Unit="MM">1.716535399811408</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>0</LayerMember>
@@ -3525,7 +3523,7 @@ corto</Text>
 				</Shape>
 				<Shape ID="123" UniqueID="{314E026E-8E62-46FA-8BDE-DA5BFBCC1060}" Name="Sequence Flow.123" NameU="Sequence Flow.123" Master="5">
 					<XForm>
-						<PinX Unit="MM">21.039224084696947</PinX>
+						<PinX Unit="MM">21.039224084696951</PinX>
 						<PinY Unit="MM">1.716535399811406</PinY>
 					</XForm>
 					<LayerMem>
@@ -3670,7 +3668,9 @@ corto</Text>
 					<Text>RESPONSABLES
 1. El responsable de atención o líder del proyecto espera como mínimo un día para contactar a través de algún medio y preguntar al solicitante si esta satisfecho con la solución.
 2. En caso de ser necesario, se pacta un tiempo para que el solicitante pueda revisar la solución y se pueda dar cierre formal al caso.
-3. En caso de ser necesario, se el responsable ajusta la solución para la satisfacción del solicitante, siempre ponderando costo de ajuste vs beneficio obtenido. Si el costo es superior a 3 días laborales de uno o más miembros del equipo, se debe presentar el caso en la reunión con el equipo para determinar si es un proyecto o no.</Text>
+3. En caso de ser necesario, se el responsable ajusta la solución para la satisfacción del solicitante, siempre ponderando costo de ajuste vs beneficio obtenido. Si el costo es superior a 3 días laborales de uno o más miembros del equipo, se debe presentar el caso en la reunión con el equipo para determinar si es un proyecto o no.
+4. Si han pasado dos semanas después de haber enviado la solución y no se tiene notificación de cierre el responsable de atención debe enviar un correo notificando el cierre.
+5. El responsable de atención debe enviar un correo notificando del cierre al solicitante.</Text>
 					<XForm>
 						<PinX Unit="MM">17.072679441567971</PinX>
 						<PinY Unit="MM">13.035433405746080</PinY>
@@ -3717,7 +3717,7 @@ corto</Text>
 					<Text>1.	Registro solicitudes actualizado</Text>
 					<XForm>
 						<PinX Unit="MM">6.688148632391256</PinX>
-						<PinY Unit="MM">30.535433213851714</PinY>
+						<PinY Unit="MM">30.535433213851711</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -3743,7 +3743,7 @@ corto</Text>
 				<Shape ID="64" UniqueID="{5B85013D-DB51-47D9-A2DC-F742D8D7BA15}" Name="Text Annotation.64" NameU="Text Annotation.64">
 					<Text>1.	Solicitud cerrada</Text>
 					<XForm>
-						<PinX Unit="MM">28.122047620580194</PinX>
+						<PinX Unit="MM">28.122047620580190</PinX>
 						<PinY Unit="MM">30.232003304234329</PinY>
 					</XForm>
 					<LayerMem>
@@ -3790,7 +3790,7 @@ corto</Text>
 					<Text>2.	Solución finalizada</Text>
 					<XForm>
 						<PinX Unit="MM">6.739639233011447</PinX>
-						<PinY Unit="MM">28.960630029223488</PinY>
+						<PinY Unit="MM">28.960630029223491</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -3816,8 +3816,35 @@ corto</Text>
 				<Shape ID="70" UniqueID="{197C7375-9DA3-4A2E-AD6D-43B817E2D51A}" Name="Text Annotation.70" NameU="Text Annotation.70">
 					<Text>2.	Solución ajustada</Text>
 					<XForm>
-						<PinX Unit="MM">28.638313811824958</PinX>
-						<PinY Unit="MM">28.960630029223488</PinY>
+						<PinX Unit="MM">28.638313811824961</PinX>
+						<PinY Unit="MM">28.960630029223491</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+										<HLURL:AbsoluteURL>https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO%20PARA%20PROYECCI%C3%93N%20DE%20VARIABLES%20DE%20NEGOCIO/PRESENTAR_RESULTADOS/Ejemplo_presentacion_resultados_V1.pptx</HLURL:AbsoluteURL>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+				</Shape>
+				<Shape ID="77" UniqueID="{9B86E2F5-FE97-41A6-AE1F-6416EFB7B99C}" Name="Text Annotation.77" NameU="Text Annotation.77">
+					<Text>3.	Correo electrónico con notificación de cierre (sin ejemplo)</Text>
+					<XForm>
+						<PinX Unit="MM">28.047762617589377</PinX>
+						<PinY Unit="MM">26.992126048438209</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -4176,7 +4203,7 @@ corto</Text>
 					<Text>1.	Correo electrónico con la corrección o ajuste (sin ejemplo)</Text>
 					<XForm>
 						<PinX Unit="MM">28.023050828849229</PinX>
-						<PinY Unit="MM">31.244094685187306</PinY>
+						<PinY Unit="MM">31.244094685187310</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -4225,7 +4252,7 @@ corto</Text>
 					<Text>2. Solicitud cerrada en el registro </Text>
 					<XForm>
 						<PinX Unit="MM">27.975394597007011</PinX>
-						<PinY Unit="MM">28.488189112087912</PinY>
+						<PinY Unit="MM">28.488189112087909</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -4248,11 +4275,11 @@ corto</Text>
 						</B>
 					</Scratch>
 				</Shape>
-				<Shape ID="72" UniqueID="{B316101C-FFC9-4463-9565-1980EAD8A9FB}" Name="Text Annotation.72" NameU="Text Annotation.72">
+				<Shape ID="72" UniqueID="{EF2EE3BE-9FE9-4157-8713-D36BC4269BC0}" Name="Text Annotation.72" NameU="Text Annotation.72">
 					<Text>3. Redirección de la solicitud </Text>
 					<XForm>
-						<PinX Unit="MM">28.122047620580194</PinX>
-						<PinY Unit="MM">26.126929243301788</PinY>
+						<PinX Unit="MM">28.122047620580190</PinX>
+						<PinY Unit="MM">26.126929243301792</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -4466,7 +4493,7 @@ corto</Text>
 					<Text>2. Soporte metodológico</Text>
 					<XForm>
 						<PinX Unit="MM">27.975394597007011</PinX>
-						<PinY Unit="MM">27.996063116891595</PinY>
+						<PinY Unit="MM">27.996063116891602</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -4710,7 +4737,7 @@ corto</Text>
 					<Text>2.	Soporte metodológico reunión diaria</Text>
 					<XForm>
 						<PinX Unit="MM">6.739639233011445</PinX>
-						<PinY Unit="MM">27.818897796873813</PinY>
+						<PinY Unit="MM">27.818897796873809</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -5093,7 +5120,7 @@ corto</Text>
 					<Text>1.	Documento con compromiso de solución (sin ejemplo)</Text>
 					<XForm>
 						<PinX Unit="MM">28.023050828849229</PinX>
-						<PinY Unit="MM">30.259842694794667</PinY>
+						<PinY Unit="MM">30.259842694794671</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -5525,7 +5552,7 @@ corto</Text>
 					<Text>1.	Alcance y objetivos</Text>
 					<XForm>
 						<PinX Unit="MM">27.975394597007011</PinX>
-						<PinY Unit="MM">33.852126232689194</PinY>
+						<PinY Unit="MM">33.852126232689187</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -5559,7 +5586,7 @@ corto</Text>
 </Text>
 					<XForm>
 						<PinX Unit="MM">28.023050828849229</PinX>
-						<PinY Unit="MM">31.440945100097544</PinY>
+						<PinY Unit="MM">31.440945100097540</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -5577,7 +5604,7 @@ corto</Text>
 					<Text>2.   Plan de trabajo</Text>
 					<XForm>
 						<PinX Unit="MM">27.975394597007011</PinX>
-						<PinY Unit="MM">32.867874242296566</PinY>
+						<PinY Unit="MM">32.867874242296573</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -5604,7 +5631,7 @@ corto</Text>
 					<Text>3.   Equipo de trabajo</Text>
 					<XForm>
 						<PinX Unit="MM">27.975394597007011</PinX>
-						<PinY Unit="MM">31.686771853825395</PinY>
+						<PinY Unit="MM">31.686771853825402</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -5631,7 +5658,7 @@ corto</Text>
 					<Text>4.   Recursos</Text>
 					<XForm>
 						<PinX Unit="MM">27.925197222501669</PinX>
-						<PinY Unit="MM">30.702519863432745</PinY>
+						<PinY Unit="MM">30.702519863432752</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -5658,7 +5685,7 @@ corto</Text>
 					<Text>5.   Riesgos</Text>
 					<XForm>
 						<PinX Unit="MM">27.975394597007011</PinX>
-						<PinY Unit="MM">29.718267873040105</PinY>
+						<PinY Unit="MM">29.718267873040109</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -5685,7 +5712,7 @@ corto</Text>
 					<Text>6.   Costos</Text>
 					<XForm>
 						<PinX Unit="MM">27.975394597007011</PinX>
-						<PinY Unit="MM">28.832913535764835</PinY>
+						<PinY Unit="MM">28.832913535764838</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -5712,7 +5739,7 @@ corto</Text>
 					<Text>7.  Otras alternativas</Text>
 					<XForm>
 						<PinX Unit="MM">27.975394597007011</PinX>
-						<PinY Unit="MM">27.848661545372195</PinY>
+						<PinY Unit="MM">27.848661545372199</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -5739,7 +5766,7 @@ corto</Text>
 					<Text>8.  Presentación</Text>
 					<XForm>
 						<PinX Unit="MM">27.975394597007011</PinX>
-						<PinY Unit="MM">26.716535529381606</PinY>
+						<PinY Unit="MM">26.716535529381609</PinY>
 					</XForm>
 					<LayerMem>
 						<LayerMember>1</LayerMember>
@@ -5765,7 +5792,7 @@ corto</Text>
 				<Shape ID="131" UniqueID="{737B993B-E245-4B42-BEF8-9184813D1031}" Name="Text Annotation.131" NameU="Text Annotation.131">
 					<Text>9.  Requerimientos</Text>
 					<XForm>
-						<PinX Unit="MM">27.975394597007014</PinX>
+						<PinX Unit="MM">27.975394597007011</PinX>
 						<PinY Unit="MM">25.535433140909991</PinY>
 					</XForm>
 					<LayerMem>
