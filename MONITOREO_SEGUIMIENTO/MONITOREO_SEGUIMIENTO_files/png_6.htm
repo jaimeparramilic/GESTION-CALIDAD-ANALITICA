@@ -1,0 +1,153 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+MONITOREO_SEGUIMIENTO
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="png_1.js" type="text/javascript" language="javascript"></script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 34;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 3.641539;
+	viewMgr.visBBoxRight = 37.100829;
+	viewMgr.visBBoxBottom = 21.790209;
+	viewMgr.visBBoxTop = 41.718056;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Shows the location of the selected shape" src="arrow.gif"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="png_6.png" ALT="Revision director" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="1276,317,1276,319,1280,315,907,315,911,319,911,317,903,317,903,319,907,323,1280,323,1280,319,1280,317,1276,317" onmouseover="UpdateTooltip(this,34,76,event)" onfocus="UpdateTooltip(this,34,76,event)" onclick="return OnShapeClick(34,76,event);" onkeyup="OnShapeKey(34,76,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="932,323,1093,323,1093,315,932,315,932,323" onmouseover="UpdateTooltip(this,34,76,event)" onfocus="UpdateTooltip(this,34,76,event)" onclick="return OnShapeClick(34,76,event);" onkeyup="OnShapeKey(34,76,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="910,5,910,48,1018,48,1018,5,910,5" onmouseover="UpdateTooltip(this,34,76,event)" onfocus="UpdateTooltip(this,34,76,event)" onclick="return OnShapeClick(34,76,event);" onkeyup="OnShapeKey(34,76,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="2. Cuadro de control con estado actualizado" origTitle="2. Cuadro de control con estado actualizado" TITLE="2. Cuadro de control con estado actualizado" HREF="https://trello.com/b/mhDVx4v1/jaime" target="_top" COORDS="880,430,880,392,856,392,856,430,856,435,856,473,1098,473,1098,435,1229,435,1229,392,901,392,901,430,880,430" onmouseover="UpdateTooltip(this,34,74,event)" onfocus="UpdateTooltip(this,34,74,event)" onclick="return OnShapeClick(34,74,event);" onkeyup="OnShapeKey(34,74,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="2. Cuadro de control con tarea asignada para revisión final" origTitle="2. Cuadro de control con tarea asignada para revisión final" TITLE="2. Cuadro de control con tarea asignada para revisión final" HREF="https://trello.com/b/mhDVx4v1/jaime" target="_top" COORDS="76,489,393,489,393,451,393,446,393,408,65,408,65,446,44,446,44,408,20,408,20,446,20,451,20,484,20,489,20,527,76,527,76,489" onmouseover="UpdateTooltip(this,34,73,event)" onfocus="UpdateTooltip(this,34,73,event)" onclick="return OnShapeClick(34,73,event);" onkeyup="OnShapeKey(34,73,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="1. Resultados tarea almacenados en el archivo de la unidad" origTitle="1. Resultados tarea almacenados en el archivo de la unidad" TITLE="1. Resultados tarea almacenados en el archivo de la unidad" HREF="https://github.com/AndresMadrigalC/PROCEDIMIENTO_PROYECCION_VARIABLES" target="_top" COORDS="179,360,393,360,393,321,393,317,393,278,65,278,65,317,44,317,44,278,20,278,20,317,20,321,20,355,20,360,20,398,179,398,179,360" onmouseover="UpdateTooltip(this,34,72,event)" onfocus="UpdateTooltip(this,34,72,event)" onclick="return OnShapeClick(34,72,event);" onkeyup="OnShapeKey(34,72,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="1221,552,1221,554,1225,550,852,550,856,554,856,552,848,552,848,554,852,558,1225,558,1229,554,1229,552,1221,552" onmouseover="UpdateTooltip(this,34,61,event)" onfocus="UpdateTooltip(this,34,61,event)" onclick="return OnShapeClick(34,61,event);" onkeyup="OnShapeKey(34,61,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="877,558,1039,558,1039,550,877,550,877,558" onmouseover="UpdateTooltip(this,34,61,event)" onfocus="UpdateTooltip(this,34,61,event)" onclick="return OnShapeClick(34,61,event);" onkeyup="OnShapeKey(34,61,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="856,240,856,283,963,283,963,240,856,240" onmouseover="UpdateTooltip(this,34,61,event)" onfocus="UpdateTooltip(this,34,61,event)" onclick="return OnShapeClick(34,61,event);" onkeyup="OnShapeKey(34,61,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="1. Decisión sobre necesidad de ajuste o no" origTitle="1. Decisión sobre necesidad de ajuste o no" TITLE="1. Decisión sobre necesidad de ajuste o no" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/ACTUALIZACION_REPORTEADOR_INDICADORES/SOLICITUD_INFORMACION/Ejemplo_correo_envio_indicadores.msg" target="_top" COORDS="1039,329,1229,329,1229,286,856,286,856,324,856,329,856,367,1039,367,1039,329" onmouseover="UpdateTooltip(this,34,60,event)" onfocus="UpdateTooltip(this,34,60,event)" onclick="return OnShapeClick(34,60,event);" onkeyup="OnShapeKey(34,60,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/RECOLECTAR%2520INFORMACI%25C3%2593N/PROYECCIONES%2520ABR-19%2520v7.xlsm" target="_top" COORDS="425,552,425,554,429,550,16,550,20,554,20,552,12,552,12,554,16,558,429,558,433,554,433,552,425,552" onmouseover="UpdateTooltip(this,34,57,event)" onfocus="UpdateTooltip(this,34,57,event)" onclick="return OnShapeClick(34,57,event);" onkeyup="OnShapeKey(34,57,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/RECOLECTAR%2520INFORMACI%25C3%2593N/PROYECCIONES%2520ABR-19%2520v7.xlsm" target="_top" COORDS="0,555,16,558,17,550,1,547,0,555" onmouseover="UpdateTooltip(this,34,57,event)" onfocus="UpdateTooltip(this,34,57,event)" onclick="return OnShapeClick(34,57,event);" onkeyup="OnShapeKey(34,57,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/RECOLECTAR%2520INFORMACI%25C3%2593N/PROYECCIONES%2520ABR-19%2520v7.xlsm" target="_top" COORDS="20,236,20,279,160,279,160,236,20,236" onmouseover="UpdateTooltip(this,34,57,event)" onfocus="UpdateTooltip(this,34,57,event)" onclick="return OnShapeClick(34,57,event);" onkeyup="OnShapeKey(34,57,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Realizar revisión director" origTitle="Realizar revisión director" TITLE="Realizar revisión director" HREF="png_6.htm" target="frmDrawing" COORDS="437,554,844,554,845,554,846,553,846,552,847,551,847,171,846,170,846,169,845,168,844,168,437,168,436,168,435,169,435,170,434,171,434,551,435,552,435,553,436,554,437,554" onmouseover="UpdateTooltip(this,34,33,event)" onfocus="UpdateTooltip(this,34,33,event)" onclick="return OnShapeClick(34,33,event);" onkeyup="OnShapeKey(34,33,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>

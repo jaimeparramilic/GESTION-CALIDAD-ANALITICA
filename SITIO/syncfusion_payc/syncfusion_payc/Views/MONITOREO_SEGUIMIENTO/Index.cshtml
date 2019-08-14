@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "PROCEDIMIENTO REALIZACIÓN DE EJERCICIOS DE ANÁLISIS";
+    ViewBag.Title = "TAREAS MONITOREO Y SEGUIMIENTO UNIDAD";
 }
 
 
@@ -23,7 +23,8 @@
             iframe.onload = resizeIframe;
         }
         //window.onresize = resizeIframe;
-        
+        zoomin(); 
+        zoomout(); 
  
     });
     var height1 = 0;
@@ -68,14 +69,13 @@
             "-webkit-transform-origin": "0 0", "width": 100 / zoom1 + "%"
         });
         document.getElementById('ifm').style.height = height1/ zoom1 + 'px';
-        //console.log(zoom1);
+        console.log(zoom1);
     }   
-
 </script>
 
-<div style="float:left;display:block;"><h2>PROCEDIMIENTO REALIZACIÓN DE EJERCICIOS DE ANÁLISIS</h2></div>
+<div style="float:left;display:block;"><h2>TAREAS MONITOREO Y SEGUIMIENTO UNIDAD</h2></div>
 <div style="float: right;display: block;top: 0px;position: relative;">
     <input type="button" value="+" onClick="zoomin()" />
     <input type="button" value="-" onClick="zoomout()" />
 </div>
-<iframe id="ifm" src="../EJERCICIOS_ANALISIS.htm" frameborder="0" style="overflow:auto;height:100%;width:150%"></iframe>
+<iframe id="ifm" src="../MONITOREO_SEGUIMIENTO.htm" frameborder="0" style="overflow:auto;height:100%;width:150%"></iframe>

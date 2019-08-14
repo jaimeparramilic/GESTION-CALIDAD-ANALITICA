@@ -1,0 +1,149 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+MONITOREO_SEGUIMIENTO
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="png_1.js" type="text/javascript" language="javascript"></script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 32;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 3.641539;
+	viewMgr.visBBoxRight = 36.185650;
+	viewMgr.visBBoxBottom = 12.790221;
+	viewMgr.visBBoxTop = 37.333889;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Shows the location of the selected shape" src="arrow.gif"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="png_9.png" ALT="Realizar seguimiento semanal" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="2. Correo electrónico con informe de seguimiento" origTitle="2. Correo electrónico con informe de seguimiento" TITLE="2. Correo electrónico con informe de seguimiento" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/MONITOREO_SEGUIMIENTO/INFORMES_SEMANALES/correo_electronico_ejemplo_con_envio_informe_seguimiento.msg" target="_top" COORDS="1199,274,1264,274,1264,229,880,229,880,269,880,274,880,313,1199,313,1199,274" onmouseover="UpdateTooltip(this,32,67,event)" onfocus="UpdateTooltip(this,32,67,event)" onclick="return OnShapeClick(32,67,event);" onkeyup="OnShapeKey(32,67,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="1. Reporteador monitoreo y seguimiento unidad" origTitle="1. Reporteador monitoreo y seguimiento unidad" TITLE="1. Reporteador monitoreo y seguimiento unidad" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/tree/master/MONITOREO_SEGUIMIENTO/HERRAMIENTAS" target="_top" COORDS="45,173,45,133,20,133,20,173,20,178,20,217,307,217,307,178,404,178,404,133,67,133,67,173,45,173" onmouseover="UpdateTooltip(this,32,65,event)" onfocus="UpdateTooltip(this,32,65,event)" onclick="return OnShapeClick(32,65,event);" onkeyup="OnShapeKey(32,65,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="1255,395,1255,397,1259,393,876,393,880,397,880,395,872,395,872,397,876,401,1259,401,1263,397,1263,395,1255,395" onmouseover="UpdateTooltip(this,32,61,event)" onfocus="UpdateTooltip(this,32,61,event)" onclick="return OnShapeClick(32,61,event);" onkeyup="OnShapeKey(32,61,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="902,401,1068,401,1068,393,902,393,902,401" onmouseover="UpdateTooltip(this,32,61,event)" onfocus="UpdateTooltip(this,32,61,event)" onclick="return OnShapeClick(32,61,event);" onkeyup="OnShapeKey(32,61,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="880,74,880,118,990,118,990,74,880,74" onmouseover="UpdateTooltip(this,32,61,event)" onfocus="UpdateTooltip(this,32,61,event)" onclick="return OnShapeClick(32,61,event);" onkeyup="OnShapeKey(32,61,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="1. Presentación powerpoint con Informe de seguimiento semanal." origTitle="1. Presentación powerpoint con Informe de seguimiento semanal." TITLE="1. Presentación powerpoint con Informe de seguimiento semanal." HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/tree/master/MONITOREO_SEGUIMIENTO/INFORMES_SEMANALES" target="_top" COORDS="999,195,1264,195,1264,156,1264,151,1264,111,880,111,880,151,880,156,880,190,880,195,880,234,999,234,999,195" onmouseover="UpdateTooltip(this,32,60,event)" onfocus="UpdateTooltip(this,32,60,event)" onclick="return OnShapeClick(32,60,event);" onkeyup="OnShapeKey(32,60,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/RECOLECTAR%2520INFORMACI%25C3%2593N/PROYECCIONES%2520ABR-19%2520v7.xlsm" target="_top" COORDS="437,395,437,397,441,393,17,393,21,397,21,395,13,395,13,397,17,401,441,401,445,397,445,395,437,395" onmouseover="UpdateTooltip(this,32,57,event)" onfocus="UpdateTooltip(this,32,57,event)" onclick="return OnShapeClick(32,57,event);" onkeyup="OnShapeKey(32,57,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/RECOLECTAR%2520INFORMACI%25C3%2593N/PROYECCIONES%2520ABR-19%2520v7.xlsm" target="_top" COORDS="0,398,16,401,18,393,1,390,0,398" onmouseover="UpdateTooltip(this,32,57,event)" onfocus="UpdateTooltip(this,32,57,event)" onclick="return OnShapeClick(32,57,event);" onkeyup="OnShapeKey(32,57,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/RECOLECTAR%2520INFORMACI%25C3%2593N/PROYECCIONES%2520ABR-19%2520v7.xlsm" target="_top" COORDS="20,70,20,114,164,114,164,70,20,70" onmouseover="UpdateTooltip(this,32,57,event)" onfocus="UpdateTooltip(this,32,57,event)" onclick="return OnShapeClick(32,57,event);" onkeyup="OnShapeKey(32,57,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Realizar seguimiento semanal" origTitle="Realizar seguimiento semanal" TITLE="Realizar seguimiento semanal" HREF="png_9.htm" target="frmDrawing" COORDS="450,397,867,397,869,397,870,396,870,395,870,394,870,3,870,2,870,1,869,0,867,0,450,0,448,0,447,1,447,2,447,3,447,394,447,395,447,396,448,397,450,397" onmouseover="UpdateTooltip(this,32,33,event)" onfocus="UpdateTooltip(this,32,33,event)" onclick="return OnShapeClick(32,33,event);" onkeyup="OnShapeKey(32,33,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>

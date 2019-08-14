@@ -267,6 +267,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\MONITOREO_SEGUIMIENTO.cs" />
     <Compile Include="Controllers\ACTUALIZACION_REPORTEADOR.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -1435,6 +1436,7 @@
     <Content Include="Views\ATENCION\Index.cshtml" />
     <Content Include="Views\EJERCICIOS_ANALISIS\Index.cshtml" />
     <Content Include="Views\ACTUALIZACION_REPORTEADOR\Index.cshtml" />
+    <Content Include="Views\MONITOREO_SEGUIMIENTO\Index.cshtml" />
     <None Include="_bin_deployableAssemblies\x86\sqlcese40.dll" />
     <None Include="_bin_deployableAssemblies\x86\sqlceqp40.dll" />
     <None Include="_bin_deployableAssemblies\x86\sqlceme40.dll" />

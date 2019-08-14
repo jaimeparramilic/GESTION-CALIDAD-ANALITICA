@@ -1,0 +1,150 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+MONITOREO_SEGUIMIENTO
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="png_1.js" type="text/javascript" language="javascript"></script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 36;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 3.641539;
+	viewMgr.visBBoxRight = 36.185650;
+	viewMgr.visBBoxBottom = 22.790209;
+	viewMgr.visBBoxTop = 37.333889;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Shows the location of the selected shape" src="arrow.gif"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="png_8.png" ALT="Archivar tarea" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="1. Resultados finales de la tarea almacenados en el archivo de..." origTitle="1. Resultados finales de la tarea almacenados en el archivo de..." TITLE="1. Resultados finales de la tarea almacenados en el archivo de..." HREF="https://github.com/AndresMadrigalC/PROCEDIMIENTO_PROYECCION_VARIABLES" target="_top" COORDS="1148,197,1264,197,1264,158,1264,153,1264,114,926,114,926,153,904,153,904,114,880,114,880,153,880,158,880,192,880,197,880,237,1148,237,1148,197" onmouseover="UpdateTooltip(this,36,75,event)" onfocus="UpdateTooltip(this,36,75,event)" onclick="return OnShapeClick(36,75,event);" onkeyup="OnShapeKey(36,75,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="2. Cuadro de control con estado actualizado" origTitle="2. Cuadro de control con estado actualizado" TITLE="2. Cuadro de control con estado actualizado" HREF="https://trello.com/b/mhDVx4v1/jaime" target="_top" COORDS="904,288,904,248,880,248,880,288,880,293,880,332,1129,332,1129,293,1264,293,1264,248,926,248,926,288,904,288" onmouseover="UpdateTooltip(this,36,74,event)" onfocus="UpdateTooltip(this,36,74,event)" onclick="return OnShapeClick(36,74,event);" onkeyup="OnShapeKey(36,74,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="2. Cuadro de control con tarea asignada" origTitle="2. Cuadro de control con tarea asignada" TITLE="2. Cuadro de control con tarea asignada" HREF="https://trello.com/b/mhDVx4v1/jaime" target="_top" COORDS="45,306,45,267,20,267,20,306,20,311,20,350,215,350,215,311,404,311,404,267,67,267,67,306,45,306" onmouseover="UpdateTooltip(this,36,73,event)" onfocus="UpdateTooltip(this,36,73,event)" onclick="return OnShapeClick(36,73,event);" onkeyup="OnShapeKey(36,73,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="1. Resultados tarea almacenados en el archivo de la unidad" origTitle="1. Resultados tarea almacenados en el archivo de la unidad" TITLE="1. Resultados tarea almacenados en el archivo de la unidad" HREF="https://github.com/AndresMadrigalC/PROCEDIMIENTO_PROYECCION_VARIABLES" target="_top" COORDS="184,197,404,197,404,158,404,153,404,114,67,114,67,153,45,153,45,114,20,114,20,153,20,158,20,192,20,197,20,237,184,237,184,197" onmouseover="UpdateTooltip(this,36,72,event)" onfocus="UpdateTooltip(this,36,72,event)" onclick="return OnShapeClick(36,72,event);" onkeyup="OnShapeKey(36,72,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="1255,395,1255,397,1259,393,876,393,880,397,880,395,872,395,872,397,876,401,1259,401,1263,397,1263,395,1255,395" onmouseover="UpdateTooltip(this,36,61,event)" onfocus="UpdateTooltip(this,36,61,event)" onclick="return OnShapeClick(36,61,event);" onkeyup="OnShapeKey(36,61,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="902,401,1068,401,1068,393,902,393,902,401" onmouseover="UpdateTooltip(this,36,61,event)" onfocus="UpdateTooltip(this,36,61,event)" onclick="return OnShapeClick(36,61,event);" onkeyup="OnShapeKey(36,61,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS" origTitle="SALIDAS" TITLE="SALIDAS"  target="_top" COORDS="880,74,880,118,990,118,990,74,880,74" onmouseover="UpdateTooltip(this,36,61,event)" onfocus="UpdateTooltip(this,36,61,event)" onclick="return OnShapeClick(36,61,event);" onkeyup="OnShapeKey(36,61,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/RECOLECTAR%2520INFORMACI%25C3%2593N/PROYECCIONES%2520ABR-19%2520v7.xlsm" target="_top" COORDS="437,395,437,397,441,393,17,393,21,397,21,395,13,395,13,397,17,401,441,401,445,397,445,395,437,395" onmouseover="UpdateTooltip(this,36,57,event)" onfocus="UpdateTooltip(this,36,57,event)" onclick="return OnShapeClick(36,57,event);" onkeyup="OnShapeKey(36,57,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/RECOLECTAR%2520INFORMACI%25C3%2593N/PROYECCIONES%2520ABR-19%2520v7.xlsm" target="_top" COORDS="0,398,16,401,18,393,1,390,0,398" onmouseover="UpdateTooltip(this,36,57,event)" onfocus="UpdateTooltip(this,36,57,event)" onclick="return OnShapeClick(36,57,event);" onkeyup="OnShapeKey(36,57,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS" origTitle="ENTRADAS" TITLE="ENTRADAS" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/RECOLECTAR%2520INFORMACI%25C3%2593N/PROYECCIONES%2520ABR-19%2520v7.xlsm" target="_top" COORDS="20,70,20,114,164,114,164,70,20,70" onmouseover="UpdateTooltip(this,36,57,event)" onfocus="UpdateTooltip(this,36,57,event)" onclick="return OnShapeClick(36,57,event);" onkeyup="OnShapeKey(36,57,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Archivar tarea" origTitle="Archivar tarea" TITLE="Archivar tarea" HREF="png_8.htm" target="frmDrawing" COORDS="450,397,867,397,869,397,870,396,870,395,870,394,870,3,870,2,870,1,869,0,867,0,450,0,448,0,447,1,447,2,447,3,447,394,447,395,447,396,448,397,450,397" onmouseover="UpdateTooltip(this,36,33,event)" onfocus="UpdateTooltip(this,36,33,event)" onclick="return OnShapeClick(36,33,event);" onkeyup="OnShapeKey(36,33,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>
