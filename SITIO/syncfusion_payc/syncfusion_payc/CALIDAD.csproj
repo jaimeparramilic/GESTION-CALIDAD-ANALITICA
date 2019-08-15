@@ -1256,6 +1256,7 @@
     <Content Include="images\logopayc.png" />
     <Content Include="images\oops.jpg" />
     <Content Include="images\waitingpopup.gif" />
+    <Content Include="MONITOREO_SEGUIMIENTO.htm" />
     <Content Include="Scripts\ej\ej.webform.js" />
     <Content Include="Scripts\jsrender.min.js" />
     <Content Include="Scripts\webformsmin.js" />
