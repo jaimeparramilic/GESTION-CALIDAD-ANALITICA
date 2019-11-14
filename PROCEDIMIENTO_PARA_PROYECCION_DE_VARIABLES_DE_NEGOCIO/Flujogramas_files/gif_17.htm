@@ -1,0 +1,145 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+Flujogramas
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="gif_1.js" type="text/javascript" language="javascript"></script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 11;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 0.937794;
+	viewMgr.visBBoxRight = 33.514839;
+	viewMgr.visBBoxBottom = 19.908320;
+	viewMgr.visBBoxTop = 34.451999;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Muestra la ubicación de la forma seleccionada" src="arrow.gif"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="gif_17.gif" ALT="Validar y ajustar la información de la base de datos de propuestas de la Unidad" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="1. Base de datos propuestas V2.xlsx" origTitle="1. Base de datos propuestas V2.xlsx" TITLE="1. Base de datos propuestas V2.xlsx" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO_PARA_PROYECCION_DE_VARIABLES_DE_NEGOCIO/RECOLECTAR_INFORMACION/PROPUESTAS/Revision_Comercial_Formato_final_V2.xlsx" target="_top" COORDS="724,128,724,96,704,96,704,128,704,132,704,163,903,163,903,132,1011,132,1011,96,741,96,741,128,724,128" onmouseover="UpdateTooltip(this,11,59,event)" onfocus="UpdateTooltip(this,11,59,event)" onclick="return OnShapeClick(11,59,event);" onkeyup="OnShapeKey(11,59,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Base de datos consolidado propuestas V2.xlsx" origTitle="ENTRADAS 1. Base de datos consolidado propuestas V2.xlsx" TITLE="ENTRADAS 1. Base de datos consolidado propuestas V2.xlsx" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO_PARA_PROYECCION_DE_VARIABLES_DE_NEGOCIO/RECOLECTAR_INFORMACION/PROPUESTAS/Revision_Comercial_Formato_final_V2.xlsx" target="_top" COORDS="346,316,346,317,350,313,11,313,15,317,15,316,7,316,7,317,11,321,350,321,354,317,354,316,346,316" onmouseover="UpdateTooltip(this,11,49,event)" onfocus="UpdateTooltip(this,11,49,event)" onclick="return OnShapeClick(11,49,event);" onkeyup="OnShapeKey(11,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Base de datos consolidado propuestas V2.xlsx" origTitle="ENTRADAS 1. Base de datos consolidado propuestas V2.xlsx" TITLE="ENTRADAS 1. Base de datos consolidado propuestas V2.xlsx" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO_PARA_PROYECCION_DE_VARIABLES_DE_NEGOCIO/RECOLECTAR_INFORMACION/PROPUESTAS/Revision_Comercial_Formato_final_V2.xlsx" target="_top" COORDS="284,313,181,313,181,321,284,321,284,313" onmouseover="UpdateTooltip(this,11,49,event)" onfocus="UpdateTooltip(this,11,49,event)" onclick="return OnShapeClick(11,49,event);" onkeyup="OnShapeKey(11,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Base de datos consolidado propuestas V2.xlsx" origTitle="ENTRADAS 1. Base de datos consolidado propuestas V2.xlsx" TITLE="ENTRADAS 1. Base de datos consolidado propuestas V2.xlsx" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO_PARA_PROYECCION_DE_VARIABLES_DE_NEGOCIO/RECOLECTAR_INFORMACION/PROPUESTAS/Revision_Comercial_Formato_final_V2.xlsx" target="_top" COORDS="213,168,353,168,353,132,129,132,129,101,14,101,14,132,14,136,14,164,14,168,14,199,213,199,213,168" onmouseover="UpdateTooltip(this,11,49,event)" onfocus="UpdateTooltip(this,11,49,event)" onclick="return OnShapeClick(11,49,event);" onkeyup="OnShapeKey(11,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Base de datos consolidado propuestas V2.xlsx" origTitle="ENTRADAS 1. Base de datos consolidado propuestas V2.xlsx" TITLE="ENTRADAS 1. Base de datos consolidado propuestas V2.xlsx" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO_PARA_PROYECCION_DE_VARIABLES_DE_NEGOCIO/RECOLECTAR_INFORMACION/PROPUESTAS/Revision_Comercial_Formato_final_V2.xlsx" target="_top" COORDS="34,164,34,136,51,136,51,164,34,164" onmouseover="UpdateTooltip(this,11,49,event)" onfocus="UpdateTooltip(this,11,49,event)" onclick="return OnShapeClick(11,49,event);" onkeyup="OnShapeKey(11,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Validar y ajustar la información de la base de datos de..." origTitle="Validar y ajustar la información de la base de datos de..." TITLE="Validar y ajustar la información de la base de datos de..." HREF="gif_2.htm" target="frmDrawing" COORDS="694,108,694,3,693,2,693,1,692,0,691,0,357,0,356,0,356,1,355,2,355,3,355,315,355,316,356,317,356,317,357,317,691,317,692,317,693,317,693,316,694,315,694,143,696,143,696,108,694,108" onmouseover="UpdateTooltip(this,11,26,event)" onfocus="UpdateTooltip(this,11,26,event)" onclick="return OnShapeClick(11,26,event);" onkeyup="OnShapeKey(11,26,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>

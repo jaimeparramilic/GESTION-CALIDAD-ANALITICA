@@ -1,0 +1,142 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+Flujogramas
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="gif_1.js" type="text/javascript" language="javascript"></script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 17;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 0.871730;
+	viewMgr.visBBoxRight = 33.514839;
+	viewMgr.visBBoxBottom = 21.908316;
+	viewMgr.visBBoxTop = 34.511621;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Muestra la ubicación de la forma seleccionada" src="arrow.gif"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="gif_23.gif" ALT="Ajustar la procedimientos de cálculo en caso de existir problemas" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="1. Procedimiento almacenado de cálculo ajustado" origTitle="1. Procedimiento almacenado de cálculo ajustado" TITLE="1. Procedimiento almacenado de cálculo ajustado" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO_PARA_PROYECCION_DE_VARIABLES_DE_NEGOCIO/RECOLECTAR_INFORMACION/INDICADORES_FINANCIEROS/DICCIONARIO_DE_DATOS_CALCULO_INDICADORES_V1.docx" target="_top" COORDS="796,115,1011,115,1011,83,1011,79,1011,48,705,48,705,79,705,83,705,111,705,115,705,146,796,146,796,115" onmouseover="UpdateTooltip(this,17,59,event)" onfocus="UpdateTooltip(this,17,59,event)" onclick="return OnShapeClick(17,59,event);" onkeyup="OnShapeKey(17,59,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="2. Documentación modelo de datos cálculo de indicadores..." origTitle="2. Documentación modelo de datos cálculo de indicadores..." TITLE="2. Documentación modelo de datos cálculo de indicadores..." HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO_PARA_PROYECCION_DE_VARIABLES_DE_NEGOCIO/RECOLECTAR_INFORMACION/INDICADORES_FINANCIEROS/DICCIONARIO_DE_DATOS_CALCULO_INDICADORES_V1.docx" target="_top" COORDS="958,228,1008,228,1008,196,1008,192,1008,161,702,161,702,192,702,196,702,224,702,228,702,259,958,259,958,228" onmouseover="UpdateTooltip(this,17,58,event)" onfocus="UpdateTooltip(this,17,58,event)" onclick="return OnShapeClick(17,58,event);" onkeyup="OnShapeKey(17,58,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Ajustar la procedimientos de cálculo en caso de existir..." origTitle="Ajustar la procedimientos de cálculo en caso de existir..." TITLE="Ajustar la procedimientos de cálculo en caso de existir..." HREF="gif_2.htm" target="frmDrawing" COORDS="359,319,692,319,693,318,694,318,694,317,694,316,694,4,694,3,694,3,693,2,692,2,359,2,358,2,357,3,356,3,356,4,356,316,356,317,357,318,358,318,359,319" onmouseover="UpdateTooltip(this,17,26,event)" onfocus="UpdateTooltip(this,17,26,event)" onclick="return OnShapeClick(17,26,event);" onkeyup="OnShapeKey(17,26,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>

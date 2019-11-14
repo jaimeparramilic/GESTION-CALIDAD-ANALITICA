@@ -58,14 +58,14 @@ var slSupported = (MSIE && ver >= 5 && !isMac) || isFirefox;
 var isUpLevel = vmlSupported || (slSupported && slInstalled);
 var fShowWidgets = (MSIE && ver >= 5 && !isMac) || isFirefox;
 
-var xmlData = XMLData("Flujogramas_files/data.xml");
+var xmlData = XMLData("Flujogramas_archivos/data.xml");
 
 var g_RowStyleList = new  Array(
  "propViewerEvenRow",
  "propViewerOddRow"
 );
 
-var strShape	= "Shape Name:";
+var strShape	= "Nombre de forma:";
 
 
 // START ----- cross-browser event manipulation helpers ---------------------------
@@ -384,8 +384,8 @@ function FillPropPane (shapeNode, outputDivObj )
 function CreatePropTable (shapeNode)
 {
 	var strCPHTML = "";
-	var strStartTable = "<table class='propViewerTABLE' borderColor='#999999' cellPadding='2' width='95%' border='1' summary='This table contains shape details'>";
-		strStartTable += "<THEAD class='propViewerTHEAD'><TH>Label</TH><TH>Value</TH></THEAD>";
+	var strStartTable = "<table class='propViewerTABLE' borderColor='#999999' cellPadding='2' width='95%' border='1' summary='Esta tabla contiene detalles de las formas'>";
+		strStartTable += "<THEAD class='propViewerTHEAD'><TH>Etiqueta</TH><TH>Valor</TH></THEAD>";
 	var strEndTable = "</TABLE>";
 
 	if (shapeNode != null)
@@ -434,7 +434,7 @@ function CreatePropTable (shapeNode)
 		}
 		else
 		{
-			strCPHTML = "No Details Available.";
+			strCPHTML = "No hay detalles disponibles.";
 		}
 	}
 
