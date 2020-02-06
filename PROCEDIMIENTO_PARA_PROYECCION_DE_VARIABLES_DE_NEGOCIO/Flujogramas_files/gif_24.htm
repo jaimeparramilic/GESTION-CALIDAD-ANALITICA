@@ -1,0 +1,149 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+Flujogramas
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="gif_1.js" type="text/javascript" language="javascript"></script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 18;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 0.871730;
+	viewMgr.visBBoxRight = 33.514839;
+	viewMgr.visBBoxBottom = 19.908320;
+	viewMgr.visBBoxTop = 34.511621;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Muestra la ubicación de la forma seleccionada" src="arrow.gif"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="gif_24.gif" ALT="Solicitar a ffie el estado actual de los proyectos y cronogramas" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Instrumento recolección estado FFIE V3.xlsx..." origTitle="SALIDAS 1. Instrumento recolección estado FFIE V3.xlsx..." TITLE="SALIDAS 1. Instrumento recolección estado FFIE V3.xlsx..." HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO_PARA_PROYECCION_DE_VARIABLES_DE_NEGOCIO/RECOLECTAR_INFORMACION/FFIE/Instrumento_recoleccion_estado_FFIE_V3.xlsx" target="_top" COORDS="1004,317,1004,319,1008,315,702,315,706,319,706,317,698,317,698,319,702,323,1008,323,1012,319,1012,317,1004,317" onmouseover="UpdateTooltip(this,18,51,event)" onfocus="UpdateTooltip(this,18,51,event)" onclick="return OnShapeClick(18,51,event);" onkeyup="OnShapeKey(18,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Instrumento recolección estado FFIE V3.xlsx..." origTitle="SALIDAS 1. Instrumento recolección estado FFIE V3.xlsx..." TITLE="SALIDAS 1. Instrumento recolección estado FFIE V3.xlsx..." HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO_PARA_PROYECCION_DE_VARIABLES_DE_NEGOCIO/RECOLECTAR_INFORMACION/FFIE/Instrumento_recoleccion_estado_FFIE_V3.xlsx" target="_top" COORDS="691,323,855,323,855,315,691,315,691,323" onmouseover="UpdateTooltip(this,18,51,event)" onfocus="UpdateTooltip(this,18,51,event)" onclick="return OnShapeClick(18,51,event);" onkeyup="OnShapeKey(18,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Instrumento recolección estado FFIE V3.xlsx..." origTitle="SALIDAS 1. Instrumento recolección estado FFIE V3.xlsx..." TITLE="SALIDAS 1. Instrumento recolección estado FFIE V3.xlsx..." HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO_PARA_PROYECCION_DE_VARIABLES_DE_NEGOCIO/RECOLECTAR_INFORMACION/FFIE/Instrumento_recoleccion_estado_FFIE_V3.xlsx" target="_top" COORDS="724,67,724,39,742,39,742,67,724,67" onmouseover="UpdateTooltip(this,18,51,event)" onfocus="UpdateTooltip(this,18,51,event)" onclick="return OnShapeClick(18,51,event);" onkeyup="OnShapeKey(18,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Instrumento recolección estado FFIE V3.xlsx..." origTitle="SALIDAS 1. Instrumento recolección estado FFIE V3.xlsx..." TITLE="SALIDAS 1. Instrumento recolección estado FFIE V3.xlsx..." HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO_PARA_PROYECCION_DE_VARIABLES_DE_NEGOCIO/RECOLECTAR_INFORMACION/FFIE/Instrumento_recoleccion_estado_FFIE_V3.xlsx" target="_top" COORDS="724,161,724,133,742,133,742,161,724,161" onmouseover="UpdateTooltip(this,18,51,event)" onfocus="UpdateTooltip(this,18,51,event)" onclick="return OnShapeClick(18,51,event);" onkeyup="OnShapeKey(18,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SALIDAS 1. Instrumento recolección estado FFIE V3.xlsx..." origTitle="SALIDAS 1. Instrumento recolección estado FFIE V3.xlsx..." TITLE="SALIDAS 1. Instrumento recolección estado FFIE V3.xlsx..." HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO_PARA_PROYECCION_DE_VARIABLES_DE_NEGOCIO/RECOLECTAR_INFORMACION/FFIE/Instrumento_recoleccion_estado_FFIE_V3.xlsx" target="_top" COORDS="978,196,1011,196,1011,165,1011,161,1011,129,832,129,832,102,1011,102,1011,71,1011,67,1011,35,793,35,793,4,705,4,705,35,705,39,705,67,705,71,705,98,705,102,705,129,705,133,705,161,705,165,705,192,705,196,705,227,978,227,978,196" onmouseover="UpdateTooltip(this,18,51,event)" onfocus="UpdateTooltip(this,18,51,event)" onclick="return OnShapeClick(18,51,event);" onkeyup="OnShapeKey(18,51,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Instrumento recolección estado FFIE V3.xlsx" origTitle="ENTRADAS 1. Instrumento recolección estado FFIE V3.xlsx" TITLE="ENTRADAS 1. Instrumento recolección estado FFIE V3.xlsx" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO_PARA_PROYECCION_DE_VARIABLES_DE_NEGOCIO/RECOLECTAR_INFORMACION/FFIE/Instrumento_recoleccion_estado_FFIE_V3.xlsx" target="_top" COORDS="348,317,348,319,352,315,13,315,17,319,17,317,9,317,9,319,13,323,352,323,356,319,356,317,348,317" onmouseover="UpdateTooltip(this,18,49,event)" onfocus="UpdateTooltip(this,18,49,event)" onclick="return OnShapeClick(18,49,event);" onkeyup="OnShapeKey(18,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Instrumento recolección estado FFIE V3.xlsx" origTitle="ENTRADAS 1. Instrumento recolección estado FFIE V3.xlsx" TITLE="ENTRADAS 1. Instrumento recolección estado FFIE V3.xlsx" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO_PARA_PROYECCION_DE_VARIABLES_DE_NEGOCIO/RECOLECTAR_INFORMACION/FFIE/Instrumento_recoleccion_estado_FFIE_V3.xlsx" target="_top" COORDS="0,320,13,323,14,315,1,312,0,320" onmouseover="UpdateTooltip(this,18,49,event)" onfocus="UpdateTooltip(this,18,49,event)" onclick="return OnShapeClick(18,49,event);" onkeyup="OnShapeKey(18,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Instrumento recolección estado FFIE V3.xlsx" origTitle="ENTRADAS 1. Instrumento recolección estado FFIE V3.xlsx" TITLE="ENTRADAS 1. Instrumento recolección estado FFIE V3.xlsx" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO_PARA_PROYECCION_DE_VARIABLES_DE_NEGOCIO/RECOLECTAR_INFORMACION/FFIE/Instrumento_recoleccion_estado_FFIE_V3.xlsx" target="_top" COORDS="217,109,355,109,355,74,131,74,131,42,16,42,16,74,16,77,16,105,16,109,16,140,217,140,217,109" onmouseover="UpdateTooltip(this,18,49,event)" onfocus="UpdateTooltip(this,18,49,event)" onclick="return OnShapeClick(18,49,event);" onkeyup="OnShapeKey(18,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="ENTRADAS 1. Instrumento recolección estado FFIE V3.xlsx" origTitle="ENTRADAS 1. Instrumento recolección estado FFIE V3.xlsx" TITLE="ENTRADAS 1. Instrumento recolección estado FFIE V3.xlsx" HREF="https://github.com/jaimeparramilic/GESTION-CALIDAD-ANALITICA/blob/master/PROCEDIMIENTO_PARA_PROYECCION_DE_VARIABLES_DE_NEGOCIO/RECOLECTAR_INFORMACION/FFIE/Instrumento_recoleccion_estado_FFIE_V3.xlsx" target="_top" COORDS="36,105,36,77,53,77,53,105,36,105" onmouseover="UpdateTooltip(this,18,49,event)" onfocus="UpdateTooltip(this,18,49,event)" onclick="return OnShapeClick(18,49,event);" onkeyup="OnShapeKey(18,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Solicitar a FFIE el estado actual de los proyectos y cronogramas" origTitle="Solicitar a FFIE el estado actual de los proyectos y cronogramas" TITLE="Solicitar a FFIE el estado actual de los proyectos y cronogramas" HREF="gif_2.htm" target="frmDrawing" COORDS="694,109,694,4,694,3,694,3,693,2,692,2,359,2,358,2,357,3,356,3,356,4,356,316,356,317,357,318,358,318,359,319,692,319,693,318,694,318,694,317,694,316,694,145,694,145,694,109,694,109" onmouseover="UpdateTooltip(this,18,26,event)" onfocus="UpdateTooltip(this,18,26,event)" onclick="return OnShapeClick(18,26,event);" onkeyup="OnShapeKey(18,26,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>

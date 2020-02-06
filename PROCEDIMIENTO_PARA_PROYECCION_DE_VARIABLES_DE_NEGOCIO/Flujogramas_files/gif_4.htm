@@ -1,0 +1,144 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+Flujogramas
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="gif_1.js" type="text/javascript" language="javascript"></script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 7;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 1.179436;
+	viewMgr.visBBoxRight = 22.193187;
+	viewMgr.visBBoxBottom = 4.498334;
+	viewMgr.visBBoxTop = 7.257573;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Muestra la ubicación de la forma seleccionada" src="arrow.gif"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="gif_4.gif" ALT="PRESENTAR PROYECCIONES" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="gif_1.htm" target="frmDrawing" COORDS="69,67,68,62,67,56,65,51,61,46,58,42,53,38,48,36,43,34,37,33,32,33,26,34,21,36,16,38,11,42,7,46,4,51,2,56,1,62,0,67,1,73,2,78,4,84,7,88,11,92,16,96,21,99,26,100,32,101,37,101,43,100,48,99,53,96,58,92,61,88,65,84,67,78,68,73,69,67" onmouseover="UpdateTooltip(this,7,86,event)" onfocus="UpdateTooltip(this,7,86,event)" onclick="return OnShapeClick(7,86,event);" onkeyup="OnShapeKey(7,86,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE="" HREF="gif_1.htm" target="frmDrawing" COORDS="1024,67,1023,62,1022,56,1020,51,1017,46,1013,42,1008,38,1003,36,998,34,992,33,987,33,981,34,976,36,971,38,966,42,963,46,959,51,957,56,956,62,955,67,956,73,957,78,959,84,963,88,966,92,971,96,976,99,981,100,987,101,992,101,998,100,1003,99,1008,96,1013,92,1017,88,1020,84,1022,78,1023,73,1024,67" onmouseover="UpdateTooltip(this,7,72,event)" onfocus="UpdateTooltip(this,7,72,event)" onclick="return OnShapeClick(7,72,event);" onkeyup="OnShapeKey(7,72,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Compartir archivo con resultados y presentación" origTitle="Compartir archivo con resultados y presentación" TITLE="Compartir archivo con resultados y presentación" HREF="gif_8.htm" target="frmDrawing" COORDS="688,134,878,134,879,134,881,133,881,132,882,131,882,4,881,2,881,1,879,0,878,0,688,0,687,0,685,1,685,2,684,4,684,131,685,132,685,133,687,134,688,134" onmouseover="UpdateTooltip(this,7,48,event)" onfocus="UpdateTooltip(this,7,48,event)" onclick="return OnShapeClick(7,48,event);" onkeyup="OnShapeKey(7,48,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Presentar resultados" origTitle="Presentar resultados" TITLE="Presentar resultados" HREF="gif_7.htm" target="frmDrawing" COORDS="417,134,607,134,608,134,610,133,610,132,611,131,611,4,610,2,610,1,608,0,607,0,417,0,416,0,414,1,414,2,413,4,413,131,414,132,414,133,416,134,417,134" onmouseover="UpdateTooltip(this,7,25,event)" onfocus="UpdateTooltip(this,7,25,event)" onclick="return OnShapeClick(7,25,event);" onkeyup="OnShapeKey(7,25,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Elaborar presentación con resultados" origTitle="Elaborar presentación con resultados" TITLE="Elaborar presentación con resultados" HREF="gif_6.htm" target="frmDrawing" COORDS="146,134,336,134,337,134,339,133,339,132,340,131,340,4,339,2,339,1,337,0,336,0,146,0,145,0,143,1,143,2,142,4,142,131,143,132,143,133,145,134,146,134" onmouseover="UpdateTooltip(this,7,1,event)" onfocus="UpdateTooltip(this,7,1,event)" onclick="return OnShapeClick(7,1,event);" onkeyup="OnShapeKey(7,1,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>
